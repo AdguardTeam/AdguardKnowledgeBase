@@ -1,0 +1,14 @@
+# Grav
+accounts/*
+plugins/*
+data/*
+assets/*
+
+# OS Generated
+.DS_Store*
+thumbs.db
+Thumbs.db
+*.swp
+
+# Sass
+.sass-cache

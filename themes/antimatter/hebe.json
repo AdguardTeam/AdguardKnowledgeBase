@@ -1,0 +1,15 @@
+{
+   "project":"grav-theme-antimatter",
+   "platforms":{
+      "grav":{
+         "nodes":{
+            "theme":[
+               {
+                  "source":"/",
+                  "destination":"/user/themes/antimatter"
+               }
+            ]
+         }
+      }
+   }
+}
