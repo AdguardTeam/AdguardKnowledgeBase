@@ -3,6 +3,7 @@ accounts/*
 plugins/*
 data/*
 assets/*
+config/plugins/admin.yaml
 
 # OS Generated
 .DS_Store*
