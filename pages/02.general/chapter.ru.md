@@ -1,8 +1,7 @@
 ---
-title: 'Program activation'
+title: 'Общие вопросы'
 taxonomy:
     category:
         - docs
-visible: true
 ---
 
