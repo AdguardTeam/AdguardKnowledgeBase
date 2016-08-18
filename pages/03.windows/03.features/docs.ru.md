@@ -1,5 +1,5 @@
 ---
-title: 'System requirements'
+title: Функции
 taxonomy:
     category:
         - docs

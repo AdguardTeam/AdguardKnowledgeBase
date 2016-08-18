@@ -1,5 +1,5 @@
 ---
-title: Лицензия
+title: Support
 taxonomy:
     category:
         - docs

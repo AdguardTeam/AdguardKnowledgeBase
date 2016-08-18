@@ -1,0 +1,18 @@
+/* Hides the sub-menu item if parent not active */
+.dd-item .dd-item ul li {
+    display: none;
+}
+
+.dd-item .dd-item.active ul li,
+.dd-item.parent > ul > li {
+    display: block;
+}
+
+/* Hides the sub-sub-menu menu-item if parent not active */
+.dd-item.parent > ul > li.dd-item.active > ul > li > ul > li {
+    display: none;
+}
+
+.dd-item.parent > ul > li.dd-item.active > ul > li {
+    display: block;
+}
