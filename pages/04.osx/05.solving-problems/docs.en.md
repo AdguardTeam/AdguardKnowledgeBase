@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Solving problems'
 taxonomy:
     category:
         - docs

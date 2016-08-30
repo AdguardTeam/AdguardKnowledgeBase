@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Quit Adguard'
 taxonomy:
     category:
         - docs

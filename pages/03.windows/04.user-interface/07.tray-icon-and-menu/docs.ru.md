@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Иконка в трее и меню'
 taxonomy:
     category:
         - docs

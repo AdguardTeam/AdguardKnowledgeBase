@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Ad Blocker'
 taxonomy:
     category:
         - docs

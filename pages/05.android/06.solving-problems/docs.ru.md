@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Решение проблем'
 taxonomy:
     category:
         - docs

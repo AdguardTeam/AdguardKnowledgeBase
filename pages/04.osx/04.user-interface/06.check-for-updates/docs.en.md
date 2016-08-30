@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Check for updates'
 taxonomy:
     category:
         - docs

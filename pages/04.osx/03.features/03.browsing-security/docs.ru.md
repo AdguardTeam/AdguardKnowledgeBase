@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: Антифишинг
 taxonomy:
     category:
         - docs

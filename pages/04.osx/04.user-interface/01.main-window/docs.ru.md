@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Главное окно'
 taxonomy:
     category:
         - docs

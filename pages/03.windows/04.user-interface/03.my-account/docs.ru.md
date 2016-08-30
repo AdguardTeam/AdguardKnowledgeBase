@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Личный кабинет'
 taxonomy:
     category:
         - docs

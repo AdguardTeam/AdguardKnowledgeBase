@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'User Interface'
 taxonomy:
     category:
         - docs

@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: Антибаннер
 taxonomy:
     category:
         - docs

@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: Антитрекинг
 taxonomy:
     category:
         - docs

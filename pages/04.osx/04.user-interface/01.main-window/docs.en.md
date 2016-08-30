@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'Main window'
 taxonomy:
     category:
         - docs

@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: Дополнительно
 taxonomy:
     category:
         - docs
