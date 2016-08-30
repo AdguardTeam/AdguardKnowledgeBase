@@ -5,9 +5,9 @@ taxonomy:
         - docs
 ---
 
-TODO: Table of contents (1 level)
+~~TODO: Table of contents (1 level)~~
 
-Also add to general questions:
+~~Also add to general questions:~~
 
 * https://adguard.com/en/filters.html
 * https://adguard.com/en/filterrules.html
