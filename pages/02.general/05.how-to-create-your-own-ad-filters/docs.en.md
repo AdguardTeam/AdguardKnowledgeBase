@@ -6,4 +6,4 @@ taxonomy:
 visible: true
 ---
 
-<http://adguard.com/ru/filterrules.html>
+<https://adguard.com/ru/filterrules.html>
