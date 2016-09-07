@@ -51,10 +51,10 @@ visible: true
     * [Правила CSS стилей](#Правила-css-стилей)
         * [Синтаксис правил CSS стилей](#Синтаксис-правил-css-стилей)
         * [Примеры правил CSS стилей](#Примеры-правил-css-стилей)
-    * [Расширенные CSS селекторы](#Расширенные-CSS-селекторы)
-        * [Псевдо-элемент :has](#Псевдо-элемент-has)
-        * [Псевдо-элемент :contains](#Псевдо-элемент-contains)
-        * [Псевдо-элемент :matches-css](#Псевдо-элемент-matches-css)
+    * [Расширенные CSS селекторы](#Расширенные-css-селекторы)
+        * [Псевдо-класс :has()](#Псевдо-класс-has)
+        * [Псевдо-класс :contains()](#Псевдо-класс-contains)
+        * [Псевдо-класс :matches-css()](#Псевдо-класс-matches-css)
 * [JS rules](#javascript-rules)
     * [Синтаксис](#Синтаксис-5)
     * [Примеры](#Примеры-3)
@@ -568,6 +568,61 @@ div[-ext-contains="banner"]
 ```
 
 Обратите внимание, что в этом примере будет выбран только `div` с `id=selected`, так как следующий за ним элемент не содержит текст (`banner` является частью кода, а не текста).
+
+#### Псевдо-класс `:matches-css()`
+
+Этот псевдокласс позволяет выбрат элемент по его текущему свойству стиля.
+
+##### Синтаксис `:matches-css()`
+
+```
+/* element style matching */
+selector:matches-css(property-name ":" pattern)
+
+/* ::before pseudo-element style matching */
+selector:matches-css-before(property-name ":" pattern)
+
+/* ::after pseudo-element style matching */
+selector:matches-css-after(property-name ":" pattern)
+```
+
+Обратно-совместимый синтаксис:
+```
+selector[-ext-matches-css="property-name ":" pattern"]
+selector[-ext-matches-css-after="property-name ":" pattern"]
+selector[-ext-matches-css-before="property-name ":" pattern"]
+```
+
+###### `property-name`
+Название CSS свойства, которое будет проверено у элемента.
+
+###### `pattern`
+Маска значения. Мы используем такой же синтаксис, как и в `pattern` в базовых правилах.
+
+##### Примеры `:matches-css()`
+
+###### Выбор элементов `div` с псевдо-элементом `::before` с указанным контентом.
+
+**HTML code**
+```
+<style type="text/css">
+    #to-be-blocked::before {
+        content: "Block me"
+    }
+</style>
+<div id="to-be-blocked" class="banner"></div>
+<div id="not-to-be-blocked" class="banner"></div>
+```
+
+**Селектор**
+```
+div.banner:matches-css-before(content: block me)
+```
+
+Обратно-совместимый синтаксис:
+```
+div.banner[-ext-matches-css-before="content: block me"]
+```
 
 
 
