@@ -70,6 +70,7 @@ visible: true
     * [Синтаксис javascript правил](#Синтаксис-javascript-правил)
     * [Примеры javascript правил](#Примеры-javascript-правил)
     * [Исключения для javascript правил](#Исключения-для-javascript-правил)
+
 <a id="introduction"></a>
 ## Введение
 
