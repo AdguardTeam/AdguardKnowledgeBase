@@ -88,4 +88,4 @@ To describe the syntax of our filtering rules we use [Augmented BNF for Syntax S
 <a id="basic-rules"></a>
 ## Basic rules
 
-The most simple rules are so-called _"Базовые правила"._ They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
+The most simple rules are so-called _"Basic rules"._ They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
