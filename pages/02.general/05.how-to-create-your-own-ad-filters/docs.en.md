@@ -7,7 +7,7 @@ visible: true
 ---
 
 * [Introduction](#introduction)
-* [Комментарии](#comments)
+* [Comments](#comments)
 * [Basic rules](#basic-rules)
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
