@@ -16,7 +16,7 @@ home:
   alias: /main-page
   hide_in_urls: false
 pages:
-  theme: learn2
+  theme: adguard
   order:
     by: default
     dir: asc
