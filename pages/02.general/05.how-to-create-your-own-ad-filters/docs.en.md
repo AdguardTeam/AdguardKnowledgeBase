@@ -123,3 +123,54 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 <a id="basic-rules-special-characters"></a>
 ### Special characters
+
+* **`*`** — Wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
+* **`||`** — Matching the beginning of an address. With this character you don't have to specify a particular protocol and subdomain in adress mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+* **`^`** — Separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`.
+* **`|`** — A pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
+
+> #### Visual representation
+> We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
+
+<a id="regexp-support"></a>
+### Regular expressions support
+
+If you want even more flexibility in making rules, you can use [Regular expressions](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions) instead of a default simplified mask with special characters. 
+
+> #### Performance
+> Rules with regular expressions work more slowly, therefore it is recommended to avoid them or to limit their scope to specific domains.
+
+If you want a blocker to determine a regular expression, the `pattern` has to look like this:
+```
+pattern = "/" regexp "/"
+```
+
+For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
+
+> #### Compatibility
+> Adguard browser extension for Safari and Adguard for iOS do not sully support regular expressions because of  [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+
+<a id="basic-rules-examples"></a>
+### Basic rules examples
+
+* `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
+
+* `||example.org^$third-party` —  a rule that blocks third-party requests to` example.org` and it's subdomains.
+
+* `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exceptions-modifiers).
+
+<a id="basic-rules-modifiers"></a>
+### Modifiers
+
+> #### Attention
+> The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic undestanding of the way your browser works.
+
+You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
+
+Example:
+```
+||domain.com$popup,third-party
+```
+
+
+
