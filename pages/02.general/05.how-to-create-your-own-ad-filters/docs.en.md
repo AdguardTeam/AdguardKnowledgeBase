@@ -172,5 +172,66 @@ Example:
 ||domain.com$popup,third-party
 ```
 
+> #### Visual representation
 
+> We recommend to get acquainted with [that article] (https://adblockplus.org/filter-cheatsheet#options), for  better understanding of how modifiers should be applied.
 
+<a id="basic-rules-common-modifiers"></a>
+#### Basic modifiers
+
+The following modifiers are the most simple and frequently used.
+
+<a id="domain-modifier"></a>
+##### **`domain`**
+
+`domain` restricts the rule application area to a list of domains (and their subdomains). To add multiple domains to one rule, use the `|`  character as a separator.
+
+###### `domain` examples 
+
+* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or it's subdomains.
+* `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
+
+If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
+
+###### `domain` and `~` examples
+
+* `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
+* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
+
+<a id="third-party-modifier"></a>
+##### **`third-party`**
+
+A restriction of third-party and own requests. A third-party request is a request from different domain. For example, a request to `example.org`, from `domain.com` is a third-party request. 
+
+> #### Subdomains
+> Please note that request from domain to it's subdomain (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain` example.org` is not a third-party request. 
+
+If there is a `third-party` modifier, the rule is only applied to third-party request.
+
+###### `third-party` examples
+
+* `||domain.com$third-party` — rule is applied to all domains, except `domain.com` and it's subdomains. Third-party request example: `http://example.org/banner.jpg`.
+
+If there is a `~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
+
+###### `~third-party` examples
+
+* `||domain.com$~third-party` — this rule is applied to `domain.com`, but not to the other domains. Example of a request that is not a third-party request: `http://domain.com/icon.ico`.
+
+<a id="popup-modifier"></a>
+##### **`popup`**
+
+Adguard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note, that not all the tabs can be closed.
+
+###### `popup`examples
+
+* `||domain.com*^$popup` — if you try to go to `http://domain.com` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
+
+<a id="match-case-modifier"></a>
+##### **`match-case`**
+
+This modifier defines a rule which applies only to addresses that match the case. Default rules are case-insensitive.
+
+###### `match-case` examples
+
+* `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
