@@ -125,7 +125,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ### Special characters
 
 * **`*`** — Wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
-* **`||`** — Matching the beginning of an address. With this character you don't have to specify a particular protocol and subdomain in adress mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+* **`||`** — Matching the beginning of an address. With this character you don't have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
 * **`^`** — Separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`.
 * **`|`** — A pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
 
@@ -522,7 +522,7 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 
 Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
 
-For example, there is a rule in the filter:
+For example, there is a rule in filter:
 ```
 ##.textad
 ```
@@ -531,7 +531,7 @@ If you want to disable it for `example.com`, you can make an exception rule:
 ```
 example.com#@#.textad
 ```
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using the domains restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using domain restrictions.
 
 > #### Please note
 > Exception rule without any particular domains in it does not make sense and will be ignored.
@@ -539,6 +539,192 @@ We recommend to use this kind of exceptions only if it is not possible to change
 <a id="cosmetic-css-rules"></a>
 ### Cosmetic css rules
 
+Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case Adguard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
+
+<a id="cosmetic-css-rules-syntax"></a>
+#### Cosmetic css rules syntax
+
+```
+   rule = [domains] "#$#" selector "{" style "}"
+domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+* **`selector`** — [CSS selector](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
+* **`domains`** — domain restriction for the rule. Same principles as [element hiding rules](#elemhide-syntax).
+* **`style`** — CSS style, that we want to apply to selected elements.
+
+<a id="cosmetic-css-rules-examples"></a>
+#### Cosmetic css rules examples
+
+```
+example.com#$#body { background-color: #333!important; }
+```
+
+This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
+
+<a id="cosmetic-css-rules-exceptions"></a>
+#### Cosmetic css rules exceptions
+
+Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains.
+Exception rules syntax is almost the same, you just have to change `#$#` for `#@$#`.
+
+For example, there is a rule in filter:
+```
+#$#.textad { visibility: hidden; }
+```
+
+If you want to disable it for `example.com`, you can make an exception rule:
+```
+example.com#@$#.textad { visibility: hidden; }
+```
+
+We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other case it is better to change the original rule, using domain restrictions.
+
+<a id="extended-css-selectors"></a>
+### Extended CSS selectors
+
+CSS 3.0 is not always enough to block ads. To solve this problem Adguard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
+
+> #### Backward compatibility
+> In common filters we use so-called backward compatible syntax. The thing is, extended pseudo-classes can break cosmetic rules in previous versions of Adguard or in other ad blockers that do not support extended CSS. For example, instead of pseudo-class `:has(selector)` it is possible to use `[-ext-has="selector"]` attribute.
+
+> #### Application area
+> Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
+
+<a id="extended-css-has"></a>
+#### pseudo-class `:has()`
+
+CSS 4.0 specification describes [pseudo-class `:has`](https://drafts.csswg.org/selectors/#relational). Unfortunately, it is not yet supported by browsers.
+
+##### `:has()` syntax
+
+```
+:has(selector)
+```
+
+Backward compatible syntax:
+```
+[-ext-has="selector"]
+```
+
+Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
+
+##### `:has()` examples
+
+###### Selection of all `div` elements, which contain an element with a `banner` class.
+
+**HTML code**
+```html
+<div>Do not select this div</div>
+<div>Select this div<span class="banner"></span></div>
+```
+
+**Selector**
+```css
+div:has(.banner)
+```
+
+Backward compatible syntax:
+```css
+div[-ext-has=".banner"]
+```
+
+<a id="extended-css-contains"></a>
+#### Pseudo-class `:contains()`
+
+This pseudo-class principle is very simple: it allows to select the elements that contain specified text. Please note that it should be text, not a code. Use `innerText` property for verification.
+
+##### `:contains()` syntax
+
+```css
+:contains(text)
+```
+
+Backward compatible syntax:
+```css
+[-ext-contains="text"]
+```
+
+Pseudo class `:contains()` selects the elements, that containt the text `text`.
+
+##### `:contains()` examples
+
+###### Selection of all `div` elements, that contain text `banner`.
+
+**HTML code**
+```html
+<div>Do not select this div</div>
+<div id="selected">Select this div (banner)</div>
+<div>Do not select this div <div class="banner"></div></div>
+```
+
+**Selector**
+```css
+div:contains(banner)
+```
+
+Backward compatible syntax:
+```css
+div[-ext-contains="banner"]
+```
+
+Please note that in this example only a `div` with `id=selected` will be selected, because the next element does not contain any text (`banner` is a part of code, not text).
+
+<a id="extended-css-matches-css"></a>
+#### Pseudo-class `:matches-css()`
+
+This pseudo-class allows to select an element by his current property.
+
+##### `:matches-css()` syntax
+
+```
+/* element style matching */
+selector:matches-css(property-name ":" pattern)
+
+/* ::before pseudo-element style matching */
+selector:matches-css-before(property-name ":" pattern)
+
+/* ::after pseudo-element style matching */
+selector:matches-css-after(property-name ":" pattern)
+```
+
+Backward compatible syntax:
+```
+selector[-ext-matches-css="property-name ":" pattern"]
+selector[-ext-matches-css-after="property-name ":" pattern"]
+selector[-ext-matches-css-before="property-name ":" pattern"]
+```
+
+###### `property-name`
+A name of CSS property to check the element for.
+
+###### `pattern`
+Value mask. We use the same syntax as in basic rules `pattern`.
+
+##### `:matches-css()` examples
+
+###### Selection of `div` elements that contain pseudo-class `::before` with specified content.
+
+**HTML code**
+```html
+<style type="text/css">
+    #to-be-blocked::before {
+        content: "Block me"
+    }
+</style>
+<div id="to-be-blocked" class="banner"></div>
+<div id="not-to-be-blocked" class="banner"></div>
+```
+
+**Selector**
+```css
+div.banner:matches-css-before(content: block me)
+```
+
+Backward compatible syntax:
+```css
+div.banner[-ext-matches-css-before="content: block me"]
+```
 
 
 
