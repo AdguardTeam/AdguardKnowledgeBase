@@ -184,7 +184,7 @@ The following modifiers are the most simple and frequently used.
 <a id="domain-modifier"></a>
 ##### **`domain`**
 
-`domain` restricts the rule application area to a list of domains (and their subdomains). To add multiple domains to one rule, use the `|`  character as a separator.
+`domain` limits the rule application area to a list of domains (and their subdomains). To add multiple domains to one rule, use the `|`  character as a separator.
 
 ###### `domain` examples 
 
@@ -476,4 +476,84 @@ You can see how this rule works here:
 http://regexr.com/3cesk
 
 <a id="cosmetic-rules"></a>
-## Косметические правила
+## Cosmetic rules
+
+As the name suggests, cosmetic rules are used not for blocking ad requests, but for changing the page appearance. They can hide the elements or even convert the overall style of pages.
+
+> Work with cosmetic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+
+<a id="cosmetic-elemhide-rules"></a>
+### Element hiding rules
+
+Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
+
+<a id="elemhide-syntax"></a>
+#### Element hiding rules syntax
+
+```
+   rule = [domains] "##" selector
+domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+* **`selector`** — [CSS selector](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
+* **`domains`** — domain restriction for the rule.
+
+If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
+
+> Please note that this rule will be also applied to all subdomains of `example.org` and `example.com`.
+
+If you want the rule not to be applied to certain domains, start a domain name with `~` sign. For example:
+`~example.org##selector`.
+
+You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
+
+> #### Please note
+> Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
+
+<a id="elemhide-examples"></a>
+#### Element hiding rules examples
+
+* `example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
+* `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `~example.com##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
+
+<a id="elemhide-exceptions"></a>
+#### Element hiding rules exceptions
+
+Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
+
+For example, there is a rule in the filter:
+```
+##.textad
+```
+
+If you want to disable it for `example.com`, you can make an exception rule:
+```
+example.com#@#.textad
+```
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using the domains restrictions.
+
+> #### Please note
+> Exception rule without any particular domains in it does not make sense and will be ignored.
+
+<a id="cosmetic-css-rules"></a>
+### Cosmetic css rules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
