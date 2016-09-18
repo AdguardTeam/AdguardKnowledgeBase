@@ -726,20 +726,151 @@ Backward compatible syntax:
 div.banner[-ext-matches-css-before="content: block me"]
 ```
 
+<a id="html-filtering-rules"></a>
+## HTML filtering rules
 
+In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
+> #### Compatibility with different versions of Adguard
+> Rules are supported by Adguard for Windows, Mac and Android (you have to set "filtering method" for "High-quality" in Android).
+> This type of rules don't work in browsers extension, because it is unable to modify content on network level.
 
+<a id="html-filtering-rules-syntax"></a>
+### HTML filtering rules syntax
 
+```
+      rule = [domains] "$$" tagName [attributes]
+   domains = [domain0, domain1[, ...[, domainN]]]      
+attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+```
 
+* **`tagName`** — name of the element in lower case, for example `div` or `script`.
+* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
+* **`attributes`** — a list of attributes, that limit the elements selection. `name` - attribute name, `value` - substring, that is contained in attribute value.
 
+<a id="html-filtering-rules-examples"></a>
+### HTML filtering rules example
 
+**HTML code**
+```html
+<script data-src="/banner.js"></script>
+```
 
+**Rule**
+```
+example.org$$script[data-src="banner"]
+```
 
+This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring.
+Это правило удалит из кода страниц все элементы `script` со значением `data-src`, содержащим подстроку `banner`. The rule will only work for `example.org` and all it's subdomains.
 
+<a id="html-filtering-rules-attributes"></a>
+### Special attributes
 
+In addition to usual attribures, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
+<a id="tag-content-attribute"></a>
+##### `tag-content`
 
+This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
+For example, let's take a look at this HTML code:
+```html
+<script type="text/javascript">
+    document.write('<div>banner text</div>" />');
+</script>
+```
 
+Following rule will delete all `script` elements with a `banner` substring in their code:
+```
+$$script[tag-content="banner"]
+```
 
+> #### Nested elements
+> If we are dealing with multiple nested elements and they all fall within the same HTML filtering rule, they all are going to be deleted.
 
+<a id="wildcard-attribute"></a>
+##### `wildcard`
+
+This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+
+For example:
+`$$script[wildcard="*banner*text*"]`
+
+It will check, if the element's code contains two consecutive substrings `banner` and `text`.
+
+<a id="max-length-attribute"></a>
+##### `max-length`
+
+Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value - a rule does not apply to the element.
+
+> #### Default setting
+>  If this parameter is not specified, the `max-length` is considered to be 8192.
+
+For example:
+```
+$$div[tag-content="banner"][max-length="400"]
+```
+This rule will remove all the `div` elements, whose code contains the substring` banner` and the length of which does not exceed `400` characters.
+
+<a id="min-length-attribute"></a>
+##### `min-length`
+
+Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value - a rule does not apply to the element.
+
+For example:
+```
+$$div[tag-content="banner"][min-length="400"]
+```
+
+This rule will remove all the `div` elements, whose code contains the substring` banner` and the length of which exceeds `400` characters.
+
+<a id="parent-elements-attribute"></a>
+##### `parent-elements`
+
+This attribute seriously modifies the rule behaviour. A common HTML filtering rule uses attributes to find and delete elements on the page. If `parent-elements` is set, then the element's parent element (with a name specified by `parent-elements` attribute) will be deleted instead.
+
+Here is an example:
+
+**HTML code**
+```html
+<table style="background: url('http://domain.com/banner.gif')">
+    <tr>
+        <td>
+            <a href="http://example.org/ads">TEXT ADS</a>
+        </td>
+    </tr>
+</table>
+```
+
+The problem with this code is that cutting out ads is not enough here. The banner is displayed using the parent table (as a `background`). This is where we can use the `parent-elements`.
+
+Let's use the following rule to block the entire table:
+```
+$$a[href="example.org/ads"][parent-elements="table"]
+```
+When Adguard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
+
+You can specify few parent elements separated by commas. The closest one will be blocked.
+
+<a id="parent-search-level-attribute"></a>
+##### `parent-search-level`
+
+Specifies the maximum parent element search depth. The defaul maximum search depth is `3`.
+That was set in order not to cut too much, if `HTML` page changes. Do not use too large values for this attribute.
+
+<a id="html-filtering-rules-exceptions"></a>
+### HTML filtering rules exceptions
+
+Similar to hiding rules, there are a special type of rules that disable the selected HTML filtering rule for particular domains.
+The syntax is the same, you just have to change `$$` for `$@$`.
+
+For example, there is a rule in filter:
+```
+$$script[tag-content="banner"]
+```
+
+If you want to disable it for `example.com`, you can make an exception rule:
+```
+example.com$@$script[tag-content="banner"]
+```
