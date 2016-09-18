@@ -235,3 +235,74 @@ This modifier defines a rule which applies only to addresses that match the case
 ###### `match-case` examples
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+
+<a id="content-type-modifiers"></a>
+#### Restriction by content type
+
+There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
+
+> #### Compatibility with different versions of Adguard
+>  Please note that there is a big difference in how Adguard determines the content type on different platforms. For browser extensions, content type for every request is provided by browser. Adguard for Windows, Mac and Android use following method: first we try to determine the type of request by filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
+
+<a id="content-type-modifiers-examples"></a>
+##### Content type modifiers examples
+
+* `||example.org^$image` — corresponds to all images from `example.org`.
+* `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
+* `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
+
+<a id="image-modifier"></a>
+##### **`image`**
+
+The rule corresponds to images requests.
+
+<a id="stylesheet-modifier"></a>
+##### **`stylesheet`**
+
+The rule corresponds to CSS files requests.
+
+<a id="script-modifier"></a>
+##### **`script`**
+
+The rule corresponds to script requests (e.g. javascript, vbscript).
+
+<a id="object-modifier"></a>
+##### **`object`**
+
+The rule corresponds to browser plugins resourses. (e.g. Java or Flash).
+
+<a id="object-subrequest-modifier"></a>
+##### **`object-subrequest`**
+
+The rule corresponds to requests by browser plugins (it's usually Flash).
+
+> #### Compatibility with different versions of Adguard
+> Adguard for Windows, macOS and Android often can't accurately determine this type and defines it as `other`.
+
+<a id="font-modifier"></a>
+##### **`font`**
+
+The rule corresponds to requests for fonts (e.g. .woff filename extension).
+
+<a id="media-modifier"></a>
+##### **`media`**
+
+The rule corresponds to requests for media files (music and video, e.g. .mp4 files).
+
+<a id="subdocument-modifier"></a>
+##### **`subdocument`**
+
+The rule corresponds to requests for built-in pages (HTML tags `frame` and `iframe`).
+
+<a id="xmlhttprequest-modifier"></a>
+##### **`xmlhttprequest`**
+
+The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+
+> #### Compatibility with different versions of Adguard
+> Adguard for Windows, macOS and Android often can't accurately determine this type and defines it as `other` or `script`.
+
+<a id="other-modifier"></a>
+##### **`other`**
+
+The rule applies to requests for which the type has not been determined or doesn't match the types listed above.
