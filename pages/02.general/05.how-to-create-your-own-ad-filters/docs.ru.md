@@ -187,7 +187,7 @@ pattern = "/" regexp "/"
 ###### Примеры `domain`
 
 * `||baddomain.com^$domain=example.org` — правило для блокировки запросов, которые соответствуют указанной маске, и отправленных с домена или поддомена `example.org`.
-* `||baddomain.com^$domain=example.org|example.com` 
+* `||baddomain.com^$domain=example.org|example.com` — такое же правило, но срабатывать оно будет как для домена `example.org`, так и для `example.com`.
 
 Чтобы правило не применялось на определенных доменах, перед доменным именем необходимо добавить символ `~`.
 
