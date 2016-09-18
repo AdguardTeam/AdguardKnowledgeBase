@@ -527,7 +527,7 @@ For example, there is a rule in filter:
 ##.textad
 ```
 
-If you want to disable it for `example.com`, you can make an exception rule:
+If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@#.textad
 ```
@@ -550,7 +550,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 * **`selector`** — [CSS selector](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
-* **`domains`** — domain restriction for the rule. Same principles as [element hiding rules](#elemhide-syntax).
+* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
 * **`style`** — CSS style, that we want to apply to selected elements.
 
 <a id="cosmetic-css-rules-examples"></a>
@@ -566,14 +566,14 @@ This rule will apply a style `background-color: #333!important;` to the `body` e
 #### Cosmetic css rules exceptions
 
 Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains.
-Exception rules syntax is almost the same, you just have to change `#$#` for `#@$#`.
+Exception rules syntax is almost the same, you just have to change `#$#` to `#@$#`.
 
 For example, there is a rule in filter:
 ```
 #$#.textad { visibility: hidden; }
 ```
 
-If you want to disable it for `example.com`, you can make an exception rule:
+If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@$#.textad { visibility: hidden; }
 ```
@@ -862,15 +862,61 @@ That was set in order not to cut too much, if `HTML` page changes. Do not use to
 <a id="html-filtering-rules-exceptions"></a>
 ### HTML filtering rules exceptions
 
-Similar to hiding rules, there are a special type of rules that disable the selected HTML filtering rule for particular domains.
-The syntax is the same, you just have to change `$$` for `$@$`.
+Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains.
+The syntax is the same, you just have to change `$$` to `$@$`.
 
 For example, there is a rule in filter:
 ```
 $$script[tag-content="banner"]
 ```
 
-If you want to disable it for `example.com`, you can make an exception rule:
+If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com$@$script[tag-content="banner"]
 ```
+
+<a id="javascript-rules"></a>
+## Javascript rules
+
+Adguard supports a special type of rules that allows you to inject any javascript code to websites pages.
+
+> #### Restrictions
+> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by Adguard Team.
+
+<a id="javascript-rules-syntax"></a>
+### Javascript rules syntax
+
+```
+rule = [domains]  "#%#" script
+```
+
+* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+* **`script`** — arbitrary javascript code **in one string**.
+
+<a id="javascript-rules-examples"></a>
+### Javascript rules examples
+
+* `example.org#%#window.__gaq = undefined;` — executes the code `window.__gaq = undefined;` on all pages at `example.org` and all subdomains.
+
+<a id="javascript-rules-exceptions"></a>
+### Javascript rules exceptions
+
+Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains.
+The syntax is the same, you just have to change `#%#` to `#@%#`.
+
+For example, there is a rule in filter:
+```
+#%#window.__gaq = undefined;
+```
+
+If you want to disable it for `example.com`, you can create an exception rule:
+```
+example.com#@%#window.__gaq = undefined;
+```
+
+<a id="good-luck"></a>
+## Good luck with creating filters!
+
+We wish you luck with creating you own ad filters.
+
+If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/custom-filters.69/) dedicated to writing your own filtering rules.
