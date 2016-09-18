@@ -86,7 +86,40 @@ To describe the syntax of our filtering rules we use [Augmented BNF for Syntax S
 
 > Adguard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both Adguard and ABP was taken from this article [this article](http://adblockplus.org/ru/filters).
 
+<a id="comments"></a>
+## Comments
+
+Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. Adguard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
+
+For example:
+
+```
+! This is the comment. Under this line there is an actual filtering rule.
+||example.org^
+```
+
 <a id="basic-rules"></a>
 ## Basic rules
 
 The most simple rules are so-called _"Basic rules"._ They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
+
+> #### Subqueries
+> Basic rules for blocking requests are applied only to **subqueries**. That means they will not block the loading of the page.
+
+> #### Response status
+> Browser detects a blocked subquery as completed with an error.
+
+<a id="basic-rules-syntax"></a>
+### Basic rules syntax
+
+```
+      rule = ["@@"] pattern [ "$" modifiers ]
+modifiers = [modifier0, modifier1[, ...[, modifierN]]]
+```
+
+* **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](# basic-rules-special-characters).
+* **`@@`** — A marker that is used in rules of exception. To turn off filtering for the query, start your rule with this marker.
+* **`modifiers`** — Parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
+
+<a id="basic-rules-special-characters"></a>
+### Special characters
