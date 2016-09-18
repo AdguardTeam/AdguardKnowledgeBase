@@ -147,8 +147,8 @@ pattern = "/" regexp "/"
 
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
-> #### Compatibility
-> Adguard browser extension for Safari and Adguard for iOS do not sully support regular expressions because of  [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> #### Compatibility with different versions of Adguard
+> Adguard browser extension for Safari and Adguard for iOS do not sully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
@@ -306,3 +306,174 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 ##### **`other`**
 
 The rule applies to requests for which the type has not been determined or doesn't match the types listed above.
+
+<a id="exceptions-modifiers"></a>
+#### Exception modifiers
+
+Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
+
+> #### Visual representation
+> We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
+
+<a id="elemhide-modifier"></a>
+##### **`elemhide`**
+
+Disables any cosmetic rules for corresponding pages. You will find the information about cosmetic rules [further](#cosmetic-rules).
+
+###### `elemhide` example
+
+* `@@||example.com^$elemhide` — disables all cosmetic rules for pages at `example.com` and all subdomains.
+
+<a id="content-modifier"></a>
+##### **`content`**
+
+Disables HTML filtering rules for corresponding pages. You will find the information about HTML filtering rules [further](#html-filtering-rules).
+
+###### `content` example
+
+* `@@||example.com^$content` — disables all HTML filtering rules for pages at `example.com` and all subdomains.
+
+<a id="jsinject-modifier"></a>
+##### **`jsinject`**
+
+Forbids adding of javascript code to the page. You can read about javascript rules further.
+
+###### `jsinject` example
+
+* `@@||example.com^$jsinject` — disables javascript for pages at `example.com` and all subdomains.
+
+<a id="urlblock-modifier"></a>
+##### **`urlblock`**
+
+Disables the blocking for all requests sent from the corresponding pages.
+
+###### `urlblock` example
+
+* `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
+
+<a id="document-modifier"></a>
+##### **`document`**
+
+Completely disables blocking for corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock` and `jsinject`.
+
+###### `document` example
+
+* `@@||example.com^$document` — completely disables the blocking for any pages at `example.com` and all subdomains.
+
+<a id="stealth-modifier"></a>
+##### **`stealth`**
+
+Disables the Stealth Mode for all corresponding pages and requests.
+
+> #### Compatibility with different versions of Adguard
+> Stealth Mode is currently available only in Adguard for Windows. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
+
+###### `stealth` example
+
+* `@@||example.com^$stealth` — disables `Stealth Mode` for all pages at `example.com` and all subdomains, and also for all requests and subqueries.
+
+<a id="generic-rules"></a>
+##### Generic rules
+
+Before we can proceed to the next modifiers, we have to make a definition of _generic rules_. The rule is generic if it is not limited to specific domains.
+
+For example, these rules are generic:
+```
+###banner
+~domain.com###banner
+||domain.com^
+||domain.com^$domain=~example.com
+```
+
+And these are not:
+```
+domain.com###banner
+||domain.com^$domain=example.com
+```
+
+<a id="generichide-modifier"></a>
+###### **`generichide`**
+
+Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
+
+* `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
+
+<a id="genericblock-modifier"></a>
+###### **`genericblock`**
+
+Disables generic basic rules on pages that correspond to exception rule.
+
+* `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
+
+<a id="advanced-modifiers"></a>
+### Advanced modifiers
+
+These modifiers are able to completely change the behaviour of basic rules.
+
+> #### Compatibility with different versions of Adguard
+> Modifiers from this section are only available in Adguard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
+
+<a id="empty-modifier"></a>
+##### **`empty`**
+
+Usually, blocked requests look like a server error to browser. If you use `empty` modifier, Adguard will emulate a blank response from the server with` 200 OK` status.
+
+###### `empty` example
+
+* `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
+
+<a id="mp4-modifier"></a>
+##### **`mp4`**
+
+As a response to blocked request Adguard returns a short video placeholder.
+
+###### `mp4` example
+
+* `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
+
+<a id="replace-modifier"></a>
+##### **`replace`**
+
+This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead. 
+
+> #### Please note
+> You will need some knowledge of regular expressions to use this modifier
+
+###### `replace` rules features
+
+* `replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
+* `replace` rules do not apply if the size of the original response is more than 3MB.
+* If a `replace` rule was applied to the page, other rules (e.g. cosmetic) are not going to be applied to the code.
+* `replace` rules have a higher priority than other basic rules (except for exception rules). So if the request corresponds to two different rules one of which has a `replace` modifier, this rule will be applied.
+
+###### `replace` syntax
+
+In general, `replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+
+```
+replace = "/" regex "/" replacement "/" modifiers
+```
+
+* `regex` — regular expression.
+* `replacement` — a string, that will be used to replace the string corresponding to` regex`.
+* `modifiers` — regular expression flags. For example, `i` - insensitive search, or` s` - single-line mode.
+
+In `replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
+
+###### `replace` examples
+
+```
+://*.damoh.golem.de/$replace=/(<VAST(.|\s)*?>)(.|\s)*<\/VAST>/\$1<\/VAST>/i,domain=video.golem.de
+```
+
+There are three parts in this rule:
+
+* Regular expression: `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
+* Replacement `\$1<\/VAST>` (please note, that `$` is escaped)
+* regular expression flags: `i` (insensitive search)
+
+You can see how this rule works here:
+http://regexr.com/3cesk
+
+<a id="cosmetic-rules"></a>
+## Косметические правила
