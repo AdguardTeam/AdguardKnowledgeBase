@@ -232,7 +232,7 @@ Adguard будет пытаться закрыть браузерную вкла
 
 ###### Примеры `match-case`
 
-* `*/BannerAd.gif$match-case` — такео правило будет блокировать `http://example.com/BannerAd.gif`, но не `http://example.com/bannerad.gif`.
+* `*/BannerAd.gif$match-case` — такоe правило будет блокировать `http://example.com/BannerAd.gif`, но не `http://example.com/bannerad.gif`.
 
 <a id="content-type-modifiers"></a>
 #### Ограничение по типу контента
