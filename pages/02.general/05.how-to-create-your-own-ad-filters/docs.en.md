@@ -84,7 +84,7 @@ At the same time, Adguard allows you to create your own custom filters, using th
 
 To describe the syntax of our filtering rules we use [Augmented BNF for Syntax Specifications] (https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
 
-> Adguard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both Adguard and ABP was taken from this article [this article](http://adblockplus.org/ru/filters).
+> Adguard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both Adguard and ABP was taken from this article [this article](http://adblockplus.org/en/filters).
 
 <a id="comments"></a>
 ## Comments
@@ -135,7 +135,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 <a id="regexp-support"></a>
 ### Regular expressions support
 
-If you want even more flexibility in making rules, you can use [Regular expressions](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions) instead of a default simplified mask with special characters. 
+If you want even more flexibility in making rules, you can use [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) instead of a default simplified mask with special characters. 
 
 > #### Performance
 > Rules with regular expressions work more slowly, therefore it is recommended to avoid them or to limit their scope to specific domains.
@@ -480,7 +480,7 @@ http://regexr.com/3cesk
 
 As the name suggests, cosmetic rules are used not for blocking ad requests, but for changing the page appearance. They can hide the elements or even convert the overall style of pages.
 
-> Work with cosmetic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+> Work with cosmetic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
 <a id="cosmetic-elemhide-rules"></a>
 ### Element hiding rules
@@ -495,7 +495,7 @@ Element hiding rules are used to hide the elements of web pages. It is similar t
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-* **`selector`** — [CSS selector](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
+* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
 * **`domains`** — domain restriction for the rule.
 
 If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
@@ -549,7 +549,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-* **`selector`** — [CSS selector](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
+* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
 * **`style`** — CSS style, that we want to apply to selected elements.
 
