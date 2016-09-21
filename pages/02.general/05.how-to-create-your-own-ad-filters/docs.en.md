@@ -761,8 +761,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 example.org$$script[data-src="banner"]
 ```
 
-This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring.
-Это правило удалит из кода страниц все элементы `script` со значением `data-src`, содержащим подстроку `banner`. The rule will only work for `example.org` and all it's subdomains.
+This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring. The rule will only work for `example.org` and all it's subdomains.
 
 <a id="html-filtering-rules-attributes"></a>
 ### Special attributes
