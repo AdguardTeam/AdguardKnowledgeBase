@@ -23,11 +23,7 @@ taxonomy:
 
 <img src="https://cloud.githubusercontent.com/assets/20211341/19713931/cec840b8-9b28-11e6-80d4-6be9652bd84d.png" width="700" height="500">
 
-**Ознакомиться с рекомендациями команды AdGuard относительно безопасного программного обеспечения и нажать "далее" ещё один раз**
-
-<img src="https://cloud.githubusercontent.com/assets/20211341/19713932/cec9a610-9b28-11e6-80f7-7c2cca1cb3a7.png" width="700" height="500">
-
-**Сложить руки на животе и некоторое время наблюдать за процессом**
+**Нажать "далее" ещё один раз, сложить руки на животе и некоторое время наблюдать за процессом**
 
 <img src="https://cloud.githubusercontent.com/assets/20211341/19713930/cec6f46a-9b28-11e6-8a0c-355cef679b3b.png" width="700" height="500">
 
