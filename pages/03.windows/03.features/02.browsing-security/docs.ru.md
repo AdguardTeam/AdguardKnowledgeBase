@@ -7,7 +7,7 @@ taxonomy:
 
 Модуль Антифишинг защищает вас от вредоносных и фишинговых сайтов. Этот модуль не позволит вам установить вредоносное программное обеспечение и защитит от интернет-мошенников. (Как это работает)[https://adguard.com/ru/how-malware-blocked.html].
 
-<img src="https://cloud.githubusercontent.com/assets/20211341/19956990/63c4b40c-a179-11e6-972f-b6f0d2096430.png" width=470 height=190>
+<img src="https://cloud.githubusercontent.com/assets/20211341/19993788/84a3424a-a22f-11e6-8b13-7280fd3699fe.png" width=800 height=600>
 
 **Включить Антифишинг**
 
