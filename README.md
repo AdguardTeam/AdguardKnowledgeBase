@@ -1,4 +1,3 @@
-# AdguardWeb
-Open bug tracker for Adguard website, forum and knowledgebase
+# Adguard new knowledgebase test.
 
-![1](https://cloud.githubusercontent.com/assets/17472907/20923909/c82f8006-bbbf-11e6-8798-1647451111a6.jpg)
+If you are looking for an actual knowledgebase, please refer to https://kb.adguard.com/ for the time being.
