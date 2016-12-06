@@ -1,0 +1,15 @@
+{% for index, field in form.fields %}
+    {% set input = attribute(field, "input@") %}
+    {% if input is null or input == true %}
+        {% block field %}
+            <div>
+                {% block field_label %}
+                    <strong>{{ field.label }}</strong>:
+                {% endblock %}
+                {% block field_value %}
+                    {{ string(form.value(field.name ?? index))|nl2br }}
+                {% endblock %}
+            </div>
+        {% endblock %}
+    {% endif %}
+{% endfor %}

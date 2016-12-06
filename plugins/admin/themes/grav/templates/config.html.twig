@@ -1,0 +1,86 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set config_slug = uri.basename %}
+{% set isInfo = (config_slug == 'info') %}
+
+{% set title = "PLUGIN_ADMIN.CONFIGURATION"|tu ~ ": " ~ ("PLUGIN_ADMIN." ~ config_slug|upper)|tu %}
+
+{% if not isInfo %}
+    {% set data = admin.data('config/' ~ config_slug) %}
+{% endif %}
+
+{% block stylesheets %}
+    {% do assets.addCss(theme_url ~ '/css/codemirror/codemirror.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block titlebar %}
+    <div class="button-bar">
+        <a class="button" href="{{ base_url }}"><i class="fa fa-reply"></i> {{ "PLUGIN_ADMIN.BACK"|tu }}</a>
+        <button class="button" type="submit" name="task" value="save" form="blueprints"><i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|tu }}</button>
+    </div>
+    <h1><i class="fa fa-fw fa-wrench"></i> {{ "PLUGIN_ADMIN.CONFIGURATION"|tu }} - {{ ("PLUGIN_ADMIN." ~ config_slug|upper)|tu }}</h1>
+{% endblock %}
+
+{% block content_top %}
+
+    <div class="alert notice">{{ "PLUGIN_ADMIN.SAVE_LOCATION"|tu }}: <b>{{ data.file.filename|replace({(base_path):''}) }}</b></div>
+    <ul class="tab-bar">
+
+        {% if authorize(['admin.configuration_system', 'admin.super']) %}
+        <li {% if config_slug == 'system' %}class="active"{% endif %}>
+            {% if config_slug == 'system' %}<span>{% else %}<a href="{{ base_url_relative }}/config/system">{% endif %}
+            {{ "PLUGIN_ADMIN.SYSTEM"|tu }}
+            {% if config_slug == 'system' %}</span>{% else %}</a>{% endif %}
+        </li>
+        {% endif %}
+
+        {% if authorize(['admin.configuration_site', 'admin.super']) %}
+        <li {% if config_slug == 'site' %}class="active"{% endif %}>
+            {% if config_slug == 'site' %}<span>{% else %}<a href="{{ base_url_relative }}/config/site">{% endif %}
+            {{ "PLUGIN_ADMIN.SITE"|tu }}
+            {% if config_slug == 'site' %}</span>{% else %}</a>{% endif %}
+        </li>
+        {% endif %}
+
+        {% for configuration in admin.configurations %}
+            {% if authorize(['admin.configuration_' ~ configuration, 'admin.super']) %}
+                {% set current_blueprints = admin.data('config/' ~ configuration).blueprints.toArray() %}
+                {% if configuration != 'system' and configuration != 'site' and not current_blueprints.form.hidden and current_blueprints.form.fields is not empty %}
+                    <li {% if config_slug == configuration %}class="active"{% endif %}>
+                        {% if config_slug == configuration %}<span>{% else %}<a href="{{ base_url_relative }}/config/{{configuration}}">{% endif %}
+                        {{ configuration|tu|capitalize }}
+                        {% if config_slug == configuration %}</span>{% else %}</a>{% endif %}
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% if authorize(['admin.configuration_info', 'admin.super']) %}
+        <li {% if config_slug == 'info' %}class="active"{% endif %}>
+            {% if config_slug == 'info' %}<span>{% else %}<a href="{{ base_url_relative }}/config/info">{% endif %}
+            {{ "PLUGIN_ADMIN.INFO"|tu }}
+            {% if config_slug == 'info' %}</span>{% else %}</a>{% endif %}
+        </li>
+        {% endif %}
+
+    </ul>
+{% endblock %}
+
+{% block content %}
+    {% if authorize(['admin.configuration_' ~ config_slug, 'admin.super']) %}
+        {% if isInfo %}
+            <div id="phpinfo">
+                {{ admin.phpinfo|raw }}
+            </div>
+        {% else %}
+            {% include 'partials/blueprints.html.twig' with { blueprints: data.blueprints, data: data } %}
+        {% endif %}
+    {% endif %}
+    {% include 'partials/modal-changes-detected.html.twig' %}
+{% endblock %}
+
