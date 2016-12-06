@@ -1,3 +1,3 @@
-# Adguard new knowledgebase test.
+# AdguardWeb
 
-If you are looking for an actual knowledgebase, please refer to https://kb.adguard.com/ for the time being.
+This repository is an open bug tracker for [Adguard website](https://adguard.com), [forum](https://forum.adguard.com) and [knowledgebase.](https://kb.adguard.com/)
