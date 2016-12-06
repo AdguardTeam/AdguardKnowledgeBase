@@ -4,6 +4,7 @@ plugins/*
 data/*
 assets/*
 config/plugins/admin.yaml
+config/security.yaml
 
 # OS Generated
 .DS_Store*
