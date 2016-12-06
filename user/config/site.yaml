@@ -1,0 +1,16 @@
+title: 'Adguard Knowledgebase'
+author:
+  name: 'Vladimir Ozersky'
+  email: vo@adguard.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: Adguard
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
