@@ -1,0 +1,14 @@
+github:
+    enabled: true
+    position: top
+    tree: https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/
+    commits: https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/
+
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - user/themes/adg
+         - user/themes/learn2

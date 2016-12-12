@@ -1,7 +1,7 @@
 <?php
  namespace Grav\Theme;
 
- class adguard extends learn2
+ class adg extends learn2
  {
      // new stuff
  }
