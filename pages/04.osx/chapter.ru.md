@@ -5,3 +5,6 @@ taxonomy:
         - docs
 ---
 
+### Раздел 3
+
+# Adguard для Mac

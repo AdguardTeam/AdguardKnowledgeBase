@@ -2,6 +2,7 @@ absolute_urls: false
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
+force_ssl: false
 languages:
   supported:
     - en
@@ -13,7 +14,7 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias: /main-page
+  alias: /general
   hide_in_urls: false
 pages:
   theme: learn2
@@ -99,7 +100,7 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
 errors:
-  display: false
+  display: '0'
   log: true
 debugger:
   enabled: false
@@ -111,6 +112,7 @@ images:
   cache_all: false
   cache_perms: '0755'
   debug: false
+  auto_fix_orientation: false
 media:
   enable_media_timestamp: false
   upload_limit: 0
@@ -120,5 +122,8 @@ session:
   name: grav-site
   secure: false
   httponly: true
+  split: true
 gpm:
   releases: stable
+  method: auto
+  verify_peer: true
