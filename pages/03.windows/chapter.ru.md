@@ -5,3 +5,6 @@ taxonomy:
         - docs
 ---
 
+### Раздел 2
+
+# Adguard для Windows
