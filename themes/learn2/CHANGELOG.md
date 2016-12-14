@@ -1,9 +1,3 @@
-# v1.6.1
-## xx/xx/2016
-
-1. [](#new)
-    * Updated to FontAwesome 4.7.0 with [Grav icon](http://fontawesome.io/icon/grav/)
-
 # v1.6.0
 ## 07/14/2016
 
@@ -14,7 +8,7 @@
     * Set the page language from Grav's Language configuration. Default to english.
 1. [](#bugfix)
     * Fix an issue on iOS 9+ Safari scaling
-
+    
 # v1.5.0
 ## 01/06/2016
 
