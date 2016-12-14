@@ -45,7 +45,7 @@ This command will check your Grav install to see if your Learn2 theme is due for
 Manually updating Learn2 is pretty simple. Here is what you will need to do to get this done:
 
 * Delete the `your/site/user/themes/learn2` directory.
-* Downalod the new version of the Learn2 theme from either [GitHub](https://github.com/getgrav/grav-plugin-learn2) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
+* Download the new version of the Learn2 theme from either [GitHub](https://github.com/getgrav/grav-theme-learn2) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
 * Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `learn2`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
