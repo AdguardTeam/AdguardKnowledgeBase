@@ -13,7 +13,7 @@ This is the main module of Adguard for macOS that filters off ads on websites vi
 
 Ad Blocker is flexibly adjusted to your needs, so you can add any object on pages you are viewing to the blocking rules, or turn off filtering on select websites. There is an option of completely halting the module and resuming its work when needed. Ad Blocker filters are updated automatically; however, you can change the User Filter parameters by editing the list of website URLs in its settings.
 
-Adguard works well with all macOS compatible browsers, therefore Ad Blocker will successfully filter the ads in any website-viewing application you may use.
+Adguard works well with all macOS compatible browsers, therefore Ad Blocker will successfully filter ads in any website-viewing application you may use.
 
 ## Browsing Security
 

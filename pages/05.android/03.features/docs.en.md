@@ -21,7 +21,7 @@ Adguard for Android utilizes a set of filters to block ads; however, there is Wh
 
 ## HTTPS Filtering
 
-Adguard is able to filter traffic shared via protected protocol HTTPS. For this, you will need to install a specially generated digital certificate. The filter has flexible settings and provides for Whitelist and Blacklist. This allows the user to decide which HTTPS domains should be filtered or not.
+Adguard is able to filter traffic shared via protected protocol HTTPS. For this, you will need to install a specially generated digital certificate that can be found in the Adguard settings. The filter has flexible settings and provides for Whitelist and Blacklist. This allows the user to decide which HTTPS domains should be filtered or not.
 
 ## Browsing Security
 
