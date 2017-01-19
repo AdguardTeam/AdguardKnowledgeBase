@@ -1,5 +1,5 @@
 ---
-title: 'Установка Adguard для macOS'
+title: 'Установка и удаление'
 taxonomy:
     category:
         - docs
