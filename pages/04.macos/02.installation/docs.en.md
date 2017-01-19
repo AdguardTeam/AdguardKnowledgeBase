@@ -1,5 +1,5 @@
 ---
-title: 'Install/uninstall'
+title: 'Install/Uninstall'
 taxonomy:
     category:
         - docs
