@@ -1,5 +1,5 @@
 ---
-title: 'Обзор функций'
+title: 'Функции'
 taxonomy:
     category:
         - docs
