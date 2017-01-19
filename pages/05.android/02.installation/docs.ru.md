@@ -1,5 +1,5 @@
 ---
-title: 'Установка Adguard для Android'
+title: Установка
 taxonomy:
     category:
         - docs

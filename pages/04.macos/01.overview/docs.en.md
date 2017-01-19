@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for macOS Overview'
+title: Overview
 taxonomy:
     category:
         - docs

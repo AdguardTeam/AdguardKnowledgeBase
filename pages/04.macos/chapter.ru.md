@@ -1,5 +1,5 @@
 ---
-title: 'Adguard для Mac'
+title: 'Adguard для MacOS'
 taxonomy:
     category:
         - docs

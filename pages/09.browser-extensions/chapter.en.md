@@ -5,3 +5,6 @@ taxonomy:
         - docs
 ---
 
+### Chapter 8
+
+# Browser Extensions

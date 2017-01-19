@@ -1,5 +1,5 @@
 ---
-title: Использование
+title: Функции
 taxonomy:
     category:
         - docs

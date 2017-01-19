@@ -1,5 +1,5 @@
 ---
-title: 'Обзор Adguard для macOS'
+title: Обзор
 taxonomy:
     category:
         - docs

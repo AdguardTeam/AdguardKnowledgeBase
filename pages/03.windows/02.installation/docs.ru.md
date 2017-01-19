@@ -1,5 +1,5 @@
 ---
-title: Установка
+title: 'Установка и удаление'
 taxonomy:
     category:
         - docs

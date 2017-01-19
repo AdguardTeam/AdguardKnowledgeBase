@@ -1,5 +1,5 @@
 ---
-title: 'Installing Adguard for Android'
+title: Installation
 taxonomy:
     category:
         - docs

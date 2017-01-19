@@ -5,3 +5,6 @@ taxonomy:
         - docs
 ---
 
+### Chapter 2
+
+# Adguard for Windows

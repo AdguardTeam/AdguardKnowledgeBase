@@ -1,5 +1,5 @@
 ---
-title: Настройки
+title: Features
 taxonomy:
     category:
         - docs
