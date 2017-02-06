@@ -3,5 +3,28 @@ title: 'Как получить файлы HAR'
 visible: true
 ---
 
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/66/5/kk-poluchit-fjjly-har-http-rkhiv-n-android-ustrojjstve
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/65/9/how-to-get-har-http-archive-files-from-android-device
+HAR-файлы содержат информацию обо всех отфильтрованных HTTP-запросах.
+
+Иногда анализ этих файлов может потребоваться для блокировки специфической рекламы, которую по каким-либо причинам трудно воспроизвести. 
+
+1. Откройте Adguard и перейдите в "Настройки".
+
+2. Выберите в меню пункт "Расширенные"
+
+3. Перейдите в "Низкоуровневые настройки"
+
+4. Активируйте "pref.har.capture" (потребуется перезапустить защиту).
+
+5. Теперь нужно воспроизвести проблему: откройте приложение, используйте его, дождитесь появления рекламы. После этого "pref.har.capture" необходимо отключить.
+
+6. Откройте папку с кэшем приложения и найдите файлы с расширением .har, обычно они расположены в следующей локации:
+
+ **  /storage/emulated/Android/data/com.adguard.android/cache/har**
+
+   или, в зависимости от устройства:
+
+  **   /sdcard/Android/com.adguard.android/cache/har**
+
+  **   /sdcard/data/Android/com.adguard.android/cache/har**
+
+  **   /sdcard/Android/data/com.adguard.android/cache/har**

@@ -49,17 +49,17 @@ To purchase Adguard license key click [here](https://adguard.com/license.html).
    
 To do it, doubleclick on Adguard icon on the desktop:   
 
-![](https://images.adguard.com/public.php?service=files&t=62ff84aed199f48f41b58669be8fcf43&download)
+![](key_win_01.png)
 
 or double click on Adguard icon in the system tray:   
 
-![](https://images.adguard.com/public.php?service=files&t=16b38b692b8edd2ab7c8df087359fe71&download)
+![](key_win_02.png)
 
 2. Choose 'License' inset in program's menu   
 
-3. Enter your license key and click on 'Activate' button   
+3. Enter your license key and click on 'Activate license' button   
 
-![](https://images.adguard.com/public.php?service=files&t=9cf8c08c7f2c6e0b18c0a2c3ec4850f2&download)
+![](win10activatekey.png)
 
 
 <a id="activation_mac"></a>

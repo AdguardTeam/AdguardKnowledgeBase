@@ -3,7 +3,14 @@ title: 'Как получить логи установки Adguard'
 visible: true
 ---
 
+Для получения и отправки лога установки Adguard, необходимо:
 
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/56/5/sbor-logov-ustnovki-adguard-dlja-windows
+1. Запустить команду "Выполнить" (Win+R), ввести в строке **%tmp%**, нажать "OK":
 
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/57/9/collecting-adguard-for-windows-installation-logs
+![](wir.png)
+
+2. В открывшейся папке выбрать все файлы, начинающиеся с "Adguard" и запаковать в архив:
+
+![](tmp.png)
+
+3. Полученный архив отправить в техподдержку adguard (support@adguard.com).

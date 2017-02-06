@@ -14,7 +14,7 @@
             </a>
             {% if p.children.count > 0 %}
             <ul>
-                {{ _self.loop(p, parent_loop+loop.index) }}
+                {{ _self.loop(p, parent_loop|default(0)+loop.index) }}
             </ul>
             {% endif %}
         </li>

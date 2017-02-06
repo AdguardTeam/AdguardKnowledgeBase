@@ -1,5 +1,17 @@
+# v1.6.3
+## 01/31/2017
+
+1. [](#bugfix)
+    * Fixed changelog date
+
+# v1.6.2
+## 01/31/2017
+
+1. [](#bugfix)
+    * Fixed a PHP 7.1 issue
+
 # v1.6.1
-## xx/xx/2016
+## 01/24/2017
 
 1. [](#new)
     * Updated to FontAwesome 4.7.0 with [Grav icon](http://fontawesome.io/icon/grav/)
