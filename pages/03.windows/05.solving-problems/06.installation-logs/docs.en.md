@@ -1,5 +1,8 @@
 ---
 title: 'How to find Adguard installation logs'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

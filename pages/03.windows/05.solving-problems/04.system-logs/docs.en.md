@@ -1,5 +1,8 @@
 ---
 title: 'How to find Windows logs'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: 'Фильтрация в Internet Explorer и Edge'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

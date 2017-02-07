@@ -1,5 +1,8 @@
 ---
 title: 'Как получить файлы журнала Windows?'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

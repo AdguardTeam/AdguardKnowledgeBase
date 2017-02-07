@@ -1,5 +1,8 @@
 ---
 title: 'Как получить логи Adguard'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: 'Internet Explorer and Edge filtering'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 
