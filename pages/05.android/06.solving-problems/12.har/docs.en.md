@@ -3,5 +3,29 @@ title: 'How to get HAR files'
 visible: true
 ---
 
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/66/5/kk-poluchit-fjjly-har-http-rkhiv-n-android-ustrojjstve
-https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/65/9/how-to-get-har-http-archive-files-from-android-device
+HAR files contains information about all filtered HTTP requests.
+
+Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason.
+
+1. Open Adguard and go to "Settings".
+
+2. Choose "Advanced" in the menu.
+
+3. Choose "Low Level Settings"
+
+4. Activate "pref.har.capture" (you will have to restart the protection).
+
+5. Now reproduce the problem - open the app, use it, find ads in it, then turn off "pref.har.capture".
+
+6. Go to app cache folder and find the .har files. They are usually located in
+
+  ** /storage/emulated/Android/data/com.adguard.android/cache/har**
+
+   or, depending on device,
+
+  **  /sdcard/Android/com.adguard.android/cache/har**
+
+  **   /sdcard/data/Android/com.adguard.android/cache/har**
+
+  **  /sdcard/Android/data/com.adguard.android/cache/har **
+
