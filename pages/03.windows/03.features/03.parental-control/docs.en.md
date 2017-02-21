@@ -5,7 +5,10 @@ taxonomy:
         - docs
 ---
 
-The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html).
+There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
+
+The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted. 
+
 
 ![](win10-04.png)
 

@@ -42,9 +42,9 @@ visible: true
 
 ## Английский фильтр
 
-Фильтр, позволяющий убрать рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.adblockplus.org/). Дорабатывается нами исходя из жалоб и пожеланий пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Фильтр, позволяющий убрать рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.to). Дорабатывается нами исходя из жалоб и пожеланий пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=2)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
 
 
@@ -56,7 +56,7 @@ visible: true
 
 Фильтр является оригинальным и разработанным нами с нуля. Лицензия: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=3)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/3.txt)
 
 
 
@@ -68,7 +68,7 @@ visible: true
 
 Фильтр является оригинальным и разработанным нами. Лицензия: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=4)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/4.txt)
 
 
 
@@ -78,7 +78,7 @@ visible: true
 
 Блокирует действующие на нервы элементы веб-сайтов, включая уведомления об использовании cookies, всплывающие сообщения внутри страниц и сторонние виджеты, не имеющие отношения к функциональности сайтов (но исключая виджеты и кнопки социальных сетей, для их блокировки вы по-прежнему можете подключить отдельный Фильтр виджетов социальных сетей). Идея основана на фильтре Fanboy Annoyances List, но не дублирует его, так что их можно использовать совместно.
 
-[Посмотреть все правила](/ru/filter-rules.html?id=14)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/14.txt)
 
 
 
@@ -88,7 +88,7 @@ visible: true
 
 Фильтр, разблокирующий рекламу, которая может быть полезна пользователям. Реклама, попадающая в этот фильтр, должна удовлетворять целому набору правил. Подробнее об этом фильтре можете узнать на [его странице](/ru/whitelist.html).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=10)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/10.txt)
 
 
 
@@ -100,7 +100,7 @@ visible: true
 
 Лицензия: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=1)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/1.txt)
 
 
 
@@ -110,7 +110,7 @@ visible: true
 
 Фильтр, позволяющий убрать рекламу с сайтов на немецком языке. Изначально основан на фильтре [EasyList Germany](https://easylist.adblockplus.org/). Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=6)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/6.txt)
 
 
 
@@ -120,7 +120,7 @@ visible: true
 
 Фильтр, позволяющий убрать рекламу с сайтов на японском языке. Изначально основан на фильтре _Fanboy’s Japanese-addon Adblock list_. Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=7)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/7.txt)
 
 
 
@@ -130,7 +130,7 @@ visible: true
 
 Фильтр, позволяющий убрать рекламу с сайтов на голландском языке. Изначально основан на фильтре [EasyList Dutch](https://easylist.adblockplus.org/). Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=8)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/8.txt)
 
 
 
@@ -140,7 +140,7 @@ visible: true
 
 Фильтр, позволяющий убрать рекламу с сайтов на испанском языке. Изначально основан на фильтре _Fanboy’s Spanish/Portuguese Adblock list_. Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=9)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/9.txt)
 
 
 
@@ -150,7 +150,7 @@ visible: true
 
 Фильтр, предназначенный для проверки некоторых опасных правил фильтрации перед тем, как они будут добавлены в основные фильтры.
 
-[Посмотреть все правила](/ru/filter-rules.html?id=5)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/5.txt)
 
 
 
@@ -160,7 +160,7 @@ visible: true
 
 Фильтр, позволяющий убрать рекламу с сайтов на турецки языке. Разрабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=13)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/13.txt)
 
 
 
@@ -170,7 +170,7 @@ visible: true
 
 Фильтр, блокирующий рекламу на мобильных устройствах. Обычно для мобильных версий сайтов и приложений используются другие рекламные сети, нежели для обычных сайтов. Все известные нам рекламные сети подобного рода находятся в этом фильтре. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=11)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/11.txt)
 
 
 
@@ -180,7 +180,7 @@ visible: true
 
 Фильтр, блокирующий рекламу на мобильных устройствах под управлением операционной системы iOS в браузере Safari. Обычно для мобильных версий сайтов и приложений используются другие рекламные сети, нежели для обычных сайтов. Все известные нам рекламные сети подобного рода находится в этом фильтре. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=12)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/12.txt)
 
 
 
@@ -190,4 +190,4 @@ visible: true
 
 Фильтр, составленный из нескольких фильтров (Английский фильтр, Фильтр социальных сетей, Фильтр счетчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy), и специально упрощенный для лучшей совместимости с блокировкой рекламы на уровне DNS. Этот фильтр используется серверами Adguard DNS для блокировки рекламы. Узнать больше о блокировке на уровне DNS можно на [этой странице](https://adguard.com/ru/adguard-dns/overview.html). Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](/ru/filter-rules.html?id=15)
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/15.txt)

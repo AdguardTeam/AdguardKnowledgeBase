@@ -1,5 +1,5 @@
 ---
-title: 'Adguard для MacOS'
+title: 'Adguard для macOS'
 taxonomy:
     category:
         - docs
@@ -8,3 +8,5 @@ taxonomy:
 ### Раздел 3
 
 # Adguard для Mac
+
+В этом разделе рассматривается программа Adguard для операционной системы macOS.

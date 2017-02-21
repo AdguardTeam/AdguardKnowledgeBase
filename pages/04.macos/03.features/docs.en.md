@@ -9,36 +9,29 @@ Adguard for macOS is designed to block ads on web pages and in applications inst
 
 ## Ad Blocker
 
-This is the main module of Adguard for macOS that filters off ads on websites viewed by the user and in the user’s installed apps. Ad Blocker clears web pages of advertising images and messages using specific rules. The undesirable content is filtered even before the page is loaded in the browser, which helps save a lot of traffic.
-
-Ad Blocker is flexibly adjusted to your needs, so you can add any object on pages you are viewing to the blocking rules, or turn off filtering on select websites. There is an option of completely halting the module and resuming its work when needed. Ad Blocker filters are updated automatically; however, you can change the User Filter parameters by editing the list of website URLs in its settings.
-
-Adguard works well with all macOS compatible browsers, therefore Ad Blocker will successfully filter ads in any website-viewing application you may use.
+The Ad Blocker module removes all ad banners and messages from web pages. The module uses special filters that are actually sets of filtering rules.
 
 ## Browsing Security
 
-Phishing is a very common web fraud aimed at stealing your personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put off your guard. If a user enters their details on such a website, they will definitely end up in the hands of criminals.
-
-Browsing Security gives strong protection against such incidents. At the same time, the user’s personal information is not transferred anywhere, and Adguard servers do not know which websites the user is visiting, because security check is not performed via open web address (URL) but through hash prefixes (hash is a certain data structure that renders each address added to the base unambiguous).
-
-Some web pages are not malicious themselves, but they may contain elements built into their structure by other websites. Unlike browser plug-ins, Browsing Security module checks each object built into any web page, thus ensuring maximum protection.
+The Browsing Security module protects you from malware and phishing websites. It will not let you install malware and will protect you from web frauds. [How it works?](https://adguard.com/en/how-malware-blocked.html).
 
 ## Privacy Protection
 
-Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Privacy Protection safeguards your personal information from such data and statistics gathering systems.
+The Privacy protection module protects you and your personal info from being tracked by online statistics gathering resources. To enable or disable Ad Blocker, click on the Adguard icon in the macOS ribbon and slide the Ad Blocker switch left or right in the window that opens.
 
 ## Extensions
 
 Adguard utilizes several browser extensions of its own to broaden its functionality.
 
-## Adguard Assistant
+**Adguard Assistant**
 
-The name of this extension is quite deliberate: it actually assists the user in changing basic Adguard settings in the browser, without the need to open the app itself. Adguard Assistant works with all macOS compatible browsers. In addition, the Adguard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+Allows quick and easy filtering control right in your browser.
 
-## Adguard Popup Blocker
+**Adguard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some popups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the Adguard exceptions list either. It is turned off by default, but you can turn it on in the application settings.
+Blocks popup ads on web pages.
 
-## Web of Trust
+**Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings.
+Shows Internet users’ opinions regarding any website.
+

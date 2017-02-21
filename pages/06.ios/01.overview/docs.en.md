@@ -28,3 +28,11 @@ Of course, Adguard Pro has the same functions as the basic version – it can bl
 * Widget and tracking block. Special filters will block all counters to protect your personal data, and remove all unnecessary social network widgets.
 
 * Surfing acceleration. Adguard removes everything irrelevant from the web, and clear pages load much faster.
+
+**These functions are only available in Pro version:**
+
+* **DNS-filtering in applications.** Adguard for iOS Pro allows you to control access  to the DNS services in applications - this filters the traffic in different applications and browsers, not just in Safari.
+
+* **Whitelist / blacklist in the application.** Using this feature you can always enable or disable advertising filtering on certain sites.
+
+* **DNS log.** Using DNS log yoy may find the respective request in the log and block the domain in request details.

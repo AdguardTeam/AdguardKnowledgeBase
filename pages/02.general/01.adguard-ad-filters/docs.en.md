@@ -44,7 +44,7 @@ You can find a manual of advertising content filtering rules creation syntax o
 
 Filter that enables removing of the ads from websites with English content. Originally based on the [EasyList](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=2)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
 
 
@@ -56,7 +56,7 @@ The most comprehensive list of various online counters and web analytics tools.
 
 This filter is original and was developed by us from scratch. License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[View all the rules](/en/filter-rules.html?id=3)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/3.txt)
 
 
 
@@ -68,7 +68,7 @@ If you do not like numerous «Like» and «Tweet» buttons on all the popular
 
 This filter is original and was developed by us. License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[View all the rules](/en/filter-rules.html?id=4)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/4.txt)
 
 
 
@@ -78,7 +78,7 @@ This filter is original and was developed by us. License: [Creative Commons Attr
 
 Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.
 
-[View all the rules](/en/filter-rules.html?id=14)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/14.txt)
 
 
 
@@ -88,7 +88,7 @@ Blocks irritating elements on webpages, including cookie notices, third-party w
 
 Filter that unblocks ads that may be useful to users. Advertising that falls under this filter shall comply with a set of rules. Learn more about this filter on [its page](/en/whitelist.html).
 
-[View all the rules](/en/filter-rules.html?id=10)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/10.txt)
 
 
 
@@ -100,7 +100,7 @@ Filter that enables removing of the ads from websites in Russian. The filter w
 
 License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[View all the rules](/en/filter-rules.html?id=1)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/1.txt)
 
 
 
@@ -110,7 +110,7 @@ License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativ
 
 Filter that enables removing of the ads from websites with German content. Originally based on the [EasyList Germany](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=6)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/6.txt)
 
 
 
@@ -120,7 +120,7 @@ Filter that enables removing of the ads from websites with German content. Orig
 
 Filter that enables removing of the ads from websites in Japanese. Originally based on the Fanboy’s Japanese-addon Adblock list filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=7)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/7.txt)
 
 
 
@@ -130,7 +130,7 @@ Filter that enables removing of the ads from websites in Japanese. Originally 
 
 Filter that enables removing of the ads from websites with Dutch content. Originally based on the [EasyList Dutch](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=8)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/8.txt)
 
 
 
@@ -140,7 +140,7 @@ Filter that enables removing of the ads from websites with Dutch content. Origi
 
 Filter that enables removing of the ads from websites in Spanish. Originally based on the _Fanboy’s Spanish/Portuguese Adblock list_ filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=9)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/9.txt)
 
 
 
@@ -150,7 +150,7 @@ Filter that enables removing of the ads from websites in Spanish. Originally b
 
 Filter designed to test certain hazardous filtering rules before they are added to the basic filters.
 
-[View all the rules](/en/filter-rules.html?id=5)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/5.txt)
 
 
 
@@ -160,7 +160,7 @@ Filter designed to test certain hazardous filtering rules before they are added
 
 Filter that enables removing of the ads from websites with Turkish content. Created by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=13)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/13.txt)
 
 
 
@@ -170,7 +170,7 @@ Filter that enables removing of the ads from websites with Turkish content. Cre
 
 Filter that blocks ads on mobile devices. Contains all known mobile ad networks. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=11)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/11.txt)
 
 
 
@@ -180,7 +180,7 @@ Filter that blocks ads on mobile devices. Contains all known mobile ad networks.
 
 Filter that blocks ads on iOS mobile devices in Safari browser. Contains all known mobile ad networks. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=12)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/12.txt)
 
 
 
@@ -190,4 +190,4 @@ Filter that blocks ads on iOS mobile devices in Safari browser. Contains all k
 
 A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by Adguard DNS servers to block ads. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-[View all the rules](/en/filter-rules.html?id=15)
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/15.txt)

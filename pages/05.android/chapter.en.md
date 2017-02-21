@@ -8,3 +8,5 @@ taxonomy:
 ### Chapter 4
 
 # Adguard for Android
+
+This section describes Adguard for Google Android.

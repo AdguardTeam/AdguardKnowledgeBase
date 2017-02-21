@@ -8,3 +8,5 @@ taxonomy:
 ### Раздел 6
 
 # Adguard Content Blocker
+
+В этом разделе рассматривается приложение Adguard Content Blocker.

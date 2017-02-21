@@ -5,7 +5,8 @@ taxonomy:
         - docs
 ---
 
-The Privacy protection module protects you and your personal info from being tracked by online statistics gathering resources. To enable or disable Ad Blocker, click on the Adguard icon in the macOS ribbon and slide the Ad Blocker switch left or right in the window that opens.
+Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Privacy Protection safeguards your personal information from such data and statistics gathering systems.
+
 
 ![](Screenshot%202017-02-12%2019.41.01.png)
 

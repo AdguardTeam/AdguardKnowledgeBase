@@ -8,3 +8,5 @@ taxonomy:
 ### Chapter 8
 
 # Browser Extensions
+
+This section describes Adguard Browser Extensions.

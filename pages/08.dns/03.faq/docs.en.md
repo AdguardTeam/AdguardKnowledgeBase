@@ -2,9 +2,7 @@
 title: FAQ
 ---
 
-
-
-We offer a new way to block ads that doesn’t require you to install any external apps. It is easy in use, absolutely free, simple to configure on any device and provides a necessary minimum of ad blocking, privacy protection, browsing security and parental control functionality.
+This article provides answers to common questions about Adguard DNS. If you did not find here the answer to your question, just let us know by contacting our support: support@adguard.com, or  leave a comment or start a new thread on [our forum](https://forum.adguard.com/index.php?threads%2F12162%2F=1).
 
 * [What is Adguard DNS?](#what-is)
 * [Why use Adguard DNS?](#why-use)

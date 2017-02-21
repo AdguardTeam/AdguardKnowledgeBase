@@ -3,11 +3,11 @@ title: 'Battery and traffic consumption issues'
 visible: true
 ---
 
-Sometimes you may notice that, according to Android built-in statistics, Adguard consumes a lot of traffic and/or battery resourse.
+Sometimes you may notice that, according to Android built-in statistics, Adguard consumes a lot of traffic and/or battery resource.
 
 Both these problems are two side of the same coin. Since in the process of filtering all the mobile traffic goes through Adguard, Android decides that it is Adguard that consumes it all. In reality, of course, it is not true.
 
-Battery and traffic consumption shown in devices statistics **does not represent the facts**. The thing is, Android attributes all of the WiFi and Mobile traffic to Adguard, which was in fact consumed by other apps. Due to this, Adguards real share of total traffic and battery resourse consumed increases, and other apps, on the contrary, decreases.
+Battery and traffic consumption shown in devices statistics **does not represent the facts**. The thing is, Android attributes all of the WiFi and Mobile traffic to Adguard, which was in fact consumed by other apps. Due to this, Adguards real share of total traffic and battery resource consumed increases, and other apps, on the contrary, decreases.
 
 **Real example**
 
