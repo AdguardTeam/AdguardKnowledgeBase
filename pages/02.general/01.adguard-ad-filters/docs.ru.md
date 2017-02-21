@@ -33,7 +33,7 @@ visible: true
 
 Фильтры предназначены для использования во всех продуктах Adguard. При желании вы можете использовать их также и в Adblock Plus. Обратите внимание, что синтаксис правил фильтрации Adguard расширен по сравнению с Adblock Plus. Поэтому часть правил работать в Adblock Plus не будет.
 
-Ознакомиться с синтаксисом составления правил блокировки рекламного контента можете по [этой ссылке] (http://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters).
+Ознакомиться с синтаксисом составления правил блокировки рекламного контента можете по [этой ссылке](http://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters).
 
 [Политика составления фильтров Adguard](https://blog.adguard.com/ru/news/politika-sostavleniya-adblock-filtrov-adguard.html)
 
