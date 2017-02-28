@@ -1,5 +1,8 @@
 ---
 title: 'How to block ads in Youtube app'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 
@@ -13,7 +16,7 @@ So far we haven't found a way to completely remove ads from YouTube app. Each of
 First of all, you have to enable HTTPS filtering in Adguard settings. It is necessary for decrypting the data sent to YouTube by its servers. To do it, simply go to Settings -> HTTPS Filtering and install the Adguard certificate:
 
 
-![](httpsfiltering_en.png)
+![](httpsfiltering_en.png?cropResize=400,600)
 
 >_Our advice is to get yourself familiar with HTTPS filtering detailed description. You can access it right from the respective section of Adguard Settings._
 
@@ -29,13 +32,13 @@ Sadly, HTTPS filtering capabilities in Android Nougat are limited, so in modern 
 
 The next step is to clear the Youtube app data. To do so, open Android settings, go to Application Manager, then tap on Youtube and on the "Clear data” button:
 
-![](app_manager_EN.png)
+![](app_manager_EN.png?cropResize=400,600)
 
 This is our major problem. Adguard can remove all ads from the app, but only if Youtube is ‘cleared’. After the device reboot or Youtube restart (restart is carried out by "swipe" and followed by the launch), it switches to another algorithm, in which some video ads will still break through.
 
 **Thus, you will need to clear the Youtube app data at every reboot of your device (at least)**. For users with ROOT access this process can be automated. We have added a new flag to the Low Level settings just for that. To enable it, go to Settings -> Advanced -> Low Level Settings -> find the **pref.root.clear.youtube** preference and check it:
 
-![](youtube_preference_en.png)
+![](youtube_preference_en.png?cropResize=400,600)
 
 If it is enabled, Adguard will clear Youtube app data at the device start.
 

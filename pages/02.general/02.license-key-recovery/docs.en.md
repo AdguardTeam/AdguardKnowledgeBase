@@ -1,8 +1,7 @@
 ---
 title: 'License key recovery'
-taxonomy:
-    category:
-        - docs
+published: false
+routable: false
 visible: false
 ---
 

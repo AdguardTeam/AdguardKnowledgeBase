@@ -13,4 +13,4 @@ taxonomy:
 * [Настройки низкого уровня](http://testkb.adguard.com/ru/android/solving-problems/low-level-settings)
 * [Как заблокировать рекламу в приложении Youtube](http://testkb.adguard.com/ru/android/solving-problems/youtube-ads)
 
-Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку Adguard](http://testkb.adguard.com/ru/technical-support).
+Этот раздел регулярно обновляется. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку Adguard](http://testkb.adguard.com/ru/technical-support).

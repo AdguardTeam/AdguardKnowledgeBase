@@ -9,4 +9,4 @@ taxonomy:
 
 # Adguard for Android
 
-This section describes Adguard for Google Android.
+This section describes Adguard for Android.

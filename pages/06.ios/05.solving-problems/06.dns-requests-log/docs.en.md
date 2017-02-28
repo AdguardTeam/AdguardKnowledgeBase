@@ -1,5 +1,5 @@
 ---
-title: '  How to collect DNS requests log on Adguard Pro?'
+title: 'How to collect DNS requests log on Adguard Pro?'
 taxonomy:
     category:
         - docs
@@ -12,9 +12,15 @@ So, if you need to collect DNS requests log, do the following:
 1. Open Adguard main screen, choose 'Adguard DNS' item and tap on it.
 
 2. Make sure Adguard DNS is enabled.
+
 3. Enable DNS requests log.
+
 4. Reproduce the problem. NOTE: notice the time when the problem was reproduced.
+
 5. Go back to Adguard DNS settings and disable the DNS requests log.
+
 6. Go back to the main Adguard screen and tap on 'Send Bug Report'.
+
 7. In the message body mention the exact time when the problem was reproduced.
+
 8. That's it, now we will receive the log and, hopefully, fix the problem soon.

@@ -1,5 +1,8 @@
 ---
 title: 'Настройка Tasker'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

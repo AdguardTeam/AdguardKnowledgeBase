@@ -13,4 +13,4 @@ taxonomy:
 * [Low Level Settings guide](http://testkb.adguard.com/en/android/solving-problems/low-level-settings)
 * [How to block ads in Youtube app](http://testkb.adguard.com/en/android/solving-problems/youtube-ads)
 
-If you haven't found a solution to your problem in our knowledge base, [Adguard Support Team](http://testkb.adguard.com/en/technical-support) will be happy to help.
+This section is regularly updated. If you haven't found a solution to your problem in our knowledge base, [Adguard Support Team](http://testkb.adguard.com/en/technical-support) will be happy to help.

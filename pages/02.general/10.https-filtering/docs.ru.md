@@ -1,6 +1,6 @@
 ---
 title: 'Фильтрация HTTPS-соединений'
-published: true
+published: false
 taxonomy:
     category:
         - docs

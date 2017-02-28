@@ -17,7 +17,7 @@ Adguard DNS can work on any devices, including smartphones and tablet PCs. There
 
 * Does not require installation of any applications. All you need is to follow this simple setup guide.
 
-* Adguard DNS is absolutely safe for personal use. You don’t install anything, so there’s nothing to pay for.
+* Adguard DNS is absolutely free in personal use. You don’t install anything, so there’s nothing to pay for.
 
 * It has two modes: default ad blocking and Family Mode.
  

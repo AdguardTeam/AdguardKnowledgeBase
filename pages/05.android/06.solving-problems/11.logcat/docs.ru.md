@@ -1,5 +1,8 @@
 ---
 title: 'Как получить лог logcat'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 

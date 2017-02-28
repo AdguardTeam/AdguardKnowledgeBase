@@ -17,17 +17,17 @@ You can temporarily turn off Ad Blocker completely if necessary, or make it unbl
  
 The Browsing Security module protects you from malware and phishing websites. It will not let you install malware and will protect you from web frauds. [How it works](https://adguard.com/en/how-malware-blocked.html).
  
-To learn more about Browsing Security, check out our Knowledge Database.
+To learn more about Browsing Security, read the [dedicated article](http://kb.adguard.com/en/windows/features/browsing-security) of our Knowledgebase.
 
 ## Stealth Mode
 
 The Stealth Mode module protects you and your personal info from being tracked by online statistics gathering resources.
 
-To learn more about Stealth Mode, check out our Knowledge Database.
+To learn more about Stealth Mode, read the [dedicated article](http://kb.adguard.com/en/windows/features/stealth-mode) of our Knowledgebase.
 
 ## Parental Control
 
-The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html). To learn more about Parental Control, check out our Knowledge Database.
+The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html). To learn more about Parental Control, read the [dedicated article](http://testkb.adguard.com/en/windows/features/parental-control) of our Knowledgebase.
 
 ## Extensions
 To make your browsing experience even more comfortable, Adguard can perform the functions of a convenient user script manager. Moreover, Adguard utilizes several pre-installed extensions.
@@ -42,4 +42,4 @@ Blocks popup ads on web pages.
 
 **Web of Trust**
 
-Shows Internet users’ opinions regarding any website.
+Shows Internet users’ opinions regarding any website. Disabled by default.

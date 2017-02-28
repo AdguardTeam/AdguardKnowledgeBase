@@ -1,5 +1,8 @@
 ---
 title: 'Tasker app configuration'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 
@@ -102,11 +105,11 @@ _to start protection:_
 
 As a result, you will have two tasks ready to use:
 
-![](tasks_EN.png)
+![](tasks_EN.png?cropResize=400,600)
 
 **Add profiles that will use these tasks**
 
 For an example, you can configure autostart for _Adguard for Android_ upon switching to mobile networks and autostop upon connecting to Wi-Fi:
 
-![](profiles_en.png)
+![](profiles_en.png?cropResize=400,600)
 

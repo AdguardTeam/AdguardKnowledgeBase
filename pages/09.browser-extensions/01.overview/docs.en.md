@@ -9,7 +9,7 @@ taxonomy:
 
 This extension blocks ads in social networks, such as VK.com and Facebook, on YouTube, and other sites. Adguard Ad Blocker efficiently blocks all kinds of ads on all web pages. Ad Blocker speeds up loading and saves traffic by not wasting it on ads and popups. This extension also blocks spyware and adware installers, protects your personal data and you from malware and phishing sites. Adguard Ad Blocker is free for use.
 
-![](chrome_block_en.png)
+![](chrome_block_en.png?cropResize=600,400)
 
 ### Functions
 
@@ -35,15 +35,17 @@ This extension blocks ads in social networks, such as VK.com and Facebook, on Yo
 
 ### Supported browsers
 
-* Firefox
+* Chrome
+
+* Microsoft Edge
 
 * Safari
 
+* Firefox
+
 * Opera
 
-* Яндекс Браузер
-
-* Microsoft Edge
+* Yandex Browser
 
 * Palemoon
 

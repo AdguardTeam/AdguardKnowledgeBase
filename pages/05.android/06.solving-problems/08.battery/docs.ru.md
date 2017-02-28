@@ -1,5 +1,8 @@
 ---
 title: 'Вопросы потребления трафика и ресурса батареи'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 
@@ -13,7 +16,7 @@ visible: true
 
 На скриншотах ниже показана статистика потребления батареи за ночь и утро.
 
-![](battery_1.png) ![](battery_2.png) ![](battery_3.png)
+![](battery_1.png?cropResize=300,500) ![](battery_2.png?cropResize=300,500) ![](battery_3.png?cropResize=300,500)
 
 Из этих скриншотов видно, что:
 

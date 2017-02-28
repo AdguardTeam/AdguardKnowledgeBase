@@ -9,7 +9,7 @@ Adguard for iOS blocks ads on smartphones and tablets by Apple. Adguard supports
 
 Adguard allows the user to fine-tune the settings: you can add any website to exceptions and stop blocking ads on it. You can also manually adjust every Adguard filter, turn them on or off, or even create your own ones.
 
-App Store catalogue has two versions of Adguard for iOS, free version and Adguard Pro. The main difference is that Adguard Pro does not limit its functionality by Safari, but works with all apps and browsers.
+App Store catalogue has two versions of Adguard for iOS, [free version](https://itunes.apple.com/us/app/id1047223162) and [Adguard Pro](https://itunes.apple.com/ru/app/id1126386264). The main difference is that Adguard Pro does not limit its functionality by Safari, but works with all apps and browsers.
 
 Thanks to Adguard DNS integration, Adguard Pro can filter traffic in two modes. Default Mode is a basic mode that blocks ads, trackers, phishing websites, etc. Family Mode includes all functions of Default Mode and also blocks all sites with adult content. This mode is perfect if you wish to install Adguard Pro for iOS on your child’s device. DNS request log will help you track all queries and easily whitelist any website you would like to disable filtering for.
 

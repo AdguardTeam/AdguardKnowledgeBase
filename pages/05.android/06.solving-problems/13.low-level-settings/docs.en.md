@@ -1,5 +1,8 @@
 ---
 title: '  Low Level Settings guide'
+taxonomy:
+    category:
+        - docs
 visible: true
 ---
 
@@ -24,7 +27,7 @@ HTTPS filtering preferences**
 
 We united several settings under this category: _pref.https.apps.exclusions_, _pref.https.domains.blacklist_ and _pref.https.domains.whitelist_. They are essentially the same settings you can find in HTTPs filtering settings tab. You can find more information about them in our blog:
 
-<https://blog.adguard.com/en/adguard-android/adguard-for-android-25-official.html>
+<https://blog.adguard.com/en/adguard-for-android-25-official/>
 
 **pref.vpn.ipv6.bypass**
 
