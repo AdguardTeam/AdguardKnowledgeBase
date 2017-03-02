@@ -14,6 +14,6 @@ visible: true
 
 2. В открывшейся папке выбрать все файлы, начинающиеся с "Adguard" и запаковать в архив:
 
-![](tmp.png)
+![](tmp.png?cropResize=800,600)
 
-3. Полученный архив отправить в техподдержку adguard (support@adguard.com).
+3. Полученный архив отправить в [службу поддержки](mailto:support@adguard.com) Adguard.

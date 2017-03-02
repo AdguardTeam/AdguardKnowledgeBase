@@ -14,7 +14,7 @@ You can always switch to the old and stable network driver.
 
 To do so:
 
-1. Go to the Adguard [extended interface](https://kb.adguard.com/index.php?/Knowledgebase/Article/View/19/9/how-to-enter-the-adguard-extended-interface)
+1. Go to Adguard General Settings.
 
 2. Disable WFP driver as it’s done in this picture:
 

@@ -20,7 +20,7 @@ visible: true
 
 One of the main functions of Adguard is filtering ads on websites. In this article, we will describe in details how exactly Adguard filters online advertising.
 
-Adguard's work is based on the use of various advertising filters that define rules, based on which the program removes ads. Adguard may use a variety of different ad filters. We create some of them ourselves (you can learn more about it on [this page](../../en/filters.html)), some of the filters are created by enthusiasts.
+Adguard's work is based on the use of various advertising filters that define rules, based on which the program removes ads. Adguard may use a variety of different ad filters. We create some of them ourselves (you can learn more about it on [this page](/general/adguard-ad-filters.html)), some of the filters are created by enthusiasts.
 
 
 

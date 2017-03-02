@@ -16,4 +16,4 @@ To collect and send Adguard installation log you have to:
 
 ![](tmp_en.png)
 
-3. Send this archive to Adguard tech support ([support@adguard.com](support@adguard.com)).
+3. Send this archive to Adguard [tech support](mailto:support@adguard.com).

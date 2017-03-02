@@ -110,7 +110,7 @@ You can easily find out which license keys belong to you in your [Adguard Accoun
 
 The binding of your license key with your account is held with your email address, which was used for purchasing of Adguard.
 
-You can also recover your license key with the help of [this page](http://adguard.com/license-recovery.html)..
+You can also recover your license key with the help of [this page](http://adguard.com/license-recovery.html).
 
 **Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the [Adguard Account](#account) before using it again.
 
@@ -124,7 +124,7 @@ If you don’t have Adguard Account, we suggest you register it by clicking [thi
 
 Adguard Account gives you an opportunity to manage your license keys and their binding with your computers.
 
-Find more on functions of the Account in this [article](#account-functions).
+Find more on functions of the Account [below](#account-functions).
 
 
 <a id="account-functions"></a>
@@ -145,7 +145,32 @@ To unbind the license key from computer just click the “Unbind” button as it
 
 #### Payment options
 
+You can purchase an Adguard license on our website. To do so:
+
+1\. Go to the [payment page](http://adguard.com/license.html).
+
+2\. Depending on whether you want to prolong an existing license Вkey or to purchase a new one, choose the appropriate option.
+
+3\. Choose the license type. Currently, we have three different license types - **Premium**, **Standard** and **Mobile**. 
+
+*Note that **Mobile** license only suits for the Android devices. Adguard for iOS is not activated with license key - you can download it from iTunes AppStore.*
+
+4\. Choose the preferred currency, license period and the number of devices you want to use Adguard on.
+
+5\. Enter and confirm your email address.
+
+_**Attention!** Please, pay close attention to the email address you enter. The license key will be sent to this address, and it will be used to automatically create your Adguard personal account. Make sure you don't make any typos._
+
+6\. Choose the payment method.
+
+We offer the possibility to pay with a credit card or PayPal. 
 
 <a id="refund"></a>
 
+#### License key activation
+
+The purchased license key will be sent to the indicated email address. You need to activate your Adguard with this license key. The detailed instruction on how to do it is available [here](#activation).
+
 #### Refund policy
+
+To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option did you use. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.

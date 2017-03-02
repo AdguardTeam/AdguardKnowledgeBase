@@ -13,4 +13,4 @@ taxonomy:
 * [Как получить логи установки Adguard](http://testkb.adguard.com/ru/windows/solving-problems/installation-logs)
 * [Проблемы с вирусами](http://testkb.adguard.com/ru/windows/solving-problems/malware)
 
-Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку Adguard](http://testkb.adguard.com/ru/technical-support).
+Со временем этот раздел будет пополняться новыми статьями. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку Adguard](http://testkb.adguard.com/ru/technical-support).

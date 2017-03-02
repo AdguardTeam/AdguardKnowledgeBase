@@ -36,4 +36,4 @@ Choose “**Send to**”, then “**Compressed (zipped) folder**” as it’s sh
 
 ![](compressed%20folder.png)
 
-3. Send the created **Logs.zip** file to the Adguard support service.
+3. Send the created **Logs.zip** file to the Adguard [support service](mailto:support@adguard.com).

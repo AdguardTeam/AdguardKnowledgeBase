@@ -13,4 +13,4 @@ taxonomy:
 * [How to find Adguard installation logs](http://testkb.adguard.com/en/windows/solving-problems/installation-logs)
 * [If you suspect infection](http://testkb.adguard.com/en/windows/solving-problems/malware)
 
-If you haven't found a solution to your problem in our knowledge base, [Adguard Support Team](http://testkb.adguard.com/en/technical-support) will be happy to help.
+New articles will be added to this section with time. If you haven't found a solution to your problem in our knowledge base, [Adguard Support Team](http://testkb.adguard.com/en/technical-support) will be happy to help.

@@ -33,7 +33,7 @@ There are several options to tell us about the problem with advertising filter
 
 Filters are designed for use in all Adguard products. If you wish, you can also use them in Adblock Plus. However note that the syntax of Adguard filtering rules is more advanced than in ABP. Therefore, part of the rules will not work in ABP.
 
-You can find a manual of advertising content filtering rules creation syntax on [this link](/filterrules.html).
+You can find a manual of filtering rules creation syntax on [this link](/general/how-to-create-your-own-ad-filters).
 
 [Adguard Filter Policy](https://blog.adguard.com/en/adguard-news/adguard-filter-policy.html)
 

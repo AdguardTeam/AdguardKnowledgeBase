@@ -8,15 +8,18 @@ visible: true
 
 ![](cert_en.png)
 
-This problem is more common for the Firefox and Opera 12 users.
+This problem is more common for the Firefox-based browsers and Opera 12.
 
- The easiest way to solve it is to:
+<a name="basic"></a>
+The easiest way to solve it is to:
 
-1. Close your browser.
+1. Go to Adguard General Settings.
 
-2. Disable protection in Adguard. Wait for a few seconds.
+2. Scroll to the bottom to find 'Reinstall Certificate' button.
 
-3. Enable protection in Adguard on. Wait for 30-60 seconds.
+![](cert_en.png?cropResize=700,500)
+
+3. Click on it and wait until the certificate is automatically reinstalled. Note that browsers all will be closed.
 
 4. Open your browser. The problem should be solved.
 
@@ -25,15 +28,18 @@ If the problem persists, you should use one of specified manuals depending on yo
 
 * [Firefox](#firefox)
 * [Opera](#opera)
+
+<!---
 * [Comodo IceDragon](#comodo)
 * [K-Meleon](#k-meleon)
+--->
 
 <a name="firefox"></a>
 #### Firefox
 
 ![](ffox_en_1.png)
 
-If [basic manual](https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/21/10/the-connection-is-not-trusted) didn't help you, there are two ways to solve the problem.
+If [basic manual](#basic) didn't help you, there are two ways to solve the problem.
 
 **First way**
 
@@ -78,17 +84,20 @@ Disabling HTTPS filtering
 
 To do so:
 
-Go to the Adguard [extended interface](https://kb.adguard.com/index.php?/Knowledgebase/Article/View/19/9/how-to-enter-the-adguard-extended-interface).
+Go to the Adguard General settings.
+
 Disable the HTTPS filtering as it’s done in this picture:
 
 ![](https_en2.png)
+
+We do not recommend this way, as it will leave all your HTTPS traffic unfiltered. Only use it as a temporary measure and contact our [support team](/technical-support).
 
 <a name="opera"></a>
 #### Opera
 
 ![](opera_en_1.png)
 
-If [basic manual](https://kb.adguard.com/index.php?/Russian/Knowledgebase/Article/View/21/10/the-connection-is-not-trusted) didn't help you, there are two ways to solve the problem.
+If [basic manual](#basic) didn't help you, there are two ways to solve the problem.
 
 **First way**
 
@@ -141,12 +150,15 @@ Disabling HTTPS filtering.
 
 To do so:
 
-1. Go to the Adguard [extended interface](https://kb.adguard.com/index.php?/Knowledgebase/Article/View/19/9/how-to-enter-the-adguard-extended-interface).
+Go to the Adguard General settings.
 
-2. Disable the HTTPS filtering as it’s done in this picture:
+Disable the HTTPS filtering as it’s done in this picture:
 
 ![](https_en2.png)
 
+We do not recommend this way, as it will leave all your HTTPS traffic unfiltered. Only use it as a temporary measure and contact our [support team](/technical-support).
+
+<!---
 <a name="comodo"></a>
 #### Comodo IceDragon
 
@@ -238,4 +250,4 @@ After adding the certificate, restart the browser.
 
 ![](K-Meleon_8_EN.png)
 
-
+--->
