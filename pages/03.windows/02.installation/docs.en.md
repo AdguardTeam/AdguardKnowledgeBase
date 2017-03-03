@@ -58,4 +58,6 @@ If you need to uninstall or reinstall Adguard, do the following:
 
 ![](install_08_EN.png)
 
+In case regular uninstall doesn't work for any reason, you can try to use [Adguard Uninstall Tool](https://adguard.com/en/how-to-delete-adguard.html).
+
 To reinstall Adguard on your PC, launch the installation program again and repeat the steps in the Adguard Installation section.

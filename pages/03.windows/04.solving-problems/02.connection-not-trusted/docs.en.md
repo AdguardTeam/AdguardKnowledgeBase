@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-![](cert_en.png)
+![](https://cdn.adguard.com/public/Adguard/kb/en/cert_en.png)
 
 This problem is more common for the Firefox-based browsers and Opera 12.
 

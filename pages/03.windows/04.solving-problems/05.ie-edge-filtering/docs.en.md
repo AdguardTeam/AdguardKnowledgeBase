@@ -14,7 +14,7 @@ Most probably it’s because you are using Windows 8 or 8.1 and enhanced protect
 
 To do so:
 
-1. Go to the Adguard [extended interface](https://kb.adguard.com/index.php?/Knowledgebase/Article/View/19/0/how-to-enter-the-adguard-extended-interface).
+1. Go to the Adguard General Settings.
 
 2. Enable WFP driver as done in the picture:
 

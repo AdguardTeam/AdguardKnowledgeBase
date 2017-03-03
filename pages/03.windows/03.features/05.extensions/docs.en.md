@@ -32,5 +32,4 @@ This extension prevents popup windows from opening when you view web pages. Some
 
 ** Web of Trust **
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge Database.
-
+Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings.
