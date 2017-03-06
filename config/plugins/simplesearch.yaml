@@ -1,6 +1,14 @@
 enabled: true
 built_in_css: false
+display_button: false
+min_query_length: 3
 route: /search
 template: simplesearch_results
 filters:
-    category: docs
+  category:
+    - docs
+filter_combinator: and
+ignore_accented_characters: false
+order:
+  by: date
+  dir: desc
