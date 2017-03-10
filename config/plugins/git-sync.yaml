@@ -1,0 +1,18 @@
+enabled: true
+text_var: 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
+folders:
+  - pages
+repository: 'https://github.com/AdguardTeam/AdguardKnowledgeBase.git'
+user: vozersky
+webhook: /_git-sync
+branch: master
+remote:
+  name: origin
+  branch: master
+git:
+  author: gituser
+  name: GitSync
+  email: git-sync@trilby.media
+  bin: git
+logging: true
+password: gitsync-def50200482ac21188cbab6a6d29ba5f54831ddca3c9ac844584b18a3f657a11d74f08e945e0ff667696650d9d970975a556cc0742f8c7282b4f4d3b901e4bcb6b8965b40536eb10e98ab82bcf8e687ca7219d42bb96dc83529ad2d3904e

@@ -145,8 +145,6 @@ select[multiple=multiple]:focus {
     margin-bottom: 15px;
   }
 
-}
-
 /* Hides the sub-menu item if parent not active */
 .dd-item .dd-item ul li {
     display: none;
