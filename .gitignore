@@ -3,9 +3,12 @@ accounts/*
 plugins/*
 data/*
 assets/*
+themes/learn2
+
 config/plugins/admin.yaml
 config/security.yaml
-localhost/config/plugins/admin.yaml
+config/plugins/git-sync.yaml
+localhost/config/*
 
 # OS Generated
 .DS_Store*
