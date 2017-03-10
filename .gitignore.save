@@ -1,0 +1,18 @@
+]# Grav
+accounts/*
+plugins/*
+data/*
+assets/*
+config/plugins/admin.yaml
+config/security.yaml
+localhost/config/plugins/admin.yaml
+
+# OS Generated
+.DS_Store*
+thumbs.db
+Thumbs.db
+*.swp
+
+# Sass
+.sass-cache
+
