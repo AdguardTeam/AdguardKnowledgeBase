@@ -11,5 +11,3 @@ You can send us a message from "Support" section in program preferences. In this
 
 Also, you can just send us an [email](mailto:support@adguard.com) and we will answer you as soon as possible. Support Team usually responds within 24 hours.
 
-
-test
