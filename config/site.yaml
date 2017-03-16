@@ -7,6 +7,7 @@ taxonomies:
   - tag
 metadata:
   description: Adguard
+  generator:
 summary:
   enabled: true
   format: short

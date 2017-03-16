@@ -5,6 +5,7 @@ data/*
 assets/*
 themes/learn2
 
+config/
 config/plugins/admin.yaml
 config/security.yaml
 config/plugins/git-sync.yaml
