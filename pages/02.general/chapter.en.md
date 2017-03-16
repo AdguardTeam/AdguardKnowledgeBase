@@ -10,5 +10,3 @@ taxonomy:
 # General questions
 
 This section describes general issues and principles of Adguard products.
-
-TETSTSTSTSTSTSTSTST
