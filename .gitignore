@@ -11,6 +11,7 @@ config/security.yaml
 config/plugins/git-sync.yaml
 localhost/config/*
 
+
 # OS Generated
 .DS_Store*
 thumbs.db
@@ -19,4 +20,5 @@ Thumbs.db
 
 # Sass
 .sass-cache
+
 
