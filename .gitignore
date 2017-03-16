@@ -5,10 +5,12 @@ data/*
 assets/*
 themes/learn2
 
+config/
 config/plugins/admin.yaml
 config/security.yaml
 config/plugins/git-sync.yaml
 localhost/config/*
+
 
 # OS Generated
 .DS_Store*
@@ -18,4 +20,5 @@ Thumbs.db
 
 # Sass
 .sass-cache
+
 
