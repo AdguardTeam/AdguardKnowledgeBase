@@ -1,5 +1,7 @@
 ---
 title: 'What is "Useful ads"?'
+published: false
+visible: false
 ---
 
 ## Useful ads
