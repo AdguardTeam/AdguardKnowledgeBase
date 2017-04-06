@@ -10,6 +10,7 @@ config/plugins/admin.yaml
 config/security.yaml
 config/plugins/git-sync.yaml
 localhost/config/*
+config/site.yaml
 
 
 # OS Generated
