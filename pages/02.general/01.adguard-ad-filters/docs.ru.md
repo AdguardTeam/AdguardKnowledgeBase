@@ -14,6 +14,7 @@ visible: true
 *   [Фильтр полезной рекламы](#useful)
 *   [Русский фильтр](#russian)
 *   [Немецкий фильтр](#german)
+*   [Французский фильтр](#french)
 *   [Японский фильтр](#japanese)
 *   [Голландский фильтр](#dutch)
 *   [Испано-Португальский фильтр](#spanish)
@@ -111,6 +112,16 @@ visible: true
 Фильтр, позволяющий убрать рекламу с сайтов на немецком языке. Изначально основан на фильтре [EasyList Germany](https://easylist.adblockplus.org/). Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
 [Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/6.txt)
+
+
+
+<a id="french"></a>
+
+## Французский фильтр
+
+Фильтр, позволяющий убрать рекламу с сайтов на французском языке. Изначально основан на фильтре [Liste FR](https://forums.lanik.us/viewforum.php?f=91). Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/16.txt)
 
 
 

@@ -14,6 +14,7 @@ visible: true
 *   [Filter for useful ads](#useful)
 *   [Russian filter](#russian)
 *   [German filter](#german)
+*   [French filter](#french)
 *   [Japanese filter](#japanese)
 *   [Dutch filter](#dutch)
 *   [Spanish/Portuguese filter](#spanish)
@@ -111,6 +112,16 @@ License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativ
 Filter that enables removing of the ads from websites with German content. Originally based on the [EasyList Germany](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/6.txt)
+
+
+
+<a name="french"></a>
+
+## French filter
+
+Filter that enables removing of the ads from websites with French content. Originally based on the [Liste FR](https://forums.lanik.us/viewforum.php?f=91) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/16.txt)
 
 
 
