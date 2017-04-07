@@ -1,4 +1,4 @@
 ---
-title: 'Adguard on Xiaomi devices'
+title: 'Adguard на устройствах Xiaomi'
 ---
 
