@@ -1,6 +1,6 @@
 ---
 title: Установка
-published: false
+published: true
 taxonomy:
     category:
         - docs
