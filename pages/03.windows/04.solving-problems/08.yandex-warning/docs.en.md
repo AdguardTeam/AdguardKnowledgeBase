@@ -10,7 +10,7 @@ If you are a user of both Adguard for Windows and Yandex.Browser you may have co
 
 It may look scary, but in reality there is no reason to rush and uninstall either of the programs. Let us explain why.
 
-Both Adguard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system. 
+Both Adguard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system and steal private data. 
 
 However, Adguard also adds its certificate to the trusted ones to be able to filter all traffic and efficiently block ads. This leads to the warning message you have encountered.
 
