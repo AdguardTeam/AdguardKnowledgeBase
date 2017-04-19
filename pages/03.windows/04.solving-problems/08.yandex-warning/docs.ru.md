@@ -1,5 +1,5 @@
 ---
-title: 'Яндекс браузер и сертификат Adguard'
+title: 'Яндекс.Браузер и сертификат Adguard'
 ---
 
 something something
