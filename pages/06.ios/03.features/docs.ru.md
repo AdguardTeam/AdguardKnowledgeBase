@@ -62,3 +62,4 @@ AdGuard Pro фильтрует все виды рекламы, причем не
 
 С актуальным списком совместимых и несовместимых VPN-приложений можно ознакомиться по этой ссылке: [https://github.com/AdguardTeam/AdguardForiOS/issues/162](https://github.com/AdguardTeam/AdguardForiOS/issues/162).
 
+Кроме того, Adguard не имеет возможности полноценно блокировать рекламу при работе в сети wi-fi московского метрополитена.
