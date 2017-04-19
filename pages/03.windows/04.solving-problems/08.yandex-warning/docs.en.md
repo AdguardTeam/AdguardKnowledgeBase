@@ -16,6 +16,6 @@ However, Adguard also adds its certificate to the trusted ones to be able to fil
 
 ### What to do?
 
-The easiest way is to click on the **'Go to site'** button. This will tell Yandex.Browser to remember Adguard certificate as a trusted one, at least for a while. Normally, you won't have to see this message again, but it is not beyond the realm of possibility.
+The easiest way is to click on the **'Go to site'** button. This will tell Yandex.Browser to remember Adguard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again.
 
 Disabling the HTTPS filtering in Adguard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS, including **Yandex own ads**, will show up. We strongly advise against it if you want to keep the quality of ad blocking high.
