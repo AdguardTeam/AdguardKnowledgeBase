@@ -1,125 +1,125 @@
 ---
-title: 'Adguard beta testing'
+title: 'Бета-тестирование Adguard'
 published: true
 taxonomy:
     category:
         - docs
 ---
 
-There is&nbsp;an&nbsp;Adguard app for virtually every major platform out there, and we&nbsp;regularly release updates for all of&nbsp;them. This would not be&nbsp;possible without beta testing and, more importantly, beta testers. Want to&nbsp;become one? Here&rsquo;s how you can do&nbsp;it.<!--more-->
+Практически для каждой &laquo;большой&raquo; платформы&nbsp;&mdash; Windows, Mac, Android, iOS&nbsp;&mdash; существует своя версия Adguard, и&nbsp;все они регулярно обновляются. Это было&nbsp;бы невозможно без бета-тестирования и, что более важно, бета-тестеров. Хотите стать одним из&nbsp;них? Узнайте, как.<!--more-->
 
-### How to&nbsp;become a&nbsp;beta tester
+### Как стать бета-тестером
 
-We&nbsp;do&nbsp;not have any special requirements. All you need is&nbsp;to&nbsp;use Adguard, update to&nbsp;the beta version when it&nbsp;is&nbsp;available and report all spotted bugs. One important thing, though: you will need either [forum](https://forum.adguard.com/index.php) or&nbsp;[GitHub](https://github.com/) account (or&nbsp;both :)) to&nbsp;become our beta tester&nbsp;&mdash; so&nbsp;you might want to&nbsp;get it&nbsp;over with before going further.
+У&nbsp;нас нет никаких особых требований. Всё, что вам потребуется&nbsp;&mdash; использовать Adguard, вовремя обновляться до&nbsp;последней бета-версии и&nbsp;сообщать нам о&nbsp;замеченных ошибках. Есть, однако, одна важная вещь: вам потребуется аккаунт&nbsp;на [форуме](https://forum.adguard.com/index.php) или&nbsp;на [GitHub](https://github.com/), чтобы стать нашим бета-тестером&nbsp;&mdash; поэтому лучше сразу с&nbsp;этим разделаться.
 
-Now, once you have this settled, just follow one of&nbsp;these instructions, depending on&nbsp;the platform you are using:
+Теперь, когда с&nbsp;этим разобрались, просто следуйте одной из&nbsp;этих инструкций, в&nbsp;зависимости от&nbsp;используемой вами платформы:
 
 #### Windows
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your PC: 
+Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
 
-* OS&nbsp;version (x86&nbsp;or x64?);
-* Browser(s) used and its version;
-* Antivirus/firewall (name and version). 
+* Версия&nbsp;ОС (x86&nbsp;or x64?);
+* Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
+* Антивирус/брандмауэр (название и&nbsp;версия). 
 
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
+Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
-To&nbsp;get latest beta version either activate Adguard with beta license key you will be&nbsp;provided with, or&nbsp;manually set update channel to &rsquo;Beta&rsquo; in&nbsp;Adguard settings.
+Чтобы получить последнюю бета-версию, просто активируйте лицензию полученным бета-ключом, или&nbsp;же вручную выставьте в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
-Everything related to&nbsp;Adguard for Windows can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForWindows).
+Всё, что касается Adguard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
 #### Mac OS
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
+Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
 
-* OS&nbsp;version;
-* Browser(s) you use and its version;
-* Antivirus/firewall name and version (if&nbsp;you use&nbsp;it). 
+* Версия ОС;
+* Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
+* Название и&nbsp;версия антивируса/брандмауэра (если используете). 
 
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
+Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
-To&nbsp;get latest beta version download it&nbsp;from [this link](https://static.adguard.com/mac/Adguard.beta.dmg). Once activated with beta license key you will be&nbsp;provided with, the app will use the beta channel for its updates.
+Чтобы получить последнюю бета-версию, скачайте её&nbsp;по [этой ссылке](https://static.adguard.com/mac/Adguard.beta.dmg). После активации полученным бета-ключом приложение автоматически переключится на&nbsp;бета-канал обновлений.
 
-Everything related to&nbsp;Adguard for Mac can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForMac).
+Всё, что касается Adguard для Mac, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForMac) и&nbsp;обсудить прямо там&nbsp;же.
 
 #### Android
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your device:
+Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём устройстве:
 
-* Model;
-* Android version;
-* Version of&nbsp;OS kernel. 
+* Модель;
+* Версия Android;
+* Версия ядра (kernel). 
 
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
+Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
-You will be&nbsp;provided with a&nbsp;beta license key to&nbsp;activate Adguard on&nbsp;your phone with. The latest beta can be&nbsp;always downloaded from [adguard.com/apkb](https://adguard.com/apkb) or&nbsp;by&nbsp;switching to&nbsp;beta update channel in&nbsp;Adguard settings.
+Вы&nbsp;получите лицензионный бета-ключ, которым сможете активировать Adguard на&nbsp;вашем смартфоне/планшете. Последнюю бета-версию всегда можно скачать по&nbsp;ссылке adguard.com/apkb, либо переключив в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
-**Alternative: Amazon AppStore beta**
+**Альтернатива: бета Amazon AppStore**
 
-We&nbsp;are also looking for Amazon AppStore users who are willing to&nbsp;take part in&nbsp;Adguard beta test. In-app purchases are free for beta testers so&nbsp;there is&nbsp;no&nbsp;need for a&nbsp;license key. Just fill the same Google form, but select the respective checkbox. 
+Мы&nbsp;также ищем желающих принять участие в&nbsp;бета-программе в&nbsp;Amazon AppStore. Покупки в&nbsp;приложении бесплатны для бета-тестеров, так что там нет нужды в&nbsp;бета-ключе. Просто заполните ту&nbsp;же форму Google, но&nbsp;отметьте галочкой нужный пункт.
 
-Amazon is&nbsp;a&nbsp;separate update channel, all updates are served by&nbsp;Amazon app.
+Amazon имеет отдельный канал обновлений, и&nbsp;все обновления проходят через приложение в&nbsp;Amazon.
 
-Everything related to&nbsp;Adguard for Android can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid).
+Всё, что касается Adguard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
-#### Adguard/Adguard Pro for iOS
+#### Adguard/Adguard Pro для iOS
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate what device you are using. It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
+Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
-You will receive an&nbsp;email with an&nbsp;invitation to&nbsp;TestFlight.
+Вы&nbsp;получите e-mail с&nbsp;приглашением в&nbsp;TestFlight.
 
-***NOTE:*** *sometimes there is&nbsp;no&nbsp;active test build available. In&nbsp;this case, you will not receive an&nbsp;email notification until there is&nbsp;one.*
+***ВАЖНО:*** *иногда у&nbsp;нас нет активной тестовой сборки. В&nbsp;таких случаях вы&nbsp;не&nbsp;получите письма с&nbsp;уведомлением до&nbsp;тех пор, пока такая сборка не&nbsp;появится.*
 
-Everything related to&nbsp;Adguard for iOS can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForios).
+Всё, что касается Adguard для iOS, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForios) и&nbsp;обсудить прямо там&nbsp;же.
 
-#### Browser extensions
+#### Браузерные расширения
 
-Yes, we&nbsp;have beta versions of&nbsp;browser extensions too :) Depending on&nbsp;your browser, do&nbsp;the following:
+Да, для браузерных расширений у&nbsp;нас тоже есть бета-версии :) В&nbsp;зависимости от&nbsp;вашего браузера, выполните следующее:
 
 **Chromium/Opera**
 
-Download Adguard beta extension from [Chrome Store](https://chrome.google.com/webstore/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl).
+Скачайте бета-версию расширения Adguard&nbsp;в [Chrome Store](https://chrome.google.com/webstore/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl).
 
-***NOTE:*** *to&nbsp;be&nbsp;able to&nbsp;install extensions from Chrome Store to&nbsp;Opera browser, first install [this extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/).*
+***ВАЖНО:*** *чтобы получить возможность устанавливать расширения из&nbsp;Chrome в&nbsp;браузер Opera, сначала установите [это расширение](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/).*
 
 **Firefox**
 
-You can download Adguard beta extension&nbsp;at [this link](http://chrome.adtidy.org/app.html?app=main.xpi) simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
+Вы&nbsp;можете скачать бета-версию расширения Adguard&nbsp;по [этой ссылке](http://chrome.adtidy.org/app.html?app=main.xpi) просто перетащив скачанный файл в&nbsp;ваш браузер 
 
-**OR**&nbsp;directly from [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/?page=1#version-2.1.0-beta).
+**ИЛИ** скачав напрямую&nbsp;в [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/?page=1#version-2.1.0-beta).
 
-Users with older Firefox versions or&nbsp;PaleMoon can use our [legacy](http://chrome.adtidy.org/app.html?app=legacy.xpi) version. Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
+Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать [легаси-версию](http://chrome.adtidy.org/app.html?app=legacy.xpi) расширения. Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
 
 **Edge**
 
-Proceed to&nbsp;Adguard Beta [store page](https://www.microsoft.com/store/p/adguard-adblocker-beta/9ndmfr4cv25m) and click on &rsquo;Get the app&rsquo;. A&nbsp;window will pop&nbsp;up, click on&nbsp;the &rsquo;Get&rsquo; button there and wait for the download to&nbsp;finish. Edge browser will start automatically and ask you to&nbsp;enable Adguard.
+Перейдите на&nbsp;страницу расширения [Adguard Beta](https://www.microsoft.com/store/p/adguard-adblocker-beta/9ndmfr4cv25m) и&nbsp;кликните по&nbsp;кнопке &laquo;Получить приложение&raquo; и&nbsp;затем по&nbsp;кнопке &laquo;Установить&raquo; в&nbsp;открывшемся окне. Дождитесь окончания установки, после чего браузер Edge откроется автоматически и&nbsp;предложит включить расширение Adguard.
 
 **Safari**
 
-Download Adguard for Safari beta extension from [here](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
+Вы&nbsp;можете скаачать бета-версию браузерного расширения Adguard для Safari [отсюда](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Установите&nbsp;её, перетащив скачанный файл в&nbsp;ваш браузер.
 
-***NOTE:*** *beta version of&nbsp;Adguard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
+***ВАЖНО:*** *бета-версия расширения Adguard для Safari обновляется с&nbsp;нашего сервера. В&nbsp;Safari 9+&nbsp;такие обновления не&nbsp;могут осуществляться автоматически, поэтому вам нужно будет время от&nbsp;времени проверять обновления в&nbsp;разделе &laquo;Safari&raquo; -&gt; &laquo;Расширения&raquo;. Расширения для других браузеров будут обновляться автоматически.*
 
-At&nbsp;any time, you can visit this [GitHub repository](https://github.com/AdguardTeam/AdguardBrowserExtension/releases) to&nbsp;check if&nbsp;there is&nbsp;a&nbsp;new version available.
+Вы&nbsp;можете посетить этот [репозиторий GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases) в&nbsp;любое время, чтобы проверить, доступна&nbsp;ли новая версия.
 
-### How to&nbsp;report a&nbsp;bug
+### Как сообщить о&nbsp;замеченном баге
 
-Let&rsquo;s imagine the worst happened&nbsp;&mdash; you spotted a&nbsp;bug. Or&nbsp;maybe you just want to&nbsp;share your suggestion with developers? Anyway, there are several ways to&nbsp;let&nbsp;us know: 
+Давайте представим, что случилось худшее&nbsp;&mdash; вы&nbsp;заметили ошибку в&nbsp;работе Adguard. Или, может быть, вы&nbsp;просто хотите поделиться предложением с&nbsp;разработчиками? В&nbsp;любом случае, существуют различные способы связаться с&nbsp;нами: 
 
-* Go&nbsp;to [forum.adguard.com](forum.adguard.com) and post there a&nbsp;new thread (or&nbsp;find an&nbsp;existing one) in&nbsp;the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to&nbsp;read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* Откройте [forum.adguard.com](forum.adguard.com) и&nbsp;создайте новую тему (или найдите уже существующую) в&nbsp;[бета-разделе](https://forum.adguard.com/index.php?categories/4/) форума. Убедитесь, что перед этим вы&nbsp;ознакомились&nbsp;с [правилами форума](https://forum.adguard.com/index.php?threads/14858/);
 
-* Go&nbsp;to [GitHub](https://github.com/AdguardTeam/) and find a&nbsp;suitable repository. Create a&nbsp;new issue there and describe the bug/feature request in&nbsp;details;
+* Перейдите&nbsp;на [GitHub](https://github.com/AdguardTeam/) и&nbsp;найдите нужный репозиторий. Создайте новую задачу и&nbsp;детально опишите обнаруженный баг или ваш вопрос/предложение;
 
-The two methods above are highly preferable, but you can also use other, if&nbsp;needed:
+Эти два метода являются предпочитаемыми, но&nbsp;если нет возможности использовать&nbsp;их, можете использовать другие:
 
-* Find&nbsp;us on&nbsp;various social media, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) etc. This is&nbsp;not the most convenient way to&nbsp;discuss technical matters, though.
+* Найдите нас в&nbsp;различных социальных сетях, таких как [VK](https://vk.com/adguard), [Facebook](https://www.facebook.com/AdguardRu/), [Reddit](https://reddit.com/adguard/) и&nbsp;т.д. Однако, это не&nbsp;самое удобное место для обсуждения технических вопросов.
 
-* Contact our support team by&nbsp;sending an&nbsp;email either from in-app support tab or&nbsp;directly&nbsp;to [support@adguard.com](mailto:support@adguard.com);
+* Напишите в&nbsp;службу поддержки, либо отправив e-mail из&nbsp;встроенной в&nbsp;программу формы, либо написав напрямую на&nbsp;адрес [support@adguard.com](mailto:support@adguard.com);
 
-### What else?
+### Что ещё нужно знать?
 
-There is&nbsp;not much to&nbsp;add. You don&rsquo;t have to&nbsp;go&nbsp;out of&nbsp;your way in&nbsp;your search for bugs. You can just use Adguard in&nbsp;a&nbsp;way you normally would, just don&rsquo;t be&nbsp;lazy if&nbsp;you encounter a&nbsp;bug and report it :) Of&nbsp;course, we&nbsp;appreciate any additional effort and/or extra forum activity etc.
+Осталось добавить совсем немного. Вам не&nbsp;нужно лезть из&nbsp;кожи вон в&nbsp;поисках багов. Используйте Adguard так, как использовали&nbsp;бы его при обычных обстоятельствах, просто не&nbsp;поленитесь сообщить нам об&nbsp;ошибке, если заметите что-нибудь :) Конечно, мы&nbsp;рады любой инициативе и/или дополнительной активности на&nbsp;форуме и&nbsp;т.п.
 
-From time to&nbsp;time you will receive our newsletter, informing about the latest changes in&nbsp;beta version (in&nbsp;case you miss&nbsp;it) and other important news. You can unsubscribe from it&nbsp;if&nbsp;you want&nbsp;to.
+Время от&nbsp;времени вы&nbsp;будете получать новостную рассылку для бета-тестеров, информирующую о&nbsp;последних изменениях в&nbsp;бета-версиях (на&nbsp;случай, если вы&nbsp;упустили&nbsp;их) и&nbsp;другие важные новости. При желании вы&nbsp;можете отписаться от&nbsp;этой рассылки.
 
-And that&rsquo;s all! If&nbsp;you feel the urge to&nbsp;participate in&nbsp;Adguard beta testing program you now know what to&nbsp;do!
+И&nbsp;на&nbsp;этом всё! Если вы&nbsp;вдруг почуствовали острое желание присоединиться к&nbsp;бета-тестированию Adguard, вы&nbsp;знаете, что делать!
