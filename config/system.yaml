@@ -3,6 +3,8 @@ param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
+username_regex: '^[a-z0-9_-]{3,16}$'
+pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 languages:
   supported:
     - en
@@ -11,7 +13,7 @@ languages:
   translations: true
   translations_fallback: true
   session_store_active: false
-  http_accept_language: false
+  http_accept_language: true
   override_locale: false
 home:
   alias: /general
@@ -130,3 +132,4 @@ gpm:
   releases: stable
   method: auto
   verify_peer: true
+  official_gpm_only: true
