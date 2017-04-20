@@ -1,5 +1,5 @@
 ---
-title: 'What is "Useful ads"?'
+title: 'Что такое полезная реклама?'
 published: false
 visible: false
 ---
