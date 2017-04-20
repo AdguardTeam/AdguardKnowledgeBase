@@ -11,6 +11,7 @@ config/security.yaml
 config/plugins/git-sync.yaml
 localhost/config/*
 config/site.yaml
+config/system.yaml
 
 
 # OS Generated
