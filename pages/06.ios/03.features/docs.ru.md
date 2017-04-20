@@ -1,6 +1,6 @@
 ---
 title: Функции
-published: false
+published: true
 taxonomy:
     category:
         - docs
