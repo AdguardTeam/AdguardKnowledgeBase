@@ -918,4 +918,4 @@ example.com#@%#window.__gaq = undefined;
 
 We wish you luck with creating you own ad filters.
 
-If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/custom-filters.69/) dedicated to writing your own filtering rules.
+If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
