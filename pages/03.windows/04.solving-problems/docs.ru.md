@@ -12,5 +12,6 @@ taxonomy:
 * [Фильтрация в Internet Explorer и Edge](http://kb.adguard.com/ru/windows/solving-problems/ie-edge-filtering)
 * [Как получить логи установки Adguard](http://kb.adguard.com/ru/windows/solving-problems/installation-logs)
 * [Проблемы с вирусами](http://kb.adguard.com/ru/windows/solving-problems/malware)
+* [Яндекс.Браузер и сертификат Adguard](https://kb.adguard.com/ru/windows/solving-problems/yandex-warning)
 
 Со временем этот раздел будет пополняться новыми статьями. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку Adguard](http://kb.adguard.com/ru/technical-support).
