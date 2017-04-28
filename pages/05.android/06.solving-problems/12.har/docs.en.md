@@ -18,9 +18,11 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 
 4. Activate "pref.har.capture" (you will have to restart the protection).
 
-5. Now reproduce the problem - open the app, use it, find ads in it, then turn off "pref.har.capture".
+5. Now reproduce the problem - open the app, use it, find ads in it.
 
-6. Go to app cache folder and find the .har files. They are usually located in
+6. Now turn "pref.har.capture" off again.
+
+7. Go to app cache folder and find the .har files. They are usually located in
 
   ** /storage/emulated/Android/data/com.adguard.android/cache/har**
 
