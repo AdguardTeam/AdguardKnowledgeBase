@@ -29,7 +29,7 @@ AdGuard Pro filters all kinds of ads not only in Safari, but in many other iOS a
 
 ### System-wide filtering
 System-wide filtering allows to filter traffic in all apps and browsers installed on your device, while not requiring additional setup of any DNS services. This mode utilizes the Domain Names Filter as well as user-defined blacklist and whitelist settings. You don’t have to enable the Domain Names Filter manually in the Filters section – if the system-wide filtering is enabled, it will turn on automatically.
-The system-wide filtering mode uses a local VPN to block ads in browsers and other apps. Your traffic isn’t transferred to any third-party nodes as the filtering occurs right on your device. System-wide filtering can be fine-tuned with blacklist and whitelist, so that you can enable or disable blocking at your preference.
+The system-wide filtering mode uses a local VPN to block ads in browsers and other apps. Your traffic isn’t transferred to any third-party servers as the filtering occurs right on your device. System-wide filtering can be fine-tuned with blacklist and whitelist, so that you can enable or disable blocking at your preference.
 
 ### Filtering log
 Filtering log is another useful feature of AdGuard Pro. The log contains the full list of AdGuard-processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time.
