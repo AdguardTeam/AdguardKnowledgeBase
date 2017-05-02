@@ -43,7 +43,7 @@ visible: true
 
 ### Альтернативный способ для обладателей ROOT:
 
-1. Скачайте и запустите приложение [CatLog.](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat)
+1. Скачайте и запустите приложение [CatLog.](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess)
 
 2. Выберите в меню пункт "Запись/Record". Появится диалог выбора имени лога. Можно переименовать файл или просто нажать ОК. После этого можно нажать кнопку "Домой". CatLog продолжит записывать лог в фоновом режиме.
 
