@@ -43,7 +43,7 @@ Send this log to us by contacting support or by any other way.
 
 **Alternative way for ROOT users:**
 
-1. Download and run [CatLog.](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat)
+1. Download and run [CatLog.](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess)
 
 2. Choose "Record" in the menu. Choose a name for a log file or just press OK. Now you can press Home button, CatLog will continue recording the log in background.
 
