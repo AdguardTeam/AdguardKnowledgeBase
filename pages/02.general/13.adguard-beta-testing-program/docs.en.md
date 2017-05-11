@@ -1,6 +1,9 @@
 ---
 title: 'Adguard beta testing program'
 published: true
+taxonomy:
+    category:
+        - docs
 ---
 
 There is&nbsp;an&nbsp;Adguard app for virtually every major platform out there, and we&nbsp;regularly release updates for all of&nbsp;them. This would not be&nbsp;possible without beta testing and, more importantly, beta testers. Want to&nbsp;become one? Here&rsquo;s how you can do&nbsp;it.<!--more-->
