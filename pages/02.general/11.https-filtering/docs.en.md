@@ -23,7 +23,7 @@ Simply put, HTTPS means data encryption. But there’s still a problem: how can 
 
 ### Why does Adguard need to be able to filter HTTPS?
 
-The thing is, more and more websites, blogs, social media, etc. switch to HTTPS every day. And besides blogs and websites, more ad networks switch to HTTPS too, because it becomes necessary to display ads on the HTTPS-based website. Here are few examples of popular websites, where you can’t remove ads without filtering the HTTPS: youtube.com, facebook.com, twitter.com.
+The thing is, more and more websites, blogs, social media, etc. switch to HTTPS every day. And following blogs and websites, more ad networks switch to HTTPS too, because it becomes necessary to display ads on the HTTPS-based website. Here are few examples of popular websites, where you can’t remove ads without filtering the HTTPS: youtube.com, facebook.com, twitter.com.
 
 ### How does HTTPS filtering work?
 
