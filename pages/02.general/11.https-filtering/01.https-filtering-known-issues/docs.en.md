@@ -6,6 +6,7 @@ taxonomy:
 visible: true
 ---
 
+> Last update: 11 May 2017
 > Understanding this article may require from you the basic knowledge about encrypting, TLS protocol and HTTPS.
 
 First, look at this simple diagram that shows the general structure of HTTPS protocol:
