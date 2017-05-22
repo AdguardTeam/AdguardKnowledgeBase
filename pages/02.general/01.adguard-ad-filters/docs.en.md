@@ -19,6 +19,7 @@ visible: true
 *   [Dutch filter](#dutch)
 *   [Spanish/Portuguese filter](#spanish)
 *   [Turkish filter](#turkish)
+*   [Polish ads filter](#polish-ads)
 *   [Experimental filter](#experimental)
 *   [Mobile ads filter](#mobile)
 *   [Safari filter](#safari)
@@ -172,6 +173,16 @@ Filter designed to test certain hazardous filtering rules before they are added
 Filter that enables removing of the ads from websites with Turkish content. Created by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/13.txt)
+
+
+
+<a name="polish-ads"></a>
+
+## Polish ads filter
+
+This is an Adguard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites. This filter is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/238.txt)
 
 
 

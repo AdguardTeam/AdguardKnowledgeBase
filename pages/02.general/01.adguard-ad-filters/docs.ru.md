@@ -19,6 +19,7 @@ visible: true
 *   [Голландский фильтр](#dutch)
 *   [Испано-Португальский фильтр](#spanish)
 *   [Турецкий фильтр](#turkish)
+*   [Польский фильтр](#polish-ads)
 *   [Экспериментальный фильтр](#experimental)
 *   [Фильтр мобильной рекламы](#mobile)
 *   [Safari фильтр](#safari)
@@ -172,6 +173,16 @@ visible: true
 Фильтр, позволяющий убрать рекламу с сайтов на турецки языке. Разрабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
 [Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/13.txt)
+
+
+
+<a id="turkish"></a>
+
+## Польский фильтр
+
+Это специальное дополнение к фильтру Adblock polskie reguły. Этот Фильтр позволяет убрать рекламу с сайтов на польском языке. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/238.txt)
 
 
 
