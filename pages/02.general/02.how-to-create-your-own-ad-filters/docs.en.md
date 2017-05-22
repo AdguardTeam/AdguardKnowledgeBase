@@ -169,7 +169,7 @@ You can change the behavior of a "basic rule" by using additional modifiers. Mod
 
 Example:
 ```
-||domain.com$popup,third-party
+||domain.com^$popup,third-party
 ```
 
 > #### Visual representation
@@ -210,7 +210,7 @@ If there is a `third-party` modifier, the rule is only applied to third-party re
 
 ###### `third-party` examples
 
-* `||domain.com$third-party` — rule is applied to all domains, except `domain.com` and it's subdomains. Third-party request example: `http://example.org/banner.jpg`.
+* `||domain.com^$third-party` — rule is applied to all domains, except `domain.com` and it's subdomains. Third-party request example: `http://example.org/banner.jpg`.
 
 If there is a `~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
 
@@ -225,7 +225,7 @@ Adguard will try to close the browser tab with any address that matches a blocki
 
 ###### `popup`examples
 
-* `||domain.com*^$popup` — if you try to go to `http://domain.com` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
+* `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
