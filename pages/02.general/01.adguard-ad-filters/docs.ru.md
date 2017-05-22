@@ -176,7 +176,7 @@ visible: true
 
 
 
-<a id="turkish"></a>
+<a id="polish-ads"></a>
 
 ## Польский фильтр
 
