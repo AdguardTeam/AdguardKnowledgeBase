@@ -38,7 +38,7 @@ To purchase Adguard license key click [here](https://adguard.com/license.html).
 
 [How to activate Adguard for Android](#activation_android) 
 
-[Transfering license to another computer](#activation_info)
+[Transfering license to another device](#activation_info)
 
 
 <a id="activation_windows"></a>
@@ -98,7 +98,7 @@ To do it, click on yellow button in the bottom of app's main screen: 
 
 
 <a id="activation_info"></a>
-#### Transfering license to another computer
+#### Transfering license to another device
 
 Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to unbind it from one of them before using this key again. You can do it in your [Adguard Account](#account-functions).
 
