@@ -245,7 +245,7 @@ This modifier completely changes the rule behavior. If it is applied to a rule, 
 
 > In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
-For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other type rule type. Other basic rules have no influence on it.
+For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other rule type. Other basic rules have no influence on it.
 
 >Multiple rules matching a single request.
 >In case if multiple $csp rules match a single request, we will apply each of them.
@@ -949,7 +949,7 @@ example.com#@%#window.__gaq = undefined;
 <a id="disabling"></a>
 ## Disabling rules optimization ##
 
-By gathering statistics on used filtering rules, we can detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard. The collected statistics will be sent periodically to our server for analysis and filter optimization. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
+By gathering anonymous statistics on used filtering rules, we can detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard. The collected statistics will be sent periodically to our server for analysis and filter optimization. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
 
 We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
 
@@ -962,9 +962,9 @@ We recommend to use the hint for disabling rule optimization. "Hint" is a specia
 ```
 Note, that you can apply multiple hints. 
 
-```
-NOT_OPTIMIZED hint
-```
+
+#### NOT_OPTIMIZED hint
+
 
 Disables optimization for a rule.
 
@@ -988,7 +988,7 @@ This rule won't be optimized and will be available for Android only:
 
 #### PLATFORM and NOT_PLATFORM hints ####
 
-Specify which platforms can apply this rule.List of existing platforms:
+Specify which platforms can apply this rule. List of existing platforms:
 
 
 * windows - Adguard for Windows (<https://filters.adtidy.org/windows/filters/2.txt>)
@@ -1002,6 +1002,10 @@ Specify which platforms can apply this rule.List of existing platforms:
 * ext_chromium - Adguard browser extension for Chrome (<https://filters.adtidy.org/extension/chromium/filters/2.txt>)
 
 * ext_ff - Adguard browser extension for Firefox (<https://filters.adtidy.org/extension/firefox/filters/2.txt>)
+
+* ext_edge - Adguard browser extension for Edge (<https://filters.adtidy.org/extension/edge/filters/2.txt>)
+
+* ext_ublock - uBlock Origin (<https://filters.adtidy.org/extension/ublock/filters/2.txt>)
 
 * ext_safari - Adguard browser extension for Safari (<https://filters.adtidy.org/extension/safari/filters/2.txt>)
 
