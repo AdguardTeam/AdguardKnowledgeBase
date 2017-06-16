@@ -74,7 +74,7 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
-* [Disabling rules optimization](#disabling)
+* [Information for filters maintainers](#disabling)
 * [Good luck with creating filters!](#good-luck)
 
 <a id="introduction"></a>
@@ -947,9 +947,12 @@ example.com#@%#window.__gaq = undefined;
 ```
 
 <a id="disabling"></a>
-## Disabling rules optimization ##
+## Information for filters maintainers ##
 
-By gathering anonymous statistics on used filtering rules, we can detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard. The collected statistics will be sent periodically to our server for analysis and filter optimization. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
+If you are developing a third-party filter that is known by Adguard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by Adguard, if it is present in the known filters index: <https://filters.adtidy.org/extension/chromium/filters.json>.  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+
+
+###Hints###
 
 We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
 
@@ -964,10 +967,11 @@ Note, that you can apply multiple hints.
 
 
 #### NOT_OPTIMIZED hint
-
+By gathering anonymous statistics on used filtering rules, we can detect and remove the rules that are no longer used. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
 
 Disables optimization for a rule.
-
+Example:
+<https://filters.adtidy.org/extension/edge/filters/2_optimized.txt>
 
 Examples:
 
