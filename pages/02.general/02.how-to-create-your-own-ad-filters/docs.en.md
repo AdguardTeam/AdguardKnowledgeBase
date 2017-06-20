@@ -998,25 +998,25 @@ This rule won't be optimized and will be available for Android only:
 Specify which platforms can apply this rule. List of existing platforms:
 
 
-* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt] (https://filters.adtidy.org/windows/filters/2.txt)
+* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac - Adguard for Mac (<https://filters.adtidy.org/mac/filters/2.txt>)
+* mac - Example: English filter for Mac - [https://filters.adtidy.org/mac/filters/2.txt](https://filters.adtidy.org/mac/filters/2.txt)
 
-* android - Adguard for Android (<https://filters.adtidy.org/android/filters/2.txt>)
+* android - Example: English filter for Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* ios - Adguard for iOS (<https://filters.adtidy.org/ios/filters/2.txt>)
+* ios - Example: English filter for iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Adguard browser extension for Chrome (<https://filters.adtidy.org/extension/chromium/filters/2.txt>)
+* ext_chromium - Example: Adguard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Adguard browser extension for Firefox (<https://filters.adtidy.org/extension/firefox/filters/2.txt>)
+* ext_ff - Example: Adguard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Adguard browser extension for Edge (<https://filters.adtidy.org/extension/edge/filters/2.txt>)
+* ext_edge - Example: Adguard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt] (https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_ublock - uBlock Origin (<https://filters.adtidy.org/extension/ublock/filters/2.txt>)
+* ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
-* ext_safari - Adguard browser extension for Safari (<https://filters.adtidy.org/extension/safari/filters/2.txt>)
+* ext_safari - Example: Adguard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* ext_android_cb - Adguard Content Blocker (<https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt>)
+* ext_android_cb - Example: Adguard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 Examples:
 
