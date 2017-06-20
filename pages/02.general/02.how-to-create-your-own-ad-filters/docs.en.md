@@ -1010,7 +1010,7 @@ Specify which platforms can apply this rule. List of existing platforms:
 
 * ext_ff - Example: Adguard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Example: Adguard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt] (https://filters.adtidy.org/extension/edge/filters/2.txt)
+* ext_edge - Example: Adguard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
 * ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
