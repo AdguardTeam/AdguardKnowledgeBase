@@ -76,7 +76,7 @@ visible: true
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
 * [Information for filters maintainers](#for_maintainers)
     * [Hints](#hints)
-    * [Hints syntax](#hints_syntax)
+        * [Hints syntax](#hints_syntax)
         * [NOT_OPTIMIZED hint](#not_optimized)
         * [PLATFORM and NOT_PLATFORM hints](#platform_not_platform)
 * [Good luck with creating filters!](#good-luck)
@@ -953,7 +953,7 @@ example.com#@%#window.__gaq = undefined;
 <a id="for_maintainers"></a>
 ## Information for filters maintainers 
 
-If you are developing a third-party filter that is known by Adguard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by Adguard, if it is present in the known filters index: <https://filters.adtidy.org/extension/chromium/filters.json>.  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+If you maintain a third-party filter that is known to Adguard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by Adguard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
 <a id="hints"></a>
 ### Hints
@@ -961,7 +961,7 @@ If you are developing a third-party filter that is known by Adguard, you might b
 We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
 
 <a id="hints_syntax"></a>
-### Hints syntax 
+#### Hints syntax 
 
 ```
 
@@ -974,7 +974,7 @@ Note, that you can apply multiple hints.
 #### NOT_OPTIMIZED hint
 For large filters, AdGuard compiles two versions: full and optimized. Optimized version is much smaller and does not contain rules which are not used at all or used rarely. More information about rules optimization you may find in [this article](https://adguard.com/en/filter-rules-statistics.html).
 
-Example of optimized version of filter: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
+Example of optimized version of the English filter: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
 
 Examples:
 
@@ -998,9 +998,9 @@ This rule won't be optimized and will be available for Android only:
 Specify which platforms can apply this rule. List of existing platforms:
 
 
-* windows - Adguard for Windows (<https://filters.adtidy.org/windows/filters/2.txt>)
+* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt] (https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac -- Adguard for Mac (<https://filters.adtidy.org/mac/filters/2.txt>)
+* mac - Adguard for Mac (<https://filters.adtidy.org/mac/filters/2.txt>)
 
 * android - Adguard for Android (<https://filters.adtidy.org/android/filters/2.txt>)
 
