@@ -19,6 +19,7 @@ visible: true
             * [$third-party](#third-party-modifier)
             * [$popup](#popup-modifier)
             * [$match-case](#match-case-modifier)
+            * [$csp](#csp-modifier)
         * [Content type modifiers](#content-type-modifiers)
             * [Content type modifiers examples](#content-type-modifiers-examples)
             * [$image](#image-modifier)
@@ -73,6 +74,7 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
+* [Disabling rules optimization](#disabling)
 * [Good luck with creating filters!](#good-luck)
 
 <a id="introduction"></a>
@@ -103,11 +105,11 @@ For example:
 
 The most simple rules are so-called _"Basic rules"._ They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
 
-> #### Subqueries
-> Basic rules for blocking requests are applied only to **subqueries**. That means they will not block the loading of the page.
+> #### Sub-requests
+> Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page.
 
 > #### Response status
-> Browser detects a blocked subquery as completed with an error.
+> Browser detects a blocked request as completed with an error.
 
 <a id="basic-rules-syntax"></a>
 ### Basic rules syntax
@@ -118,7 +120,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
 * **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](# basic-rules-special-characters).
-* **`@@`** — A marker that is used in rules of exception. To turn off filtering for the query, start your rule with this marker.
+* **`@@`** — A marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
 * **`modifiers`** — Parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
 
 <a id="basic-rules-special-characters"></a>
@@ -126,7 +128,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * ```*``` — Wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
 * **`||`** — Matching the beginning of an address. With this character you don't have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
-* **`^`** — Separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`.
+* **`^`** — Separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
 * **`|`** — A pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
 
 > #### Visual representation
@@ -235,6 +237,37 @@ This modifier defines a rule which applies only to addresses that match the case
 ###### `match-case` examples
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+
+<a id="csp-modifier"></a>
+##### **`csp`**
+
+This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
+
+> In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
+
+For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other type rule type. Other basic rules have no influence on it.
+
+>Multiple rules matching a single request.
+>In case if multiple $csp rules match a single request, we will apply each of them.
+
+**csp syntax**
+
+_csp_ value syntax is similar to the Content Security Policy header syntax.
+
+_csp_ value can be empty in the case of exception rules. See examples section for further information.
+
+>Limitations
+
+>1. Please note, that there're a few characters forbidden in the csp value: (,), ($)
+>2. csp rules support limited list of modifiers: domain, important, subdocument
+>3. Rules with report-* directives are considered invalid.
+
+###### `csp` examples
+
+* ||example.org^$csp=frame-src 'none' — prohibits all frames on example.org and it's subdomains.
+* @@||example.org/page/*$csp=frame-src 'none' — disables all rules with csp modifier exactly matching frame-src 'none' on all the pages matching the rule pattern. For instance, the rule above.
+* @@||example.org/page/*$csp — disables all the $csp rules on all the pages matching the rule pattern.
+* ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: — disables inline scripts on all the pages matching the rule pattern.
 
 <a id="content-type-modifiers"></a>
 #### Restriction by content type
@@ -370,7 +403,7 @@ Disables the Stealth Mode for all corresponding pages and requests.
 
 ###### `stealth` example
 
-* `@@||example.com^$stealth` — disables `Stealth Mode` for all pages at `example.com` and all subdomains, and also for all requests and subqueries.
+* `@@||example.com^$stealth` — disables `Stealth Mode` for all pages at `example.com` and all subdomains, and also for all requests and sub-requests.
 
 <a id="generic-rules"></a>
 ##### Generic rules
@@ -911,6 +944,83 @@ For example, there is a rule in filter:
 If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@%#window.__gaq = undefined;
+```
+
+<a id="disabling"></a>
+## Disabling rules optimization ##
+
+By gathering statistics on used filtering rules, we can detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard. The collected statistics will be sent periodically to our server for analysis and filter optimization. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
+
+We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
+
+### Hints syntax ###
+
+```
+
+!+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
+
+```
+Note, that you can apply multiple hints. 
+
+```
+NOT_OPTIMIZED hint
+```
+
+Disables optimization for a rule.
+
+
+Examples:
+
+This rule won't be optimized:
+
+```
+!+ NOT_OPTIMIZED
+||example.org^
+```
+
+This rule won't be optimized and will be available for Android only:
+
+```
+!+ NOT_OPTIMIZED PLATFORM(android)
+||example.org^
+
+```
+
+#### PLATFORM and NOT_PLATFORM hints ####
+
+Specify which platforms can apply this rule.List of existing platforms:
+
+
+* windows - Adguard for Windows (<https://filters.adtidy.org/windows/filters/2.txt>)
+
+* mac -- Adguard for Mac (<https://filters.adtidy.org/mac/filters/2.txt>)
+
+* android - Adguard for Android (<https://filters.adtidy.org/android/filters/2.txt>)
+
+* ios - Adguard for iOS (<https://filters.adtidy.org/ios/filters/2.txt>)
+
+* ext_chromium - Adguard browser extension for Chrome (<https://filters.adtidy.org/extension/chromium/filters/2.txt>)
+
+* ext_ff - Adguard browser extension for Firefox (<https://filters.adtidy.org/extension/firefox/filters/2.txt>)
+
+* ext_safari - Adguard browser extension for Safari (<https://filters.adtidy.org/extension/safari/filters/2.txt>)
+
+* ext_android_cb - Adguard Content Blocker (<https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt>)
+
+Examples:
+
+This rule will be available for Windows, Mac, and Android only:
+
+```
+!+ PLATFORM(windows,mac,android)
+||example.org^
+```
+
+This rule will be available for every platform except Safari extension, iOS, and Android content blocker:
+
+```
+!+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
+||example.org^
 ```
 
 <a id="good-luck"></a>
