@@ -957,16 +957,12 @@ If you maintain a third-party filter that is known to Adguard, you might be inte
 
 <a id="hints"></a>
 ### Hints
-
-We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
+"Hint" is a special comment, instruction to the filters compiler used on the server side.
 
 <a id="hints_syntax"></a>
 #### Hints syntax 
-
 ```
-
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
-
 ```
 Note, that you can apply multiple hints. 
 
