@@ -19,6 +19,7 @@ visible: true
             * [$third-party](#third-party-modifier)
             * [$popup](#popup-modifier)
             * [$match-case](#match-case-modifier)
+            * [$csp](#csp-modifier)
         * [Ограничение по типу контента](#content-type-modifiers)
             * [Примеры ограничений](#content-type-modifiers-examples)
             * [$image](#image-modifier)
@@ -73,6 +74,11 @@ visible: true
     * [Синтаксис javascript правил](#javascript-rules-syntax)
     * [Примеры javascript правил](#javascript-rules-examples)
     * [Исключения для javascript правил](#javascript-rules-exceptions)
+* [Информация для разработчиков фильтров](#for_maintainers)
+    * [Hints](#hints)
+        * [Синтаксис Hints](#hints_syntax)
+        * [NOT_OPTIMIZED hint](#not_optimized)
+        * [PLATFORM и NOT_PLATFORM hints](#platform_not_platform)
 * [Удачи в составлении своих фильтров!](#good-luck)
 
 <a id="introduction"></a>
@@ -233,6 +239,37 @@ Adguard будет пытаться закрыть браузерную вкла
 ###### Примеры `match-case`
 
 * `*/BannerAd.gif$match-case` — такоe правило будет блокировать `http://example.com/BannerAd.gif`, но не `http://example.com/bannerad.gif`.
+
+<a id="csp-modifier"></a>
+##### **`csp`**
+
+Этот модификатор полностью изменяет поведение правила. Если он применяется к правилу, соответствующий запрос не будет блокироваться. Вместо этого будут изменены заголовки ответов.
+
+> Чтобы использовать этот тип правил, необходимо иметь базовое представление об уровне обеспечения безопасности [Content Security Policy (CSP, политика защиты контента)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
+
+Для запросов, соответствующих правилу $csp, мы усилим политику безопасности ответа, добавив дополнительную политику безопасности контента, соответствующую содержимому модификатора $csp. Правила csp применяются независимо от любых других типов правил. Другие основные правила не оказывают на них влияния.
+
+>Несколько правил, соответствующих одному запросу.
+>Если несколько правил $csp соответствуют одному запросу, мы будем применять каждое из них.
+
+**синтаксис csp**
+
+Синтаксис значения _csp_ аналогичен синтаксису заголовка политики безопасности контента (Content Security Policy).
+
+Значение _csp_ может быть пустым при использовании его в правиле исключения. Обратитесь к разделу "Примеры" для получения более подробной информации.
+
+>Ограничения
+
+>1. Пожалуйста, учтите, что в значении csp запрещено использование следующих символов: (,), ($)
+>2. Правила csp поддерживают ограниченный список модификаторов: domain, important, subdocument
+>3. Правила с директивами report-* считаются недействительными.
+
+###### Примеры `csp` 
+
+* ||example.org^$csp=frame-src 'none' — запрещает все фреймы на домене example.org и его поддоменах.
+* @@||example.org/page/*$csp=frame-src 'none' — Отключает все правила с модификатором csp, точно совпадающим с  frame-src 'none' на всех страницах, соответствующих шаблону правила. Например, правило, приведенное выше.
+* @@||example.org/page/*$csp — отключает все правила $csp на всех страницах, соответствующих шаблону правила.
+* ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: — отключает встроенные скрипты на всех страницах, соответствующих шаблону правила.
 
 <a id="content-type-modifiers"></a>
 #### Ограничение по типу контента
@@ -908,6 +945,86 @@ rule = [domains]  "#%#" script
 Если вы хотите отключить это правило для домена `example.com`, можно воспользоваться правилом-исключением.
 ```
 example.com#@%#window.__gaq = undefined;
+```
+<a id="for_maintainers"></a>
+## Информация для разработчиков фильтров
+
+Если вы разрабатываете сторонний фильтр, известный Adguard, вам может быть интересна информация, представленная в настоящем разделе. Пожалуйста, имейте в виду, что специальные комментарии hint будут применяться только к зарегистрированным фильтрам. Фильтр считается зарегистрированным и известным Adguard, если он присутствует в [перечне известных фильтров](https://filters.adtidy.org/extension/chromium/filters.json).  Если вы желаете зарегистрировать свой фильтр, пожалуйста, направьте запрос в [репозиторий AdguardFilters](https://github.com/AdguardTeam/AdguardFilters).
+
+<a id="hints"></a>
+### Hints
+
+"Hint" - это специальный комментарий, инструкция для компилятора фильтров, работающего на стороне сервера.
+
+<a id="hints_syntax"></a>
+#### Синтаксис Hints
+```
+!+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
+```
+Обратите внимание: вы можете использовать несколько комментариев hint. 
+
+<a id="not_optimized"></a>
+#### NOT_OPTIMIZED hint
+В случае использования больших фильтров AdGuard компилирует две версии: полную и оптимизированную. Оптимизированная версия имеет намного меньший объем и не включает правила, которые не используются совсем или используются редко. Более подробную информацию об оптимизации правил можно получить, ознакомившись с [этой статьей](https://adguard.com/ru/filter-rules-statistics.html).
+
+Пример оптимизированной версии английского фильтра представлен по следующей ссылке: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
+
+Примеры:
+
+Это правило не будет оптимизировано:
+
+```
+!+ NOT_OPTIMIZED
+||example.org^
+```
+
+Это правило не будет оптимизировано и будет действовать только для ОС Android:
+
+```
+!+ NOT_OPTIMIZED PLATFORM(android)
+||example.org^
+
+```
+<a id="platform_not_platform"></a>
+#### PLATFORM и NOT_PLATFORM hints
+
+Записи этого типа позволяют указывать системную платформу, для которой применяется правило. Ниже представлен список используемых платформ:
+
+
+* windows - Пример: английский фильтр для Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+
+* mac - Пример: английский фильтр для Mac - [https://filters.adtidy.org/mac/filters/2.txt](https://filters.adtidy.org/mac/filters/2.txt)
+
+* android - Пример: английский фильтр для Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+
+* ios - Пример: английский фильтр для iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+
+* ext_chromium - Пример: расширение Adguard для браузера Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+
+* ext_ff - Пример: расширение Adguard для браузера Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+
+* ext_edge - Пример: расширение Adguard для браузера Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+
+* ext_ublock - Пример: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
+
+* ext_safari - Пример: расширение Adguard для браузера Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+
+* ext_android_cb - Пример: Adguard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+
+Примеры:
+
+Это правило будет действовать только для Windows, Mac и Android:
+
+```
+!+ PLATFORM(windows,mac,android)
+||example.org^
+```
+
+Это правило будет действовать для всех платформ за исключением расширения Safari, iOS, и Android:
+
+```
+!+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
+||example.org^
 ```
 
 <a id="good-luck"></a>

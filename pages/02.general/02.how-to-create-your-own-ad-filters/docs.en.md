@@ -74,7 +74,11 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
-* [Disabling rules optimization](#disabling)
+* [Information for filters maintainers](#for_maintainers)
+    * [Hints](#hints)
+        * [Hints syntax](#hints_syntax)
+        * [NOT_OPTIMIZED hint](#not_optimized)
+        * [PLATFORM and NOT_PLATFORM hints](#platform_not_platform)
 * [Good luck with creating filters!](#good-luck)
 
 <a id="introduction"></a>
@@ -245,7 +249,7 @@ This modifier completely changes the rule behavior. If it is applied to a rule, 
 
 > In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
-For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other type rule type. Other basic rules have no influence on it.
+For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other rule type. Other basic rules have no influence on it.
 
 >Multiple rules matching a single request.
 >In case if multiple $csp rules match a single request, we will apply each of them.
@@ -946,28 +950,27 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@%#window.__gaq = undefined;
 ```
 
-<a id="disabling"></a>
-## Disabling rules optimization ##
+<a id="for_maintainers"></a>
+## Information for filters maintainers 
 
-By gathering statistics on used filtering rules, we can detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard. The collected statistics will be sent periodically to our server for analysis and filter optimization. More information about rules optimization you may find in the following article: <https://adguard.com/en/filter-rules-statistics.html>.
+If you maintain a third-party filter that is known to Adguard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by Adguard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
-We recommend to use the hint for disabling rule optimization. "Hint" is a special comment, instruction to the filters compiler used on the server side.
+<a id="hints"></a>
+### Hints
+"Hint" is a special comment, instruction to the filters compiler used on the server side.
 
-### Hints syntax ###
-
+<a id="hints_syntax"></a>
+#### Hints syntax 
 ```
-
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
-
 ```
 Note, that you can apply multiple hints. 
 
-```
-NOT_OPTIMIZED hint
-```
+<a id="not_optimized"></a>
+#### NOT_OPTIMIZED hint
+For large filters, AdGuard compiles two versions: full and optimized. Optimized version is much smaller and does not contain rules which are not used at all or used rarely. More information about rules optimization you may find in [this article](https://adguard.com/en/filter-rules-statistics.html).
 
-Disables optimization for a rule.
-
+Example of optimized version of the English filter: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
 
 Examples:
 
@@ -985,27 +988,31 @@ This rule won't be optimized and will be available for Android only:
 ||example.org^
 
 ```
+<a id="platform_not_platform"></a>
+#### PLATFORM and NOT_PLATFORM hints
 
-#### PLATFORM and NOT_PLATFORM hints ####
-
-Specify which platforms can apply this rule.List of existing platforms:
+Specify which platforms can apply this rule. List of existing platforms:
 
 
-* windows - Adguard for Windows (<https://filters.adtidy.org/windows/filters/2.txt>)
+* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac -- Adguard for Mac (<https://filters.adtidy.org/mac/filters/2.txt>)
+* mac - Example: English filter for Mac - [https://filters.adtidy.org/mac/filters/2.txt](https://filters.adtidy.org/mac/filters/2.txt)
 
-* android - Adguard for Android (<https://filters.adtidy.org/android/filters/2.txt>)
+* android - Example: English filter for Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* ios - Adguard for iOS (<https://filters.adtidy.org/ios/filters/2.txt>)
+* ios - Example: English filter for iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Adguard browser extension for Chrome (<https://filters.adtidy.org/extension/chromium/filters/2.txt>)
+* ext_chromium - Example: Adguard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Adguard browser extension for Firefox (<https://filters.adtidy.org/extension/firefox/filters/2.txt>)
+* ext_ff - Example: Adguard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_safari - Adguard browser extension for Safari (<https://filters.adtidy.org/extension/safari/filters/2.txt>)
+* ext_edge - Example: Adguard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_android_cb - Adguard Content Blocker (<https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt>)
+* ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
+
+* ext_safari - Example: Adguard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+
+* ext_android_cb - Example: Adguard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 Examples:
 
