@@ -24,12 +24,12 @@ Another argument in defense of search ads is that they are much less intrusive t
 
 When you enable 'Useful ads', the search ads in the following search engines are unblocked:
 
-* Google
-* Yahoo
-* Bing
-* Ask
-* Yandex
-* DuckDuckGo
+* Google;
+* Yahoo;
+* Bing;
+* Ask;
+* Yandex;
+* DuckDuckGo;
 * StartPage.
 
 ### Summary
