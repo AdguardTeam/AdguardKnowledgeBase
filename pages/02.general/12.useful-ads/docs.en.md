@@ -24,7 +24,7 @@ Another argument in defense of search ads is that they are much less intrusive t
 
 Basically, when an ad on a website is promoting this very website or other websites/social media/etc closely related to it, such ad is considered a self-promoting one.
 
-<img .......>
+![self-promo](https://user-images.githubusercontent.com/8577533/27700604-c9b6f330-5d06-11e7-8ac9-1a9120f720c8.png)
 
 Our general stance here is very similar to EasyList policy regarding self-promoting ads. According to our [filter policy](https://kb.adguard.com/general/adguard-filter-policy) we should not block these ads; we shouldn't, however, make an exception either if such ad is being blocked be some rule 'alongside' a regular ad.
 
@@ -43,6 +43,7 @@ When you enable 'Useful ads', the search ads in the following search engines are
 * Yandex
 * DuckDuckGo
 * StartPage
+
 As well as all self-promotional ads that satisfy our filter policy.
 
 
