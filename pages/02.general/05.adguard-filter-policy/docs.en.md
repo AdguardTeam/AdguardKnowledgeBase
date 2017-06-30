@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-When discussing Adguard ad filters, there is often one topic that causes disputes – whether shall Adguard block this or that ad. By framing the rules we stick to special criteria. Now it’s time to publish them. Our criteria are much similar to [EasyList Policy](https://easylist.adblockplus.org/en/policy), which we find correct and appropriate. Nevertheless, we have put changes to some points.
+When discussing Adguard ad filters, there is often one topic that causes disputes – whether shall Adguard block this or that ad. By framing the rules we stick to special criteria. Now it’s time to publish them. Our criteria are much similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. Nevertheless, we have put changes to some points.
 
 ![](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
 

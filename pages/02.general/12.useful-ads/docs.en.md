@@ -46,7 +46,6 @@ When you enable 'Useful ads', the search ads in the following search engines are
 
 As well as all self-promotional ads that satisfy our filter policy.
 
-
 ### Summary
 
 'Allow useful ads' is a 100% optional feature that can be helpful in some cases, and if you don't like it, you are free to disable it at any time. There are no and will never be any types of ads or individual ads included in there, which do not fall under one of the two categories described above.
