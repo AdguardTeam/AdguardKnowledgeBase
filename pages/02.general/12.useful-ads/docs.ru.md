@@ -1,49 +1,52 @@
 ---
-title: 'What is "Useful ads"?'
+title: 'Что такое "Полезная реклама"?'
 published: false
 visible: false
 ---
 
-## Useful ads
+## Поисковая реклама и самореклама
 
-**Disclaimer.** The term *'Useful ads'* doesn't imply that we have any kind of 'acceptable ads' program like Adblock Plus and some other adblockers, where they take money for leaving certain ads unblocked. This is not the case. We are not being paid for showing these ads, and we call them 'useful' and not 'acceptable' for a reason - they can be, in fact, helpful. This only refers to search ads and self-promotional ads.
+**Важно.** Хотя Adguard предоставляет опцию "Показывать поисковую рекламу и саморекламу", это не означает, что мы придерживаемся какой-либо программы "допустимой рекламы" наподобие Adblock Plus и некоторых других блокировщиков, которые получают деньги, чтобы оставлять опредленный тип рекламы за пределами блокировки. Это не тот случай. Нам не платят за показ этой рекламы и мы не случайно избегаем термина "допустимая реклама" - данный тип рекламы может быть дейтсвительно полезен пользователю в определенных случаях. Данная опция относится исключительно к рекламе в поисковой выдаче и так называемой саморекламе.
 
-Just to make it absolutely clear - this is **completely optional**. You can turn off the display of these ads at any time with no penalty whatsoever. Further we will explain which ads we consider useful.
+Чтобы окончательно прояснить - отображение данной рекламы **полностью опционально**. Вы можете отключить его в любое время без каких-либо негативных последствий. В дальнейшем мы расскажем, какую именно рекламу мы считаем полезной.
 
-### Search ads and why we consider them useful
+### Поисковая реклама и почему мы считаем её полезной
 
-Search ads are ads that you see among the results of a search query when using an online search engine like Google, Bing, DuckDuckGo etc. 
+Поисковая реклама - это реклама, которую вы видите среди результатов поисковой выдачи при использовании онлайн-поисковиков, таких как Google, Yandex, DuckDuckGo и т.д. 
 
-<img .......>
+![useful-ads](https://user-images.githubusercontent.com/28726429/27696874-7465be6c-5cfb-11e7-9672-99d20e4567db.png)
 
-These ads are always contextual, i.e. they are targeted to match whatever keywords you had used when you made the query. It helps you to find exactly what you are searching for. Moreover, search ads are often more relevant and helpful than the rest of the search results due to being manually moderated.  
+Эта реклама всегда контекстна, т.е. она нацелена на соответствие тем ключевым словам, которые вы использовали при написании поискового запроса. Это помогает найти именно то, что вы искали. Более того, поисковая реклама зачастую более релевантна и полезна, чем прочие результаты поиска, т.к. она проходит ручную модерацию.
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+Ещё один аргумент в защиту поисковой рекламы - она гораздо менее назойлива, чем многие другие форматы рекламы.
 
-### What is websites' self-promotion?
+### Что такое самореклама
 
-Basically, when an ad on a website is promoting this very website or other websites/social media/etc closely related to it, such ad is considered a self-promoting.
+Вкратце, если реклама на сайте продвигает сам сайт или другие непосредственно относящиеся к нему сайты/соцмедиа, такая реклама считается саморекламой.
 
-<img .......>
+![self-promo2](https://user-images.githubusercontent.com/28726429/27702527-04786ef8-5d0d-11e7-9eec-6aa7ab55ce05.png)
 
-Our stance here is very similar to EasyList policy regarding self-promoting ads. According to our [filter policy](https://kb.adguard.com/general/adguard-filter-policy) we should not block these ads (but we also shouldn't unblock them if it would lead to another third-party ad to be shown).
+Наша общая позиция в отношении саморекламы очень похожа на политику EasyList. В соответствии с нашей [политикой составления фильтров](https://kb.adguard.com/general/adguard-filter-policy), мы не должны блокировать такую рекламу; в то же время, мы не должны делать для неё исключений в случаях, когда она заблокирована каким-либо правилом "параллельно" с обычной рекламой.
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content). 
 
-### What ads are on the list?
+Частично это обсуловлено этическими причинами, но в основном тем, что такая реклама, как правило, неназойлива, и зачастую полезна для посетителя сайта (который, предположительно, заинтересован в данном сайте и его контенте).
+ 
+Включая "Показ поисковой рекламы и саморекламы", пользователи Adguard могут частично разблокировать показ такой саморекламы. 
 
-When you enable 'Useful ads', the search ads in the following search engines are unblocked:
+### Какая реклама входит в список полезной?
 
-* Google
-* Yahoo
-* Bing
-* Ask
+Когда вы ставите галочку напротив "Полезной рекламы", отображается поисковая реклама следующих систем:
+
+* Google             
 * Yandex
+* Yahoo
+* Ask
+* Bing
 * DuckDuckGo
-* StartPage.
+* StartPage
 
-As well as all self-promoting ads that satisfy our filter policy.
+А также вся самореклама, которая удовлетворяет нашей политике составления фильтров.
 
-### Summary
+### Заключение
 
-'Allow useful ads' is a 100% optional feature that can be helpful in some cases, and if you don't like it, you are free to disable it at any time. There are no and will never be any types of ads or individual ads included in there, which do not fall under one of the two categories described above.
+Настройка "Разрешить полезную рекламу" на 100% опциональна. В некоторых случаях она может быть полезна, однако если вам она не по душе, то вы вольны отключить её в любой момент. "Полезная реклама" не включает в себя, и никогда не будет включать ни одного типа рекламы (или отдельной рекламы), которая не подпадала бы под одну из описанных выше категорий.

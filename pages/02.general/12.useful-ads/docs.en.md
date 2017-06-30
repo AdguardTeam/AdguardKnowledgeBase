@@ -14,7 +14,7 @@ Just to make it absolutely clear - this is **completely optional**. You can turn
 
 Search ads are ads that you see among the results of a search query when using an online search engine like Google, Bing, DuckDuckGo etc. 
 
-<img .......>
+![useful-ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
 
 These ads are always contextual, i.e. they are targeted to match whatever keywords you had used when you made the query. It helps you to find exactly what you are searching for. Moreover, search ads are often more relevant and helpful than the rest of the search results due to being manually moderated.  
 
@@ -24,12 +24,12 @@ Another argument in defense of search ads is that they are much less intrusive t
 
 When you enable 'Useful ads', the search ads in the following search engines are unblocked:
 
-* Google
-* Yahoo
-* Bing
-* Ask
-* Yandex
-* DuckDuckGo
+* Google;
+* Yahoo;
+* Bing;
+* Ask;
+* Yandex;
+* DuckDuckGo;
 * StartPage.
 
 ### Summary
