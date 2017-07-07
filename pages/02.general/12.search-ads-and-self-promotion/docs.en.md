@@ -10,7 +10,7 @@ visible: true
 
 **Disclaimer.** While Adguard provides an option to show some ads, we do not have any kind of 'acceptable ads' program like Adblock Plus and some other adblockers, where they take money for leaving certain ads unblocked. This is not the case. We are not being paid for showing any of the ads, and we do not use the term 'acceptable' for a reason - ads we might show can be, in fact, useful and not just 'acceptable'. All of this only refers to the search ads and self-promotional ads.
 
-Just to make it absolutely clear - this is **completely optional**. You can turn off the display of these ads at any time with no penalty whatsoever. Further we will explain which ads we consider qualify for this definition.
+Just to make it absolutely clear - this is **completely optional**. You can turn off the display of these ads at any time with no penalty whatsoever. Further we will explain which ads qualify for this definition.
 
 ### Search ads
 
