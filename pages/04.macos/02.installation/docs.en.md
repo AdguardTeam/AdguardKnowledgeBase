@@ -47,7 +47,7 @@ Go to 'Applications' section. Find Adguard there, right-click on it and choose '
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/delete_mac.png)
 
 ### Advanced
-**Use this instruction only after performing all steps from ’standard uninstall’.** After it, do the following:
+**Use this instruction only after performing all steps from 'regular uninstall'.** After that, do the following:
 
 * Delete following Adguard files:
     * */Library/Application Support/com.adguard.Adguard* (folder)
@@ -59,7 +59,7 @@ Go to 'Applications' section. Find Adguard there, right-click on it and choose '
 
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/cfprefsd_find.png)
 
-* Stop the process which is&nbsp;run under the user (not the one run under root).
+* Stop the process which is being&nbsp;run under the user (not the one run under root).
 
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/cfprefsd_abort.png)
 
