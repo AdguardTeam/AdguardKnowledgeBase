@@ -48,7 +48,7 @@ To use Adguard on a PC or tablet under Microsoft Windows, you should download th
 
 ## Uninstalling and Reinstalling Adguard
 
-### Standard 
+### Regular 
 
 If you need to uninstall or reinstall Adguard, do the following:
 
@@ -56,7 +56,7 @@ If you need to uninstall or reinstall Adguard, do the following:
 
 ![](install_07_EN.png)
 
-* For Microsoft Windows 8.1, 8 and 7: Open **Control Panel**. Click** Uninstall a program** in the **Programs** section, then select **Adguard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking** Uninstall Adguard** in the window that opens.
+* For Microsoft Windows 8.1, 8 and 7: Open **Control Panel**. Click **Uninstall a program** in the **Programs** section, then select **Adguard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking **Uninstall Adguard** in the window that opens.
 
 ![](install_08_EN.png)
 
@@ -67,35 +67,26 @@ To reinstall Adguard on your PC, launch the installation program again and repea
 ### Advanced
 First of&nbsp;all, you need to&nbsp;download the uninstaller tool created by&nbsp;our
                         developers. You can do&nbsp;it&nbsp;by&nbsp;using
-                        <a target="_blank" href="https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip">this
-                            link</a>. Extract the archive to any folder on your PC and run the **Adguard_Uninstall_Utility.exe** file. Then follow the instruction below:
+                        [this link](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip"). Extract the archive to any folder on your PC and run the **Adguard_Uninstall_Utility.exe** file. Then follow the instruction below:
 
 * Choose <em>&rsquo;Standard uninstall&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
 
-<img class="article-screenshot"
-                                 src="https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu.png"
-                                 alt=""/>
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu.png)
                                  
 * Wait until uninstall is&nbsp;finished. there will be&nbsp;a&nbsp;string in&nbsp;the window:
                             <pre>"[OK] Uninstall finished"</pre>
                             
-<img class="article-screenshot"
-                                 src="https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/standard_uninstall.png"
-                                 alt=""/>
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/standard_uninstall.png)
 
 <b>Attention!</b> Follow steps 3-4 only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of Adguard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
 
 * Choose <em>&rsquo;Advanced uninstall&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
 
-<img class="article-screenshot"
-                                 src="https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu_adv.png"
-                                 alt=""/>
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu_adv.png)
                                  
 * Wait until uninstall is&nbsp;finished. there will be&nbsp;a&nbsp;string in&nbsp;the window:
                             <pre>"[OK] Uninstall finished"</pre>
 
-<img class="article-screenshot"
-                                 src="https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/advanced_uninstall.png"
-                                 alt=""/>
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/advanced_uninstall.png)
                                  
 Adguard is successfully uninstalled!                              
