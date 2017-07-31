@@ -88,7 +88,7 @@ Blocks irritating elements on webpages, including cookie notices, third-party w
 
 ## Filter for useful ads
 
-Filter that unblocks ads that may be useful to users. Advertising that falls under this filter shall comply with a set of rules. Learn more about this filter on [its page](/en/whitelist.html).
+Filter that unblocks ads that may be useful to users. Learn more about this filter on [this page](https://kb.adguard.com/en/general/search-ads-and-self-promotion).
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/10.txt)
 
