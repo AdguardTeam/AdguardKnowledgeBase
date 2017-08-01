@@ -498,7 +498,7 @@ replace = "/" regex "/" replacement "/" modifiers
 ###### Примеры `replace`
 
 ```
-://*.damoh.golem.de/$replace=/(<VAST(.|\s)*?>)(.|\s)*<\/VAST>/\$1<\/VAST>/i,domain=video.golem.de
+||damoh.golem.de^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
 ```
 
 В этом правиле можно выделить три части:
