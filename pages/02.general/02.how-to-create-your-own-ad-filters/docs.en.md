@@ -500,7 +500,7 @@ In `replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (
 ###### `replace` examples
 
 ```
-://*.damoh.golem.de/$replace=/(<VAST(.|\s)*?>)(.|\s)*<\/VAST>/\$1<\/VAST>/i,domain=video.golem.de
+||damoh.golem.de^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
 ```
 
 There are three parts in this rule:
