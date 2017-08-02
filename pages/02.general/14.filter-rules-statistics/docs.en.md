@@ -6,8 +6,6 @@ taxonomy:
 published: true
 visible: true
 ---
-
-## Tracking filter rules statistics
 ### Why do we need ad filters?
 Let us begin with the definition of what ad filters are. Thanks to these filters, Adguard removes ads from websites. 
 They are compiled manually, based on your complaints about ads on any of the websites. This is one of the most important elements of Adguard’s work – namely the quality of ad filters determines the quality of the whole Adguard’s work.
