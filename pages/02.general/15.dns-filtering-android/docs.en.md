@@ -6,8 +6,6 @@ taxonomy:
 published: true
 visible: true
 ---
-## DNS filtering on Android
-
 ### What is DNS?
 
 DNS stands for 'Domain name system', and its purpose is to translate websites 'names' into something browser can understand, i.e. IP addresses. Thus, each time you go to a website, your browser sends a request to a special server. That server either redirects the request to another server or replies with an IP address. Very schematically it can be represented like this:

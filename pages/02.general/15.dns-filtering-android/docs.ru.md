@@ -1,17 +1,11 @@
 ---
-title: 'DNS-фильтрация на устройствах с Android'
+title: 'DNS-фильтрация на устройствах c Android'
 taxonomy:
     category:
         - docs
+published: true
 visible: true
 ---
-What is DNS?
-How does DNS Filtering work? (blocks ad&tracking servers locally using simplified domain names filter and user filter).
-What is DNSCrypt and why it is important? (I'd mention this: https://blog.adguard.com/en/dns-track-you/)
-
-
-## DNS фильтрация на Android
-
 ### Что такое DNS?
 
 DNS означает "Domain name system" (система доменных имён) - это система, которая переводит названия сайтов на язык, понятный браузеру, т.е. IP-адреса. Таким образом, каждый раз, когда вы переходите на веб-сайт, ваш браузер посылает запрос к специальному серверу. Этот сервер либо перенаправляет запрос к вышестоящему серверу, либо посылает обратно ответ, содержащий IP-адрес. Схематично это можно изобразить так: 
