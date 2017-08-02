@@ -18,7 +18,7 @@ The same applies, of course, to all apps and programs that send any web requests
 
 Usually, your ISP provides a DNS server that does all the job. But in reality you are free to use any DNS server, and there are plenty of them to choose from. In fact, Adguard has its own DNS servers - you can read about Adguard DNS in [another article](https://kb.adguard.com/en/dns/overview).
 
-Adguard for Android app has a special 'Simplified domain names filter' containing a large amount of 'bad' addresses, which it uses in conjunction with User filter to block ad and tracking servers. Mind you, all this happens locally on your device with no extermal servers involved.
+Adguard for Android app has a special 'Simplified domain names filter' containing a large amount of 'bad' domains, which it uses in conjunction with User filter to block ad and tracking servers. Mind you, all this happens locally on your device with no extermal servers involved.
 
 The main advantage of this approach is it is extremely economical and saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage being the roughness of this method: specific URLs can't be blocked, only whole domains. It can sometimes lead to 'breaking' of a websites functionality.
 
