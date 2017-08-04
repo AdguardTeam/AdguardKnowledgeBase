@@ -72,14 +72,14 @@ Sanjay Nand
 ### Third-Party Software
 Adguard for Mac developers would like to thank:
 
-* Mozilla Foundation for Network Security Services libraries ([https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)) — License
-* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component ([http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)) — License
-* Ilija Tovilo for ITProgressIndicator component ([https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)) — License
-* Sparkle Project for Sparkle.framework component ([http://sparkle-project.org](http://sparkle-project.org)) — License
-* Robbie Hanson for GCDAsyncSocket component ([https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) — License
-* Tony Million for Reachability component ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — License
-* August «Gus» Mueller for Fmdb component ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — License
-* Stephen F. Booth for SFBCrashReporter project ([https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)) — License
+* Mozilla Foundation for Network Security Services libraries ([https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)) — [License](https://www.mozilla.org/MPL/)
+* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component ([http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)) — [License](http://opensource.org/licenses/mit-license.php)
+* Ilija Tovilo for ITProgressIndicator component ([https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)) — [License](http://opensource.org/licenses/Apache-2.0)
+* Sparkle Project for Sparkle.framework component ([http://sparkle-project.org](http://sparkle-project.org)) — [License](https://github.com/sparkle-project/Sparkle/blob/master/LICENSE)
+* Robbie Hanson for GCDAsyncSocket component ([https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) — [License](https://github.com/robbiehanson/CocoaAsyncSocket/wiki/License)
+* Tony Million for Reachability component ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — [License](https://github.com/tonymillion/Reachability/blob/master/LICENCE.txt)
+* August «Gus» Mueller for Fmdb component ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — [License](https://github.com/ccgus/fmdb/blob/master/LICENSE.txt)
+* Stephen F. Booth for SFBCrashReporter project ([https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)) — [License](https://github.com/sbooth/SFBCrashReporter/blob/master/COPYING)
 
 <a id="test2"></a>
 ### Testers
