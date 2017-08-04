@@ -1,7 +1,11 @@
-# Acknowledgements
-
-## Credits and Acknowledgments
-
+---
+title: "Credits and Acknowledgments"
+taxonomy:
+    category:
+        - docs
+published: true
+visible: true
+---
 * [Adguard for Windows](#win)
   * [Third-Party Software](#third1)
   * [Testers](#test1)

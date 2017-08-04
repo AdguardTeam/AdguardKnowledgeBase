@@ -1,7 +1,11 @@
-# Благодарности
-
-## Благодарности
-
+---
+title: "Благодарности"
+taxonomy:
+    category:
+        - docs
+published: true
+visible: true
+---
 * [Adguard для Windows](#win)
   * [Стороннее ПО](#third1)
   * [Тестировщики](#test1)
