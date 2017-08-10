@@ -993,7 +993,7 @@ example.com#@%#window.__gaq = undefined;
 
 * windows - Пример: английский фильтр для Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac - Пример: английский фильтр для Mac - [https://filters.adtidy.org/mac/filters/2.txt](https://filters.adtidy.org/mac/filters/2.txt)
+* mac - Пример: английский фильтр для Mac - [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
 * android - Пример: английский фильтр для Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
