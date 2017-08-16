@@ -8,13 +8,14 @@ taxonomy:
 
 This article provides answers to common questions about Adguard DNS. If you did not find here the answer to your question, just let us know by contacting our [support](emailto:support@adguard.com) or leave a comment/start a new thread on [our forum](https://forum.adguard.com/index.php?).
 
-* [What is Adguard DNS?](#what-is)
-* [Why use Adguard DNS?](#why-use)
-* [How does Adguard DNS work?](#how-works)
-* [What can Adguard DNS do except for blocking ads?](#what-else)
+* [What is AdGuard DNS?](#what-is)
+* [Why use AdGuard DNS?](#why-use)
+* [How does AdGuard DNS work?](#how-works)
+* [What can AdGuard DNS do except for blocking ads?](#what-else)
 * [What is DNSCrypt?](#dnscrypt)
-* [What devices can I use Adguard DNS with?](#devices)
-* [Why is Adguard DNS free? What’s the catch?](#free)
+* [What devices can I use AdGuard DNS with?](#devices)
+* [Why is AdGuard DNS free? What’s the catch?](#free)
+* [What ports does AdGuard DNS use?](#ports)
 * [I have some troubles or questions that are not covered by this F.A.Q. What do I do?](#support)
 
 <a id="what-is"></a>
@@ -58,6 +59,11 @@ There are no restrictions for which devices you can use it with. You can find a 
 ## Why is Adguard DNS free? What’s the catch?
 
 We will use Adguard DNS functionality as a part of other Adguard software, which will be distributed on a pay-to-use basis. We might also develop a paid version of Adguard DNS based on current one, more advanced and with more features.
+
+<a id="ports"></a>
+## What ports does AdGuard DNS use?
+
+Don't bother too much if you don't understand the question. It is a technical one, and doesn't concern 99% of users. AdGuard DNS uses default port 53, and an alternative port 5353. In case port 53 is blocked or unavailable, use port 5353 instead.
 
 <a id="support"></a>
 ## I have some troubles or questions that are not covered by this F.A.Q. What do I do?
