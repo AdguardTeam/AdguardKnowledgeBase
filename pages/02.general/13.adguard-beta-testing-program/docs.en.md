@@ -84,11 +84,11 @@ Download Adguard beta extension from [Chrome Store](https://chrome.google.com/we
 
 **Firefox**
 
-You can download Adguard beta extension&nbsp;at [this link](http://chrome.adtidy.org/app.html?app=main.xpi) simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
+You can get Adguard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
 
-**OR**&nbsp;directly from [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/?page=1#version-2.1.0-beta).
+**OR**&nbsp;directly from [AMO](https://addons.mozilla.org/firefox/addon/adguard-adblocker/versions/beta).
 
-Users with older Firefox versions or&nbsp;PaleMoon can use our [legacy](http://chrome.adtidy.org/app.html?app=legacy.xpi) version. Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
+Users with older Firefox versions or&nbsp;PaleMoon can use our legacy version, it can also be found on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
 
 **Edge**
 
