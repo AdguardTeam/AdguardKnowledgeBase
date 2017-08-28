@@ -83,11 +83,11 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 **Firefox**
 
-Вы&nbsp;можете скачать бета-версию расширения Adguard&nbsp;по [этой ссылке](http://chrome.adtidy.org/app.html?app=main.xpi) просто перетащив скачанный файл в&nbsp;ваш браузер 
+Вы&nbsp;можете установить бета-версию расширения Adguard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер 
 
-**ИЛИ** скачав напрямую&nbsp;в [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/?page=1#version-2.1.0-beta).
+**ИЛИ** установите последнюю бету напрямую&nbsp;из [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/beta).
 
-Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать [легаси-версию](http://chrome.adtidy.org/app.html?app=legacy.xpi) расширения. Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
+Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать легаси-версию расширения, её также можно найти в [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
 
 **Edge**
 
