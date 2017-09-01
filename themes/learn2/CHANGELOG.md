@@ -1,3 +1,10 @@
+# v1.7.0
+## 08/23/2017
+
+1. [](#improved)
+    * Added default page template.
+    * Added blueprints for docs and chapter pages
+
 # v1.6.3
 ## 01/31/2017
 

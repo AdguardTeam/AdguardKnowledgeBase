@@ -1,4 +1,5 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set github_link_position = github_link_position is defined ? github_link_position : theme_config.github.position %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getLanguage ?: 'en' }}">
 <head>
@@ -45,12 +46,7 @@
         <div id="header-wrapper">
             <div id="header">
                 <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
-                <div class="searchbox">
-                    <label for="search-by"><i class="fa fa-search"></i></label>
-                    <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN2_SEARCH_DOCUMENTATION'|t }}"
-                           data-search-input="{{ base_url_relative }}/search.json/query"/>
-                    <span data-search-clear><i class="fa fa-close"></i></span>
-                </div>
+                {% include 'partials/search.html.twig' %}
             </div>
         </div>
         {% include 'partials/sidebar.html.twig' %}
@@ -64,9 +60,9 @@
         <div class="padding highlightable">
             <a href="#" id="sidebar-toggle" data-sidebar-toggle><i class="fa fa-2x fa-bars"></i></a>
 
-            {% block topbar %}{% if theme_config.github.position == 'top' or config.plugins.breadcrumbs.enabled %}
+            {% block topbar %}{% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
             <div id="top-bar">
-                {% if theme_config.github.position == 'top' %}
+                {% if  github_link_position == 'top' %}
                 <div id="top-github-link">
                 {% include 'partials/github_link.html.twig' %}
                 </div>
@@ -81,7 +77,7 @@
             {% block content %}{% endblock %}
 
             {% block footer %}
-                {% if theme_config.github.position == 'bottom' %}
+                {% if  github_link_position == 'bottom' %}
                 {% include 'partials/github_note.html.twig' %}
                 {% endif %}
             {% endblock %}

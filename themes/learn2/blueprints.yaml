@@ -1,5 +1,5 @@
 name: Learn2
-version: 1.6.3
+version: 1.7.0
 description: "Learn2 is a new modern documentation theme for Grav"
 icon: book
 author:
@@ -57,10 +57,5 @@ form:
 
     github.commits:
         type: text
-        label: GitHub Tree
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
-
-    github.commits:
-        type: text
-        label: GitHub Tree
+        label: GitHub Commits
         default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/

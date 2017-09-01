@@ -6,7 +6,7 @@
 {% block content %}
 	<div id="chapter">
     	<div id="body-inner">
-    		<h1>Error {{ page.header.code }}</h1>
+    		<h1>{{ 'PLUGIN_ERROR.ERROR'|t }} {{ header.http_response_code }}</h1>
 			<p>
 				{{ page.content }}
 			</p>
