@@ -35,3 +35,32 @@ taxonomy:
 Для использования программы вам потребуется ввести пароль администратора вашей учетной записи macOS. Введите его в открывшемся диалоговом окне и нажмите кнопку **_ОК_**.
 
 ![](adguard_mac_4.png)
+
+## Удаление программы
+
+#### Стандартное удаление 
+
+Первым делом, откройте приложение «Finder», кликнув по соответствующей иконке:
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/finder.png)
+
+Перейдите в раздел *«Программы»*. Выберите в списке Adguard, кликните по нему правой кнопкой мыши и выберите пункт *«Переместить в корзину»*.
+
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/delete_mac.png)
+
+#### Продвинутое удаление
+
+Используйте эту инструкцию только после выполнения всех шагов из инструкции по «стандартному удалению». После её выполнения:
+
+1. Удалите следующие файлы Адгарда:
+ * целиком папку /Library/Application Support/com.adguard.Adguard
+ * целиком папку ~/Library/Application Support/com.adguard.Adguard
+ * файл ~/Library/Preferences/com.adguard.Adguard.plist
+2. Запустите приложение «Мониторинг системы».
+3. Через поиск найдите процесс *’cfprefsd’*.
+
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/cfprefsd_find.png)
+
+4. Остановите процесс, запущенный от имени пользователя.
+![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/cfprefsd_abort.png)
+
+Adguard полностью удален с вашего компьютера.
