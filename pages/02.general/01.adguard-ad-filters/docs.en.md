@@ -44,7 +44,7 @@ You can find a manual of filtering rules creation syntax on [this link](/gene
 
 ## English filter
 
-Filter that enables removing of the ads from websites with English content. Originally based on the [EasyList](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+Filter that enables removing of the ads from websites with English content. Originally based on the [EasyList](https://easylist.to/) filter. Modified by us according to the complaints from users. This filter is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
@@ -110,7 +110,7 @@ License: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativ
 
 ## German filter
 
-Filter that enables removing of the ads from websites with German content. Originally based on the [EasyList Germany](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+Filter that enables removing of the ads from websites with German content. Originally based on the [EasyList Germany](https://easylist.to/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/6.txt)
 
@@ -140,7 +140,7 @@ Filter that enables removing of the ads from websites in Japanese. Originally 
 
 ## Dutch filter
 
-Filter that enables removing of the ads from websites with Dutch content. Originally based on the [EasyList Dutch](https://easylist.adblockplus.org/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+Filter that enables removing of the ads from websites with Dutch content. Originally based on the [EasyList Dutch](https://easylist.to/) filter. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/8.txt)
 
