@@ -151,6 +151,8 @@ Sanjay Nand
 * Logback-android by Tony19 ([https://tony19.github.io/logback-android](https://tony19.github.io/logback-android))
 * Otto by Square ([http://square.github.io/otto](http://square.github.io/otto))
 * RootTools Library by Stericson ([https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools))
+* MaterialDesignRangePicker by Supratim Chakraborty ([https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker))
+* Hellocharts by Leszek Wach ([https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android))
 
 <a id="test3"></a>
 ### Тестировщики
