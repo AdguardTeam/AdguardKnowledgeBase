@@ -53,7 +53,7 @@ Wait for the installation to complete and press **Done**.
 
 Adguard is now installed on your device. You can launch the app by pressing its icon in the list of installed apps.
 
-<a name="uninstall">
+<a name="uninstall"></a>
 ## </a>Uninstalling/Reinstalling Аdguard
 
 If you need to reinstall Adguard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6) or **Apps** (Android 4, 5 and 7). Open the **Downloaded** tab in the list of installed apps, select **Adguard**, and press **Uninstall**.
