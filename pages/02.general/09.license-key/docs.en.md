@@ -110,8 +110,6 @@ You can easily find out which license keys belong to you in your [Adguard Accoun
 
 The binding of your license key with your account is held with your email address, which was used for purchasing of Adguard.
 
-You can also recover your license key with the help of [this page](http://adguard.com/license-recovery.html).
-
 **Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the [Adguard Account](#account) before using it again.
 
 
