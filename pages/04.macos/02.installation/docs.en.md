@@ -35,7 +35,7 @@ To use the application, you will need the administrator password for your macOS 
 
 ![](mac_install_EN_03.png)
 
-## Uninstall
+## <a name="uninstall">Uninstall
 
 ### Regular
 First of all, open 'Finder' app by clicking on a respective icon:
