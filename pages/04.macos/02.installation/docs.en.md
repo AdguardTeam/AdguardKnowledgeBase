@@ -35,7 +35,7 @@ To use the application, you will need the administrator password for your macOS 
 
 ![](mac_install_EN_03.png)
 
-<a name="uninstall">
+<a name="uninstall"></a>
 ## Uninstall
 
 ### Regular
