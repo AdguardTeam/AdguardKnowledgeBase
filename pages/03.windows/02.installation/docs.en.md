@@ -46,7 +46,7 @@ To use Adguard on a PC or tablet under Microsoft Windows, you should download th
 
 * Congratulations! You have successfully installed Adguard on your computer. On the screen you will see the main window where you can change the app’s settings.
 
-<a name="uninstall">
+<a name="uninstall"></a>
 ## Uninstalling and Reinstalling Adguard
 
 ### Regular 
