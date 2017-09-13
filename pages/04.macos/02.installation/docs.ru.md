@@ -36,7 +36,8 @@ taxonomy:
 
 ![](adguard_mac_4.png)
 
-## <a name="uninstall">Удаление программы
+<a name="uninstall">
+## Удаление программы
 
 #### Стандартное удаление 
 
