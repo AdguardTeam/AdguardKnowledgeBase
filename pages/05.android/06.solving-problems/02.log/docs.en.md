@@ -6,9 +6,9 @@ taxonomy:
 visible: true
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect "**log files**", or "**logs"**. Basically, it contains information about program and it's work. To collect those logs and send them to us you need to perform following steps:
+Sometimes in order to understand a problem and fix it we need to collect "**log files**", or "**logs**. Basically, these files contain information about the program and it's work. To collect those logs and send them to us you need to perform following steps:
 
-1. Open Adguard and go to "Settings".
+1. Open AdGuard and go to "Settings".
 
 2. Choose "Advanced" in the left menu.
 
@@ -16,16 +16,8 @@ Sometimes in order to understand a problem and fix it we need to collect "**log 
 
 4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
 
-5. Send us a message from program by choosing "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message. 
+5. Send us a message from program by choosing "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
 
-You can also download logs directly:
+As an alternative, you can export the logs (along with the *state.txt* file that contains information about AdGuard and system settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/Adguardteam/), [forum](https://forum.adguard.com/) or on another platform.
 
-**/storage/emulated/Android/data/com.adguard.android/cache/log**
-
-or, depending on device,
-
-**/sdcard/Android/com.adguard.android/cache/log ** or
-
-**/sdcard/data/Android/com.adguard.android/cache/log** or
-
-**/sdcard/Android/data/com.adguard.android/**
+To export logs and system information into a file, go to "Settings — Advanced" and tap on "Export logs and system info". Select the destination folder and tap on "Save".
