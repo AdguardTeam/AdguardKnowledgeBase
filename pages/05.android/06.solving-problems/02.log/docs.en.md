@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect "**log files**", or "**logs**. Basically, these files contain information about the program and it's work. To collect those logs and send them to us you need to perform following steps:
+Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work. To collect those logs and send them to us you need to perform following steps:
 
 1. Open AdGuard and go to "Settings".
 
