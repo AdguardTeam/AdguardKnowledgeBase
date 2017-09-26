@@ -17,7 +17,7 @@ taxonomy:
 
 Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
 
-* Версия&nbsp;ОС (x86&nbsp;or x64?);
+* Версия&nbsp;ОС (x86&nbsp;или x64?);
 * Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
 * Антивирус/брандмауэр (название и&nbsp;версия). 
 
@@ -27,7 +27,7 @@ taxonomy:
 
 Всё, что касается Adguard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
-#### Mac OS
+#### macOS
 
 Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
 
@@ -51,7 +51,7 @@ taxonomy:
 
 Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
-Вы&nbsp;получите лицензионный бета-ключ, которым сможете активировать Adguard на&nbsp;вашем смартфоне/планшете. Последнюю бета-версию всегда можно скачать по&nbsp;ссылке adguard.com/apkb, либо переключив в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
+Вы&nbsp;получите лицензионный бета-ключ, которым сможете активировать Adguard на&nbsp;вашем смартфоне/планшете. Последнюю бета-версию всегда можно скачать по&nbsp;ссылке [adguard.com/apkb](https://adguard.com/apkb), либо переключив в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
 **Альтернатива: бета Amazon AppStore**
 
@@ -75,13 +75,13 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 Да, для браузерных расширений у&nbsp;нас тоже есть бета-версии :) В&nbsp;зависимости от&nbsp;вашего браузера, выполните следующее:
 
-**Chromium/Opera**
+#### Chromium/Opera
 
 Скачайте бета-версию расширения Adguard&nbsp;в [Chrome Store](https://chrome.google.com/webstore/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl).
 
 ***ВАЖНО:*** *чтобы получить возможность устанавливать расширения из&nbsp;Chrome в&nbsp;браузер Opera, сначала установите [это расширение](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/).*
 
-**Firefox**
+#### Firefox
 
 Вы&nbsp;можете установить бета-версию расширения Adguard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер 
 
@@ -89,11 +89,11 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать легаси-версию расширения, её также можно найти в [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
 
-**Edge**
+#### Edge
 
 Перейдите на&nbsp;страницу расширения [Adguard Beta](https://www.microsoft.com/store/p/adguard-adblocker-beta/9ndmfr4cv25m) и&nbsp;кликните по&nbsp;кнопке &laquo;Получить приложение&raquo; и&nbsp;затем по&nbsp;кнопке &laquo;Установить&raquo; в&nbsp;открывшемся окне. Дождитесь окончания установки, после чего браузер Edge откроется автоматически и&nbsp;предложит включить расширение Adguard.
 
-**Safari**
+#### Safari
 
 Вы&nbsp;можете скаачать бета-версию браузерного расширения Adguard для Safari [отсюда](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Установите&nbsp;её, перетащив скачанный файл в&nbsp;ваш браузер.
 
@@ -121,4 +121,4 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 Время от&nbsp;времени вы&nbsp;будете получать новостную рассылку для бета-тестеров, информирующую о&nbsp;последних изменениях в&nbsp;бета-версиях (на&nbsp;случай, если вы&nbsp;упустили&nbsp;их) и&nbsp;другие важные новости. При желании вы&nbsp;можете отписаться от&nbsp;этой рассылки.
 
-И&nbsp;на&nbsp;этом всё! Если вы&nbsp;вдруг почуствовали острое желание присоединиться к&nbsp;бета-тестированию Adguard, вы&nbsp;знаете, что делать!
+И&nbsp;на&nbsp;этом всё! Если вы&nbsp;вдруг почувствовали острое желание присоединиться к&nbsp;бета-тестированию AdGuard, вы&nbsp;знаете, что делать!
