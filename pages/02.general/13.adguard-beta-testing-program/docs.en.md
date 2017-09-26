@@ -28,7 +28,7 @@ To&nbsp;get latest beta version either activate Adguard with beta license key yo
 
 Everything related to&nbsp;Adguard for Windows can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForWindows).
 
-#### Mac OS
+#### macOS
 
 Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
 
@@ -76,13 +76,13 @@ Everything related to&nbsp;Adguard for iOS can be&nbsp;found and discussed&nbsp;
 
 Yes, we&nbsp;have beta versions of&nbsp;browser extensions too :) Depending on&nbsp;your browser, do&nbsp;the following:
 
-**Chromium/Opera**
+#### Chromium/Opera
 
 Download Adguard beta extension from [Chrome Store](https://chrome.google.com/webstore/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl).
 
 ***NOTE:*** *to&nbsp;be&nbsp;able to&nbsp;install extensions from Chrome Store to&nbsp;Opera browser, first install [this extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/).*
 
-**Firefox**
+#### Firefox
 
 You can get Adguard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
 
@@ -90,11 +90,11 @@ You can get Adguard beta extension&nbsp;at [GitHub](https://github.com/AdguardTe
 
 Users with older Firefox versions or&nbsp;PaleMoon can use our legacy version, it can also be found on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
 
-**Edge**
+#### Edge
 
 Proceed to&nbsp;Adguard Beta [store page](https://www.microsoft.com/store/p/adguard-adblocker-beta/9ndmfr4cv25m) and click on &rsquo;Get the app&rsquo;. A&nbsp;window will pop&nbsp;up, click on&nbsp;the &rsquo;Get&rsquo; button there and wait for the download to&nbsp;finish. Edge browser will start automatically and ask you to&nbsp;enable Adguard.
 
-**Safari**
+#### Safari
 
 Download Adguard for Safari beta extension from [here](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
 
