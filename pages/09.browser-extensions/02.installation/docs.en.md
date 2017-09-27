@@ -17,7 +17,7 @@ taxonomy:
 <a name="t1"></a>
 ##  Adguard AdBlocker Installation in Google Chrome or Chromium
 
-Open in your browser the page of [Chrome Web Store](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg) (<https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg>). In the top of window that opened click _Add to Chrome_ button. 
+Open in your browser the page of [Chrome Web Store](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). In the top of window that opened click _Add to Chrome_ button. 
 
 ![](Chrome_01_EN.png)
 
