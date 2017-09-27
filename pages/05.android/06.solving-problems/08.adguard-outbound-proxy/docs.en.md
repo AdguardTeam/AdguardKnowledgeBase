@@ -6,17 +6,68 @@ taxonomy:
 visible: true
 ---
 
-Example: Setup Adguard to use Orbot as an outbound proxy.
+This article explains how to set up some of the most popular proxys to work with AdGuard.
 
-1. Open ["Orbot: Proxy with Tor"](https://play.google.com/store/apps/details?id=org.torproject.android) and press the "Start" button on the application's main screen.
+### How to use AdGuard with Tor
 
-2. Open Adguard, go to в "Settings" → "Advanced" → "Proxy settings"
+1. Open AdGuard and go to **Settings —— Proxy settings**. Download "Orbot: Proxy with Tor" by tapping on **Configure Tor® integration** button or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android). 
 
-3. Enter the following settings:
-   Proxy type: SOCKS4,
-   Proxy host: 127.0.0.1,
-   Proxy port: 9050.
+2. Open Orbot and press the **Start** button on the application's main screen.
+
+2. Go back to the **Proxy Settings** screen of AdGuard.
+
+3. Tap on the **Configure Tor® integration** button. 
+
+4. All the required fields will be pre-filled:
+
+Field      |  Value
+-------    | --------- 
+Proxy type | *SOCKS4* or *SOCKS5* 
+Proxy host | *127.0.0.1*
+Proxy port | *9050*
    
-4. Enable Adguard protection.
+Or you can tap on **Add proxy** and enter these values manually, then set the Orbot proxy as a default one.
+   
+5. Enable AdGuard protection.
 
-> Please note, Adguard will now forward traffic through Orbot proxy, if you disable Orbot proxy, then Internet connection be unavailable until you disable outbound proxy settings in Adguard
+> Please note, AdGuard will now forward all traffic through Orbot proxy, if you disable Orbot proxy, then Internet connection will be unavailable until you disable outbound proxy settings in AdGuard
+
+### How to use AdGuard with PIA (Private Internet Access)
+
+*here we presume that you are already a PIA VPN client and have it installed on your device*
+
+1. Open AdGuard and go to **Settings —— Proxy settings**.
+
+2. Tap on the **Add proxy** button and enter the following data:
+    
+Field      |  Value
+-------    | --------- 
+Proxy type | *SOCKS5* 
+Proxy host | *proxy-nl.privateinternetaccess.com*
+Proxy port | *1080*
+	
+3. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A Username starting with "x" and a random Password will be shown. Use them to fill out the **Username** and **Password** fields in AdGuard.
+
+4. Set this proxy as a default one by toggling the switch, then click *Save*.
+
+5. Enable AdGuard protection.
+
+### How to use AdGuard with TorGuard
+
+*here we presume that you are already a TorGuard client and have it installed on your device*
+
+1. Open AdGuard and go to **Settings —— Proxy settings**.
+
+2. Tap on the **Add proxy** button and enter the following data:
+
+Field      |  Value
+-------    | --------- 
+Proxy type | *SOCKS5* 
+Proxy host | *proxy.torguard.org* or *proxy.torguard.io*
+Proxy port | *1080* or *1085* or *1090*
+	
+3. For *Username* and *Password* fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
+
+4. Set this proxy as a default one by toggling the switch, then click *Save*.
+
+5. Enable AdGuard protection.
