@@ -10,7 +10,7 @@ This article explains how to set up some of the most popular proxys to work with
 
 ### How to use AdGuard with Tor
 
-1. Open AdGuard and go to **Settings —— Proxy settings**. Download "Orbot: Proxy with Tor" by tapping on **Configure Tor® integration** button or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android). 
+1. Open AdGuard and go to **Settings —— Proxy settings**. Download "Orbot: Proxy with Tor" by tapping on **Configure Tor® integration** button or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess). 
 
 2. Open Orbot and press the **Start** button on the application's main screen.
 
