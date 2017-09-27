@@ -78,4 +78,4 @@ There are several factors that can prevent certain traffic from being routed thr
 
 1. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab. 
 
-2. AdGuard does not route UDP through proxy,  only DNS requests and `$network` filtering rules. We plan to add UDP over SOCKS5 support later, but so far only TCP traffic is routed through outgoing proxy.
+2. AdGuard does not route UDP through proxy. We plan to add UDP over SOCKS5 support later, but so far only TCP traffic is routed through outgoing proxy.
