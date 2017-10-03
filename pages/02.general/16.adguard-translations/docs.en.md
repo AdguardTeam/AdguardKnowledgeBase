@@ -1,3 +1,11 @@
+---
+title: 'AdGuard translations'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
+
 The AdGuard translation program
 
 When it comes to the translations, we at AdGuard always heavily rely on volunteers.
