@@ -80,7 +80,7 @@ As it has already been mentioned before, we have moderators for each language. M
 
 - Approve the high-quality translations and disapprove the bad ones;
 - Look after the relevance of the translations; 
-- Participation in discussions in comments etc.
+- Participate in discussions in comment section etc.
 
 So, ask moderators any questions regarding the translations on Oneskyapp.
 
