@@ -66,9 +66,8 @@ In case regular uninstall doesn't work for any reason, you can try to use Advanc
 To reinstall Adguard on your PC, launch the installation program again and repeat the steps in the Adguard Installation section.
 
 ### Advanced
-First of&nbsp;all, you need to&nbsp;download the uninstaller tool created by&nbsp;our
-                        developers. You can do&nbsp;it&nbsp;by&nbsp;using
-                        [this link](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip"). Extract the archive to any folder on your PC and run the **Adguard_Uninstall_Utility.exe** file. Then follow the instruction below:
+First of&nbsp;all, you need to&nbsp;download the uninstaller tool created by&nbsp;our developers. You can do&nbsp;it&nbsp;by&nbsp;using
+[this link](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip"). Extract the archive to any folder on your PC and run the **Adguard_Uninstall_Utility.exe** file. Then follow the instruction below:
 
 * Choose <em>&rsquo;Standard uninstall&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
 
