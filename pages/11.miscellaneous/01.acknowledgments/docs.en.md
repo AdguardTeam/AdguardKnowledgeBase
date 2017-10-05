@@ -138,11 +138,11 @@ We always appreciate comments from our users, especially constructive ones :) Yo
 ## Adguard for iOS
 <a id="third4"></a>
 ### Third-Party Software
-* StaticDataTableViewController by peterpaulis ([https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)) — License
-* GZIP by nicklockwood ([https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP)) — License
-* Reachability component by Tony Million ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — License
-* Fmdb component by August «Gus» Mueller ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — License
-* NSStringPunycodeAdditions component by Nate Weaver ([https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)) — License
+* StaticDataTableViewController by peterpaulis ([https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)) — [License](https://github.com/peterpaulis/StaticDataTableViewController/blob/master/LICENSE.txt)
+* GZIP by nicklockwood ([https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP)) — [License](https://github.com/nicklockwood/GZIP/blob/master/LICENCE.md)
+* Reachability component by Tony Million ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — [License](https://github.com/tonymillion/Reachability/blob/master/LICENCE.txt)
+* Fmdb component by August «Gus» Mueller ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — [License](https://github.com/ccgus/fmdb/blob/master/LICENSE.txt)
+* NSStringPunycodeAdditions component by Nate Weaver ([https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)) — [License](https://github.com/Wevah/Punycode-Cocoa/blob/master/LICENSE)
 
 <a id="test4"></a>
 ### Testers
