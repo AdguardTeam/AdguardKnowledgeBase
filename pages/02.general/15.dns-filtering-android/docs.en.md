@@ -28,7 +28,7 @@ The main advantage of this approach is it is extremely economical and saving. On
 
 ### What is DNSCrypt and why is it important?
 
-If you use regular client-server protocol, you are at risk of your DNS requests being intercepted and, subsequently, eavesdropped and/or altered. The experiments [show that](https://blog.adguard.com/dns-track-you/) the DNS tracking can even be used to collect a 'profile of interests' for any user. Luckily, Adguard offers [DNSCrypt](dnscrypt.org) - a special protocol that encrypts communication with the DNS server, thus preventing tampering and tracking by any third party including your ISP.
+If you use regular client-server protocol, you are at risk of your DNS requests being intercepted and, subsequently, eavesdropped and/or altered. The experiments [show that](https://blog.adguard.com/dns-track-you/) the DNS tracking can even be used to collect a 'profile of interests' for any user. Luckily, Adguard offers [DNSCrypt](https://dnscrypt.org/) - a special protocol that encrypts communication with the DNS server, thus preventing tampering and tracking by any third party including your ISP.
 
 ![dnscrypt-scheme](DNSCrypt.png)
 
