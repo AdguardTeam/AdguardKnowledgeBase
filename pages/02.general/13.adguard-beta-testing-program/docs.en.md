@@ -96,7 +96,7 @@ Proceed to&nbsp;Adguard Beta [store page](https://www.microsoft.com/store/p/adgu
 
 #### Safari
 
-Download the latest AdGuard for Safari beta extension from [GitHub](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
+Download the latest AdGuard for Safari beta extension from [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
 
 ***NOTE:*** *beta version of&nbsp;AdGuard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
 
