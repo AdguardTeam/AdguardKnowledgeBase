@@ -84,7 +84,7 @@ Download Adguard beta extension from [Chrome Store](https://chrome.google.com/we
 
 #### Firefox
 
-You can get Adguard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
+You can get AdGuard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
 
 **OR**&nbsp;directly from [AMO](https://addons.mozilla.org/firefox/addon/adguard-adblocker/versions/beta).
 
@@ -96,11 +96,9 @@ Proceed to&nbsp;Adguard Beta [store page](https://www.microsoft.com/store/p/adgu
 
 #### Safari
 
-Download Adguard for Safari beta extension from [here](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
+Download the latest AdGuard for Safari beta extension from [GitHub](http://chrome.adtidy.org/app.html?app=AdguardBeta.safariextz). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
 
-***NOTE:*** *beta version of&nbsp;Adguard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
-
-At&nbsp;any time, you can visit this [GitHub repository](https://github.com/AdguardTeam/AdguardBrowserExtension/releases) to&nbsp;check if&nbsp;there is&nbsp;a&nbsp;new version available.
+***NOTE:*** *beta version of&nbsp;AdGuard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
 
 ### How to&nbsp;report a&nbsp;bug
 
