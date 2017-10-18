@@ -56,7 +56,7 @@ You will be&nbsp;provided with a&nbsp;beta license key to&nbsp;activate Adguard 
 
 **Alternative: Amazon AppStore beta**
 
-We&nbsp;are also looking for Amazon AppStore users who are willing to&nbsp;take part in&nbsp;Adguard beta test. In-app purchases are free for beta testers so&nbsp;there is&nbsp;no&nbsp;need for a&nbsp;license key. Just fill the same Google form, but select the respective checkbox. 
+We&nbsp;are also looking for Amazon AppStore users who are willing to&nbsp;take part in&nbsp;Adguard beta test. Just fill the same Google form, but select the respective checkbox. 
 
 Amazon is&nbsp;a&nbsp;separate update channel, all updates are served by&nbsp;Amazon app.
 
