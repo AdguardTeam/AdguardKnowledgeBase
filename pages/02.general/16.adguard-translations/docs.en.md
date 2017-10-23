@@ -6,7 +6,14 @@ taxonomy:
 visible: true
 ---
 
-The AdGuard translation program
+* [AdGuard translation program](#program)
+* [How to become a translator?](#become-translator)
+* [Guidelines and recommendations](#guidelines)
+* [Who are moderators?](#moderators)
+* [Reward system](#rewards)
+
+<a name="program"></a>
+### AdGuard translation program
 
 When it comes to the translations, we at AdGuard always heavily rely on volunteers.
 
@@ -14,6 +21,7 @@ We use OneSky app to manage the translations of our products — https://www.one
 
 If you want to be among volunteers who help us translate AdGuard, please read the following information to learn more about how to become our translator, as well as about the way we collaborate with them.
  
+ <a name="become-translator"></a>
 ### How to become a translator
 
 If you want to join AdGuard translators, first of all, go to OneSky and sign up/sign in.
@@ -46,7 +54,8 @@ Besides you can vote for any existing translations (please do!):
 
 You can find some useful tips reading the following information. Please, have a look at it.
 
-### Recommendations
+<a name="guidelines"></a>
+### Guidelines and recommendations
 
 There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of the phrases being translated.
 
@@ -82,6 +91,7 @@ Proper plural forms are extremely important, so please ask us in comments if any
 
 ![leave_comment](leave_comment.png)<br>
 
+<a name="moderators"></a>
 ### Moderators 
 
 As it has already been mentioned before, we have moderators for each language. Moderators:
@@ -96,7 +106,8 @@ In case you have any problems, send us an e-mail to [translate@adguard.com](mail
 
 However, we do hope that everything for you will go smoothly and without any difficulties! Hope to see you on our team! 
 
-### Rewards
+<a name="rewards"></a>
+### Reward system
 
 As every honest and well-done work should be rewarded, volunteers who actively translate on OneSky are eligible to request free AdGuard lifetime license key(s).
 
