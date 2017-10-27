@@ -12,6 +12,8 @@ visible: true
 * [Who are moderators?](#moderators)
 * [Reward system](#rewards)
 
+>**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AX-FRXAqBxnA).
+
 <a name="program"></a>
 ### AdGuard translation program
 
