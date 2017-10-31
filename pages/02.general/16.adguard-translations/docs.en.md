@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-* [AdGuard translation program](#program)
+* [About AdGuard translation program](#program)
 * [How to become a translator?](#become-translator)
 * [Guidelines and recommendations](#guidelines)
 * [Who are moderators?](#moderators)
@@ -15,7 +15,7 @@ visible: true
 >**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AX-FRXAqBxnA).
 
 <a name="program"></a>
-### AdGuard translation program
+### About AdGuard translation program
 
 When it comes to the translations, we at AdGuard always heavily rely on volunteers.
 
@@ -104,7 +104,7 @@ As it has already been mentioned before, we have moderators for each language. M
 
 So, ask moderators any questions regarding the translations on Oneskyapp.
 
-In case you have any problems, send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com). The Admins will answer you as soon as possible.
+In case you have any problems, send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AX-FRXAqBxnA). The Admins will answer you as soon as possible.
 
 However, we do hope that everything for you will go smoothly and without any difficulties! Hope to see you on our team! 
 
