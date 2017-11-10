@@ -55,6 +55,8 @@ There’s one serious problem with using HTTPS filtering - browsers completely i
 
 **ETA:** Just as with OCSP revocation support, we wait until the new filtering engine development is finished. ETA is December 2017 — January 2018.
 
+>Note: *Google's ["intent to remove"](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8) HPKP support adds some controversy and may end up interfering with our plans.*
+
 ### TLS v1.3 support
 
 By this moment, the latest stable TLS version is 1.2, dated by 2008. This protocol is pretty safe, provided it is configured correctly. On the other hand, an incorrect configuration leads to various vulnerabilities: [POODLE](https://blog.qualys.com/ssllabs/2014/10/15/ssl-3-is-dead-killed-by-the-poodle-attack), [FREAK](https://censys.io/blog/freak), [Logjam](https://weakdh.org/) and others.
