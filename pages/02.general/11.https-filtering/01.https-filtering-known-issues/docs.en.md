@@ -28,18 +28,6 @@ HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled t
 
 Below are listed all issues known to us and ETAs for the fixes.
 
-#### Phasing out SHA-1
-
-All modern browsers are discontinuing the support of SHA-1 certificates. This gradual process has begun in 2016 and is almost finished by the end of 2017. For example, Chrome doesn’t trust SHA-1 certificates starting from v56, Microsoft Edge browser - since 9th of May 2017.
-
-Current stable AdGuard versions do not trust either leaf or 'intermediate' SHA-1 certificates.
-
-**ETA:**
-
-* **Windows:** With the release of v6.2 of Adguard for Windows in November 2017, these certificates are not trusted anymore.
-* **Android:** The issue was fixed with the release of v2.9 in July 2017.
-* **Mac:** Fixed in v1.5.0 in September 2017.
-
 #### OCSP revocation checking
 
 The Internet security community has some [controversy](https://www.grc.com/revocation/crlsets.htm) regarding how useful OCSP checks are. For example, Chrome developers believe that this approach [doesn’t hold water](https://www.imperialviolet.org/2014/04/19/revchecking.html), and they suggest [an alternative solution](https://www.imperialviolet.org/2012/02/05/crlsets.html). Moreover, Android [doesn’t (and will not) support OCSP revocation checking](https://issuetracker.google.com/issues/36993981).
