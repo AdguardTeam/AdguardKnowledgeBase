@@ -6,11 +6,11 @@ taxonomy:
 visible: true
 ---
 
-* [What is Adguard license key?](#key)
-* [How to activate Adguard with a license key?](#activation)
+* [What is AdGuard license key?](#key)
+* [How to activate AdGuard with a license key?](#activation)
 * [How to recover my license key?](#recovery)
-* [How to register the Adguard Account?](#account)
-* [What functions are available in Adguard Account?](#account-functions)
+* [How to register the AdGuard Account?](#account)
+* [What functions are available in AdGuard Account?](#account-functions)
 
 <a name="key"></a>
 #### What is Adguard license key?
@@ -100,7 +100,7 @@ To do it, click on yellow button in the bottom of app's main screen: 
 <a id="activation_info"></a>
 #### Transfering license to another device
 
-Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to unbind it from one of them before using this key again. You can do it in your [Adguard Account](#account-functions).
+Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to reset it before using this key again. You can do it in your [Adguard Account](#account-functions).
 
 
 <a id="recovery"></a>
@@ -128,13 +128,13 @@ Find more on functions of the Account [below](#account-functions).
 <a id="account-functions"></a>
 ## What functions are available in Adguard Account?
 
-When you enter the Adguard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status:
+When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status:
 
 ![](https://images.adguard.com/public.php?service=files&amp;t=b0cfdc25634114c2b153b921bd4b6304&amp;download)
 
 If the license key is activated on one or more computers you will see the list of these computers under the license key. License key can be activated on a limited number of computers, before using it again you will have to unbind it from one of the computers.
 
-To unbind the license key from computer just click the “Unbind” button as it’s showed on this picture:
+To unbind the license key from computer just click the “Reset” button as it’s showed on this picture:
 
 ![](https://images.adguard.com/public.php?service=files&amp;t=2d66527cf14f09ba4417312accf57b52&amp;download)
 
