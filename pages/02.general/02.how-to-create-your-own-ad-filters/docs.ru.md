@@ -1005,6 +1005,8 @@ example.com#@%#window.__gaq = undefined;
 
 * ext_edge - Пример: расширение Adguard для браузера Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
+* ext_opera - Пример: расширение Adguard для браузера Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+
 * ext_ublock - Пример: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
 * ext_safari - Пример: расширение Adguard для браузера Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
