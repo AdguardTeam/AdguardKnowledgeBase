@@ -451,14 +451,17 @@ These modifiers are able to completely change the behaviour of basic rules.
 <a id="badfilter-modifier"></a>
 ##### **`badfilter`**
 
-The rules with the `badfilter` modifier disable other basic rules to which they refer. It means the text of disabled rule should match the text of `badfilter` rule (without the `badfilter` modifier).
+> #### Compatibility with different versions of AdGuard
+> `badfilter` modifier is currently only available in AdGuard browser extensions. It will be added to other AdGuard products later.
+
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
 ###### `badfilter` examples
 
 * `||example.com$badfilter` disables `||example.com`
-* `||example.com$badfilter,image` disables `||example.com,image`
+* `||example.com$image,badfilter` disables `||example.com,image`
 * `@@||example.com$badfilter` disables `@@||example.com`
-* `||example.com$badfilter,domain=domain.com` disables `||example.com$domain=domain.com`
+* `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
 > #### Compatibility with different versions of Adguard
 > Below modifiers from this section are only available in Adguard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
