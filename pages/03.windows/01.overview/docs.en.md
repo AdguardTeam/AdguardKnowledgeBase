@@ -5,6 +5,8 @@ taxonomy:
         - docs
 ---
 
+!!!TEST CHANGE!!!
+
 Adguard has been created to make your browsing experience pleasant and comfortable. It is not just a web filter and ad blocker – it is a convenient and fully adjustable tool that helps you save your traffic, load your web pages faster, and protect your computer from undesirable and potentially malicious content. With Adguard, you can forget all about annoying banners and popup windows. This is not the whole scope of the application’s capabilities, though. Adguard will protect you from phishing websites, and your children from information they should not yet come across due to age restrictions. However, everything in its turn.
 
 Adguard’s main function is filtering ads on websites you are visiting. It doesn’t matter which browser you use – Adguard works perfectly fine with any website-viewing applications. If your browser is not included in the list of default ones, you can add it there without any trouble. Apart from utilizing the ready-made set of filters, the user can block select objects on the pages they are viewing or turn off filtering for certain websites. Adguard not only filters the built-in banners on web pages but also prevents popup windows from opening and advertising clips from appearing when you watch online videos.
