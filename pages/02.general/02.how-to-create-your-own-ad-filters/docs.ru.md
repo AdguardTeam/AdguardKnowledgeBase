@@ -43,6 +43,7 @@ visible: true
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Расширенные возможности](#advanced-modifiers)
+        * [#badfilter](#badfilter-modifier)
         * [$empty](#empty-modifier)
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
@@ -445,8 +446,23 @@ domain.com###banner
 
 Модификаторы, описанные в этом разделе, полностью меняют поведение базовых правил, к которым эти модификаторы применены.
 
+<a id="badfilter-modifier"></a>
+##### **`badfilter`**
+
+> #### Совместимость с разными версиями AdGuard
+> Модификатор `badfilter` на данный момент работает только в браузерных расширениях AdGuard. Мы планируем в скором времени добавить поддержку этого модификатора и другими продуктами AdGuard.
+
+Правила, содержащие модификатор `badfilter`, отключают базовые правила, на которые они ссылаются. Это означает, что текст отключенного правила должен соответствовать тексту `badfilter`-правила (за исключением самого модификатора `badfilter`).
+
+###### Примеры `badfilter`
+
+* `||example.com$badfilter` отключает `||example.com`
+* `||example.com$image,badfilter` отключает `||example.com,image`
+* `@@||example.com$badfilter` отключает `@@||example.com`
+* `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
+
 > #### Совместимость с разными версиями Adguard
-> Модификаторы из этого раздела доступны только в Adguard для Windows, macOS и Android. Браузерные расширения ограничены возможностями, предоставляемыми браузерами, и некоторые функции им просто недоступны.
+> Модификаторы ниже из этого раздела доступны только в Adguard для Windows, macOS и Android. Браузерные расширения ограничены возможностями, предоставляемыми браузерами, и некоторые функции им просто недоступны.
 
 <a id="empty-modifier"></a>
 ##### **`empty`**

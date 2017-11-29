@@ -43,6 +43,7 @@ visible: true
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Advanced capabilites](#advanced-modifiers)
+        * [$badfilter](#badfilter-modifier)
         * [$empty](#empty-modifier)
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
@@ -447,8 +448,23 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 These modifiers are able to completely change the behaviour of basic rules.
 
+<a id="badfilter-modifier"></a>
+##### **`badfilter`**
+
+> #### Compatibility with different versions of AdGuard
+> `badfilter` modifier is currently only available in AdGuard browser extensions. It will be added to other AdGuard products later.
+
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+
+###### `badfilter` examples
+
+* `||example.com$badfilter` disables `||example.com`
+* `||example.com$image,badfilter` disables `||example.com,image`
+* `@@||example.com$badfilter` disables `@@||example.com`
+* `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
+
 > #### Compatibility with different versions of Adguard
-> Modifiers from this section are only available in Adguard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
+> Below modifiers from this section are only available in Adguard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
 
 <a id="empty-modifier"></a>
 ##### **`empty`**
