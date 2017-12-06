@@ -11,21 +11,20 @@ visible: true
 * [Userstyles.org](#userstyles)
 * [Greasy Fork](#greasyFork)
 * [OpenUserJS.org](#openUserJs)
-* [MonkeyGuts](#monkeyGuts)
 
 ## Introduction
 
 <a name="intro"></a>
 
-Version 5.9 (and newer) makes it possible to install extensions in Adguard. Adguard extension is basically a _userscript_.
+Starting from version 5.9 it became possible to install extensions in AdGuard.
 
-First of all we need to understand what it is. Userscript is a _script_, written in Javascript that extends the functionality of one or more sites. Adguard users already know one such extension. It is the Adguard Assistant. You can see its icon in the corner of any web page.
+First of all, we need to understand what it is. Userscript is a _script_, written in Javascript that extends the functionality of one or more sites. AdGuard users already know one such extension. It is the AdGuard Assistant. You can see its icon in the corner of any web page.
 
 <a name="repo"></a>
 
 ## Where can you get userscripts?
 
-Userscripts are mostly the people's art, that is why, you need to be careful, when installing a userscript. But, nevertheless, there is a great variety of interesting scripts that can really make the use of some websites more convenient.
+Userscripts are mostly the people's art, that is why you need to be careful when installing a userscript. But, nevertheless, there is a great variety of interesting scripts that can really make the use of some websites more convenient.
 
 There are several popular userscript catalogues. We will describe them in this article.
 
@@ -35,11 +34,11 @@ There are several popular userscript catalogues. We will describe them in this a
 
 ## Userstyles.org
 
-[Userstyles.org](https://userstyles.org/) is a catalogue of user styles, but it allows you to unload them as userscripts. Thus, any user style can be installed in Adguard.
+[Userstyles.org](https://userstyles.org/) is a catalogue of user styles, but it allows you to unload them as userscripts. Thus, any user style can be installed in AdGuard.
 
-Do you want to paint Facebook in pink? Or make Youtube look like this: ![](https://cdn.adguard.com/public/Adguard/Common/youtube_userstyle.jpeg)
+Do you want to paint Facebook in pink? Or make YouTube look like this: ![](https://cdn.adguard.com/public/Adguard/Common/youtube_userstyle.jpeg)
 
-No problem, find the suitable style at Userstyles.org and install it in Adguard.
+No problem, find the suitable style at Userstyles.org and install it in AdGuard.
 
 
 
@@ -56,11 +55,3 @@ No problem, find the suitable style at Userstyles.org and install it in Adguard.
 ## OpenUserJS.org
 
 [OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalogue written in nodeJS.
-
-
-
-<a name="monkeyGuts"></a>
-
-## MonkeyGuts
-
-[MonkeyGuts](https://monkeyguts.com/) is an absolutely new userscript catalogue. Is currently in beta testing.
