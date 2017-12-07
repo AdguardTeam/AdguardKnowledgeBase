@@ -7,7 +7,6 @@ visible: true
 ---
 
 * [Introduction](#intro)
-* [How to install userscripts in AdGuard](#install-scripts)
 * [Where can you get userscripts?](#repo)
 * [Userstyles.org](#userstyles)
 * [Greasy Fork](#greasyFork)
@@ -23,21 +22,9 @@ First of all, we need to understand what it is. Userscript is a script, written 
 
 There is also the Web of Trust extension, that is disabled in AdGuard by default. Once it is activated, you can see the reputation of each website based on users’ opinions.  
 
-<a name="install-scripts"></a>
+As it was mentioned, AdGuard for Windows can work as a user script manager. The detailed information about how to install userscripts in AdGuard you will find in the [Extensions](https://kb.adguard.com/en/windows/features/extensions) article of our Knowledgebase.
 
-## How to install userscripts in AdGuard
 
-As it was already mentioned above, AdGuard for Windows can work as a user script manager. While using this AdGuard function you will understand how easy the process of userscripts downloading is and how convenient their managing can be.
-
-Firstly, AdGuard can automatically define browser queries to userscripts and suggest their installation if the following option is enabled: ![](up17cruns.png)
-
-Secondly, you can choose any scripts you like and add them in AdGuard manually. To do it, you should just click on the 'Add extension' button. 
-
-![](up17pixn4.png) 
-
-Then you should enter the respective URL or path into the appeared input box and click on the ‘Install’. 
-
-![](up1789vd4.png)
 
 <a name="repo"></a>
 
