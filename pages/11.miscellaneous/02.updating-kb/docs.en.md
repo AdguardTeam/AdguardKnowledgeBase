@@ -10,7 +10,7 @@ visible: true
 *   [How to suggest a change?](#suggest-change)
 *   [Writing new articles](#new-article)
 *   [Translating an article](#translating)
-*   [AdGuard license for contribution](#license)
+*   [Getting free AdGuard license](#license)
 
 <a name="introduction"></a>
 
@@ -57,8 +57,8 @@ This part is tricky. Currently, our Knowledgebase only supports the English and 
 
 <a name="license"></a>
 
-## AdGuard license for contribution
+## Getting free AdGuard license
 
-Our Knowledgebase is a very important fount of information, that lets people know more about AdGuard. That is why our team is always glad to reward people contributed to its content with AdGuard licenses.
+Our Knowledge base is an important fount of information that lets people learn more about AdGuard. That is why we are always glad to reward with AdGuard licenses people who contribute to its content.
 
 We do not have any strict criteria for how much you need to contribute to get a license key, but if you feel that you’ve done enough, just send us a message to [st@adguard.com](mailto:st@adguard.com).
