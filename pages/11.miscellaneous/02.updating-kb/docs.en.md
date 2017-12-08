@@ -10,6 +10,7 @@ visible: true
 *   [How to suggest a change?](#suggest-change)
 *   [Writing new articles](#new-article)
 *   [Translating an article](#translating)
+*   [AdGuard license for contribution](#license)
 
 <a name="introduction"></a>
 
@@ -53,3 +54,11 @@ Type the rest of the text below (use [Markdown](https://github.com/LewisVo/Markd
 ## Translating an article
 
 This part is tricky. Currently, our Knowledgebase only supports the English and Russian languages, but we can envision a future where we have many more to choose from. You can help us lay the foundation of this future by suggesting translations to existing articles. Everything that was said about [writing new articles](#new-article) applies here too, the main difference is that you should always create the new file in the same folder as the original one, and name it accordingly (e.g. `docs.es.md` for Spanish). Use the English original's raw text to copy the structure of the article, it will eliminate a lot of possible misunderstandings and inconsistencies.
+
+<a name="license"></a>
+
+## AdGuard license for contribution
+
+Our Knowledgebase is a very important fount of information, that lets people know more about AdGuard. That is why our team is always glad to reward people contributed to its content with AdGuard licenses.
+
+We do not have any strict criteria for how much you need to contribute to get a license key, but if you feel that you’ve done enough, just send us a message to [st@adguard.com](mailto:st@adguard.com).
