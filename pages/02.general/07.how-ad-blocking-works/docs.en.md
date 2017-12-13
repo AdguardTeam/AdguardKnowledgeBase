@@ -18,9 +18,9 @@ visible: true
 
 ## Introduction
 
-One of the main functions of Adguard is filtering ads on websites. In this article, we will describe in details how exactly Adguard filters online advertising.
+One of the main functions of AdGuard is filtering ads on websites. In this article, we will describe in details how exactly AdGuard filters online advertising.
 
-Adguard's work is based on the use of various advertising filters that define rules, based on which the program removes ads. Adguard may use a variety of different ad filters. We create some of them ourselves (you can learn more about it on [this page](/general/adguard-ad-filters.html)), some of the filters are created by enthusiasts.
+Adguard's work is based on the use of various advertising filters that define rules, based on which the program removes ads. AdGuard may use a variety of different ad filters. We create some of them ourselves (you can learn more about it on [this page](/general/adguard-ad-filters.html)), some of the filters are created by enthusiasts.
 
 
 
@@ -28,7 +28,7 @@ Adguard's work is based on the use of various advertising filters that define ru
 
 ## Ad filtering
 
-Ad filtering mechanism depends on what product you use. Browser extensions rely on the capabilities that browsers provide them with. Adguard for Windows, Mac and Android works independently of your browser, using a completely different filtering algorithm. Below we describe all the stages of ad filtering that Adguard uses.
+Ad filtering mechanism depends on what product you use. Browser extensions rely on the capabilities that browsers provide them with. AdGuard for Windows, Mac and Android works independently of your browser, using a completely different filtering algorithm. Below we describe all the stages of ad filtering that AdGuard uses.
 
 
 
@@ -36,11 +36,11 @@ Ad filtering mechanism depends on what product you use. Browser extensions rely 
 
 #### Page code filtering
 
-Before a page is loaded into browser, Adguard processes its code removing elements according to the ad filtering rules. Thus browser does not recognize that there were actually those elements on this page and will not try to load them.
+Before a page is loaded into browser, AdGuard processes its code removing elements according to the ad filtering rules. Thus browser does not recognize that there were actually those elements on this page and will not try to load them.
 
 ![Adguard: Page code filtering](https://images.adguard.com/public/Adguard/Common/page_filtering.png)
 
-Page code filtering technology is used **only in Adguard for Windows, Mac or Android (if high quality filtering is enabled)**. That is because of the fact that capabilities of browser extensions are limited, and they can not change the page code before the browser processed it.
+Page code filtering technology is used **only in AdGuard for Windows, Mac or Android (if high quality filtering is enabled)**. That is because of the fact that capabilities of browser extensions are limited, and they can not change the page code before the browser processed it.
 
 
 
@@ -48,7 +48,7 @@ Page code filtering technology is used **only in Adguard for Windows, Mac or And
 
 #### Request blocking
 
-Browser loads all the necessary elements on a page, defined by the page code. Based on filtering rules, Adguard can block the load of advertising elements, such as banners ads or Flash objects.
+Browser loads all the necessary elements on a page, defined by the page code. Based on filtering rules, AdGuard can block the load of advertising elements, such as banners ads or Flash objects.
 
 ![Adguard: Blocking of queries](https://images.adguard.com/public/Adguard/Common/url_filtering.png)
 

@@ -1,12 +1,12 @@
 ---
-title: 'Как получить логи установки Adguard'
+title: 'Как получить логи установки AdGuard'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-Для получения и отправки лога установки Adguard, необходимо:
+Для получения и отправки лога установки AdGuard, необходимо:
 
 1. Запустить команду "Выполнить" (Win+R), ввести в строке **%tmp%**, нажать "OK":
 
@@ -16,4 +16,4 @@ visible: true
 
 ![](tmp.png?cropResize=800,600)
 
-3. Полученный архив отправить в [службу поддержки](mailto:support@adguard.com) Adguard.
+3. Полученный архив отправить в [службу поддержки](mailto:support@adguard.com) AdGuard.

@@ -1,5 +1,5 @@
 ---
-title: 'Adguard DNS'
+title: 'AdGuard DNS'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Chapter 7
 
-# Adguard DNS
+# AdGuard DNS
 
-This section describes a new way to block ads - Adguard DNS.
+This section describes a new way to block ads - AdGuard DNS.

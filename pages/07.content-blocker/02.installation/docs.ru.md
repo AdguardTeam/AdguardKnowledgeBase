@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-Приложение доступно в каталоге [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), а также в магазине приложений Galaxy Apps. Для установки Adguard Content Blocker из Google Play запустите приложение Play Маркет. В форме поиска введите строку _adguard content blocker_.
+Приложение доступно в каталоге [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), а также в магазине приложений Galaxy Apps. Для установки AdGuard Content Blocker из Google Play запустите приложение Play Маркет. В форме поиска введите строку _AdGuard content blocker_.
 
 ![](Content_Blocker_01_RUS.png)
 
@@ -18,7 +18,7 @@ taxonomy:
 
 ![](Content_Blocker_03_RUS.png)
 
-Дождитесь окончания загрузки и установки приложения. Чтобы запустить Adguard Content Blocker, нажмите кнопку _Открыть_.
+Дождитесь окончания загрузки и установки приложения. Чтобы запустить AdGuard Content Blocker, нажмите кнопку _Открыть_.
 
 ![](Content_Blocker_04_RUS.png)
 

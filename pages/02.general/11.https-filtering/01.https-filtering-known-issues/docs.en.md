@@ -91,12 +91,12 @@ If you check HTTPS connection properties in Chrome, you might see the following 
 
 ![Obsolete Key Exchange](https://cdn.adguard.com/public/Adguard/Blog/https/obsolete_key_exchange.png)
 
-The thing is that Adguard maintains two encrypted connections: one with the browser, another with the server. For the browser connection, we use a less strong encryption algorithm to achieve higher speed. It does not make it insecure as this is a local connection, though, it might be unnecessary.
+The thing is that AdGuard maintains two encrypted connections: one with the browser, another with the server. For the browser connection, we use a less strong encryption algorithm to achieve higher speed. It does not make it insecure as this is a local connection, though, it might be unnecessary.
 
 **Our plans:**
 
 * Use a more modern key exchange algorithm in AdGuard for Windows v6.2 beta version.
-* In case we don’t like the new performance rate, keep the old algorithm but add a flag in Adguard settings to enable the modern one.
+* In case we don’t like the new performance rate, keep the old algorithm but add a flag in AdGuard settings to enable the modern one.
 
 **ETA:**
 * AdGuard for Windows v6.2 featuring the new algorithm has been released in November 2017.
@@ -105,4 +105,4 @@ The thing is that Adguard maintains two encrypted connections: one with the brow
 
 ### Have remarks or suggestions?
 
-If you’d like to add something, notice any mistakes or want to ask a question, please contact us: `devteam at adguard.com`.
+If you’d like to add something, notice any mistakes or want to ask a question, please contact us: `devteam at AdGuard.com`.

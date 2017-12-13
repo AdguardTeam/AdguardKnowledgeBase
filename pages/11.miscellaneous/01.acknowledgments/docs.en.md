@@ -6,27 +6,27 @@ taxonomy:
 published: true
 visible: true
 ---
-* [Adguard for Windows](#win)
+* [AdGuard for Windows](#win)
   * [Third-Party Software](#third1)
   * [Testers](#test1)
-* [Adguard for Mac](#mac)
+* [AdGuard for Mac](#mac)
   * [Third-Party Software](#third2)
   * [Testers](#test2)
-* [Adguard for Android](#android)
+* [AdGuard for Android](#android)
   * [Third-Party Software](#third3)
   * [Testers](#test3)
-* [Adguard for iOS](#ios)
+* [AdGuard for iOS](#ios)
   * [Third-Party Software](#third4)
   * [Testers](#test4)
 
-During Adguard software development process, we had recourse to a list of open-source software, and our great beta testers and other interested users really contributed to Adguard’s further progress. Our developer team would like to thank everyone who helped us improve Adguard.
+During AdGuard software development process, we had recourse to a list of open-source software, and our great beta testers and other interested users really contributed to AdGuard’s further progress. Our developer team would like to thank everyone who helped us improve AdGuard.
 
 <a id="win"></a>
-## Adguard for Windows
+## AdGuard for Windows
 <a id="third1"></a>
 ### Third-Party Software
 
-Resources that Adguard for Windows developers regard as highly helpful:
+Resources that AdGuard for Windows developers regard as highly helpful:
 
 * SQL database engine ([https://sqlite.org](https://sqlite.org))
 * ADO.NET provider for SQLite ([https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki))
@@ -71,10 +71,10 @@ Sanjay Nand
 [ag_bug_finder](http://forum.adguard.com/member.php?3639)
 
 <a id="mac"></a>
-## Adguard for Mac
+## AdGuard for Mac
 <a id="third2"></a>
 ### Third-Party Software
-Adguard for Mac developers would like to thank:
+AdGuard for Mac developers would like to thank:
 
 * Mozilla Foundation for Network Security Services libraries ([https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)) — [License](https://www.mozilla.org/MPL/)
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component ([http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)) — [License](http://opensource.org/licenses/mit-license.php)
@@ -98,10 +98,10 @@ And of course we would like to give a shout out to the beta testers. Special tha
 [saturnotaku](http://forum.adguard.com/member.php?4782-saturnotaku)
 
 <a id="android"></a>
-## Adguard for Android
+## AdGuard for Android
 <a id="third3"></a>
 ### Third-Party Software
-Credits to resources and libraries which Adguard for Android developers find useful and helpful:
+Credits to resources and libraries which AdGuard for Android developers find useful and helpful:
 * Logback-android by Tony19 ([https://tony19.github.io/logback-android](https://tony19.github.io/logback-android))
 * Otto by Square ([http://square.github.io/otto](http://square.github.io/otto))
 * RootTools Library by Stericson ([https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools))
@@ -110,7 +110,7 @@ Credits to resources and libraries which Adguard for Android developers find use
 
 <a id="test3"></a>
 ### Testers
-First, big thanks to our Adguard Forum family. Thank you people for your contribution to the development of our app:
+First, big thanks to our AdGuard Forum family. Thank you people for your contribution to the development of our app:
 
 [Lord Ami](http://forum.adguard.com/member.php?5374-Lord-Ami)
 
@@ -132,10 +132,10 @@ As well as [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) contributo
 
 We also want to thank the [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). Thank you for your much helpful feedback!
 
-We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about Adguard, request new features, and submit bugs. Join our [Adguard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Xda-developers Forum](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) or visit our page on [GitHub](https://github.com/AdguardTeam).
+We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join our [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Xda-developers Forum](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) or visit our page on [GitHub](https://github.com/AdguardTeam).
 
 <a id="ios"></a>
-## Adguard for iOS
+## AdGuard for iOS
 <a id="third4"></a>
 ### Third-Party Software
 * StaticDataTableViewController by peterpaulis ([https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)) — [License](https://github.com/peterpaulis/StaticDataTableViewController/blob/master/LICENSE.txt)
@@ -146,7 +146,7 @@ We always appreciate comments from our users, especially constructive ones :) Yo
 
 <a id="test4"></a>
 ### Testers
-Also a huge thanks to those, who helped us with testing of Adguard for iOS. It was a significant contribution to the development of our app:
+Also a huge thanks to those, who helped us with testing of AdGuard for iOS. It was a significant contribution to the development of our app:
 
 [dartrax](https://github.com/dartrax)
 

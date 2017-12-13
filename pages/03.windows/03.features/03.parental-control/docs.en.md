@@ -28,9 +28,9 @@ Enabling this function will make Parental Control block downloading any executab
 **
 Sets the level of sensitivity for Parental Control depending on the age of your child.
 
-**Protect Adguard with a password
+**Protect AdGuard with a password
 **
-A password protects Adguard from change of settings or disabling. You can also use the password to access websites Parental Control has blocked.
+A password protects AdGuard from change of settings or disabling. You can also use the password to access websites Parental Control has blocked.
 
 **Manage the blacklist**
 

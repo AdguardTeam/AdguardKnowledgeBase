@@ -13,7 +13,7 @@ This problem is more common for the Firefox-based browsers and Opera 12.
 <a name="basic"></a>
 The easiest way to solve it is to:
 
-1. Go to Adguard General Settings.
+1. Go to AdGuard General Settings.
 
 2. Scroll to the bottom to find 'Reinstall Certificate' button.
 
@@ -45,7 +45,7 @@ If [basic manual](#basic) didn't help you, there are two ways to solve the probl
 
 Manual certificate import.
 
-In case you want to keep filtering HTTPS protocol, we suggest you this instruction on manual Adguard certificate importing.
+In case you want to keep filtering HTTPS protocol, we suggest you this instruction on manual AdGuard certificate importing.
 
 To do so:
 1. Open Firefox browser and proceed to Options menu
@@ -61,7 +61,7 @@ To do so:
 
 ![](ffox_en_4.png)
 
-4. In the opened window type in ** %ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose Adguard Personal CA in the shown folder, then press 'Open'.
+4. In the opened window type in ** %ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard Personal CA in the shown folder, then press 'Open'.
 
 ![](ffox_en_5.png)
 
@@ -69,7 +69,7 @@ To do so:
 
 ![](ffox_en_6.png)
 
-6. In 'Authorities' window choose 'Adguard personal CA' and click on 'View...'.
+6. In 'Authorities' window choose 'AdGuard personal CA' and click on 'View...'.
 
 ![](ffox_en_7.png)
 
@@ -84,7 +84,7 @@ Disabling HTTPS filtering
 
 To do so:
 
-Go to the Adguard General settings.
+Go to the AdGuard General settings.
 
 Disable the HTTPS filtering as it’s done in this picture:
 
@@ -103,7 +103,7 @@ If [basic manual](#basic) didn't help you, there are two ways to solve the probl
 
 Manual certificate import.
 
-In case you want to keep filtering HTTPS protocol, we suggest you this instruction on manual Adguard certificate importing.
+In case you want to keep filtering HTTPS protocol, we suggest you this instruction on manual AdGuard certificate importing.
 
 To do so:
 1. Open Opera browser and proceed to Settings -> Preferences menu
@@ -119,7 +119,7 @@ To do so:
 ![](opera_en_4.png)
 
 
-4. In the opened window type in **%ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose Adguard **Personal CA** in the shown folder, then press 'Open'.
+4. In the opened window type in **%ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
 
 ![](opera_en_5.png)
 
@@ -136,7 +136,7 @@ To do so:
 
 ![](opera_en_8.png)
 
-8. In 'Authorities' window choose 'Adguard personal CA' and click on 'View...'.
+8. In 'Authorities' window choose 'AdGuard personal CA' and click on 'View...'.
 
 ![](opera_en_9.png)
 
@@ -150,7 +150,7 @@ Disabling HTTPS filtering.
 
 To do so:
 
-Go to the Adguard General settings.
+Go to the AdGuard General settings.
 
 Disable the HTTPS filtering as it’s done in this picture:
 
@@ -164,13 +164,13 @@ We do not recommend this way, as it will leave all your HTTPS traffic unfiltered
 
 **Adding a security certificate Comodo IceDragon browser.**
 
-If you are using Comodo Icedargon browser, then after installation of Adguard you are going to have a problem with visiting websites, protected by a security certificate (https).
+If you are using Comodo Icedargon browser, then after installation of AdGuard you are going to have a problem with visiting websites, protected by a security certificate (https).
 
-To solve this problem you need to install the Adguard root certificate or disable https filtering.
+To solve this problem you need to install the AdGuard root certificate or disable https filtering.
 
 **Instructions for a Comodo IceDragon browser.**
 
-If when using a Comodo IceDragon browser with enabled https filtering you see the message that shown below, you need to install the Adguard root certificate or disable https filtering in the Adguard network settings.
+If when using a Comodo IceDragon browser with enabled https filtering you see the message that shown below, you need to install the AdGuard root certificate or disable https filtering in the AdGuard network settings.
 
 ![](IceDragon_EN_1.png)
 
@@ -187,7 +187,7 @@ In the appeared window, type in the address bar: ** %ProgramData%\Adguard\Networ
 
 ![](IceDragon_EN_4.png)
 
-Choose “Adguard CA.rar” from the list anf click “Open”.
+Choose “AdGuard CA.rar” from the list anf click “Open”.
 
 ![](IceDragon_EN_5.png)
 
@@ -212,9 +212,9 @@ After adding the certificate, restart the browser.
 
 ##### Adding a security certificate to K-Meleon browser
 
-If you are using K-Meleon browser, then after installation of Adguard you are going to have a problem with visiting websites, protected by a security certificate (https).
+If you are using K-Meleon browser, then after installation of AdGuard you are going to have a problem with visiting websites, protected by a security certificate (https).
 
-To solve this problem you need to install the Adguard root certificate or disable https filtering.
+To solve this problem you need to install the AdGuard root certificate or disable https filtering.
 
 ##### Instructions for a K-Meleon browser
 
@@ -230,11 +230,11 @@ In the opened window, select the tab "Authorities" and click "Import".
 
 ![](K-Meleon_3_EN.png)
 
-In the appeared window, type in the address bar: % ProgramData% \ Adguard \ NetworkTemp \ SSL and press Enter.
+In the appeared window, type in the address bar: % ProgramData% \ AdGuard \ NetworkTemp \ SSL and press Enter.
 
 ![](K-Meleon_4_EN.png)
 
-Choose “Adguard CA.rar” from the list and click “Open”.
+Choose “AdGuard CA.rar” from the list and click “Open”.
 
 ![](K-Meleon_5_EN.png)
 

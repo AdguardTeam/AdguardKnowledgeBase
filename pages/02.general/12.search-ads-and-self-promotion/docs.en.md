@@ -8,7 +8,7 @@ visible: true
 ---
 ## Search ads and self-promotion
 
-**Disclaimer.** While Adguard provides an option to show some ads, we do not have any kind of 'acceptable ads' program like Adblock Plus and some other adblockers, where they take money for leaving certain ads unblocked. This is not the case. We are not being paid for showing any of the ads, and we do not use the term 'acceptable' for a reason - ads we might show can be, in fact, useful and not just 'acceptable'. All of this only refers to the search ads and self-promotional ads.
+**Disclaimer.** While AdGuard provides an option to show some ads, we do not have any kind of 'acceptable ads' program like Adblock Plus and some other adblockers, where they take money for leaving certain ads unblocked. This is not the case. We are not being paid for showing any of the ads, and we do not use the term 'acceptable' for a reason - ads we might show can be, in fact, useful and not just 'acceptable'. All of this only refers to the search ads and self-promotional ads.
 
 Just to make it absolutely clear - this is **completely optional**. You can turn off the display of these ads at any time with no penalty whatsoever. Further we will explain which ads qualify for this definition.
 
@@ -32,7 +32,7 @@ Our general stance here is very similar to EasyList policy regarding self-promot
 
 Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
 
-By enabling 'Search ads and self-promotion' Adguard users can unblock some of these self-promotional ads. 
+By enabling 'Search ads and self-promotion' AdGuard users can unblock some of these self-promotional ads. 
  
 ### What ads are on the list?
 

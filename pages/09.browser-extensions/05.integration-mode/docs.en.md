@@ -7,9 +7,9 @@ taxonomy:
 
 ## Extension and Program Integration
 
-If you already use an Adguard app, our browser extension may become a very useful additional tool, which can completely replace the browser-based “Adguard Assistant” module.
+If you already use an AdGuard app, our browser extension may become a very useful additional tool, which can completely replace the browser-based “AdGuard Assistant” module.
 
-How does Adguard extension work in integration mode with Adguard for Windows or macOS?
+How does AdGuard extension work in integration mode with AdGuard for Windows or macOS?
 
 *  Extension icon color changes to blue;
 

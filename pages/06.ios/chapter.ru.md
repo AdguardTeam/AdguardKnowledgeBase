@@ -1,5 +1,5 @@
 ---
-title: 'Adguard для iOS'
+title: 'AdGuard для iOS'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Раздел 5
 
-# Adguard для iOS
+# AdGuard для iOS
 
-В этом разделе рассматривается приложение Adguard для iOS.
+В этом разделе рассматривается приложение AdGuard для iOS.

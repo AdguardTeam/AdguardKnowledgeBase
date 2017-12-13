@@ -85,18 +85,18 @@ visible: true
 <a id="introduction"></a>
 ## Introduction
 
-A filter is a set of filtering rules applied to specific content (banners, popups, etc).  Adguard has a list of standard filters created by our team. Our team constantly improves and updates them, and we hope our filters meet the needs of most of our users.
+A filter is a set of filtering rules applied to specific content (banners, popups, etc).  AdGuard has a list of standard filters created by our team. Our team constantly improves and updates them, and we hope our filters meet the needs of most of our users.
 
-At the same time, Adguard allows you to create your own custom filters, using the same type of rules that we have in our filters.
+At the same time, AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters.
 
 To describe the syntax of our filtering rules we use [Augmented BNF for Syntax Specifications] (https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
 
-> Adguard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both Adguard and ABP was taken from this article [this article](http://adblockplus.org/en/filters).
+> AdGuard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both AdGuard and ABP was taken from this article [this article](http://adblockplus.org/en/filters).
 
 <a id="comments"></a>
 ## Comments
 
-Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. Adguard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
+Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. AdGuard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
 
 For example:
 
@@ -154,8 +154,8 @@ pattern = "/" regexp "/"
 
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
-> #### Compatibility with different versions of Adguard
-> Adguard browser extension for Safari and Adguard for iOS do not sully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> #### Compatibility with different versions of AdGuard
+> AdGuard browser extension for Safari and AdGuard for iOS do not sully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
@@ -228,7 +228,7 @@ If there is a `~third-party` modifier, the rule is only applied to the requests 
 <a id="popup-modifier"></a>
 ##### **`popup`**
 
-Adguard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note, that not all the tabs can be closed.
+AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note, that not all the tabs can be closed.
 
 ###### `popup`examples
 
@@ -279,8 +279,8 @@ _csp_ value can be empty in the case of exception rules. See examples section fo
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
-> #### Compatibility with different versions of Adguard
->  Please note that there is a big difference in how Adguard determines the content type on different platforms. For browser extensions, content type for every request is provided by browser. Adguard for Windows, Mac and Android use following method: first we try to determine the type of request by filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
+> #### Compatibility with different versions of AdGuard
+>  Please note that there is a big difference in how AdGuard determines the content type on different platforms. For browser extensions, content type for every request is provided by browser. AdGuard for Windows, Mac and Android use following method: first we try to determine the type of request by filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
 
 <a id="content-type-modifiers-examples"></a>
 ##### Content type modifiers examples
@@ -314,8 +314,8 @@ The rule corresponds to browser plugins resourses. (e.g. Java or Flash).
 
 The rule corresponds to requests by browser plugins (it's usually Flash).
 
-> #### Compatibility with different versions of Adguard
-> Adguard for Windows, macOS and Android often can't accurately determine this type and defines it as `other`.
+> #### Compatibility with different versions of AdGuard
+> AdGuard for Windows, macOS and Android often can't accurately determine this type and defines it as `other`.
 
 <a id="font-modifier"></a>
 ##### **`font`**
@@ -337,8 +337,8 @@ The rule corresponds to requests for built-in pages (HTML tags `frame` and `ifra
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
-> #### Compatibility with different versions of Adguard
-> Adguard for Windows, macOS and Android often can't accurately determine this type and defines it as `other` or `script`.
+> #### Compatibility with different versions of AdGuard
+> AdGuard for Windows, macOS and Android often can't accurately determine this type and defines it as `other` or `script`.
 
 <a id="other-modifier"></a>
 ##### **`other`**
@@ -403,8 +403,8 @@ Completely disables blocking for corresponding pages. It is equal to simultaneou
 
 Disables the Stealth Mode for all corresponding pages and requests.
 
-> #### Compatibility with different versions of Adguard
-> Stealth Mode is currently available only in Adguard for Windows. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
+> #### Compatibility with different versions of AdGuard
+> Stealth Mode is currently available only in AdGuard for Windows. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
 ###### `stealth` example
 
@@ -463,13 +463,13 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 * `@@||example.com$badfilter` disables `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
-> #### Compatibility with different versions of Adguard
-> Below modifiers from this section are only available in Adguard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
+> #### Compatibility with different versions of AdGuard
+> Below modifiers from this section are only available in AdGuard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
 
 <a id="empty-modifier"></a>
 ##### **`empty`**
 
-Usually, blocked requests look like a server error to browser. If you use `empty` modifier, Adguard will emulate a blank response from the server with` 200 OK` status.
+Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
 
 ###### `empty` example
 
@@ -478,7 +478,7 @@ Usually, blocked requests look like a server error to browser. If you use `empty
 <a id="mp4-modifier"></a>
 ##### **`mp4`**
 
-As a response to blocked request Adguard returns a short video placeholder.
+As a response to blocked request AdGuard returns a short video placeholder.
 
 ###### `mp4` example
 
@@ -592,7 +592,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 <a id="cosmetic-css-rules"></a>
 ### Cosmetic css rules
 
-Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case Adguard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
+Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Cosmetic css rules syntax
@@ -636,10 +636,10 @@ We recommend to use this kind of exceptions only if it is not possible to change
 <a id="extended-css-selectors"></a>
 ### Extended CSS selectors
 
-CSS 3.0 is not always enough to block ads. To solve this problem Adguard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
+CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
 
 > #### Backward compatibility
-> In common filters we use so-called backward compatible syntax. The thing is, extended pseudo-classes can break cosmetic rules in previous versions of Adguard or in other ad blockers that do not support extended CSS. For example, instead of pseudo-class `:has(selector)` it is possible to use `[-ext-has="selector"]` attribute.
+> In common filters we use so-called backward compatible syntax. The thing is, extended pseudo-classes can break cosmetic rules in previous versions of AdGuard or in other ad blockers that do not support extended CSS. For example, instead of pseudo-class `:has(selector)` it is possible to use `[-ext-has="selector"]` attribute.
 
 > #### Application area
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
@@ -784,8 +784,8 @@ div.banner[-ext-matches-css-before="content: block me"]
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
-> #### Compatibility with different versions of Adguard
-> Rules are supported by Adguard for Windows, Mac and Android (you have to set "filtering method" for "High-quality" in Android).
+> #### Compatibility with different versions of AdGuard
+> Rules are supported by AdGuard for Windows, Mac and Android (you have to set "filtering method" for "High-quality" in Android).
 > This type of rules don't work in browsers extension, because it is unable to modify content on network level.
 
 <a id="html-filtering-rules-syntax"></a>
@@ -901,7 +901,7 @@ Let's use the following rule to block the entire table:
 ```
 $$a[href="example.org/ads"][parent-elements="table"]
 ```
-When Adguard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
+When AdGuard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
 
 You can specify few parent elements separated by commas. The closest one will be blocked.
 
@@ -930,10 +930,10 @@ example.com$@$script[tag-content="banner"]
 <a id="javascript-rules"></a>
 ## Javascript rules
 
-Adguard supports a special type of rules that allows you to inject any javascript code to websites pages.
+AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
 > #### Restrictions
-> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by Adguard Team.
+> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
 <a id="javascript-rules-syntax"></a>
 ### Javascript rules syntax
@@ -969,7 +969,7 @@ example.com#@%#window.__gaq = undefined;
 <a id="for_maintainers"></a>
 ## Information for filters maintainers 
 
-If you maintain a third-party filter that is known to Adguard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by Adguard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
 <a id="hints"></a>
 ### Hints
@@ -1018,20 +1018,20 @@ Specify which platforms can apply this rule. List of existing platforms:
 
 * ios - Example: English filter for iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Example: Adguard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+* ext_chromium - Example: AdGuard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Example: Adguard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+* ext_ff - Example: AdGuard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Example: Adguard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+* ext_edge - Example: AdGuard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_opera - Example: Adguard browser extension for Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+* ext_opera - Example: AdGuard browser extension for Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
 * ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
-* ext_safari - Example: Adguard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+* ext_safari - Example: AdGuard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
 
-* ext_android_cb - Example: Adguard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* ext_android_cb - Example: AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 
 

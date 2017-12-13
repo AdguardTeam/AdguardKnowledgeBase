@@ -16,7 +16,7 @@ The same applies, of course, to all apps and programs that send any web requests
 
 ### How does DNS filtering work?
 
-Usually, your ISP provides a DNS server that does all the job of returning the IP addresses in response to web requests by your apps and browsers. In reality, you are free to use any DNS server for this purpose, and there are plenty of them to choose from (in fact, Adguard has its own DNS servers - you can read about Adguard DNS in [another article](https://kb.adguard.com/en/dns/overview)). Some of these DNS servers are designed to do more than just return IP addresses, for example ad blocking. 
+Usually, your ISP provides a DNS server that does all the job of returning the IP addresses in response to web requests by your apps and browsers. In reality, you are free to use any DNS server for this purpose, and there are plenty of them to choose from (in fact, AdGuard has its own DNS servers - you can read about AdGuard DNS in [another article](https://kb.adguard.com/en/dns/overview)). Some of these DNS servers are designed to do more than just return IP addresses, for example ad blocking. 
 
 The best part is, you don't even need to choose a special DNS server to block ads if you are using DNS filtering. How is it possible? Let's have a look at this diagram:
 
@@ -28,7 +28,7 @@ The main advantage of this approach is it is extremely economical and saving. On
 
 ### What is DNSCrypt and why is it important?
 
-If you use regular client-server protocol, you are at risk of your DNS requests being intercepted and, subsequently, eavesdropped and/or altered. The experiments [show that](https://blog.adguard.com/dns-track-you/) the DNS tracking can even be used to collect a 'profile of interests' for any user. Luckily, Adguard offers [DNSCrypt](https://dnscrypt.org/) - a special protocol that encrypts communication with the DNS server, thus preventing tampering and tracking by any third party including your ISP.
+If you use regular client-server protocol, you are at risk of your DNS requests being intercepted and, subsequently, eavesdropped and/or altered. The experiments [show that](https://blog.adguard.com/dns-track-you/) the DNS tracking can even be used to collect a 'profile of interests' for any user. Luckily, AdGuard offers [DNSCrypt](https://dnscrypt.org/) - a special protocol that encrypts communication with the DNS server, thus preventing tampering and tracking by any third party including your ISP.
 
 ![dnscrypt-scheme](DNSCrypt.png)
 

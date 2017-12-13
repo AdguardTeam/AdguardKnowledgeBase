@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Android'
+title: 'AdGuard for Android'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Chapter 4
 
-# Adguard for Android
+# AdGuard for Android
 
-This section describes Adguard for Android.
+This section describes AdGuard for Android.

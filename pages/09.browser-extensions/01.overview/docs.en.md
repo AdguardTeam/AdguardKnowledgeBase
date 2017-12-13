@@ -7,7 +7,7 @@ taxonomy:
 
 ## Ad Blocker
 
-This extension blocks ads in social networks, such as VK.com and Facebook, on YouTube, and other sites. Adguard Ad Blocker efficiently blocks all kinds of ads on all web pages. Ad Blocker speeds up loading and saves traffic by not wasting it on ads and popups. This extension also blocks spyware and adware installers, protects your personal data and you from malware and phishing sites. Adguard Ad Blocker is free for use.
+This extension blocks ads in social networks, such as VK.com and Facebook, on YouTube, and other sites. AdGuard Ad Blocker efficiently blocks all kinds of ads on all web pages. Ad Blocker speeds up loading and saves traffic by not wasting it on ads and popups. This extension also blocks spyware and adware installers, protects your personal data and you from malware and phishing sites. AdGuard Ad Blocker is free for use.
 
 ![](chrome_block_en.png?cropResize=600,400)
 
@@ -49,10 +49,10 @@ This extension blocks ads in social networks, such as VK.com and Facebook, on Yo
 
 * Palemoon
 
-### Why Adguard AdBlocker is better than Adblock or AdBlock Plus
+### Why AdGuard AdBlocker is better than Adblock or AdBlock Plus
 
-* Adguard AdBlocker is really fast and lightweight. It uses half as much memory as other popular solutions: Adblock, Adblock Plus.
+* AdGuard AdBlocker is really fast and lightweight. It uses half as much memory as other popular solutions: Adblock, Adblock Plus.
 
-* Adguard AdBlocker can handle Anti-AdBlock scripts. You won't have to turn off the AdBlocker anymore to be able to visit the websites that are using such scripts. Just send a complaint to our tech support and we'll handle it.
+* AdGuard AdBlocker can handle Anti-AdBlock scripts. You won't have to turn off the AdBlocker anymore to be able to visit the websites that are using such scripts. Just send a complaint to our tech support and we'll handle it.
 
-* Adguard AdBlocker is simply better looking and modern.
+* AdGuard AdBlocker is simply better looking and modern.

@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-Adguard for macOS is designed to block ads on web pages and in applications installed on your computer. In addition, Adguard protects users from fraudulent websites and their information from statistics gathering systems. This section gives a brief overview of the Adguard for macOS functions.
+AdGuard for macOS is designed to block ads on web pages and in applications installed on your computer. In addition, AdGuard protects users from fraudulent websites and their information from statistics gathering systems. This section gives a brief overview of the AdGuard for macOS functions.
 
 ## Ad Blocker
 
@@ -17,17 +17,17 @@ The Browsing Security module protects you from malware and phishing websites. It
 
 ## Privacy Protection
 
-The Privacy protection module protects you and your personal info from being tracked by online statistics gathering resources. To enable or disable Ad Blocker, click on the Adguard icon in the macOS ribbon and slide the Ad Blocker switch left or right in the window that opens.
+The Privacy protection module protects you and your personal info from being tracked by online statistics gathering resources. To enable or disable Ad Blocker, click on the AdGuard icon in the macOS ribbon and slide the Ad Blocker switch left or right in the window that opens.
 
 ## Extensions
 
-Adguard utilizes several browser extensions of its own to broaden its functionality.
+AdGuard utilizes several browser extensions of its own to broaden its functionality.
 
-**Adguard Assistant**
+**AdGuard Assistant**
 
 Allows quick and easy filtering control right in your browser.
 
-**Adguard Popup Blocker**
+**AdGuard Popup Blocker**
 
 Blocks popup ads on web pages.
 
