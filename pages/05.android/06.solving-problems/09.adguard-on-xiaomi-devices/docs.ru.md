@@ -1,5 +1,5 @@
 ---
-title: 'Adguard на устройствах Xiaomi'
+title: 'AdGuard на устройствах Xiaomi'
 published: false
 taxonomy:
     category:

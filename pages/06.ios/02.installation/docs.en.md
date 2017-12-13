@@ -16,7 +16,7 @@ AdGuard for iOS is a free app which presented in the App Store. To install it on
 
 ![](ios_install_EN_01.PNG?cropResize=800,600)
 
-Type _adguard_ in the search form, and then tap the string _adguard - adblock and privacy protection_ which will be shown as a search results.
+Type _adguard_ in the search form, and then tap the string _AdGuard - adblock and privacy protection_ which will be shown as a search results.
 
 ![](ios_install_EN_02.PNG?cropResize=800,600)
 
@@ -29,7 +29,7 @@ AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of fu
 
 ![](ios_install_EN_01.PNG?cropResize=800,600)
 
-Type _adguard_ in the search form, and then tap the string _adguard pro - adblock and privacy protection_ which will be shown as a search results.
+Type _adguard_ in the search form, and then tap the string _AdGuard pro - adblock and privacy protection_ which will be shown as a search results.
 
 ![](ios_install_EN_02.PNG?cropResize=800,600)
 

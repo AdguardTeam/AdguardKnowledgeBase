@@ -1,5 +1,5 @@
 ---
-title: 'Личный кабинет Adguard'
+title: 'Личный кабинет AdGuard'
 published: false
 taxonomy:
     category:

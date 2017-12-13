@@ -1,5 +1,5 @@
 ---
-title: 'Adguard account'
+title: 'AdGuard account'
 published: false
 taxonomy:
     category:

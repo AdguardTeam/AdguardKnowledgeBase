@@ -6,27 +6,27 @@ taxonomy:
 published: true
 visible: true
 ---
-* [Adguard для Windows](#win)
+* [AdGuard для Windows](#win)
   * [Стороннее ПО](#third1)
   * [Тестировщики](#test1)
-* [Adguard для Mac](#mac)
+* [AdGuard для Mac](#mac)
   * [Стороннее ПО](#third2)
   * [Тестировщики](#test2)
-* [Adguard для Android](#android)
+* [AdGuard для Android](#android)
   * [Стороннее ПО](#third3)
   * [Тестировщики](#test3)
-* [Adguard для iOS](#ios)
+* [AdGuard для iOS](#ios)
   * [Стороннее ПО](#third4)
   * [Тестировщики](#test4)
 
-При разработке продуктов Adguard, мы обращались к некоторым библиотекам и программным обеспечениям с открытым кодом. Мы очень признательны за доступ к этим полезным ресурса. Кроме того, мы благодарны нашим бета-тестировщикам и другим заинтересованным пользователям, которые постоянно вносят большой вклад в развитие наших программ. Команда разработчиков хотела бы поблагодарить всех, кто так или иначе помогал нам сделать Adguard лучше.
+При разработке продуктов AdGuard, мы обращались к некоторым библиотекам и программным обеспечениям с открытым кодом. Мы очень признательны за доступ к этим полезным ресурса. Кроме того, мы благодарны нашим бета-тестировщикам и другим заинтересованным пользователям, которые постоянно вносят большой вклад в развитие наших программ. Команда разработчиков хотела бы поблагодарить всех, кто так или иначе помогал нам сделать AdGuard лучше.
 
 <a id="win"></a>
-## Adguard для Windows
+## AdGuard для Windows
 <a id="third1"></a>
 ### Стороннее ПО
 
-Разработчики Adguard для Windows выражают благодарность:
+Разработчики AdGuard для Windows выражают благодарность:
 
 * SQL database engine ([https://sqlite.org](https://sqlite.org))
 * ADO.NET provider for SQLite ([https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki))
@@ -34,7 +34,7 @@ visible: true
 * AvalonEdit — WPF-based text editor component ([https://avalonedit.net](https://avalonedit.net))
 <a id="test1"></a>
 ### Тестировщики
-Мы признательны всем бета-тестировщикам Adguard для Windows, помогавшим устранять ошибки и недоработки на протяжении закрытого бета-тестирования. Отдельно хотим поблагодарить:
+Мы признательны всем бета-тестировщикам AdGuard для Windows, помогавшим устранять ошибки и недоработки на протяжении закрытого бета-тестирования. Отдельно хотим поблагодарить:
 
 [Petrovic](http://forum.adguard.com/member.php?3037-Petrovic)
 
@@ -117,10 +117,10 @@ Sanjay Nand
 [ag_bug_finder](http://forum.adguard.com/member.php?3639)
 
 <a id="mac"></a>
-## Adguard для Mac
+## AdGuard для Mac
 <a id="third2"></a>
 ### Стороннее ПО
-Разработчики Adguard для Mac хотели бы поблагодарить:
+Разработчики AdGuard для Mac хотели бы поблагодарить:
 
 * Mozilla Foundation за утилиты пакета Network Security Services ([https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)) — [Лицензия](https://www.mozilla.org/MPL/)
 * Red Sweater Software, LLC за компонент RSVerticallyCenteredTextFieldCell ([http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)) — [Лицензия](http://opensource.org/licenses/mit-license.php)
@@ -144,10 +144,10 @@ Sanjay Nand
 [saturnotaku](http://forum.adguard.com/member.php?4782-saturnotaku)
 
 <a id="android"></a>
-## Adguard для Android
+## AdGuard для Android
 <a id="third3"></a>
 ### Стороннее ПО
-Разработчики Adguard для Android благодарят за следующие полезные ресурсы:
+Разработчики AdGuard для Android благодарят за следующие полезные ресурсы:
 * Logback-android by Tony19 ([https://tony19.github.io/logback-android](https://tony19.github.io/logback-android))
 * Otto by Square ([http://square.github.io/otto](http://square.github.io/otto))
 * RootTools Library by Stericson ([https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools))
@@ -174,10 +174,10 @@ Sanjay Nand
 
 Также благодарим пользователей форума [4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691)! Спасибо за ваши полезные комментарии и замечания.
 
-Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму Adguard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [форуму 4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
+Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму AdGuard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [форуму 4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
 
 <a id="ios"></a>
-## Adguard для iOS
+## AdGuard для iOS
 <a id="third4"></a>
 ### Стороннее ПО
 * StaticDataTableViewController от peterpaulis ([https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)) — [Лицензия](https://github.com/peterpaulis/StaticDataTableViewController/blob/master/LICENSE.txt)
@@ -188,7 +188,7 @@ Sanjay Nand
 
 <a id="test4"></a>
 ### Тестировщики
-Также мы говорим огромное спасибо тем, кто помогал нам с тестированием Adguard для iOS. Это внесло значительный вклад в разработку нашего приложения:
+Также мы говорим огромное спасибо тем, кто помогал нам с тестированием AdGuard для iOS. Это внесло значительный вклад в разработку нашего приложения:
 [dartrax](https://github.com/dartrax)
 
 Sanjay Nand

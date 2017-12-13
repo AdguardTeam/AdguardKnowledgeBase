@@ -1,5 +1,5 @@
 ---
-title: 'Adguard Content Blocker'
+title: 'AdGuard Content Blocker'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Раздел 6
 
-# Adguard Content Blocker
+# AdGuard Content Blocker
 
-В этом разделе рассматривается приложение Adguard Content Blocker.
+В этом разделе рассматривается приложение AdGuard Content Blocker.

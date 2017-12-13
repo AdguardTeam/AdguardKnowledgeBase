@@ -14,9 +14,9 @@ taxonomy:
 **Free disk space:** 30 Mbytes.
 
 ## Installation
-Most Android-based apps are distributed via Google Play Market; however, Adguard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+Most Android-based apps are distributed via Google Play Market; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
 
-That’s why you can only install Adguard for Android manually. To use the app on your mobile device, you will need to do the following.
+That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
 First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
 
@@ -35,11 +35,11 @@ You will see the request to save the downloaded file. Press **OK**.
 
 ![](android_savefile.png?cropResize=400,600)
 
-When the download is complete, the system will ask you if you want to install the Adguard app. Press **Install**.
+When the download is complete, the system will ask you if you want to install the AdGuard app. Press **Install**.
 
 ![](android_install_EN_04.png?cropResize=400,600)
 
-In Android 4, after Adguard has been downloaded, you may see a dialogue window requesting for further action regarding the file. Select **Package installer** and then **Just once**.
+In Android 4, after AdGuard has been downloaded, you may see a dialogue window requesting for further action regarding the file. Select **Package installer** and then **Just once**.
 
 ![](android_install_EN_05.png?cropResize=400,600)
 
@@ -51,12 +51,12 @@ Wait for the installation to complete and press **Done**.
 
 ![](android_install_EN_07.png?cropResize=400,600)
 
-Adguard is now installed on your device. You can launch the app by pressing its icon in the list of installed apps.
+AdGuard is now installed on your device. You can launch the app by pressing its icon in the list of installed apps.
 
 <a name="uninstall"></a>
 ## </a>Uninstalling/Reinstalling Аdguard
 
-If you need to reinstall Adguard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6) or **Apps** (Android 4, 5 and 7). Open the **Downloaded** tab in the list of installed apps, select **Adguard**, and press **Uninstall**.
+If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6) or **Apps** (Android 4, 5 and 7). Open the **Downloaded** tab in the list of installed apps, select **Adguard**, and press **Uninstall**.
 
 ![](android_install_EN_08.png?cropResize=400,600)
 

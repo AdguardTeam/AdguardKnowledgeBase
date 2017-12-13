@@ -1,5 +1,5 @@
 ---
-title: 'Adguard Ad Filters'
+title: 'AdGuard Ad Filters'
 taxonomy:
     category:
         - docs
@@ -29,15 +29,15 @@ visible: true
 
 ## Introduction
 
-Filter is a set of filtering rules for advertising content (banners, pop-ups and such). Adguard is supplied with a set of standard filters created by us. They are being constantly improved and supplemented, and hopefully satisfy most users. From time to time, each Adguard application checks for updates of all enabled ad filters.
+Filter is a set of filtering rules for advertising content (banners, pop-ups and such). AdGuard is supplied with a set of standard filters created by us. They are being constantly improved and supplemented, and hopefully satisfy most users. From time to time, each AdGuard application checks for updates of all enabled ad filters.
 
 There are several options to tell us about the problem with advertising filters. You can send a complaint via the program or browser extension, or you can contact us on the [forum](https://forum.adguard.com/?langid=1).
 
-Filters are designed for use in all Adguard products. If you wish, you can also use them in Adblock Plus. However note that the syntax of Adguard filtering rules is more advanced than in ABP. Therefore, part of the rules will not work in ABP.
+Filters are designed for use in all AdGuard products. If you wish, you can also use them in Adblock Plus. However note that the syntax of Adguard filtering rules is more advanced than in ABP. Therefore, part of the rules will not work in ABP.
 
 You can find a manual of filtering rules creation syntax on [this link](/general/how-to-create-your-own-ad-filters).
 
-[Adguard Filter Policy](https://blog.adguard.com/en/adguard-news/adguard-filter-policy.html)
+[AdGuard Filter Policy](https://blog.adguard.com/en/adguard-news/adguard-filter-policy.html)
 
 
 <a name="english"></a>
@@ -180,7 +180,7 @@ Filter that enables removing of the ads from websites with Turkish content. Cre
 
 ## Polish ads filter
 
-This is an Adguard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites. This filter is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites. This filter is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/238.txt)
 
@@ -210,6 +210,6 @@ Filter that blocks ads on iOS mobile devices in Safari browser. Contains all k
 
 ## Simplified domain names filter
 
-A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by Adguard DNS servers to block ads. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/15.txt)

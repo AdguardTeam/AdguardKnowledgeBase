@@ -22,7 +22,7 @@ The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a 
 
 Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason.
 
-1. Open Adguard and go to "Settings".
+1. Open AdGuard and go to "Settings".
 
 2. Choose "Advanced" in the menu.
 

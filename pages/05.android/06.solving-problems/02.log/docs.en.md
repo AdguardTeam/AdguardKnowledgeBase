@@ -1,5 +1,5 @@
 ---
-title: 'Collecting a full log on Adguard for Android'
+title: 'Collecting a full log on AdGuard for Android'
 taxonomy:
     category:
         - docs

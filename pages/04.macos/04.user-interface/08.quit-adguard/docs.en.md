@@ -1,5 +1,5 @@
 ---
-title: 'Quit Adguard'
+title: 'Quit AdGuard'
 published: false
 taxonomy:
     category:

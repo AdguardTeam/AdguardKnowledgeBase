@@ -17,17 +17,17 @@ taxonomy:
 
 ## Installation
 
-To install Adguard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download Adguard** on the page that opens.
+To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download AdGuard** on the page that opens.
 
 ![](mac_install_EN_01.png)
 
-Wait for _Adguard.release.dmg_ to download and click on its icon in the list of downloaded files in the Dock panel. The Adguard icon will appear on your Desktop. Cick on it to open the installation app.
+Wait for _Adguard.release.dmg_ to download and click on its icon in the list of downloaded files in the Dock panel. The AdGuard icon will appear on your Desktop. Cick on it to open the installation app.
 
 ![](adguard_mac_2.png)
 
-In the installation window, drag the Adguard icon to the **Applications** folder icon on the right.
+In the installation window, drag the AdGuard icon to the **Applications** folder icon on the right.
 
-Now the application has been installed on your computer. To launch the application, double click on the Adguard icon in the Applications folder that you can open with Finder. Upon the first Adguard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+Now the application has been installed on your computer. To launch the application, double click on the AdGuard icon in the Applications folder that you can open with Finder. Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
 
 ![](mac_install_EN_02.png)
 
@@ -43,14 +43,14 @@ First of all, open 'Finder' app by clicking on a respective icon:
 
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to 'Applications' section. Find Adguard there, right-click on it and choose 'Move to Trash'.
+Go to 'Applications' section. Find AdGuard there, right-click on it and choose 'Move to Trash'.
 
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/delete_mac.png)
 
 ### Advanced
 **Use this instruction only after performing all steps from 'regular uninstall'.** After that, do the following:
 
-* Delete following Adguard files:
+* Delete following AdGuard files:
     * */Library/Application Support/com.adguard.Adguard* (folder)
     * *~/Library/Application Support/com.adguard.Adguard* (folder)
     * *~/Library/Preferences/com.adguard.Adguard.plist* (file)
@@ -64,4 +64,4 @@ Go to 'Applications' section. Find Adguard there, right-click on it and choose '
 
 ![](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/cfprefsd_abort.png)
 
-Adguard is removed from your computer.
+AdGuard is removed from your computer.

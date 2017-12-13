@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-Adguard AdBlocker is the browser extension performs a number of functions, each of which can be customized according to your preferences. This section gives a brief overview of the Adguard AdBlocker  functions and features.
+AdGuard AdBlocker is the browser extension performs a number of functions, each of which can be customized according to your preferences. This section gives a brief overview of the AdGuard AdBlocker  functions and features.
 
 ## Ad blocker 
 

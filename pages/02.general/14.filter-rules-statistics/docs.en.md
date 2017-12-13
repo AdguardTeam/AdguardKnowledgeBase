@@ -7,15 +7,15 @@ published: true
 visible: true
 ---
 ### Why do we need ad filters?
-Let us begin with the definition of what ad filters are. Thanks to these filters, Adguard removes ads from websites. 
-They are compiled manually, based on your complaints about ads on any of the websites. This is one of the most important elements of Adguard’s work – namely the quality of ad filters determines the quality of the whole Adguard’s work.
+Let us begin with the definition of what ad filters are. Thanks to these filters, AdGuard removes ads from websites. 
+They are compiled manually, based on your complaints about ads on any of the websites. This is one of the most important elements of AdGuard’s work – namely the quality of ad filters determines the quality of the whole AdGuard’s work.
 
-But there is a reverse side. Over the years, there are more and more advertising filters. And the more ad filters appear, the more memory Adguard consumes and the slower are the web pages rendered. 
+But there is a reverse side. Over the years, there are more and more advertising filters. And the more ad filters appear, the more memory AdGuard consumes and the slower are the web pages rendered. 
 At the same time, some of the filters begin to expire, gradually becoming a dead weight that does not have any use, only consumes memory and slows down the program.
 
 ### Why do we need statistics?
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use Adguard.
+We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
 
 If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
 

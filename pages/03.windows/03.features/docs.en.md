@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-The Adguard application comprises several modules and has a broad scope of capabilities that are not limited to ad filtering. This section gives a brief overview of the Adguard for Microsoft Windows functions and features.
+The AdGuard application comprises several modules and has a broad scope of capabilities that are not limited to ad filtering. This section gives a brief overview of the AdGuard for Microsoft Windows functions and features.
 
 ## Ad Blocker
 
@@ -30,13 +30,13 @@ To learn more about Stealth Mode, read the [dedicated article](http://kb.adguard
 The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html). To learn more about Parental Control, read the [dedicated article](http://testkb.adguard.com/en/windows/features/parental-control) of our Knowledgebase.
 
 ## Extensions
-To make your browsing experience even more comfortable, Adguard can perform the functions of a convenient user script manager. Moreover, Adguard utilizes several pre-installed extensions.
+To make your browsing experience even more comfortable, AdGuard can perform the functions of a convenient user script manager. Moreover, AdGuard utilizes several pre-installed extensions.
 
-**Adguard Assistant**
+**AdGuard Assistant**
 
 Allows quick and easy filtering control right in your browser.
 
-**Adguard Popup Blocker**
+**AdGuard Popup Blocker**
 
 Blocks popup ads on web pages.
 

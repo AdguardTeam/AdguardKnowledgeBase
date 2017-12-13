@@ -295,7 +295,7 @@ for ’Default’ servers;
 
 for ’Family protection’ servers.
 
-#### DNSCrypt for Adguard DNS
+#### DNSCrypt for AdGuard DNS
 
 Setup guide for DNSCrypt for:
 

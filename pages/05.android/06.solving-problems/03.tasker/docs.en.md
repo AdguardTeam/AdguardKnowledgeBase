@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-To configure automatic start (or stop) of Adguard for Android in Tasker app you have to do the following steps:
+To configure automatic start (or stop) of AdGuard for Android in Tasker app you have to do the following steps:
 
 **1. Add Task(s)**
 
@@ -109,7 +109,7 @@ As a result, you will have two tasks ready to use:
 
 **Add profiles that will use these tasks**
 
-For an example, you can configure autostart for _Adguard for Android_ upon switching to mobile networks and autostop upon connecting to Wi-Fi:
+For an example, you can configure autostart for _AdGuard for Android_ upon switching to mobile networks and autostop upon connecting to Wi-Fi:
 
 ![](profiles_en.png?cropResize=400,600)
 

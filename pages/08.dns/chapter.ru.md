@@ -1,5 +1,5 @@
 ---
-title: 'Adguard DNS'
+title: 'AdGuard DNS'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Раздел 7
 
-# Adguard DNS
+# AdGuard DNS
 
-Этот раздел посвящен новому способу блокировки рекламы - Adguard DNS.
+Этот раздел посвящен новому способу блокировки рекламы - AdGuard DNS.

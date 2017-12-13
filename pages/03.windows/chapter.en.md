@@ -1,5 +1,5 @@
 ---
-title: 'Adguard for Windows'
+title: 'AdGuard for Windows'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Chapter 2
 
-# Adguard for Windows
+# AdGuard for Windows
 
-This section describes Adguard for Microsoft Windows operating system.
+This section describes AdGuard for Microsoft Windows operating system.

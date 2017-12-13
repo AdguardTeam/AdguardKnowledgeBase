@@ -1,14 +1,14 @@
 ---
-title: 'How to find Adguard logs'
+title: 'How to find AdGuard logs'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-For analysis and diagnostic of different problems support service might need Adguard log files. These files contain records about all errors occurred with the software recently. Below is the brief instruction describing the way to get the log files and send them to support service.
+For analysis and diagnostic of different problems support service might need AdGuard log files. These files contain records about all errors occurred with the software recently. Below is the brief instruction describing the way to get the log files and send them to support service.
 
-1. Open the path with Adguard log files.
+1. Open the path with AdGuard log files.
 
 For Windows 10 click the Search icon on the Taskbar:
 
@@ -28,7 +28,7 @@ If you use Windows 7 or Vista – press **Start** and type in **%programdata%\Ad
 
 ![](type%20the%20path.png)
 
-2. Create an archive with Adguard log files.
+2. Create an archive with AdGuard log files.
 
 Using your right mouse button click on the Logs in the folder you opened in step 1.
 
@@ -36,4 +36,4 @@ Choose “**Send to**”, then “**Compressed (zipped) folder**” as it’s sh
 
 ![](compressed%20folder.png)
 
-3. Send the created **Logs.zip** file to the Adguard [support service](mailto:support@adguard.com).
+3. Send the created **Logs.zip** file to the AdGuard [support service](mailto:support@adguard.com).

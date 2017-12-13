@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-Inside Adguard for Android 'Advanced settings' tab there is a 'Low Level Settings' button. Once you tap it, you will see a big list of various settings, many of which might be confusing to an average user.
+Inside AdGuard for Android 'Advanced settings' tab there is a 'Low Level Settings' button. Once you tap it, you will see a big list of various settings, many of which might be confusing to an average user.
 
 **WARNING! ** Changing any of these settings without knowledge of what that particular setting does may lead to undesirable consequences! Ask our support for advice if you are in doubt about this or that setting.
 
@@ -14,7 +14,7 @@ Below we will try to describe what some of the most important and often-used low
 
 **pref.net.exclusions**
 
-If you tap this button, you will find a list, and each entry of this list is a package name of some application. The whole reason of this section is to whitelist any app on a level deeper than you would get using Adguard Firewall. Traffic of apps from _pref.net.exclusions_ list will not even go through Adguard, so it can't be modified in any way by definition.
+If you tap this button, you will find a list, and each entry of this list is a package name of some application. The whole reason of this section is to whitelist any app on a level deeper than you would get using AdGuard Firewall. Traffic of apps from _pref.net.exclusions_ list will not even go through AdGuard, so it can't be modified in any way by definition.
 
 To add an app to this list simply add a new entry with app's package name. For apps from Google Play it is really easy to determine the package name. Just open the apps page in GooglePlay and look at the address bar. The part after '**id=**' is exactly what you need to look for. For example, for YouTube app the whole link would be
 

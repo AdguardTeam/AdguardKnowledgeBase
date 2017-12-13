@@ -9,4 +9,4 @@ taxonomy:
 
 # Browser Extensions
 
-This section describes Adguard Browser Extensions.
+This section describes AdGuard Browser Extensions.

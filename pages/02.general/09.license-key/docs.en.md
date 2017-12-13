@@ -1,5 +1,5 @@
 ---
-title: 'Adguard license key'
+title: 'AdGuard license key'
 taxonomy:
     category:
         - docs
@@ -13,45 +13,45 @@ visible: true
 * [What functions are available in AdGuard Account?](#account-functions)
 
 <a name="key"></a>
-#### What is Adguard license key?
+#### What is AdGuard license key?
 
-License key is a unique symbol sequence that activates Adguard. License key is required for Adguard’s work after trial period's expiration. There are few different types of licenses available:
+License key is a unique symbol sequence that activates AdGuard. License key is required for AdGuard’s work after trial period's expiration. There are few different types of licenses available:
 
-1. **Standard** - allows you to activate Adguard on Windows PC or Mac.
-2. **Mobile** - allows you to activate Adguard on your Mobile device.
+1. **Standard** - allows you to activate AdGuard on Windows PC or Mac.
+2. **Mobile** - allows you to activate AdGuard on your Mobile device.
 2. **Premium** - mobile and standard in a single license. Allows you to activate both mobile device and computer with the same license key.
 4. **Bonus License** - is given for winning any contests or prize draws. Equivalent to standard license.
-5. **Beta-test** - special type of license for Adguard beta-testers. Program activated with this type of license is automatically updated to the latest available beta.   
+5. **Beta-test** - special type of license for AdGuard beta-testers. Program activated with this type of license is automatically updated to the latest available beta.   
 
-You can manage your license keys in your [Adguard Account](http://adguard.com/login.html).
+You can manage your license keys in your [AdGuard Account](http://adguard.com/login.html).
 
-To purchase Adguard license key click [here](https://adguard.com/license.html).
+To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 
 <a name="activation"></a>
 
-## How to activate Adguard with a license key?
+## How to activate AdGuard with a license key?
 
-[How to activate Adguard for Windows](#activation_windows)
+[How to activate AdGuard for Windows](#activation_windows)
 
-[How to activate Adguard for Mac](#activation_mac)
+[How to activate AdGuard for Mac](#activation_mac)
 
-[How to activate Adguard for Android](#activation_android) 
+[How to activate AdGuard for Android](#activation_android) 
 
 [Transfering license to another device](#activation_info)
 
 
 <a id="activation_windows"></a>
 
-#### Activating Adguard for Windows
+#### Activating AdGuard for Windows
 
 1. Open the program
    
-To do it, doubleclick on Adguard icon on the desktop:   
+To do it, doubleclick on AdGuard icon on the desktop:   
 
 ![](key_win_01.png)
 
-or double click on Adguard icon in the system tray:   
+or double click on AdGuard icon in the system tray:   
 
 ![](key_win_02.png)
 
@@ -64,11 +64,11 @@ or double click on Adguard icon in the system tray: 
 
 <a id="activation_mac"></a>
 
-#### Activating Adguard for Mac
+#### Activating AdGuard for Mac
 
-1. Open Adguard menu  
+1. Open AdGuard menu  
 
-To do it, click on the Adguard icon in the menu bar: 
+To do it, click on the AdGuard icon in the menu bar: 
 
 2. Open options menu by clicking on gear icon and choose 'License...' 
 
@@ -81,7 +81,7 @@ To do it, click on the Adguard icon in the menu bar: 
 
 <a id="activation_android"></a>
 
-#### Activating Adguard for Android
+#### Activating AdGuard for Android
 
 1. Open the app and go to license menu   
 To do it, click on yellow button in the bottom of app's main screen:   
@@ -100,33 +100,33 @@ To do it, click on yellow button in the bottom of app's main screen: 
 <a id="activation_info"></a>
 #### Transfering license to another device
 
-Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to reset it before using this key again. You can do it in your [Adguard Account](#account-functions).
+Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to reset it before using this key again. You can do it in your [AdGuard Account](#account-functions).
 
 
 <a id="recovery"></a>
 ## How to recover my license key?
 
-You can easily find out which license keys belong to you in your [Adguard Account](#account).
+You can easily find out which license keys belong to you in your [AdGuard Account](#account).
 
-The binding of your license key with your account is held with your email address, which was used for purchasing of Adguard.
+The binding of your license key with your account is held with your email address, which was used for purchasing of AdGuard.
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the [Adguard Account](#account) before using it again.
+**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the [AdGuard Account](#account) before using it again.
 
 
 <a id="account"></a>
-## How to register the Adguard Account?
+## How to register the AdGuard Account?
 
-If you purchased the Adguard License key – your Account is already registered with your email which was used by the purchase. You were to receive an email on the automatic registration of your Personal account and the link for its activation. If you haven’t received this email or forgot your password you can [recover your password](http://adguard.com/recovery_password.html).
+If you purchased the AdGuard License key – your Account is already registered with your email which was used by the purchase. You were to receive an email on the automatic registration of your Personal account and the link for its activation. If you haven’t received this email or forgot your password you can [recover your password](http://adguard.com/recovery_password.html).
 
-If you don’t have Adguard Account, we suggest you register it by clicking [this link](http://adguard.com/register.html).
+If you don’t have AdGuard Account, we suggest you register it by clicking [this link](http://adguard.com/register.html).
 
-Adguard Account gives you an opportunity to manage your license keys and their binding with your computers.
+AdGuard Account gives you an opportunity to manage your license keys and their binding with your computers.
 
 Find more on functions of the Account [below](#account-functions).
 
 
 <a id="account-functions"></a>
-## What functions are available in Adguard Account?
+## What functions are available in AdGuard Account?
 
 When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status:
 
@@ -143,7 +143,7 @@ To unbind the license key from computer just click the “Reset” button as it�
 
 #### Payment options
 
-You can purchase an Adguard license on our website. To do so:
+You can purchase an AdGuard license on our website. To do so:
 
 1\. Go to the [payment page](http://adguard.com/license.html).
 
@@ -151,13 +151,13 @@ You can purchase an Adguard license on our website. To do so:
 
 3\. Choose the license type. Currently, we have three different license types - **Premium**, **Standard** and **Mobile**. 
 
-*Note that **Mobile** license only suits for the Android devices. Adguard for iOS is not activated with license key - you can download it from iTunes AppStore.*
+*Note that **Mobile** license only suits for the Android devices. AdGuard for iOS is not activated with license key - you can download it from iTunes AppStore.*
 
-4\. Choose the preferred currency, license period and the number of devices you want to use Adguard on.
+4\. Choose the preferred currency, license period and the number of devices you want to use AdGuard on.
 
 5\. Enter and confirm your email address.
 
-_**Attention!** Please, pay close attention to the email address you enter. The license key will be sent to this address, and it will be used to automatically create your Adguard personal account. Make sure you don't make any typos._
+_**Attention!** Please, pay close attention to the email address you enter. The license key will be sent to this address, and it will be used to automatically create your AdGuard personal account. Make sure you don't make any typos._
 
 6\. Choose the payment method.
 
@@ -167,7 +167,7 @@ We offer the possibility to pay with a credit card or PayPal.
 
 #### License key activation
 
-The purchased license key will be sent to the indicated email address. You need to activate your Adguard with this license key. The detailed instruction on how to do it is available [here](#activation).
+The purchased license key will be sent to the indicated email address. You need to activate your AdGuard with this license key. The detailed instruction on how to do it is available [here](#activation).
 
 #### Refund policy
 

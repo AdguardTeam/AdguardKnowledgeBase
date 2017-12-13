@@ -1,5 +1,5 @@
 ---
-title: 'Adguard для Android'
+title: 'AdGuard для Android'
 taxonomy:
     category:
         - docs
@@ -7,6 +7,6 @@ taxonomy:
 
 ### Раздел 4
 
-# Adguard для Android
+# AdGuard для Android
 
-В этом разделе рассматривается приложение Adguard для Android.
+В этом разделе рассматривается приложение AdGuard для Android.
