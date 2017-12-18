@@ -3,7 +3,7 @@ title: 'AdGuard translations'
 taxonomy:
     category:
         - docs
-visible: true
+visible: false
 ---
 
 * [About AdGuard translation program](#program)
