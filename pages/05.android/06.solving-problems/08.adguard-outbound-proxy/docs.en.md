@@ -6,8 +6,15 @@ taxonomy:
 visible: true
 ---
 
+* [How to use AdGuard with Tor](#tor)
+* [How to use AdGuard with PIA (Private Internet Access)](#pia)
+* [How to use AdGuard with TorGuard](#torguard)
+* [How to use AdGuard with NordVPN](#nordvpn)
+* [Limitations](#limitations)
+
 This article explains how to set up some of the most popular proxys to work with AdGuard.
 
+<a name="tor"></a>
 ### How to use AdGuard with Tor
 
 1. Open AdGuard and go to **Settings —— Proxy settings**. Download "Orbot: Proxy with Tor" by tapping on **Configure Tor® integration** button or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess). 
@@ -32,6 +39,7 @@ Or you can tap on **Add proxy** and enter these values manually, then set the Or
 
 > Please note, AdGuard will now forward all traffic through Orbot proxy, if you disable Orbot proxy, then Internet connection will be unavailable until you disable outbound proxy settings in AdGuard
 
+<a name="pia"></a>
 ### How to use AdGuard with PIA (Private Internet Access)
 
 *here we presume that you are already a PIA VPN client and have it installed on your device*
@@ -52,6 +60,7 @@ Proxy port | *1080*
 
 5. Enable AdGuard protection.
 
+<a name="torguard"></a>
 ### How to use AdGuard with TorGuard
 
 *here we presume that you are already a TorGuard client and have it installed on your device*
@@ -72,6 +81,28 @@ Proxy port | *1080* or *1085* or *1090*
 
 5. Enable AdGuard protection.
 
+<a name="nordvpn"></a>
+### How to use AdGuard with NordVPN
+
+*here we presume that you are already a NordVPN client and have it installed on your device*
+
+1. Open AdGuard and go to **Settings —— Proxy settings**.
+
+2. Tap on the **Add proxy** button and enter the following data:
+
+Field      |  Value
+-------    | --------- 
+Proxy type | *SOCKS5* 
+Proxy host | *any server from [this list](https://nordvpn.com/servers/)*
+Proxy port | *1080*
+	
+3. For *Username* and *Password* fields, enter your NordVPN Username and Password.
+
+4. Set this proxy as a default one by toggling the switch, then click *Save*.
+
+5. Enable AdGuard protection.
+
+<a name="limitations"></a>
 ### Limitations
 
 There are several factors that can prevent certain traffic from being routed through the outgoing proxy.
