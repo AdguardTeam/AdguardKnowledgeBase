@@ -10,6 +10,7 @@ visible: true
 *   [How to suggest a change?](#suggest-change)
 *   [Writing new articles](#new-article)
 *   [Translating an article](#translating)
+*   [Working on open issues](#issues)
 *   [Getting free AdGuard license](#license)
 
 <a name="introduction"></a>
@@ -54,6 +55,12 @@ Type the rest of the text below (use [Markdown](https://github.com/LewisVo/Markd
 ## Translating an article
 
 This part is tricky. Currently, our Knowledgebase only supports the English and Russian languages, but we can envision a future where we have many more to choose from. You can help us lay the foundation of this future by suggesting translations to existing articles. Everything that was said about [writing new articles](#new-article) applies here too, the main difference is that you should always create the new file in the same folder as the original one, and name it accordingly (e.g. `docs.es.md` for Spanish). Use the English original's raw text to copy the structure of the article, it will eliminate a lot of possible misunderstandings and inconsistencies.
+
+<a name="issues"></a>
+
+## Working on open issues
+
+Sometimes there's need to update or complement an existing article, or create a new one, but we can't do it right away for some reason. In such cases usually a task ("issue") gets created in special repository on GitHub. You can get there by [this link](https://github.com/AdguardTeam/AdguardKnowledgeBase/issues/), choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments in that issue.     
 
 <a name="license"></a>
 
