@@ -111,7 +111,7 @@ However, we do hope that everything for you will go smoothly and without any dif
 <a name="rewards"></a>
 ### Reward system
 
-As every honest and well-done work should be rewarded, volunteers who actively translate on OneSky are eligible to request free AdGuard lifetime license key(s).
+As every honest and well-done work should be rewarded, volunteers who actively translate on OneSky are eligible to request free AdGuard  license key.
 
 Just send us a request to this e-mail: [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license key as a token of our gratitude.
 
