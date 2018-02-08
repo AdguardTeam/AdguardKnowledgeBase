@@ -25,11 +25,19 @@ You can fine-tune ad filtering by adding particular websites to the list of exce
 
 
 ## AdGuard Pro Features <a id="pro"></a>
-AdGuard Pro filters all kinds of ads not only in Safari, but in many other iOS apps. Apart from its basic functions available with the free AdGuard version, AdGuard Pro opens numerous additional possibilities for its users. To use any features of the app, simply slide the Status switch to the right in the PRO section of the AdGuard Pro settings. If the main switch is off, filtering will be unavailable.
+AdGuard Pro filters all kinds of ads not only in Safari, but in many other iOS apps. Apart from its basic functions available with the free AdGuard version, AdGuard Pro opens numerous additional possibilities for its users. To use any features of the app, simply slide the Status switch (under the "Privacy" tab of the AdGuard Pro settings). If this switch is off, filtering will be unavailable.
 
-### System-wide filtering
-System-wide filtering allows to filter traffic in all apps and browsers installed on your device, while not requiring additional setup of any DNS services. This mode utilizes the Domain Names Filter as well as user-defined blacklist and whitelist settings. You don’t have to enable the Domain Names Filter manually in the Filters section – if the system-wide filtering is enabled, it will turn on automatically.
-The system-wide filtering mode uses a local VPN to block ads in browsers and other apps. Your traffic isn’t transferred to any third-party servers as the filtering occurs right on your device. System-wide filtering can be fine-tuned with blacklist and whitelist, so that you can enable or disable blocking at your preference.
+### Subscriptions
+
+AdGuard Pro provides you access to "Blocking lists". Inside the self-titled settings tab you will find Blacklist/Whitelist (that can be used to manage single requests), as well as access to filter subscriptions. Filter subscriptions are lists of rules (similar to Safari content blocking rules) that are used to operate the filtering process. Subscriptions are either hosts-file or adblock-file based.
+
+Hosts files contain a list of matches between domain names and ip-addresses that the system should use to navigate to these domains. They can be used to guide the ad domains requests into "nothing", effectively blocking them. Multiple ad blocking hosts files can be found over the internet. This way is similar to DNS filtering in the sense that it is good for third-party ads but can accidentally interfere with some websites' functionality.
+
+Unlike hosts files, adblock-based subscriptions are regular filters that support basic syntax. You can use filters developed by AdGuard or any other lists you grew accustomed to.
+
+Inside AdGuard Pro you will find a link to add some of the popular subscriptions as well as a possibility to add any custom ones by URL.
+
+*NOTE:Important to notice that too many subscriptions can lead to tunnel crash, i.e. the app will stop responding and the filtering will cease.*
 
 ### Filtering log
 Filtering log is another useful feature of AdGuard Pro. The log contains the full list of AdGuard-processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time.
