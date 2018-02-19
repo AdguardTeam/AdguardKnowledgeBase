@@ -6,13 +6,26 @@ taxonomy:
         - docs
 ---
 
+* [How to become beta tester?](#intro)
+* [Windows](#windows)
+* [MacOS](#macos)
+* [Adnroid](#android)
+* [iOS](#iOS)
+* [Browser extensions](#extensions)
+* [Nightly builds](#nightly)
+* [How to report a bug](#report-a-bug)
+
 There is&nbsp;an&nbsp;AdGuard app for virtually every major platform out there, and we&nbsp;regularly release updates for all of&nbsp;them. This would not be&nbsp;possible without beta testing and, more importantly, beta testers. Want to&nbsp;become one? Here&rsquo;s how you can do&nbsp;it.<!--more-->
+
+<a name="intro"></a>
 
 ### How to&nbsp;become a&nbsp;beta tester
 
 We&nbsp;do&nbsp;not have any special requirements. All you need is&nbsp;to&nbsp;use AdGuard, update to&nbsp;the beta version when it&nbsp;is&nbsp;available and report all spotted bugs. One important thing, though: you will need either [forum](https://forum.adguard.com/index.php) or&nbsp;[GitHub](https://github.com/) account (or&nbsp;both :)) to&nbsp;become our beta tester&nbsp;&mdash; so&nbsp;you might want to&nbsp;get it&nbsp;over with before going further.
 
 Now, once you have this settled, just follow one of&nbsp;these instructions, depending on&nbsp;the platform you are using:
+
+<a name="windows"></a>
 
 #### Windows
 
@@ -28,6 +41,8 @@ To&nbsp;get latest beta version either activate AdGuard with beta license key yo
 
 Everything related to&nbsp;AdGuard for Windows can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForWindows).
 
+<a name="macos"></a>
+
 #### macOS
 
 Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
@@ -41,6 +56,8 @@ It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your
 To&nbsp;get latest beta version download it&nbsp;from [this link](https://static.adguard.com/mac/Adguard.beta.dmg). Once activated with beta license key you will be&nbsp;provided with, the app will use the beta channel for its updates.
 
 Everything related to&nbsp;AdGuard for Mac can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForMac).
+
+<a name="android"></a>
 
 #### Android
 
@@ -62,6 +79,8 @@ Amazon is&nbsp;a&nbsp;separate update channel, all updates are served by&nbsp;Am
 
 Everything related to&nbsp;AdGuard for Android can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid).
 
+<a name="iOS"></a>
+
 #### AdGuard/AdGuard Pro for iOS
 
 Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate what device you are using. It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
@@ -71,6 +90,8 @@ You will receive an&nbsp;email with an&nbsp;invitation to&nbsp;TestFlight.
 ***NOTE:*** *sometimes there is&nbsp;no&nbsp;active test build available. In&nbsp;this case, you will not receive an&nbsp;email notification until there is&nbsp;one.*
 
 Everything related to&nbsp;AdGuard for iOS can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForios).
+
+<a name="extensions"></a>
 
 #### Browser extensions
 
@@ -99,6 +120,19 @@ Proceed to&nbsp;AdGuard Beta [store page](https://www.microsoft.com/store/p/adgu
 Download the latest AdGuard for Safari beta extension from [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
 
 ***NOTE:*** *beta version of&nbsp;AdGuard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
+
+<a name="nightly"></a>
+
+### Nightly builds
+
+Nightly builds are special builds available for AdGuard for Windows and AdGuard for Android. They are updated every three days and contain the most recent changes made by developers. If you decide to install a Nightly build, be ready to face occasional bugs and unexpected behavior (and feel free to report them). You can download Nightly builds at these links:
+
+[setup.exe](https://static.adguard.com/windows/nightly/setup.exe) or [https://agrd.io/windows_nightly](https://agrd.io/windows_nightly) — for AdGuard for Windows;
+[adguard.apk](https://static.adguard.com/android/nightly/adguard.apk) or [https://agrd.io/android_nightly](https://agrd.io/android_nightly) — for AdGuard for Android.
+
+Needs to be mentioned that apps for other platforms do not have Nightly builds yet, but we plan on introducing them later.
+
+<a name="report-a-bug"></a>
 
 ### How to&nbsp;report a&nbsp;bug
 
