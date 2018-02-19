@@ -9,7 +9,7 @@ taxonomy:
 * [How to become beta tester?](#intro)
 * [Windows](#windows)
 * [MacOS](#macos)
-* [Adnroid](#android)
+* [Android](#android)
 * [iOS](#iOS)
 * [Browser extensions](#extensions)
 * [Nightly builds](#nightly)
