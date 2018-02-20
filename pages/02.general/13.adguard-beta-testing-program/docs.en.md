@@ -125,7 +125,7 @@ Download the latest AdGuard for Safari beta extension from [GitHub](https://gith
 
 ### Nightly builds
 
-Nightly builds are special builds available for AdGuard for Windows and AdGuard for Android, they are marked with a Greek letter "**η** in the main menu". They are updated every three days and contain the most recent changes made by developers. If you decide to install a Nightly build, be ready to face occasional bugs and unexpected behavior (and feel free to report them). You can download Nightly builds at these links:
+Nightly builds are special builds available for AdGuard for Windows and AdGuard for Android, they are marked with a Greek letter "**η**" in the main menu. They are updated every three days and contain the most recent changes made by developers. If you decide to install a Nightly build, be ready to face occasional bugs and unexpected behavior (and feel free to report them). You can download Nightly builds at these links:
 
 [setup.exe](https://static.adguard.com/windows/nightly/setup.exe) or [https://agrd.io/windows_nightly](https://agrd.io/windows_nightly) — for AdGuard for Windows;
 [adguard.apk](https://static.adguard.com/android/nightly/adguard.apk) or [https://agrd.io/android_nightly](https://agrd.io/android_nightly) — for AdGuard for Android.
