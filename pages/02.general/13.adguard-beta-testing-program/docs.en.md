@@ -10,7 +10,7 @@ taxonomy:
 * [Windows](#windows)
 * [MacOS](#macos)
 * [Android](#android)
-* [iOS](#iOS)
+* [iOS](#ios)
 * [Browser extensions](#extensions)
 * [Nightly builds](#nightly)
 * [How to report a bug](#report-a-bug)
