@@ -6,43 +6,66 @@ taxonomy:
         - docs
 ---
 
-AdGuard for iOS is an efficient and convenient ad blocker developed for Apple mobile devices. It supports more than 50 filters, including the special filter for Russian web segment, and is available in two versions. The basic version is free on App Store, and allows traffic filtering in the Safari mobile browser only. The Pro version requires a paid license; it blocks ads in other apps and has a whole number of [additional features](#pro).
+AdGuard for iOS is an efficient and convenient ad blocker developed for Apple mobile devices. It supports more than 50 filters and is available in two versions. The basic version is free on App Store and provides content blocking in Safari mobile browser only. The Pro version is a paid one; it blocks ads in other apps and has a whole number of [additional features](#pro).
 
 ### Ad blocking
-AdGuard for iOS blocks all kinds of ads, including banners, video ads, and popup windows. The app utilizes more than 50 filters, both its own and popular Adblock ones, such as EasyList, EasyPrivacy, Fanboys Annoyances, and Malware Domains.
+AdGuard for iOS blocks all kinds of ads, including banners, video ads, and popup windows. The app utilizes more than 50 filters, both its own and popular third-party ones, such as EasyList, EasyPrivacy, Fanboys Annoyances etc.
 
 ### Regional filters
-AdGuard for iOS allows the use of various language-specific filters to block ads on foreign language websites. In addition, users can create their own filters with a personalized set of rules.
+AdGuard for iOS allows the use of various language-specific filters to block ads on websites from respective internet segments. In addition, users can create their own filters with a personalized set of rules.
 
 ### Blocking of trackers and social widgets
-Many websites gather different kinds of information about their visitors: their IP address, the installed browser and OS, screen resolution, and even the page where the user has come from. Special AdGuard filters block all statistics gathering resources and remove social widgets from web pages. The Share and Tweet buttons will only appear where you really need them.
+Many websites gather different kinds of information about their visitors: their IP address, the installed browser and OS, screen resolution, and even the page where the user has come from. Special AdGuard filters block all statistics gathering resources and remove social widgets from web pages. The Share and Tweet buttons will only appear when you want them.
 
 ### Traffic saving
 AdGuard for iOS removes all the unnecessary content from web pages, allowing for much shorter loading time and saving your traffic noticeably.
 
-### Whitelisting
-You can fine-tune ad filtering by adding particular websites to the list of exceptions, which disables ad blocking for your trusted domains.
+### Custom blocking
+You can fine-tune filtering by manually blocking literally any element on the page by accessing AdGuard Assistant right from Safari. It is also possible to add particular domains to the list of exceptions, which disables ad blocking for domains you trust.
 
 
 ## AdGuard Pro Features <a id="pro"></a>
-AdGuard Pro filters all kinds of ads not only in Safari, but in many other iOS apps. Apart from its basic functions available with the free AdGuard version, AdGuard Pro opens numerous additional possibilities for its users. To use any features of the app, simply slide the Status switch to the right in the PRO section of the AdGuard Pro settings. If the main switch is off, filtering will be unavailable.
+Apart from its basic functions available with the free AdGuard version, AdGuard Pro opens numerous additional possibilities for its users, like filtering all kinds of ads not only in Safari, but in many other iOS apps. To enable Pro features of the app, simply turn on the Status switch (under the "Privacy" tab of the AdGuard Pro settings). If this switch is off, any Pro features will be unavailable. 
 
-### System-wide filtering
-System-wide filtering allows to filter traffic in all apps and browsers installed on your device, while not requiring additional setup of any DNS services. This mode utilizes the Domain Names Filter as well as user-defined blacklist and whitelist settings. You don’t have to enable the Domain Names Filter manually in the Filters section – if the system-wide filtering is enabled, it will turn on automatically.
-The system-wide filtering mode uses a local VPN to block ads in browsers and other apps. Your traffic isn’t transferred to any third-party servers as the filtering occurs right on your device. System-wide filtering can be fine-tuned with blacklist and whitelist, so that you can enable or disable blocking at your preference.
+*NOTE: you can add AdGuard widget on the widget screen to use it instead of flipping the Status switch in the app menu.* 
 
-### Filtering log
-Filtering log is another useful feature of AdGuard Pro. The log contains the full list of AdGuard-processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time.
+<img src="screenshots_en/Widget.JPG" width="300">
 
-### DNS Filtering
-Among other functions, AdGuard Pro has a special mode: DNS Filtering. It allows to set any DNS servers as default ones and quickly switch between them. If you want, you can use public Google DNS servers instead of those suggested by AdGuard, set up [OpenDNS](https://www.opendns.com), or type in any other addresses, e.g., those from your provider. Use this mode in case system-wide filtering is unavailable for any reason – for example, when your device is running another app requiring VPN connection.
+### Custom DNS settings
+One of the main AdGuard Pro features is ability to customize DNS settings. AdGuard Pro allows to set up any number of DNS servers and quickly switch between them. Several are available by default, like AdGuard's own DNS servers, Google Public DNS, [OpenDNS](https://www.opendns.com) servers and many others.
 
-DNS servers that can be utilized in the DNS Filtering mode include AdGuard addresses. Their use allows to block ads, counters, and phishing websites in various iOS apps and browsers, not only in Safari, just like system-wide filtering would. More information regarding AdGuard DNS [is here](https://kb.adguard.com/en/dns/overview). You can quickly change DNS server settings and switch between different addresses as needed.
+<img src="screenshots_en/DNS_filtering.JPG" width="300">
 
-While using AdGuard DNS, users also have access to the filtering log; however, it does not affect traffic processing in this mode – the blacklist and whitelist are only available in the system-wide filtering mode. If DNS Filtering is enabled, the user is only capable of tracking current requests in the filtering log.
+Using a custom DNS server instead of a system default one can be helpful in a number of ways. Sometimes it will speed up the internet connection, secure your actions online, help get rid of ads or serve as a parental control tool. One of the possible applications is DNS filtering. It is a more "rough" way of ad blocking compared to content blocking, but it works across the board rather than just in Safari. More information about DNS filtering can be found [here](https://kb.adguard.com/general/dns-filtering-android). By the way, AdGuard has its own DNS servers that provide DNS-based ad blocking, and you can choose them from among the default ones in AdGuard Pro.
 
-### Family Mode
-This is one of the AdGuard DNS setting options. Family Mode protects your children from adult web content, all the while perfectly filtering ads and malicious sites. In addition, your browser will use the safe search function that prevents the search engine from coming up with adult websites in search results. Family Mode can be enabled in AdGuard DNS if you use DNS addresses provided by AdGuard. More detailed information regarding setup of Family Mode in AdGuard DNS is provided [in this section](http://kb.adguard.com/en/dns/setup-guide) of our knowledge base.
+#### DNSCrypt
+AdGuard Pro also supports DNSCrypt servers. You can read why DNSCrypt is so important in our [Knowledge base article](https://kb.adguard.com/general/dns-filtering-android#what-is-dnscrypt-and-why-is-it-important). Long story short: it greatly enhances your online privacy protection. Loads of DNSCrypt servers to choose from (including AdGuard DNSCrypt servers) are available by default on the “DNS settings screen”, along with option to add a custom server.
+
+<img src="screenshots_en/DNSCrypt.JPG" width="300">
+
+#### DNS requests log
+DNS requests log is another useful feature of AdGuard Pro. The log contains the full list of processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time. To access it, tap on the stats tab in the app's main menu.
+
+<img src="screenshots_en/FIltering_log.JPG" width="300">
+
+#### Trackers detection
+
+AdGuard products in general care about online privacy, and AdGuard Pro is not an exception. It detects online trackers that gather all types of information about you and your actions. Any detected tracker requests are highlighted with yellow in DNS requests log. Unfortunately, Apple puts harsh restrictions on tools available to iOS apps outside of Safari, so often blocking of such requests results in breaking functionality of associated services. This is why many of these trackers are not blocked by default, but you have full control over which ones to block manually. AdGuard Pro will provide detailed info about most of these trackers so you can make a well-considered decision in each separate case.
+
+### Subscriptions
+AdGuard Pro provides you access to "Privacy Settings". Inside the self-titled settings tab you will find Blacklist/Whitelist (that can be used to manage single requests), as well as access to subscriptions. Subscriptions are lists of rules (similar to Safari content blocking rules) that are used to operate the filtering process. Subscriptions are either hosts-file or adblock-file based.
+
+<img src="screenshots_en/Subscriptions.JPG" width="300">
+
+Hosts files contain a list of matches between domain names and ip-addresses that the system should use to navigate to these domains. They can be used to guide the ad domains requests into "nothing", effectively blocking them. Multiple ad blocking hosts files can be found over the internet. This way is similar to DNS filtering in the sense that it is good for third-party ads but can accidentally interfere with some websites' functionality.
+
+Unlike hosts files, adblock-based subscriptions are regular filters that support basic syntax. You can use filters developed by AdGuard or any other lists you grew accustomed to.
+
+Inside AdGuard Pro you will find a link to add some of the popular subscriptions as well as a possibility to add any custom ones by URL.
+
+<img src="screenshots_en/Popular_subscriptions.JPG" width="300">
+
+*NOTE: Important to notice that too many subscriptions can lead to tunnel crash, i.e. the app will stop responding and the filtering will cease.*
 
 ### Limitations
 Unfortunately, AdGuard Pro is currently incapable of blocking ads in a number of applications, the list of which is provided below:
