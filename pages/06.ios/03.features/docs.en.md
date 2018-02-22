@@ -8,8 +8,6 @@ taxonomy:
 
 AdGuard for iOS is an efficient and convenient ad blocker developed for Apple mobile devices. It supports more than 50 filters and is available in two versions. The basic version is free on App Store and provides content blocking in Safari mobile browser only. The Pro version is a paid one; it blocks ads in other apps and has a whole number of [additional features](#pro).
 
-<img src="screenshots_en/redesign.JPG" width="300">
-
 ### Ad blocking
 AdGuard for iOS blocks all kinds of ads, including banners, video ads, and popup windows. The app utilizes more than 50 filters, both its own and popular third-party ones, such as EasyList, EasyPrivacy, Fanboys Annoyances etc.
 
@@ -42,6 +40,8 @@ Using a custom DNS server instead of a system default one can be helpful in a nu
 
 #### DNSCrypt
 AdGuard Pro also supports DNSCrypt servers. You can read why DNSCrypt is so important in our [Knowledge base article](https://kb.adguard.com/general/dns-filtering-android#what-is-dnscrypt-and-why-is-it-important). Long story short: it greatly enhances your online privacy protection. Loads of DNSCrypt servers to choose from (including AdGuard DNSCrypt servers) are available by default on the “DNS settings screen”, along with option to add a custom server.
+
+<img src="screenshots_en/DNSCrypt.JPG" width="300">
 
 #### DNS requests log
 DNS requests log is another useful feature of AdGuard Pro. The log contains the full list of processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time. To access it, tap on the stats tab in the app's main menu.
