@@ -46,7 +46,7 @@ AdGuard Pro also supports DNSCrypt servers. You can read why DNSCrypt is so impo
 #### DNS requests log
 DNS requests log is another useful feature of AdGuard Pro. The log contains the full list of processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time. To access it, tap on the stats tab in the app's main menu.
 
-<img src="screenshots_en/Filtering_log.JPG" width="300">
+<img src="screenshots_en/FIltering_log.JPG" width="300">
 
 #### Trackers detection
 
