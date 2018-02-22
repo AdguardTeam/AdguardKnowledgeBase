@@ -9,7 +9,7 @@ taxonomy:
 * [Windows](#windows)
 * [MacOS](#macos)
 * [Adnroid](#android)
-* [iOS](#iOS)
+* [iOS](#ios)
 * [Браузерные расширения](#extensions)
 * [Nightly-сборки](#nightly)
 * [Как сообщить о баге](#report-a-bug)
