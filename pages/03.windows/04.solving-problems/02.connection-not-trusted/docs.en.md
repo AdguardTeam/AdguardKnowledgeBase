@@ -67,7 +67,7 @@ To do so:
 
 5. Check the checkboxes as it is shown on the screenshot and click 'OK'.
 
-![](ffox_en_6.png)
+![](ffox_cert_trust_en.png)
 
 6. In 'Authorities' window choose 'AdGuard personal CA' and click on 'View...'.
 
