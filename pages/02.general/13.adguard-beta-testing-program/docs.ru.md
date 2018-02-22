@@ -8,7 +8,7 @@ taxonomy:
 * [Как стать бета-тестером?](#intro)
 * [Windows](#windows)
 * [MacOS](#macos)
-* [Adnroid](#android)
+* [Android](#android)
 * [iOS](#ios)
 * [Браузерные расширения](#extensions)
 * [Nightly-сборки](#nightly)
