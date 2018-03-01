@@ -29,24 +29,24 @@ Apart from its basic functions available with the free AdGuard version, AdGuard 
 
 *NOTE: you can add AdGuard widget on the widget screen to use it instead of flipping the Status switch in the app menu.* 
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/Widget.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/Widget.JPG" width="300">
 
 ### Custom DNS settings
 One of the main AdGuard Pro features is ability to customize DNS settings. AdGuard Pro allows to set up any number of DNS servers and quickly switch between them. Several are available by default, like AdGuard's own DNS servers, Google Public DNS, [OpenDNS](https://www.opendns.com) servers and many others.
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/DNS_filtering.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/DNS_filtering.JPG" width="300">
 
 Using a custom DNS server instead of a system default one can be helpful in a number of ways. Sometimes it will speed up the internet connection, secure your actions online, help get rid of ads or serve as a parental control tool. One of the possible applications is DNS filtering. It is a more "rough" way of ad blocking compared to content blocking, but it works across the board rather than just in Safari. More information about DNS filtering can be found [here](https://kb.adguard.com/general/dns-filtering-android). By the way, AdGuard has its own DNS servers that provide DNS-based ad blocking, and you can choose them from among the default ones in AdGuard Pro.
 
 #### DNSCrypt
 AdGuard Pro also supports DNSCrypt servers. You can read why DNSCrypt is so important in our [Knowledge base article](https://kb.adguard.com/general/dns-filtering-android#what-is-dnscrypt-and-why-is-it-important). Long story short: it greatly enhances your online privacy protection. Loads of DNSCrypt servers to choose from (including AdGuard DNSCrypt servers) are available by default on the “DNS settings screen”, along with option to add a custom server.
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/DNSCrypt.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/DNSCrypt.JPG" width="300">
 
 #### DNS requests log
 DNS requests log is another useful feature of AdGuard Pro. The log contains the full list of processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time. To access it, tap on the stats tab in the app's main menu.
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/FIltering_log.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/FIltering_log.JPG" width="300">
 
 #### Trackers detection
 
@@ -55,7 +55,7 @@ AdGuard products in general care about online privacy, and AdGuard Pro is not an
 ### Subscriptions
 AdGuard Pro provides you access to "Privacy Settings". Inside the self-titled settings tab you will find Blacklist/Whitelist (that can be used to manage single requests), as well as access to subscriptions. Subscriptions are lists of rules (similar to Safari content blocking rules) that are used to operate the filtering process. Subscriptions are either hosts-file or adblock-file based.
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/Subscriptions.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/Subscriptions.JPG" width="300">
 
 Hosts files contain a list of matches between domain names and ip-addresses that the system should use to navigate to these domains. They can be used to guide the ad domains requests into "nothing", effectively blocking them. Multiple ad blocking hosts files can be found over the internet. This way is similar to DNS filtering in the sense that it is good for third-party ads but can accidentally interfere with some websites' functionality.
 
@@ -63,7 +63,7 @@ Unlike hosts files, adblock-based subscriptions are regular filters that support
 
 Inside AdGuard Pro you will find a link to add some of the popular subscriptions as well as a possibility to add any custom ones by URL.
 
-<img src="https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/06.ios/03.features/screenshots_en/Popular_subscriptions.JPG" width="300">
+<img src="https://raw.githubusercontent.com/AdguardTeam/AdguardKnowledgeBase/master/pages/06.ios/03.features/screenshots_en/Popular_subscriptions.JPG" width="300">
 
 *NOTE: Important to notice that too many subscriptions can lead to tunnel crash, i.e. the app will stop responding and the filtering will cease.*
 
