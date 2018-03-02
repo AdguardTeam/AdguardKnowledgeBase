@@ -104,9 +104,7 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 #### Firefox
 
-Вы&nbsp;можете установить бета-версию расширения AdGuard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер 
-
-**ИЛИ** установите последнюю бету напрямую&nbsp;из [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/beta).
+Вы&nbsp;можете установить бета-версию расширения AdGuard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер.
 
 Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать легаси-версию расширения, её также можно найти в [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
 
