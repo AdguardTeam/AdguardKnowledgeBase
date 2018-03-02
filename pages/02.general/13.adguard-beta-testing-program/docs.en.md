@@ -105,11 +105,9 @@ Download AdGuard beta extension from [Chrome Store](https://chrome.google.com/we
 
 #### Firefox
 
-You can get AdGuard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser 
+You can get AdGuard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser.
 
-**OR**&nbsp;directly from [AMO](https://addons.mozilla.org/firefox/addon/adguard-adblocker/versions/beta).
-
-Users with older Firefox versions or&nbsp;PaleMoon can use our legacy version, it can also be found on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
+Users of older Firefox versions and&nbsp;PaleMoon users can use our legacy version, it can also be found on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
 
 #### Edge
 
