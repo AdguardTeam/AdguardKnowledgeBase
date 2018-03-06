@@ -200,7 +200,7 @@ Filter that blocks ads on mobile devices. Contains all known mobile ad networks.
 
 ## Safari filter
 
-Filter that blocks ads on iOS mobile devices in Safari browser. Contains all known mobile ad networks. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+Special filter for Safari 9 and above on iOS and MacOS to use in combination with AdGuard (or other) filter lists. We need a seperate filter because Safari's Content Blocking API does not fully support AdGuard's advanced rules syntax. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/12.txt)
 
