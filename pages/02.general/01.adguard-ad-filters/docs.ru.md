@@ -200,7 +200,7 @@ visible: true
 
 ## Safari фильтр
 
-Фильтр, блокирующий рекламу на мобильных устройствах под управлением операционной системы iOS в браузере Safari. Обычно для мобильных версий сайтов и приложений используются другие рекламные сети, нежели для обычных сайтов. Все известные нам рекламные сети подобного рода находится в этом фильтре. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Особый фильтр для Safari 9 и выше на iOS и MacOS для использования в комбинации с другими фильтрами AdGuard (или иными). Отдельный фильтр необходим, так как API блокировки контента Safari не полностью поддерживает продвинутый синтаксис правил AdGuard. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
 [Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/12.txt)
 
