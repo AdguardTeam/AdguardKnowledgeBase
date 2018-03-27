@@ -10,6 +10,7 @@ visible: true
 * [What do plural forms mean?](#plurals)
 * [Where can you learn about the number of plural forms?](#where-to-learn)
 * [Plurals in AdGuard translations](#translations)
+* [Short summary](#summury)
 
 <a name="intro"></a>
 
@@ -129,9 +130,9 @@ Thus, the translation from English ("Standard license for %count% computer|Stand
 
 Although it is obvious that the last two templates have no differences, it is very important to keep the rule: ***The number of templates should reflect the number of plural forms of the respective language!***
 
-***
+<a name="summary"></a>
 
-**Summing up:**
+## Short summary
 
 When translating AdGuard projects pay your close attention to the original phrases with two important elements: the vertical bar sign(s) and %count% placeholders. Also, do not ignore the yellow textboxes (notes) above the original phrases.
 
