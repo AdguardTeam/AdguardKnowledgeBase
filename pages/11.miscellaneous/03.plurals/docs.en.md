@@ -8,20 +8,20 @@ visible: true
 
 * [Introduction](#intro)
 * [What do plural forms mean?](#plurals)
-* [Where can you learn about the number of plural forms?](#where_to_learn)
+* [Where can you learn about the number of plural forms?](#where-to-learn)
 * [Plurals in AdGuard translations](#translations)
 
-## Introduction
-
 <a name="intro"></a>
+
+## Introduction
 
 It is no secret, that there are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
 
 While grammar rule of a language can state the existence of only singular and plural numbers, there can be a great variety of plural forms of words. That is why we strongly recommend you to properly read this article and to learn more about plural forms in different languages and about how they are being used in AdGuard translations. 
 
-## What do plural forms mean?
-
 <a name="plurals"></a>
+
+## What do plural forms mean?
 
 In different languages, there can be multiple forms of words depending on certain numbers that qualify them. As you might have already guessed, we will talk about the nouns.
 
@@ -53,11 +53,11 @@ There are a lot of other languages that have three plural forms too, such as Rus
 
 Among the world’s languages there are ones with four, five and even six plural forms (like Arabic).
 
+<a name="where-to-learn"></a>
+
 ## Where can you learn about the number of plural forms?
 
-<a name="where_to_learn"></a>
-
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many forms words have in a language you translate into. Fortunately, there are enough sources of information nowadays and some of them are listed below.
+When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms one or another language includes. Fortunately, there are enough sources of information nowadays and some of them are listed below.
 
 First of all, we would like to advise you to refer to the information of Mozilla’s [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article. There you will find different plural form rules that contain different numbers of forms and show what languages are involved. One of this article’s advantages is the opportunity to see what specific numbers define plural forms in different languages.
 
@@ -65,9 +65,9 @@ But despite this article is (or at least supposed to be) quite informative and c
 
 Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1, 5; 2,3; 100,1…) and as a result of which some languages are supposed to have more plural forms. However, we don’t use decimal numbers in AdGuard translations yet.
 
-## Plurals in AdGuard translations
-
 <a name="translations"></a>
+
+## Plurals in AdGuard translations
 
 First of all, you need to understand, that not every AdGuard translation involves the use of different plural forms. 
 
