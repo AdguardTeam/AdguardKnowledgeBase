@@ -10,7 +10,7 @@ visible: true
 * [What do plural forms mean?](#plurals)
 * [Where can you learn about the number of plural forms?](#where-to-learn)
 * [Plurals in AdGuard translations](#translations)
-* [Short summary](#summury)
+* [Short summary](#summary)
 
 <a name="intro"></a>
 
@@ -72,7 +72,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 First of all, you need to understand, that not every AdGuard translation involves the use of different plural forms. 
 
-To identify phrases which translations require the use of plural forms you should pay your attention to the presence of a vertical bar sign between the sentences and %count% placeholders in original phrases.
+To identify phrases which translations require the use of plural forms you should pay your attention to the presence of a vertical bar sign between the sentences and **%count%** placeholders in original phrases.
 
 ![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/sign%26placeholders.png)
 
@@ -86,8 +86,8 @@ The first thing you should understand is that the sentences which are divided by
 
 Coming back to the example, as the English language includes only two plural forms, there should be two templates respectively:
 
-**Template 0** – Standard license for %count% computer  
-**Template 1** – Standard license for %count% computers 
+**Template 0** – Standard license for *%count%* computer  
+**Template 1** – Standard license for *%count%* computers 
 
 Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
 
@@ -100,21 +100,21 @@ If **%count%** of computers is more than 1 (5, 13 or 1149) – use **'Template 1
 
 In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them. 
 
-For example, we would like to translate this phrase ("Standard license for %count% computer|Standard license for %count% computers") into Slovak, that according to the rule of [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article has three different forms of words to use with following numbers:
+For example, we would like to translate this phrase ("Standard license for *%count%* computer|Standard license for *%count%* computers") into Slovak, that according to the rule of [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article has three different forms of words to use with following numbers:
 
 ![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Slovak.png)
 
 Then the translation from English into Slovak should be: 
 
-- Štandartná licencia pre %count% počítač|Štandartná licencia pre %count% počítače|Štandartná licencia pre %count% počítačov 
+- Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov 
 
 In this case, we see three templates which contain three plural forms of the word *'počítač'* (computer) in Slovak.
 
 And again, this rule will function during localization proces:
 
-If **%count%** of computers is 1 – use **'Template 0'** –  Štandartná licencia pre  %count% počítač;  
-If **%count%** of computers is more than 1 but less than 5 (2, 3 or 4) – use **'Template 1'** – Štandartná licencia pre  %count% počítače;  
-If **%count%** of computers is 5 or more than 5 – use **'Template 2'** – Štandartná licencia pre  %count% počítačov.
+If **%count%** of computers is 1 – use **'Template 0'** –  Štandartná licencia pre *%count%* počítač;  
+If **%count%** of computers is more than 1 but less than 5 (2, 3 or 4) – use **'Template 1'** – Štandartná licencia pre *%count%* počítače;  
+If **%count%** of computers is 5 or more than 5 – use **'Template 2'** – Štandartná licencia pre *%count%* počítačov.
 
 If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers and, as a result, we will have grammatical mistakes in sentences, like in English "I have five star".
 
@@ -124,9 +124,9 @@ The Serbian word *'računar'* (computer), for example, has only two forms: *'ra�
 
 ![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Serbian.png)
 
-Thus, the translation from English ("Standard license for %count% computer|Standard license for %count% computers")  into Serbian in this case should be:
+Thus, the translation from English ("Standard license for *%count%* computer|Standard license for *%count%* computers")  into Serbian in this case should be:
 
-- Standardna licenca za %count% računar|Standardna licenca za %count% računara|Standardna licenca za %count% računara
+- Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara
 
 Although it is obvious that the last two templates have no differences, it is very important to keep the rule: ***The number of templates should reflect the number of plural forms of the respective language!***
 
@@ -134,7 +134,7 @@ Although it is obvious that the last two templates have no differences, it is ve
 
 ## Short summary
 
-When translating AdGuard projects pay your close attention to the original phrases with two important elements: the vertical bar sign(s) and %count% placeholders. Also, do not ignore the yellow textboxes (notes) above the original phrases.
+When translating AdGuard projects pay your close attention to the original phrases with two important elements: the vertical bar sign(s) and **%count%** placeholders. Also, do not ignore the yellow textboxes (notes) above the original phrases.
 
 Before translating such strings, please refer to the plural rule of a language into which you translate and remember: 
 
@@ -142,6 +142,6 @@ Before translating such strings, please refer to the plural rule of a language i
 
 + Do not forget to use a vertical bar sign between templates without any space before and after it;
 
-+ Do not translate, fill in or delete %count% placeholders.
++ Do not translate, fill in or delete **%count%** placeholders.
 
 By using these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process. Thank you!
