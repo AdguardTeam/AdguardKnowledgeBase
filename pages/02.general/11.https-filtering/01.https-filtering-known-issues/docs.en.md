@@ -37,9 +37,9 @@ AdGuard’s behavior depends on the platform. AdGuard for Windows uses Microsoft
 **Our plans:**
 
 * Add a possibility to use CRLSets (an alternative to the OCSP by Google) to the validation library
-* Add the OCSP Must-Staple support to the validation library
-* Add the Expect-Staple header support
-* Stop using the CryptoAPI in favor of the cross-platform implementation of the OCSP revocation checking
+* Add the OCSP `Must-Staple` support to the validation library
+* Add the `Expect-Staple` header support
+* Stop using the `CryptoAPI` in favor of the cross-platform implementation of the OCSP revocation checking
 
 **ETA:** This will be implemented after we complete the development of the new cross-platform filtering engine, which is planned for Q2-Q3 2018.
 
@@ -59,7 +59,7 @@ Browsers ignore the `Expect-CT` header in the case of local certificates and to 
 
 [HPKP (HTTP Public Key Pinning)](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) is a mechanism that allows websites to defend against the unauthorized attempts to intercept the encrypted (HTTPS) connections to them. This standard is not too widespread so far (of the Alexa top1000 websites, less than 1% uses HPKP) due to the high risks of using and sophisticated configuration process. Some experts even go as far as saying that HPKP is [de-facto dead](https://blog.qualys.com/ssllabs/2016/09/06/is-http-public-key-pinning-dead). Nonetheless, it remains the only protection mechanism to keep working should it happen the center of certification becomes compromised.
 
-There’s one serious problem with using HTTPS filtering - browsers completely ignore HPKP (because it isn’t used alongside with a local root certificate). This is a common issue for all programs that filter HTTPS. The only possible solution is to implement the HPKP standard within AdGuard.
+There’s one serious problem with using HTTPS filtering - browsers completely ignore HPKP (because it isn’t used along with a local root certificate). This is a common issue for all programs that filter HTTPS. The only possible solution is to implement the HPKP standard within AdGuard.
 
 **Our plans:**
 
@@ -92,7 +92,7 @@ Currently, the situation with TLS 1.3 support in popular browsers is following:
 
 **Our plans:**
 
-* The new filtering engine supports TLS 1.3 so every AdGuard version will receive it soon.
+* The new filtering engine supports TLS 1.3 so every AdGuard product will receive it soon.
 
 **ETA:** The ETA is Q2-Q3 2018.
 
@@ -112,7 +112,7 @@ The thing is that AdGuard maintains two encrypted connections: one with the brow
 **ETA:**
 * AdGuard for Windows v6.2 featuring the new algorithm has been released in November 2017. (**UPD:** done)
 * AdGuard for Mac already uses the modern algorithm.
-* Android version will receive this fix alongside with the new filtering engine migration (approximately, Q2 2018).
+* Android version will receive this fix along with the new filtering engine migration (approximately, Q2 2018).
 
 ### Have remarks or suggestions?
 

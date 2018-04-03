@@ -73,7 +73,7 @@ The majority of the problems discovered in the research above are connected with
 
 The first thing to mention is, some (many, even) modern apps still trust user certificates. Nothing changes in their regard. Almost all browsers do, too — maybe there are some exotic ones that don't, but they are a huge exception compared to the field.
 
-Finally, if your device is rooted, you can move AdGuard certificate to system storage. This way you don't have to worry about any permissions a particular app may or may not have — HTTPS traffic will be filtered for modern apps just as well as for older ones. Please keep in mind that in this case some additional security restrictions like HPKP or Expect-CT apply to AdGuard.
+Finally, if your device is rooted, you can move AdGuard certificate to system storage. This way you don't have to worry about any permissions a particular app may or may not have — HTTPS traffic will be filtered for modern apps just as well as for older ones. Please keep in mind that in this case some additional security restrictions like HPKP or `Expect-CT` apply to AdGuard.
 
 ### How to manually check HTTPS quality?
 
