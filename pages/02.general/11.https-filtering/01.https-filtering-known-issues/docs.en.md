@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-> Last update: 10 November 2017
+> Last update: 3 April 2018
 > Understanding this article may require from you the basic knowledge about encrypting, TLS protocol and HTTPS.
 
 First, look at this simple diagram that shows the general structure of HTTPS protocol:
@@ -37,23 +37,36 @@ AdGuard’s behavior depends on the platform. AdGuard for Windows uses Microsoft
 **Our plans:**
 
 * Add a possibility to use CRLSets (an alternative to the OCSP by Google) to the validation library
-* Add the OCSP Must-Staple support to the validation library
-* Stop using the CryptoAPI in favor of cross-platform implementation of the OCSP revocation checking
+* Add the OCSP `Must-Staple` support to the validation library
+* Add the `Expect-Staple` header support
+* Stop using the `CryptoAPI` in favor of the cross-platform implementation of the OCSP revocation checking
 
-**ETA:** This will be implemented after we complete the development of the new cross-platform filtering engine, which is planned for December 2017 — January 2018.
+**ETA:** This will be implemented after we complete the development of the new cross-platform filtering engine, which is planned for Q2-Q3 2018.
+
+#### Certificate Transparency
+
+Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
+
+Browsers ignore the `Expect-CT` header in the case of local certificates and to achieve the same level of security we must implement the certificate transparency check on our side.
+
+**Our plans:**
+
+* Add the certificate transparency support to the certificate validation library
+
+**ETA:** We are planning to enable this functionality after all AdGuard products start using the new filtering engine. ETA is Q3-Q4 2018.
 
 #### HPKP support
 
 [HPKP (HTTP Public Key Pinning)](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) is a mechanism that allows websites to defend against the unauthorized attempts to intercept the encrypted (HTTPS) connections to them. This standard is not too widespread so far (of the Alexa top1000 websites, less than 1% uses HPKP) due to the high risks of using and sophisticated configuration process. Some experts even go as far as saying that HPKP is [de-facto dead](https://blog.qualys.com/ssllabs/2016/09/06/is-http-public-key-pinning-dead). Nonetheless, it remains the only protection mechanism to keep working should it happen the center of certification becomes compromised.
 
-There’s one serious problem with using HTTPS filtering - browsers completely ignore HPKP (because it isn’t used alongside with a local root certificate). This is a common issue for all programs that filter HTTPS. The only possible solution is to implement the HPKP standard within AdGuard.
+There’s one serious problem with using HTTPS filtering - browsers completely ignore HPKP (because it isn’t used along with a local root certificate). This is a common issue for all programs that filter HTTPS. The only possible solution is to implement the HPKP standard within AdGuard.
 
 **Our plans:**
 
 * Add the HPKP support to the certificate validation library
 * Change the AdGuard’s behavior for the cases when an invalid certificate is spotted. Instead of the current solution (ceasing the filtering for this domain) we should warn the user about the problem.
 
-**ETA:** Just as with OCSP revocation support, we wait until the new filtering engine development is finished. ETA is December 2017 — January 2018.
+**ETA:** We are planning to enable this functionality after all AdGuard products start using the new filtering engine. ETA is Q3-Q4 2018.
 
 >Note: *Google's ["intent to remove"](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8) HPKP support adds some controversy and may end up interfering with our plans.*
 
@@ -79,11 +92,9 @@ Currently, the situation with TLS 1.3 support in popular browsers is following:
 
 **Our plans:**
 
-* We are experimenting with TLS 1.3 and plan to add its support to the AdGuard for Windows v6.3.
-* It won’t be enabled by default until TLS 1.3 is finalized and browsers start to support the unified standard.
-* Mac and Android versions of AdGuard will receive TLS 1.3 support later after we test it on the Windows version.
+* The new filtering engine supports TLS 1.3 so every AdGuard product will receive it soon.
 
-**ETA:** There is no unified standard for TLS 1.3 yet, we expect it to be agreed on somewhere around Q1 2018.
+**ETA:** The ETA is Q2-Q3 2018.
 
 ### Obsolete Key Exchange (RSA) warning
 
@@ -99,9 +110,9 @@ The thing is that AdGuard maintains two encrypted connections: one with the brow
 * In case we don’t like the new performance rate, keep the old algorithm but add a flag in AdGuard settings to enable the modern one.
 
 **ETA:**
-* AdGuard for Windows v6.2 featuring the new algorithm has been released in November 2017.
+* AdGuard for Windows v6.2 featuring the new algorithm has been released in November 2017. (**UPD:** done)
 * AdGuard for Mac already uses the modern algorithm.
-* Android version will receive this fix in the v3.0 (approximately, Q1-Q2 2017).
+* Android version will receive this fix along with the new filtering engine migration (approximately, Q2 2018).
 
 ### Have remarks or suggestions?
 
