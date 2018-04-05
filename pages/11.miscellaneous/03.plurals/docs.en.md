@@ -74,7 +74,7 @@ First of all, you need to understand, that not every AdGuard translation involve
 
 To identify phrases which translations require the use of plural forms you should pay your attention to the presence of a vertical bar sign between the sentences and **%count%** placeholders in original phrases.
 
-![](sign&placeholders.png)
+![](sign%26placeholders.png)
 
 Besides, almost all such strings have a yellow note above them which аttracts your attention to the proper use of plural forms.
 
