@@ -34,7 +34,7 @@ The Polish language in contrast to English has three plural forms of words. One 
 
 Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing before it.  
 
-![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Polish.png)
+![](Polish.png)
 
 You can find such examples with numerals which define plural forms of words in your language [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
@@ -50,7 +50,7 @@ Now it is clear that the Polish *'godzinę'* (hour) has three different forms, w
 
 There are a lot of other languages that have three plural forms too, such as Russian, Serbian, Slovak, Czech etc. But not all of them can obey the same rule. As an example is the Romanian language that in contrast to Polish has various plural forms of words defined by the following numbers: 
 
-![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Romanian.png)
+![](Romanian.png)
 
 Among the world’s languages there are ones with four, five and even six plural forms (like Arabic).
 
@@ -74,7 +74,7 @@ First of all, you need to understand, that not every AdGuard translation involve
 
 To identify phrases which translations require the use of plural forms you should pay your attention to the presence of a vertical bar sign between the sentences and **%count%** placeholders in original phrases.
 
-![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/sign%26placeholders.png)
+![](sign&placeholders.png)
 
 Besides, almost all such strings have a yellow note above them which аttracts your attention to the proper use of plural forms.
 
@@ -102,7 +102,7 @@ In a situation with another language that has, let’s say, three plural forms, 
 
 For example, we would like to translate this phrase ("Standard license for *%count%* computer|Standard license for *%count%* computers") into Slovak, that according to the rule of [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article has three different forms of words to use with following numbers:
 
-![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Slovak.png)
+![](Slovak.png)
 
 Then the translation from English into Slovak should be: 
 
@@ -122,7 +122,7 @@ But in some languages there can be words (let’s call them exclusions) that hav
 
 The Serbian word *'računar'* (computer), for example, has only two forms: *'računar'* - for 1, 21, 31 (and other numbers ending in 1, excluding 11) computers and *'računara'* - for other numbers of computers. But in spite of this fact, there should be three templates in AdGuard translations according to the general rule (which states that there are three plural forms of words in Serbian): 
 
-![](https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/plural-forms/pages/11.miscellaneous/plurals/Serbian.png)
+![](Serbian.png)
 
 Thus, the translation from English ("Standard license for *%count%* computer|Standard license for *%count%* computers")  into Serbian in this case should be:
 
