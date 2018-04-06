@@ -1,5 +1,5 @@
 ---
-title: Плюральные формы
+title: 'Плюральные формы'
 taxonomy:
     category:
         - docs
