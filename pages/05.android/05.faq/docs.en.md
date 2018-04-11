@@ -371,8 +371,8 @@ There are three AdGuard filtering methods:
 
 High-quality method can increase the pages loading time, so it is recommended to use only on powerful devices.
 
-**High-speed method** is able to use all rules save for [HTML filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#html-filtering-rules) and filters everything except page content. This method uses so called [“cosmetic” filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules) which are used not for blocking ad requests, but for changing the page appearance. “Cosmetic” rules include adding some special CSS-rules (styles) which hide all unwanted elements on a page.
+**High-speed method** is able to use all rules save for [HTML filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#html-filtering-rules) and filters everything except page content. This method uses so called [cosmetic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules) which are used not for blocking ad requests, but for changing the page appearance. Cosmetic rules include adding some special CSS-rules (styles) which hide the unwanted advertisements on a page and mask the removed elements' remains after blocking, such as empty fields in the place of the blocked banner, etc.
 
 **Simplified filtering method** is able to use just the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) and lets block only ad requests. 
 
-In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use “cosmetic” filtering rules. 
+In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use cosmetic filtering rules. 
