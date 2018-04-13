@@ -6,6 +6,9 @@ taxonomy:
 published: true
 visible: true
 ---
+
+>NOTE: The *“Send statistics for ad filters usage”* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+
 ### Why do we need ad filters?
 Let us begin with the definition of what ad filters are. Thanks to these filters, AdGuard removes ads from websites. 
 They are compiled manually, based on your complaints about ads on any of the websites. This is one of the most important elements of AdGuard’s work – namely the quality of ad filters determines the quality of the whole AdGuard’s work.
