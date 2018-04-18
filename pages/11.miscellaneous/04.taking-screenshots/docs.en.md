@@ -20,7 +20,7 @@ visible: true
 
 Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app. 
 
-Sometimes a screenshot (or screenshots) is required by support team to better understand the problem, and not everyone knows how to take screenshots, especially of a separate window or a specific screen area on their devices. If you recognize yourself as one of these users, don’t worry. This article will be help you as it describes a range of ways to take screenshots on different platforms.
+Sometimes a screenshot (or screenshots) is required by support team to better understand the problem, and not everyone knows how to take screenshots, especially of a separate window or a specific screen area on their devices. If you recognize yourself as one of these users, don’t worry. This article will help you as it describes a range of ways to take screenshots on different platforms.
 
 <a name="take-screenshot"></a>
 
@@ -30,7 +30,7 @@ Here you will find all the necessary hotkeys you should know in order to take sc
 
 <a name="android"></a>
 
-## Android
+### Android
 
 Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer. 
 
@@ -43,7 +43,7 @@ Your Android device will capture the entire screen and save it as a photo. So, y
 But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
 
 + **Hold down at once "Home" and "Power" for 1–2 seconds;**  	 
-+ **Hold down at once "Back" and "Home"** buttons
++ **Hold down at once "Back" and "Home" buttons**
 
 On Android 8 and later there is also a possibility to take a screenshot by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen.
 
@@ -53,7 +53,7 @@ Besides, you can always use any special applications for taking screenshots on y
 
 <a name="ios"></a>
 
-## iOS
+### iOS
 
 Any iOS device (barring ancient ones) lets you take a screenshot using standard tools. 
 
@@ -69,7 +69,7 @@ Your iOS device will capture the entire screen and save it as a photo. You can f
 
 <a name="windows"></a>
 
-## Windows
+### Windows
 
 + **To take a screenshot on Windows OS press the "PrtScn" button**
 
@@ -97,7 +97,7 @@ Besides, you can also try using different apps for taking screenshots on your co
 
 <a name="mac"></a>
 
-## MacOS
+### MacOS
 
 To take a screenshot on Mac use the following button combination:
 
@@ -125,7 +125,7 @@ You can also take screenshots by using **"Preview"** and choosing **"Take screen
 
 <a name="windows-phone"></a>
 
-## Windows Phone
+### Windows Phone
 
 To take a screenshot on Windows Phone 8.1 and 10 use the following combination:
 
