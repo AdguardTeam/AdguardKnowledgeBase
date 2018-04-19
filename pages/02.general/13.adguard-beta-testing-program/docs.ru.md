@@ -5,13 +5,26 @@ taxonomy:
         - docs
 ---
 
+* [Как стать бета-тестером?](#intro)
+* [Windows](#windows)
+* [MacOS](#macos)
+* [Android](#android)
+* [iOS](#ios)
+* [Браузерные расширения](#extensions)
+* [Nightly-сборки](#nightly)
+* [Как сообщить о баге](#report-a-bug)
+
 Практически для каждой &laquo;большой&raquo; платформы&nbsp;&mdash; Windows, Mac, Android, iOS&nbsp;&mdash; существует своя версия AdGuard, и&nbsp;все они регулярно обновляются. Это было&nbsp;бы невозможно без бета-тестирования и, что более важно, бета-тестеров. Хотите стать одним из&nbsp;них? Узнайте, как.<!--more-->
+
+<a name="intro"></a>
 
 ### Как стать бета-тестером
 
 У&nbsp;нас нет никаких особых требований. Всё, что вам потребуется&nbsp;&mdash; использовать AdGuard, вовремя обновляться до&nbsp;последней бета-версии и&nbsp;сообщать нам о&nbsp;замеченных ошибках. Есть, однако, одна важная вещь: вам потребуется аккаунт&nbsp;на [форуме](https://forum.adguard.com/index.php) или&nbsp;на [GitHub](https://github.com/), чтобы стать нашим бета-тестером&nbsp;&mdash; поэтому лучше сразу с&nbsp;этим разделаться.
 
 Теперь, когда с&nbsp;этим разобрались, просто следуйте одной из&nbsp;этих инструкций, в&nbsp;зависимости от&nbsp;используемой вами платформы:
+
+<a name="windows"></a>
 
 #### Windows
 
@@ -27,6 +40,8 @@ taxonomy:
 
 Всё, что касается AdGuard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
+<a name="macos"></a>
+
 #### macOS
 
 Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
@@ -40,6 +55,8 @@ taxonomy:
 Чтобы получить последнюю бета-версию, скачайте её&nbsp;по [этой ссылке](https://static.adguard.com/mac/Adguard.beta.dmg). После активации полученным бета-ключом приложение автоматически переключится на&nbsp;бета-канал обновлений.
 
 Всё, что касается AdGuard для Mac, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForMac) и&nbsp;обсудить прямо там&nbsp;же.
+
+<a name="android"></a>
 
 #### Android
 
@@ -61,6 +78,8 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 Всё, что касается AdGuard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
+<a name="ios"></a>
+
 #### AdGuard/AdGuard Pro для iOS
 
 Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
@@ -70,6 +89,8 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 ***ВАЖНО:*** *иногда у&nbsp;нас нет активной тестовой сборки. В&nbsp;таких случаях вы&nbsp;не&nbsp;получите письма с&nbsp;уведомлением до&nbsp;тех пор, пока такая сборка не&nbsp;появится.*
 
 Всё, что касается AdGuard для iOS, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForios) и&nbsp;обсудить прямо там&nbsp;же.
+
+<a name="extensions"></a>
 
 #### Браузерные расширения
 
@@ -83,9 +104,7 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 
 #### Firefox
 
-Вы&nbsp;можете установить бета-версию расширения AdGuard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер 
-
-**ИЛИ** установите последнюю бету напрямую&nbsp;из [AMO](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/versions/beta).
+Вы&nbsp;можете установить бета-версию расширения AdGuard, перейдя&nbsp;по [этой ссылке](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) и скачав последнюю бета-версию. Просто перетащите скачанный файл в&nbsp;ваш браузер.
 
 Пользователи более старых версий Firefox и&nbsp;пользователи PaleMoon могут использовать легаси-версию расширения, её также можно найти в [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Всё так&nbsp;же&nbsp;&mdash; просто перетащите скачанный файл в&nbsp;ваш браузер, чтобы установить его.
 
@@ -98,6 +117,19 @@ Amazon имеет отдельный канал обновлений, и&nbsp;в
 Вы&nbsp;можете скачать последнюю бета-версию браузерного расширения AdGuard для Safari [с GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases). Установите&nbsp;её, перетащив скачанный файл в&nbsp;ваш браузер.
 
 ***ВАЖНО:*** *бета-версия расширения AdGuard для Safari обновляется с&nbsp;нашего сервера. В&nbsp;Safari 9+&nbsp;такие обновления не&nbsp;могут осуществляться автоматически, поэтому вам нужно будет время от&nbsp;времени проверять обновления в&nbsp;разделе &laquo;Safari&raquo; -&gt; &laquo;Расширения&raquo;. Расширения для других браузеров будут обновляться автоматически.*
+
+<a name="nightly"></a>
+
+### Nightly-сборки
+
+"Nightly" — это особые сборки, доступные для AdGuard для Windows и AdGuard для Android, в главном меню они обозначаются греческой буквой "**η**". Они обновляются каждые три дня и содержат самые свежие изменения, внесённые разработчиками. Если вы решили установить Nightly-сборку, будьте готовы иногда столкнуться с багами и непредвиденным поведением (о чём вы можете сообщать в поддержку). Скачать Nightly-сборки можно по этим ссылкам:
+
+[setup.exe](https://static.adguard.com/windows/nightly/setup.exe) или [https://agrd.io/windows_nightly](https://agrd.io/windows_nightly) — для AdGuard для Windows;
+[adguard.apk](https://static.adguard.com/android/nightly/adguard.apk) или [https://agrd.io/android_nightly](https://agrd.io/android_nightly) — для AdGuard для Android.
+
+Учтите, что Nightly-сборки, скачанные по ссылкам выше, не будут откатываться назад по версиям при переключении на бета- или релизный канал обновлений. Также стоит отметить, что версии AdGuard для других платформ пока не имеют Nightly-сборок, но мы планируем добавить их в будущем.
+
+<a name="report-a-bug"></a>
 
 ### Как сообщить о&nbsp;замеченном баге
 

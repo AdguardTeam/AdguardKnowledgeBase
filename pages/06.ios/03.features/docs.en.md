@@ -48,8 +48,9 @@ DNS requests log is another useful feature of AdGuard Pro. The log contains the 
 
 <img src="screenshots_en/requests.jpg" width="800">
 
-#### Trackers detection
+DNS requests log is another useful feature of AdGuard Pro. The log contains the full list of processed DNS requests, from which you can choose any single one and blacklist it on the spot, or whitelist a previously blocked one. This feature allows for wide choice of options to adjust the blacklist and whitelist as well as lets you track all requests in real time. To access it, tap on the stats tab in the app's main menu.
 
+#### Trackers detection
 AdGuard products in general care about online privacy, and AdGuard Pro is not an exception. It detects online trackers that gather all types of information about you and your actions. Any detected tracker requests are highlighted with yellow in DNS requests log. Unfortunately, Apple puts harsh restrictions on tools available to iOS apps outside of Safari, so often blocking of such requests results in breaking functionality of associated services. This is why many of these trackers are not blocked by default, but you have full control over which ones to block manually. AdGuard Pro will provide detailed info about most of these trackers so you can make a well-considered decision in each separate case.
 
 ### Subscriptions

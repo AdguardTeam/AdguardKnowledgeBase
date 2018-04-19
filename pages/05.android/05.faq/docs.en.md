@@ -45,6 +45,8 @@ taxonomy:
 
 * [How to remove a certificate from the system?](#remove)
 
+* [What is the difference between AdGuard filtering methods?](#methods)
+
 
 
 <a id="wtf"></a>
@@ -354,3 +356,23 @@ Go to the "User" section.
 Select "AdGuard Personal CA" (it might be the only certificate there).
 
 In the opened dialog window scroll down and tap 'Remove'.
+
+<a id="methods"></a>
+
+## What is the difference between AdGuard filtering methods? ##
+
+There are three AdGuard filtering methods:
+
++ High-quality;
++ High-speed;
++ Simplified.
+
+**High-quality method** is able to use [all sorts of filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) and can filter everything. This method allows to change the HTML-code of a page cutting out all unwanted elements before the browser even loads the page.
+
+High-quality method can increase the pages loading time, so it is recommended to use only on powerful devices.
+
+**High-speed method** is able to use all rules save for [HTML filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#html-filtering-rules) and filters everything except page content. This method uses so called [cosmetic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules) which are used not for blocking ad requests, but for changing the page appearance. Cosmetic rules include adding some special CSS-rules (styles) which hide the unwanted advertisements on a page and mask the removed elements' remains after blocking, such as empty fields in the place of the blocked banner, etc.
+
+**Simplified filtering method** is able to use just the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) and lets block only ad requests. 
+
+In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use cosmetic filtering rules. 
