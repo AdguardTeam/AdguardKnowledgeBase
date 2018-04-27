@@ -1,5 +1,5 @@
 ---
-title: 'Сбор полного лога'
+title: 'Сбор лога (журнала)'
 taxonomy:
     category:
         - docs
