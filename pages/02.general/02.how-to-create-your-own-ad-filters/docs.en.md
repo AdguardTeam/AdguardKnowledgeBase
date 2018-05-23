@@ -155,7 +155,7 @@ pattern = "/" regexp "/"
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
 > #### Compatibility with different versions of AdGuard
-> AdGuard browser extension for Safari and AdGuard for iOS do not sully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
