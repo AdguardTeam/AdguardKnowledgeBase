@@ -22,12 +22,12 @@ Many websites constantly change the way they embed ads, and to keep our filters 
 
 ### How to start?
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our AdGuard Filters repository on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive etc. — choose any one and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them correct, your rules will be added to AdGuard filters.
+However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive etc. — choose any one and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them correct, your rules will be added to AdGuard filters.
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax in our Knowledge base. More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/index.php?forums/69/).
+If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/index.php?forums/69/).
 
 <a name="rewards"></a>
 
 ### Rewards
 
-Ok, so let's say you have suggested several filtering rules and some of them were approved. Great! Now its time to reap the rewards. Shoot us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and consider the free license key yours :) As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of ~5 should be enough.
+Ok, so let's say you have suggested several filtering rules and some of them were approved. Great! Now it is time to reap the rewards. Shoot us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and consider the free license key yours :) As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of ~5 should be enough.
