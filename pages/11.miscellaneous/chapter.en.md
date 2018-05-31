@@ -10,3 +10,5 @@ visible: true
 ### Chapter 10
 
 # Miscellaneous
+
+This chapter includes miscellaneous articles on various topics.
