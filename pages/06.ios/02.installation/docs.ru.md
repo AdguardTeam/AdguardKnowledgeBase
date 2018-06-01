@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 ## Системные требования
-* iOS 9.0 и выше.
+* iOS 10.0 и выше.
 * iPhone 5s, iPhone 6, iPhone 6 Plus, iPhone 6s, iPhone 6s Plus, iPhone 7 (устройства с 64-разрядной архитектурой).
 * iPad Air, iPad Air Wi-Fi + Cellular, iPad mini 2, iPad mini 2 Wi-Fi + Cellular, iPad Air 2, iPad Air 2 Wi-Fi + Cellular, iPad mini 3, iPad mini 3 Wi-Fi + Cellular, iPad mini 4, iPad mini 4 Wi-Fi + Cellular, iPad Pro, iPad Pro Wi-Fi + Cellular, и iPod touch 6-ое поколение (устройства с 64-разрядной архитектурой).
 
