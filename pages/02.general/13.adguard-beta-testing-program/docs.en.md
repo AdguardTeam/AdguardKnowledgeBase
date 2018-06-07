@@ -71,12 +71,6 @@ It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your
 
 You will be&nbsp;provided with a&nbsp;beta license key to&nbsp;activate AdGuard on&nbsp;your phone with. The latest beta can be&nbsp;always downloaded from [adguard.com/apkb](https://adguard.com/apkb) or&nbsp;by&nbsp;switching to&nbsp;beta update channel in&nbsp;AdGuard settings.
 
-**Alternative: Amazon AppStore beta**
-
-We&nbsp;are also looking for Amazon AppStore users who are willing to&nbsp;take part in&nbsp;AdGuard beta test. Just fill the same Google form, but select the respective checkbox. 
-
-Amazon is&nbsp;a&nbsp;separate update channel, all updates are served by&nbsp;Amazon app.
-
 Everything related to&nbsp;AdGuard for Android can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid).
 
 <a name="iOS"></a>
