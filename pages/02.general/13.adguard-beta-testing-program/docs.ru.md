@@ -70,12 +70,6 @@ taxonomy:
 
 Вы&nbsp;получите лицензионный бета-ключ, которым сможете активировать AdGuard на&nbsp;вашем смартфоне/планшете. Последнюю бета-версию всегда можно скачать по&nbsp;ссылке [adguard.com/apkb](https://adguard.com/apkb), либо переключив в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
-**Альтернатива: бета Amazon AppStore**
-
-Мы&nbsp;также ищем желающих принять участие в&nbsp;бета-программе в&nbsp;Amazon AppStore. Просто заполните ту&nbsp;же форму Google, но&nbsp;отметьте галочкой нужный пункт.
-
-Amazon имеет отдельный канал обновлений, и&nbsp;все обновления проходят через приложение в&nbsp;Amazon.
-
 Всё, что касается AdGuard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
 <a name="ios"></a>
