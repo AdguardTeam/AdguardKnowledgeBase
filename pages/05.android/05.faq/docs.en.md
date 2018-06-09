@@ -391,7 +391,7 @@ Apart from this way, you can get a quick and simple access to these settings whe
 
 Alright, you're in the right section. Now you can see 6 different categories, which are shown on the left part of the following screenshot.
 
-![](notifications.png) 
+![](notifications.png?resize=600) 
 
 Each category includes certain notifications type:
 
@@ -406,7 +406,7 @@ They are all enabled by default. You can customize the settings of each category
 
 As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
 
-![](importance.png)
+![](importance.png?resize=600)
 
 There are four statuses to choose from: 
 
