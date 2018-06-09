@@ -47,6 +47,7 @@ taxonomy:
 
 * [What is the difference between AdGuard filtering methods?](#methods)
 
+* [How to manage AdGuard notifications?](#notifications)
 
 
 <a id="wtf"></a>
@@ -376,3 +377,66 @@ High-quality method can increase the pages loading time, so it is recommended to
 **Simplified filtering method** is able to use just the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) and lets block only ad requests. 
 
 In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use cosmetic filtering rules. 
+
+<a id="notifications"></a>
+## How to manage AdGuard notifications? ##
+
+On Android version 8 and newer AdGuard provides multiple notification channels (which are also called 'categories'). With their help you can easily manage AdGuard notifications on your device — customize channels, prioritize them, disable secondary notifications, etc. Get more instructions on how to do that and learn about options we provide for the older Android versions below. 
+
+### Android 8 and newer ###
+
+AdGuard for Android 8 and newer has 6 different notification categories. Before describing them, let’s see the way you can find the appropriate settings on your device — *Settings → Apps & notifications → AdGuard → App Notifications*.
+
+Apart from this way, you can get a quick and simple access to these settings when long clicking on any AdGuard notification and choosing *"All categories"*. 
+
+Alright, you're in the right section. Now you can see 6 different categories, which are shown on the left part of the following screenshot.
+
+![](notifications.png) 
+
+Each category includes certain notifications type:
+
++ **Protection Status** (a permanent notification with the app protection status and filtering statistics);
++ **License Status** (notifications about your license status changes);
++ **Updates** (notifications about new application and filters updates);
++ **Outbound proxy** (a permanent notification with the outbound proxy status);
++ **Firewall** (notifications that let you manage network access);
++ **Other** (notifications about critical errors, logging, conflicts with other apps etc.).
+
+They are all enabled by default. You can customize the settings of each category (look at the right part of the above screenshot) — change its Importance status, set any supported sound of notifications, choose whether notifications should vibrate your phone or not, etc. In case you decide that some notifications are absolutely not important for you, you can disable the respective category(ies).
+
+As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
+
+![](importance.png)
+
+There are four statuses to choose from: 
+
++ **Urgent** (notifications will make sound and pop up on screen); 
++ **High** (notifications will make sound); 
++ **Medium** (notifications will make no sound);
++ **Low** (notifications will make no sound and give no visual interruption). 
+
+Please note: you can't enable the vibration for those notifications whose Important status is determined as Medium or Low.
+
+We do hope these notification categories will help you sort through all the AdGuard notifications and let you enjoy using our product without unnecessary distractions.
+
+### Android 7 and older ###
+
+For those who have devices on Android 7 and older AdGuard has also some useful options for managing notifications.
+
+First of all, you can open device settings — *Settings → Notifications → AdGuard* or *Settings → Apps → AdGuard → Notifications* — and activate the following options if needed: 
+
++ **Show silently** - means that notifications will not make sound, vibrate or peek into view;
++ **On the lock screen** - means that notifications’ content will be shown on the lock screen;
++ **Override Do Not Disturb** - this option lets notifications continue interrupting when Do Not Disturb is set to Priority Only;
+
+Or you can disable all AdGuard notifications (what we would not recommend you to do) by choosing **"Block all"** option.
+
+Besides, you can manage the notification of protection status in AdGuard General Settings (*AdGuard → Settings → General → Notification icon*).
+
+Here you can choose from the options:
+
++ **Default icon** (which means that you will see not only notification but also a notification icon in the top of the screen);
++ **Notification without icon** (you will see only notification without the icon);
++ **None** (you will see neither notification nor icon)
+
+Please note: if the icon is removed, Android can stop AdGuard functioning any time. That's why we do not recommend you to choose "None" option. Please use "Notification without icon" instead.
