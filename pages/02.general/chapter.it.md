@@ -9,4 +9,4 @@ taxonomy:
 
 # Domande generali
 
-Questa sezione descrive i problemi generali e i principi dei prodotti AdGuard.
+Questa sezione descrive i problemi generali e i principii dei prodotti AdGuard.
