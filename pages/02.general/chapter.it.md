@@ -1,8 +1,8 @@
 ---
 title: 'Domande generali'
-classificazione:
-    categoria:
-        - doc
+taxonomy:
+    category:
+        - docs
 ---
 
 ### Capitolo 1
