@@ -1,5 +1,5 @@
 ---
-titolo: 'Domande generali'
+title: 'Domande generali'
 classificazione:
     categoria:
         - doc
