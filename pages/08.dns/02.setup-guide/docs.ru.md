@@ -260,15 +260,9 @@ taxonomy:
 
 #### Настройка DNSCrypt для AdGuard DNS
 
-Инструкция по настройке DNSCrypt для:
+* [Инструкция](https://dnscrypt.info/implementations/)
 
-* [Windows](https://dnscrypt.org/#dnscrypt-windows)
-* [Unix](https://dnscrypt.org/#dnscrypt-proxy)
-* [macOS](https://dnscrypt.org/#dnscrypt-osx)
-* [Android](https://dnscrypt.org/#dnscrypt-android)
-* [iOS](https://dnscrypt.org/#dnscrypt-ios)
-* [Роутер](https://dnscrypt.org/#dnscrypt-routers)
 
 Возможно, в процессе настройки вам потребуется информация для файла dnscrypt-resolvers.csv. 
-Найти её вы можете [здесь](https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv).
+Найти её вы можете [здесь](https://download.dnscrypt.info/dnscrypt-resolvers/v2/).
 
