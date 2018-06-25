@@ -297,15 +297,9 @@ for ’Family protection’ servers.
 
 #### DNSCrypt for AdGuard DNS
 
-Setup guide for DNSCrypt for:
+* [Setup Guide](https://dnscrypt.info/implementations/) 
 
-* [Windows](https://dnscrypt.org/#dnscrypt-windows)
-* [Unix](https://dnscrypt.org/#dnscrypt-proxy)
-* [macOS](https://dnscrypt.org/#dnscrypt-osx)
-* [Android](https://dnscrypt.org/#dnscrypt-android)
-* [iOS](https://dnscrypt.org/#dnscrypt-ios)
-* [Router](https://dnscrypt.org/#dnscrypt-routers)
 
 It is possible that during the DNSCrypt configuring you will need information for **dnscrypt-resolvers.csv** file. 
-You can find it [here](https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv).
+You can find it [here](https://download.dnscrypt.info/dnscrypt-resolvers/v2/).
 
