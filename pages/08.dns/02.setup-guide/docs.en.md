@@ -297,7 +297,7 @@ for ’Family protection’ servers.
 
 #### DNSCrypt for AdGuard DNS
 
-* [Setup Guide](https://dnscrypt.info/implementations/) 
+* [Setup guide](https://dnscrypt.info/implementations/) 
 
 
 It is possible that during the DNSCrypt configuring you will need information for **dnscrypt-resolvers.csv** file. 
