@@ -21,25 +21,25 @@ Wouldn't it be a bit dangerous, you might ask — to let some random apps manage
 
 So, ready to get your hands dirty? Here are actions that, when included in the intent, will be understood by AdGuard:
 
-<a name="action_start">
+<a name="action_start"></a>
 
 `start` — starts the protection, no extra data is needed;
 
-<a name="action_stop">
+<a name="action_stop"></a>
 
 `stop` — stops the protection, no extra data required;
 
-<a name="action_pause">
+<a name="action_pause"></a>
 
 `pause` — pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
 
-<a name="action_update">
+<a name="action_update"></a>
 
 `update` — checks for available filter and app updates, no additional data is needed;
 
 -----
 
-<a name="action_dns_filtering">
+<a name="action_dns_filtering"></a>
 
 `dns_filtering` — turns [DNS filtering](https://kb.adguard.com/en/general/dns-filtering-android) on and off. Requires an extra flag:
 
@@ -47,7 +47,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
     
 -----
 
-<a name="action_dns_server">
+<a name="action_dns_server"></a>
 
 `dns_server` — switches between DNS servers, you need to include additional data:
 
