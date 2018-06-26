@@ -66,6 +66,14 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
      
  -----
 
-**Don't forget to include the password in every intent as an extra!**
+**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
 
-`password:*******`
+Extra: `password:*******`
+
+Package name: `com.adguard.android`
+
+Class: `com.adguard.android.receivers.AutomationReceiver`
+
+### Example
+
+<img src="automation.png" width=300>
