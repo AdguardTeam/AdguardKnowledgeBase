@@ -76,4 +76,4 @@ Class: `com.adguard.android.receivers.AutomationReceiver`
 
 ### Example
 
-<img src="automation.png" width=300>
+![](automation.png?cropResize=324,1023)
