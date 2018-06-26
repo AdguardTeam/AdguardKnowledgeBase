@@ -53,7 +53,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
  `server:cloudflare` — switches to a particular server by its short name;
      
->NOTE: the full list of supported server names can be found inside AdGuard DNS settings under the "Secure" tab
+>NOTE: the full list of supported server names can be found inside AdGuard DNS settings under the "Secure DNS" tab
      
      
  `server:1.1.1.1,1.0.0.1` — switches to any cistom DNS server;
