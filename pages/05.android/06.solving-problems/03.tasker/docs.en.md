@@ -59,7 +59,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
  `server:1.1.1.1,1.0.0.1` — switches to any cistom DNS server;
      
      
- `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20` — switches to any custom DNS server via DNS-over-HTTPS, DNS-over-SSL or DNSCrypt;
+ `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMu...` (full string is too long) — switches to any custom DNS server via DNS-over-HTTPS, DNS-over-SSL or DNSCrypt;
      
      
  `server:system` — resets DNS settings to default system DNS servers.
