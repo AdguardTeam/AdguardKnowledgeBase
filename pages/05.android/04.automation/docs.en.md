@@ -1,8 +1,10 @@
 ---
 title: How to automate AdGuard for Android
+published: false
 taxonomy:
     category:
         - docs
+visible: false
 ---
 
 Many people choose Android because they like having the ability to customize things and want to control their device completely. And it's totally normal if some of AdGuard users are not satisfied with its default behavior. Let's say, you want protection to stop when a certain app is launched, and then restart it again when the app is closed. This is a job for a tasker app.
