@@ -59,7 +59,7 @@ taxonomy:
  `server:1.1.1.1,1.0.0.1` — переключается на любой DNS-сервер;
      
      
- `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20` — переключается на любой DNS-сервер, работающий по DNS-over-HTTPS, DNS-over-SSL или DNSCrypt;
+ `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20` — переключается на любой DNS-сервер, работающий по протоколам DNS-over-HTTPS, DNS-over-SSL или DNSCrypt;
      
      
  `server:system` — сбрасывает настройки DNS на "по умолчанию" (т.е. используются системные DNS серверы).
