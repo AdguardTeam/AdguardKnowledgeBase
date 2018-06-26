@@ -21,25 +21,25 @@ taxonomy:
 
 Итак, готовы немного запачкать руки? Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
 
-<a name="action_start">
+<a name="action_start"></a>
 
 `start` — стартует защиту, дополнительные данные не нужны;
 
-<a name="action_stop">
+<a name="action_stop"></a>
 
 `stop` — останавливает защиту, дополнительные параметры не нужны;
 
-<a name="action_pause">
+<a name="action_pause"></a>
 
 `pause` — ставит защиту на паузу. Отличие от `stop` в том, что появится уведомление, тап по которому возобновит защиту. Дополнительные параметры не нужны;
 
-<a name="action_update">
+<a name="action_update"></a>
 
 `update` — проверяет наличие обновлений фильтров и приложения, дополнительные данные не нужны;
 
 -----
 
-<a name="action_dns_filtering">
+<a name="action_dns_filtering"></a>
 
 `dns_filtering` — включает и выключает [DNS-фильтрацию](https://kb.adguard.com/ru/general/dns-filtering-android). Требуется дополнительный флаг:
 
@@ -47,7 +47,7 @@ taxonomy:
     
 -----
 
-<a name="action_dns_server">
+<a name="action_dns_server"></a>
 
 `dns_server` — переключается между DNS-серверами, вам нужно указать дополнительные параметры:
 
