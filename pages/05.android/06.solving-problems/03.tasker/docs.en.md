@@ -9,7 +9,9 @@ Many people choose Android because they like having the ability to customize thi
 
 ## AdGuard interface
 
-There are a lot of tasker apps out there, for example Tasker, AutomateIt etc. AdGuard provides an interface that allows these apps to setup various automation rules.
+There are a lot of tasker apps out there, for example [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) etc. AdGuard provides an interface that allows these apps to setup various automation rules.
+
+![](adg_automation.png?cropResize=360,640)
 
 Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
