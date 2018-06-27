@@ -9,7 +9,7 @@ taxonomy:
 
 ## Интерфейс AdGuard
 
-Существует множество приложений-таскеров, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage) и другие. AdGuard предоставляет интерфейс, с помощью которого такие приложения могут задавать всевозможные правила автоматизации.
+Существует множество приложений-таскеров, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) и другие. AdGuard предоставляет интерфейс, с помощью которого такие приложения могут задавать всевозможные правила автоматизации.
 
 ![](adg_automation.png?cropResize=360,640)
 
