@@ -1,5 +1,5 @@
 ---
-title: 'Protection cannot be enabled'
+title: 'Если по каким либо причинам не удается запустить защиту'
 published: true
 taxonomy:
     category:
