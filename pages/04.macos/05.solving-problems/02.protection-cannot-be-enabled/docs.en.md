@@ -1,12 +1,12 @@
 ---
-title: 'Protection cannot be enabled'
+title: If AdGuard Protection cannot be enabled (for some reasons)
 published: true
 taxonomy:
     category:
         - docs
 ---
 
- # If AdGuard protection can not be enabled (for some reasons)
+ 
  
 1. Click the AdGuard icon at the Menu Bar - go to Advanced - Reset settings... and quit AdGuard.
 
