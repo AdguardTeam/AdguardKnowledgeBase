@@ -38,7 +38,6 @@ taxonomy:
 
 Чтобы получить последнюю бета-версию, просто активируйте лицензию полученным бета-ключом, или&nbsp;же вручную выставьте в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
-Всё, что касается AdGuard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
 <a name="macos"></a>
 
@@ -129,7 +128,7 @@ taxonomy:
 
 Давайте представим, что случилось худшее&nbsp;&mdash; вы&nbsp;заметили ошибку в&nbsp;работе AdGuard. Или, может быть, вы&nbsp;просто хотите поделиться предложением с&nbsp;разработчиками? В&nbsp;любом случае, существуют различные способы связаться с&nbsp;нами: 
 
-* Откройте [forum.adguard.com](forum.adguard.com) и&nbsp;создайте новую тему (или найдите уже существующую) в&nbsp;[бета-разделе](https://forum.adguard.com/index.php?categories/4/) форума. Убедитесь, что перед этим вы&nbsp;ознакомились&nbsp;с [правилами форума](https://forum.adguard.com/index.php?threads/14858/);
+* Перейдите на форум [forum.adguard.com](forum.adguard.com) и&nbsp;создайте новую тему (или найдите уже существующую) в&nbsp;[бета-разделе](https://forum.adguard.com/index.php?categories/4/) форума. Убедитесь, что перед этим вы&nbsp;ознакомились&nbsp;с [правилами форума](https://forum.adguard.com/index.php?threads/14858/);
 
 * Перейдите&nbsp;на [GitHub](https://github.com/AdguardTeam/) и&nbsp;найдите нужный репозиторий. Создайте новую задачу и&nbsp;детально опишите обнаруженный баг или ваш вопрос/предложение;
 
