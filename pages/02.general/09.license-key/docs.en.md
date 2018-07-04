@@ -128,15 +128,13 @@ Find more on functions of the Account [below](#account-functions).
 <a id="account-functions"></a>
 ## What functions are available in AdGuard Account?
 
-When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status:
-
-![](https://images.adguard.com/public.php?service=files&amp;t=b0cfdc25634114c2b153b921bd4b6304&amp;download)
+When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status.
 
 If the license key is activated on one or more computers you will see the list of these computers under the license key. License key can be activated on a limited number of computers, before using it again you will have to unbind it from one of the computers.
 
 To unbind the license key from computer just click the “Reset” button as it’s showed on this picture:
 
-![](https://images.adguard.com/public.php?service=files&amp;t=2d66527cf14f09ba4417312accf57b52&amp;download)
+![](account-reset-en.png)
 
 
 <a id="payment"></a>
