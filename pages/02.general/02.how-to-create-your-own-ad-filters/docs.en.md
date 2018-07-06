@@ -340,20 +340,20 @@ Exception rules disable the other basic rules for the addresses to which they co
 <a id="elemhide-modifier"></a>
 ##### **`elemhide`**
 
-Disables any cosmetic rules for corresponding pages. You will find the information about cosmetic rules [further](#cosmetic-rules).
+Disables any cosmetic rules on the pages matching the rule. You will find the information about cosmetic rules [further](#cosmetic-rules).
 
 ###### `elemhide` example
 
-* `@@||example.com^$elemhide` — disables all cosmetic rules for pages at `example.com` and all subdomains.
+* `@@||example.com^$elemhide` — disables all cosmetic rules on pages at `example.com` and all subdomains.
 
 <a id="content-modifier"></a>
 ##### **`content`**
 
-Disables HTML filtering rules for corresponding pages. You will find the information about HTML filtering rules [further](#html-filtering-rules).
+Disables HTML filtering rules on the pages matching the rule. You will find the information about HTML filtering rules [further](#html-filtering-rules).
 
 ###### `content` example
 
-* `@@||example.com^$content` — disables all HTML filtering rules for pages at `example.com` and all subdomains.
+* `@@||example.com^$content` — disables all HTML filtering rules on pages at `example.com` and all subdomains.
 
 <a id="jsinject-modifier"></a>
 ##### **`jsinject`**
@@ -362,12 +362,12 @@ Forbids adding of javascript code to the page. You can read about javascript rul
 
 ###### `jsinject` example
 
-* `@@||example.com^$jsinject` — disables javascript for pages at `example.com` and all subdomains.
+* `@@||example.com^$jsinject` — disables javascript on pages at `example.com` and all subdomains.
 
 <a id="urlblock-modifier"></a>
 ##### **`urlblock`**
 
-Disables the blocking for all requests sent from the corresponding pages.
+Disables blocking of all requests sent from the pages matching the rule.
 
 ###### `urlblock` example
 
@@ -389,8 +389,8 @@ Completely disables blocking on corresponding pages. It is equal to simultaneous
 
 ###### `document` example
 
-* `@@||example.com^$document` — completely disables filtering for all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` — completely disables the blocking for any pages at `example.com` and all subdomains, but continues to run userscripts there.
+* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
+* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
@@ -522,7 +522,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 > #### Compatibility with different versions of AdGuard
 > Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
-> This type of rules don't work in other browsers extension, because it is unable to modify content on network level.
+> This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
 
 ###### `replace` rules features
 
@@ -567,7 +567,7 @@ This modifier completely changes the rule behavior. If it is applied to a rule, 
 
 > In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
-For the requests matching a `$csp` rule, we will strengthen response's security policy by adding additional content security policy equal to the `$csp` modifier contents. csp rules are applied independently from any other rule type. Other basic rules have no influence on it.
+For the requests matching a `$csp` rule, we will strengthen response's security policy by adding additional content security policy equal to the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. Other basic rules have no influence on it.
 
 >Multiple rules matching a single request.
 >In case if multiple `$csp` rules match a single request, we will apply each of them.
@@ -587,8 +587,8 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 ###### `csp` examples
 
 * `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and it's subdomains.
-* `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with csp modifier exactly matching frame-src 'none' on all the pages matching the rule pattern. For instance, the rule above.
-* `@@||example.org/page/*$csp` — disables all the $csp rules on all the pages matching the rule pattern.
+* `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+* `@@||example.org/page/*$csp` — disables all the `$csp` rules on all the pages matching the rule pattern.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
 
 <a id="network-modifier"></a>
@@ -885,7 +885,7 @@ This can be either a value pattern that is using the same simple wildcard matchi
 In the case of a regular expression, the pattern looks like `/regex/`.
 
 > * For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
-> * For regex patterns, ",\ should be escaped, because we manually escape those in extended-css-selector.js.
+> * For regex patterns, [`"`],[`,`],[`\`] should be escaped, because we manually escape those in extended-css-selector.js.
 
 ##### `:matches-css()` examples
 
@@ -1020,7 +1020,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternative, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 ```
@@ -1036,7 +1036,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 > #### Compatibility with different versions of AdGuard
 > Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
-> This type of rules don't work in other browsers extension, because it is unable to modify content on network level.
+> This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
 
 <a id="html-filtering-rules-syntax"></a>
 ### HTML filtering rules syntax
@@ -1275,7 +1275,7 @@ Filter URL: `https://example.org/path/filter.txt`
 #### Remarks
 
 * If included file is not found or unavailable, the whole filter update should fail.
-* A conditional directive beginning with a #if directive must explicitly be terminated with a #endif directive.
+* A conditional directive beginning with an `#if` directive must explicitly be terminated with an `#endif` directive.
 * Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
 #### AdGuard-specific
@@ -1287,7 +1287,7 @@ Filter URL: `https://example.org/path/filter.txt`
 
 * `adguard` -- Declared always. Lets maintainers know that this is one of AdGuard products. Should be enough in 95% of cases.
 
-Product-specific constants for some rare cases (or not so rare, thx Safari):
+Product-specific constants for some rare cases when you need a rule to work (or not work) in a specific product only:
 
 * `adguard_app_windows` -- AG for Windows
 * `adguard_app_mac` -- AG for Mac
