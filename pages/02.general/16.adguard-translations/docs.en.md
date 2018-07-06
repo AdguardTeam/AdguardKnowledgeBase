@@ -113,6 +113,6 @@ However, we do hope that everything for you will go smoothly and without any dif
 
 As every honest and well-done work should be rewarded, volunteers who actively translate on OneSky are eligible to request free AdGuard  license key.
 
-Just send us a request to this e-mail: [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license key as a token of our gratitude.
+Just send us a request to this e-mail: [translate@adguard.com](mailto:translate@adguard.com) in case you've translated about 500 words and more, and you’ll get the license key as a token of our gratitude.
 
 Besides, the most active translators may receive a moderator’s status in future, should they express such intention, and that promises even more good stuff :)
