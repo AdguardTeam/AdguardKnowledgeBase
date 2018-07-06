@@ -19,7 +19,6 @@ visible: true
             * [$third-party](#third-party-modifier)
             * [$popup](#popup-modifier)
             * [$match-case](#match-case-modifier)
-            * [$csp](#csp-modifier)
         * [Content type modifiers](#content-type-modifiers)
             * [Content type modifiers examples](#content-type-modifiers-examples)
             * [$image](#image-modifier)
@@ -31,22 +30,28 @@ visible: true
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
             * [$xmlhttrequest](#xmlhttprequest-modifier)
+            * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
         * [Exception rules modifiers](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
             * [$content](#content-modifier)
             * [$jsinject](#jsinject-modifier)
             * [$urlblock](#urlblock-modifier)
+            * [$extension](#extension-modifier)
             * [$document](#document-modifier)
             * [$stealth](#stealth-modifier)
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Advanced capabilites](#advanced-modifiers)
+        * [$important](#important-modifier)
         * [$badfilter](#badfilter-modifier)
         * [$empty](#empty-modifier)
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
+        * [$csp](#csp-modifier)
+        * [$network](#network-modifier)
+        * [$app](#app-modifier)
 * [Cosmetic rules](#cosmetic-rules)
     * [Element hiding rules](#cosmetic-elemhide-rules)
         * [Element hiding rules syntax](#elemhide-syntax)
@@ -57,9 +62,13 @@ visible: true
         * [CSS rules examples](#cosmetic-css-rules-examples)
         * [CSS rules exceptions](#cosmetic-css-rules-exceptions)
     * [Extended CSS selectors](#extended-css-selectors)
-        * [Pseudo-class :has()](#extended-css-has)
-        * [Pseudo-class :contains()](#extended-css-contains)
-        * [Pseudo-class :matches-css()](#extended-css-matches-css)
+        * [Pseudo-class `:has()`](#extended-css-has)
+        * [Pseudo-class `:if-not()`](#extended-css-has)
+        * [Pseudo-class `:contains()`](#extended-css-contains)
+        * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+        * [Pseudo-class `:properties()`](#extended-css-properties)
+        * [Selectors debugging mode](#selectors-debugging-mode)
+        * [Testing extended selectors](#testing-extended-selectors)
 * [HTML filtering rules](#html-filtering-rules)
     * [HTML filtering rules syntax](#html-filtering-rules-syntax)
     * [HTML filtering rules examples](#html-filtering-rules-examples)
@@ -76,6 +85,7 @@ visible: true
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
 * [Information for filters maintainers](#for_maintainers)
+    * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
         * [Hints syntax](#hints_syntax)
         * [NOT_OPTIMIZED hint](#not_optimized)
@@ -243,37 +253,6 @@ This modifier defines a rule which applies only to addresses that match the case
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
 
-<a id="csp-modifier"></a>
-##### **`csp`**
-
-This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
-
-> In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
-
-For the requests matching a $csp rule, we will strengthen response's security policy by adding additional content security policy equal to the $csp modifier contents. csp rules are applied independently from any other rule type. Other basic rules have no influence on it.
-
->Multiple rules matching a single request.
->In case if multiple $csp rules match a single request, we will apply each of them.
-
-**csp syntax**
-
-_csp_ value syntax is similar to the Content Security Policy header syntax.
-
-_csp_ value can be empty in the case of exception rules. See examples section for further information.
-
->Limitations
-
->1. Please note, that there're a few characters forbidden in the csp value: (,), ($)
->2. csp rules support limited list of modifiers: domain, important, subdocument
->3. Rules with report-* directives are considered invalid.
-
-###### `csp` examples
-
-* ||example.org^$csp=frame-src 'none' — prohibits all frames on example.org and it's subdomains.
-* @@||example.org/page/*$csp=frame-src 'none' — disables all rules with csp modifier exactly matching frame-src 'none' on all the pages matching the rule pattern. For instance, the rule above.
-* @@||example.org/page/*$csp — disables all the $csp rules on all the pages matching the rule pattern.
-* ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: — disables inline scripts on all the pages matching the rule pattern.
-
 <a id="content-type-modifiers"></a>
 #### Restriction by content type
 
@@ -340,6 +319,11 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 > #### Compatibility with different versions of AdGuard
 > AdGuard for Windows, macOS and Android often can't accurately determine this type and defines it as `other` or `script`.
 
+<a id="websocket-modifier"></a>
+##### **`websocket`**
+
+The rule applies only to WebSocket connections.
+
 <a id="other-modifier"></a>
 ##### **`other`**
 
@@ -389,14 +373,24 @@ Disables the blocking for all requests sent from the corresponding pages.
 
 * `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
+<a id="extension-modifier"></a>
+##### **`extension`**
+
+Disables all userscripts on the pages matching this rule.
+
+###### `extension` example
+
+* `@@||example.com^$extension` — userscripts won't work on all pages of the `example.com` website.
+
 <a id="document-modifier"></a>
 ##### **`document`**
 
-Completely disables blocking for corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock` and `jsinject`.
+Completely disables blocking on corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and `extension`.
 
 ###### `document` example
 
-* `@@||example.com^$document` — completely disables the blocking for any pages at `example.com` and all subdomains.
+* `@@||example.com^$document` — completely disables filtering for all pages at `example.com` and all subdomains.
+* `@@||example.com^$document,~extension` — completely disables the blocking for any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
@@ -448,6 +442,40 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 These modifiers are able to completely change the behaviour of basic rules.
 
+<a id="important-modifier"></a>
+##### **`important`**
+
+The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
+
+###### Example 1:
+
+```
+||example.org^$important
+@@||example.org^
+```
+
+`||example.org^$important` will block all requests despite of the exception rule.
+
+###### Example 2:
+
+```
+||example.org^$important
+@@||example.org^$important
+```
+
+Now the exception rule also has `$important` modifier so it will prevail.
+
+###### Example 3:
+
+The `$important` modifier will be ignored if a document-level exception rule is applied to the document.
+
+```
+||example.org^$important
+@@||test.org^$document
+```
+
+If a request to `example.org` is sent from the `test.org` domain, the rule won't be applied despite it has the `$important` modifier.
+
 <a id="badfilter-modifier"></a>
 ##### **`badfilter`**
 
@@ -490,7 +518,11 @@ As a response to blocked request AdGuard returns a short video placeholder.
 This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead. 
 
 > #### Please note
-> You will need some knowledge of regular expressions to use this modifier
+> You will need some knowledge of regular expressions to use this modifier.
+
+> #### Compatibility with different versions of AdGuard
+> Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
+> This type of rules don't work in other browsers extension, because it is unable to modify content on network level.
 
 ###### `replace` rules features
 
@@ -527,6 +559,79 @@ There are three parts in this rule:
 
 You can see how this rule works here:
 http://regexr.com/3cesk
+
+<a id="csp-modifier"></a>
+##### **`csp`**
+
+This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
+
+> In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
+
+For the requests matching a `$csp` rule, we will strengthen response's security policy by adding additional content security policy equal to the `$csp` modifier contents. csp rules are applied independently from any other rule type. Other basic rules have no influence on it.
+
+>Multiple rules matching a single request.
+>In case if multiple `$csp` rules match a single request, we will apply each of them.
+
+**csp Syntax**
+
+`$csp` value syntax is similar to the Content Security Policy header syntax.
+
+`$csp` value can be empty in the case of exception rules. See examples section for further information.
+
+>Limitations
+
+>1. Please note, that there're a few characters forbidden in the `$csp` value: (`,`), (`$`)
+>2. `csp` rules support limited list of modifiers: `domain`, `important`, `subdocument`
+>3. Rules with `report-*` directives are considered invalid.
+
+###### `csp` examples
+
+* `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and it's subdomains.
+* `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with csp modifier exactly matching frame-src 'none' on all the pages matching the rule pattern. For instance, the rule above.
+* `@@||example.org/page/*$csp` — disables all the $csp rules on all the pages matching the rule pattern.
+* `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
+
+<a id="network-modifier"></a>
+##### **`network`**
+
+This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
+
+> #### Compatibility with different versions of AdGuard
+> Only AdGuard for Windows, Mac, Android are technically capable of using this type of rules.
+
+1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
+2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
+3. A whitelist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
+
+###### `network` examples
+
+* `174.129.166.49:3478^$network` - blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` - blocks access to `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` - blocks access to `174.129.166.49:*`.
+* `@@174.129.166.49$network` - makes AdGuard bypass data to the endpoint. No other rules will be applied.
+
+<a id="app-modifier"></a>
+##### **`app`**
+
+This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
+
+* Android - use the apps' package names (i.e. `org.example.app`).
+* Windows - use the process name (i.e. `chrome.exe`).
+* Mac - use the process name (i.e. `firefox-bin`).
+
+In the case of Android, use the apps' package names (i.e. `org.example.app`). In the case of Windows
+
+###### `app` examples 
+
+* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `com.adguard.android` Android app.
+* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
+
+If you want the rule not to be applied to certain apps, start the app name with `~` sign.
+
+###### `app` and `~` examples
+
+* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
+* `||baddomain.com^$domain=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 <a id="cosmetic-rules"></a>
 ## Cosmetic rules
@@ -645,9 +750,9 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
 <a id="extended-css-has"></a>
-#### pseudo-class `:has()`
+#### Pseudo-class `:has()`
 
-CSS 4.0 specification describes [pseudo-class `:has`](https://drafts.csswg.org/selectors/#relational). Unfortunately, it is not yet supported by browsers.
+Draft CSS 4.0 specification describes [pseudo-class `:has`](https://drafts.csswg.org/selectors/#relational). Unfortunately, it is not yet supported by browsers.
 
 ##### `:has()` syntax
 
@@ -660,11 +765,13 @@ Backward compatible syntax:
 [-ext-has="selector"]
 ```
 
+Supported synonyms for better compatibility: `:-abp-has`, `:if`.
+
 Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
 
 ##### `:has()` examples
 
-###### Selection of all `div` elements, which contain an element with a `banner` class.
+Selecting  all `div` elements, which contain an element with the `banner` class.
 
 **HTML code**
 ```html
@@ -673,36 +780,49 @@ Pseudo-class `:has()` selects the elements that includes the elements that fit t
 ```
 
 **Selector**
-```css
+```
 div:has(.banner)
 ```
 
 Backward compatible syntax:
-```css
+```
 div[-ext-has=".banner"]
 ```
+
+<a id="extended-css-if-not"></a>
+#### Pseudo-class `:if-not()`
+
+This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
 
 <a id="extended-css-contains"></a>
 #### Pseudo-class `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text. Please note that it should be text, not a code. Use `innerText` property for verification.
+This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Please note, that this pseudo-class uses `innerText` element property for matching (and not the `innerHTML`).
 
 ##### `:contains()` syntax
 
-```css
+```
+// matching by plain text
 :contains(text)
+
+// matching by a regular expression
+:contains(/regex/)
 ```
 
 Backward compatible syntax:
-```css
+```
+// matching by plain text
 [-ext-contains="text"]
+
+// matching by a regular expression
+[-ext-contains="/regex/"]
 ```
 
-Pseudo class `:contains()` selects the elements, that containt the text `text`.
+Supported synonyms for better compatibility: `:-abp-contains`, `:has-text`.
 
 ##### `:contains()` examples
 
-###### Selection of all `div` elements, that contain text `banner`.
+Selecting all `div` elements, which contain text `banner`.
 
 **HTML code**
 ```html
@@ -712,13 +832,21 @@ Pseudo class `:contains()` selects the elements, that containt the text `text`.
 ```
 
 **Selector**
-```css
+```
+// matching by plain text
 div:contains(banner)
+
+// matching by a regular expression
+div:contains(/this .* banner/)
 ```
 
 Backward compatible syntax:
-```css
+```
+// matching by plain text
 div[-ext-contains="banner"]
+
+// matching by a regular expression
+div[-ext-contains="/this .* banner/"]
 ```
 
 Please note that in this example only a `div` with `id=selected` will be selected, because the next element does not contain any text (`banner` is a part of code, not text).
@@ -726,7 +854,7 @@ Please note that in this example only a `div` with `id=selected` will be selecte
 <a id="extended-css-matches-css"></a>
 #### Pseudo-class `:matches-css()`
 
-This pseudo-class allows to select an element by his current property.
+These pseudo-classes allow to select an element by its current style property. The work of this pseudo-class is based on using the [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) function.
 
 ##### `:matches-css()` syntax
 
@@ -752,11 +880,16 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 A name of CSS property to check the element for.
 
 ###### `pattern`
-Value mask. We use the same syntax as in basic rules `pattern`.
+This can be either a value pattern that is using the same simple wildcard matching as in the basic url filtering rules or it can be a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner.
+
+In the case of a regular expression, the pattern looks like `/regex/`.
+
+> * For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
+> * For regex patterns, ",\ should be escaped, because we manually escape those in extended-css-selector.js.
 
 ##### `:matches-css()` examples
 
-###### Selection of `div` elements that contain pseudo-class `::before` with specified content.
+Selecting all `div` elements which contain pseudo-class `::before` with specified content.
 
 **HTML code**
 ```html
@@ -770,13 +903,130 @@ Value mask. We use the same syntax as in basic rules `pattern`.
 ```
 
 **Selector**
-```css
+```
+// Simple matching
 div.banner:matches-css-before(content: block me)
+
+// Regular expressions
+div.banner:matches-css-before(content: /block me/)
 ```
 
 Backward compatible syntax:
-```css
+```
+// Simple matching
 div.banner[-ext-matches-css-before="content: block me"]
+
+// Regular expressions
+div.banner[-ext-matches-css-before="content: /block me/"]
+```
+
+<a id="extended-css-properties"></a>
+#### Pseudo-class `:properties()`
+
+Originally, this pseudo-class was [introduced by ABP](https://adblockplus.org/development-builds/new-css-property-filter-syntax).
+
+On the surface this pseudo class is somewhat similar to [`:matches-css`](#extended-css-matches-css). However, it is very different under the hood. `:matches-css` is based on using [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) while `:properties` is based on scanning page stylesheets and using them to lookup elements.
+
+In short, `:matches-css` is about "Computed" tab of the dev tools while `:properties` is about "Styles" tab:
+
+!()[https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png]
+
+Another notable difference is that there is no special "-before"/"-after" pseudo-classes. `:properties` matching strips both `::before` and `::after` pseudo-elements from the selectors found in the stylesheets.
+
+> **Limitations** 
+> * Cross-origin stylesheets are ignored
+> * [At-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are also ignored. This means that imported (`@import`) stylesheets and `@media` groups are ignored.
+
+##### `:properties()` syntax
+
+```
+/* element style matching */
+selector:properties(property-name ":" pattern)
+```
+
+Backward compatible syntax:
+```
+selector[-ext-properties="property-name ":" pattern"]
+```
+
+Supported synonyms for better compatibility: `:-abp-properties`.
+
+###### `property-name`
+A name of CSS property to check the element for.
+
+###### `pattern`
+This can be either a value pattern that is using the same simple wildcard matching as in the basic url filtering rules or it can be a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner.
+
+In the case of a regular expression, the pattern looks like `/regex/`.
+
+> * For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
+> * For regex patterns, ",\ should be escaped, because we manually escape those in extended-css-selector.js.
+
+##### `:properties()` examples
+
+Selecting all `div` elements which contain any pseudo-class (`::before` or `::after`) with the specified content.
+
+**HTML code**
+```html
+<style type="text/css">
+    #to-be-blocked::before {
+        content: "Block me"
+    }
+</style>
+<div id="to-be-blocked" class="banner"></div>
+<div id="not-to-be-blocked" class="banner"></div>
+```
+
+**Selector**
+```
+// Simple matching
+div.banner:properties(content: block me)
+
+// Regular expressions
+div.banner:properties(content: /block me/)
+```
+
+Backward compatible syntax:
+```
+// Simple matching
+div.banner[-ext-properties="content: block me"]
+
+// Regular expressions
+div.banner:properties(content: /block me/)
+```
+
+<a id="selectors-debugging-mode"></a>
+#### Selectors debugging mode
+
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
+
+**Debugging a single selector**
+```
+#$#.banner { display: none; debug: true; }
+```
+
+**Enabling global debug**
+```
+#$#.banner { display: none; debug: global; }
+```
+
+<a id="testing-extended-selectors"></a>
+#### Testing extended selectors
+
+To load ExtendedCss to a current page, copy and execute the following code in a browser console:
+```
+!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
+C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
+(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
+```
+
+Alternative, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+
+You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
+```
+var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
+
+ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
 ```
 
 <a id="html-filtering-rules"></a>
@@ -785,8 +1035,8 @@ div.banner[-ext-matches-css-before="content: block me"]
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
 > #### Compatibility with different versions of AdGuard
-> Rules are supported by AdGuard for Windows, Mac and Android (you have to set "filtering method" for "High-quality" in Android).
-> This type of rules don't work in browsers extension, because it is unable to modify content on network level.
+> Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
+> This type of rules don't work in other browsers extension, because it is unable to modify content on network level.
 
 <a id="html-filtering-rules-syntax"></a>
 ### HTML filtering rules syntax
@@ -971,9 +1221,90 @@ example.com#@%#window.__gaq = undefined;
 
 If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
+<a id="pre_processor"></a>
+### Pre-processor directives
+
+We provide multiple pre-processor directives that can be used by filters maintainers to improve compatibility with different ad blockers.
+
+#### Syntax
+
+```
+!#if condition
+Anything goes here
+!#include URL_or_a_relative_path
+!#endif
+```
+
+* `!#if`, `!#endif` -- filters maintainers can use these conditions to supply different rules depending on the ad blocker type.
+* `condition` -- just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare.
+* `!#include` -- this directive allows to include contents of a specified file into the filter.
+
+#### Conditions
+
+When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code between the directives only if the specified condition is true. Condition supports all the basic logical operators.
+
+**Example**:
+```
+!#if (adguard && !adguard_ext_safari)
+||example.org^$third-party
+!#endif
+```
+
+#### Including a file
+
+The `!#include` directive supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives).
+
+Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+
+**Examples**
+
+Filter URL: `https://example.org/path/filter.txt`
+```
+!
+! Valid (same origin):
+!#include https://example.org/path/includedfile.txt
+!
+! Valid (relative path):
+!#include /includedfile.txt
+!#include ../path2/includedfile.txt
+!
+! Invalid (another origin):
+!#include https://example.com/path/includedfile.txt
+```
+
+#### Remarks
+
+* If included file is not found or unavailable, the whole filter update should fail.
+* A conditional directive beginning with a #if directive must explicitly be terminated with a #endif directive.
+* Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+
+#### AdGuard-specific
+
+* Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+* Pre-processor directives can be used in the user filter (or in the custom local filters). Same-origin limitation should be disabled for local filters.
+
+#### What constants do we declare
+
+* `adguard` -- Declared always. Lets maintainers know that this is one of AdGuard products. Should be enough in 95% of cases.
+
+Product-specific constants for some rare cases (or not so rare, thx Safari):
+
+* `adguard_app_windows` -- AG for Windows
+* `adguard_app_mac` -- AG for Mac
+* `adguard_app_android` -- AG for Android
+* `adguard_app_ios` -- AG for iOS
+* `adguard_ext_chromium` -- AG browser extension for Chrome
+* `adguard_ext_firefox` -- AG browser extension for Firefox
+* `adguard_ext_edge` -- AG browser extension for Edge
+* `adguard_ext_safari` -- AG browser extension for Safari
+* `adguard_ext_opera` -- AG browser extension for Opera
+* `adguard_ext_android_cb` -- AG content blocker for Samsung/Yandex
+
+> Special case: `ublock`. This constant is declared when a ublock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry).
+
 <a id="hints"></a>
 ### Hints
-"Hint" is a special comment, instruction to the filters compiler used on the server side.
+"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
 
 <a id="hints_syntax"></a>
 #### Hints syntax 
