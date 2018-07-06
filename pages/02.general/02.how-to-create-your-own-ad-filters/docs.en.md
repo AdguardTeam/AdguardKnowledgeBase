@@ -1300,7 +1300,7 @@ Product-specific constants for some rare cases when you need a rule to work (or 
 * `adguard_ext_opera` -- AG browser extension for Opera
 * `adguard_ext_android_cb` -- AG content blocker for Samsung/Yandex
 
-> Special case: `ublock`. This constant is declared when a ublock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry).
+> Special case: `ext_ublock`. This constant is declared when a ublock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry).
 
 <a id="hints"></a>
 ### Hints
