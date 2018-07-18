@@ -28,7 +28,7 @@ taxonomy:
 
 #### Windows
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
 
 * Версия&nbsp;ОС (x86&nbsp;или x64?);
 * Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
@@ -43,7 +43,7 @@ taxonomy:
 
 #### macOS
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
 
 * Версия ОС;
 * Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
@@ -59,7 +59,7 @@ taxonomy:
 
 #### Android
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём устройстве:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём устройстве:
 
 * Модель;
 * Версия Android;
@@ -75,7 +75,7 @@ taxonomy:
 
 #### AdGuard/AdGuard Pro для iOS
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
 Вы&nbsp;получите e-mail с&nbsp;приглашением в&nbsp;TestFlight.
 
