@@ -45,7 +45,7 @@ visible: true
                 * [$genericblock](#genericblock-modifier)
     * [Расширенные возможности](#advanced-modifiers)
         * [$important](#important-modifier)
-        * [#badfilter](#badfilter-modifier)
+        * [$badfilter](#badfilter-modifier)
         * [$empty](#empty-modifier)
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
