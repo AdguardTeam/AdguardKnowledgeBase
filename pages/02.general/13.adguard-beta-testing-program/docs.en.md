@@ -29,7 +29,7 @@ Now, once you have this settled, just follow one of&nbsp;these instructions, dep
 
 #### Windows
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your PC: 
+Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your PC: 
 
 * OS&nbsp;version (x86&nbsp;or x64?);
 * Browser(s) used and its version;
@@ -45,7 +45,7 @@ Everything related to&nbsp;AdGuard for Windows can be&nbsp;found and discussed&n
 
 #### macOS
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
+Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
 
 * OS&nbsp;version;
 * Browser(s) you use and its version;
@@ -61,7 +61,7 @@ Everything related to&nbsp;AdGuard for Mac can be&nbsp;found and discussed&nbsp;
 
 #### Android
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate information about your device:
+Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your device:
 
 * Model;
 * Android version;
@@ -77,7 +77,7 @@ Everything related to&nbsp;AdGuard for Android can be&nbsp;found and discussed&n
 
 #### AdGuard/AdGuard Pro for iOS
 
-Go&nbsp;to&nbsp;this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSf5JWqO_Qsdri1nwJphse46Qk48YHVyc3IZs1l-XmJ3ff0dDQ/viewform) and fill all the required fields there. Make sure to&nbsp;indicate what device you are using. It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
+Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate what device you are using. It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
 
 You will receive an&nbsp;email with an&nbsp;invitation to&nbsp;TestFlight.
 

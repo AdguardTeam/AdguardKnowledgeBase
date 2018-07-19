@@ -28,7 +28,7 @@ taxonomy:
 
 #### Windows
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём ПК:
 
 * Версия&nbsp;ОС (x86&nbsp;или x64?);
 * Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
@@ -38,13 +38,12 @@ taxonomy:
 
 Чтобы получить последнюю бета-версию, просто активируйте лицензию полученным бета-ключом, или&nbsp;же вручную выставьте в&nbsp;настройках канал обновлений на&nbsp;&laquo;Beta&raquo;.
 
-Всё, что касается AdGuard для Android, можно найти&nbsp;на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid) и&nbsp;обсудить прямо там&nbsp;же.
 
 <a name="macos"></a>
 
 #### macOS
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём Mac:
 
 * Версия ОС;
 * Используемый(е) браузер(ы) и&nbsp;их&nbsp;версии;
@@ -60,7 +59,7 @@ taxonomy:
 
 #### Android
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём устройстве:
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что включили следующую информацию о&nbsp;своём устройстве:
 
 * Модель;
 * Версия Android;
@@ -76,7 +75,7 @@ taxonomy:
 
 #### AdGuard/AdGuard Pro для iOS
 
-Откройте эту [форму Google](https://docs.google.com/forms/d/e/1FAIpQLSchAxDWHG44I2qZNF-B2uenvdtfQMYleyyOaPCbvebVoCJOuw/viewform) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
+Откройте [специальную форму](https://surveys.adguard.com/beta_testing_program_ru/form.html) и&nbsp;заполните все необходимые поля. Убедитесь, что указали, какое устройство вы&nbsp;используете. Крайне советуем включить эту информацию в&nbsp;вашу форумную подпись, если у&nbsp;вас там есть аккаунт.
 
 Вы&nbsp;получите e-mail с&nbsp;приглашением в&nbsp;TestFlight.
 
@@ -129,7 +128,7 @@ taxonomy:
 
 Давайте представим, что случилось худшее&nbsp;&mdash; вы&nbsp;заметили ошибку в&nbsp;работе AdGuard. Или, может быть, вы&nbsp;просто хотите поделиться предложением с&nbsp;разработчиками? В&nbsp;любом случае, существуют различные способы связаться с&nbsp;нами: 
 
-* Откройте [forum.adguard.com](forum.adguard.com) и&nbsp;создайте новую тему (или найдите уже существующую) в&nbsp;[бета-разделе](https://forum.adguard.com/index.php?categories/4/) форума. Убедитесь, что перед этим вы&nbsp;ознакомились&nbsp;с [правилами форума](https://forum.adguard.com/index.php?threads/14858/);
+* Перейдите на форум [forum.adguard.com](forum.adguard.com) и&nbsp;создайте новую тему (или найдите уже существующую) в&nbsp;[бета-разделе](https://forum.adguard.com/index.php?categories/4/) форума. Убедитесь, что перед этим вы&nbsp;ознакомились&nbsp;с [правилами форума](https://forum.adguard.com/index.php?threads/14858/);
 
 * Перейдите&nbsp;на [GitHub](https://github.com/AdguardTeam/) и&nbsp;найдите нужный репозиторий. Создайте новую задачу и&nbsp;детально опишите обнаруженный баг или ваш вопрос/предложение;
 
