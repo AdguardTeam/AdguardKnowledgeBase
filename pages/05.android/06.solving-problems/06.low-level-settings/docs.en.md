@@ -32,3 +32,15 @@ We united several settings under this category: _pref.https.apps.exclusions_, _p
 **pref.vpn.ipv6.bypass**
 
 Nowadays, more and more often SMS and MMS are sent via network, and when they are, non-standard IPv6 network is often used. When we try to filter this traffic, it is not extremely unusual that we interfere with sending and even receiving MMS. If you suspect this is your case, we recommend checking the **pref.vpn.ipv6.bypass** checkbox or adding the app responsible for MMS managing to **pref.net.exclusions**.
+
+**pref.samsungpay.autopause.enable**
+
+This setting was developed specifically for the South Korean users who used to face the following problem — the *“Samsung Pay”* service doesn’t work on devices with running VPN. AdGuard, in its turn, uses Local VPN to filter traffic and this mode is on by default. 
+
+The South Korean users had to disable AdGuard when making payments with *“Samsung Pay”*. But now it became possible to avoid such difficulties by activating this feature. 
+
+So, what process does this feature initiate? If **“pref.samsungpay.autopause.enable”** option is enabled, AdGuard automatically pauses its work when a user opens *“Samsung Pay”* app. And once the app is closed, AdGuard runs again after a while. 
+
+**Please note:** this feature will work just in case VPN filtering mode is chosen in AdGuard settings — if another mode is being used, AdGuard will function without any interruptions.
+
+
