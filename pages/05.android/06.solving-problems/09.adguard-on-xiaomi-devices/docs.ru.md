@@ -1,8 +1,44 @@
 ---
-title: 'AdGuard на устройствах Xiaomi'
+title: 'Как настроить фоновую работу AdGuard'
 published: false
 taxonomy:
     category:
         - docs
 ---
 
+##1.Прежде всего Вам потребуется закрепить AdGuard в фоновом режиме:
+
+— Смахните AdGuard вниз для вызова меню выбора активных и "спящих" приложений как на скриншоте:
+
+<img src="https://cloud.githubusercontent.com/assets/8577547/19343100/74ff48fa-913d-11e6-8d15-423e5e16353a.png" width="300">
+
+— Нажмите на значок замочка, это не даст системе выгрузить AdGuard:
+
+<img src="https://cloud.githubusercontent.com/assets/8577547/19343634/a8aadec4-913f-11e6-8a1b-2e440d0d8952.png" width="300">
+
+##2. Необходимо настроить режим энергосбережения.
+
+* _[Battery](#battery-setup)_
+* _[Permissons](#permissions-setup)_
+
+####Энергосбережение
+
+— Следуйте в раздел _"Батарея"_ 
+
+— Выберите _"Режим энергосбережения"_
+
+— Найдите и выберите _Adguard_
+
+— Откройте _Фоновые настройки_:
+
+<img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
+
+####Разрешения
+
+— Пройдите в раздел _"Разрешения"_
+
+— Выберите _"Автозапуск"_
+
+— Убедитесь, что функция автозапуска включена для AdGuard:
+
+<img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
