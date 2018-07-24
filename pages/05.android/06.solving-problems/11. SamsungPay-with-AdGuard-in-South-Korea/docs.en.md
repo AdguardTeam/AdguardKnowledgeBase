@@ -20,7 +20,7 @@ If this option is enabled, AdGuard automatically pauses its work as soon as a us
 
 Let's see how it works.
 
-![](pref_samsungpay_autopause_enable.gif?resize=600)
+![](pref_samsungpay_autopause_enable.gif.gif?resize=600)
  
 **However, there is an important thing to note:** this feature will work just in case VPN filtering mode is chosen in AdGuard settings — if another mode is being used, AdGuard will function without any interruptions.
 
