@@ -37,7 +37,7 @@ visible: true
 
 Ознакомиться с синтаксисом составления правил блокировки рекламного контента можете по [этой ссылке](http://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters).
 
-[Политика составления фильтров AdGuard](https://blog.adguard.com/ru/news/politika-sostavleniya-adblock-filtrov-adguard.html)
+[Политика составления фильтров AdGuard](https://kb.adguard.com/ru/general/adguard-filter-policy)
 
 
 <a id="english"></a>
