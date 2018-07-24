@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-##1. First of all you should "Lock" AdGuard in recent apps list:
+# Lock AdGuard in recent apps list:
 
 — Drag AdGuard down to make options viable:
 
@@ -16,12 +16,12 @@ taxonomy:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19343634/a8aadec4-913f-11e6-8a1b-2e440d0d8952.png" width="300">
 
-##2. The next thing to do to make AdGuard work properly is to setup Xiaomi's security settings.
+# The next thing to do to make AdGuard work properly is to setup Xiaomi's security settings.
 
 * _[Battery](#battery-setup)_
 * _[Permissons](#permissions-setup)_
 
-####Battery setup
+### Battery setup
 
 — Go to _"Battery"_ 
 
@@ -33,7 +33,7 @@ taxonomy:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-####Permissions setup
+### Permissions setup
 
 — Go to _"Permissions"_
 
