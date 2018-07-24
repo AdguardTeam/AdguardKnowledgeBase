@@ -1,6 +1,6 @@
 ---
 title: 'How to protect AdGuard from being disabled by the system'
-published: false
+published: true
 taxonomy:
     category:
         - docs
