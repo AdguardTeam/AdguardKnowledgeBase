@@ -37,7 +37,7 @@ Filters are designed for use in all AdGuard products. If you wish, you can als
 
 You can find a manual of filtering rules creation syntax on [this link](/general/how-to-create-your-own-ad-filters).
 
-[AdGuard Filter Policy](https://blog.adguard.com/en/adguard-news/adguard-filter-policy.html)
+[AdGuard Filter Policy](https://kb.adguard.com/en/general/adguard-filter-policy)
 
 
 <a name="english"></a>
