@@ -1,6 +1,6 @@
 ---
 title: 'Как настроить фоновую работу AdGuard'
-published: false
+published: true
 taxonomy:
     category:
         - docs
