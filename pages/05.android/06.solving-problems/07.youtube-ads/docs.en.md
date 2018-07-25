@@ -41,7 +41,3 @@ This is our major problem. AdGuard can remove all ads from the app, but only if 
 ![](youtube_preference_en.png?cropResize=400,600)
 
 If it is enabled, AdGuard will clear Youtube app data at the device start.
-
-### Updates
-
-We will update this post regularly, by adding new relevant information. Stay tuned.
