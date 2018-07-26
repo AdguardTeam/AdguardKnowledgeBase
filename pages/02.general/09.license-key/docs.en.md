@@ -143,9 +143,8 @@ To unbind the license key from computer just click the “Reset” button as it�
 
 Once you have renewed AdGuard for another year - you will need to restart the program/app or go to the 'License' section and refresh the license status for changes to take effect. 
 
-_E.g: AdGuard for Windows_
 ![](https://cdn.adguard.com/public/Adguard/kb/en/refresh_license.png)
-
+_E.g: AdGuard for Windows_
 
 <a id="payment"></a>
 
