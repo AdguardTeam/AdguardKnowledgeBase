@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-#### 1. Lock AdGuard in the recent apps list:
+#### 1. Lock AdGuard in the recent apps list.
 
 — Drag AdGuard down to make options viable:
 
