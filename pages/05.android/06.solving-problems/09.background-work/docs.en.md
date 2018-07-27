@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-### Lock AdGuard in recent apps list:
+#### Lock AdGuard in recent apps list:
 
 — Drag AdGuard down to make options viable:
 
@@ -16,10 +16,7 @@ taxonomy:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19343634/a8aadec4-913f-11e6-8a1b-2e440d0d8952.png" width="300">
 
-### The next thing to do to make AdGuard work properly is to setup Xiaomi's security settings.
-
-* _[Battery](#battery-setup)_
-* _[Permissons](#permissions-setup)_
+#### The next thing to do to make AdGuard work properly is to setup Xiaomi's security settings.
 
 #### Battery setup
 
