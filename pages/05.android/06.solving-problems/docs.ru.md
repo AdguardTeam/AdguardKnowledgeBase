@@ -13,5 +13,6 @@ taxonomy:
 * [Настройки низкого уровня](https://kb.adguard.com/ru/android/solving-problems/low-level-settings)
 * [Как заблокировать рекламу в приложении Youtube](https://kb.adguard.com/ru/android/solving-problems/youtube-ads)
 * [Как настроить вышестоящий прокси-сервер](https://kb.adguard.com/ru/android/solving-problems/adguard-outbound-proxy)
+* [Как настроить фоновую работу AdGuard](https://kb.adguard.com/ru/android/solving-problems/background-work)
 
 Этот раздел регулярно обновляется. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку AdGuard](http://kb.adguard.com/ru/technical-support).
