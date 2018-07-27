@@ -28,7 +28,7 @@ taxonomy:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-#### 3. And the last one - permissions setup.
+#### 3. And the last one, permissions setup.
 
 — Go to _"Permissions"_
 
