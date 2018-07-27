@@ -13,5 +13,6 @@ taxonomy:
 * [Low Level Settings guide](http://kb.adguard.com/en/android/solving-problems/low-level-settings)
 * [How to block ads in Youtube app](http://kb.adguard.com/en/android/solving-problems/youtube-ads)
 * [How to setup the outbound proxy](https://kb.adguard.com/en/android/solving-problems/adguard-outbound-proxy)
+* [How to protect AdGuard from being disabled by the system](https://kb.adguard.com/en/android/solving-problems/background-work)
 
 This section is regularly updated. If you haven't found a solution to your problem in our knowledge base, [AdGuard Support Team](http://kb.adguard.com/en/technical-support) will be happy to help.
