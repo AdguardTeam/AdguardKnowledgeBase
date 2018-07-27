@@ -11,6 +11,7 @@ visible: true
 * [How to recover my license key?](#recovery)
 * [How to register the AdGuard Account?](#account)
 * [What functions are available in AdGuard Account?](#account-functions)
+* [What to do after the key was renewed?](#account-renewal)
 
 <a name="key"></a>
 #### What is AdGuard license key?
@@ -136,6 +137,14 @@ To unbind the license key from computer just click the “Reset” button as it�
 
 ![](account-reset-en.png)
 
+
+<a name="renewal"></a>
+## What to do after the key was renewed?
+
+Once you have renewed AdGuard for another year - you will need to restart the program/app or go to the 'License' section and refresh the license status for changes to take effect. 
+
+![](https://cdn.adguard.com/public/Adguard/kb/en/refresh_license.png)
+_E.g: AdGuard for Windows_
 
 <a id="payment"></a>
 
