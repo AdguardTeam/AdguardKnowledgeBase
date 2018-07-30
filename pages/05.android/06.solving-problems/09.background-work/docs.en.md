@@ -8,7 +8,7 @@ taxonomy:
 
 #### 1. Lock AdGuard in the recent apps list.
 
-— Drag AdGuard down to make options viable:
+— Swipe down AdGuard to make options visible:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19343100/74ff48fa-913d-11e6-8d15-423e5e16353a.png" width="300">
 
@@ -18,7 +18,7 @@ taxonomy:
 
 #### 2. The next thing to do to make AdGuard work properly is to setup device's battery settings.
 
-— Go to _"Battery"_ 
+— Go to _"Battery"_
 
 — Select _"App battery saver"_
 
@@ -34,6 +34,6 @@ taxonomy:
 
 — Select _"Autostart"_
 
-— Make sure autostart is enabled for AdGuard:
+— Make sure that autostart function is enabled for AdGuard:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
