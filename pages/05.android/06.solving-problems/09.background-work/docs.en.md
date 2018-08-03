@@ -16,7 +16,6 @@ taxonomy:
 
 <a id="Xiaomi"></a>
 #### 1. Lock AdGuard in the recent apps list.
-
 — Swipe down AdGuard to make options visible:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
@@ -48,7 +47,6 @@ taxonomy:
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
 
 <a id="Samsung"></a>
-
 #### 1. Lock AdGuard in the recent apps list.
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
@@ -64,7 +62,6 @@ taxonomy:
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
  
  <a id="Huawei"></a>
- 
  ### 1. Lock AdGuard in the recent apps list
  
   - Tap on recent tasks button:
