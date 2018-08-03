@@ -15,13 +15,13 @@ taxonomy:
 
 
 <a id="Xiaomi"></a>
-#### 1. Закрепите AdGuard в фоном режиме
+#### 1. Закрепите AdGuard в фоновом режиме
 
 — Смахните AdGuard вниз для вызова меню выбора активных и "спящих" приложений как на скриншоте:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
-— Нажмите на значок замочка, это не даст системе выгрузить AdGuard из фоновой работы:
+— Нажмите на значок замочка - это не даст системе выгрузить AdGuard из фоновой работы:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
@@ -48,7 +48,7 @@ taxonomy:
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
 
 <a id="Samsung"></a>
-#### 1. Закрепите AdGuard в фоном режиме
+#### 1. Закрепите AdGuard в фоновом режиме
 
  — Нажмите на кнопку-меню активных приложений:
  
@@ -63,7 +63,7 @@ taxonomy:
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
  
  <a id="Huawei"></a>
- #### 1. Закрепите AdGuard в фоном режиме
+ #### 1. Закрепите AdGuard в фоновом режиме
  
   - Нажмите на кнопку меню активных приложений:
   
