@@ -10,11 +10,11 @@ taxonomy:
 
 — Swipe down AdGuard to make options visible:
 
-<img src="https://cloud.githubusercontent.com/assets/8577547/19343100/74ff48fa-913d-11e6-8d15-423e5e16353a.png" width="300">
+<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
 — Click on the "Lock" icon. This will not let Xiaomi to close AdGuard automatically. It should look like this:
 
-<img src="https://cloud.githubusercontent.com/assets/8577547/19343634/a8aadec4-913f-11e6-8a1b-2e440d0d8952.png" width="300">
+<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
 #### 2. The next thing to do to make AdGuard work properly is to setup device's battery settings.
 
