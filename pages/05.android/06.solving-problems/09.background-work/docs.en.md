@@ -79,6 +79,7 @@ For Samsung devices, there is no great need for setting up background work, but 
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
   — Tap on the lock icon
+  
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
    <a id="Oneplus"></a> 
