@@ -12,10 +12,12 @@ taxonomy:
 
 * [How to set up background work on Huawei devices](#Huawei)
 
+* [How to set up background work on Oneplus devices](#Oneplus)
+
 
 
 <a id="Xiaomi"></a>
-#### 1. Lock AdGuard in the recent apps list.
+## Lock AdGuard in the recent apps list.
 
 — Swipe down AdGuard to make options visible:
 
@@ -25,7 +27,7 @@ taxonomy:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
-#### 2. The next thing to do to make AdGuard work properly is to setup device's battery settings.
+## The next thing to do to make AdGuard work properly is to setup device's battery settings.
 
 — Go to _"Battery"_
 
@@ -37,7 +39,7 @@ taxonomy:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-#### 3. And the last one, permissions setup.
+##  And the last one, permissions setup.
 
 — Go to _"Permissions"_
 
@@ -49,7 +51,7 @@ taxonomy:
 
 <a id="Samsung"></a>
 
-#### 1. Lock AdGuard in the recent apps list.
+## 1. Samsung
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
@@ -65,7 +67,7 @@ taxonomy:
  
  <a id="Huawei"></a>
  
- ### 1. Lock AdGuard in the recent apps list
+ ## Huawei
  
   - Tap on recent tasks button:
   
@@ -73,3 +75,19 @@ taxonomy:
   
    - Tap on the lock icon
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
+   
+   <a id="Oneplus"></a>
+   
+ ## Oneplus
+   
+- Go to Settings
+- Battery > Battery optimisation
+- Find the app you want to keep awake all the time
+- Tap on it and select "Don't optimize" option
+- Tap "Done" to save
+
+Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
+
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
+
+
