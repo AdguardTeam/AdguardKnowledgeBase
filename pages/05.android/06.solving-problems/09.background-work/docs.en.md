@@ -83,7 +83,7 @@ For a Samsung devices, there is no great need in setting up background work, but
    
    <a id="Oneplus"></a> 
  ## Oneplus
- Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow this steps:
+ Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
  
 - Go to Settings
 - Battery > Battery optimisation
