@@ -87,10 +87,15 @@ For Samsung devices, there is no great need for setting up background work, but 
  Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
  
  — Go to Settings
+ 
  — Battery > Battery optimisation
+ 
  — Find the app you want to keep awake all the time
+ 
  — Tap on it and select "Don't optimize" option
+ 
  — Tap "Done" to save
+ 
  — Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
