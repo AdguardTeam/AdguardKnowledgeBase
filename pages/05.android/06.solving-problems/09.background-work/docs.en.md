@@ -15,9 +15,9 @@ _In some cases, apps won't stay in the background, "alive" or in a sleep mode du
 
 * [Samsung](#Samsung)
 
-* [Huawei devices](#Huawei)
+* [Huawei](#Huawei)
 
-* [Oneplus devices](#Oneplus)
+* [Oneplus](#Oneplus)
 
 <a id="Xiaomi"></a>
 ## Xiaomi
