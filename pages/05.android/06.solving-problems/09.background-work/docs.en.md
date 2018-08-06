@@ -54,6 +54,7 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
 
 ## Samsung
 
+For a Samsung devices, there is no great need in setting up background work, but if you are confronted with the fact that the application closes after a while, do the following:
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
@@ -71,6 +72,8 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
  
  ## Huawei
  
+ Huawei devices are the easiest to set up, it is enough to perform two steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
+ 
   - Tap on recent tasks button:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
@@ -78,17 +81,16 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
    - Tap on the lock icon
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
-   <a id="Oneplus"></a>
-   
+   <a id="Oneplus"></a> 
  ## Oneplus
-   
+ Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow this steps:
+ 
 - Go to Settings
 - Battery > Battery optimisation
 - Find the app you want to keep awake all the time
 - Tap on it and select "Don't optimize" option
 - Tap "Done" to save
-
-Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
+- Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
