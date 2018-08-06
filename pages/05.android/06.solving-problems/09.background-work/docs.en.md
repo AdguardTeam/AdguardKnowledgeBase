@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-* [Xiaomi (MIUI)](#Xiaomi)
+* [Xiaomi](#Xiaomi)
 
 * [Samsung](#Samsung)
 
