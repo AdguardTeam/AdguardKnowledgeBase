@@ -6,6 +6,11 @@ taxonomy:
         - docs
 ---
 
+# Background work
+In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of its "battery save" mode. That can be uncomfortable for you to restart it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS.*(nnote that this instruction is similar for mostly all different versions of Android OS)*.
+
+**List of the devices with different versions of Android OS:**
+
 * [Xiaomi](#Xiaomi)
 
 * [Samsung](#Samsung)
@@ -15,23 +20,22 @@ taxonomy:
 * [Oneplus devices](#Oneplus)
 
 
+**These steps are shows how to set up background work and avoid it's termination caused by features of different versions of  Android OS:**
 
 <a id="Xiaomi"></a>
-## Lock AdGuard in the recent apps list.
-
-— Swipe down AdGuard to make options visible:
+— Tap on the *recent tasks* button and swipe down AdGuard to make options *visible* (as presented on the screenshot):
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
-— Tap on the "Lock" icon. This will not let Xiaomi to close AdGuard automatically. It should look like this:
+— Tap on the *lock* icon. This will not let Xiaomi to close AdGuard automatically. It should look like this:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
-## The next thing to do to make AdGuard work properly is to setup device's battery settings.
+The next thing to do is to make AdGuard work properly. You need to setup device's battery settings:
 
-— Go to _"Battery"_
+— Go to _Battery_
 
-— Select _"App battery saver"_
+— Select _App battery saver_
 
 — Find and select _Adguard_
 
@@ -39,11 +43,11 @@ taxonomy:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-##  And the last one, permissions setup.
+And the last one, permissions setup:
 
-— Go to _"Permissions"_
+— Go to _Permissions_
 
-— Select _"Autostart"_
+— Select _Autostart_
 
 — Make sure that autostart function is enabled for AdGuard:
 
@@ -51,7 +55,7 @@ taxonomy:
 
 <a id="Samsung"></a>
 
-## Samsung
+Samsung
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
@@ -67,7 +71,7 @@ taxonomy:
  
  <a id="Huawei"></a>
  
- ## Huawei
+ Huawei
  
   - Tap on recent tasks button:
   
@@ -78,7 +82,7 @@ taxonomy:
    
    <a id="Oneplus"></a>
    
- ## Oneplus
+ Oneplus
    
 - Go to Settings
 - Battery > Battery optimisation
