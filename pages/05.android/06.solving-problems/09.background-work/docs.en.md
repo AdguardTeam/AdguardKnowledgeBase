@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 # Background work
-In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of its "battery save" mode. That can be uncomfortable for you to restart it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS.*(nnote that this instruction is similar for mostly all different versions of Android OS)*.
+_In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of its "battery save" mode. That can be uncomfortable for you to restart it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS.*(nnote that this instruction is similar for mostly all different versions of Android OS)*._
 
 **List of the devices with different versions of Android OS:**
 
@@ -32,21 +32,21 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
-— Go to _Battery_
+— Go to *Battery*
 
-— Select _App battery saver_
+— Select App *battery saver*
 
-— Find and select _Adguard_
+— Find and select *Adguard*
 
-— Set up next _Background settings_:
+— Set up next *Background settings*:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-— Go to _Permissions_
+— Go to *Permissions*
 
-— Select _Autostart_
+— Select *Autostart*
 
-— _Make sure that autostart function is enabled for AdGuard:_
+— Make sure that autostart function is enabled for *AdGuard*:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
 
