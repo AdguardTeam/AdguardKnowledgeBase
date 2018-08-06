@@ -19,10 +19,11 @@ In some cases, apps won't stay in the background, "alive" or in a sleep mode due
 
 * [Oneplus devices](#Oneplus)
 
-
-**These steps are shows how to set up background work and avoid it's termination caused by features of different versions of  Android OS:**
-
 <a id="Xiaomi"></a>
+## Xiaomi
+
+As for Xiaomi devices you should take attention on Battery and Permissions article, it is important to set up them correctly.
+
 — Tap on the *recent tasks* button and swipe down AdGuard to make options *visible* (as presented on the screenshot):
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
@@ -55,7 +56,7 @@ And the last one, permissions setup:
 
 <a id="Samsung"></a>
 
-Samsung
+## Samsung
 
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
@@ -72,7 +73,7 @@ Samsung
  
  <a id="Huawei"></a>
  
- Huawei
+ ## Huawei
  
   - Tap on recent tasks button:
   
@@ -83,7 +84,7 @@ Samsung
    
    <a id="Oneplus"></a>
    
- Oneplus
+ ## Oneplus
    
 - Go to Settings
 - Battery > Battery optimisation
