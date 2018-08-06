@@ -24,7 +24,7 @@ taxonomy:
 
 Для настройки фоновой работы AdGuard на устройствах Xiaomi Вы должны обратить внимание на раздел "Батарея" и "Разрешения" в настройках.
 
-- Нажмите на *кнопку-меню фоновых приложений* и смахните окно приложения AdGuard вниз, чтобы сделать опции *"видимыми"* (как показано на снимке экрана):
+- Нажмите на *кнопку-меню фоновых приложений* и смахните окно приложения AdGuard вниз, чтобы сделать опции видимыми (как показано на снимке экрана):
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
@@ -36,7 +36,7 @@ taxonomy:
 
 - Выберите  *"Выбрать приложение"*
 
-- Найдите и выберите в списке умного режима приложение *"AdGuard"*
+- Найдите и выберите в списке умного режима приложение AdGuard
 
 - Перейдите в режим фоновых настроек и выберите пункт *"Без ограничений"*:
 
@@ -47,7 +47,7 @@ taxonomy:
 
 - Выберите пункт *"Автозапуск"*
 
-- Убедитесь, что функция автозапуска включена для *"AdGuard"*:
+- Убедитесь, что функция автозапуска включена для AdGuard:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
 
@@ -61,11 +61,11 @@ taxonomy:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
 
- — Нажмите на *"Закрепить приложения"*:
+ - Нажмите на *"Закрепить приложения"*:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLockApps.png" width="300">
  
-  — Нажмите на значок *"замочка"*
+ - Нажмите на значок *"замочка"*
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
  
@@ -79,7 +79,7 @@ taxonomy:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
-  — Нажмите на значок *"замочка"*
+  - Нажмите на значок *"замочка"*
   
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
@@ -91,7 +91,7 @@ taxonomy:
  
   - Батарея> Оптимизация батареи
  
-  - Найдите приложение *AdGuard*
+  - Найдите приложение AdGuard
  
   - Нажмите на него и выберите опцию *«Не оптимизировать»*
  
