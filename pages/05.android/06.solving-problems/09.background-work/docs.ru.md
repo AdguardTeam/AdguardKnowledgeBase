@@ -24,7 +24,7 @@ taxonomy:
 
 Для настройки фоновой работы AdGuard для устройств Xiaomi вы должны обратить внимание на раздел Батарея и Разрешения.
 
-- Нажмите на кнопку *кнопку-меню активных* и проведите по экрану AdGuard, чтобы сделать опции * видимыми * (как показано на снимке экрана):
+- Нажмите на *кнопку-меню активных* и проведите по экрану AdGuard, чтобы сделать опции * видимыми * (как показано на снимке экрана):
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
