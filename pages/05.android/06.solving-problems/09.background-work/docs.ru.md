@@ -79,7 +79,7 @@ taxonomy:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
-  - Нажмите на значок *"замочка"*
+- Нажмите на значок *"замочка"*
   
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
