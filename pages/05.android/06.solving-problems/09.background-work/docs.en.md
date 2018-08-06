@@ -22,7 +22,7 @@ In some cases, apps won't stay in the background, "alive" or in a sleep mode due
 <a id="Xiaomi"></a>
 ## Xiaomi
 
-As for Xiaomi devices you should take attention on Battery and Permissions article, it is important to set up them correctly.
+To set up background work of AdGuard for Xiaomi devices you should take attention on Battery and Permissions.
 
 — Tap on the *recent tasks* button and swipe down AdGuard to make options *visible* (as presented on the screenshot):
 
