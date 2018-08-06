@@ -54,7 +54,7 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
 
 ## Samsung
 
-For a Samsung devices, there is no great need in setting up background work, but if you are confronted with the fact that the application closes after a while, do the following:
+For Samsung devices, there is no great need for setting up background work, but if you are confronted with the fact that the application closes or disappearing from recent tasks after a while, do the following:
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
