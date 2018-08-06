@@ -28,7 +28,7 @@ taxonomy:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
-— Нажмите на значок *"замочка"*. Это не позволит системе автоматически закрыть AdGuard.
+- Нажмите на значок *"замочка"*. Это не позволит системе автоматически закрыть AdGuard.
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
@@ -57,7 +57,7 @@ taxonomy:
 
 Для устройств Samsung нет особой необходимости в настройке фоновой работы, но если Вы столкнулись с тем, что приложение закрывается или исчезает из меню недавних задач через некоторое время, сделайте следующее:
 
-  - Нажмите кнопку вызова фоновых приложений, коснитесь значка дополнительных настроек. Он должен выглядеть так:
+ - Нажмите кнопку вызова фоновых приложений, коснитесь значка дополнительных настроек. Он должен выглядеть так:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
 
@@ -75,7 +75,7 @@ taxonomy:
  
  Устройства Huawei наиболее легки в настройке, достаточно выполнить два шага для того, что бы закрепить приложение в фоновом режиме.
  
-   - Нажмите на кнопку вызова фоновых приложений:
+  - Нажмите на кнопку вызова фоновых приложений:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
