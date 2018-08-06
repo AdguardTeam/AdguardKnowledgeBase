@@ -38,16 +38,16 @@ taxonomy:
 
 - Найдите и выберите в списке умного режима приложение * AdGuard *
 
-- Перейдите в режим фоновых настроек:
+- Перейдите в режим фоновых настроек и выберите пункт "Без ограничений":
 
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
-— Go to *Permissions*
+- Перейдите в раздел * Разрешения *
 
-— Select *Autostart*
+- Выберите пункт * Автозапуск *
 
-— Make sure that autostart function is enabled for *AdGuard*:
+- Убедитесь, что функция автозапуска включена для * AdGuard *:
 
 <img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
 
@@ -55,17 +55,17 @@ taxonomy:
 
 ## Samsung
 
-For Samsung devices, there is no great need for setting up background work, but if you are confronted with the fact that the application closes or disappearing from recent tasks after a while, do the following:
+Для устройств Samsung нет особой необходимости в настройке фоновой работы, но если вы столкнулись с тем, что приложение закрывается или исчезает из меню недавних задач через некоторое время, сделайте следующее:
 
- — Tap on recent tasks button, tap on the additional settings icon. It should look like this:
+  - Нажмите кнопку вызова фоновых приложений, коснитесь значка дополнительных настроек. Он должен выглядеть так:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
 
- — Tap on "Lock Apps":
+ — Нажмите на *"Закрепить приложения"*:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLockApps.png" width="300">
  
-  — Tap on the lock icon 
+  — Нажмите на значок *замочка*
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
  
@@ -73,31 +73,31 @@ For Samsung devices, there is no great need for setting up background work, but 
  
  ## Huawei
  
- Huawei devices are the easiest to set up, it is enough to perform two steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
- 
-  — Tap on recent tasks button:
+ Устройства Huawei наиболее легки в настройке, достаточно выполнить два шага для того, что бы закрепить приложение в фоновом режиме.
+ 
+   - Нажмите на кнопку вызова фоновых приложений:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
-  — Tap on the lock icon
+  — Нажмите на значок *замочка*
   
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
    <a id="Oneplus"></a> 
  ## Oneplus
- Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
- 
- — Go to Settings
- 
- — Battery > Battery optimisation
- 
- — Find the app you want to keep awake all the time
- 
- — Tap on it and select "Don't optimize" option
- 
- — Tap "Done" to save
- 
- — Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
+В OxygenOS встроен внутренний функционал для очистки кэша и оперативной памяти для экономии заряда . Кроме того, OxygenOS может закрыть приложение, если вы его не используете некоторое время. Чтобы избежать этих нежелательных последствий, выполните следующие действия:
+ 
+  - Перейдите в настройки
+ 
+  - Батарея> Оптимизация батареи
+ 
+  - Найдите приложение *AdGuard*
+ 
+  - Нажмите на него и выберите опцию *«Не оптимизировать»*
+ 
+  - Нажмите «Готово», чтобы сохранить
+ 
+  - Нажмите на кнопку вызова фоновых приложений, затем заблокируйте приложение AdGuard нажав на значок *замочка* (как показано на скриншоте):
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
