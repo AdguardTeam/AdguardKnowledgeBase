@@ -97,7 +97,7 @@ taxonomy:
  
   - Нажмите «Готово», чтобы сохранить
  
-  - Нажмите на кнопку вызова фоновых приложений, затем заблокируйте приложение AdGuard нажав на значок *замочка* (как показано на скриншоте):
+  - Нажмите на кнопку вызова фоновых приложений, затем заблокируйте приложение AdGuard нажав на значок *"замочка"* (как показано на скриншоте):
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
