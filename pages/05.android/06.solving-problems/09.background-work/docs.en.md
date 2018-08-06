@@ -32,8 +32,6 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
-The next thing to do is to make AdGuard work properly. You need to setup device's battery settings:
-
 — Go to _Battery_
 
 — Select _App battery saver_
@@ -43,8 +41,6 @@ The next thing to do is to make AdGuard work properly. You need to setup device'
 — Set up next _Background settings_:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
-
-And the last one, permissions setup:
 
 — Go to _Permissions_
 
