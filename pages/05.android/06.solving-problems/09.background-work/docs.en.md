@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 # If AdGuard is disappearing after a while from the background work
-In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of its "battery save" mode. That can be uncomfortable for you to relaunch it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS. Note that this instruction is similar for mostly all different versions of Android OS.
+In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of "battery save" mode. That can be uncomfortable for you to relaunch it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS. Note that this instruction is similar for mostly all different versions of Android OS.
 
 **List of the devices with different versions of Android OS:**
 
