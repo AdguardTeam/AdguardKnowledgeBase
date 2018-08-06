@@ -57,6 +57,7 @@ And the last one, permissions setup:
 
 Samsung
 
+
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
