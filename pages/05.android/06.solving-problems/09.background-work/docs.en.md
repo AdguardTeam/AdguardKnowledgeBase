@@ -6,13 +6,13 @@ taxonomy:
         - docs
 ---
 
-* [How to set up background work on Xiaomi (MIUI)](#Xiaomi)
+* [Xiaomi (MIUI)](#Xiaomi)
 
-* [How to set up background work on Samsung](#Samsung)
+* [Samsung](#Samsung)
 
-* [How to set up background work on Huawei devices](#Huawei)
+* [Huawei devices](#Huawei)
 
-* [How to set up background work on Oneplus devices](#Oneplus)
+* [Oneplus devices](#Oneplus)
 
 
 
@@ -51,7 +51,7 @@ taxonomy:
 
 <a id="Samsung"></a>
 
-## 1. Samsung
+## Samsung
 
  - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
  
