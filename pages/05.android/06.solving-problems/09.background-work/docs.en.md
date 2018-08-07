@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 # If AdGuard is disappearing after a while from the background work
-In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or because of "battery save" mode. That can be uncomfortable for you to relaunch it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS. Note that this instruction is similar for mostly all different versions of Android OS.
+In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or "battery save" mode - that functions closing up background applications. That can be uncomfortable for you to relaunch it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS. Note that this instruction is similar for mostly all different versions of Android OS.
 
 **List of the devices with different versions of Android OS:**
 
@@ -18,6 +18,8 @@ In some cases, apps won't stay in the background, "alive" or in a sleep mode due
 * [Huawei](#Huawei)
 
 * [Oneplus](#Oneplus)
+
+* [Android stock devices](#Google)
 
 <a id="Xiaomi"></a>
 ## Xiaomi
@@ -100,4 +102,22 @@ For Samsung devices, there is no great need for setting up background work, but 
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
+<a id="Google"></a>
 
+## Android stock devices
+
+Android stock OS is not conflict with background work of applications, but if you are facing the issues with it switch on "Always on VPN" mode could help.
+
+ - Go to Settings - Network and Internet
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Nexus%20Network%20&%20Internet.png?raw=true" width="300">
+
+ - Tap on VPN and choose AdGuard
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusVPN.png?raw=true" width="300">
+ 
+ - Set up "Always on VPN" mode
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusAlwaysonVPN.png?raw=true" width="300">
+
+    
