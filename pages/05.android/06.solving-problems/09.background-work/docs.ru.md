@@ -103,6 +103,7 @@ taxonomy:
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
+<a id="Google"></a>
 ## Android stock devices
 
 Android на заводкой прошивке не конфликтует с фоновой работой приложений, но если вы столкнулись с проблемами работы приложений включите режим «Всегда в VPN».
