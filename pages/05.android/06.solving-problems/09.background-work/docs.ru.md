@@ -19,6 +19,8 @@ taxonomy:
 
 * [Oneplus](#Oneplus)
 
+* [Android stock devices](#Google)
+
 <a id="Xiaomi"></a>
 ## Xiaomi
 
@@ -85,7 +87,7 @@ taxonomy:
    
    <a id="Oneplus"></a> 
  ## Oneplus
-В OxygenOS встроен внутренний функционал для очистки кэша и оперативной памяти для экономии заряда . Кроме того, OxygenOS может закрыть приложение, если вы его не используете некоторое время. Чтобы исправить это, выполните следующие действия:
+В OxygenOS встроен внутренний функционал для очистки кэша и оперативной памяти для экономии заряда. Кроме того, OxygenOS может закрыть приложение, если вы его не используете некоторое время. Чтобы исправить это, выполните следующие действия:
  
 - Перейдите в настройки
  
@@ -101,4 +103,18 @@ taxonomy:
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
+## Android stock devices
 
+Android на заводкой прошивке не конфликтует с фоновой работой приложений, но если вы столкнулись с проблемами работы приложений включите режим «Всегда в VPN».
+
+ - Перейдите в раздел Настройки - Сеть и Интернет
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Nexus%20Network%20&%20Internet.png?raw=true" width="300">
+
+ - Откройте режим VPN и выберите AdGuard
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusVPN.png?raw=true" width="300">
+ 
+ - Выберите пункт "Постоянная VPN" 
+ 
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusAlwaysonVPN.png?raw=true" width="300">
