@@ -106,7 +106,7 @@ For Samsung devices, there is no great need for setting up background work, but 
 
 ## Android stock devices
 
-Android stock OS is not conflict with background work of applications, but if you are facing the issues with it switch on "Always on VPN" mode could help.
+Android stock OS is not conflict with background work of applications, but if you are facing the issues, you will need to switch on "Always on VPN" mode that help you.
 
  - Go to Settings - Network and Internet
  
