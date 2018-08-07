@@ -34,4 +34,4 @@ Nowadays, more and more often SMS and MMS are sent via network, and when they ar
 
 **pref.samsungpay.autopause.enable**
 
-This setting was developed specifically for the South Korean users in order to make AdGuard compatible with the *"Samsung Pay"* app which doesn’t work on devices with running VPN in South Korea. If you want to learn more, please this [article](https://kb.adguard.com/en/android/solving-problems/%20samsungpay-with-adguard-in-south-korea#english).
+This setting was developed specifically for the South Korean users in order to make AdGuard compatible with the *"Samsung Pay"* app which doesn’t work on devices with running VPN in South Korea. If you want to learn more, please read this [article](https://kb.adguard.com/en/android/solving-problems/%20samsungpay-with-adguard-in-south-korea#english).
