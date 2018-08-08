@@ -19,7 +19,7 @@ taxonomy:
 
 * [Oneplus](#Oneplus)
 
-* [Android stock devices](#Google)
+* [Android stock devices Pixel/Nexus/Essential](#Google)
 
 <a id="Xiaomi"></a>
 ## Xiaomi
@@ -104,7 +104,7 @@ taxonomy:
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
 <a id="Google"></a>
-## Android stock devices
+## Android stock devices Pixel/Nexus/Essential
 
 Android на заводкой прошивке не конфликтует с фоновыми процессами, но если вы все же столкнулись с проблемой фоновой работы, то необходимо включить режим «Всегда в VPN».
 
