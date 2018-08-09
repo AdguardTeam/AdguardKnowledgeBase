@@ -24,23 +24,23 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 <a id="Xiaomi"></a>
 ## Xiaomi
 
-To set up background work of AdGuard for Xiaomi devices you should take attention on Battery and Permissions.
+To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
-- Tap on the *recent tasks* button and swipe down AdGuard to make options *visible* (as presented on the screenshot):
+- Tap on the *recent tasks* button and swipe AdGuard down to make options *visible* (as presented on the screenshot):
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
 
-- Tap on the *lock* icon. This will not let Xiaomi to close AdGuard automatically. It should look like this:
+- Tap on the *lock* icon. This will stop Xiaomi from closing AdGuard automatically. It should look like this:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
 - Go to *"Battery"*
 
-- Select App *"battery saver"*
+- Select *"battery saver"* app 
 
-- Find and select Adguard
+- Find and select AdGuard
 
-- Set up next *"Background settings"*:
+- Set up the following *"Background settings"*:
 
 <img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
 
@@ -56,9 +56,9 @@ To set up background work of AdGuard for Xiaomi devices you should take attentio
 
 ## Samsung
 
-For Samsung devices, there is no great need for setting up background work, but if you are confronted with the fact that the application closes or disappearing from recent tasks after a while, do the following:
+For Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
 
- - Tap on recent tasks button, tap on the additional settings icon. It should look like this:
+ - Tap on the "recent tasks" button, tap on the "additional settings" icon. It should look like this:
  
  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
 
@@ -74,19 +74,19 @@ For Samsung devices, there is no great need for setting up background work, but 
  
  ## Huawei
  
- Huawei devices are the easiest to set up, it is enough to perform two steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
+ Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
  
-  - Tap on recent tasks button:
+  - Tap on the recent tasks button:
   
   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
   
-  - Tap on the lock icon
+  - Tap on the lock icon:
   
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
    <a id="Oneplus"></a> 
  ## Oneplus
- Most problematic devices with OxygenOS on board with its special cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
+Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
  
  - Go to Settings
  
@@ -98,7 +98,7 @@ For Samsung devices, there is no great need for setting up background work, but 
  
  - Tap "Done" to save
  
- - Open recent apps menu and then lock AdGuard application (as showed on a screenshot):
+ - Open recent apps menu and then lock AdGuard application (as showed on this screenshot):
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
 
@@ -106,18 +106,16 @@ For Samsung devices, there is no great need for setting up background work, but 
 
 ## Android stock devices Pixel/Nexus/Essential
 
-Android stock OS normally does not conflict with applications working in background, but if you are facing any issues you will need to switch on the "Always on VPN" mode.
+Android stock OS normally does not conflict with applications working in the background, but if you are facing any issues you will need to switch on the "Always on VPN" mode.
 
  - Go to Settings - Network and Internet
  
  <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Nexus%20Network%20&%20Internet.png?raw=true" width="300">
 
- - Tap on VPN and choose AdGuard
+ - Tap on "VPN" and choose AdGuard
  
  <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusVPN.png?raw=true" width="300">
  
  - Set up "Always on VPN" mode
  
  <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusAlwaysonVPN.png?raw=true" width="300">
-
-    
