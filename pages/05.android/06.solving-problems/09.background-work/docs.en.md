@@ -6,7 +6,6 @@ taxonomy:
         - docs
 ---
 
-# How to protect AdGuard from being disabled by the system?
 In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to Android OS optimization function, or so called "battery save mode" — this function can kill background applications. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination you need to follow these steps which we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 **List of manufacturers with different versions of Android OS:**
