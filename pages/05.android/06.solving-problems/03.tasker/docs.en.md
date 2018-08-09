@@ -58,7 +58,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 >NOTE: the full list of supported server names can be found inside AdGuard DNS settings under the "Secure DNS" tab
      
      
- `server:1.1.1.1,1.0.0.1` — switches to any cistom DNS server;
+ `server:1.1.1.1,1.0.0.1` — switches to any custom DNS server;
      
      
  `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMu...` (full string is too long) — switches to any custom DNS server via DNS-over-HTTPS, DNS-over-SSL or DNSCrypt;
@@ -67,6 +67,22 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
  `server:system` — resets DNS settings to default system DNS servers.
      
  -----
+
+<a name="action_outbound_proxy"></a>
+
+`proxy_state` – enables/disables the outbound proxy.  Requires an extra flag:
+
+`enable:true` or `enable:false` — activates or disactivates the outbound proxy, accordingly.
+
+-----
+
+<a name="action_proxy_server"></a>
+
+`proxy_default` – sets the proxy from the list of previously added ones as default. You need to include additional data:
+
+`server:[name]` – where `[name]` is the name of the outbound proxy from the list.
+
+-----
 
 **Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
 
