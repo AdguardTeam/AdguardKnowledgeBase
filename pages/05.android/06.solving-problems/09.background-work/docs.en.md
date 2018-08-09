@@ -7,9 +7,9 @@ taxonomy:
 ---
 
 # How to protect AdGuard from being disabled by the system?
-In some cases, apps won't stay in the background, "alive" or in a sleep mode due to Android OS optimization function or "battery save" mode - that functions closing up background applications. That can be uncomfortable for you to relaunch it each time it closes. To avoid that background termination you need to follow this steps marked for each version of Android OS. Note that this instruction is similar for mostly all different versions of Android OS.
+In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to Android OS optimization function, or so called "battery save mode" — this function can kill background applications. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination you need to follow these steps which we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
-**List of the devices with different versions of Android OS:**
+**List of manufacturers with different versions of Android OS:**
 
 * [Xiaomi](#Xiaomi)
 
@@ -106,7 +106,7 @@ For Samsung devices, there is no great need for setting up background work, but 
 
 ## Android stock devices Pixel/Nexus/Essential
 
-Android stock OS is not conflict with background work of applications, but if you are facing the issues, you will need to switch on "Always on VPN" mode that help you.
+Android stock OS normally does not conflict with applications working in background, but if you are facing any issues you will need to switch on the "Always on VPN" mode.
 
  - Go to Settings - Network and Internet
  
