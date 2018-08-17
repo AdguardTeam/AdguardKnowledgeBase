@@ -22,8 +22,7 @@ To add an app to this list simply add a new entry with app's package name. For a
 
 with **com.google.android.youtube** being the package name.
 
-**
-HTTPS filtering preferences**
+**HTTPS filtering preferences**
 
 We united several settings under this category: _pref.https.apps.exclusions_, _pref.https.domains.blacklist_ and _pref.https.domains.whitelist_. They are essentially the same settings you can find in HTTPs filtering settings tab. You can find more information about them in our blog:
 
@@ -32,3 +31,7 @@ We united several settings under this category: _pref.https.apps.exclusions_, _p
 **pref.vpn.ipv6.bypass**
 
 Nowadays, more and more often SMS and MMS are sent via network, and when they are, non-standard IPv6 network is often used. When we try to filter this traffic, it is not extremely unusual that we interfere with sending and even receiving MMS. If you suspect this is your case, we recommend checking the **pref.vpn.ipv6.bypass** checkbox or adding the app responsible for MMS managing to **pref.net.exclusions**.
+
+**pref.samsungpay.autopause.enable**
+
+This setting was developed specifically for the South Korean users in order to make AdGuard compatible with the *"Samsung Pay"* app which doesn’t work on devices with running VPN in South Korea. If you want to learn more, please read this [article](https://kb.adguard.com/en/android/solving-problems/%20samsungpay-with-adguard-in-south-korea#english).
