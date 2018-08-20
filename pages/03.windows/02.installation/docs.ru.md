@@ -23,7 +23,7 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/ru/download_ru.png" style="border: 1px solid #efefef; max-width: 600px" />
 
-2) После завершения загрузки нажмите на кнопу ***Выполнить***, которая отобразится в панели загрузки браузера, либо щелкните мышью на скачанный файл *adguardinstaller.exe*.
+2) После завершения загрузки нажмите на кнопку ***Выполнить***, которая отобразится в панели загрузки браузера, либо щелкните мышью на скачанный файл *adguardinstaller.exe*.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/ru/clickandinstall_ru.png" style="border: 1px solid #efefef; max-width: 600px" />
 
