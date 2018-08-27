@@ -49,7 +49,7 @@ Click the button _Add to Firefox_.
 Click the button _Yandex Browser settings_ in the right-top part of the browser's window and then choose _Extensions_ item in drop-down menu.
 
 ![](Yandex_01_EN.png)
-Scroll the page down and move _Adguard_ switch in _Content blocking_ area to the right. 
+Scroll the page down and move _AdGuard_ switch in _Content blocking_ area to the right. 
 
 
 ![](Yandex_02_EN.png)
