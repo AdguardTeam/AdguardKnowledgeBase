@@ -1,3 +1,3 @@
-# Adguard Knowledge Base
+# AdGuard Knowledge Base
 
-[Adguard Knowledge Base](https://kb.adguard.com/) content.
+[AdGuard Knowledge Base](https://kb.adguard.com/) content.
