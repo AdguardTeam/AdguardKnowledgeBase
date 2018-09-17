@@ -41,12 +41,15 @@ http://example.com/banner/ads/img.gif
 This rule blocks:
 
 http://ads.example.com/foo.gif
+
 http://server1.ads.example.com/foo.gif
+
 https://ads.example.com:8000/
 
 This rule doesn't block:
 										
 http://ads.example.com.ua/foo.gif
+
 http://example.com/redirect/http://ads.example.com/	
 
 
@@ -68,4 +71,5 @@ http://example.com/
 This rule doesn't block:
 
 http://example.com/banner/img
+
 http://example.com/banner/ads/img.gif
