@@ -10,20 +10,25 @@ visible: false
 
 1. Chapter one, blocking by address parts
 
-#### /banner/*/img^
+
+ <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Address%20parts.png" width="700">
 
 This rule blocks:
 
-http://example.com/banner/ads/img
-http://example.com/banner/ads/bar/img?param
-http://example.com/banner/img/ad1
+ http://example.com/banner/ads/img
+
+ http://example.com/banner/ads/bar/img?param
+
+ http://example.com/banner/img/ad1 
 
 
 
 This rule doesn't block:
 
 http://example.com/banner/img
+
 http://example.com/banner/ads/imgraph
+
 http://example.com/banner/ads/img.gif
 
 ----------------- ----------------- ----------------- ----------------- 
@@ -31,6 +36,7 @@ http://example.com/banner/ads/img.gif
 
 
 2. Chapter two, blocking by domain name
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Blocking%20by%20domain%20name.PNG" width="700">
 
 This rule blocks:
 
@@ -49,7 +55,7 @@ http://example.com/redirect/http://ads.example.com/
 													
 3. Chapter three, blocking exact address
 
-|ads.example.com| - A real rule
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Blocking%20exact%20address.PNG" width="700">
 
 ! http://example.com/ — Verbatim text. This text must be present in the address to be blocked.
 
