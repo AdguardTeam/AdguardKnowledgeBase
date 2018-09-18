@@ -178,7 +178,8 @@ Cosmetic rules
 
 #### Element selection
 
-<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Element%20selection.png" width="750">
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Elemsel.png"
+width="935">
 
 
 #### Example 1: Element hiding rule for a particular domain
