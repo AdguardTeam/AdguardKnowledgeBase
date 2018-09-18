@@ -73,3 +73,12 @@ This rule doesn't block:
 http://example.com/banner/img
 
 http://example.com/banner/ads/img.gif
+
+
+----------------- ----------------- ----------------- ----------------- 
+
+## Comments
+
+For additional explanation you should use this "!" symbol at the beginning of the rule that indicates a comment (!This is a comment)
+
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Comment.PNG" width="700">
