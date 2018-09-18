@@ -76,23 +76,6 @@ $ — option separator. This character indicates that the following text defines
 ----------------- ----------------- ----------------- ----------------- 
 
 													
-3. Chapter three, blocking exact address
-
-<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Blocking%20exact%20address.PNG" width="750">
-
-! http://example.com/ — Verbatim text. This text must be present in the address to be blocked.
-
-| — A pointer to the beginning or the end of address.
-
-This rule blocks:
-
-http://example.com/
-
-This rule doesn't block:
-
-http://example.com/banner/img
-
-http://example.com/banner/ads/img.gif
 
 
 
