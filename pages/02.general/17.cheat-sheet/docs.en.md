@@ -6,10 +6,13 @@ taxonomy:
 visible: false
 ---
 
-## This is a cheat sheet to easily manage blocking rules and elements to hide. For more detailed information you can find in this article (referrer link, full article).
+# Cheat sheet
 
-1. Chapter one, blocking by address parts
+ This is a cheat sheet that explains how to easily manage blocking rules and elements to hide. More detailed information you can find in this [article](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 
+## Blocking by address parts
+
+! Intro next
 
  <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Address%20parts.png" width="750">
 
@@ -21,7 +24,7 @@ This rule blocks:
 
  http://example.com/banner/img/ad1 
 
-
+! explanation text
 
 This rule doesn't block:
 
@@ -31,11 +34,13 @@ http://example.com/banner/ads/imgraph
 
 http://example.com/banner/ads/img.gif
 
+! explanation text
 ----------------- ----------------- ----------------- ----------------- 
 
 
 
-2. Chapter two, blocking by domain name
+## Blocking by domain name
+
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Blocking%20by%20domain%20name.PNG" width="750">
 
 This rule blocks:
@@ -114,7 +119,8 @@ For additional explanation you should use this "!" symbol at the beginning of th
 
 @@||ads.example.com/notbanner^$~script
 
-#### Rule parts
+⋅⋅* Rule parts
+
 @@ — Exception marker. Rules starting like this are exceptions, they will override blocking rules. 
 
 || — Matching the beginning of an address. http://, https://, ws://, wss:// at once.
@@ -131,7 +137,7 @@ $ — option separator. This character indicates that the following text defines
 
 @@||example.com^$document
 
-#### Rule parts
+⋅⋅* Rule parts
 
 @@ — Exception marker. Rules starting like this are exceptions, they will override blocking rules.
 
@@ -159,21 +165,21 @@ Example 3: CSS rule
 
 Cosmetic rules
 
-#### Element selection
+⋅⋅* Element selection
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Elemsel.png"
 width="935">
 
 
-#### Example 1: Element hiding rule for a particular domain
+⋅⋅* Example 1: Element hiding rule for a particular domain
 
 example.com##div[class="adverts"]
 
-#### Example 2: Element hiding exception rule
+⋅⋅* Example 2: Element hiding exception rule
 
 example.com#@#div[class="adverts"]
 
-#### Example 3: CSS rule
+⋅⋅* Example 3: CSS rule
 
 Remove backgroung image:
 
