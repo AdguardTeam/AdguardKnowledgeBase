@@ -176,21 +176,10 @@ Example 3: CSS rule
 
 Cosmetic rules
 
-Introduction into CSS selectors (https://adblockplus.org/filter-cheatsheet#elementselection)
+#### Element selection
 
-Selector	Description
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Element%20selection.png" width="750">
 
-div[class="banners"]	Matches the element with the unique class banners: image
-
-#banners	Matches all elements with ID banners: image
-
-div[class^="advert"]	Matches div elements that start with class advert: image
-
-div[class$="banners_ads"]	Matches div elements that end with class banners_ads: image
-
-a[href="http://example.com/"]	Matches links to http://example.com/: image
-
-a[href^="http://example.com/"]	Matches links to any pages hosted on http://example.com/:  image
 
 #### Example 1: Element hiding rule for a particular domain
 
