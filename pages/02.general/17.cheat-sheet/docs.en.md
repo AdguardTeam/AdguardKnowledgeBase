@@ -1,5 +1,5 @@
 ---
-title: 'How to create your own ad filters'
+title: 'Cheat-sheet'
 taxonomy:
     category:
         - docs
@@ -123,3 +123,41 @@ domain — Domain option. Limits the rule application area to a list of domains 
 For additional explanation you should use this "!" symbol at the beginning of the rule that indicates a comment (!This is a comment)
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Comment.PNG" width="700">
+
+
+----------------- ----------------- ----------------- ----------------- 
+
+## Basic exception rules
+
+@@||ads.example.com/notbanner^$~script
+
+#### Rule parts
+@@ — Exception marker. Rules starting like this are exceptions, they will override blocking rules. 
+
+|| — Matching the beginning of an address. http://, https://, ws://, wss:// at once.
+
+ads.example.com/notbanner — Verbatim text. This text must be present in the address to be blocked.
+
+^ — Separator. The address must either end here or a separator character like ? or / has to follow.
+
+$ — option separator. This character indicates that the following text defines filter option.
+
+~script — Restriction by content type. This type option prevents the exception from being applied to scripts.
+
+## Exception for an entire site
+
+@@||example.com^$document
+
+#### Rule parts
+
+@@ — Exception marker. Rules starting like this are exceptions, they will override blocking rules.
+
+|| — Matching the beginning of an address. http://, https://, ws://, wss:// at once.
+
+ads.example.com/notbanner — Verbatim text. This text must be present in the address to be blocked.
+
+^ — Separator. The address must either end here or a separator character like ? or / has to follow.
+
+$ — option separator. This character indicates that the following text defines filter option.
+
+document — Whole exception. This option completely disables blocking for corresponding pages.
