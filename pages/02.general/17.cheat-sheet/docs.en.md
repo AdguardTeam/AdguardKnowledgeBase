@@ -75,6 +75,27 @@ http://example.com/banner/img
 http://example.com/banner/ads/img.gif
 
 
+
+## Options in blocking rules
+
+<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/02.general/17.cheat-sheet/images/Options%20in%20blocking%20rules.png" width="750">
+
+||ads.example.com^$script,image,domain=example.com|~foo.example.info
+Rule parts
+
+|| — Matching the beginning of an address. http://, https://, ws://, wss:// at once;
+
+ads.example.com — Verbatim text. This text must be present in the address to be blocked;
+
+^ — Separator. The address must either end here or a separator character like ? or / has to follow;
+
+$ — option separator. This character indicates that the following text defines filter option;
+
+script, image — Restriction by content type. Type options define request types to be blocked.
+
+domain — Domain option. Limits the rule application area to a list of domains (and their subdomains).
+
+
 ----------------- ----------------- ----------------- ----------------- 
 
 ## Comments
