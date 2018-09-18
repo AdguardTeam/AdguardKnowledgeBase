@@ -161,3 +161,51 @@ ads.example.com/notbanner — Verbatim text. This text must be present in the ad
 $ — option separator. This character indicates that the following text defines filter option.
 
 document — Whole exception. This option completely disables blocking for corresponding pages.
+
+----------------- ----------------- ----------------- ----------------- 
+
+## Cosmetic rules
+
+Introduction into CSS selectors (https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
+
+Example 1: Element hiding rule for a particular domain
+
+Example 2: Element hiding exception rule
+
+Example 3: CSS rule
+
+Cosmetic rules
+
+Introduction into CSS selectors (https://adblockplus.org/filter-cheatsheet#elementselection)
+
+Selector	Description
+
+div[class="banners"]	Matches the element with the unique class banners: image
+
+#banners	Matches all elements with ID banners: image
+
+div[class^="advert"]	Matches div elements that start with class advert: image
+
+div[class$="banners_ads"]	Matches div elements that end with class banners_ads: image
+
+a[href="http://example.com/"]	Matches links to http://example.com/: image
+
+a[href^="http://example.com/"]	Matches links to any pages hosted on http://example.com/:  image
+
+#### Example 1: Element hiding rule for a particular domain
+
+example.com##div[class="adverts"]
+
+#### Example 2: Element hiding exception rule
+
+example.com#@#div[class="adverts"]
+
+#### Example 3: CSS rule
+
+Remove backgroung image:
+
+example.com#$#body { background: none!important; }
+
+Change element height for avoid primitive ad blocking detection:
+
+example.com#$#div[id^="ad_"] { height: 1px!important; }
