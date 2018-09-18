@@ -53,6 +53,26 @@ http://ads.example.com.ua/foo.gif
 http://example.com/redirect/http://ads.example.com/	
 
 
+## Basic exception rules
+
+Example 1: Exception for particular requests
+
+@@||ads.example.com/notbanner^$~script
+
+Rule parts
+
+@@ — Exception marker. Rules starting like this are exceptions, they will override blocking rules;
+
+|| — Matching the beginning of an address. http://, https://, ws://, wss:// at once;
+
+ads.example.com/notbanner — Verbatim text. This text must be present in the address to be blocked;
+
+^ — Separator. The address must either end here or a separator character like ? or / has to follow;
+
+$ — option separator. This character indicates that the following text defines filter option;
+
+~script — Restriction by content type. This type option prevents the exception from being applied to scripts.
+
 ----------------- ----------------- ----------------- ----------------- 
 
 													
