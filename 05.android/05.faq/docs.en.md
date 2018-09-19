@@ -63,7 +63,7 @@ AdGuard uses a unique technology that allows filtering the traffic on your devic
 
 AdGuard filters your browser traffic by blocking requests to phishing and malicious websites and removing intrusive browser advertising. AdGuard can use two modes of traffic filtering.
 
-1. Local VPN mode. 
+1. Local VPN mode.
 
 2. Local HTTP proxy mode.
 
@@ -234,17 +234,17 @@ This section names third-party apps which are known to be incompatible to some d
 **Problem:** *Orbot: Proxy with Tor* is a VPN app and you cannot have two active VPNs at the same time.
 
 
-**Solution: **setup AdGuard to use Orbot as an outbound proxy. 
+**Solution: **setup AdGuard to use Orbot as an outbound proxy.
 
-1. Run Orbot. 
+1. Run Orbot.
 
 2. Open AdGuard, go to Settings - Advanced
- 
+
 3. Open Proxy settings
- 
+
 4. Use the following settings:
 
-Proxy type SOCKS4, host: 127.0.0.1, port: 9050. 
+Proxy type SOCKS4, host: 127.0.0.1, port: 9050.
 
 5. Run AdGuard protection.
 
@@ -256,7 +256,7 @@ Proxy type SOCKS4, host: 127.0.0.1, port: 9050.
 
 **Solution: **
 
-1. Ensure that AdGuard protection is started before DroidWall. 
+1. Ensure that AdGuard protection is started before DroidWall.
 
 2. Allow AdGuard in DroidWall settings.
 
@@ -374,24 +374,24 @@ High-quality method can increase the pages loading time, so it is recommended to
 
 **High-speed method** is able to use all rules save for [HTML filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#html-filtering-rules) and filters everything except page content. This method uses so called [cosmetic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules) which are used not for blocking ad requests, but for changing the page appearance. Cosmetic rules include adding some special CSS-rules (styles) which hide the unwanted advertisements on a page and mask the removed elements' remains after blocking, such as empty fields in the place of the blocked banner, etc.
 
-**Simplified filtering method** is able to use just the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) and lets block only ad requests. 
+**Simplified filtering method** is able to use just the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) and lets block only ad requests.
 
-In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use cosmetic filtering rules. 
+In contrast to the High-quality and High-speed filtering methods, the Simplified one does not use cosmetic filtering rules.
 
 <a id="notifications"></a>
 ## How to manage AdGuard notifications? ##
 
-On Android version 8 and newer AdGuard provides multiple notification channels (which are also called 'categories'). With their help you can easily manage AdGuard notifications on your device — customize channels, prioritize them, disable secondary notifications, etc. Get more instructions on how to do that and learn about options we provide for the older Android versions below. 
+On Android version 8 and newer AdGuard provides multiple notification channels (which are also called 'categories'). With their help you can easily manage AdGuard notifications on your device — customize channels, prioritize them, disable secondary notifications, etc. Get more instructions on how to do that and learn about options we provide for the older Android versions below.
 
 ### Android 8 and newer ###
 
 AdGuard for Android 8 and newer has 6 different notification categories. Before describing them, let’s see the way you can find the appropriate settings on your device — *Settings → Apps & notifications → AdGuard → App Notifications*.
 
-Apart from this way, you can get a quick and simple access to these settings when long clicking on any AdGuard notification and choosing *"All categories"*. 
+Apart from this way, you can get a quick and simple access to these settings when long clicking on any AdGuard notification and choosing *"All categories"*.
 
 Alright, you're in the right section. Now you can see 6 different categories, which are shown on the left part of the following screenshot.
 
-![](notifications.png?resize=600) 
+![](notifications.png)
 
 Each category includes certain notifications type:
 
@@ -406,14 +406,14 @@ They are all enabled by default. You can customize the settings of each category
 
 As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
 
-![](importance.png?resize=600)
+![](importance.png)
 
-There are four statuses to choose from: 
+There are four statuses to choose from:
 
-+ **Urgent** (notifications will make sound and pop up on screen); 
-+ **High** (notifications will make sound); 
++ **Urgent** (notifications will make sound and pop up on screen);
++ **High** (notifications will make sound);
 + **Medium** (notifications will make no sound);
-+ **Low** (notifications will make no sound and give no visual interruption). 
++ **Low** (notifications will make no sound and give no visual interruption).
 
 Please note: you can't enable the vibration for those notifications whose Important status is determined as Medium or Low.
 
@@ -423,7 +423,7 @@ We do hope these notification categories will help you sort through all the AdGu
 
 For those who have devices on Android 7 and older AdGuard has also some useful options for managing notifications.
 
-First of all, you can open device settings — *Settings → Notifications → AdGuard* or *Settings → Apps → AdGuard → Notifications* — and activate the following options if needed: 
+First of all, you can open device settings — *Settings → Notifications → AdGuard* or *Settings → Apps → AdGuard → Notifications* — and activate the following options if needed:
 
 + **Show silently** - means that notifications will not make sound, vibrate or peek into view;
 + **On the lock screen** - means that notifications’ content will be shown on the lock screen;
