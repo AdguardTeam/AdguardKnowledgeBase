@@ -408,6 +408,8 @@ As mentioned, you can also choose the Importance status which will let you give 
 
 ![](importance.png)
 
+Please note, that starting from Android 9 "Importance" renamed to "Behaviour"
+
 There are four statuses to choose from:
 
 + **Urgent** (notifications will make sound and pop up on screen);
