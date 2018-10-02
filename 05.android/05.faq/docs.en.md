@@ -249,18 +249,6 @@ Proxy type SOCKS4, host: 127.0.0.1, port: 9050.
 5. Run AdGuard protection.
 
 
-### VPN by Private Internet Access ###
-
-
-**Problem:** VPN by Private Internet Access is a VPN app and you cannot have two active VPNs at the same time.
-
-**Solution: **
-
-1. Ensure that AdGuard protection is started before DroidWall.
-
-2. Allow AdGuard in DroidWall settings.
-
-
 ### Opera Max ###
 
 
