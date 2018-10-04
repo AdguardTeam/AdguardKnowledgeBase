@@ -5,9 +5,20 @@ taxonomy:
         - docs
 ---
 
+* [General](#general)
+* [Tracking methods](#methods)
+* [Browser API](#browser-api)
+* [Miscellaneous](#miscellaneous)
+
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, hide your real IP-address or even indicate one of your choice.
+
+Below we will list and describe the main features and options you can manage in the "Stealth Mode" settings which are divided into four groups: General, Tracking methods, Browser API, and Miscellaneous. 
+
+<a name="general"></a>
+
+### General
 
 ![](win10-05.png)
 
@@ -31,6 +42,10 @@ Forbids Google Chrome to send its version and modifications information with req
 
 If you enable this option, AdGuard will strip tracking parameters like utm_* and fb_ref from pages’ URLs.
 
+<a name="methods"></a>
+
+### Tracking methods
+
 ![](win10_stealth.png)
 
 **Self-destructing third-party cookies**
@@ -53,6 +68,10 @@ When the browser addresses a page, the server assigns it an ETag, which the brow
 **Block third-party Authorization header**
 
 Authorization header's value is simply a base64 encoded version of the credentials (<username>:<password>), which are sent to the server for authentication purposes. In this case, data would be readily available to anyone, who could intercept the HTTP request. Enabling this option will remove Authorization headers for all third-party requests. Note that this can result in the need to re-enter your credentials on the web-forms.
+    
+<a name="browser-api"></a>
+
+### Browser API
 
 ![](win10_stealth_2.png)
 
@@ -76,6 +95,10 @@ The Flash Player plugin has become increasingly vulnerable to online threats lik
 **Block Java**
 
 Some websites and web services still use old technology of supporting Java plugins. The API, which is the basis of Java plugins, has serious security issues. You can disable such plugins for security purposes. Nevertheless, even if you decide to use "Block Java" option, Javascript will still be enabled.
+
+<a name="miscellaneous"></a>
+
+### Miscellaneous
 
 ![](win10_stealth_3.png)
 
