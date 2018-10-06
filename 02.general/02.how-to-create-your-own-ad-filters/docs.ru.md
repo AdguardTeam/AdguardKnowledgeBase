@@ -29,7 +29,7 @@ visible: true
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
-            * [$xmlhttrequest](#xmlhttprequest-modifier)
+            * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
         * [Модификаторы правил-исключений](#exceptions-modifiers)
