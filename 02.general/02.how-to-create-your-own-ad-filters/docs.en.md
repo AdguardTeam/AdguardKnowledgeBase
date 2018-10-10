@@ -211,7 +211,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
-> AdGuard [extends CSS](#extended-css-selectors) and let filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
+> AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
 
 <a id="example-popular-css-selectors"></a>
 #### Popular CSS selectors
