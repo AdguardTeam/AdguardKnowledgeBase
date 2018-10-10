@@ -145,7 +145,9 @@ For example:
 <a id="example-blocking-exact-address"></a>
 ### Example: Blocking exact address
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg" />
+</object>
 
 **This rule blocks:**
 
@@ -160,7 +162,9 @@ For example:
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg" />
+</object>
 
 **This rule blocks:**
 
@@ -174,7 +178,9 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 <a id="example-unblocking-an-address"></a>
 ### Example: Unblocking an address
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg" />
+</object>
 
 **This rule unblocks:**
 
@@ -185,7 +191,9 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 <a id="example-unblocking-website"></a>
 ### Unblocking everything on a website
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg" />
+</object>
 
 **This rule unblocks**
 
@@ -195,7 +203,9 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 <a id="example-cosmetic-rule"></a>
 ### Example: Cosmetic rule
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg" />
+</object>
 
 Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
