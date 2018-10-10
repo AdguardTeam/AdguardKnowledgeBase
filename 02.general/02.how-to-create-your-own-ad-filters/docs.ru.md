@@ -122,8 +122,8 @@ visible: true
 ||example.org^
 ```
         
-        <a id="examples"></a>
-## Examples
+<a id="examples"></a>
+## Примеры
 
 <a id="example-blocking-by-domain-name"></a>
 ### Блокировка по имени домена
@@ -184,9 +184,9 @@ visible: true
 
 **Это правило разблокирует:**
 
-* `http://example.org/banner.png` even if there is a blocking rule for this address.
+* `http://example.org/banner.png` даже если для этого адреса есть правило блокировки.
 
-> Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
+> Правила блокировки с модификатором [`$important`](#important-modifier) становятся приоритнее остальных.
 
 <a id="example-unblocking-website"></a>
 ### Разблокировка всего сайта
@@ -197,8 +197,8 @@ visible: true
 
 **Это правило разблокирует:**
 
-* It disables all cosmetic rules on `example.com`.
-* It unblocks all requests sent from this website even if there is are blocking rules matching these requests.
+* Оно отключает все косметические правила на `example.com`
+* Оно блокирует все запросы, отправленные с этого веб-сайта, даже если есть правила блокировки, соответствующие этим запросам 
 
 <a id="example-cosmetic-rule"></a>
 ### Косметические правила
@@ -207,9 +207,7 @@ visible: true
     <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg" />
 </object>
 
-Косметические правила применяются с использованием каскадных таблиц стилей или CSS, которые понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, целью которого является скрыть определенные элементы. Узнать больше о CSS [Подробнее](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
-
-> AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
+Косметические правила применяются с использованием CSS - специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, целью которого является скрыть определенные элементы. Узнать больше о CSS [Подробнее](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
 > [Расширенный CSS](#extended-css-selectors) позволяет разработчикам фильтров справляться с гораздо более сложными случаями. Однако, чтобы использовать эти расширенные правила, вы должны хорошо понимать, что такое CSS.
 
