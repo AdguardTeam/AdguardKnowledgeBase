@@ -129,7 +129,9 @@ For example:
 <a id="example-blocking-by-domain-name"></a>
 ### Example: Blocking by domain name
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg" />
+</object>
 
 **This rule blocks:**
 
