@@ -186,7 +186,7 @@ visible: true
 
 * `http://example.org/banner.png` даже если для этого адреса есть правило блокировки.
 
-> Правила блокировки с модификатором [`$important`](#important-modifier) становятся приоритнее остальных.
+> Обратите внимание, что правила блокировки с модификатором  [`$important`](#important-modifier) все равно будут приоритетнее чем обычные правила разблокировки.
 
 <a id="example-unblocking-website"></a>
 ### Разблокировка всего сайта
@@ -214,15 +214,16 @@ visible: true
 <a id="example-popular-css-selectors"></a>
 #### Популярные CSS селекторы
 
-| Name | CSS selector | Description |
+
+| Имя | CSS селектор | Описание|
 | ------| ------ | ----------- |
-| ID selector | `#banners`   | Matches all elements with `id` attribute equal to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png) |
-| Class selector | `.banners`   | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png) |
-| Attribute selector | `div[class="banners"]`   | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png) |
-| Attribute substring selector | `div[class^="advert1"]	`   | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
-| Attribute substring selector | `div[class$="banners_ads"]`   | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="http://example.com/"]`   | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
-| Attribute selector | `a[href="http://example.com/"]`   | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) |
+| ID selector | `#banners`   | Соответствует всем элементам с атрибутом `id` равным `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png) |
+| Class selector | `.banners`   | Соответствует всем элементам типа `class` содержащих `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png) |
+| Attribute selector | `div[class="banners"]`   | Соответствует всем `div` элементам с `class` **равным**  `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png) |
+| Attribute substring selector | `div[class^="advert1"]	`   | Соответствует всем `div` элементам класс `class` которых **начинается** с `advert1` строки.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Attribute substring selector | `div[class$="banners_ads"]`   | Соответствует всем `div` элементам `class` которых **заканчивается** на `banners_ads` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `a[href^="http://example.com/"]`   | Соответствует всем ссылкам загруженным с `http://example.com/` <br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
+| Attribute selector | `a[href="http://example.com/"]`   | Соответствует всем ссылкам **конкретно** `http://example.com/` .<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) 
 
 <a id="basic-rules"></a>
 ## Базовые правила
