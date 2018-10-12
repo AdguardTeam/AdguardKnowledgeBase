@@ -178,8 +178,8 @@ visible: true
 <a id="example-unblocking-an-address"></a>
 ### Разблокировка адреса
 
-<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_exception.svg" type="image/svg+xml">
-    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_exception.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" />
 </object>
 
 **Это правило разблокирует:**
