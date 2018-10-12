@@ -222,7 +222,7 @@ visible: true
 | Class selector | `.banners`   | Соответствует всем элементам типа `class` содержащих `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png) |
 | Attribute selector | `div[class="banners"]`   | Соответствует всем `div` элементам с `class` **равным**  `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png) |
 | Attribute substring selector | `div[class^="advert1"]	`   | Соответствует всем `div` элементам класс `class` которых **начинается** с `advert1` строки.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
-| Attribute substring selector | `div[class$="banners_ads"]`   | Соответствует всем `div` элементам `class` которых **заканчивается** на `banners_ads` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `div[class$="banners_ads"]`   | Соответствует всем `div` элементам `class` которых **заканчивается** на `banners_ads`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
 | Attribute substring selector | `a[href^="http://example.com/"]`   | Соответствует всем ссылкам загруженным с `http://example.com/` <br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
 | Attribute selector | `a[href="http://example.com/"]`   | Соответствует всем ссылкам **конкретно** `http://example.com/` .<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) 
 
