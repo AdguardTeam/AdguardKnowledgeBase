@@ -161,7 +161,7 @@ visible: true
 <a id="example-basic-rule-modifiers"></a>
 ### Базовые модификаторы правил
 
-Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами:
+Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
 
 <object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" />
