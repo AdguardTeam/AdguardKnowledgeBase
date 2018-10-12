@@ -170,6 +170,7 @@ visible: true
 **Это правило блокирует:**
 
 * `http://example.org/script.js` если этот скрипт загружен с `example.com`.
+
 **Это правило не блокирует:**
 
 * `https://example.org/script.js` если этот скрипт загружен с `example.org`.
