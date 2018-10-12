@@ -169,11 +169,11 @@ visible: true
 
 **Это правило блокирует:**
 
-* `http://example.org/script.js` if this script is loaded from `example.com`.
+* `http://example.org/script.js` если этот скрипт загружен с `example.com`.
 **Это правило не блокирует:**
 
-* `https://example.org/script.js` if this script is loaded from `example.org`.
-* `https://example.org/banner.png` because it is not a script.
+* `https://example.org/script.js` если этот скрипт загружен с `example.org`.
+* `https://example.org/banner.png` потому что это не является скриптом.
 
 <a id="example-unblocking-an-address"></a>
 ### Разблокировка адреса
