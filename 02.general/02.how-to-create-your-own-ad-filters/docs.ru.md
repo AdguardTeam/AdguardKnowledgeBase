@@ -161,7 +161,7 @@ visible: true
 <a id="example-basic-rule-modifiers"></a>
 ### Базовые модификаторы правил
 
-Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами:
+Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
 
 <object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" />
@@ -170,6 +170,7 @@ visible: true
 **Это правило блокирует:**
 
 * `http://example.org/script.js` если этот скрипт загружен с `example.com`.
+
 **Это правило не блокирует:**
 
 * `https://example.org/script.js` если этот скрипт загружен с `example.org`.
@@ -178,8 +179,8 @@ visible: true
 <a id="example-unblocking-an-address"></a>
 ### Разблокировка адреса
 
-<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_exception.svg" type="image/svg+xml">
-    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_exception.svg" />
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" />
 </object>
 
 **Это правило разблокирует:**
