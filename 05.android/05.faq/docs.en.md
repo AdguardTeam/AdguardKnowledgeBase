@@ -249,18 +249,6 @@ Proxy type SOCKS4, host: 127.0.0.1, port: 9050.
 5. Run AdGuard protection.
 
 
-### VPN by Private Internet Access ###
-
-
-**Problem:** VPN by Private Internet Access is a VPN app and you cannot have two active VPNs at the same time.
-
-**Solution: **
-
-1. Ensure that AdGuard protection is started before DroidWall.
-
-2. Allow AdGuard in DroidWall settings.
-
-
 ### Opera Max ###
 
 
@@ -407,6 +395,8 @@ They are all enabled by default. You can customize the settings of each category
 As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
 
 ![](importance.png)
+
+Please note, that starting from Android 9 "Importance" renamed to "Behaviour"
 
 There are four statuses to choose from:
 

@@ -8,6 +8,14 @@ visible: true
 
 * [Introduction](#introduction)
 * [Comments](#comments)
+* [Examples](#examples)
+    * [Example: Blocking by domain name](#example-blocking-by-domain-name)
+    * [Example: Blocking exact address](#example-blocking-exact-address)
+    * [Example: Basic rule modifiers](#example-basic-rule-modifiers)
+    * [Example: Unblocking an address](#example-unblocking-an-address)
+    * [Example: Unblocking everything on a website](#example-unblocking-website)
+    * [Example: Cosmetic rule](#example-cosmetic-rule)
+        * [Example: Popular CSS selectors](#example-popular-css-selectors)
 * [Basic rules](#basic-rules)
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
@@ -29,7 +37,7 @@ visible: true
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
-            * [$xmlhttrequest](#xmlhttprequest-modifier)
+            * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
         * [Exception rules modifiers](#exceptions-modifiers)
@@ -99,7 +107,7 @@ A filter is a set of filtering rules applied to specific content (banners, popup
 
 At the same time, AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters.
 
-To describe the syntax of our filtering rules we use [Augmented BNF for Syntax Specifications] (https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
+To describe the syntax of our filtering rules we use [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
 
 > AdGuard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both AdGuard and ABP was taken from [this article](https://adblockplus.org/en/filters).
 
@@ -114,6 +122,109 @@ For example:
 ! This is the comment. Under this line there is an actual filtering rule.
 ||example.org^
 ```
+
+<a id="examples"></a>
+## Examples
+
+<a id="example-blocking-by-domain-name"></a>
+### Example: Blocking by domain name
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg" />
+</object>
+
+**This rule blocks:**
+
+* `http://example.org/ad1.gif`
+* `http://subdomain.example.org/ad1.gif`
+* `https://ads.example.org:8000/`
+
+**This rule does not block:**
+
+* `http://ads.example.org.us/ad1.gif`
+* `http://example.org/redirect/http://ads.example.org/`
+
+<a id="example-blocking-exact-address"></a>
+### Example: Blocking exact address
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg" />
+</object>
+
+**This rule blocks:**
+
+* `http://example.org/`
+
+**This rule does not block:**
+
+* `https://example.org/banner/img`
+
+<a id="example-basic-rule-modifiers"></a>
+### Example: Basic rule modifiers
+
+Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg" />
+</object>
+
+**This rule blocks:**
+
+* `http://example.org/script.js` if this script is loaded from `example.com`.
+
+**This rule does not block:**
+
+* `https://example.org/script.js` if this script is loaded from `example.org`.
+* `https://example.org/banner.png` because it is not a script.
+
+<a id="example-unblocking-an-address"></a>
+### Example: Unblocking an address
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg" />
+</object>
+
+**This rule unblocks:**
+
+* `http://example.org/banner.png` even if there is a blocking rule for this address.
+
+> Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
+
+<a id="example-unblocking-website"></a>
+### Unblocking everything on a website
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg" />
+</object>
+
+**This rule unblocks**
+
+* It disables all cosmetic rules on `example.com`.
+* It unblocks all requests sent from this website even if there is are blocking rules matching these requests.
+
+<a id="example-cosmetic-rule"></a>
+### Example: Cosmetic rule
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg" />
+</object>
+
+Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+
+> AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
+
+<a id="example-popular-css-selectors"></a>
+#### Popular CSS selectors
+
+| Name | CSS selector | Description |
+| ------| ------ | ----------- |
+| ID selector | `#banners`   | Matches all elements with `id` attribute equal to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png) |
+| Class selector | `.banners`   | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png) |
+| Attribute selector | `div[class="banners"]`   | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png) |
+| Attribute substring selector | `div[class^="advert1"]	`   | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Attribute substring selector | `div[class$="banners_ads"]`   | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `a[href^="http://example.com/"]`   | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
+| Attribute selector | `a[href="http://example.com/"]`   | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) |
 
 <a id="basic-rules"></a>
 ## Basic rules
@@ -134,7 +245,7 @@ The most simple rules are so-called _"Basic rules"._ They are used to block requ
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](# basic-rules-special-characters).
+* **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](#basic-rules-special-characters).
 * **`@@`** — A marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
 * **`modifiers`** — Parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
 
@@ -188,10 +299,6 @@ Example:
 ```
 ||domain.com^$popup,third-party
 ```
-
-> #### Visual representation
-
-> We recommend to get acquainted with [that article] (https://adblockplus.org/filter-cheatsheet#options), for  better understanding of how modifiers should be applied.
 
 <a id="basic-rules-common-modifiers"></a>
 #### Basic modifiers
@@ -929,7 +1036,7 @@ On the surface this pseudo class is somewhat similar to [`:matches-css`](#extend
 
 In short, `:matches-css` is about "Computed" tab of the dev tools while `:properties` is about "Styles" tab:
 
-!()[https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png]
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png" />
 
 Another notable difference is that there is no special "-before"/"-after" pseudo-classes. `:properties` matching strips both `::before` and `::after` pseudo-elements from the selectors found in the stylesheets.
 

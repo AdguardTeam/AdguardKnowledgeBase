@@ -7,11 +7,6 @@ taxonomy:
 ---
 
 * [How to become beta tester?](#intro)
-* [Windows](#windows)
-* [MacOS](#macos)
-* [Android](#android)
-* [iOS](#ios)
-* [Browser extensions](#extensions)
 * [Nightly builds](#nightly)
 * [How to report a bug](#report-a-bug)
 
@@ -23,95 +18,10 @@ There is&nbsp;an&nbsp;AdGuard app for virtually every major platform out there, 
 
 We&nbsp;do&nbsp;not have any special requirements. All you need is&nbsp;to&nbsp;use AdGuard, update to&nbsp;the beta version when it&nbsp;is&nbsp;available and report all spotted bugs. One important thing, though: you will need either [forum](https://forum.adguard.com/index.php) or&nbsp;[GitHub](https://github.com/) account (or&nbsp;both :)) to&nbsp;become our beta tester&nbsp;&mdash; so&nbsp;you might want to&nbsp;get it&nbsp;over with before going further.
 
-Now, once you have this settled, just follow one of&nbsp;these instructions, depending on&nbsp;the platform you are using:
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
 
-<a name="windows"></a>
+If you want to skip the description part and get right to the deal, you can submit an application [here](https://surveys.adguard.com/beta_testing_program/form.html). It will be reviewed within 1-3 working days and you'll get a reply via email.
 
-#### Windows
-
-Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your PC: 
-
-* OS&nbsp;version (x86&nbsp;or x64?);
-* Browser(s) used and its version;
-* Antivirus/firewall (name and version). 
-
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
-
-To&nbsp;get latest beta version either activate AdGuard with beta license key you will be&nbsp;provided with, or&nbsp;manually set update channel to &rsquo;Beta&rsquo; in&nbsp;AdGuard settings.
-
-Everything related to&nbsp;AdGuard for Windows can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForWindows).
-
-<a name="macos"></a>
-
-#### macOS
-
-Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your Mac:
-
-* OS&nbsp;version;
-* Browser(s) you use and its version;
-* Antivirus/firewall name and version (if&nbsp;you use&nbsp;it). 
-
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
-
-To&nbsp;get latest beta version download it&nbsp;from [this link](https://static.adguard.com/mac/Adguard.beta.dmg). Once activated with beta license key you will be&nbsp;provided with, the app will use the beta channel for its updates.
-
-Everything related to&nbsp;AdGuard for Mac can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForMac).
-
-<a name="android"></a>
-
-#### Android
-
-Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate information about your device:
-
-* Model;
-* Android version;
-* Version of&nbsp;OS kernel. 
-
-It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
-
-You will be&nbsp;provided with a&nbsp;beta license key to&nbsp;activate AdGuard on&nbsp;your phone with. The latest beta can be&nbsp;always downloaded from [adguard.com/apkb](https://adguard.com/apkb) or&nbsp;by&nbsp;switching to&nbsp;beta update channel in&nbsp;AdGuard settings.
-
-Everything related to&nbsp;AdGuard for Android can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid).
-
-<a name="iOS"></a>
-
-#### AdGuard/AdGuard Pro for iOS
-
-Go&nbsp;to&nbsp;this [submission form](https://surveys.adguard.com/beta_testing_program/form.html) and fill all the required fields there. Make sure to&nbsp;indicate what device you are using. It&nbsp;is&nbsp;highly recommended to&nbsp;include this information in&nbsp;your forum signature, if&nbsp;you have an&nbsp;account there.
-
-You will receive an&nbsp;email with an&nbsp;invitation to&nbsp;TestFlight.
-
-***NOTE:*** *sometimes there is&nbsp;no&nbsp;active test build available. In&nbsp;this case, you will not receive an&nbsp;email notification until there is&nbsp;one.*
-
-Everything related to&nbsp;AdGuard for iOS can be&nbsp;found and discussed&nbsp;on [GitHub](https://github.com/AdguardTeam/AdguardForios).
-
-<a name="extensions"></a>
-
-#### Browser extensions
-
-Yes, we&nbsp;have beta versions of&nbsp;browser extensions too :) Depending on&nbsp;your browser, do&nbsp;the following:
-
-#### Chromium/Opera
-
-Download AdGuard beta extension from [Chrome Store](https://chrome.google.com/webstore/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl).
-
-***NOTE:*** *to&nbsp;be&nbsp;able to&nbsp;install extensions from Chrome Store to&nbsp;Opera browser, first install [this extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/).*
-
-#### Firefox
-
-You can get AdGuard beta extension&nbsp;at [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/) by downloading the latest beta version and simply by&nbsp;dragging the downloaded file to&nbsp;your browser.
-
-Users of older Firefox versions and&nbsp;PaleMoon users can use our legacy version, it can also be found on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/). Same&nbsp;&mdash; just drag the downloaded file to&nbsp;your browser to&nbsp;install&nbsp;it.
-
-#### Edge
-
-Proceed to&nbsp;AdGuard Beta [store page](https://www.microsoft.com/store/p/adguard-adblocker-beta/9ndmfr4cv25m) and click on &rsquo;Get the app&rsquo;. A&nbsp;window will pop&nbsp;up, click on&nbsp;the &rsquo;Get&rsquo; button there and wait for the download to&nbsp;finish. Edge browser will start automatically and ask you to&nbsp;enable AdGuard.
-
-#### Safari
-
-Download the latest AdGuard for Safari beta extension from [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/releases). Install it&nbsp;by&nbsp;dragging the downloaded file to&nbsp;your browser.
-
-***NOTE:*** *beta version of&nbsp;AdGuard extension for Safari is&nbsp;updated from our server. In&nbsp;Safari 9+&nbsp;such updates cannot be&nbsp;applied automatically, you should check &laquo;Safari&raquo; -&gt; &laquo;Extensions&raquo; from time to&nbsp;time. Extensions for other browsers will update automatically when needed.*
 
 <a name="nightly"></a>
 

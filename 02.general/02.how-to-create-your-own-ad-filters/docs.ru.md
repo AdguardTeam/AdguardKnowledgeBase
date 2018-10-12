@@ -8,6 +8,14 @@ visible: true
 
 * [Введение](#introduction)
 * [Комментарии](#comments)
+* [Примеры](#examples)
+    * [Блокировка по имени домена](#example-blocking-by-domain-name)
+    * [Блокировка конкретного адреса](#example-blocking-exact-address)
+    * [Базовые модификаторы правил](#example-basic-rule-modifiers)
+    * [Разблокировка адреса](#example-unblocking-an-address)
+    * [Разблокировка всего сайта](#example-unblocking-website)
+    * [Косметические правила](#example-cosmetic-rule)
+        * [Популярные CSS селекторы](#example-popular-css-selectors)
 * [Базовые правила](#basic-rules)
     * [Синтаксис базовых правил](#basic-rules-syntax)
     * [Специальные символы](#basic-rules-special-characters)
@@ -29,7 +37,7 @@ visible: true
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
-            * [$xmlhttrequest](#xmlhttprequest-modifier)
+            * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
         * [Модификаторы правил-исключений](#exceptions-modifiers)
@@ -113,6 +121,110 @@ visible: true
 ! Это текст комментария. Под ним, для сравнения, текст реального правила фильтрации.
 ||example.org^
 ```
+        
+<a id="examples"></a>
+## Примеры
+
+<a id="example-blocking-by-domain-name"></a>
+### Блокировка по имени домена
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/0_blocking_domain.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/0_blocking_domain.svg" />
+</object>
+
+**Это правило блокирует:**
+
+* `http://example.org/ad1.gif`
+* `http://subdomain.example.org/ad1.gif`
+* `https://ads.example.org:8000/`
+
+**Это правило не блокирует:**
+
+* `http://ads.example.org.us/ad1.gif`
+* `http://example.org/redirect/http://ads.example.org/`
+
+<a id="example-blocking-exact-address"></a>
+### Блокировка конкретного адреса
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/1_exact_address.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/1_exact_address.svg" />
+</object>
+
+**Это правило блокирует:**
+
+* `http://example.org/`
+
+**Это правило не блокирует:**
+
+* `https://example.org/banner/img`
+
+<a id="example-basic-rule-modifiers"></a>
+### Базовые модификаторы правил
+
+Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg" />
+</object>
+
+**Это правило блокирует:**
+
+* `http://example.org/script.js` если этот скрипт загружен с `example.com`.
+
+**Это правило не блокирует:**
+
+* `https://example.org/script.js` если этот скрипт загружен с `example.org`.
+* `https://example.org/banner.png` потому что это не является скриптом.
+
+<a id="example-unblocking-an-address"></a>
+### Разблокировка адреса
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg" />
+</object>
+
+**Это правило разблокирует:**
+
+* `http://example.org/banner.png` даже если для этого адреса есть правило блокировки.
+
+> Обратите внимание, что правила блокировки с модификатором  [`$important`](#important-modifier) все равно будут приоритетнее чем обычные правила разблокировки.
+
+<a id="example-unblocking-website"></a>
+### Разблокировка всего сайта
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/4_unblock_entire_website.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/4_unblock_entire_website.svg" />
+</object>
+
+**Это правило разблокирует:**
+
+* Оно отключает все косметические правила на `example.com`
+* Оно блокирует все запросы, отправленные с этого веб-сайта, даже если есть правила блокировки, соответствующие этим запросам 
+
+<a id="example-cosmetic-rule"></a>
+### Косметические правила
+
+<object data="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg" />
+</object>
+
+Косметические правила применяются с использованием CSS - специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, целью которого является скрыть определенные элементы. Узнать больше о CSS [Подробнее](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+
+> [Расширенный CSS](#extended-css-selectors) позволяет разработчикам фильтров справляться с гораздо более сложными случаями. Однако, чтобы использовать эти расширенные правила, вы должны хорошо понимать, что такое CSS.
+
+<a id="example-popular-css-selectors"></a>
+#### Популярные CSS селекторы
+
+
+| Имя | CSS селектор | Описание|
+| ------| ------ | ----------- |
+| ID selector | `#banners`   | Соответствует всем элементам с атрибутом `id` равным `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png) |
+| Class selector | `.banners`   | Соответствует всем элементам типа `class` содержащих `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png) |
+| Attribute selector | `div[class="banners"]`   | Соответствует всем `div` элементам с `class` **равным**  `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png) |
+| Attribute substring selector | `div[class^="advert1"]	`   | Соответствует всем `div` элементам класс `class` которых **начинается** с `advert1` строки.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Attribute substring selector | `div[class$="banners_ads"]`   | Соответствует всем `div` элементам `class` которых **заканчивается** на `banners_ads`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `a[href^="http://example.com/"]`   | Соответствует всем ссылкам загруженным с `http://example.com/` <br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
+| Attribute selector | `a[href="http://example.com/"]`   | Соответствует всем ссылкам **конкретно** `http://example.com/` .<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) 
 
 <a id="basic-rules"></a>
 ## Базовые правила
