@@ -1,5 +1,6 @@
 ---
 title: 'Stealth Mode'
+published: false
 taxonomy:
     category:
         - docs
