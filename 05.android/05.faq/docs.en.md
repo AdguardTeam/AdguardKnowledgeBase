@@ -394,7 +394,7 @@ They are all enabled by default. You can customize the settings of each category
 
 As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
 
-<img src="https://cdn.adguard.com/public/AdGuard/kb/en/Android/importance.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/importance.png" width="300">
 
 Please note, that starting from Android 9 "Importance" renamed to "Behaviour"
 
