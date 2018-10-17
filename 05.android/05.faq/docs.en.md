@@ -379,7 +379,7 @@ Apart from this way, you can get a quick and simple access to these settings whe
 
 Alright, you're in the right section. Now you can see 6 different categories, which are shown on the left part of the following screenshot.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/notifications.png" width="300">
+<img src="https://cdn.adguard.com/StaticResources/Adguard/kb/en/Android/notifications.png" width="300">
 
 Each category includes certain notifications type:
 
@@ -394,7 +394,7 @@ They are all enabled by default. You can customize the settings of each category
 
 As mentioned, you can also choose the Importance status which will let you give every notification category the priority needed. Please look at the screenshot.
 
-![](importance.png)
+<img src="https://cdn.adguard.com/StaticResources/AdGuard/kb/en/Android/importance.png" width="300">
 
 Please note, that starting from Android 9 "Importance" renamed to "Behaviour"
 
