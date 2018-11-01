@@ -44,7 +44,7 @@ taxonomy:
 
 Эти два метода являются предпочитаемыми, но&nbsp;если нет возможности использовать&nbsp;их, можете использовать другие:
 
-* Найдите нас в&nbsp;различных социальных сетях, таких как [VK](https://vk.com/adguard), [Facebook](https://www.facebook.com/AdguardRu/), [Reddit](https://reddit.com/adguard/) и&nbsp;т.д. Однако, это не&nbsp;самое удобное место для обсуждения технических вопросов.
+* Найдите нас в&nbsp;различных социальных сетях, таких как [VK](https://vk.com/adguard), [Facebook](https://www.facebook.com/AdguardRu/), [Reddit](https://www.reddit.com/r/Adguard/) и&nbsp;т.д. Однако, это не&nbsp;самое удобное место для обсуждения технических вопросов.
 
 * Напишите в&nbsp;службу поддержки, либо отправив e-mail из&nbsp;встроенной в&nbsp;программу формы, либо написав напрямую на&nbsp;адрес [support@adguard.com](mailto:support@adguard.com);
 
