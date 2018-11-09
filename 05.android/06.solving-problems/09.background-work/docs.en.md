@@ -33,6 +33,10 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
+- For MIUI 10, the action menu can be invoked by a long tap on the application.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/MIUI10_recents.png" width="300">
+
 - Go to *"Battery"*
 
 - Select *"battery saver"* app 
