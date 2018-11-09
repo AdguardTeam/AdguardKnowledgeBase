@@ -33,6 +33,10 @@ taxonomy:
 
 <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
 
+- Для MIUI 10 меню выбора действий вызывается долгим тапом на приложении.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/MIUI10_recents.png" width="300">
+
 - Перейдите в раздел *"Батарея и производительность"*
 
 - Выберите *"Выбрать приложение"*
