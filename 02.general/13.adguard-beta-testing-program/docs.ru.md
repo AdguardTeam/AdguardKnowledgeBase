@@ -6,7 +6,6 @@ taxonomy:
 ---
 
 * [Как стать бета-тестером?](#intro)
-* [Nightly-сборки](#nightly)
 * [Как сообщить о баге](#report-a-bug)
 
 Практически для каждой &laquo;большой&raquo; платформы&nbsp;&mdash; Windows, Mac, Android, iOS&nbsp;&mdash; существует своя версия AdGuard, и&nbsp;все они регулярно обновляются. Это было&nbsp;бы невозможно без бета-тестирования и, что более важно, бета-тестеров. Хотите стать одним из&nbsp;них? Узнайте, как.<!--more-->
@@ -21,16 +20,6 @@ taxonomy:
 
 Если же вы хотите перейти сразу к делу и подать заявку на участие в бета-тестировании, отрпавляйтесь на [эту страницу](https://surveys.adguard.com/beta_testing_program_ru/form.html) и заполняйте специальную форму. Вашу заявку рассмотрят в течение 1-3 рабочих дней и пришлют ответ на электронную почту. 
 
-<a name="nightly"></a>
-
-### Nightly-сборки
-
-"Nightly" — это особые сборки, доступные для AdGuard для Windows и AdGuard для Android, в главном меню они обозначаются греческой буквой "**η**". Они обновляются каждые три дня и содержат самые свежие изменения, внесённые разработчиками. Если вы решили установить Nightly-сборку, будьте готовы иногда столкнуться с багами и непредвиденным поведением (о чём вы можете сообщать в поддержку). Скачать Nightly-сборки можно по этим ссылкам:
-
-[setup.exe](https://static.adguard.com/windows/nightly/setup.exe) или [https://agrd.io/windows_nightly](https://agrd.io/windows_nightly) — для AdGuard для Windows;
-[adguard.apk](https://static.adguard.com/android/nightly/adguard.apk) или [https://agrd.io/android_nightly](https://agrd.io/android_nightly) — для AdGuard для Android.
-
-Учтите, что Nightly-сборки, скачанные по ссылкам выше, не будут откатываться назад по версиям при переключении на бета- или релизный канал обновлений. Также стоит отметить, что версии AdGuard для других платформ пока не имеют Nightly-сборок, но мы планируем добавить их в будущем.
 
 <a name="report-a-bug"></a>
 
@@ -44,7 +33,7 @@ taxonomy:
 
 Эти два метода являются предпочитаемыми, но&nbsp;если нет возможности использовать&nbsp;их, можете использовать другие:
 
-* Найдите нас в&nbsp;различных социальных сетях, таких как [VK](https://vk.com/adguard), [Facebook](https://www.facebook.com/AdguardRu/), [Reddit](https://reddit.com/adguard/) и&nbsp;т.д. Однако, это не&nbsp;самое удобное место для обсуждения технических вопросов.
+* Найдите нас в&nbsp;различных социальных сетях, таких как [VK](https://vk.com/adguard), [Facebook](https://www.facebook.com/AdguardRu/), [Reddit](https://www.reddit.com/r/Adguard/) и&nbsp;т.д. Однако, это не&nbsp;самое удобное место для обсуждения технических вопросов.
 
 * Напишите в&nbsp;службу поддержки, либо отправив e-mail из&nbsp;встроенной в&nbsp;программу формы, либо написав напрямую на&nbsp;адрес [support@adguard.com](mailto:support@adguard.com);
 

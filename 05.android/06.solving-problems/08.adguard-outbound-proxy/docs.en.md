@@ -93,7 +93,7 @@ Proxy port | *1080* or *1085* or *1090*
 Field      |  Value
 -------    | --------- 
 Proxy type | *SOCKS5* 
-Proxy host | *any server from [this list](https://nordvpn.com/servers/)*
+Proxy host | *any server save for "Obfuscated" from [this list](https://nordvpn.com/servers/)*
 Proxy port | *1080*
 	
 3. For *Username* and *Password* fields, enter your NordVPN Username and Password.
