@@ -21,7 +21,7 @@ Below we will list and describe all main features and options you can find in "S
 
 ### General
 
-![](general.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthgeneral.png" width="350">
 
 **Hide your search queries**
 
@@ -40,7 +40,8 @@ You can enter any tracking parameters that are to be stripped in the **Tracking 
 
 ### Tracking methods
 
-![](tracking-methods.png)
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthtracking.png" width="350">
 
 **Self-destructing third-party cookies**
 
@@ -67,7 +68,7 @@ Authorization header's value is simply a base64 encoded version of the credentia
 
 ### Browser API
 
-![](browser-api.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthbrowser.png" width="350">
 
 **Block WebRTC**
 
@@ -86,7 +87,8 @@ Enabling this option will prohibit the browser from sending GPS data that could 
 
 ### Miscellaneous
 
-![](miscellaneous.png)
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthmisc.png" width="350">
 
 **Hide Referer from third-parties**
 
