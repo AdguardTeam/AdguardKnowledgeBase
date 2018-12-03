@@ -15,7 +15,7 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, hide your real IP-address or even indicate one of your choice.
 
-Below we will list and describe the main features and options you can manage in the "Stealth Mode" settings which are divided into four groups: General, Tracking methods, Browser API, and Miscellaneous.
+Below we will list and describe all main features and options you can find in "Stealth Mode", which are divided into four groups: General, Tracking methods, Browser API, and Miscellaneous.
 
 <a name="general"></a>
 
@@ -76,7 +76,7 @@ Enabling this option can disrupt the work of certain browser applications, such 
 
 **Block Push API**
 
-Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from varous websites even if your browser is hidden to tray or not launched. Enable this option to block browser Push API completely.
+Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from various websites even if your browser is hidden to tray or not launched at all. Enable this option to block browser Push API completely.
 
 **Block Location API**
 
@@ -90,7 +90,9 @@ Enabling this option will prohibit the browser from sending GPS data that could 
 
 **Hide Referer from third-parties**
 
-Referer is one of HTTP headers for browser-to-server request. It contains the URL of request source. If you advance from one page to another, Referer will save the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+Referer is one of HTTP headers for browser-to-server request. -> Referer is one of the HTTP headers of browser-to-server requests.
+It contains the URL of request source. -> It contains the request source URL.
+Referer will save the URL of the initial page -> Referer will store the URL of the initial page
 You can also set a Referer of your choice by typing it into the **Custom Referer** field. Leave the field empty to use the default Referer.
 
 **Hide your User-Agent **
@@ -101,9 +103,9 @@ You can also set a User-Agent of your choice by typing it into the **Custom User
 
 **Mask your IP address**
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will believe you have a different IP address. Sometimes, it helps, and websites ignore your real IP.
+Sometimes, it helps, and websites ignore your real IP. -> Sometimes it helps and websites ignore your real IP.
 You can set a random IP that you would like to be perceived as yours by simply typing it into the corresponding field (**Custom IP address**). Leave the field empty to use the default IP address.
 
 **Remove X-Client-Data header**
 
-Forbids Google Chrome to send its version and modifications information with requests to Google domains (including Double Click and Google Analytics).
+Forbids Google Chrome to send its version and modifications information with requests to Google domains (including Double Click and Google Analytics). -> Forbids Google Chrome to send its version and modifications information to Google domains (including Double Click and Google Analytics) along with requests.
