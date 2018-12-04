@@ -105,7 +105,7 @@ You can also set a User-Agent of your choice by typing it into the **Custom User
 
 Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will believe you have a different IP address. Sometimes it helps and websites ignore your real IP.
 
-You can set a random IP that would like to be perceived as yours by simply typing it into the corresponding field (**Custom IP address**). Leave the field empty to use the default IP address.
+You can set a random IP that you would like to be perceived as yours by simply typing it into the corresponding field (**Custom IP address**). Leave the field empty to use the default IP address.
 
 **Remove X-Client-Data header**
 
