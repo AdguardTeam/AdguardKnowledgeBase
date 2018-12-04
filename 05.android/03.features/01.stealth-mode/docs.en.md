@@ -33,7 +33,7 @@ Sends a Do-Not-Track (DNT) HTTP header to queried websites that requires web app
 
 **Strip pages' URLs of parameters like utm_*=, fb_ref=**
 
-If you enable this option, AdGuard will strip pages' URLs of tracking parameters like `utm_* and fb_ref`.
+If you enable this option, AdGuard will strip pages' URLs of tracking parameters like `utm_*` and `fb_ref`.
 
 <a name="methods"></a>
 
