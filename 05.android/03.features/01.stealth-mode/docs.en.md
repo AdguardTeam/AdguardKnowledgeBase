@@ -93,7 +93,7 @@ Enabling this option will prohibit browsers from sending GPS data that could be 
 
 **Hide Referer from third-parties**
 
-eferer is one of the HTTP headers of browser-to-server requests. It contains the request source URL. If you advance from one page to another, Referer will store the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+Referer is one of the HTTP headers of browser-to-server requests. It contains the request source URL. If you advance from one page to another, Referer will store the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
 
 **Hide your User-Agent**
 
