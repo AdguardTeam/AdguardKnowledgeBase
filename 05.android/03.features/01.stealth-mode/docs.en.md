@@ -33,8 +33,7 @@ Sends a Do-Not-Track (DNT) HTTP header to queried websites that requires web app
 
 **Strip parameters like `utm_*=`, `fb_ref=` from pages' addresses**
 
-If you enable this option, AdGuard will strip tracking parameters like utm_* and fb_ref from pages’ URLs.
-You can enter any tracking parameters that are to be stripped in the **Tracking parameters** section below.
+If you enable this option, AdGuard will strip pages' URLs of tracking parameters like utm_* and fb_ref..
 
 <a name="methods"></a>
 
@@ -75,13 +74,15 @@ Authorization header's value is simply a base64 encoded version of the credentia
 WebRTC (Real Time Communications) is a technology that allows streaming of data directly between browsers and apps. It can let others know your real IP address even if you use a proxy or VPN.
 Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
 
+(*Be aware that enabling this option can disrupt the work of certain browser applications, such as messengers, chats, online cinemas or games.*)
+
 **Block Push API**
 
 Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from various websites even if your browser is hidden to tray or not launched at all. Enable this option to block browser Push API completely.
 
 **Block Location API**
 
-Enabling this option will prohibit the browser from sending GPS data that could be used to find your location and modify your search results or otherwise influence your web experience.
+Enabling this option will prohibit browsers from sending GPS data that could be used to find your location and modify your search results or otherwise influence your web experience.
 
 <a name="miscellaneous"></a>
 
@@ -92,14 +93,11 @@ Enabling this option will prohibit the browser from sending GPS data that could 
 
 **Hide Referer from third-parties**
 
-Referer is one of HTTP headers for browser-to-server request. -> Referer is one of the HTTP headers of browser-to-server requests.
-It contains the URL of request source. -> It contains the request source URL.
-Referer will save the URL of the initial page -> Referer will store the URL of the initial page
-You can also set a Referer of your choice by typing it into the **Custom Referer** field. Leave the field empty to use the default Referer.
+Referer is one of HTTP headers for browser-to-server request. It contains the URL of request source. If you advance from one page to another, Referer will save the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
 
-**Hide your User-Agent **
+**Hide your User-Agent**
 
-When you visit a website, your browser send the server its information. It looks like a text line that is a part of HTTP request beginning with “User-Agent:”. It usually includes the name and version of the browser and language settings. 
+When you visit a website, your browser sends the server information about itself. This information is sent in the form of a text line that is a part of an HTTP request, beginning with “User-Agent:”. It usually includes the name and version of the browser and language settings. 
 
 You can also set a User-Agent of your choice by typing it into the **Custom User-Agent** field. Leave the field empty to use the default User-Agent.
 
