@@ -31,9 +31,9 @@ When you proceed to the website from Google, Yahoo or any other search engine, t
 
 Sends a Do-Not-Track (DNT) HTTP header to queried websites that requires web apps to disable tracking of your activity.
 
-**Strip parameters like `utm_*=`, `fb_ref=` from pages' addresses**
+**Strip pages' URLs of parameters like utm_*=, fb_ref=**
 
-If you enable this option, AdGuard will strip pages' URLs of tracking parameters like utm_* and fb_ref..
+If you enable this option, AdGuard will strip pages' URLs of tracking parameters like utm_* and fb_ref.
 
 <a name="methods"></a>
 
@@ -78,7 +78,7 @@ Enabling this option can disrupt the work of certain browser applications, such 
 
 **Block Push API**
 
-Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from various websites even if your browser is hidden to tray or not launched at all. Enable this option to block browser Push API completely.
+Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from various websites even if your browser is hidden to tray or not launched at all. Enable this option to block browser Push API completely. 
 
 **Block Location API**
 
@@ -93,7 +93,7 @@ Enabling this option will prohibit browsers from sending GPS data that could be 
 
 **Hide Referer from third-parties**
 
-Referer is one of HTTP headers for browser-to-server request. It contains the URL of request source. If you advance from one page to another, Referer will save the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+eferer is one of the HTTP headers of browser-to-server requests. It contains the request source URL. If you advance from one page to another, Referer will store the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
 
 **Hide your User-Agent**
 
@@ -103,9 +103,8 @@ You can also set a User-Agent of your choice by typing it into the **Custom User
 
 **Mask your IP address**
 
-Sometimes, it helps, and websites ignore your real IP. -> Sometimes it helps and websites ignore your real IP.
-You can set a random IP that you would like to be perceived as yours by simply typing it into the corresponding field (**Custom IP address**). Leave the field empty to use the default IP address.
+Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will believe you have a different IP address. Sometimes it helps and websites ignore your real IP.
 
 **Remove X-Client-Data header**
 
-Forbids Google Chrome to send its version and modifications information with requests to Google domains (including Double Click and Google Analytics). -> Forbids Google Chrome to send its version and modifications information to Google domains (including Double Click and Google Analytics) along with requests.
+Forbids Google Chrome to send its version and modifications information to Google domains (including Double Click and Google Analytics) along with requests.
