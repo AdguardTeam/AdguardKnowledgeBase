@@ -1,5 +1,6 @@
 ## [WIP] DNS Providers
-## Yandex basic is used for test Deep Links for Android app
+
+*(Yandex basic is used for testing Deep Links for Android app)*
 
 AdGuard users can configure any DNS server to be used instead of the system default provided by the router or ISP. On this page we maintain a list of popular DNS providers.
 
