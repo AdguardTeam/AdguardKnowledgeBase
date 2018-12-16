@@ -16,7 +16,7 @@ Battery and traffic consumption shown in devices statistics **do not represent t
 
 To mitigate this misconception, we added a new screen called 'Battery usage'. You can access it by tapping on the battery icon in the top right corner of the main screen.
 
-<img src="battery-stats.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/batterystats.png" width="300">
 
 Inside you will find a chart that shows the AdGuard battery resourse consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
@@ -24,9 +24,9 @@ Inside you will find a chart that shows the AdGuard battery resourse consumption
 
 On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning.
 
-![](battery_1_EN.png)
-![](battery_2_EN.png)
-![](battery_3_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_1.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_2.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_3.png" width="300">
 
 From these screenshots you can see that:
 
