@@ -22,7 +22,7 @@ Inside you will find a chart that shows the AdGuard battery resourse consumption
 
 ### Real example
 
-On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning.
+On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_1.png" width="300">
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_2.png" width="300">
