@@ -16,15 +16,17 @@ visible: true
 
 Чтобы устранить это недоразумение, мы добавили новый раздел «Расход батареи». Вы можете попасть туда, тапнув по иконке батареи на главном экране приложения.
 
-<img src="battery-stats-ru.jpg" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/batterystatsru.png" width="300">
 
 Внутри вы найдёте график, показывающий реальное потребление ресурса батареи AdGuard на протяжении последних 24 часов, с возможностью получить более детальную информацию о почасовом расходе путем нажатия на точки на графике. Кроме того, там же присутствует цифровое изложение релевантной информации и короткое описание технической стороны вопроса.
 
 ### Реальный пример
 
-На скриншотах ниже показана статистика потребления батареи за ночь и утро.
+На скриншотах ниже показана статистика потребления батареи за ночь и утро:
 
-![](battery_1.png?cropResize=300,500) ![](battery_2.png?cropResize=300,500) ![](battery_3.png?cropResize=300,500)
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/battery_1.png" width="300"> 
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/battery_2.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/battery_3.png" width="300">
 
 Из этих скриншотов видно, что:
 
