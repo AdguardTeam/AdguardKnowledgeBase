@@ -379,7 +379,7 @@ Apart from this way, you can get a quick and simple access to these settings whe
 
 Alright, you're in the right section. Now you can see 6 different categories, which are shown on the left part of the following screenshot.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/Notifications.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/Notifications.png" width="950">
 
 Each category includes certain notifications type:
 
