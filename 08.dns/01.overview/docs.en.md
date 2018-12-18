@@ -11,7 +11,7 @@ To start using AdGuard DNS, set up the addresses of Domain Name System (DNS) ins
 
 ### How does it work?
 
-When you use AdGuard DNS, every time a website sends an ad request our server sends back an empty response. AdGuard has its own base of domain names that send ads, and it is regularly updated. We offer two modes for AdGuard DNS to work in. The Default Mode includes blocking ads, counters, malicious and phishing websites. The Family Mode does the same, in addition blocking adult content and enabling safe search for your browser.
+When you use AdGuard DNS, every time a browser or an app sends an ad request, our server responds with an empty response. AdGuard has its own base of domain names that serve ads, trackers and fraud, and it is regularly updated. We offer two modes for AdGuard DNS to work in. The Default Mode includes blocking ads, counters, malicious and phishing websites. The Family Mode does the same, in addition blocking adult content and enabling safe search for your browser.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/dns-announce/dns-blocking.jpg" width="500">
 
