@@ -5,37 +5,32 @@ taxonomy:
         - docs
 ---
 
-AdGuard DNS is a foolproof way to block Internet ads that does not require installing any applications. It is easy to use, absolutely free, easily set up on any device, and provides you with minimal necessary functions to block ads, counters, malicious websites, and adult content.
+AdGuard DNS is a foolproof way to block tracking and ads on the Internet that does not require installing any applications. It is easy to use, privacy-friendly, absolutely free, can be effortlessly set up on any device, and provides you with minimal necessary functions to block ads, trackers, malicious websites, and adult content (optionally).
 
 To start using AdGuard DNS, set up the addresses of Domain Name System (DNS) instead of those given by your service provider. AdGuard DNS is free of charge for personal use.
 
-When you use AdGuard DNS, every time a website sends an ad request our server sends back an empty response. AdGuard has its own base of domain names that send ads, and it is regularly updated. We offer two modes for AdGuard DNS to work in. The Default Mode includes blocking ads, counters, malicious and phishing websites. The Family Mode does the same, in addition blocking adult content and enabling safe search for your browser.
+### How does it work?
+
+When you use AdGuard DNS, every time a browser or an app sends an ad request, our server responds with an empty response. AdGuard has its own base of domain names that serve ads, trackers and fraud, and it is regularly updated. We offer two modes for AdGuard DNS to work in. The Default Mode includes blocking ads, counters, malicious and phishing websites. The Family Mode does the same, in addition blocking adult content and enabling safe search for your browser.
+
+<img src="https://cdn.adguard.com/public/Adguard/Blog/dns-announce/dns-blocking.jpg" width="500">
 
 AdGuard DNS can work on any devices, including smartphones and tablet PCs. There are no equipment limitations.
 
-** Advantages of AdGuard DNS **
+### Advantages of AdGuard DNS
 
-* Does not require installation of any applications. All you need is to follow this simple setup guide.
+* Does not require installation of any applications. All you need to do is to follow this [simple setup guide](https://kb.adguard.com/en/dns/setup-guide).
 
-* AdGuard DNS is absolutely free in personal use. You don’t install anything, so there’s nothing to pay for.
+* AdGuard DNS is **open source and absolutely free** in personal use.
 
-* It has two modes: default ad blocking and Family Mode.
+* Supports all modern DNS privacy standards: DNSCrypt, DNS-over-HTTPS, DNS-over-TLS. 
+
+* It has two modes: "Default" for blocking ads and trackers, and "Family" for the same functionality plus parental control tools.
  
-* We do not preserve any personal data or log your activity. Your anonymity will be maintained.
+* We have strict [no logging policy](https://adguard.com/en/privacy/dns.html). We do not preserve any personal data or log your activity. Your anonymity will be maintained.
 
 * You can use it on any Windows, macOS, Android, or iOS operated device.
 
-### AdGuard Home
+### How to configure AdGuard DNS?
 
-AdGuard Home is a **free, open source** network-wide software for blocking ads & tracking. It's similar to AdGuard DNS, as it has the same blocking principle behind it. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
-
-Running your own AdGuard Home server allows you to do much more than using a public DNS server:
-
-* Choose what exactly will the server block or not block;
-* Monitor your network activity;
-* Add your own custom filtering rules;
-* In the future, AdGuard Home is supposed to become more than just a DNS server.
-
-It is considerably more difficult to set up, though, and will require some basic knowledge about administrating a network.
-
-For more information, visit AddGuard Home's [GitHub repository](https://github.com/AdguardTeam/adguardhome).
+Go to respective Knowledge Base chapter to read the detailed [setup guide](https://kb.adguard.com/en/dns/setup-guide). 
