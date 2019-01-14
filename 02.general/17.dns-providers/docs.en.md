@@ -250,7 +250,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Standard
 
-Regular DNS server which provides protection from phishing and spyware
+Regular and DNS-over-TLS servers which provide protection from phishing and spyware
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
