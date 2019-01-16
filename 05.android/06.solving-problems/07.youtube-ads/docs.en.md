@@ -8,7 +8,7 @@ visible: true
 
 One of the most popular questions users ask us - is it possible to block ads in YouTube app on Android? Unfortunately, there is no simple answer to it. In this article we will try to tell everything we know by this moment.
 
-So far we haven't found a way to completely remove ads from YouTube app. Each of ways described below asks some additional actions of you, and many will find this too troublesome. We understand that, and continue looking for a better solution.
+So far we haven't found a way to completely remove ads from YouTube app. At this moment, due to the nuances of Android OS there is no way to completely remove ads from the YouTube app. Each of the ways described below asks some additional actions of you, and many will find this too troublesome. We understand that, and continue monitoring the situation for a better solution, but for now we cannot guarantee that these ads will be blocked
 
 ## Instruction
 ### Step 1: Enabling HTTPS filtering
