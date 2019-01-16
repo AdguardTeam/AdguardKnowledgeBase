@@ -59,7 +59,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
         
  `server:custom` — switches to the previously added server named `custom`;     
      
- `server:tls://dns.adguard.com` — creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP — ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` — creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
  
  `server:1.1.1.1, tls://1.1.1.1` — creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed. 
      
