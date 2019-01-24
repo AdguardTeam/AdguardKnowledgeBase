@@ -53,16 +53,15 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 `dns_server` — switches between DNS servers, you need to include additional data:
 
- `server:cloudflare` — switches to a particular server by its short name;
+ `server:adguard dns` — switches to AdGuard DNS server;
      
->NOTE: the full list of supported server names can be found inside AdGuard DNS settings under the "Secure DNS" tab
+>NOTE: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+        
+ `server:custom` — switches to the previously added server named `custom`;     
      
-     
- `server:1.1.1.1,1.0.0.1` — switches to any custom DNS server;
-     
-     
- `server:sdns://AQIAAAAAAAAAFDE3Ni4xMDMu...` (full string is too long) — switches to any custom DNS server via DNS-over-HTTPS, DNS-over-SSL or DNSCrypt;
-     
+ `server:tls://dns.adguard.com` — creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ 
+ `server:1.1.1.1, tls://1.1.1.1` — creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed. 
      
  `server:system` — resets DNS settings to default system DNS servers.
      
