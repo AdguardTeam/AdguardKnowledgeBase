@@ -52,7 +52,7 @@ Activate "Self-destruction of third-party cookies" option and put a time period 
 
 **Self-destruction of first-party cookies**
 
-First-party cookies are created by the website the user is visiting. This kind of cookies also allows websites to store information about their users, but these data are not shared to third parties.
+First-party cookies are created by the website the user is visiting. This kind of cookies also allows websites to store information about their users, but this data is not shared to third parties.
 
 Put a time period (in seconds) by the end of which all cookies will be destroyed. Set the timer to 0 in order to block them completely.
 
