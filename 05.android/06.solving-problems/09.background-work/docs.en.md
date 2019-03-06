@@ -89,8 +89,6 @@ For Samsung devices, there is no huge need for setting up the background work, b
    
    Also, don't forget to follow these steps:
    
-   
-
 - Phone settings > Advanced Settings > Battery manager > Power plan is set to Performance
 - Phone Settings > Advanced Settings > Battery Manager > Protected apps – check for your app as Protected
 - Phone Settings > Apps > Your app > Battery > Power-intensive prompt [x] and Keep running after screen off [x]
