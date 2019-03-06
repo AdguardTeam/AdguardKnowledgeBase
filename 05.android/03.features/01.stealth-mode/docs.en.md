@@ -31,7 +31,7 @@ When you proceed to the website from Google, Yahoo or any other search engine, t
 
 Sends a Do-Not-Track (DNT) HTTP header to queried websites that requires web apps to disable tracking of your activity.
 
-**Strip pages' URLs of parameters like utm_*=, fb_ref=**
+**Strip pages' URLs of parameters like utm_=, fb_ref=**
 
 If you enable this option, AdGuard will strip pages' URLs of tracking parameters like `utm_*` and `fb_ref`.
 
@@ -42,18 +42,21 @@ If you enable this option, AdGuard will strip pages' URLs of tracking parameters
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthtracking.png" width="350">
 
-**Self-destructing third-party cookies**
+**Self-destruction of third-party cookies**
 
-Websites store your information and preferences with cookies – e.g., they remember the language you chose, the location or even the list of goods in your cart. When you get back to the site, your browser sends back the cookies belonging to that website, which allows it to “recall” your data.
+Websites store your information and preferences with cookies – e.g., they remember the language you chose, the location or even the list of goods in your cart. When you get back to the site, your browser sends back the cookies belonging to that website, which allows it to reuse your data.
 
 Third-party cookies are those implemented by a website that is different from the one you are browsing at the moment. E.g., cnn.com may have a Facebook “Like” widget on it page. This widget will implement a cookie that may be read by Facebook later on. Some advertisers use such cookies to track what other sites you visit where their ads are posted.
 
-Activate "Self-destructing third-party cookies" option and put a time period (in seconds) below by the end of which all third-party cookies will be destroyed. Set the timer to 0 in order to block them completely.
+Activate "Self-destruction of third-party cookies" option and put a time period (in seconds) below by the end of which all third-party cookies will be destroyed. Set the timer to 0 in order to block them completely.
 
-**Self-destructing first-party cookies**
+**Self-destruction of first-party cookies**
 
-We do not recommend enabling this option as it may severely interfere with the work of certain sites.
+First-party cookies are created by the website the user is visiting. This kind of cookies also allows websites to store information about their users, but this data is not shared to third parties.
+
 Put a time period (in seconds) by the end of which all cookies will be destroyed. Set the timer to 0 in order to block them completely.
+
+> We do not recommend enabling this option as it may severely interfere with the work of certain sites. 
 
 **Disable cache for third-party requests**
 
@@ -72,9 +75,8 @@ Authorization header's value is simply a base64 encoded version of the credentia
 **Block WebRTC**
 
 WebRTC (Real Time Communications) is a technology that allows streaming of data directly between browsers and apps. It can let others know your real IP address even if you use a proxy or VPN.
-Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
 
-(*Be aware that enabling this option can disrupt the work of certain browser applications, such as messengers, chats, online cinemas or games.*)
+> Be aware that enabling this option can disrupt the work of certain browser applications, such as messengers, chats, online cinemas or games.
 
 **Block Push API**
 
@@ -88,12 +90,11 @@ Enabling this option will prohibit browsers from sending GPS data that could be 
 
 ### Miscellaneous
 
-
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/stealthmisc.png" width="350">
 
-**Hide Referer from third-parties**
+**Hide Referrer from third parties**
 
-Referer is one of the HTTP headers of browser-to-server requests. It contains the request source URL. If you advance from one page to another, Referer will store the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+Referrer is one of the HTTP headers of browser-to-server requests. It contains the request source URL. If you advance from one page to another, Referrer will store the URL of the initial page. The server is often equipped with software that analyzes Referer and extracts various information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
 
 **Hide your User-Agent**
 
