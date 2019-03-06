@@ -16,6 +16,10 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 * [Huawei](#Huawei)
 
+* [Meizu](#Meizu)
+
+* [Nokia](#Nokia)
+
 * [Oneplus](#Oneplus)
 
 * [Android stock devices Pixel/Nexus/Essential](#Google)
@@ -83,9 +87,77 @@ For Samsung devices, there is no huge need for setting up the background work, b
   
    <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
    
+   Also, don't forget to follow these steps:
+   
+   
+
+- Phone settings > Advanced Settings > Battery manager > Power plan is set to Performance
+- Phone Settings > Advanced Settings > Battery Manager > Protected apps – check for your app as Protected
+- Phone Settings > Apps > Your app > Battery > Power-intensive prompt [x] and Keep running after screen off [x]
+- Phone settings > Apps > Advanced (At the bottom) > Ignore optimisations > Press Allowed > All apps > Find your app on the list and set to Allow
+
+#### Huawei P9 Plus:
+
+Phone settings > Apps > Settings > Special access > Ignore battery optimisation > select allow for your app.
+
+#### Huawei P20:
+
+Phone settings > Battery > App launch and then set your app to “Manage manually” and make sure everything is turned on.
+
+#### Huawei Honor 9 Lite and Huawei Mate 9 Pro:
+
+Phone settings > Battery > Launch and then set your app to “Manage manually” and make sure everything is turned on.
+   
+   
+   <a id="Meizu"></a> 
+   
+ ## Meizu
+ 
+Meizu is probably on par with Huawei and Xiaomi in their approach to background process limitations, but they get a better rank probably just because those devices are not that common on the market and thus do not cause such a pain to the developers as the aforementioned.
+
+Adjust your settings:
+
+- Device Settings > Advanced Settings > Battery manager > Power plan set to Performance
+- Device Settings > Advanced Settings > Battery Manager > Protected apps – check your app as Protected
+- Enable Device Settings > Apps > your app > Battery > Power-intensive prompt and Keep running after screen off
+ 
+   <a id="Nokia"></a> 
+   
+ ## Nokia
+ 
+ Nokia on Android O and P kills any background process including sleep tracking (or any other sport tracking) after 20 minutes if the screen is off. Also when killed all alarms are stopped which renders for example any alarm clock apps useless.
+ 
+ Solution for users
+To fix this issue, please do the following:
+
+- Go to Phone settings > Apps > See all apps.
+- Tap on the right top corner menu > Show system.
+- Find Power saver app in the list, select it and Force close. It will remain stopped until the next restart.
+- From now on, background apps should work normally and use the standard Android battery optimizations.
+
+Still 3rd party alarm clocks or any task scheduling of foreground tasks at a particular time won’t work. We do not have any solution for this at the moment UPDATE: in our preliminary tests it seems that force stopping or uninstalling the Power saver app also fixes alarms and starting of foreground services.
+
+#### Nokia 1 (Android Go)
+
+Uninstall the com.evenwell.emm package via the following adb commands:
+
+adb shell
+pm uninstall --user 0 com.evenwell.emm
+
+#### Other Nokia models
+
+Uninstall the com.evenwell.powersaving.g3 package via the following adb commands:
+
+adb shell
+pm uninstall --user 0 com.evenwell.powersaving.g3
+
+
+
    <a id="Oneplus"></a> 
+   
+   
  ## Oneplus
-Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
+Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
  
  - Go to Settings
  
@@ -98,8 +170,16 @@ Devices with OxygenOS on board are the most problematic, with its OS-sepcific ca
  - Tap "Done" to save
  
  - Open recent apps menu and then lock AdGuard application (as showed on this screenshot):
+ 
+ *On some OnePlus phones there is also a thing called App Auto-Launch which essentially prevents apps from working in the background. Please disable it for your app.*
+ 
 
 <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
+
+One more thing to try:
+ 
+ - Phone settings 
+ - Battery > Battery optimization and switch to the All apps list (Top menu) > Your app > Don’t optimize
 
 <a id="Google"></a>
 
