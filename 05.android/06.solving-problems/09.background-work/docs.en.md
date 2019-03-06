@@ -81,11 +81,11 @@ For Samsung devices, there is no huge need for setting up the background work, b
  
   - Tap on the recent tasks button:
   
-  <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweirecetapps.png" width="300">
+  <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweirecentapps.jpg" width="300">
   
   - Tap on the lock icon:
   
-   <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweilock.png" width="300">
+   <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweilock.jpg" width="300">
    
    Also, don't forget to follow these steps:
    
