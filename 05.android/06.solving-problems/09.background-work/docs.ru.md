@@ -87,68 +87,65 @@ taxonomy:
   
    <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweilock.jpg" width="300">
    
-   Also, don't forget to follow these steps:
+ Для более эффективной настройки фоновой работы приложения необходимо открыть настройки устройства и выполнить следующие действия: 
    
-- Phone settings > Advanced Settings > Battery manager > Power plan is set to Performance
-- Phone Settings > Advanced Settings > Battery Manager > Protected apps – check for your app as Protected
-- Phone Settings > Apps > Your app > Battery > Power-intensive prompt [x] and Keep running after screen off [x]
-- Phone settings > Apps > Advanced (At the bottom) > Ignore optimisations > Press Allowed > All apps > Find your app on the list and set to Allow
+- Откройте *"Расширенные настройки"* > затем *"Менеджер батареи"* > установите схему *"Управление питанием"* на "Производительность";
+- Выберите *"Защищенные приложения"* в разделе *"Менеджер батареи"* и проверьте, защищено ли ваше приложение;
+- Отправляйтесь в *"Приложения"* в основных настройках и выберите AdGuard > затем *"Батарея"* > активируйте опции *"Сообщать об энергоемкости"* и *"Работа при выключенном экране"*;
+- Затем в разделе *"Приложения"* откройте *"Настройки"* (внизу экрана) > *"Специальный доступ"* > выберите *"Игнорировать оптимизацию батареи"* > нажмите *"Разрешено"* > *"Все приложения"* > найдите AdGuard в списке и выберите *"Разрешить"*.
+
+Ниже вы найдете другие способы настройки фоновой работы приложений для определенных моделей Huawei. 
 
 #### Huawei P9 Plus:
 
-Phone settings > Apps > Settings > Special access > Ignore battery optimisation > select allow for your app.
+- Откройте настройки устройства > *"Приложения"* > *"Настройки"* > *"Специальный доступ"* > выберите *"Игнорировать оптимизацию батареи"* > нажмите *"Разрешить"* для выбранного приложения.
 
-#### Huawei P20:
+#### Huawei P20, Huawei Honor 9 Lite и Huawei Mate 9 Pro:
 
-Phone settings > Battery > App launch and then set your app to “Manage manually” and make sure everything is turned on.
-
-#### Huawei Honor 9 Lite and Huawei Mate 9 Pro:
-
-Phone settings > Battery > Launch and then set your app to “Manage manually” and make sure everything is turned on.
-   
-   
-   <a id="Meizu"></a> 
+- Откройте настройки устройства > *"Батарея"* > *"Запуск приложений"* > выберите *"Управление вручную"* для вашего приложения.
+  
+  
+<a id="Meizu"></a> 
    
  ## Meizu
  
-Meizu is probably on par with Huawei and Xiaomi in their approach to background process limitations, but they get a better rank probably just because those devices are not that common on the market and thus do not cause such a pain to the developers as the aforementioned.
+Подход к ограничениям фонового процесса у Meizu практически такой же, как и у двух предыдущих устройств — Huawei и Xiaomi. Чтобы избежать отключения фоновой работы AdGuard и любого другого приложения, настройте следующие параметры:
 
-Adjust your settings:
-
-- Device Settings > Advanced Settings > Battery manager > Power plan set to Performance
-- Device Settings > Advanced Settings > Battery Manager > Protected apps – check your app as Protected
-- Enable Device Settings > Apps > your app > Battery > Power-intensive prompt and Keep running after screen off
+- Отправляйтесь в *"Расширенные настройки"* > затем откройте *"Менеджер батареи"* > установите схему *"Управление питанием"* на "Производительность";
+- Выберите *"Защищенные приложения"* в разделе *"Менеджер батареи"* и проверьте, защищено ли ваше приложение;
+- Откройте раздел *"Приложения"* и выберите AdGuard > затем *"Батарея"* > активируйте опции *"Сообщать об энергоемкости"* и *"Работа при выключенном экране"*.
  
 <a id="Nokia"></a> 
    
  ## Nokia
  
- Nokia on Android O and P kills any background process including sleep tracking (or any other sport tracking) after 20 minutes if the screen is off. Also when killed all alarms are stopped which renders for example any alarm clock apps useless.
+Nokia на Android *O* и *P* отключает все фоновые процессы приложений через 20 минут после выключения экрана.
  
- What need to be done:
+Вот что необходимо сделать для предотвращения остановки фоновой работы приложений: 
 
-- Go to Phone settings > Apps > See all apps.
-- Tap on the right top corner menu > Show system.
-- Find Power saver app in the list, select it and Force close. It will remain stopped until the next restart.
-- From now on, background apps should work normally and use the standard Android battery optimizations.
+- Отправляйтесь в настройки устройства > откройте *"Приложения"* > выберите *"Все приложения"*;
+- Затем зайдите в правое верхнее меню > выберите *"Показать системные"*;
+- Найдите приложение *Power saver* в списке приложений, выберите его и нажмите *"Остановить"*. Приложение будет остановлено до следующего перезапуска системы.
 
-Still 3rd party alarm clocks or any task scheduling of foreground tasks at a particular time won’t work. We do not have any solution for this at the moment UPDATE: in our preliminary tests it seems that force stopping or uninstalling the Power saver app also fixes alarms and starting of foreground services.
+Теперь фоновые приложения должны работать без перебоев, используя стандартную оптимизацию батареи в системе Android.
 
-#### Nokia 1 (Android Go)
+**Существует альтернативный метод оптимизации фоновой работы приложения, однако он подходит, прежде всего, продвинутым пользователям. Вы найдете инструкции ниже.**
 
-Uninstall the com.evenwell.emm package via the following adb commands:
+#### Nokia 1 (Android Go) 
 
-`adb shell`
-`pm uninstall --user 0 com.evenwell.emm`
-
-#### Other Nokia models
-
-Uninstall the com.evenwell.powersaving.g3 package via the following adb commands:
+- Удалите файл `com.evenwell.emm` с помощью следующей команды *"adb"*:
 
 `adb shell`
-`pm uninstall --user 0 com.evenwell.powersaving.g3`
+`pm uninstall -- user 0 com.evenwell.emm`
+
+#### Другие модели Nokia
+
+- Удалите файл `com.evenwell.powersaving.g3` с помощью следующей команды *"adb"*:
+
+`adb shell`
+`pm uninstall -- user 0 com.evenwell.powersaving.g3`
    
-   <a id="Oneplus"></a> 
+<a id="Oneplus"></a> 
    
  ## Oneplus
  
@@ -171,6 +168,12 @@ Uninstall the com.evenwell.powersaving.g3 package via the following adb commands
 - Нажмите на значок замочка:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png" width="300">
+
+> На некоторых устройствах OnePlus есть функция под названием *"Автозапуск"*. Её активация не позволяет приложениям работать в фоновом режиме. Пожалуйста, отключите ее для вашего приложения.
+
+А вот еще один способ активации фоновой работы приложения:
+
+- Откройте настройки устройства > *"Батарея"* > *"Оптимизация батареи"* > откройте список *"Все приложения"* (верхнее меню) > выберите ваше приложение > активируйте функцию *"Не оптимизировать"*.
 
 <a id="Google"></a>
 
