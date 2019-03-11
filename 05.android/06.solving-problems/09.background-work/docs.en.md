@@ -125,7 +125,7 @@ Here is what you need to do in order to prevent killing the background process o
 
 - Go to device settings > open *Apps* > choose *See all apps*;
 - Then tap on the right top corner menu > choose *Show system*;
-- Find the app in the *Power saver* list, select it and activate *Force stop*. It will remain stopped until the next restart.
+- Find *Power saver* in the app list, select it and tap on *Force stop*. It will remain stopped until the next restart.
 
 From now on, background apps are supposed to work smoothly and use the standard Android battery optimizations.
 
