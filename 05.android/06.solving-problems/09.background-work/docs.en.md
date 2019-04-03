@@ -16,6 +16,10 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 * [Huawei](#Huawei)
 
+* [Meizu](#Meizu)
+
+* [Nokia](#Nokia)
+
 * [Oneplus](#Oneplus)
 
 * [Android stock devices Pixel/Nexus/Essential](#Google)
@@ -25,13 +29,13 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
-- Tap on the *recent tasks* button and swipe AdGuard down to make options *visible* (as presented on the screenshot):
+- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as presented on the screenshot):
 
-<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirecent.png" width="300">
 
 - Tap on the *lock* icon. This will stop Xiaomi from closing AdGuard automatically. It should look like this:
 
-<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomilocked.png" width="300">
 
 - Go to *"Battery"*
 
@@ -41,7 +45,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Set up the following *"Background settings"*:
 
-<img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirest.png" width="300">
 
 - Go to *"Permissions"*
 
@@ -49,7 +53,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Make sure that autostart function is enabled for AdGuard:
 
-<img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
 
 <a id="Samsung"></a>
 
@@ -57,39 +61,99 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 For Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
 
- - Tap on the "recent tasks" button, tap on the "additional settings" icon. It should look like this:
+ - Tap on the *Recent tasks* button, tap on the *Additional settings* icon. It should look like this:
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsungoptions.png" width="300">
 
- - Tap on "Lock Apps":
+ - Tap on *Lock Apps*:
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLockApps.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglockapps.png" width="300">
  
   - Tap on the lock icon 
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglock.png" width="300">
  
  <a id="Huawei"></a>
  
  ## Huawei
  
- Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
+Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
  
-  - Tap on the recent tasks button:
+  - Tap on the *Recent tasks* button:
   
-  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
+  <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweirecentapps.jpg" width="300">
   
   - Tap on the lock icon:
   
-   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
+   <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweilock.jpg" width="300">
    
-   <a id="Oneplus"></a> 
+Besides, to set up the background work of your app more effectively, you should open device settings and do the following:
+   
+- Go to *Advanced Settings* > then open *Battery Manager* > Set *Power plan* to "Performance";
+- Then choose *Protected apps* in the *Battery Manager* and check if your app is Protected;
+- Go to *Apps* in the main settings and click on AdGuard there > choose *Battery* > enable *Power-intensive prompt* and *Keep running after screen is off*;
+- Then in the *Apps* section open *Settings* (at the bottom) > *Special access* > choose *Ignore battery optimization* > press *Allowed* > *All apps* > find AdGuard on the list and set it to *Allow*
+
+And here are some specific settings for different Huawei devices:
+
+#### Huawei P9 Plus:
+
+Open device settings > *Apps* > *Settings* > *Special access* > choose *Ignore battery optimization* > select *Allow* for your app.
+
+#### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro:
+
+Open device settings > *Battery* > *App launch* > then set your app to *Manage manually* and make sure everything is turned on.
+  
+   
+<a id="Meizu"></a> 
+   
+ ## Meizu
+ 
+Meizu has almost the same approach to the background process limitations as Huawei and Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
+
+- Go to *Advanced Settings* > then open *Battery Manager* > set *Power plan* to "Performance";
+- Then choose *Protected apps* in the *Battery Manager* and check if your app is Protected;
+- Go to *Apps* section and click on AdGuard there > choose *Battery* > enable *Power-intensive prompt* and *Keep running after screen is off*;
+ 
+<a id="Nokia"></a> 
+   
+ ## Nokia
+ 
+Nokia on Android O and P disables any background process after 20 minutes if the screen is off.
+ 
+Here is what you need to do in order to prevent killing the background process of your app:
+
+- Go to device settings > open *Apps* > choose *See all apps*;
+- Then tap on the right top corner menu > choose *Show system*;
+- Find *Power saver* in the app list, select it and tap on *Force stop*. It will remain stopped until the next restart.
+
+From now on, background apps are supposed to work smoothly and use the standard Android battery optimizations.
+
+**There is an alternative solution for background work optimization which is more appropriate for advanced users. You will find the instructions below.**
+
+#### Nokia 1 (Android Go) 
+
+- Uninstall the com.evenwell.emm package via the following adb commands:
+
+`adb shell`
+`pm uninstall --user 0 com.evenwell.emm`
+
+#### Other Nokia models 
+
+- Uninstall the com.evenwell.powersaving.g3 package via the following adb commands:
+
+`adb shell`
+`pm uninstall --user 0 com.evenwell.powersaving.g3`
+
+<a id="Oneplus"></a>    
+   
  ## Oneplus
-Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
+
+Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
  
  - Go to Settings
  
- - Battery > Battery optimisation
+ - Battery > Battery optimization
  
  - Find the app you want to keep awake all the time
  
@@ -97,9 +161,19 @@ Devices with OxygenOS on board are the most problematic, with its OS-sepcific ca
  
  - Tap "Done" to save
  
- - Open recent apps menu and then lock AdGuard application (as showed on this screenshot):
+ - Open recent apps menu (as showed on this screenshot):
+ 
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/onepluslock.png" width="300">
 
-<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
+- Lock AdGuard application:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png" width="300">
+
+> On some OnePlus phones there is also a thing called App Auto-Launch which essentially prevents apps from working in the background. Please disable it for your app.
+
+And here is one more thing to try:
+ 
+ - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
 
 <a id="Google"></a>
 
@@ -109,12 +183,12 @@ Android stock OS normally does not conflict with applications working in the bac
 
  - Go to Settings - Network and Internet
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Nexus%20Network%20&%20Internet.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stocknetwork.png" width="300">
 
  - Tap on "VPN" and choose AdGuard
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusVPN.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stockvpn.png" width="300">
  
  - Set up "Always on VPN" mode
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusAlwaysonVPN.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stockadguard.png" width="300">

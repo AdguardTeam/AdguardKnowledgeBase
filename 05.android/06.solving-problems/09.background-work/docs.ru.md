@@ -16,6 +16,10 @@ taxonomy:
 
 * [Huawei](#Huawei)
 
+* [Meizu](#Meizu)
+
+* [Nokia](#Nokia)
+
 * [Oneplus](#Oneplus)
 
 * [Стоковые устройства Pixel/Nexus/Essential на базе Android](#Google)
@@ -27,11 +31,11 @@ taxonomy:
 
 - Нажмите на *кнопку-меню фоновых приложений* и смахните окно приложения AdGuard вниз, чтобы сделать опции видимыми (как показано на снимке экрана):
 
-<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20Recent%20Tasks.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirecent.png" width="300">
 
 - Нажмите на значок *"замочка"*. Это не позволит системе автоматически закрыть AdGuard.
 
-<img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Xiaomi%20locked%20app.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomilocked.png" width="300">
 
 - Перейдите в раздел *"Батарея и производительность"*
 
@@ -41,7 +45,7 @@ taxonomy:
 
 - Перейдите в режим фоновых настроек и выберите пункт *"Без ограничений"*:
 
-<img src ="https://cloud.githubusercontent.com/assets/8577547/19349402/78d3a9a8-915b-11e6-8c7e-580b3d278433.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirest.png" width="300">
 
 - Перейдите в раздел *"Разрешения"*
 
@@ -49,7 +53,7 @@ taxonomy:
 
 - Убедитесь, что функция автозапуска включена для AdGuard:
 
-<img src="https://cloud.githubusercontent.com/assets/8577547/19349511/07b27d2a-915c-11e6-9759-9703df55e36c.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
 
 <a id="Samsung"></a>
 
@@ -59,15 +63,15 @@ taxonomy:
 
 - Нажмите кнопку вызова фоновых приложений, коснитесь значка дополнительных настроек. Он должен выглядеть так:
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/Samsung%20Options.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsungoptions.png" width="300">
 
  - Нажмите на *"Закрепить приложения"*:
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLockApps.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglockapps.png" width="300">
  
  - Нажмите на значок *"замочка"*
  
- <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/SamsungLock.png" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglock.png" width="300">
  
  <a id="Huawei"></a>
  
@@ -77,14 +81,74 @@ taxonomy:
  
 - Нажмите на кнопку вызова фоновых приложений:
   
-  <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEIRECENTAPPS.jpg" width="300">
+  <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweirecentapps.jpg" width="300">
   
 - Нажмите на значок *"замочка"*:
   
-   <img src="https://raw.githubusercontent.com/TheHasagi/AdguardKnowledgeBase/master/pages/05.android/06.solving-problems/09.background-work/Images/HUAWEILOCK.jpg" width="300">
+   <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/huaweilock.jpg" width="300">
    
-   <a id="Oneplus"></a> 
+ Для более эффективной настройки фоновой работы приложения необходимо открыть настройки устройства и выполнить следующие действия: 
+   
+- Откройте *"Расширенные настройки"* > затем *"Менеджер батареи"* > установите схему *"Управление питанием"* на "Производительность";
+- Выберите *"Защищенные приложения"* в разделе *"Менеджер батареи"* и проверьте, защищено ли ваше приложение;
+- Отправляйтесь в *"Приложения"* в основных настройках и выберите AdGuard > затем *"Батарея"* > активируйте опции *"Сообщать об энергоемкости"* и *"Работа при выключенном экране"*;
+- Затем в разделе *"Приложения"* откройте *"Настройки"* (внизу экрана) > *"Специальный доступ"* > выберите *"Игнорировать оптимизацию батареи"* > нажмите *"Разрешено"* > *"Все приложения"* > найдите AdGuard в списке и выберите *"Разрешить"*.
+
+Ниже вы найдете другие способы настройки фоновой работы приложений для определенных моделей Huawei. 
+
+#### Huawei P9 Plus:
+
+- Откройте настройки устройства > *"Приложения"* > *"Настройки"* > *"Специальный доступ"* > выберите *"Игнорировать оптимизацию батареи"* > нажмите *"Разрешить"* для выбранного приложения.
+
+#### Huawei P20, Huawei Honor 9 Lite и Huawei Mate 9 Pro:
+
+- Откройте настройки устройства > *"Батарея"* > *"Запуск приложений"* > выберите *"Управление вручную"* для вашего приложения.
+  
+  
+<a id="Meizu"></a> 
+   
+ ## Meizu
+ 
+Подход к ограничениям фонового процесса у Meizu практически такой же, как и у двух предыдущих устройств — Huawei и Xiaomi. Чтобы избежать отключения фоновой работы AdGuard и любого другого приложения, настройте следующие параметры:
+
+- Отправляйтесь в *"Расширенные настройки"* > затем откройте *"Менеджер батареи"* > установите схему *"Управление питанием"* на "Производительность";
+- Выберите *"Защищенные приложения"* в разделе *"Менеджер батареи"* и проверьте, защищено ли ваше приложение;
+- Откройте раздел *"Приложения"* и выберите AdGuard > затем *"Батарея"* > активируйте опции *"Сообщать об энергоемкости"* и *"Работа при выключенном экране"*.
+ 
+<a id="Nokia"></a> 
+   
+ ## Nokia
+ 
+Nokia на Android *O* и *P* отключает все фоновые процессы приложений через 20 минут после выключения экрана.
+ 
+Вот что необходимо сделать для предотвращения остановки фоновой работы приложений: 
+
+- Отправляйтесь в настройки устройства > откройте *"Приложения"* > выберите *"Все приложения"*;
+- Затем зайдите в правое верхнее меню > выберите *"Показать системные"*;
+- Найдите приложение *Power saver* в списке приложений, выберите его и нажмите *"Остановить"*. Приложение будет остановлено до следующего перезапуска системы.
+
+Теперь фоновые приложения должны работать без перебоев, используя стандартную оптимизацию батареи в системе Android.
+
+**Существует альтернативный метод оптимизации фоновой работы приложения, однако он подходит, прежде всего, продвинутым пользователям. Вы найдете инструкции ниже.**
+
+#### Nokia 1 (Android Go) 
+
+- Удалите файл `com.evenwell.emm` с помощью следующей команды *"adb"*:
+
+`adb shell`
+`pm uninstall -- user 0 com.evenwell.emm`
+
+#### Другие модели Nokia
+
+- Удалите файл `com.evenwell.powersaving.g3` с помощью следующей команды *"adb"*:
+
+`adb shell`
+`pm uninstall -- user 0 com.evenwell.powersaving.g3`
+   
+<a id="Oneplus"></a> 
+   
  ## Oneplus
+ 
 В OxygenOS встроен внутренний функционал для очистки кэша и оперативной памяти для экономии заряда. Кроме того, OxygenOS может закрыть приложение, если вы его не используете некоторое время. Чтобы исправить это, выполните следующие действия:
  
 - Перейдите в настройки
@@ -99,21 +163,32 @@ taxonomy:
  
 - Нажмите на кнопку вызова фоновых приложений, затем зафиксируйте приложение AdGuard нажав на значок *"замочка"* (как показано на скриншоте):
 
-<img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Oneplus.png?raw=true" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/onepluslock.png" width="300">
+
+- Нажмите на значок замочка:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png" width="300">
+
+> На некоторых устройствах OnePlus есть функция под названием *"Автозапуск"*. Её активация не позволяет приложениям работать в фоновом режиме. Пожалуйста, отключите ее для вашего приложения.
+
+А вот еще один способ активации фоновой работы приложения:
+
+- Откройте настройки устройства > *"Батарея"* > *"Оптимизация батареи"* > откройте список *"Все приложения"* (верхнее меню) > выберите ваше приложение > активируйте функцию *"Не оптимизировать"*.
 
 <a id="Google"></a>
+
 ## Стоковые устройства Pixel/Nexus/Essential на базе Android
 
-Android на заводкой прошивке как правило не конфликтует с фоновыми процессами, но если вы все же столкнулись с проблемой фоновой работы, то необходимо включить режим «Всегда в VPN».
+Android на заводской прошивке как правило не конфликтует с фоновыми процессами, но если вы все же столкнулись с проблемой фоновой работы, то необходимо включить режим «Всегда в VPN».
 
  - Перейдите в раздел Настройки - Сеть и Интернет
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/Nexus%20Network%20&%20Internet.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stocknetwork.png" width="300">
 
  - Откройте режим VPN и выберите AdGuard
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusVPN.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stockvpn.png" width="300">
  
  - Выберите пункт "Постоянная VPN" 
  
- <img src="https://github.com/TheHasagi/AdguardKnowledgeBase/blob/master/pages/05.android/06.solving-problems/09.background-work/Images/NexusAlwaysonVPN.png?raw=true" width="300">
+ <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stockadguard.png" width="300">
