@@ -7,7 +7,7 @@ visible: true
 ---
 
 *   [Введение](#introduction)
-*   [Английский фильтр](#english)
+*   [Базовый фильтр AdGuard](#english)
 *   [Фильтр счетчиков и системы аналитики](#privacy)
 *   [Фильтр виджетов социальных сетей](#social)
 *   [Фильтр раздражителей](#annoyances)
@@ -42,7 +42,7 @@ visible: true
 
 <a id="english"></a>
 
-## Английский фильтр
+## Базовый фильтр AdGuard
 
 Фильтр, позволяющий убрать рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.to). Дорабатывается нами исходя из жалоб и пожеланий пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
