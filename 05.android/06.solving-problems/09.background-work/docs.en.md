@@ -175,7 +175,7 @@ And here is one more thing to try:
  
  - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
  
- - Open device settings > *Batter* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
+ - Open device settings > *Battery* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
 
 <a id="Google"></a>
 
