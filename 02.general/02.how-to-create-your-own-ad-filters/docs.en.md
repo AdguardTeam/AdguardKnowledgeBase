@@ -631,6 +631,9 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 > Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
 > This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
 
+> #### Restrictions
+> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+
 ###### `replace` rules features
 
 * `replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
@@ -805,6 +808,9 @@ We recommend to use this kind of exceptions only if it is not possible to change
 ### Cosmetic css rules
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
+
+> #### Restrictions
+> Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Cosmetic css rules syntax

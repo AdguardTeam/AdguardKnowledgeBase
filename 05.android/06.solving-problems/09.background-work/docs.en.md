@@ -169,11 +169,13 @@ Devices with OxygenOS on board are the most problematic, with its OS-sepcific ca
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png" width="300">
 
-> On some OnePlus phones there is also a thing called App Auto-Launch which essentially prevents apps from working in the background. Please disable it for your app.
+> On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimisation which essentially prevents apps from working in the background. Please disable it for your app.
 
 And here is one more thing to try:
  
  - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
+ 
+ - Open device settings > *Battery* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
 
 <a id="Google"></a>
 

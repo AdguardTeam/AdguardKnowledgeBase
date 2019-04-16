@@ -7,11 +7,11 @@ visible: true
 ---
 
 *   [Introduction](#introduction)
-*   [English filter](#english)
-*   [Spyware filter](#privacy)
+*   [Base filter](#english)
+*   [Tracking Protection filter](#privacy)
 *   [Social media filter](#social)
 *   [Annoyances filter](#annoyances)
-*   [Filter for useful ads](#useful)
+*   [Filter unblocking search ads and self-promotion](#useful)
 *   [Russian filter](#russian)
 *   [German filter](#german)
 *   [French filter](#french)
@@ -42,7 +42,7 @@ You can find a manual of filtering rules creation syntax on [this link](/gene
 
 <a name="english"></a>
 
-## English filter
+## Base filter
 
 Filter that enables removing of the ads from websites with English content. Originally based on the [EasyList](https://easylist.to/) filter. Modified by us according to the complaints from users. This filter is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
@@ -52,7 +52,7 @@ Filter that enables removing of the ads from websites with English content. Ori
 
 <a name="privacy"></a>
 
-## Spyware filter
+## Tracking Protection filter
 
 The most comprehensive list of various online counters and web analytics tools. If you do not want your actions on the Internet be tracked, use this filter.
 
@@ -86,7 +86,7 @@ Blocks irritating elements on webpages, including cookie notices, third-party w
 
 <a name="useful"></a>
 
-## Filter for useful ads
+## Filter unblocking search ads and self-promotions
 
 Filter that unblocks ads that may be useful to users. Learn more about this filter on [this page](https://kb.adguard.com/en/general/search-ads-and-self-promotion).
 
