@@ -1040,7 +1040,7 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 
 На первый взгляд, он в некоторой степени похож на [`:matches-css`](#extended-css-matches-css). Однако, внутри он устроен совсем иначе. `:matches-css` основан на использовании [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle), в то время как `:properties` основан на сканировании стилей страницы и последующем их использовании для нахождения элементов.
 
-Вкратце `:matches-css` — это про вкладку "Computed" в интсрументах разработчика, в то время как `:properties` — про вкладку "Styles":
+Вкратце `:matches-css` — это про вкладку "Computed" в инструментах разработчика, в то время как `:properties` — про вкладку "Styles":
 
 !()[https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png]
 
