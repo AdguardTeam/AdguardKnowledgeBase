@@ -7,11 +7,11 @@ taxonomy:
 
 ## System  requirements
 
-**OS version:** Android 4.0.3 or higher.
+**OS version:** Android 5.0 or higher.
 
-**RAM:** at least 700 MB.
+**RAM:** at least 2 GB.
 
-**Free disk space:** 30 Mbytes.
+**Free disk space:** 120 Mbytes.
 
 ## Installation
 Most Android-based apps are distributed via Google Play Market; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
