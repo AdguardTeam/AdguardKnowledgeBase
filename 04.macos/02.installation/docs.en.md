@@ -7,13 +7,13 @@ taxonomy:
 
 ## System  requirements
 
-**Operating system version:** OS X 10.7 (64 bit) or higher
+**Operating system version:** OS X 10.10 (64 bit) or higher
 
 **RAM:** at least 2 GB
 
 **Browsers:** Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, any other macOS compatible browser
 
-**Free disk space:** 60 Mbytes
+**Free disk space:** 120 Mbytes
 
 ## Installation
 
