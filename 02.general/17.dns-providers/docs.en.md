@@ -469,7 +469,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` Hostname: `ibksturm.synology.me` | <a href="tls://ibksturm.synology.me">Add to AdGuard</a> |
+| DoT, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` Hostname: `ibksturm.synology.me` | <a href="sdns://MHgwM3x8cHJvcHN8fExQKHRsczovL2lia3N0dXJtLnN5bm9sb2d5Lm1lKXx8VkxQKCl8fExQKGlia3N0dXJtLnN5bm9sb2d5Lm1lKXx8DQo">Add to AdGuard</a> |
 | DoH, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNSCRYPT, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `217.162.206.220` | <a href="sdns://AQcAAAAAAAAADzIxNy4xNjIuMjA2LjIyMCAbkeo7E6QrYUfz_2_40sQSRfXIf4wu2U1aexB1dmIC2hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0">Add to AdGuard</a> |
 
