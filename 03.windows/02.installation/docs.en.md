@@ -6,11 +6,11 @@ taxonomy:
 ---
 
 ## System  requirements
-**Operating system:** Microsoft Windows 10, 8.1, 8, 7, Vista, XP SP3.
+**Operating system:** Microsoft Windows 10, 8.1, 8, 7, Vista.
 
 **RAM:** at least 512 MB.
 
-**Free disk space:** 60 Mbytes.
+**Free disk space:** 150 Mbytes.
 
 **Browsers:** Microsoft Edge, Microsoft Internet Explorer (all versions), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox, and other browsers.
 
