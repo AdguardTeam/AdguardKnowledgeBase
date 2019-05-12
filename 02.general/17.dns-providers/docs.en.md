@@ -442,8 +442,8 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT, IPv4 | Provider: `dot.securedns.eu` IP: `146.185.167.43:853 ` Hostname: `dot.securedns.eu` | <a href="tls://securedns.eu">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `dot.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:853 ` Hostname: `dot.securedns.eu` | <a href="tls://securedns.eu">Add to AdGuard</a> |
+| DoT, IPv4 | Provider: `dot.securedns.eu` IP: `146.185.167.43:853 ` Hostname: `dot.securedns.eu` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `dot.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:853 ` Hostname: `dot.securedns.eu` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Add to AdGuard</a> |
 | DoH, IPv4 | Provider: `doh.securedns.eu` IP: `146.185.167.43:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DoH, IPv6 | Provider: `doh.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DNSCRYPT, IPv4 | Provider: `2.dnscrypt-cert.securedns.eu` IP: `146.185.167.43:5353` | <a href="sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMg9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Add to AdGuard</a> |
@@ -457,7 +457,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT, IPv4 | Provider: `dot-de.blahdns.com` IP: `159.69.198.101` and IP: `2a01:4f8:1c1c:6b4b::1` Hostname: `dot-de.blahdns.com` | <a href="tls://ibksturm.synology.me">Add to AdGuard</a> |
+| DoT, IPv4 | Provider: `dot-de.blahdns.com` IP: `159.69.198.101` and IP: `2a01:4f8:1c1c:6b4b::1` Hostname: `dot-de.blahdns.com` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DoH, IPv4 | Provider: `doh-de.blahdns.com` IP: `159.69.198.101`  | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNSCRYPT, IPv4 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443` | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
 
@@ -469,7 +469,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` Hostname: `ibksturm.synology.me` | <a href="sdns://MHgwM3x8cHJvcHN8fExQKHRsczovL2lia3N0dXJtLnN5bm9sb2d5Lm1lKXx8VkxQKCl8fExQKGlia3N0dXJtLnN5bm9sb2d5Lm1lKXx8DQo">Add to AdGuard</a> |
+| DoT, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` Hostname: `ibksturm.synology.me` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Add to AdGuard</a> |
 | DoH, IPv4 | Provider: `ibksturm.synology.me` IP: `217.162.206.220` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNSCRYPT, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `217.162.206.220` | <a href="sdns://AQcAAAAAAAAADzIxNy4xNjIuMjA2LjIyMCAbkeo7E6QrYUfz_2_40sQSRfXIf4wu2U1aexB1dmIC2hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0">Add to AdGuard</a> |
 
@@ -481,8 +481,8 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT & DNS, IPv4 | Provider: `dns.switch.ch` IP: `130.59.31.248` and IP: `130.59.31.251` Hostname: `dns.switch.ch` | <a href="tls://dns.switch.ch">Add to AdGuard</a> |
-| DoT & DNS, IPv6 | Provider: `dns.switch.ch` IP: `2001:620:0:ff::2` and IP: `2001:620:0:ff::3` Hostname `dns.switch.ch` | <a href="tls://dns.switch.ch">Add to AdGuard</a>  |
+| DoT & DNS, IPv4 | Provider: `dns.switch.ch` IP: `130.59.31.248` and IP: `130.59.31.251` Hostname: `dns.switch.ch` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Add to AdGuard</a> |
+| DoT & DNS, IPv6 | Provider: `dns.switch.ch` IP: `2001:620:0:ff::2` and IP: `2001:620:0:ff::3` Hostname `dns.switch.ch` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Add to AdGuard</a>  |
 
 
 <a name="dnsprivacy.org-dns"></a>
@@ -493,25 +493,25 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DoT, IPv4 | Provider: `Surfnet` IP: `145.100.185.15` Hostname: `dnsovertls.sinodun.com` | <a href="tls://dnsovertls.sinodun.com">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `Surfnet` IP: `2001:610:1:40ba:145:100:185:15` Hostname `dnsovertls.sinodun.com` | <a href="tls://dnsovertls.sinodun.com">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `Surfnet` IP: `145.100.185.16` Hostname: `dnsovertls1.sinodun.com` | <a href="tls://dnsovertls1.sinodun.com">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `Surfnet` IP: `2001:610:1:40ba:145:100:185:16` Hostname `dnsovertls1.sinodun.com` | <a href="tls://dnsovertls1.sinodun.com">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `getdnsapi.net` IP: `185.49.141.37` Hostname: `getdnsapi.net` | <a href="tls://getdnsapi.net">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `getdnsapi.net` IP: `2a04:b900:0:100::37` Hostname `getdnsapi.net` | <a href="tls://getdnsapi.net">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `UncensoredDNS` IP: `89.233.43.71 ` Hostname: `unicast.censurfridns.dk` | <a href="tls://unicast.censurfridns.dk">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `UncensoredDNS` IP: `2a01:3a0:53:53::0` Hostname `unicast.censurfridns.dk` | <a href="tls://unicast.censurfridns.dk">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `Fondation RESTENA ` IP: `158.64.1.29` Hostname: `kaitain.restena.lu` | <a href="tls://kaitain.restena.lu">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `Fondation RESTENA ` IP: `2001:a18:1::29` Hostname `kaitain.restena.lu` | <a href="tls://kaitain.restena.lu">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `dkg` IP: `199.58.81.218` Hostname: `dns.cmrg.net` | <a href="tls://dns.cmrg.net">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `dkg` IP: `2001:470:1c:76d::53` Hostname `dns.cmrg.net` | <a href="tls://dns.cmrg.net">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `dns.larsdebruin.net` IP: `51.15.70.167` Hostname: `dns.larsdebruin.net` | <a href="tls://dns.larsdebruin.net">Add to AdGuard</a> |
-| DoT, IPv4 | Provider: `dns-tls.bitwiseshift.net` IP: `81.187.221.24` Hostname: `dns-tls.bitwiseshift.net` | <a href="tls://dns-tls.bitwiseshift.net">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `dns-tls.bitwiseshift.net` IP: `2001:8b0:24:24::24` Hostname `dns-tls.bitwiseshift.net` | <a href="tls://dns-tls.bitwiseshift.net">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `ns1.dnsprivacy.at` IP: `94.130.110.185` Hostname: `ns1.dnsprivacy.at` | <a href="tls://ns1.dnsprivacy.at">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `ns1.dnsprivacy.at` IP: `2a01:4f8:c0c:3c03::2` Hostname `ns1.dnsprivacy.at` | <a href="tls://ns1.dnsprivacy.at">Add to AdGuard</a>  |
-| DoT, IPv4 | Provider: `ns2.dnsprivacy.at` IP: `2a01:4f8:c0c:3bfc::2` Hostname: `ns2.dnsprivacy.at` | <a href="tls://ns2.dnsprivacy.at">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `ns2.dnsprivacy.at` IP: `2a01:4f8:c0c:3bfc::2` Hostname `ns2.dnsprivacy.at` | <a href="tls://ns2.dnsprivacy.at">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `Surfnet` IP: `145.100.185.15` Hostname: `dnsovertls.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAcdGxzOi8vZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `Surfnet` IP: `2001:610:1:40ba:145:100:185:15` Hostname `dnsovertls.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAcdGxzOi8vZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `Surfnet` IP: `145.100.185.16` Hostname: `dnsovertls1.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vZG5zb3ZlcnRsczEuc2lub2R1bi5jb20">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `Surfnet` IP: `2001:610:1:40ba:145:100:185:16` Hostname `dnsovertls1.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vZG5zb3ZlcnRsczEuc2lub2R1bi5jb20">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `getdnsapi.net` IP: `185.49.141.37` Hostname: `getdnsapi.net` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZ2V0ZG5zYXBpLm5ldA">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `getdnsapi.net` IP: `2a04:b900:0:100::37` Hostname `getdnsapi.net` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZ2V0ZG5zYXBpLm5ldA">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `UncensoredDNS` IP: `89.233.43.71 ` Hostname: `unicast.censurfridns.dk` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `UncensoredDNS` IP: `2a01:3a0:53:53::0` Hostname `unicast.censurfridns.dk` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `Fondation RESTENA ` IP: `158.64.1.29` Hostname: `kaitain.restena.lu` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8va2FpdGFpbi5yZXN0ZW5hLmx1">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `Fondation RESTENA ` IP: `2001:a18:1::29` Hostname `kaitain.restena.lu` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8va2FpdGFpbi5yZXN0ZW5hLmx1">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `dkg` IP: `199.58.81.218` Hostname: `dns.cmrg.net` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vZG5zLmNtcmcubmV0">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `dkg` IP: `2001:470:1c:76d::53` Hostname `dns.cmrg.net` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vZG5zLmNtcmcubmV0t">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `dns.larsdebruin.net` IP: `51.15.70.167` Hostname: `dns.larsdebruin.net` | <a href="sdns://AwAAAAAAAAAAAAAZdGxzOi8vZG5zLmxhcnNkZWJydWluLm5ldA">Add to AdGuard</a> |
+| DoT, IPv4 | Provider: `dns-tls.bitwiseshift.net` IP: `81.187.221.24` Hostname: `dns-tls.bitwiseshift.net` | <a href="sdns://AwAAAAAAAAAAAAAedGxzOi8vZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `dns-tls.bitwiseshift.net` IP: `2001:8b0:24:24::24` Hostname `dns-tls.bitwiseshift.net` | <a href="sdns://AwAAAAAAAAAAAAAedGxzOi8vZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `ns1.dnsprivacy.at` IP: `94.130.110.185` Hostname: `ns1.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMxLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `ns1.dnsprivacy.at` IP: `2a01:4f8:c0c:3c03::2` Hostname `ns1.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMxLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `ns2.dnsprivacy.at` IP: `2a01:4f8:c0c:3bfc::2` Hostname: `ns2.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMyLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `ns2.dnsprivacy.at` IP: `2a01:4f8:c0c:3bfc::2` Hostname `ns2.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMyLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a>  |
 | DoT, IPv4 | Provider: `dns.bitgeek.in ` IP: `139.59.51.46` Hostname: `dns.bitgeek.in ` | <a href="tls://dns.bitgeek.in ">Add to AdGuard</a> |
-| DoT, IPv4 | Provider: `dns.neutopia.org` IP: `89.234.186.112` Hostname: `dns.neutopia.org` | <a href="tls://dns.neutopia.org">Add to AdGuard</a> |
-| DoT, IPv6 | Provider: `dns.neutopia.org` IP: `2a00:5884:8209::2` Hostname `dns.neutopia.org` | <a href="tls://dns.neutopia.org">Add to AdGuard</a>  |
+| DoT, IPv4 | Provider: `dns.neutopia.org` IP: `89.234.186.112` Hostname: `dns.neutopia.org` | <a href="sdns://AwAAAAAAAAAAAAAWdGxzOi8vZG5zLm5ldXRvcGlhLm9yZw">Add to AdGuard</a> |
+| DoT, IPv6 | Provider: `dns.neutopia.org` IP: `2a00:5884:8209::2` Hostname `dns.neutopia.org` | <a href="sdns://AwAAAAAAAAAAAAAWdGxzOi8vZG5zLm5ldXRvcGlhLm9yZw">Add to AdGuard</a>  |
