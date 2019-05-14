@@ -8,6 +8,7 @@ taxonomy:
 
 * [How to become beta tester?](#intro)
 * [How to report a bug](#report-a-bug)
+* [How to activate the beta key in the iOS application](#iOS)
 
 There is&nbsp;an&nbsp;AdGuard app for virtually every major platform out there, and we&nbsp;regularly release updates for all of&nbsp;them. This would not be&nbsp;possible without beta testing and, more importantly, beta testers. Want to&nbsp;become one? Here&rsquo;s how you can do&nbsp;it.<!--more-->
 
@@ -36,6 +37,11 @@ The two methods above are highly preferable, but you can also use other, if&nbsp
 * Find&nbsp;us on&nbsp;various social media, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) etc. This is&nbsp;not the most convenient way to&nbsp;discuss technical matters, though.
 
 * Contact our support team by&nbsp;sending an&nbsp;email either from in-app support tab or&nbsp;directly&nbsp;to [support@adguard.com](mailto:support@adguard.com);
+
+<a name="iOS"></a>
+### How to activate the beta key in the iOS application:
+
+If you already have received a beta key and it is displayed in the list in your account, just go to the application and open license section (Get Premium), here you need to enter your credentials from your AdGuard account. Premium features will be available automatically.
 
 ### What else?
 
