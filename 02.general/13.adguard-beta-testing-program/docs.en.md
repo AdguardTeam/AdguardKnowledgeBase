@@ -41,7 +41,7 @@ The two methods above are highly preferable, but you can also use other, if&nbsp
 <a name="iOS"></a>
 ### How to activate the beta key in the iOS application:
 
-If you already have received a beta key and it is displayed in the list in your account, just go to the application and open license section (Get Premium), here you need to enter your credentials from your AdGuard account. Premium features will be available automatically.
+If you already have received a beta key and it is displayed in the list in your account on adguard.com, just go to the application and open the license section (Get Premium). Here you need to enter your credentials from your AdGuard account. After that, Premium features will become available automatically.
 
 ### What else?
 
