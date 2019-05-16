@@ -225,8 +225,8 @@ OpenDNS серверы с функцией блокировки контента
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `8.8.8.8` and `8.8.4.4`           | <a href="sdns://AAAAAAAAAAAABzguOC44Ljg">Добавить в AdGuard</a> |
 | DNS, IPv6      | `2001:4860:4860::8888` and `2001:4860:4860::8844`            | <a href="sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0">Добавить в AdGuard</a> |
-| DNS-over-HTTPS | `https://dns.google.com/resolve?` | <a href="sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQ5kbnMuZ29vZ2xlLmNvbQ0vZXhwZXJpbWVudGFs">Добавить в AdGuard</a> |
-| DNS-over-TLS | `tls://8.8.8.8` | <a href="sdns://AwAAAAAAAAAAAAANdGxzOi8vOC44LjguOA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://dns.google.com/experimental` | <a href="sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQ5kbnMuZ29vZ2xlLmNvbQ0vZXhwZXJpbWVudGFs">Добавить в AdGuard</a> |
+| DNS-over-TLS | `tls://dns.google` | <a href="sdns://AwAAAAAAAAAAAAANdGxzOi8vOC44LjguOA">Добавить в AdGuard</a> |
 
 <a name="cloudflare-dns"></a>
 
@@ -255,7 +255,7 @@ OpenDNS серверы с функцией блокировки контента
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `9.9.9.9` and `149.112.112.112`                                          | <a href="sdns://AAAAAAAAAAAABzkuOS45Ljk">Добавить в AdGuard</a> |
-| DNS-over-TLS     | `tls://9.9.9.9`                                          | <a href="sdns://AwAAAAAAAAAAAAANdGxzOi8vOS45LjkuOQ">Добавить в AdGuard</a> |
+| DNS-over-TLS     | `tls://dns.quad9.net`                                          | <a href="sdns://AwAAAAAAAAAAAAANdGxzOi8vOS45LjkuOQ">Добавить в AdGuard</a> |
 
 #### Зашифрованный DNSSec/без логгирования/фильтр 
 
