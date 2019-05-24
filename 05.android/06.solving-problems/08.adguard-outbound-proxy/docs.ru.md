@@ -10,6 +10,7 @@ visible: true
 * [Как использовать AdGuard вместе с PIA (Private Internet Access)](#pia)
 * [Как использовать AdGuard вместе с TorGuard](#torguard)
 * [Как использовать AdGuard вместе с NordVPN](#nordvpn)
+* [Как использовать AdGuard вместе с Shadowsocks](#shadowsocks)
 * [Ограничения](#limitations)
 
 Эта статья рассказывает, как настроить работу некоторых наиболее популярных прокси параллельно с AdGuard.
