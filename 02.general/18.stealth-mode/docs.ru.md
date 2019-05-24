@@ -3,6 +3,7 @@ title: Антитрекинг
 taxonomy:
     category:
         - docs
+visible: true
 ---
 
 * [Общие настройки](#general)
