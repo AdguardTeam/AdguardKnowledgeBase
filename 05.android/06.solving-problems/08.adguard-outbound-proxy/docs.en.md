@@ -10,6 +10,7 @@ visible: true
 * [How to use AdGuard with PIA (Private Internet Access)](#pia)
 * [How to use AdGuard with TorGuard](#torguard)
 * [How to use AdGuard with NordVPN](#nordvpn)
+* [How to use AdGuard with Shadowsocks](#shadowsocks)
 * [Limitations](#limitations)
 
 This article explains how to set up some of the most popular proxys to work with AdGuard.
