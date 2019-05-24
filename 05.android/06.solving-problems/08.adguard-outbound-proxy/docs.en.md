@@ -101,7 +101,25 @@ Proxy port | *1080*
 4. Set this proxy as a default one by toggling the switch, then click *Save*.
 
 5. Enable AdGuard protection.
+<a name=“shadowsocks”></a>
 
+### How to use AdGuard with Shadowsocks
+
+*here we presume that you are already have configured a Shadowsocks server and client on your device*
+
+**NOTE: You should remove Shadowsocks application from filtering before set up process (AdGuard - Apps management - Shadowsocks - Disable protection) to avoid infinite loops and drops**
+
+1. Open AdGuard and go to  **Settings - Proxy settings**.
+
+2. Tap on the **Add proxy server** and fill the fields:
+
+Field      |  Value
+-------    | ---------
+Proxy type | *SOCKS5*
+Proxy host | *127.0.0.1*
+Proxy port | *1080*
+
+3. Tap on **Save and select**
 <a name="limitations"></a>
 ### Limitations
 
