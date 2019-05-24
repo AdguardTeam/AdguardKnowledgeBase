@@ -23,7 +23,7 @@ To learn more about Browsing Security, read the [dedicated article](http://kb.ad
 
 The Stealth Mode module protects you and your personal info from being tracked by online statistics gathering resources.
 
-To learn more about Stealth Mode, read the [dedicated article](http://kb.adguard.com/en/windows/features/stealth-mode) of our Knowledgebase.
+To learn more about Stealth Mode, read the [dedicated article](https://kb.adguard.com/en/general/stealth-mode).
 
 ## Parental Control
 

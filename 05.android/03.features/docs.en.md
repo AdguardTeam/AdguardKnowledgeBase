@@ -37,7 +37,7 @@ The Browsing Security module protects smartphone and tablet users from visiting 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/stealth_mode_enable_1_en.jpg" width="350">
 
-Many websites gather information about their visitors, such as their IP addresses, information about browser and operating system, screen resolution, and even what page the user was redirected from. AdGuard offers a unique module called Stealth Mode that will protect your privacy. Find in-depth review of Stealth Mode in a [dedicated article](https://kb.adguard.com/en/android/features/stealth-mode).
+Many websites gather information about their visitors, such as their IP addresses, information about browser and operating system, screen resolution, and even what page the user was redirected from. AdGuard offers a unique module called Stealth Mode that will protect your privacy. Find in-depth review of Stealth Mode in a [dedicated article](https://kb.adguard.com/en/general/stealth-mode).
 
 Aside from the Stealth Mode, AdGuard is armed with the Tracking Protection filter. It protects your personal data from automatic data gathering systems. Turn on this filter, and site owners will have a hard time tracking your web activity.
 
