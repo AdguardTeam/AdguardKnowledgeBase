@@ -31,8 +31,8 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Captnemo DNS](#captnemo-dns)
 * [fvz DNS](#fvz-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
-* [blahdns.com](#blahdns.ger-dns)
 * [securedns.eu](#securedns.eu-dns)
+* [blahdns.com](#blahdns.ger-dns)
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
@@ -436,7 +436,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 <a name="securedns.eu-dns"></a>
 
-### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS and DNSCryp Provider
+### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider
 
  DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider securedns.eu
 
