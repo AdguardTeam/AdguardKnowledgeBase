@@ -3,6 +3,7 @@ title: 'Stealth Mode'
 taxonomy:
     category:
         - docs
+visible: true
 ---
 
 * [General](#general)
@@ -19,12 +20,6 @@ Below we will list and describe the main features and options you can manage in 
 <a name="general"></a>
 
 ### General
-
-![](win10-05.png)
-
-**Enable Stealth Mode**
-
-Turn the Stealth Mode module on or off.
 
 **Hide your search queries**
 
@@ -45,8 +40,6 @@ If you enable this option, AdGuard will strip tracking parameters like utm_* and
 <a name="methods"></a>
 
 ### Tracking methods
-
-![](win10_stealth.png)
 
 **Self-destructing third-party cookies**
 
@@ -73,8 +66,6 @@ Authorization header's value is simply a base64 encoded version of the credentia
 
 ### Browser API
 
-![](win10_stealth_2.png)
-
 **Block WebRTC**
 
 WebRTC (Real Time Communications) is a technology that allows streaming of data directly between browsers and apps. It can let others know your real IP address even if you use a proxy or VPN.
@@ -100,7 +91,6 @@ Some websites and web services still use old technology of supporting Java plugi
 
 ### Miscellaneous
 
-![](win10_stealth_3.png)
 
 **Hide Referer from third-parties**
 

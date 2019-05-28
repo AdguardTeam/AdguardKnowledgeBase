@@ -10,6 +10,7 @@ visible: true
 * [How to use AdGuard with PIA (Private Internet Access)](#pia)
 * [How to use AdGuard with TorGuard](#torguard)
 * [How to use AdGuard with NordVPN](#nordvpn)
+* [How to use AdGuard with Shadowsocks](#shadowsocks)
 * [Limitations](#limitations)
 
 This article explains how to set up some of the most popular proxys to work with AdGuard.
@@ -102,6 +103,24 @@ Proxy port | *1080*
 
 5. Enable AdGuard protection.
 
+<a id="shadowsocks"></a>
+### How to use AdGuard with Shadowsocks
+
+*here we presume that you have already configured a Shadowsocks server and a client on your device*
+
+**NOTE: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable protection) to avoid infinite loops and drops**
+
+1. Open AdGuard and go to  **Settings - Proxy settings**.
+
+2. Tap on the **Add proxy server** and fill the fields:
+
+Field      |  Value
+-------    | ---------
+Proxy type | *SOCKS5*
+Proxy host | *127.0.0.1*
+Proxy port | *1080*
+
+3. Tap on **Save and select**
 <a name="limitations"></a>
 ### Limitations
 
