@@ -60,7 +60,7 @@ When the browser addresses a page, the server assigns it an ETag, which the brow
 
 **Block third-party Authorization header**
 
-Authorization header's value is simply a base64 encoded version of the credentials (<username>:<password>), which are sent to the server for authentication purposes. In this case, data would be readily available to anyone, who could intercept the HTTP request. Enabling this option will remove Authorization headers for all third-party requests. Note that this can result in the need to re-enter your credentials on the web-forms.
+"Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
     
 <a name="browser-api"></a>
 
