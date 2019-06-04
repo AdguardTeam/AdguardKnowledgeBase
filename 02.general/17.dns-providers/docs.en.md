@@ -438,11 +438,11 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 ### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider
 
-[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider securedns.eu
+[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS| Provider: `dot.securedns.eu` IP: `146.185.167.43:853 ` and IPv6: `[2a03:b0c0:0:1010::e9a:3001]:853 ` Hostname: `dot.securedns.eu` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Add to AdGuard</a> |
+| DNS-over-TLS| Provider: `dot.securedns.eu` IP: `146.185.167.43:853 ` and IPv6: `[2a03:b0c0:0:1010::e9a:3001]:853 ` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Provider: `doh.securedns.eu` IP: `146.185.167.43:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv6 | Provider: `doh.securedns.eu` IPv6: `[2a03:b0c0:0:1010::e9a:3001]:443` | <a href="sdns://AgcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0AEGRvaC5zZWN1cmVkbnMuZXUKL2Rucy1xdWVyeQ ">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.securedns.eu` IP: `146.185.167.43:5353` | <a href="sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMg9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Add to AdGuard</a> |
@@ -456,7 +456,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Provider: `dot-de.blahdns.com`  IP: `159.69.198.101` Hostname: `dot-de.blahdns.com` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
+| DNS-over-TLS, IPv4 | Provider: `dot-de.blahdns.com`  IP: `159.69.198.101` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Provider: `doh-de.blahdns.com` IP: `159.69.198.101`  | <a href="sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443` | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
 
@@ -468,7 +468,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Provider: `ibksturm.synology.me` IP: `178.82.102.190` Hostname: `ibksturm.synology.me` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Add to AdGuard</a> |
+| DNS-over-TLS, IPv4 | Provider: `ibksturm.synology.me` IP: `178.82.102.190` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Provider: `ibksturm.synology.me` IP: `178.82.102.190` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `178.82.102.190` | <a href="sdns://AQcAAAAAAAAADjE3OC44Mi4xMDIuMTkwIBuR6jsTpCthR_P_b_jSxBJF9ch_jC7ZTVp7EHV2YgLaGDIuZG5zY3J5cHQtY2VydC5pYmtzdHVybQ">Add to AdGuard</a> |
 
@@ -482,7 +482,7 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | Provider: `dns.switch.ch` IP: `130.59.31.248` | <a href="sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg">Add to AdGuard</a> |
 | DNS, IPv6 | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`| <a href="sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ">Add to AdGuard</a>  |
-| DNS-over-TLS | Provider: `dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2`  Hostname `dns.switch.ch` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Add to AdGuard</a>  |
+| DNS-over-TLS | Provider: `dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Add to AdGuard</a>  |
 
 
 <a name="dnsprivacy.org-dns"></a>
