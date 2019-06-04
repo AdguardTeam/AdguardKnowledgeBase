@@ -438,7 +438,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS и DNSCrypt сервер
 
-[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Имя провайдера securedns.eu
+[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt от securedns.eu
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -476,7 +476,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### DNS-over-TLS Servers от switch.ch
 
-[DNS-over-TLS Имя провайдера by switch.ch](https://www.switch.ch/security/info/public-dns/) Швейцарский DNS-over-TLS Server.
+[DNS-over-TLS от switch.ch](https://www.switch.ch/security/info/public-dns/) Швейцарский DNS-over-TLS Server.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -489,7 +489,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### DNS-over-TLS Servers by dnsprivacy.org
 
-[DNS-over-TLS dnsprivacy.org](https://dnsprivacy.org/) Список публичных DNS-over-TLS Testing серверов.
+[DNS-over-TLS dnsprivacy.org](https://dnsprivacy.org/) Список тестовых DNS-over-TLS серверов.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
