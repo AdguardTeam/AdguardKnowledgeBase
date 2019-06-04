@@ -31,6 +31,11 @@ visible: true
 * [Captnemo DNS](#captnemo-dns)
 * [fvz DNS](#fvz-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
+* [securedns.eu](#securedns.eu-dns)
+* [blahdns.com](#blahdns.ger-dns)
+* [ibksturm](#ibksturm-dns)
+* [switch.ch](#switch.ch-dns)
+* [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 
 <a name="adguard-dns"></a>
 
@@ -428,3 +433,75 @@ OpenDNS серверы с функцией блокировки контента
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">Добавить в AdGuard</a> |
+
+<a name="securedns.eu-dns"></a>
+
+### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS и DNSCrypt сервер
+
+[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Имя провайдера securedns.eu
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS| Имя провайдера: `dot.securedns.eu` IP: `146.185.167.43:853 ` and IPv6: `[2a03:b0c0:0:1010::e9a:3001]:853 `И мя провайдера: `dot.securedns.eu` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Имя провайдера: `doh.securedns.eu` IP: `146.185.167.43:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv6 | Имя провайдера: `doh.securedns.eu` IPv6: `[2a03:b0c0:0:1010::e9a:3001]:443` | <a href="sdns://AgcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0AEGRvaC5zZWN1cmVkbnMuZXUKL2Rucy1xdWVyeQ ">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.securedns.eu` IP: `146.185.167.43:5353` | <a href="sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMg9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Добавить в AdGuard</a> |
+| DNSCrypt, IPv6 | Имя провайдера: `2.dnscrypt-cert.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:5353 ` | <a href="sdns://AQcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0g9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Добавить в AdGuard</a> |
+
+<a name="blahdns.ger-dns"></a>
+
+### blahdns (germany)
+
+[blahdns (germany)](https://blahdns.com/) Сервер для блокировки рекламы с поддержкой DNS-over-TLS, DNS-over-HTTPS и DNSCrypt
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS, IPv4 | Имя провайдера: `dot-de.blahdns.com`  IP: `159.69.198.101` Имя провайдера: `dot-de.blahdns.com` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Имя провайдера: `doh-de.blahdns.com` IP: `159.69.198.101`  | <a href="sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443` | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Добавить в AdGuard</a> |
+
+<a name="ibksturm-dns"></a>
+
+### ibksturm
+
+[ibksturm](https:/ibksturm.synology.me/) Публичный DNS сервер (OPENNIC, DNSSEC) с поддержкой DNS-over-TLS, DNS-over-HTTPS и DNSCrypt от ibksturm.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS, IPv4 | Имя провайдера: `ibksturm.synology.me` IP: `178.82.102.190` Имя провайдера: `ibksturm.synology.me` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Имя провайдера: `ibksturm.synology.me` IP: `178.82.102.190` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.ibksturm` IP: `178.82.102.190` | <a href="sdns://AQcAAAAAAAAADjE3OC44Mi4xMDIuMTkwIBuR6jsTpCthR_P_b_jSxBJF9ch_jC7ZTVp7EHV2YgLaGDIuZG5zY3J5cHQtY2VydC5pYmtzdHVybQ">Добавить в AdGuard</a> |
+
+<a name="switch.ch-dns"></a>
+
+### DNS-over-TLS Servers от switch.ch
+
+[DNS-over-TLS Имя провайдера by switch.ch](https://www.switch.ch/security/info/public-dns/) Швейцарский DNS-over-TLS Server.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | Имя провайдера: `dns.switch.ch` IP: `130.59.31.248` | <a href="sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg">Добавить в AdGuard</a> |
+| DNS, IPv6 | Имя провайдера: `dns.switch.ch` IPv6: `2001:620:0:ff::2`| <a href="sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2`  Имя провайдера `dns.switch.ch` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Добавить в AdGuard</a>  |
+
+
+<a name="dnsprivacy.org-dns"></a>
+
+### DNS-over-TLS Servers by dnsprivacy.org
+
+[DNS-over-TLS dnsprivacy.org](https://dnsprivacy.org/) Список публичных DNS-over-TLS Testing серверов.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS | Имя провайдера: `Surfnet` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15` Имя провайдера `dnsovertls.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAcdGxzOi8vZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `Surfnet` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` Имя провайдера `dnsovertls1.sinodun.com` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vZG5zb3ZlcnRsczEuc2lub2R1bi5jb20">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37` Имя провайдера `getdnsapi.net` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZ2V0ZG5zYXBpLm5ldA">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `UncensoredDNS` IP: `89.233.43.71 ` and IPv6: `2a01:3a0:53:53::0` Имя провайдера `unicast.censurfridns.dk` | <a href="sdns://AwAAAAAAAAAAAAAddGxzOi8vdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs">Добавить в AdGuard</a>  |
+| DNS-over-TLS| Имя провайдера: `Fondation RESTENA` IP: `158.64.1.29` and IPv6: `2001:a18:1::29` Имя провайдера `kaitain.restena.lu` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8va2FpdGFpbi5yZXN0ZW5hLmx1">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `dkg` IP: `199.58.81.218`and IPv6: `2001:470:1c:76d::53` Имя провайдера `dns.cmrg.net` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vZG5zLmNtcmcubmV0t">Добавить в AdGuard</a>  |
+| DNS-over-TLS, IPv4 | Имя провайдера: `dns.larsdebruin.net` IP: `51.15.70.167` Имя провайдера: `dns.larsdebruin.net` | <a href="sdns://AwAAAAAAAAAAAAAZdGxzOi8vZG5zLmxhcnNkZWJydWluLm5ldA">Добавить в AdGuard</a> |
+| DNS-over-TLS | Имя провайдера: `dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24` Имя провайдера `dns-tls.bitwiseshift.net` | <a href="sdns://AwAAAAAAAAAAAAAedGxzOi8vZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2` Имя провайдера `ns1.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMxLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2` Имя провайдера `ns2.dnsprivacy.at` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMyLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS, IPv4 | Имя провайдера: `dns.bitgeek.in ` IP: `139.59.51.46` Имя провайдера: `dns.bitgeek.in ` | <a href="sdns://AwAAAAAAAAAAAAAUdGxzOi8vZG5zLmJpdGdlZWsuaW4">Добавить в AdGuard</a> |
+| DNS-over-TLS | Имя провайдера: `dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2` Имя провайдера `dns.neutopia.org` | <a href="sdns://AwAAAAAAAAAAAAAWdGxzOi8vZG5zLm5ldXRvcGlhLm9yZw">Добавить в AdGuard</a>  |
