@@ -54,7 +54,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 - Make sure that autostart function is enabled for AdGuard:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
-test
+
 <a id="Samsung"></a>
 
 ## Samsung
