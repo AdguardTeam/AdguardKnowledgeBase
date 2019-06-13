@@ -30,7 +30,7 @@ Below are listed all issues known to us and ETAs for the fixes.
 
 #### Inspecting the original certificate
 
-The most important drawback of the HTTPS filtering mechanism is that it hides from the real certificate that the website uses. You cannot simply check what was the original certificate and can only see the one issued by AdGuard.
+The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate that the website uses. You cannot simply check what was the original certificate, and can only see the one issued by AdGuard.
 
 **Our plans:**
 
