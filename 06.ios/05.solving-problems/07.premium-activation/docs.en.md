@@ -3,9 +3,8 @@ title: 'How to activate Premium features?'
 taxonomy:
     category:
         - docs
-visible: true        
----
 
+---
 
 
 There are two options to activate premium features on AdGuard for iOS app:
