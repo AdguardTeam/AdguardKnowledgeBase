@@ -6,7 +6,6 @@ taxonomy:
 
 ---
 
-
 There are two options to activate premium features on AdGuard for iOS app:
 
 1) Purchase the subscription. Just tap on the "Get Premium" plaque anywhere in the app and you'll be prompted to activate a monthly subscription. All you need to do is enter your Apple ID password and confirm the purchase.
