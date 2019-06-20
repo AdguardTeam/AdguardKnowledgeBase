@@ -15,7 +15,7 @@ Examples:
 2. @@||example.org^ - unblock access to the example.org domain and all it's subdomains
 3. 0.0.0.0 example.org - AdGuard will now return 0.0.0.0 address for the example.org domain (but not it's subdomains)
 4. ! Here goes a comment - just a comment
-5. # Also a comment - just a comment
+5. " # " Also a comment - just a comment
 6. /REGEX/ - block access to the domains matching the specified regular expression
 
 Use this syntax to create or import rules to DNS filter. If you have any questions, feel free to post them on our [forum](https://forum.adguard.com/index.php?forums/69/).
