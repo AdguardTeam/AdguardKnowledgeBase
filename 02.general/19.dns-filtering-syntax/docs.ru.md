@@ -7,7 +7,17 @@ visible: true
 ---
 
 
-AdGuard для Android и AdGuard Home предоставляют функцию фильтрации DNS трафика. Чтобы узнать больше о DNS-фильтрации, перейдите в [эту статью](https://kb.adguard.com/ru/general/dns-filtering-android) Базы знаний. В сравнении с [традиционной](https://kb.adguard.com/ru/general/how-ad-blocking-works) блокировкой рекламы, DNS-фильтрация является более "грубым" методом и не даёт таких широких возможностей настройки. Она не поддерживает сложный [синтаксис](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), используемый нами в обычных фильтрах, но зато поддерживает упрощённый синтаксис, позволяющий блокировать конкретные домены.
+[AdGuard для Android](https://kb.adguard.com/ru/android) и [AdGuard Home](https://kb.adguard.com/ru/home) предоставляют функцию фильтрации DNS трафика. Чтобы узнать больше о DNS-фильтрации, перейдите в [эту статью](https://kb.adguard.com/ru/general/dns-filtering-android) Базы знаний. В сравнении с [традиционной](https://kb.adguard.com/ru/general/how-ad-blocking-works) блокировкой рекламы, DNS-фильтрация является более "грубым" методом и не даёт таких широких возможностей настройки. Она не поддерживает сложный [синтаксис](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), используемый нами в обычных фильтрах, но зато поддерживает упрощённый синтаксис, позволяющий блокировать конкретные домены.
+
+DNS фильтрация поддерживает два типа правил:
+
+* Основноые правила фильтрации, такие как [Базовые правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), но с поддержкой ограниченного набора модификаторов:
+
+    * [`$important`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#important-modifier)
+    * [`$match-case`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#match-case-modifier)
+    * Правила с другими модификаторами будут проигнорированы
+
+* "Hosts" правила, синтаксис которых является базовым
 
 Примеры:
 

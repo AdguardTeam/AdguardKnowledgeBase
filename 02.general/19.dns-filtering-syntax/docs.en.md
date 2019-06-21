@@ -7,7 +7,17 @@ visible: true
 ---
 
 
-AdGuard for Android and Adguard Home provides DNS ad blocking feature. To learn more about the principle of DNS filtering, read [this KB article](https://kb.adguard.com/en/general/dns-filtering-android). Compared to the [traditional ad blocking](https://kb.adguard.com/en/general/how-ad-blocking-works), DNS filtering is more "crude" and allows less customization. It doesn't support the complex [syntax](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) we use in our filters, but it does support simplified syntax that allows you to block certain domains.
+[AdGuard for Android](https://kb.adguard.com/en/android) and [Adguard Home](https://kb.adguard.com/ru/home) provides DNS ad blocking feature. To learn more about the principle of DNS filtering, read [this KB article](https://kb.adguard.com/en/general/dns-filtering-android). Compared to the [traditional ad blocking](https://kb.adguard.com/en/general/how-ad-blocking-works), DNS filtering is more "crude" and allows less customization. It doesn't support the complex [syntax](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) we use in our filters, but it does support simplified syntax that allows you to block certain domains.
+
+DNS filtering supports two types of rules:
+
+* Basic filtering rules, which is the same as [AdGuard's basic rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules), but with a limited set of modifiers supported:
+
+    * [`$important`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#important-modifier)
+    * [`$match-case`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#match-case-modifier)
+    * Rules with other modifiers will be ignored
+    
+* "Hosts" rules, which syntax is basic
 
 Examples:
 
