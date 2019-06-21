@@ -11,7 +11,7 @@ visible: true
 
 DNS фильтрация поддерживает два типа правил:
 
-* Основноые правила фильтрации, такие как [Базовые правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), но с поддержкой ограниченного набора модификаторов:
+* Основные правила фильтрации, такие как [Базовые правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), но с поддержкой ограниченного набора модификаторов:
 
     * [`$important`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#important-modifier)
     * [`$match-case`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#match-case-modifier)
