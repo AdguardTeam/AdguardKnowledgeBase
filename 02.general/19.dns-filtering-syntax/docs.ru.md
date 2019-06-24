@@ -17,7 +17,7 @@ DNS фильтрация поддерживает два типа правил:
     * [`$match-case`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#match-case-modifier)
     * Правила с другими модификаторами будут проигнорированы
 
-* "Hosts" правила, синтаксис которых является базовым
+* "Hosts" правила, синтаксис которых является базовым как и /etc/hosts
 
 Примеры:
 
