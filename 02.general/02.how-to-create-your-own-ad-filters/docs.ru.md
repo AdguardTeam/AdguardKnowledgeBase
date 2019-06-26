@@ -1042,7 +1042,7 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 
 Вкратце `:matches-css` — это про вкладку "Computed" в инструментах разработчика, в то время как `:properties` — про вкладку "Styles":
 
-!()[https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png]
+![img](https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png)
 
 Ещё одно важное различие заключается в том, что не существует никаких особых классов "-до/-после". Соответствие по `:properties` уберёт как `::before`, так и `::after` из селекторов, найденных в стилях.
 

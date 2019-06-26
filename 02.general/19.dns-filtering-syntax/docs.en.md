@@ -17,7 +17,7 @@ DNS filtering supports two types of rules:
     * [`$match-case`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#match-case-modifier)
     * Rules with other modifiers will be ignored
 
-* "Hosts" rules, which syntax is basic as /etc/hosts
+* “Hosts” rules, which is basically the same as `/etc/hosts`
 
 Examples:
 
