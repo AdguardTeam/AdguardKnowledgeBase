@@ -28,7 +28,7 @@ Find the round button in the upper left corner of the tab. It should be red. If 
 Tick the "Preserve Log" checkbox to enable logging.
 To clear unnecessary data, click on the crossed out circle icon ("Clear" button next to the red recording button).
 Reproduce the error.
-Save the network log into a HAR file by right-clicking on any entry in the log and selecting "Save all as HAR with content
+Save the network log into a HAR file by right-clicking on any entry in the log and selecting "Save all as HAR with content".
 
 <a id="Firefox"></a>
 ## Firefox
@@ -46,10 +46,10 @@ Press the F12 key to open the developer tools, and go to the "Network" tab.
 Reproduce the error.
 Save data in HAR format (CTRL + S).
 
-In Internet Explorer you need to use [HttpWatch](https://www.httpwatch.com/) application.
+In Internet Explorer you need to use the [HttpWatch](https://www.httpwatch.com/) application.
 
 Download and install HttpWatch.
-Enable recording in HttpWatch before reproducing an error.
+Enable recording in HttpWatch before reproducing the error.
 Reproduce the issue.
 Stop HttpWatch recording after the error is reproduced.
 Save the data in HAR format.
