@@ -33,24 +33,25 @@ Save the network log into a HAR file by right-clicking on any entry in the log a
 <a id="Firefox"></a>
 ## Firefox
 
-Launch the Firefox Development Tools in the "Network" mode (open the menu in the upper right corner and select "Development - Network" or press Ctrl + Shift + Q on the keyboard).
+Launch the Firefox Developer Tools in the "Network" mode (open the menu in the upper right corner and select "Development - Network" or press Ctrl + Shift + Q on the keyboard).
 Reproduce the error.
-Right-click on the entry and select Save All As HAR.Export the data to a HAR file.
+Right-click on any entry and select "Save All As HAR" to export data into a HAR file.
 
 <a id="Explorer"></a>
 ## Edge/Internet Explorer
 
-In Edge, you can create HAR files without additional tools. For detailed instructions, see the [Microsoft website](https://docs.microsoft.com/microsoft-edge/devtools-guide/network).
+In Edge you can create HAR files without additional tools. For detailed instructions, see the [Microsoft website](https://docs.microsoft.com/microsoft-edge/devtools-guide/network).
 
 Press the F12 key to open the developer tools, and go to the "Network" tab.
 Reproduce the error.
 Save data in HAR format (CTRL + S).
 
-In Internet Explorer you need to use application [HttpWatch](https://www.httpwatch.com/)
+In Internet Explorer you need to use [HttpWatch](https://www.httpwatch.com/) application.
 
 Download and install HttpWatch.
 Enable recording in HttpWatch before reproducing an error.
-Stop recording HttpWatch when the error is displayed.
+Reproduce the issue.
+Stop HttpWatch recording after the error is reproduced.
 Save the data in HAR format.
 
 
