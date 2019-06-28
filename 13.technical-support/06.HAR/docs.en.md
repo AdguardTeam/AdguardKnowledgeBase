@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-HAR is the short form for HTTP ARchive format, which tracks all the logging of web browser's interaction with a site.
+HAR is short for "HTTP Archive", which is a file format for logging of a web browser's interaction with a site.
 
 
 * [Google Chrome](#Chrome)
@@ -25,10 +25,10 @@ Select “Developer Tools” in the menu:
 
 Click the Network tab.
 Find the round button in the upper left corner of the tab. It should be red. If it is gray, click it to start recording.
-Save the Save Log box (Save Log).
-To remove unnecessary data in the header, click on the crossed out circle icon.
+Save the Save Log box (Preserve Log).
+To remove unnecessary data in the header, click on the crossed out circle icon( Clear button). 
 Reproduce the error.
-Save as HAR table with contents (Save as HAR file with data)
+Save as HAR table with contents click on RMB (Save as HAR file with data)
 
 <a id="Firefox"></a>
 ## Firefox
@@ -46,7 +46,7 @@ Press the F12 key to open the developer tools, and go to the "Network" tab.
 Reproduce the error.
 Save data in HAR format (CTRL + S).
 
-In Internet Explorer you need to use the lighting: HttpWatch.
+In Internet Explorer you need to use application [HttpWatch](https://www.httpwatch.com/)
 
 Download and install HttpWatch.
 Enable recording in HttpWatch before reproducing an error.
