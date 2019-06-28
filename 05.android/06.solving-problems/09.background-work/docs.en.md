@@ -92,7 +92,7 @@ Besides, to set up the background work of your app more effectively, you should 
 - Go to *Advanced Settings* > then open *Battery Manager* > Set *Power plan* to "Performance";
 - Then choose *Protected apps* in the *Battery Manager* and check if your app is Protected;
 - Go to *Apps* in the main settings and click on AdGuard there > choose *Battery* > enable *Power-intensive prompt* and *Keep running after screen is off*;
-- Then in the *Apps* section open *Settings* (at the bottom) > *Special access* > choose *Ignore battery optimization* > press *Allowed* > *All apps* > find AdGuard on the list and set it to *Allow*
+- Then in the *Apps* section open *Settings* (at the bottom) > *Special access* > choose *Ignore battery optimization* > press *Allowed* > *All apps* > find AdGuard on the list and set it to *Deny*
 
 And here are some specific settings for different Huawei devices:
 
