@@ -25,7 +25,7 @@ Select “Developer Tools” in the menu:
 
 Click the Network tab.
 Find the round button in the upper left corner of the tab. It should be red. If it is gray, click it to start recording.
-Save the Save Log box (Preserve Log).
+Set the Save Log box (Preserve Log).
 To remove unnecessary data in the header, click on the crossed out circle icon( Clear button). 
 Reproduce the error.
 Save as HAR table with contents click on RMB (Save as HAR file with data)
