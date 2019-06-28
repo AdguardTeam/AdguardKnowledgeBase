@@ -17,18 +17,18 @@ HAR is short for "HTTP Archive", which is a file format for logging of a web bro
 <a id="Chrome"></a>
 ## Google Chrome
 
-You can enable HTTP session recording on the Network (Network) tab in the Developer Tools section of Chrome.
+You can enable HTTP session recording in the Network tab in the Developer Tools section of Chrome.
 
 Select “Developer Tools” in the menu:
 
  **Menu - Advanced Tools - Developer Tools, or press Ctrl + Shift + C on the keyboard**
 
-Click the Network tab.
+Click on the Network tab.
 Find the round button in the upper left corner of the tab. It should be red. If it is gray, click it to start recording.
-Set the Save Log box (Preserve Log).
-To remove unnecessary data in the header, click on the crossed out circle icon( Clear button). 
+Tick the "Preserve Log" checkbox to enable logging.
+To clear unnecessary data, click on the crossed out circle icon ("Clear" button next to the red recording button).
 Reproduce the error.
-Save as HAR table with contents click on RMB (Save as HAR file with data)
+Save the network log into a HAR file by right-clicking on any entry in the log and selecting "Save all as HAR with content
 
 <a id="Firefox"></a>
 ## Firefox
