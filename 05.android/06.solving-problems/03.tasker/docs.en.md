@@ -91,6 +91,10 @@ Package name: `com.adguard.android`
 
 Class: `com.adguard.android.receivers.AutomationReceiver`
 
+### Execution without notification
+
+To perform a task without showing a toast, add an additional EXTRA `quiet: true`
+
 ### Example
 
 ![](automation.png?cropResize=324,1023)

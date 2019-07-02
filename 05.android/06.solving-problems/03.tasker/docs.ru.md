@@ -97,6 +97,10 @@ taxonomy:
 
 Класс: `com.adguard.android.receivers.AutomationReceiver`
 
+### Выполнение без уведомлений
+
+Чтобы выполнить задачу без показа тоста, добавьте в дополнительном EXTRA `quiet:true`
+
 ### Пример интента
 
 ![](automation.png?cropResize=324,1023)
