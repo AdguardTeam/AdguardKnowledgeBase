@@ -7,7 +7,7 @@ visible: true
 
 * [Введение](#intro)
     * [Поддерживаемые продукты](#products)
-    * [Скрипты от AdGuard](#adguardscripts)
+    * [Скрипты от AdGuard](#scripts)
 * [Где найти пользовательские скрипты?](#repo)
     * [Userstyles.org](#userstyles)
     * [Greasy Fork](#greasyfork)
@@ -24,7 +24,7 @@ visible: true
 
 На данный момент пользовательские скрипты поддерживаются в трёх наших продуктах: AdGuard для Windows, AdGuard для Android и AdGuard для Mac (Mac-версия пока не позволяет добавить собственные пользовательские скрипты).
 
-<a name="adguardscripts"></a>
+<a name="scripts"></a>
 ### Пользовательские скрипты от AdGuard
 
 > ### ВНИМАНИЕ
@@ -34,7 +34,7 @@ visible: true
 
 * **AdGuard Extra** - расширение, блокирующее рекламу в сложных случаях, когда привычного подхода с правилами фильтрации недостаточно. 
 
-* **PopupBlocker** - скрипт, блокирующий один из самых раздражающих типов рекламы - всплывающие окна.
+* **Блокировщик всплывающей рекламы** - скрипт, блокирующий один из самых раздражающих типов рекламы - всплывающие окна.
 
 <a name="repo"></a>
 ## Где взять пользовательские скрипты
@@ -43,18 +43,15 @@ visible: true
 
 Мы опишем несколько популярных каталогов пользовательских скриптов:
 
-
 <a name="userstyles"></a>
 ### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25"> Stylish (userstyles.org)
 
 [Userstyles.org](https://userstyles.org/) - это каталог пользовательских стилей, но при этом он позволяет выгружать их в виде скриптов. Таким образом, любой пользовательский стиль может быть установлен посредством AdGuard. Будьте осторожны, скачивая малопопулярный стиль - он может нести угрозу.
 
-
 <a name="greasyfork"></a>
 ### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/gs.png" width="25"> Greasy Fork
 
 [Greasy Fork](https://greasyfork.org/) - каталог пользовательских скриптов от автора [Stylish](#userstyles). Однако, в отличие от userstyles.org, скрипты в этом каталоге проходят модерацию, так что доверие к ним намного выше.
-
 
 <a name="openUserJs"></a>
 ### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/js.png" width="25">  OpenUserJS.org
