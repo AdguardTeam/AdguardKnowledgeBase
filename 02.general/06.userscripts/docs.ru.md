@@ -55,7 +55,7 @@ visible: true
 [Greasy Fork](https://greasyfork.org/) - каталог пользовательских скриптов от автора [Stylish](#userstyles). Однако, в отличие от userstyles.org, скрипты в этом каталоге проходят модерацию, так что доверие к ним намного выше.
 
 <a name="openUserJs"></a>
-### OpenUserJS.org <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25"> 
+### OpenUserJS.org <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/js.png" width="25"> 
 
 [OpenUserJS.org](https://openuserjs.org/) - каталог пользовательских скриптов с открытым кодом, написанный на nodeJS. Здесь также нет модерации, так что следует соблюдать осторожность.
 
