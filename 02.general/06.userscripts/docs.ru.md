@@ -1,3 +1,4 @@
+---
 title: 'Пользовательские скрипты'
 taxonomy:
     category:
@@ -44,17 +45,17 @@ visible: true
 Мы опишем несколько популярных каталогов пользовательских скриптов:
 
 <a name="userstyles"></a>
-### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25"> Stylish (userstyles.org)
+### Stylish (userstyles.org) <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25">
 
 [Userstyles.org](https://userstyles.org/) - это каталог пользовательских стилей, но при этом он позволяет выгружать их в виде скриптов. Таким образом, любой пользовательский стиль может быть установлен посредством AdGuard. Будьте осторожны, скачивая малопопулярный стиль - он может нести угрозу.
 
 <a name="greasyfork"></a>
-### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/gs.png" width="25"> Greasy Fork
+### Greasy Fork <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/gs.png" width="25">
 
 [Greasy Fork](https://greasyfork.org/) - каталог пользовательских скриптов от автора [Stylish](#userstyles). Однако, в отличие от userstyles.org, скрипты в этом каталоге проходят модерацию, так что доверие к ним намного выше.
 
 <a name="openUserJs"></a>
-### <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/js.png" width="25">  OpenUserJS.org
+### OpenUserJS.org <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25"> 
 
 [OpenUserJS.org](https://openuserjs.org/) - каталог пользовательских скриптов с открытым кодом, написанный на nodeJS. Здесь также нет модерации, так что следует соблюдать осторожность.
 
