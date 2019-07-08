@@ -7,76 +7,39 @@ visible: true
 ---
 
 * [Introduction](#intro)
-* [Recommended scripts](#recommended)
-    * [AdGuard Assistant](#assistant)
-    * [AdGuard Extra](#extra)
-    * [PopupBlocker](#popupblocker)
-* [Supported apps](#apps)
-    * [Adguard for Windows](#windows)
-    * [Adguard for Android](#android)
-    * [AdGuard for Mac](#mac)
+    * [Supported apps](#products)
+    * [Adguards recommended scripts](#scripts)
 * [Where to get more userscripts](#repo)
     * [Userstyles.org](#userstyles)
     * [Greasy Fork](#greasyfork)
     * [OpenUserJS.org](#openuserjs)
-* [Community](#community)
+    * [Community](#community)
 
 
 <a name="intro"></a>
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as [AdGuard Assistant](#assistant), [PopupBlocker](#popupblocker) and [AdGuard Extra](#extra).
+First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, PopupBlocker and AdGuard Extra(#extra).
 
-These userscripts have been developed by AdGuard team but there are, of course, thousands and thousands more. You can install any of them to make your browser look and behave according to your preferences. Further we'll be talking about extensions available by default in different AdGuard products and about how to find more.
-
-
-<a name="recommended"></a>
-## Recommended scripts
-
->### ATTENTION
->These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from [trustworthy sources](#repo).
-
-
-<a name="assistant"></a>
-### AdGuard Assistant
-
-This extension lets you manage the filtering process right from the page. Assistant is present in AdGuard apps for Windows and Mac and looks like a round icon with AG logo on it in the corner of the web page. With its help you can, for example, manually block any element on the page, report a website or whitelist it.
-
-
-<a name="extra"></a>
-### AdGuard Extra
-
-This extension has joined the AdGuard userscript family fairly recently. Its first and foremost task is to block ads in complicated cases when usual filter-based filtering may not be enough. A good example is ads in Facebook feed.
-
-
-<a name="popupblocker"></a>
-### PopupBlocker
-
-The name speaks for itself. It helps get rid of popups - one of the most irritating type of ads out there. It is currently available in AdGuard for MAc and AdGuard for Windows.
-
-
-<a name="apps"></a>
+<a name="products"></a>
 ## Supported apps
 
-At the time this article is written, there are three AdGuard products that support userscripts: AdGuard for Windows, AdGuard for Mac and AdGuard for Android.
+Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for Android and AdGuard for Mac (Mac version does not yet allow you to add your own custom scripts).
+
+<a name=-"scripts></a>
+### AdGuard userscripts
+
+>### ATTENTION
+>These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Examples of popular sites with scripts - [trustworthy sources](#repo).
 
 
-<a name="windows"></a>
-### AdGuard for Windows
-
-AdGuard's app for Windows has been supporting userscripts for a long time. To find scripts installed by default and add new ones (by URL or from a local file), go to the "Extensions" tab of AdGuard Settings. 
+* **AdGuard Assistant** - This extension lets you manage the filtering process right from the page.
 
 
-<a name="android"></a>
-### AdGuard for Android
+* ***AdGuard Extra** - an extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-AdGuard for Android also can be used to install any userscripts from the Internet of from a local file. To do so, open the menu and proceed to "Settings > Extensions". You'll find a couple of pre-installed scripts there, as well as a "New Extension" button. Note that for any userscripts to work, the switch in the top right corner of the screen should be switched on.
 
-<a name="mac"></a>
-### AdGuard for Mac
-
-Unlike other AdGuard apps, Mac version doesn't provide an option to install new scripts (yet). Despite that, there are a few useful userscripts available by default inside the "Extensions" tab of the settings.
-
+* **PopupBlocker** - The name speaks for itself. It helps get rid of popups - one of the most irritating type of ads out there.
 
 <a name="repo"></a>
 ## Where can you get more userscripts?
