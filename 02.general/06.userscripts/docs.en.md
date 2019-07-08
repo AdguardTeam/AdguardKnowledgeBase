@@ -8,7 +8,7 @@ visible: true
 
 * [Introduction](#intro)
     * [Supported apps](#products)
-    * [Adguards recommended scripts](#scripts)
+    * [Recommended AdGuard scripts](#scripts)
 * [Where to get more userscripts](#repo)
     * [Userstyles.org](#userstyles)
     * [Greasy Fork](#greasyfork)
@@ -27,7 +27,7 @@ First, let's get it clear. What is a userscript? Userscripts (we also call them 
 Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for Android and AdGuard for Mac (Mac version does not yet allow you to add your own custom scripts).
 
 <a name="scripts"></a>
-### AdGuard userscripts
+### Recommended AdGuard scripts
 
 >### ATTENTION
 >These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Further are [some examples](#repo) of popular sites with scripts.
