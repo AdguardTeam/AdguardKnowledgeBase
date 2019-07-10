@@ -13,7 +13,7 @@ When discussing AdGuard ad filters, there is often one topic that causes dispute
 
 ## Ad filters
 
-This part describes AdGuard Base filter and following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, French.
+This part describes AdGuard Base filter, Mobile ads filter and following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, French.
 
 ##### What shall these filters block?
 
