@@ -88,7 +88,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ## Filter for useful ads
 
-Unlike other filters, this filter **unblockds** certain ads. More about it in [this Knowledge Base article](https://kb.adguard.com/en/general/search-ads-and-self-promotion). 
+Unlike other filters, this filter **unblocks** certain ads. More about it in [this Knowledge Base article](https://kb.adguard.com/en/general/search-ads-and-self-promotion). 
 
 ##### What shall be unblocked with this filter?
 
