@@ -32,7 +32,7 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/notificationRu.jpg" style="border: 1px solid #efefef; max-width: 600px" />
 
-4) Программа установки предложит вам ознакомиться с текстом Пользовательского Соглашения. Ознакомившись с правилами вы можете продолжить установка нажав ***Установить***. 
+4) Программа установки предложит вам ознакомиться с текстом Пользовательского Соглашения. Ознакомившись с правилами, вы можете продолжить установку, нажав ***Установить***. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/installRu.jpg" style="border: 1px solid #efefef; max-width: 600px" />
 
@@ -61,7 +61,7 @@ taxonomy:
 
 - В Microsoft Windows 10 откройте ***Главное меню*** нажатием кнопки ***Пуск*** и выберите в нем пункт ***Параметры***. В отобразившемся окне нажмите на значок ***Система***. В списке, расположенном в левой части окна ***Параметры***, выберите пункт ***Приложения и возможности***. В перечне установленных на вашем компьютере приложений выберите пункт ***Adguard*** и нажмите кнопку ***Удалить***. В открывшемся диалоговом окне подтвердите выбранное действие нажатием кнопки ***Удалить AdGuard***.
 
- <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/uninstallRu.png" style="border: 1px solid #efefef; max-width: 600px" />
+ <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/uninstallnewRu.png" style="border: 1px solid #efefef; max-width: 600px" />
 
 - В Microsoft Windows 8.1, 8 или 7 откройте окно ***Панели управления***. Нажмите на надпись ***Удаление программы*** в разделе ***Программы***, затем выберите в списке установленных приложений AdGuard и нажмите кнопку ***Удалить***, расположенную непосредственно над этим списком. В открывшемся окне подтвердите выбранное действие нажатием кнопки ***Удалить AdGuard***.
 
