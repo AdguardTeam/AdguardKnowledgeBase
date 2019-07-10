@@ -46,17 +46,17 @@ Userscripts are mostly created by enthusiasts, that is why you need to be carefu
 Here we will describe some of the most popular userscript catalogs.
 
 <a name="userstyles"></a>
-### Stylish (userstyles.org) <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/us.png" width="25"> 
+### Stylish (userstyles.org)
 
 [Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script - there's a risk it might be harmful.
 
 <a name="greasyfork"></a>
-### Greasy Fork <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/gs.png" width="25"> 
+### Greasy Fork
 
 [Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. In contrast to the aforemntioned userstyles.org, scripts in this catalog undergo moderation, so their credibility is much higher.
 
 <a name="openUserJs"></a>
-### OpenUserJS.org <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/js.png" width="25"> 
+### OpenUserJS.org
 
 [OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
 
