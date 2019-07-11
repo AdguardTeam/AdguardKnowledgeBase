@@ -635,13 +635,13 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 * `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
 * `$replace` rules do not apply if the size of the original response is more than 3MB.
-* `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if the request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
-* Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them. Exception rules with $content or $document modifier.
-* Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside the `$replace` rules. It means that you can modify the page's content with a `$replace` rule, and disable cosmetic rules there at the same time.
+* `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
+* Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
+* Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page's content with a `$replace` rule and disable cosmetic rules there at the same time.
 
 > `$replace` value can be empty in the case of exception rules. See examples section for further information.
 
-> Multiple rules matching a single request.
+> #### Multiple rules matching a single request
 > In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
 ###### **$replace Syntax**
@@ -653,8 +653,8 @@ replace = "/" regex "/" replacement "/" modifiers
 ```
 
 * `regex` — regular expression.
-* `replacement` — a string, that will be used to replace the string corresponding to` regex`.
-* `modifiers` — regular expression flags. For example, `i` - insensitive search, or` s` - single-line mode.
+* `replacement` — a string that will be used to replace the string corresponding to `regex`.
+* `modifiers` — regular expression flags. For example, `i` - insensitive search, or `s` - single-line mode.
 
 In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
 
@@ -667,8 +667,8 @@ In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). 
 There are three parts in this rule:
 
 * Regular expression: `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
-* Replacement `\$1<\/VAST>` (please note, that `$` is escaped)
-* regular expression flags: `i` (insensitive search)
+* Replacement: `\$1<\/VAST>` (please note, that `$` is escaped)
+* Regular expression flags: `i` (insensitive search)
 
 You can see how this rule works here:
 http://regexr.com/3cesk
@@ -682,7 +682,7 @@ http://regexr.com/3cesk
 * Both rule 1 and 2 will be applied to all requests sent to `example.org`.
 * Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
 
-###### Disabling`$replace` rules
+###### Disabling `$replace` rules
 
 * `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 * `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
