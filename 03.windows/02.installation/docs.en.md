@@ -18,7 +18,7 @@ taxonomy:
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
-1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing AdGuard.com in the address bar, and then click **DOWNLOAD**.
+1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing Adguard.com in the address bar, and then click **DOWNLOAD**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/downloadscreenEn.png" style="border: 1px solid #efefef; max-width: 600px" />
 
@@ -28,7 +28,7 @@ To use AdGuard on a PC or tablet under Microsoft Windows, you should download th
 
 3) You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click **Yes**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/notificationEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/yesEn.png" />
 
 4) The installation program will prompt you to read the License Agreement. 
 

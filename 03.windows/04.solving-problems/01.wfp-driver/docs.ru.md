@@ -18,4 +18,4 @@ visible: true
 1. Перейдите в раздел "Сеть".
 2. Выключите WFP драйвер.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/wfpRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/wpfoffRu.png" />

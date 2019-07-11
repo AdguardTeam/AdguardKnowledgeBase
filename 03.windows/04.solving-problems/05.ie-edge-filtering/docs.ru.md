@@ -16,7 +16,7 @@ visible: true
 1. Перейдите в раздел "Сеть".
 2. Включите WFP драйвер как это сделано на картинке:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/wfpdriveroffRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/wfpOnRu.png.png" />
 
 Вариант №2 - отключить расширенный защищенный режим в браузере.
 
