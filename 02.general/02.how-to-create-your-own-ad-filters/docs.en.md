@@ -629,19 +629,22 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 > #### Compatibility with different versions of AdGuard
 > Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
-> This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
+> This type of rules don't work in extensions for other browsers because they are unable to modify content on the network level.
 
-> #### Restrictions
-> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+###### `$replace` rules features
 
-###### `replace` rules features
+* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
+* `$replace` rules do not apply if the size of the original response is more than 3MB.
+* `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
+* Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
+* Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page's content with a `$replace` rule and disable cosmetic rules there at the same time.
 
-* `replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
-* `replace` rules do not apply if the size of the original response is more than 3MB.
-* If a `replace` rule was applied to the page, other rules (e.g. cosmetic) are not going to be applied to the code.
-* `replace` rules have a higher priority than other basic rules (except for exception rules). So if the request corresponds to two different rules one of which has a `replace` modifier, this rule will be applied.
+> `$replace` value can be empty in the case of exception rules. See examples section for further information.
 
-###### `replace` syntax
+> #### Multiple rules matching a single request
+> In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+
+###### **$replace Syntax**
 
 In general, `replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
@@ -650,25 +653,39 @@ replace = "/" regex "/" replacement "/" modifiers
 ```
 
 * `regex` — regular expression.
-* `replacement` — a string, that will be used to replace the string corresponding to` regex`.
-* `modifiers` — regular expression flags. For example, `i` - insensitive search, or` s` - single-line mode.
+* `replacement` — a string that will be used to replace the string corresponding to `regex`.
+* `modifiers` — regular expression flags. For example, `i` - insensitive search, or `s` - single-line mode.
 
-In `replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
+In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
 
-###### `replace` examples
+###### `$replace` example
 
 ```
-||damoh.golem.de^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
+||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
 ```
 
 There are three parts in this rule:
 
 * Regular expression: `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
-* Replacement `\$1<\/VAST>` (please note, that `$` is escaped)
-* regular expression flags: `i` (insensitive search)
+* Replacement: `\$1<\/VAST>` (please note, that `$` is escaped)
+* Regular expression flags: `i` (insensitive search)
 
 You can see how this rule works here:
 http://regexr.com/3cesk
+
+###### Multiple `$replace` rules example
+
+1. `||example.org^$replace=/X/Y/`
+2. `||example.org^$replace=/Z/Y/`
+3. `@@||example.org/page/*$replace=/Z/Y/`
+
+* Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+* Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
+
+###### Disabling `$replace` rules
+
+* `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
+* `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
 <a id="csp-modifier"></a>
 ##### **`csp`**
