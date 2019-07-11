@@ -18,7 +18,7 @@ taxonomy:
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
-1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing Adguard.com in the address bar, and then click **DOWNLOAD**.
+1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing adguard.com in the address bar, and then click **DOWNLOAD**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/downloadscreenEn.png" style="border: 1px solid #efefef; max-width: 600px" />
 
