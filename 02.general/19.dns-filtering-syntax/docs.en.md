@@ -1,5 +1,5 @@
 ---
-title: DNS fitlering rules syntax
+title: DNS filtering rules syntax
 taxonomy:
     category:
         - docs
