@@ -12,7 +12,7 @@ Ad Blocker is flexibly adjusted to your needs, so you can add any object on page
 AdGuard works well with all Microsoft Windows compatible browsers, therefore Ad Blocker will successfully filter the ads in any website-viewing application you may use. 
 
 
-![](win10-01.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adblockerEn.png" />
 
 AdGuard provides users with numerous filters that let you fine-tune blocking properties.
 

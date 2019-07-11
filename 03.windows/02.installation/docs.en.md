@@ -18,32 +18,33 @@ taxonomy:
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
-1) Open your browser and proceed to the[ AdGuard website](http://adguard.com) by typing AdGuard.com in the address bar, and then click **DOWNLOAD**.
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/download_en.png" style="border: 1px solid #efefef; max-width: 600px" />
+1) Open your browser and proceed to the[AdGuard website](http://adguard.com) by typing AdGuard.com in the address bar, and then click **DOWNLOAD**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/downloadscreenEn.png" style="border: 1px solid #efefef; max-width: 600px" />
 
 2) When the download is finished, press the **Run** button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/clickandinstall_en.png" style="border: 1px solid #efefef; max-width: 600px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/download2En.png" />
 
 3) You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click **Yes**.
 
-![](install_03_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/notificationEn.png" />
 
-4) The installation program will prompt you to read the License Agreement. Accept the terms and conditions by clicking **I accept the agreement** at the bottom of the window.
+4) The installation program will prompt you to read the License Agreement. 
 
-![](install_04_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/installEn.png" />
 
-5) Next, choose the folder on your PC for the app to be installed to. If you do not agree with the default installation path, press the **[…]** button on the right, select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Next** to proceed with installation.
+5 Next, choose the folder on your PC for the app to be installed to. If you do not agree with the default installation path, press the **[Customize]** select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Next** to proceed with installation.
 
-![](install_05_2EN.PNG)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/instal2ndstageEn.png" />
 
 6) Wait for the installation to complete and click **Finish**.
 
-![](inst.PNG)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/finishinstallEn.png" />
 
 7) When the installation is complete, you can learn about the main functions of AdGuard. To begin your tour of the app and step-by-step adjustment of its principal parameters, click **Get started**. If you want to skip this step, press **Skip**.
 
-![](install_06_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/tnxforinstallEn.png" />
 
 Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
 
@@ -56,11 +57,11 @@ If you need to uninstall or reinstall AdGuard, do the following:
 
 * For Microsoft Windows 10: Open **Start Menu** by clicking **Start**, and select **Settings**. Click the **System** icon in the window that opens. Select **Apps and Features** from the list on the left in the **Settings** window. Select **Adguard** from the list of your installed apps and click **Uninstall**. Click **Uninstall** in the dialogue box that opens to confirm.
 
-![](install_07_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/uninstEn.png" />
 
 * For Microsoft Windows 8.1, 8 and 7: Open **Control Panel**. Click **Uninstall a program** in the **Programs** section, then select **Adguard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking **Uninstall AdGuard** in the window that opens.
 
-![](install_08_EN.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/uninstallw7.png" />
 
 In case regular uninstall doesn't work for any reason, you can try to use Advanced method.
 

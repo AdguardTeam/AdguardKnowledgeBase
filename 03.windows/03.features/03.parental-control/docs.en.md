@@ -10,7 +10,7 @@ There are numerous websites access to which should be restricted if the PC is us
 The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted. 
 
 
-![](win10-04.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/parentalcontrolEn.png" />
 
 **Enable Parental Control**
 
@@ -40,7 +40,7 @@ Here you can manually add websites you thinks are inappropriate for your childre
 
 You can manually disable Parental Control for certain sites.
 
-![](win10_parental.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/pcusersEn.png" />
 
 **Protected users**
 
