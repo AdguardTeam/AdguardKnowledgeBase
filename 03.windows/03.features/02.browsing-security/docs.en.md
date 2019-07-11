@@ -12,7 +12,7 @@ Browsing Security gives strong protection against such incidents. In addition, t
 Some web pages are not malicious themselves, but they may contain elements built into their structure by other websites. Unlike browser plug-ins, Browsing Security module checks each object built into any web page, thus ensuring maximum protection.
 
 
-![](win10-03.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/browsingsecurityEn.png" />
 
 **Enable Browsing Security**
 

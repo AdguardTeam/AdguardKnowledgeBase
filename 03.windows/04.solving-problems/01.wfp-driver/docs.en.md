@@ -14,8 +14,8 @@ You can always switch to the old and stable network driver.
 
 To do so:
 
-1. Go to AdGuard General Settings.
+1. Go to Network Settings.
 
 2. Disable WFP driver as it’s done in this picture:
 
-![](wpf_en_2.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/wfpEn.png" />
