@@ -18,7 +18,7 @@ taxonomy:
 
 ## Установка программы
 
-Для того чтобы установить Adguad для macOS на вашем компьютере, запустите браузер, наберите в адресной строке _adguard.com_ и на открывшейся веб-странице нажмите кнопку **_Скачать_**.
+Для того, чтобы установить AdGuad для macOS на ваш компьютер, запустите браузер, наберите в адресной строке _adguard.com_ и на открывшейся веб-странице нажмите кнопку **_Скачать_**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/MacOs/downloadRu.png" />
 
@@ -26,12 +26,12 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/MacOs/installerRu.png" />
 
-В окне программы установки сделайте двойной клик мышью на значек AdGuard.
+В окне программы установки сделайте двойной клик мышью по значку AdGuard.
 При первом запуске AdGuard операционная система продемонстрирует на экране предупреждение о том, что данное приложение загружено из Интернета. Нажмите кнопку **_Открыть_**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/MacOs/warningRu.png" />
 
-Далее вам следует подтвердить процедуру установки нажав **_Установить_**.
+Далее вам следует подтвердить установку, нажав **_Установить_**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/MacOs/trueinstallRu.png" />
 
