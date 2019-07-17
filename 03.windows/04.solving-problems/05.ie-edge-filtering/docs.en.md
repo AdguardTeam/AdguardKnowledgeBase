@@ -14,11 +14,11 @@ Most probably it’s because you are using Windows 8 or 8.1 and enhanced protect
 
 To do so:
 
-1. Go to the AdGuard General Settings.
+1. Go to the Network Settings.
 
 2. Enable WFP driver as done in the picture:
 
-![](Enable_wpf_en.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/wfponEn.png" />
 
 **Option 2 – disable enhanced protected mode in Internet Explorer.**
 

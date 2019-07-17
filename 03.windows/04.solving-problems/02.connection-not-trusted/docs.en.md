@@ -13,11 +13,11 @@ This problem is more common for the Firefox-based browsers and Opera 12.
 <a name="basic"></a>
 The easiest way to solve it is to:
 
-1. Go to AdGuard General Settings.
+1. Go to Network Settings.
 
-2. Scroll to the bottom to find 'Reinstall Certificate' button.
+2. Scroll to the middle to find 'Reinstall Certificate' button.
 
-![](cert_en.png?cropResize=700,500)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/certEn.png" />
 
 3. Click on it and wait until the certificate is automatically reinstalled. Note that browsers all will be closed.
 
@@ -84,11 +84,11 @@ Disabling HTTPS filtering
 
 To do so:
 
-Go to the AdGuard General settings.
+Go to the Network settings.
 
 Disable the HTTPS filtering as it’s done in this picture:
 
-![](https_en2.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/disableHTTPSEn.png" />
 
 We do not recommend this way, as it will leave all your HTTPS traffic unfiltered. Only use it as a temporary measure and contact our [support team](/technical-support).
 
@@ -150,11 +150,11 @@ Disabling HTTPS filtering.
 
 To do so:
 
-Go to the AdGuard General settings.
+Go to the Network settings.
 
 Disable the HTTPS filtering as it’s done in this picture:
 
-![](https_en2.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/disableHTTPSEn.png" />
 
 We do not recommend this way, as it will leave all your HTTPS traffic unfiltered. Only use it as a temporary measure and contact our [support team](/technical-support).
 

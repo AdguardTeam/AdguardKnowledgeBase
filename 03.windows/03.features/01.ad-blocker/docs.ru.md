@@ -11,13 +11,13 @@ taxonomy:
 
 При необходимости вы можете временно отключить модуль Антибаннер полностью или позволить ему не блокировать [полезную рекламу](https://adguard.com/ru/whitelist.html). Также через эту вкладку осуществляется доступ к редактору фильтров и журналу блокировок.
 
-<img src="https://cloud.githubusercontent.com/assets/20211341/19993680/967a52a2-a22e-11e6-8fe8-e081846c801d.png" width=800 height=600>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adblockerRu.png" />
 
 AdGuard предоставляет пользователям множество различных фильтров, с помощью которых вы можете точно настроить параметры блокировки.
 
 Фильтры автоматически обновляются с серверов AdGuard. Все они вручную создаются нашими специалистами на основании получаемых от пользователей данных. Вы всегда можете помочь другим пользователям AdGuard, отправив нам адреса сайтов, на которых всё же увидели рекламу.
 
-<img src="https://cloud.githubusercontent.com/assets/20211341/19993679/9679e0ba-a22e-11e6-8f4e-1d62e7dc4f70.png" width=800 height=600>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/filtersRu.png" />
 
 Некоторые из наиболее часто используемых фильтров:
 

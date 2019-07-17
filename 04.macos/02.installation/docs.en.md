@@ -17,23 +17,25 @@ taxonomy:
 
 ## Installation
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download AdGuard** on the page that opens.
+To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
 
-![](mac_install_EN_01.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/MacOs/mainpageEn.png" />
 
-Wait for _Adguard.release.dmg_ to download and click on its icon in the list of downloaded files in the Dock panel. The AdGuard icon will appear on your Desktop. Cick on it to open the installation app.
+Wait for _Adguard.release.dmg_ to download and double-click on its icon in the list of downloaded files in the Dock panel. The AdGuard icon will appear on your Desktop. Cick on it to open the installation app.
 
-![](adguard_mac_2.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/MacOs/installerRu.png" />
 
-In the installation window, drag the AdGuard icon to the **Applications** folder icon on the right.
+ Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
 
-Now the application has been installed on your computer. To launch the application, double click on the AdGuard icon in the Applications folder that you can open with Finder. Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/MacOs/notificationEn.png" />
 
-![](mac_install_EN_02.png)
+In the next step, you just need to click **Install**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/MacOs/installEn.png" />
 
 To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
 
-![](mac_install_EN_03.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/MacOs/userpwEn.png" />
 
 <a name="uninstall"></a>
 ## Uninstall
