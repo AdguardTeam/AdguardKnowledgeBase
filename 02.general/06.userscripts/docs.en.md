@@ -48,7 +48,7 @@ Here we will describe some of the most popular userscript catalogs.
 <a name="userstyles"></a>
 ### Stylish (userstyles.org)
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script - there's a risk it might be harmful.
+[Userstyles.org](https://userstyles.org/) is a catalogue of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script - there's a risk it might be harmful.
 
 <a name="greasyfork"></a>
 ### Greasy Fork
