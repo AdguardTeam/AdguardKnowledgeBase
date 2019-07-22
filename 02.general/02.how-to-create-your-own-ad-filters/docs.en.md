@@ -505,7 +505,7 @@ Completely disables blocking on corresponding pages. It is equal to simultaneous
 Disables the Stealth Mode for all corresponding pages and requests.
 
 > #### Compatibility with different versions of AdGuard
-> Stealth Mode is currently available on AdGuard for Windows, AdGuard for Mac and AdGuard for Android platforms. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
+> Stealth Mode is currently available on AdGuard for Windows, AdGuard for Mac and AdGuard for Android. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
 ###### `stealth` example
 
