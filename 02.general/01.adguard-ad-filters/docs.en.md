@@ -178,7 +178,7 @@ Filter that enables removing of the ads from websites with Turkish content. Cre
 
 <a name="polish-ads"></a>
 
-## Polish ads filter
+## Polish Anti Adblock Filter
 
 This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites. This filter is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
