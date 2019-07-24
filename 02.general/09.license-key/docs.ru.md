@@ -51,17 +51,18 @@ visible: true
 
 Для этого дважды щелкните на иконке AdGuard на рабочем столе:   
 
-![](key_win_01.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windowsRu.png" />
 
 Либо дважды щелкните на иконке AdGuard в области уведомлений на панели задач:   
 
-![](key_win_02.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windows2Ru.png" />
 
-2. Перейдите в раздел "Лицензия" в окне программы
 
-3. Введите лицензионный ключ и нажмите кнопку "Активировать"  
+2. Перейдите в раздел "О программе" в главном меню.
 
-![](key_win_03.png)
+3. Введите лицензионный ключ и нажмите кнопку "Активировать".  
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/keyactivationRu.png" />
 
 
 <a id="activation_mac"></a>
@@ -73,7 +74,7 @@ visible: true
 
 2. Откройте опции, щелкнув мышью на пиктограмме шестерёнки, и в выпадающем меню выберите "Лицензия".   
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/license_ru.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/macRu.png" />
 
 3. В открывшемся окне введите лицензионный ключ и нажмите кнопку "Активация лицензионным ключом".
 
@@ -85,17 +86,22 @@ visible: true
 #### Активация AdGuard для Android
 
 1. Откройте приложение и перейдите в меню лицензии. 
-Для этого нажмите на желтую кнопку в нижней части главного меню:   
+Для этого нажмите на кнопку **Получить Премиум** в верхней части экрана.  
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/activation_1.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licenseactivateRu.png" />
 
-2. Выберите пункт меню "Активировать ключом"
+2. Обратите внимание на три точки в **правом верхнем углу** экрана.
+Нажав на них, вам будет предложено:
+1) Получить бесплатную версию(14 дней пробного периода).
+2) **Ввести ключ**.
+3) Восстановить покупки (Восстанавливает лицензию, если вы удалили приложение и установили его повторно).
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/activation_2.png)
 
-3. Введите лицензионный ключ и нажмите кнопку "Активировать устройство" 
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licenseactivateRu2.png" />
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/activation_3.png)
+3. Введите лицензионный ключ и нажмите кнопку "Активировать".
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licensecativate3Ru.png" />
 
 
 <a id="activation_info"></a>

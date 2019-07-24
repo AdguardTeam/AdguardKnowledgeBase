@@ -46,34 +46,34 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 #### Activating AdGuard for Windows
 
-1. Open the program
+1. Open the program.
    
 To do it, doubleclick on AdGuard icon on the desktop:   
 
-![](key_win_01.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png" />
 
 or double click on AdGuard icon in the system tray:   
 
-![](key_win_02.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png" />
 
-2. Choose 'License' inset in program's menu   
+2. Choose 'About' inset in program's menu.  
 
-3. Enter your license key and click on 'Activate license' button   
+3. Enter your license key and click on 'Activate license' button.  
 
-![](win10activatekey.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows3En.png" />
 
 
 <a id="activation_mac"></a>
 
 #### Activating AdGuard for Mac
 
-1. Open AdGuard menu  
+1. Open AdGuard menu. 
 
 To do it, click on the AdGuard icon in the menu bar: 
 
 2. Open options menu by clicking on gear icon and choose 'License...' 
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/license_en.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png" />
 
 3. In the opened window enter your license key and press 'Activate license key'.   
 
@@ -84,18 +84,23 @@ To do it, click on the AdGuard icon in the menu bar: 
 
 #### Activating AdGuard for Android
 
-1. Open the app and go to license menu   
-To do it, click on yellow button in the bottom of app's main screen:   
+1. Open the app and go to main menu.   
+Click **Get Premium** button in the top of app's main screen:   
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/activation_1.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidRu.png" />
 
-2. Choose 'Activate with license key' option 
+2. Click the three dots in the **top right corner** of the screen
+In the small window you will see 3 functions:
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/activation_2.png)
+1) Get a free trial (14 days trial period).
+2) **Enter key**.
+3) Restore purchases (Restores the license if you reinstalled the app).
 
-3. Enter your license key and click on 'Activate device' button   
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png" />
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/activation_3.png)
+3. Enter your license key and click on 'Activate'.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidEn3.png" />
 
 
 <a id="activation_info"></a>
