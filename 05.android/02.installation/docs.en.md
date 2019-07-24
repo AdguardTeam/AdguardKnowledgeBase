@@ -20,7 +20,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
 
-* For Android 6: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
+* For Android 6+: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
 * For Android 5: open **Settings**, then select **Security** in the **Personal** section. Switch on **Unknown sources** and press **OK** in the system warning window.
 
 ![](android_install_EN_01.png?cropResize=400,600)
@@ -50,11 +50,12 @@ After that, you can pre-configure AdGuard protection by clicking **Continue**, o
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/installmainEn.png" />
 
-When you select the first option, a dialog box opens where you have to choose the level of privacy protection.
+If you select the first option, a new dialog box will appear where you can configure privacy protection settings.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/installpersonaldataEn.png" />
 
-After pressing the **Block them** button, you will be offered three levels of protection:
+After pressing the **Block them** button, you will be offered to choose between three levels of protection:
+
 - **Comfortable** (Blocks all known Analytics , reduces the time of third-party cookies).
 - **High** (Reduces cookie lifetime, removes tracking parameters from URLS).
 - **Ultimate** (Disables browser features that can be used for your tracking. In some cases, you may experience problems with the operation of the sites).
