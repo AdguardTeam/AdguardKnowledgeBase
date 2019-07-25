@@ -1405,7 +1405,7 @@ Filter URL: `https://example.org/path/filter.txt`
 #### Remarks
 
 * If included file is not found or unavailable, the whole filter update should fail.
-* A conditional directive beginning with an `#if` directive must explicitly be terminated with an `#endif` directive.
+* A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 * Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
 #### AdGuard-specific
