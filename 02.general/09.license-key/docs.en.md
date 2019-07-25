@@ -58,7 +58,7 @@ or double click on AdGuard icon in the system tray: 
 
 2. Choose 'About' inset in program's menu.  
 
-3. Enter your license key and click on 'Activate license' button.  
+3. Enter your license key and click on the 'Activate license' button.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows3En.png" />
 
@@ -94,7 +94,7 @@ In the small window you will see 3 functions:
 
 1) Get a free trial (14 days trial period).
 2) **Enter key**.
-3) Restore purchases (Restores the license if you reinstalled the app).
+3) Restore purchases (Restores the license if you've reinstalled the app).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png" />
 
