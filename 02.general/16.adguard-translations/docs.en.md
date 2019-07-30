@@ -9,10 +9,10 @@ visible: true
 * [About AdGuard translation program](#program)
 * [How to become a translator?](#become-translator)
 * [Guidelines and recommendations](#guidelines)
-* [Who are Proofreaders?](#moderators)
+* [Who are Proofreaders?](#proofreaders)
 * [Reward system](#rewards)
 
->**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/GmYDBwu3K0BvPDll2TZxeA).
+>**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w).
 
 <a name="program"></a>
 ### About AdGuard translation program
@@ -79,11 +79,11 @@ You can find some useful tips reading the following information. Please, have a 
 
 There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of the phrases being translated.
 
-1. Pay attention to glossary terms which are highlighted with a dotted line in a source phrase. These are usually special words, like brand names, that should not be translated. 
+1. Pay attention to glossary terms which are highlighted with a dotted line in a source phrase. These are usually special words (like brand names) that should not be translated. 
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms.png) 
 
-You can suggest your translation for some translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
+You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
 2. The phrases on Crowdin can be accompanied by useful notes that make phrases easier to understand and translate. You can find them in the "context" field of the source string box.
 
@@ -118,7 +118,7 @@ There's also a **Discussions** tab on the main Project page that conveniently al
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
 
 
-6. As soon as you join a project by clinking the "Join" button, you can see the **Tasks** tab on the Project page where the tasks for specific project files are created. _Please pay attention to them, they usually have a higher priority._ 
+6. As soon as you join a project by cliсking the "Join" button, you can see the **Tasks** tab on the Project page where the tasks for specific project files are created. _Please pay attention to them, they usually have a higher priority._ 
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png) 
 
@@ -133,14 +133,14 @@ Proper plural forms are extremely important, so please ask us in comments if any
 
 8. **Please do not write directly to the project managers listed in the Project info.** 
 
-If you have any questions to AdGuard translations, you can always ask moderators/proofreaders and admins using the comments system.  
+If you have any questions about translations, you can always ask proofreaders or admins using the comments system.  
 
-Also, you can send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/GmYDBwu3K0BvPDll2TZxeA). The Admins will answer you as soon as possible.
+Also, you can send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w). The Admins will answer you as soon as possible.
 
 Find more information on Crowdin translation system in this [Knowledge base](https://support.crowdin.com/?utm_source=email&utm_campaign=md_en_2019-07-29_27&utm_medium=other&utm_content=body).
 
 
-<a name="moderators"></a>
+<a name="proofreaders"></a>
 ### Proofreaders
 
 We have Proofreaders (previously Moderators) for each language. 
@@ -149,11 +149,11 @@ What are they responsible for?
 
 **Proofreaders:**
 
-- Approve the high-quality translations and disapprove the bad ones;
+- Approving the high-quality translations and disapproving the bad ones;
 
-- Look after the relevance of the translations;
+- Looking after the relevance of the translations;
 
-- Participate in discussions in comment section etc.
+- Participating in discussions in comment section etc.
 
 
 _As mentioned, you can ask proofreaders any questions regarding translations on Crowdin in comments_.
@@ -172,4 +172,4 @@ To request a **one-year** license key you should translate at least 500 words ON
 
 Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license key as a token of our gratitude.
 
-Besides, the most active translators may receive a proofreader’s status in future, should they express such intention, and that promises even more good stuff :)
+Besides, the most active translators may receive a Proofreader status in future, should they express such intention, and that promises even more good stuff :)
