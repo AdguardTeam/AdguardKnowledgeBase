@@ -505,7 +505,7 @@ Completely disables blocking on corresponding pages. It is equal to simultaneous
 Disables the Stealth Mode for all corresponding pages and requests.
 
 > #### Compatibility with different versions of AdGuard
-> Stealth Mode is currently available only in AdGuard for Windows. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
+> Stealth Mode is currently available in AdGuard for Windows, AdGuard for Mac and AdGuard for Android. We plan to add it to all our products in future. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
 ###### `stealth` example
 
@@ -1405,7 +1405,7 @@ Filter URL: `https://example.org/path/filter.txt`
 #### Remarks
 
 * If included file is not found or unavailable, the whole filter update should fail.
-* A conditional directive beginning with an `#if` directive must explicitly be terminated with an `#endif` directive.
+* A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 * Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
 #### AdGuard-specific
