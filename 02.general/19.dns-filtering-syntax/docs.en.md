@@ -33,6 +33,6 @@ Examples:
 Advanced examples:
 
 7. `||example.*^` - wildcard asterisks can be used in domains (Also works with simply `example.*`)
-8. `93.184.216.34 example.org` - AdGuard is also able return non-localhost addresses for domains
+8. `93.184.216.34 example.org` - AdGuard is also able to return non-localhost addresses for domains
 
 Use this syntax to create or import rules to a DNS filter. If you have any questions, feel free to post them on our [forum](https://forum.adguard.com/index.php?forums/69/).
