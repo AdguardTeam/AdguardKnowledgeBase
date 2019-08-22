@@ -14,6 +14,8 @@ visible: true
     * [Greasy Fork](#greasyfork)
     * [OpenUserJS.org](#openuserjs)
     * [Community](#community)
+* [Development](#development)
+*   * [Compatibility](#compatibility)
 
 
 <a name="intro"></a>
@@ -68,3 +70,69 @@ If you like the idea of personifying your browser with the help of userscripts, 
 * [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 * [FreeNode](https://webchat.freenode.net/#greasemonkey)
 * [Reddit](https://www.reddit.com/r/userscripts/)
+
+<a name="development"></a>
+## Development
+
+<a name="request-userscript-dev-license"></a>
+### Request License
+
+Any userscript author may request an Adguard license key for testing purposes.
+
+To get it, please send an email to devteam at adguard.com with the following information:
+**Subject:** Userscript author license request
+**Body:**
+Please tell us about the userscripts you are working on.
+
+Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+
+<a name="compatibility"></a>
+### Compatibility
+
+#### Metadata block
+##### Supported properties
+`@description`
+`@downloadURL`
+`@exclude`
+`@icon`
+`@include`
+`@match`
+`@name`
+`@require`
+`@resource`
+`@updateURL`
+`@version`
+
+##### Partially supported properties
+`@run-at` - `document-idle` option is not supported.
+
+##### Unsupported properties
+These properties will be simply ignored by Adguard.
+`@namespace`
+`@unwrap`
+`@noframes` - Adguard won't execute a userscript inside of any iframe.
+`@grant` - everything is granted by default.
+`@connect` - Adguard uses `@grant host:site.com` instead!
+
+#### Supported GM_ functions
+##### Values
+`GM_getValue`
+`GM_setValue`
+`GM_deleteValue`
+`GM_listValues`
+
+##### Resources
+`GM_getResourceText`
+`GM_getResourceURL`
+
+##### Other
+`GM_addStyle`
+`GM_log`
+`GM_setClipboard`
+`GM_xmlhttpRequest`
+`unsafeWindow`
+
+#### Partially supported GM_ functions
+`GM_info`
+`GM_openInTab` - just a shortcut to window open.
+`GM_registerMenuCommand` - you can register a menu command, but it is very unclear for user how to access the menu. There is a hotkey that'll bring up the list of registered menu commands: `Shift+Alt+M`.
