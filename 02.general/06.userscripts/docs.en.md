@@ -166,18 +166,18 @@ GM_registerMenuCommand - You can register a menu command, but it is very unclear
 // @grant           property:settings
 // @grant           GM_getValue
 // @grant           GM_setValue
-// @grant			GM_deleteValue
-// @grant			GM_listValues
-// @grant			GM_getResourceText
-// @grant			GM_getResourceURL
-// @grant			GM_addStyle
-// @grant			GM_log
-// @grant			GM_setClipboard
-// @grant			GM_xmlhttpRequest
-// @grant			unsafeWindow
-// @grant			GM_info
-// @grant			GM_openInTab
-// @grant			GM_registerMenuCommand
+// @grant           GM_deleteValue
+// @grant           GM_listValues
+// @grant           GM_getResourceText
+// @grant           GM_getResourceURL
+// @grant           GM_addStyle
+// @grant           GM_log
+// @grant           GM_setClipboard
+// @grant           GM_xmlhttpRequest
+// @grant           unsafeWindow
+// @grant           GM_info
+// @grant           GM_openInTab
+// @grant           GM_registerMenuCommand
 // @run-at document-start
 // ==/UserScript==
 
