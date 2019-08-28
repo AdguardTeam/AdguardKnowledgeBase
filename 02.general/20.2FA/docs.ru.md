@@ -14,26 +14,24 @@ visible: true
 
 Мы рекомендуем настроить двухфакторную аутентификацию для вашего личного кабинета. Это не займёт у вас много времени, но обеспечит безопасность ваших лицензионных ключей и, что не менее важно, личной информации, связанной с аккаунтом.
 
-***Как настроить***
+
+## Как настроить
 
 1) Войдите в свой [Личный кабинет](https://auth.adguard.com/login.html);
 2) Кликните по кнопке "Управлять 2FA" в правом нижнем углу:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/
-General/2Fa1ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/2Fa1ru.png" />
 
 3) Просканируйте QR-код при помощи мобильного приложения-аутентификатора:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/
-General/2Fa2ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/2Fa2ru.png" />
 
 *Важно*
 * Сохраните где-нибудь резервный проверочный код, указанный на экране. Он понадобится для восстановления аккаунта в случае, если вы потеряете или замените свой телефон;
 
  Если всё было сделано правильно, вот что вы увидите при следующем входе в Личный кабинет:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/
-General/2Fa3ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/2Fa3ru.png" />
 
  Используйте ваш мобильный аутентификатор, чтобы найти код и ввести его в текстовое поле. После этого вы будете успешно залогинены!
 
