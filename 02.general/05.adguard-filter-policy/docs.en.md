@@ -73,7 +73,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ##### What shall be blocked with this filter?
 
-- This filter shall block elements on the page that are not ads but obstruct view and make it harder to see the actual content of the website. Such elements as cookie notices, third-party widgets, in-page popups, email subscription forms and aggressively placed social media widgets.
+- This filter shall block elements on the page that are not ads but obstruct view and make it harder to see the actual content of the website. Such elements as cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers and aggressively placed social media widgets.
 
 #### Limitations and Exceptions
 
