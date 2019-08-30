@@ -6,9 +6,16 @@ taxonomy:
 visible: true
 ---
 
-When discussing AdGuard ad filters, there is often one topic that causes disputes – whether shall AdGuard block this or that ad. By framing the rules we stick to special criteria. Now it’s time to publish them. Our criteria are much similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. Nevertheless, we have put changes to some points.
+When discussing AdGuard ad filters, there is often one topic that causes disputes – whether shall AdGuard block this or that ad. By framing the rules we stick to special criteria. Our criteria are much similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. Nevertheless, we've made some changes to it.
 
 ![](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+
+## Common criteria
+
+These equally apply to rules in all filters.
+
+- Rules that often cause problems with work of some websites will be deleted.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
 ## Ad filters
@@ -26,7 +33,7 @@ This part describes AdGuard Base filter, Mobile ads filter and following languag
 If a rule is subject to the list of limitations described below, then it won’t be added to main filters.
 
 - Websites’ own ads are not to be removed on purpose. On the other side it shouldn’t be unblocked, because such unblocking can cause displaying of third-party ads.
-- Rules that are specific to the particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 - Anti-adblock scripts will be blocked only if they limit functionality of the website or interfere with its use.
 - Anti-adblock scripts will not be blocked in cases when it is prohibited by Law.
 - Rules that often cause problems with work of some websites will be deleted.
@@ -43,7 +50,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
 
 - Rules that cause problems with functioning of websites will be removed.
-- Rules that are specific to the particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
 ## Social media filter
@@ -57,27 +64,24 @@ If a rule is subject to the list of limitations described below, then it won’t
 If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
 
 - Rules that block widgets that are a part of website’s functionality. Such as “Comments”, “Embedded Post”, “Surveys” widgets or authorization via social networks.
-- Rules that block links to website’s communities in social networks are not blocked.
+- Rules that block links to website’s communities in social networks.
 - Rules that cause problems with functioning of websites will be removed.
-- Rules that are specific to the particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
 ## Annoyances filter
 
 ##### What shall be blocked with this filter?
 
-- This filter shall block elements on the page that are not ads but obstruct view and make it harder to see the actual content of the website. Such elements as cookie notices, third-party widgets and in-page popups, email subscription forms and aggressively placed social media widgets.
+- This filter shall block elements on the page that are not ads but obstruct view and make it harder to see the actual content of the website. Such elements as cookie notices, third-party widgets, in-page popups, email subscription forms and aggressively placed social media widgets.
 
 #### Limitations and Exceptions
 
 If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
 
 - Rules that block elements that are essential for the websites' functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
-- Rules blocking elements in headers/footers.
 - Rules that cause problems with functioning of websites will be removed.
-- Rules that are specific to the particular website will be added only if the website has sufficient traffic.  
- Traffic is determined by open statistics (if it has such) or in other ways.  
- Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
 ## Filter for useful ads
@@ -92,7 +96,7 @@ Unlike other filters, this filter **unblocks** certain ads. More about it in [th
 #### Limitations and Exceptions
 
 - Rules that cause problems with functioning of websites will be removed.
-- Rules that are specific to the particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
 ## Quality requirements for filtering rules
