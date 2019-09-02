@@ -1140,6 +1140,13 @@ Sometimes, you might need to check the performance of a given selector or a styl
 #$#.banner { display: none; debug: global; }
 ```
 
+### Pseudo-property `remove`
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use a special style property: `remove`.
+
+`.banner { remove: true; }`
+
+> Please note, that other style properties will be ignored if `remove` is specified.
+
 <a id="testing-extended-selectors"></a>
 #### Testing extended selectors
 
