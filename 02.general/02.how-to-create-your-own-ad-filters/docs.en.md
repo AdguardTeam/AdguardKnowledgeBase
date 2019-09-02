@@ -86,7 +86,6 @@ visible: true
         * [max-length](#max-length-attribute)
         * [min-length](#min-length-attribute)
         * [parent-elements](#parent-elements-attribute)
-        * [parent-search-level](#parent-search-level-attribute)
     * [HTML filtering rules exceptions](#html-filtering-rules-exceptions)
 * [JavaScript rules](#javascript-rules)
     * [JavaScript rules syntax](#javascript-rules-syntax)
@@ -1284,12 +1283,6 @@ $$a[href="example.org/ads"][parent-elements="table"]
 When AdGuard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
 
 You can specify few parent elements separated by commas. The closest one will be blocked.
-
-<a id="parent-search-level-attribute"></a>
-##### `parent-search-level`
-
-Specifies the maximum parent element search depth. The defaul maximum search depth is `3`.
-That was set in order not to cut too much, if `HTML` page changes. Do not use too large values for this attribute.
 
 <a id="html-filtering-rules-exceptions"></a>
 ### HTML filtering rules exceptions
