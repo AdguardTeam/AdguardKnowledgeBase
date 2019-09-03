@@ -880,6 +880,14 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 > #### Application area
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
+> #### Syntax
+>  The syntax for extended CSS rules:
+> * `#?#` — for element hiding (`#@?#` — for exceptions )
+> * `#$?#` — for CSS injection (`#@$?#` — for exceptions )
+>
+> Please note, that now you can apply simple selectors using the ExtCss engine by using a rule like this:
+> `#?#div`
+
 <a id="extended-css-has"></a>
 #### Pseudo-class `:has()`
 
