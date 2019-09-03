@@ -86,8 +86,6 @@ visible: true
         * [wildcard](#wildcard-attribute)
         * [max-length](#max-length-attribute)
         * [min-length](#min-length-attribute)
-        * [parent-elements](#parent-elements-attribute)
-        * [parent-search-level](#parent-search-level-attribute)
     * [Исключения для правил фильтрации HTML](#html-filtering-rules-exceptions)
 * [Javascript правила](#javascript-rules)
     * [Синтаксис javascript правил](#javascript-rules-syntax)
@@ -1293,41 +1291,6 @@ $$div[tag-content="banner"][min-length="400"]
 ```
 
 Это правило удалит все элементы `div`, код которых содержит подстроку `banner`, и длина которых превышает `400` символов.
-
-<a id="parent-elements-attribute"></a>
-##### `parent-elements`
-
-Этот атрибут сильно изменяет поведение правила. Обычное правило фильтрации HTML с помощью указанных атрибутов находит и удаляет элемент страницы. В случае, если задан атрибут `parent-elements`, то удален будет не тот элемент, который был найден, а его родительский элемент с именем, заданным атрибутом `parent-elements`.
-
-Рассмотрим пример.
-
-**HTML code**
-```html
-<table style="background: url('http://domain.com/banner.gif')">
-    <tr>
-        <td>
-            <a href="http://example.org/ads">TEXT ADS</a>
-        </td>
-    </tr>
-</table>
-```
-
-Проблема этого HTML-кода в том, что нам недостаточно вырезать ссылку на рекламу. Сам баннер показывается с помощью родительской таблицы (как ее `background`).  Тут нам и приходит на помощь атрибут `parent-elements`. 
-
-Мы используем вот такое правило, чтобы заблокировать всю таблицу: 
-```
-$$a[href="example.org/ads"][parent-elements="table"]
-```
-
-Когда AdGuard найдет на странице элемент `a` с атрибутом `href`, содержащим `example.org/ads`, то вместо того, чтобы вырезать его, он будет искать ближайший родительский элемент `table`, и если найдет — вырежет его.
-
-Вы можете указать несколько искомых родительских элементов через запятую. Заблокирован будет ближайший.
-
-<a id="parent-search-level-attribute"></a>
-##### `parent-search-level`
-
-Задает максимальную глубину поиска родительского элемента. По умолчанию максимальная глубина поиска равна `3`. 
-Это сделано для того чтобы не вырезать лишнего, если HTML-код страницы поменяется. Не используйте слишком большие значения для этого атрибута.
 
 <a id="html-filtering-rules-exceptions"></a>
 ### Исключения для правил фильтрации HTML
