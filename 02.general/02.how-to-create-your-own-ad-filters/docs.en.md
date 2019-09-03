@@ -85,7 +85,6 @@ visible: true
         * [wildcard](#wildcard-attribute)
         * [max-length](#max-length-attribute)
         * [min-length](#min-length-attribute)
-        * [parent-elements](#parent-elements-attribute)
     * [HTML filtering rules exceptions](#html-filtering-rules-exceptions)
 * [JavaScript rules](#javascript-rules)
     * [JavaScript rules syntax](#javascript-rules-syntax)
@@ -1255,34 +1254,6 @@ $$div[tag-content="banner"][min-length="400"]
 ```
 
 This rule will remove all the `div` elements, whose code contains the substring` banner` and the length of which exceeds `400` characters.
-
-<a id="parent-elements-attribute"></a>
-##### `parent-elements`
-
-This attribute seriously modifies the rule behaviour. A common HTML filtering rule uses attributes to find and delete elements on the page. If `parent-elements` is set, then the element's parent element (with a name specified by `parent-elements` attribute) will be deleted instead.
-
-Here is an example:
-
-**HTML code**
-```html
-<table style="background: url('http://domain.com/banner.gif')">
-    <tr>
-        <td>
-            <a href="http://example.org/ads">TEXT ADS</a>
-        </td>
-    </tr>
-</table>
-```
-
-The problem with this code is that cutting out ads is not enough here. The banner is displayed using the parent table (as a `background`). This is where we can use the `parent-elements`.
-
-Let's use the following rule to block the entire table:
-```
-$$a[href="example.org/ads"][parent-elements="table"]
-```
-When AdGuard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
-
-You can specify few parent elements separated by commas. The closest one will be blocked.
 
 <a id="html-filtering-rules-exceptions"></a>
 ### HTML filtering rules exceptions
