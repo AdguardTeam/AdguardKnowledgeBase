@@ -880,11 +880,19 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 > #### Application area
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
-> #### Syntax
->  The syntax for extended CSS rules:
-> * `#?#` — for element hiding (`#@?#` — for exceptions )
-> * `#$?#` — for CSS injection (`#@$?#` — for exceptions )
->
+#### Extended CSS rules syntax
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to make these rules use the "Extended CSS" engine. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
+The syntax for extended CSS rules:
+* `#?#` — for element hiding (`#@?#` — for exceptions )
+* `#$?#` — for CSS injection (`#@$?#` — for exceptions )
+
+##### Extended CSS rules examples
+
+* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule will block all `div` elements that contain link as a child node with `[target="_blank"][rel="nofollow"]` attributes. The rule will only work for `example.org` and all it's subdomains.
+* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all it's subdomains.
+* `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all it's subdomains.
+* `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
+
 > Please note, that now you can apply simple selectors using the ExtCss engine by using a rule like this:
 > `#?#div`
 
