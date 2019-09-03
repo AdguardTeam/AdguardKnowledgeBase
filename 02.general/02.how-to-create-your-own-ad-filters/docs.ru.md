@@ -77,6 +77,7 @@ visible: true
         * [Псевдо-класс `:properties()`](#extended-css-properties)
         * [Режим отладки селекторов](#selectors-debugging-mode)
         * [Тестирование расширенных селекторов](#testing-extended-selectors)
+        * [Псевдо-свойство `remove`](#pseudo-property-remove)
 * [Правила фильтрации HTML](#html-filtering-rules)
     * [Синтаксис правил фильтрации HTML](#html-filtering-rules-syntax)
     * [Примеры правил фильтрации HTML](#html-filtering-rules-examples)
@@ -1139,6 +1140,7 @@ div.banner:properties(content: /block me/)
 #$#.banner { display: none; debug: global; }
 ```
 
+<a id="pseudo-property-remove"></a>
 ### Псевдо-свойство `remove`
 Иногда необходимо именно убрать определенный элемент, а не просто скрыть его или применить какие-либо правила стиля. В таких случаях можно использовать специальное свойство `remove`.
 

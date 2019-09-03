@@ -77,6 +77,7 @@ visible: true
         * [Pseudo-class `:properties()`](#extended-css-properties)
         * [Selectors debugging mode](#selectors-debugging-mode)
         * [Testing extended selectors](#testing-extended-selectors)
+        * [Pseudo-property `remove`](#pseudo-property-remove)
 * [HTML filtering rules](#html-filtering-rules)
     * [HTML filtering rules syntax](#html-filtering-rules-syntax)
     * [HTML filtering rules examples](#html-filtering-rules-examples)
@@ -1139,7 +1140,7 @@ Sometimes, you might need to check the performance of a given selector or a styl
 ```
 #$#.banner { display: none; debug: global; }
 ```
-
+<a id="pseudo-property-remove"></a>
 ### Pseudo-property `remove`
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use a special style property: `remove`.
 
