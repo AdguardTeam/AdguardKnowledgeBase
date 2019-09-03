@@ -58,6 +58,7 @@ visible: true
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
+        * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
 * [Косметические правила](#cosmetic-rules)
@@ -720,6 +721,41 @@ http://regexr.com/3cesk
 * `@@||example.org/page/*$csp` — отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — отключает инлайн-скрипты на всех страницах, подходящих под паттерн правила.
 * `@@||example.org^$document` или `@@||example.org^$urlblock` — отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
+
+<a id="cookie-modifier"></a>
+##### **`cookie`**
+
+Модификатор `$cookie` полностью меняет поведение правила. Вместо того, чтобы блокировать запрос, этот модификатор позволяет нам блокировать или изменять заголовки `Cookie` или `Set-Cookie`.
+
+> **Несколько правил, соотвтествующих одному запросу**
+> В случае, когда несколько правил `$cookie` соответствуют одному запросу, мы применим каждое из них по очереди. 
+
+### синтаксис `$cookie`
+Синтаксис правила зависит от того, собираемся ли мы заблокировать все cookie или удалить один cookie. Поведение правила можно изменить с помощью модификаторов `maxAge` и `sameSite`.
+
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- каждый раз, когда AdGuard встречает cookie с именем `NAME` в запросе к` example.org`, он будет делать следующее:
+  
+  * Установит дату истечения срока хранения на текущее время плюс `3600` секунд
+  * Позволяет cookie использовать [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" стратегию.
+* `||example.org^$cookie` -- Блокирует ВСЕ cookie установленные `example.org`. Это эквивалентно установке `maxAge` 0.
+* `||example.org^$cookie=NAME` -- Блокирует единственную cookie с именем `NAME`.
+* `||example.org^$cookie=/regular_expression/` -- Блокирует все cookie, которые совпадают с регулярным выражением.
+
+> **Важно:** В случае использования регулярных выражений необходимо экранировать следующие символы: запятая (`,`) и (`$`). Используйте (`\`) для этого. Например, экранированная запятая выглядит так: `\,`.
+
+Правила исключения (`@@`) не влияют на правила `$cookie`, только если это не правило иключение `$document`. Чтобы отключить правило `$cookie`, правило исключение также должно иметь модификатор `$cookie`. Вот как это работает:
+
+* `@@||example.org^$cookie` -- разблокирует все cookie, установленные `example.org`
+* `@@||example.org^$cookie=NAME` -- разблокирует одну cookie с именем `NAME`
+* `@@||example.org^$cookie=/regular_expression/` -- разблокирует все cookie, соответствующие заданному регулярному выражению
+
+> **Ограничения**
+> `$cookie` правила поддерживают ограниченный список модификаторов: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
+
+### Примеры с `$cookie`
+* `$cookie=__cfduid` -- блокирует CloudFlare cookie везде
+* `$cookie=/__utm[a-z]/` -- блокирует Google Analytics cookie везде
+* `||facebook.com^$third-party,cookie=c_user` -- не позволяет Facebook'у отслеживать вас, даже если вы вошли в систему
 
 <a id="network-modifier"></a>
 ##### **`network`**
