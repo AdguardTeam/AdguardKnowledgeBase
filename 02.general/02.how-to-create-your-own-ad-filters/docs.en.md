@@ -58,6 +58,7 @@ visible: true
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
+        * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
 * [Cosmetic rules](#cosmetic-rules)
@@ -717,6 +718,56 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 * `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$csp` — disables all the `$csp` rules on all the pages matching the rule pattern.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
+
+<a id="cookie-modifier"></a>
+##### **`cookie`**
+
+The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
+
+> **Multiple rules matching a single request**
+> In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
+
+### `$cookie` syntax
+The rule syntax depends on whether we are going to block all cookies or to remove a single cookie. The rule behavior can be changed with `maxAge` and `sameSite` modifiers.
+
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
+  
+  * Set its expiration date to current time plus `3600` seconds
+  * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
+* `||example.org^$cookie` -- blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
+* `||example.org^$cookie=NAME` -- blocks a single cookie named `NAME`
+* `||example.org^$cookie=/regular_expression/` -- blocks every cookie that matches a given regular expression
+
+> **Important:** in the case of a regular expression matching, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
+
+`$cookie` rules are not affected by regular exception rules (`@@`) unless it's a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. Here's how it works:
+
+* `@@||example.org^$cookie` -- unblocks all cookies set by `example.org`
+* `@@||example.org^$cookie=NAME` -- unblocks a single cookie named `NAME`
+* `@@||example.org^$cookie=/regular_expression/` -- unblocks every cookie matching a given regular expression
+
+> **Limitations**
+> `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
+
+### Implementation details
+I suppose it is enough to intercept `Cookie`/`Set-Cookie` headers and there's no need to mess with the `document.cookie` property.
+
+Let's look at an example.
+
+1. `||example.org^$cookie=i_track_u` should block the `i_track_u` cookie coming from `example.org`
+2. We've intercepted a request sent to `https://example.org/count`
+3. `Cookie` header value is `i_track_u=1; JSESSIONID=321321`
+4. First of all, modify the `Cookie` header so that the server doesn't receive the `i_track_u` value. Modified value: `JSESSIONID=321321`
+5. Wait for the response and check all the `Set-Cookie` headers received from the server.
+6. Remove the one that sets the `i_track_u` cookie (or modify it and strip that cookie if it contains more than one)
+7. Now we need to make sure that browser deletes that cookie. In order to do it, we should add a new `Set-Cookie` header that sets `i_track_u` with a negative expiration date: `Set-Cookie: i_track_u=1; expires=[CURRENT_DATETIME]; path=/; domain=.example.org`.
+
+> **Step 7 must not be executed when the rule has the `third-party` modifier**. `third-party` means that there is a case (`first-party`) when cookies must not be removed, i.e. they can be actually useful, and removing them can be counterproductive. For instance, Google and Facebook rely on their SSO cookies and forcing a browser to remove them will also automatically log you out.
+
+### Real-life examples
+* `$cookie=__cfduid` -- blocks CloudFlare cookie everywhere
+* `$cookie=/__utm[a-z]/` -- blocks Google Analytics cookies everywhere
+* `||facebook.com^$third-party,cookie=c_user` -- prevents Facebook from tracking you even if you are logged in
 
 <a id="network-modifier"></a>
 ##### **`network`**
