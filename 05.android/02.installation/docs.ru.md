@@ -49,18 +49,18 @@ taxonomy:
 
 Дождитесь окончания процедуры установки. После ее завершения нажмите на кнопку **Открыть**. Если вы решили отложить запуск приложения на другое время, нажамите **Готово**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installdoneRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installdoneRu.png" width="501" />
 
 Далее вам будет предложено ознакомиться с **Лицензионным соглашением**, а также политикой конфиденциальности компании AdGuard. 
 Вы можете принять участие в развитии продукта. 
 Для этого вам следует поставить галочку в пункте *"Разрешить AdGuard отправлять автоматические отчеты об ошибках"*.
 После вы можете предварительно настроить защиту Adguard кликнув, **Продолжить**, или же сделать это позднее нажав, **Пропустить быстрые настройки**. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installmainRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installmainRu.png" width="501" />
 
 При выборе первого варианта откроется диалоговое окно, где вы можете настроить защиту приватности.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installpersonaldataRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installpersonaldataRu.png" width="501" />
 
 После нажатия кнопки **Заблокировать**, вам будут предложены три уровня защиты:
 
@@ -68,7 +68,7 @@ taxonomy:
 - **Высокий** (Сокращает время жизни файлов cookie, удаляет параметры отслеживания из URL-адресов).
 - **Максимальный** (Отключает возможности браузера, которые могут быть использованы для вашего отслеживания. В некоторых случаях возможно возникновение проблем с работой сайтов).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installprivacylevelRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installprivacylevelRu.png" width="501" />
 
 **Высокий**, а также **Максимальный** уровни защиты доступны только в **Premium**-версии.
 
@@ -76,15 +76,15 @@ taxonomy:
 
 В следующем окне вам будет дана возможность скрыть элементы-раздражители, такие как кнопки **Нравится** и **Виджеты социальных сетей.**
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installannoyancesRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/installannoyancesRu.png" width="501" />
 
 После выбора последней настройки вас перенесет в главное меню, где будет необходимо создать **Локальное VPN-соедиение**. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/warninglocalvpnRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/warninglocalvpnRu.png" width="501" />
 
 Важно подчеркнуть, что VPN - локальный. То есть AdGuard фильтрует трафик прямо на вашем устройстве, не пропуская его через какой-либо удалённый сервер. После того как вы нажмете Ок, вы увидите следующее окно.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/vpnRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Android3.1/vpnRu.png" width="501" />
 
 На этом установка приложения **AdGuard** будет завершена.
 
