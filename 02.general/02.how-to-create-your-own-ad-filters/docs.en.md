@@ -1257,6 +1257,9 @@ In addition to usual attribures, which value is every element checked for, there
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
+> You should use `""` to escape `"`, for instance:
+> `$$script[tag-content="alert(""this is ad"")"]`
+
 For example, let's take a look at this HTML code:
 ```html
 <script type="text/javascript">
@@ -1276,6 +1279,9 @@ $$script[tag-content="banner"]
 ##### `wildcard`
 
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+
+> You should use `""` to escape `"`, for instance:
+> `$$script[wildcard=""banner""]`
 
 For example:
 `$$script[wildcard="*banner*text*"]`
