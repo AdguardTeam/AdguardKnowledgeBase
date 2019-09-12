@@ -39,6 +39,7 @@ visible: true
             * [$subdocument](#subdocument-modifier)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
+            * [$webrtc](#webrtc-modifier)
             * [$other](#other-modifier)
         * [Exception rules modifiers](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
@@ -429,6 +430,18 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 ##### **`websocket`**
 
 The rule applies only to WebSocket connections.
+
+<a id="webrtc-modifier"></a>
+##### **`webrtc`**
+
+The rule applies only to WebRTC connections.
+
+> Please note that blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
+
+###### `webrtc` example
+
+* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connectios to `example.com` for `example.org`.
+* `@@*$webrtc,domain=example.org` - this rule disables the RTC wrapper for `example.org`.
 
 <a id="other-modifier"></a>
 ##### **`other`**
