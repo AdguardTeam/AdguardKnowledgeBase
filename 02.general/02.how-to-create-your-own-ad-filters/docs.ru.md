@@ -20,6 +20,7 @@ visible: true
     * [Синтаксис базовых правил](#basic-rules-syntax)
     * [Специальные символы](#basic-rules-special-characters)
     * [Поддержка регулярных выражений](#regexp-support)
+    * [Поддержка wildcard для TLD](#wildcard-for-tld)
     * [Примеры базовых правил](#basic-rules-examples)
     * [Модификаторы](#basic-rules-modifiers)
         * [Базовые модификаторы](#basic-rules-common-modifiers)
@@ -276,6 +277,12 @@ pattern = "/" regexp "/"
 
 > #### Совместимость
 > Браузерные расширения AdGuard для Safari и AdGuard для iOS не полностью поддерживают регулярные выражения в силу [ограничений Content Blocking API](https://webkit.org/blog/3476/content-blockers-first-look/) (в статье по ссылке найдите раздел "The Regular expression format").
+
+<a id="wildcard-for-tld"></a>
+### Поддержка wilcard для доменов верхнего уровня (TLD)
+
+Вы можете использовать wildcard-символ для доменов верхнего уровня в паттернах косметических, html и js правил. Например, правило `example.*##.banner` будет соответствовать всем `example.TLD` доменам: `example.ru`, `example.com`, `example.net`, `example.org` и т.д.
+При составлении базовых правил вы можете использовать *wildcard-символ для TLD* только вместе с модификатором `$domain`. Например, `||*/banners/*$image,domain=example.*` 
 
 <a id="basic-rules-examples"></a>
 ### Примеры базовых правил

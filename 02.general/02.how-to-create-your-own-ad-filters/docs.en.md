@@ -20,6 +20,7 @@ visible: true
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
     * [Regular expressions support](#regexp-support)
+    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Basic rules examples](#basic-rules-examples)
     * [Modifiers](#basic-rules-modifiers)
         * [Basic modifiers](#basic-rules-common-modifiers)
@@ -276,6 +277,13 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 > #### Compatibility with different versions of AdGuard
 > AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+
+<a id="wildcard-for-tld"></a>
+### Wildcard support for TLD (top-level domains)
+
+Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
+For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
+For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
