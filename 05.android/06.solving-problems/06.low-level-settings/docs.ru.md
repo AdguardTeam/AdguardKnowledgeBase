@@ -31,3 +31,126 @@ visible: true
 ### pref.vpn.ipv6.bypass
 
 Сегодня всё больше и больше SMS и MMS пересылаются через сеть, и в случаях, когда это происходит, всё чаще используется нестандартная сеть IPv6 . Когда мы пытаемся фильтровать такой трафик, инногда мы нарушаем отправку и даже получение MMS. Если вы подозреваете, что это как раз ваш случай, мы рекомендуем вам установить флажок напротив опции **pref.vpn.ipv6.bypass**, или добавить приложение, отвечающее за отправку MMS, в **pref.net.exclusions**.
+
+
+#### Все опции:
+
+  **pref.vpn.ipv4.force.default**
+   
+Если true - AdGuard будет принудительно использовать маршрут по умолчанию для IPv4.
+
+  **pref.vpn.ipv4.force.complex**
+
+Если true - AdGuard принудительно будет использовать сложный маршрут IPv4 для исключения локальной сети.
+   
+  **pref.vpn.ipv4.address**
+
+Адрес интерфейса IPv4 TUN.
+
+   **pref.vpn.ipv6.address**
+
+Адрес интерфейса IPv6 TUN.
+
+   **pref.vpn.ipv6.force**
+   
+Если true - AdGuard принудительно использует маршрут по умолчанию IPv6 (если IPv6 доступен).
+
+   **pref.vpn.ipv4.bypass**
+   
+Если это правда - AdGuard добавит специальный маршрут IPv4, чтобы просто обойти его.
+
+   **pref.vpn.ipv6.bypass**
+
+Если это правда - AdGuard добавит специальный маршрут IPv6, чтобы просто обойти его.
+
+   **pref.vpn.ipv6.disable**
+
+Если true - AdGuard принудительно отключит маршруты IPv6.
+
+   **pref.vpn.tun.mtu**
+   
+Tun MTU тюнинг.
+ 
+   **pref.ipv4.routes.excluded**
+
+Список маршрутов IPv4, исключенных из VPN и авто-прокси.
+   
+   **pref.ipv6.routes.excluded**
+   
+Список маршрутов IPv6, исключенных из VPN и авто-прокси.
+
+   **pref.excluded.uids**
+
+Исключенные жидкости.
+
+  **pref.vpn.capture**
+
+Включить регистрацию VPN-устройства.
+  
+  **pref.har.capture**
+
+Включить захват файла HAR.
+
+  **pref.vpn.disable.pause**
+   
+Отключите автоматическую паузу VPN в случае отсутствия сети, режима модема или энергосбережения.
+
+  **pref.vpn.disable.reconfigure**
+
+Отключает автоматическую перенастройку VPN.
+
+  **pref.proxy.disable.reconfigure**
+
+Отключает автоматическую перенастройку Proxy.
+
+  **pref.proxy.block.ipv6**
+
+Заблокируйте все интернет-соединения через IPv6.
+
+  **pref.filtered.ports**
+
+Список порта перенаправления.
+
+  **pref.boot.startup.delay**
+
+Начальная задержка запуска защиты (в секундах) после загрузки устройства.
+
+  **pref.enforce.paused.notification**
+
+Принудительное уведомление о приостановленной защите, даже если для значка уведомления установлено значение Нет.
+
+  **pref.root.clear.youtube**
+  
+Adguard будет очищать данные приложения Youtube каждый раз при загрузке.
+
+  **pref.root.set.oom_adj**
+   
+Adguard установит минимум oom_score_adj для собственного процесса.
+
+  **pref.enforce.https.filtering**
+   
+Список приложений, для которых AdGuard применяет фильтрацию HTTPS, даже если они нацелены на Android 7+.
+
+  **pref.removed.html.log**
+
+AdGuard напечатает информацию об удаленных элементах HTML в журнале фильтрации.
+    
+  **pref.samsungpay.autopause.enable**
+
+Adguard приостановит защиту, пока приложение Samsung Pay находится на переднем плане.
+
+  **pref.dns.bootstrap**
+   
+Начальная загрузка DNS для DNSProxy DoH и DoT серверов.
+   
+ **pref.dns.fallback**
+   
+Резервный DNS-адрес.
+
+ **pref.dns.blocking.type**
+   
+Тип блока для фильтрации DNS.
+
+ **pref.notify.on.unknown.ca**
+
+Показывать неизвестные уведомления CA или нет.
