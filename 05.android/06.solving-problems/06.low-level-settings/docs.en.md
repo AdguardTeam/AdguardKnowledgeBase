@@ -63,11 +63,11 @@ If true - AdGuard will force IPv6 default route (if IPv6 is available).
 
    **pref.vpn.ipv4.bypass**
    
-If true - AdGuard will add a special IPv4 route to simply bypass it.
+If true, VPN will be configured to bypass all the IPv4 traffic.
 
    **pref.vpn.ipv6.bypass**
 
-If true - AdGuard will add a special IPv6 route to simply bypass it.
+If true, VPN will be configured to bypass all the IPv6 traffic.
 
    **pref.vpn.ipv6.disable**
 
@@ -87,7 +87,7 @@ List of IPv6 routes excluded from VPN and auto-proxy.
 
    **pref.excluded.uids**
 
-Excluded uids.
+List of excluded packages uids.
 
   **pref.vpn.capture**
 
