@@ -75,7 +75,7 @@ If true - AdGuard will disable IPv6 routes forcibly.
 
    **pref.vpn.tun.mtu**
    
-Tun MTU tuning.
+Maximum transmission unit (MTU) of the VPN interface.
  
    **pref.ipv4.routes.excluded**
 
