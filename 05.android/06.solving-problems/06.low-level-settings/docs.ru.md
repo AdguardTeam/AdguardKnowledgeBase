@@ -65,7 +65,7 @@ visible: true
 
    **pref.vpn.ipv6.disable**
 
-Если true - AdGuard принудительно отключит маршруты IPv6.
+Если true - AdGuard принудительно отключит маршруты IPv6 (VPN).
 
    **pref.vpn.tun.mtu**
    
@@ -85,7 +85,7 @@ visible: true
 
   **pref.vpn.capture**
 
-Включить журналирование VPN.
+Включить отображение запросов VPN в журнале фильтрации, файл PCAP будет записан стеком TCP/IP.
   
   **pref.har.capture**
 
@@ -153,4 +153,4 @@ AdGuard приостановит защиту, пока приложение Sam
 
  **pref.notify.on.unknown.ca**
 
-Показывать неизвестные уведомления CA.
+Показывать уведомления о неизвестных CA.

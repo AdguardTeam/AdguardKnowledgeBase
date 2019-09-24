@@ -71,7 +71,7 @@ If true - VPN will be configured to bypass all the IPv6 traffic.
 
    **pref.vpn.ipv6.disable**
 
-If true - AdGuard will disable IPv6 routes forcibly.
+If true - AdGuard will disable IPv6 routes forcibly (VPN).
 
    **pref.vpn.tun.mtu**
    
@@ -91,7 +91,7 @@ List of excluded packages uids.
 
   **pref.vpn.capture**
 
-Enable VPN tun device logging.
+Enable VPN tun device logging, PCAP file will be recorded by the TCP/IP stack.
   
   **pref.har.capture**
 
@@ -103,11 +103,11 @@ Disable automatic VPN pause in case of network absence, tethering or power savin
 
   **pref.vpn.disable.reconfigure**
 
-Disable VPN automatic re-configuration.
+Disable VPN automatic re-configuration in case of network absence, tethering or power saving mode.
 
   **pref.proxy.disable.reconfigure**
 
-Disable VPN automatic re-configuration.
+Disable Proxy automatic re-configuration.
 
   **pref.proxy.block.ipv6**
 
