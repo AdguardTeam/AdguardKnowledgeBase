@@ -39,7 +39,7 @@ This setting has been developed specifically for the South Korean users who ofte
 If you want to learn about how this feature makes AdGuard compatible with Samsung Pay, please read this [article](https://kb.adguard.com/en/android/solving-problems/samsung-pay).
 
 
-#### All available options:
+### All available options:
 
   **pref.vpn.ipv4.force.default**
    
@@ -63,11 +63,11 @@ If true - AdGuard will force IPv6 default route (if IPv6 is available).
 
    **pref.vpn.ipv4.bypass**
    
-If true, VPN will be configured to bypass all the IPv4 traffic.
+If true - VPN will be configured to bypass all the IPv4 traffic.
 
    **pref.vpn.ipv6.bypass**
 
-If true, VPN will be configured to bypass all the IPv6 traffic.
+If true - VPN will be configured to bypass all the IPv6 traffic.
 
    **pref.vpn.ipv6.disable**
 
@@ -103,19 +103,19 @@ Disable automatic VPN pause in case of network absence, tethering or power savin
 
   **pref.vpn.disable.reconfigure**
 
-Disables VPN automatic re-configuration.
+Disable VPN automatic re-configuration.
 
   **pref.proxy.disable.reconfigure**
 
-Disables VPN automatic re-configuration.
+Disable VPN automatic re-configuration.
 
   **pref.proxy.block.ipv6**
 
-Block all internet connections through IPv6.
+Block all internet connections through IPv6 (Proxy).
 
   **pref.filtered.ports**
 
-List of the redirect port.
+List of the redirect ports.
 
   **pref.boot.startup.delay**
 
@@ -127,11 +127,11 @@ Enforce notification about paused protection even when notification icon is set 
 
   **pref.root.clear.youtube**
   
-Adguard will clear Youtube app data every on boot.
+AdGuard will clear Youtube app data every on boot.
 
   **pref.root.set.oom_adj**
    
-Adguard will set minimum oom_score_adj for own process.
+AdGuard will set minimum oom_score_adj for own process.
 
   **pref.enforce.https.filtering**
    
@@ -143,7 +143,7 @@ AdGuard will print information about removed HTML elements to the filtering log.
     
   **pref.samsungpay.autopause.enable**
 
-Adguard will pause protection while Samsung Pay app is foreground.
+AdGuard will pause protection while Samsung Pay app is in the foreground.
 
   **pref.dns.bootstrap**
    
