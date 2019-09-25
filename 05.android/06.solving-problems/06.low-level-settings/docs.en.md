@@ -123,15 +123,15 @@ The initial protection startup delay (in seconds) after device boot up.
 
   **pref.enforce.paused.notification**
 
-Enforce notification about paused protection even when notification icon is set to None.
+Enforce notification about paused protection even when notification icon is set to Disabled.
 
   **pref.root.clear.youtube**
   
-AdGuard will clear Youtube app data every on boot.
+AdGuard will clear Youtube app data every on boot (ROOT is required).
 
   **pref.root.set.oom_adj**
    
-AdGuard will set minimum oom_score_adj for own process.
+AdGuard will set minimum oom_score_adj for own process (Root is required).
 
   **pref.enforce.https.filtering**
    
@@ -143,11 +143,11 @@ AdGuard will print information about removed HTML elements to the filtering log.
     
   **pref.samsungpay.autopause.enable**
 
-AdGuard will pause protection while Samsung Pay app is in the foreground.
+AdGuard will pause protection while Samsung Pay app is in the foreground (in VPN mode only).
 
   **pref.dns.bootstrap**
    
- Bootstrap DNS for DNSProxy DoH and DoT servers.
+ Bootstrap DNS for DoH and DoT servers.
    
  **pref.dns.fallback**
    

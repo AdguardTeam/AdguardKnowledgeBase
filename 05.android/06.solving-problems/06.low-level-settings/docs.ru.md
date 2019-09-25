@@ -121,11 +121,11 @@ visible: true
 
   **pref.root.clear.youtube**
   
-AdGuard будет очищать данные приложения Youtube каждый раз при загрузке.
+AdGuard будет очищать данные приложения Youtube каждый раз при загрузке (необходимы права ROOT).
 
   **pref.root.set.oom_adj**
    
-AdGuard установит минимум oom_score_adj для собственного процесса.
+AdGuard установит минимум oom_score_adj для собственного процесса (необходимы права ROOT).
 
   **pref.enforce.https.filtering**
    
@@ -137,11 +137,10 @@ AdGuard будет отображать информацию об удаленн
     
   **pref.samsungpay.autopause.enable**
 
-AdGuard приостановит защиту, пока приложение Samsung Pay находится на переднем плане.
+AdGuard приостановит защиту, пока приложение Samsung Pay находится на переднем плане (только в режиме VPN).
 
   **pref.dns.bootstrap**
-   
-Начальная загрузка DNS для DNSProxy DoH и DoT серверов.
+  DNS-сервер начальной загрузки для DoH и DoT серверов.
    
  **pref.dns.fallback**
    
@@ -149,7 +148,7 @@ AdGuard приостановит защиту, пока приложение Sam
 
  **pref.dns.blocking.type**
    
-Тип блока для фильтрации DNS.
+Тип блокировки для фильтрации DNS.
 
  **pref.notify.on.unknown.ca**
 
