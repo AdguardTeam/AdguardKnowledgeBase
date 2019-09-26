@@ -47,7 +47,7 @@ If enabled - VPN will be configured to filter 0.0.0.0/0.
 
   **pref.vpn.ipv4.force.complex**
 
-If enabled - AdGuard will force IPv4 complex route for LAN exclusion.
+If enabled - VPN will be configured to filter everything except the excluded IPv4 routes.
    
   **pref.vpn.ipv4.address**
 
@@ -91,7 +91,7 @@ List of excluded UID packages.
 
   **pref.vpn.capture**
 
-Enable VPN tun device logging, PCAP file will be recorded by the TCP/IP stack.
+Will record all connections that goes throigh the TCP/IP stack.
   
   **pref.har.capture**
 
