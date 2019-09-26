@@ -123,7 +123,7 @@ The initial protection startup delay (in seconds) after device boot up.
 
   **pref.enforce.paused.notification**
 
-Enforce notification about paused protection even when notification icon is set to Disabled.
+Enforce notification about paused protection even when notification icon is set to Disabled (for Android below Oreo).
 
   **pref.root.clear.youtube**
   
@@ -131,7 +131,7 @@ AdGuard will clear Youtube app data every on boot (ROOT is required).
 
   **pref.root.set.oom_adj**
    
-AdGuard will set minimum oom_score_adj for own process (Root is required).
+AdGuard will set minimum oom_score_adj for own process (ROOT is required).
 
   **pref.enforce.https.filtering**
    
