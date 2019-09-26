@@ -91,7 +91,7 @@ List of excluded UID packages.
 
   **pref.vpn.capture**
 
-Will record all connections that goes throigh the TCP/IP stack.
+Will record all connections that goes through the TCP/IP stack.
   
   **pref.har.capture**
 
