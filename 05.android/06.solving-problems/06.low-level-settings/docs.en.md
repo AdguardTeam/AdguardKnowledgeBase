@@ -43,7 +43,7 @@ If you want to learn about how this feature makes AdGuard compatible with Samsun
 
   **pref.vpn.ipv4.force.default**
    
-If enabled - AdGuard will force IPv4 default route.
+If enabled - VPN will be configured to filter 0.0.0.0/0.
 
   **pref.vpn.ipv4.force.complex**
 
@@ -59,7 +59,7 @@ IPv6 TUN interface address.
 
    **pref.vpn.ipv6.force**
    
-If enabled - AdGuard will force IPv6 default route (if IPv6 is available).
+If enabled - AdGuard add an IPv6 address to the VPN even if there's no active IPv6 network.
 
    **pref.vpn.ipv4.bypass**
    
@@ -87,7 +87,7 @@ List of IPv6 routes excluded from VPN and auto-proxy.
 
    **pref.excluded.uids**
 
-List of excluded packages uids.
+List of excluded UID packages.
 
   **pref.vpn.capture**
 

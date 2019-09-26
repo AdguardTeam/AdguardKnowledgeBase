@@ -37,7 +37,7 @@ visible: true
 
   **pref.vpn.ipv4.force.default**
    
-Если включено - AdGuard будет принудительно использовать маршрут IPv4 по умолчанию.
+Если включено - VPN будет настроен на фильтрацию 0.0.0.0/0.
 
   **pref.vpn.ipv4.force.complex**
 
@@ -53,7 +53,7 @@ visible: true
 
    **pref.vpn.ipv6.force**
    
-Если включено - AdGuard принудительно использует маршрут IPv6 по умочанию (если IPv6 доступен).
+Если включено - AdGuard добавит IPv6-адрес в VPN, даже если нет активной сети IPv6.
 
    **pref.vpn.ipv4.bypass**
    
@@ -81,7 +81,7 @@ visible: true
 
    **pref.excluded.uids**
 
-Исключенные UID'ы.
+Исключенные UID-пакеты.
 
   **pref.vpn.capture**
 
