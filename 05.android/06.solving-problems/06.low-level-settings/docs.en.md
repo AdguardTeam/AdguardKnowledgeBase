@@ -22,8 +22,7 @@ To add an app to this list simply add a new entry with app's package name. For a
 
 with **com.google.android.youtube** being the package name.
 
-**
-HTTPS filtering preferences**
+**HTTPS filtering preferences**
 
 We united several settings under this category: _pref.https.apps.exclusions_, _pref.https.domains.blacklist_ and _pref.https.domains.whitelist_. They are essentially the same settings you can find in HTTPs filtering settings tab. You can find more information about them in our blog:
 
@@ -38,3 +37,126 @@ Nowadays, more and more often SMS and MMS are sent via network, and when they ar
 This setting has been developed specifically for the South Korean users who often face the following problem — ***the "Samsung Pay" app doesn’t work on devices with running VPN** (which, in its turn, is being used by AdGuard).* 
 
 If you want to learn about how this feature makes AdGuard compatible with Samsung Pay, please read this [article](https://kb.adguard.com/en/android/solving-problems/samsung-pay).
+
+
+### All available options:
+
+  **pref.vpn.ipv4.force.default**
+   
+If enabled - VPN will be configured to filter 0.0.0.0/0.
+
+  **pref.vpn.ipv4.force.complex**
+
+If enabled - VPN will be configured to filter everything except the excluded IPv4 routes.
+   
+  **pref.vpn.ipv4.address**
+
+IPv4 TUN interface address.
+
+   **pref.vpn.ipv6.address**
+
+IPv6 TUN interface address.
+
+   **pref.vpn.ipv6.force**
+   
+If enabled - AdGuard add an IPv6 address to the VPN even if there's no active IPv6 network.
+
+   **pref.vpn.ipv4.bypass**
+   
+If enabled - VPN will be configured to bypass all the IPv4 traffic.
+
+   **pref.vpn.ipv6.bypass**
+
+If enabled - VPN will be configured to bypass all the IPv6 traffic.
+
+   **pref.vpn.ipv6.disable**
+
+If enabled - AdGuard will disable IPv6 routes forcibly (VPN).
+
+   **pref.vpn.tun.mtu**
+   
+Maximum transmission unit (MTU) of the VPN interface.
+ 
+   **pref.ipv4.routes.excluded**
+
+List of IPv4 routes excluded from VPN and auto-proxy.
+   
+   **pref.ipv6.routes.excluded**
+   
+List of IPv6 routes excluded from VPN and auto-proxy.
+
+   **pref.excluded.uids**
+
+List of excluded UID packages.
+
+  **pref.vpn.capture**
+
+Will record all connections that goes through the TCP/IP stack.
+  
+  **pref.har.capture**
+
+Enable HAR file capture.
+
+  **pref.vpn.disable.pause**
+   
+Disable automatic VPN pause in case of network absence, tethering or power saving mode.
+
+  **pref.vpn.disable.reconfigure**
+
+Disable VPN automatic re-configuration in case of network absence, tethering or power saving mode.
+
+  **pref.proxy.disable.reconfigure**
+
+Disable Proxy automatic re-configuration.
+
+  **pref.proxy.block.ipv6**
+
+Block all internet connections through IPv6 (Proxy).
+
+  **pref.filtered.ports**
+
+List of the redirect ports.
+
+  **pref.boot.startup.delay**
+
+The initial protection startup delay (in seconds) after device boot up.
+
+  **pref.enforce.paused.notification**
+
+Enforce notification about paused protection even when notification icon is set to Disabled (for Android below Oreo).
+
+  **pref.root.clear.youtube**
+  
+AdGuard will clear Youtube app data every on boot (ROOT is required).
+
+  **pref.root.set.oom_adj**
+   
+AdGuard will set minimum oom_score_adj for own process (ROOT is required).
+
+  **pref.enforce.https.filtering**
+   
+List of apps for which AdGuard enforces HTTPS filtering even if they target Android 7+.
+
+  **pref.removed.html.log**
+
+AdGuard will print information about removed HTML elements to the filtering log.
+    
+  **pref.samsungpay.autopause.enable**
+
+AdGuard will pause protection while Samsung Pay app is in the foreground (in VPN mode only).
+
+  **pref.dns.bootstrap**
+   
+ Bootstrap DNS for DoH and DoT servers.
+   
+ **pref.dns.fallback**
+   
+Fallback DNS address.
+
+ **pref.dns.blocking.type**
+   
+ Block type for DNS filtering.
+
+ **pref.notify.on.unknown.ca**
+
+ Show unknown CA notifications or not.
