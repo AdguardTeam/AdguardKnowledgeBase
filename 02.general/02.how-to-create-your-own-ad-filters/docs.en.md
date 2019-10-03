@@ -20,6 +20,7 @@ visible: true
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
     * [Regular expressions support](#regexp-support)
+    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Basic rules examples](#basic-rules-examples)
     * [Modifiers](#basic-rules-modifiers)
         * [Basic modifiers](#basic-rules-common-modifiers)
@@ -58,6 +59,7 @@ visible: true
         * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
+        * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
 * [Cosmetic rules](#cosmetic-rules)
@@ -85,8 +87,6 @@ visible: true
         * [wildcard](#wildcard-attribute)
         * [max-length](#max-length-attribute)
         * [min-length](#min-length-attribute)
-        * [parent-elements](#parent-elements-attribute)
-        * [parent-search-level](#parent-search-level-attribute)
     * [HTML filtering rules exceptions](#html-filtering-rules-exceptions)
 * [JavaScript rules](#javascript-rules)
     * [JavaScript rules syntax](#javascript-rules-syntax)
@@ -277,6 +277,13 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 > #### Compatibility with different versions of AdGuard
 > AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+
+<a id="wildcard-for-tld"></a>
+### Wildcard support for TLD (top-level domains)
+
+Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
+For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
+For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
@@ -694,7 +701,7 @@ This modifier completely changes the rule behavior. If it is applied to a rule, 
 
 > In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
-For the requests matching a `$csp` rule, we will strengthen response's security policy by adding additional content security policy equal to the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. Other basic rules have no influence on it.
+For the requests matching a `$csp` rule, we will strengthen response's security policy by adding additional content security policy equal to the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
 
 >Multiple rules matching a single request.
 >In case if multiple `$csp` rules match a single request, we will apply each of them.
@@ -717,6 +724,42 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 * `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$csp` — disables all the `$csp` rules on all the pages matching the rule pattern.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
+* `@@||example.org^$document` or `@@||example.org^$urlblock` — disables all the `$csp` rules on all the pages matching the rule pattern.
+
+<a id="cookie-modifier"></a>
+##### **`cookie`**
+
+The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
+
+> **Multiple rules matching a single request**
+> In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
+
+### `$cookie` syntax
+The rule syntax depends on whether we are going to block all cookies or to remove a single cookie. The rule behavior can be changed with `maxAge` and `sameSite` modifiers.
+
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
+  
+  * Set its expiration date to current time plus `3600` seconds
+  * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
+* `||example.org^$cookie` -- blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
+* `||example.org^$cookie=NAME` -- blocks a single cookie named `NAME`
+* `||example.org^$cookie=/regular_expression/` -- blocks every cookie that matches a given regular expression
+
+> **Important:** in the case of a regular expression matching, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
+
+`$cookie` rules are not affected by regular exception rules (`@@`) unless it's a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. Here's how it works:
+
+* `@@||example.org^$cookie` -- unblocks all cookies set by `example.org`
+* `@@||example.org^$cookie=NAME` -- unblocks a single cookie named `NAME`
+* `@@||example.org^$cookie=/regular_expression/` -- unblocks every cookie matching a given regular expression
+
+> **Limitations**
+> `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
+
+### Real-life examples
+* `$cookie=__cfduid` -- blocks CloudFlare cookie everywhere
+* `$cookie=/__utm[a-z]/` -- blocks Google Analytics cookies everywhere
+* `||facebook.com^$third-party,cookie=c_user` -- prevents Facebook from tracking you even if you are logged in
 
 <a id="network-modifier"></a>
 ##### **`network`**
@@ -878,6 +921,22 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 > #### Application area
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
+
+#### Extended CSS rules syntax
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to make these rules use the "Extended CSS" engine. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
+The syntax for extended CSS rules:
+* `#?#` — for element hiding (`#@?#` — for exceptions )
+* `#$?#` — for CSS injection (`#@$?#` — for exceptions )
+
+##### Extended CSS rules examples
+
+* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule will block all `div` elements that contain link as a child node with `[target="_blank"][rel="nofollow"]` attributes. The rule will only work for `example.org` and all it's subdomains.
+* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all it's subdomains.
+* `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all it's subdomains.
+* `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
+
+> Please note, that now you can apply simple selectors using the ExtCss engine by using a rule like this:
+> `#?#div`
 
 <a id="extended-css-has"></a>
 #### Pseudo-class `:has()`
@@ -1256,40 +1315,6 @@ $$div[tag-content="banner"][min-length="400"]
 ```
 
 This rule will remove all the `div` elements, whose code contains the substring` banner` and the length of which exceeds `400` characters.
-
-<a id="parent-elements-attribute"></a>
-##### `parent-elements`
-
-This attribute seriously modifies the rule behaviour. A common HTML filtering rule uses attributes to find and delete elements on the page. If `parent-elements` is set, then the element's parent element (with a name specified by `parent-elements` attribute) will be deleted instead.
-
-Here is an example:
-
-**HTML code**
-```html
-<table style="background: url('http://domain.com/banner.gif')">
-    <tr>
-        <td>
-            <a href="http://example.org/ads">TEXT ADS</a>
-        </td>
-    </tr>
-</table>
-```
-
-The problem with this code is that cutting out ads is not enough here. The banner is displayed using the parent table (as a `background`). This is where we can use the `parent-elements`.
-
-Let's use the following rule to block the entire table:
-```
-$$a[href="example.org/ads"][parent-elements="table"]
-```
-When AdGuard finds an element `a` with a `href` attribute that contain `example.org/ads`, rather then cut it out, it will keep looking for the closest parent element `table` and will cut it out instead.
-
-You can specify few parent elements separated by commas. The closest one will be blocked.
-
-<a id="parent-search-level-attribute"></a>
-##### `parent-search-level`
-
-Specifies the maximum parent element search depth. The defaul maximum search depth is `3`.
-That was set in order not to cut too much, if `HTML` page changes. Do not use too large values for this attribute.
 
 <a id="html-filtering-rules-exceptions"></a>
 ### HTML filtering rules exceptions
