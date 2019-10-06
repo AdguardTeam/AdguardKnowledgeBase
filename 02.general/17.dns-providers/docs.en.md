@@ -468,9 +468,9 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Hostname: `ibksturm.synology.me` IP: `83.78.122.183` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Add to AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `83.78.122.183` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `83.78.122.183` | <a href="sdns://AQcAAAAAAAAADTgzLjc4LjEyMi4xODMgG5HqOxOkK2FH8_9v-NLEEkX1yH-MLtlNWnsQdXZiAtoYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt">Add to AdGuard</a> |
+| DNS-over-TLS, IPv4 | Hostname: `ibksturm.synology.me` IP: `188.61.18.34` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vaWJrc3R1cm0uc3lub2xvZ3kubWU">Add to AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `188.61.18.34` | <a href="sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `188.61.18.34` | <a href="sdns://AQcAAAAAAAAADDE4OC42MS4xOC4zNCAxpVWjP-w5DRPkAkNBcR25Umjp1eT36lwLXK5vOTfehhgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0">Add to AdGuard</a> |
 
 <a name="switch.ch-dns"></a>
 
