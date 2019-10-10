@@ -58,7 +58,7 @@ visible: true
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate_ff/4.png)
 
-4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\NetworkTemp\SSL\**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите **"Открыть"**.
+4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\SSL**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите **"Открыть"**.
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/5.png)
 
@@ -113,7 +113,7 @@ visible: true
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/4.png)
 
-4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\NetworkTemp\SSL\**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите "**Открыть**".
+4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\SSL**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите "**Открыть**".
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/5.png)
 

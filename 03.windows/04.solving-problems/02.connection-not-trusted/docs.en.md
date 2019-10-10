@@ -61,7 +61,7 @@ To do so:
 
 ![](ffox_en_4.png)
 
-4. In the opened window type in ** %ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard Personal CA in the shown folder, then press 'Open'.
+4. In the opened window type in **%ProgramData%\Adguard\SSL** and choose AdGuard Personal CA in the shown folder, then press 'Open'.
 
 ![](ffox_en_5.png)
 
@@ -119,7 +119,7 @@ To do so:
 ![](opera_en_4.png)
 
 
-4. In the opened window type in **%ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
+4. In the opened window type in **%ProgramData%\Adguard\SSL** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
 
 ![](opera_en_5.png)
 
