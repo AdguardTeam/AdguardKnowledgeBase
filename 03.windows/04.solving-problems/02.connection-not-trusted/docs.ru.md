@@ -34,7 +34,7 @@ visible: true
 --->
 
 <a name="firefox"></a>
-#### Firefox
+## Firefox
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate_ff/1.png)
 
@@ -58,9 +58,9 @@ visible: true
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate_ff/4.png)
 
-4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\NetworkTemp\SSL\**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите **"Открыть"**.
+4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\SSL**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите **"Открыть"**.
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/5.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/sslenru.png" />
 
 5. Выставьте флажки, как показано на иллюстрации, и нажмите кнопку «Ок».
 
@@ -89,7 +89,7 @@ visible: true
 Мы не рекомендуем использовать этот способ, так как при этом весь HTTPS трафик не будет фильтроваться. Этот вариант можно использовать в качестве временной меры, написав при этом в [службу поддержки](/technical-support).
 
 <a name="opera"></a>
-#### Opera
+## Opera
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/1.png)
 
@@ -113,9 +113,9 @@ visible: true
 
 ![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/4.png)
 
-4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\NetworkTemp\SSL\**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите "**Открыть**".
+4. В открывшемся окне введите в поиск **%ProgramData%\Adguard\SSL**, выберите в открывшейся папке **AdGuard Personal CA** и нажмите "**Открыть**".
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/certificate/5.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/sslenru.png" />
 
 5. В открывшемся окне нажмите кнопку «Просмотреть».
 
