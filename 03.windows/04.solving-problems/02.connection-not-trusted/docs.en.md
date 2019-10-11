@@ -121,7 +121,7 @@ To do so:
 
 4. In the opened window type in **%ProgramData%\Adguard\SSL** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
 
-![](opera_en_5.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/sslenru.png" />
 
 
 5. In the opened window click on 'View...'.
