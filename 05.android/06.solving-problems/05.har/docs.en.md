@@ -26,7 +26,7 @@ To create a HAR file in Chrome:
 6. Select the ***Preserve log*** check box on the Network tab.
 7. Reproduce the steps that create the issue.
 8. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
-9. Forward to AdGuard support with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 </details>
 
 ## Edge
@@ -39,7 +39,7 @@ To create a HAR file in Edge:
 3. Refresh the webpage to engage HTTP communications, and wait for one minute.
 4. Click the ***Disk*** icon or press and hold ***CTRL+S*** to save a HAR file.
 5. Complete saving by using ***Save As…***
-6. Forward to AdGuard support with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+6. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 </details>
 
 ## Firefox
@@ -57,7 +57,7 @@ To create a HAR file in Firefox:
 5. Select the ***Persist Logs*** check box on the Network tab.
 6. Reproduce the steps that create the issue.
 7. Save session as a .har file by right clicking on the grid and selecting ***Save all as HAR***.
-8. Forward to AdGuard support with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 </details>
 
 ## Internet Explorer 11
@@ -74,7 +74,7 @@ To create a HAR file in Internet Explorer 11:
 - ***Clear session*** button is a three line icon with an x on it.
 5. Reproduce the steps that create the issue.
 6. Save session as a .har file by clicking on the ***Save disk*** button (Export as HAR) on Network tab.
-7. Forward to AdGuard support with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+7. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 </details>
 
 ## Safari
@@ -91,7 +91,7 @@ To create a HAR file in Safari:
 5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
 6. Reproduce the steps that create the issue.
 7. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
-8. Forward to AdGuard support with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 </details>
 
 ## Compressing a HAR file on Mac
