@@ -22,7 +22,7 @@ visible: true
 
 It is no secret, that there are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
+That is why we strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
 
 <a name="plurals"></a>
 
