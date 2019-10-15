@@ -12,8 +12,6 @@ HAR files help our technical support teams troubleshoot complex issues. To creat
 
 ## Chrome
 
-<details><summary> </summary>
-
 To create a HAR file in Chrome:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
@@ -37,11 +35,7 @@ To create a HAR file in Chrome:
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-</details>
-
 ## Edge
-
-<details><summary> </summary>
 
 To create a HAR file in Edge:
 
@@ -57,11 +51,7 @@ To create a HAR file in Edge:
 
 6. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-</details>
-
 ## Firefox
-
-<details><summary> </summary>
 
 To create a HAR file in Firefox:
 
@@ -84,11 +74,7 @@ To create a HAR file in Firefox:
 
 8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-</details>
-
 ## Internet Explorer 11
-
-<details><summary> </summary>
 
 To create a HAR file in Internet Explorer 11:
 
@@ -110,11 +96,7 @@ To create a HAR file in Internet Explorer 11:
 
 7. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-</details>
-
 ## Safari
-
-<details><summary> </summary>
 
 To create a HAR file in Safari:
 
@@ -137,11 +119,8 @@ To create a HAR file in Safari:
 
 8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-</details>
 
 ## Compressing a HAR file on Mac
-
-<details><summary> </summary>
 
 To compress a HAR file for Mac:
 
@@ -153,11 +132,7 @@ To compress a HAR file for Mac:
 
 4. A compressed file will have the name of the original HAR file with a ***.zip*** extension.
 
-</details>
-
 ## Compressing a HAR file for Windows
-
-<details><summary> </summary>
 
 To compress a HAR file for Windows:
 
@@ -171,7 +146,7 @@ To compress a HAR file for Windows:
 
 5. A new zipped folder with the same name is created in the same location.
 
-</details>
+
 
 <a id="howtoanalyze"></a>
 ## How to analyze HAR files?
