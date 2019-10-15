@@ -35,7 +35,7 @@ If the problem persists, you should use one of specified manuals depending on yo
 --->
 
 <a name="firefox"></a>
-#### Firefox
+## Firefox
 
 ![](ffox_en_1.png)
 
@@ -61,9 +61,9 @@ To do so:
 
 ![](ffox_en_4.png)
 
-4. In the opened window type in ** %ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard Personal CA in the shown folder, then press 'Open'.
+4. In the opened window type in **%ProgramData%\Adguard\SSL** and choose AdGuard Personal CA in the shown folder, then press 'Open'.
 
-![](ffox_en_5.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/sslenru.png" />
 
 5. Check the checkboxes as it is shown on the screenshot and click 'OK'.
 
@@ -93,7 +93,7 @@ Disable the HTTPS filtering as it’s done in this picture:
 We do not recommend this way, as it will leave all your HTTPS traffic unfiltered. Only use it as a temporary measure and contact our [support team](/technical-support).
 
 <a name="opera"></a>
-#### Opera
+## Opera
 
 ![](opera_en_1.png)
 
@@ -119,9 +119,9 @@ To do so:
 ![](opera_en_4.png)
 
 
-4. In the opened window type in **%ProgramData%\Adguard\NetworkTemp\SSL\ ** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
+4. In the opened window type in **%ProgramData%\Adguard\SSL** and choose AdGuard **Personal CA** in the shown folder, then press 'Open'.
 
-![](opera_en_5.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/sslenru.png" />
 
 
 5. In the opened window click on 'View...'.
