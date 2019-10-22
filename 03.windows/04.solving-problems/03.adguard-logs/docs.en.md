@@ -8,32 +8,19 @@ visible: true
 
 For analysis and diagnostic of different problems support service might need AdGuard log files. These files contain records about all errors occurred with the software recently. Below is the brief instruction describing the way to get the log files and send them to support service.
 
-1. Open the path with AdGuard log files.
+1. Open the AdGuard settings. Go to the General Settings section, scroll down to the end of the screen and select **Debug** Logging Level.
 
-For Windows 10 click the Search icon on the Taskbar:
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
 
-Type **%programdata%\Adguard** and press Enter.
+2. Reproduce your issue. 
+- It is advisable to specify the reproducing time, it will help our support team to solve this situation.
 
-![](win10_search_EN.png)
+3. Collect the received logs using the **Export Log** button.
 
-If you use Windows 8 or Windows 8.1 – go to the **Search**:
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen2.png" />
 
-![](side%20menu.png)
+- Save the archive to any folder convenient for you.
 
-Type in **%programdata%\Adguard** and press Enter:
+4. **Important**: return **Standard** logging level. Because **Debug** logging level can slow down the application filtering.
 
-![](search%20windows8.png)
-
-If you use Windows 7 or Vista – press **Start** and type in **%programdata%\Adguard** in the search bar and press Enter.
-
-![](type%20the%20path.png)
-
-2. Create an archive with AdGuard log files.
-
-Using your right mouse button click on the Logs in the folder you opened in step 1.
-
-Choose “**Send to**”, then “**Compressed (zipped) folder**” as it’s shown in this picture:
-
-![](compressed%20folder.png)
-
-3. Send the created **Logs.zip** file to the AdGuard [support service](mailto:support@adguard.com).
+5. Send the received archive to the AdGuard [support service](mailto:support@adguard.com).
