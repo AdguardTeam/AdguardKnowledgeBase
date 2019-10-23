@@ -12,15 +12,15 @@ For analysis and diagnostic of different problems support service might need AdG
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
 
-2. Reproduce your issue. 
-- It is advisable to specify the reproducing time, it will help our support team to solve this situation.
+2. Reproduce the issue. 
+- We strongly advise to specify the time when you reproduced the issue: it will help our support team to solve the problem.
 
-3. Collect the received logs using the **Export Log** button.
+3. Export the recorded logs using the **Export Log** button.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen2.png" />
 
-- Save the archive to any folder convenient for you.
+- Save the archive to any folder.
 
-4. **Important**: return **Standard** logging level. Because **Debug** logging level can slow down the application filtering.
+4. **Important**: set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 
 5. Send the received archive to the AdGuard [support service](mailto:support@adguard.com).
