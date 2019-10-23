@@ -23,4 +23,4 @@ For analysis and diagnostic of different problems support service might need AdG
 
 4. **Important**: set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 
-5. Send the received archive to the AdGuard [support service](mailto:support@adguard.com).
+5. Send the archive to the AdGuard [support service](mailto:support@adguard.com) (support@adguard.com), describe the problem and don't forget to mention the time when you reproduced the issue.
