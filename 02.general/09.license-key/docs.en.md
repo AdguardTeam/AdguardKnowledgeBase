@@ -22,8 +22,7 @@ License key is a unique symbol sequence that activates AdGuard. License key is r
 
 2. **Family** - This license key allows you to activate AdGuard on **any nine** devices.
 
-**Please notice**: all types of licenses are universal. You can activate a license for any of the provided operating systems.
-- **Windows**, **Mac**, **Android** or **iOS**.
+>**Please notice**: all types of licenses are universal. You can use any license to activate AdGuard on any of the operating systems — **Windows**, **Mac**, **Android**, or **iOS**.
 
 You can manage your license keys in your [AdGuard Account](http://adguard.com/login.html).
 
@@ -160,7 +159,7 @@ You can purchase an AdGuard license on our website. To do so:
 
 1\. Go to the [payment page](http://adguard.com/license.html).
 
-2\. Depending on whether you want to prolong an existing license Вkey or to purchase a new one, choose the appropriate option.
+2\. Depending on whether you want to prolong an existing license key or to purchase a new one, choose the appropriate option.
 
 3\. Choose the license type. Currently, we have **two** different license types - **Personal** and **Family**. 
 
