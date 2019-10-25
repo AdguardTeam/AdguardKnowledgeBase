@@ -16,15 +16,13 @@ visible: true
 <a name="key"></a>
 #### What is AdGuard license key?
 
-License key is a unique symbol sequence that activates AdGuard. License key is required for AdGuard’s work after trial period's expiration. There are three types of licenses available:
+License key is a unique symbol sequence that activates AdGuard. License key is required for AdGuard’s work after trial period's expiration. There are two types of licenses available:
 
-1. **Personal** - This license key allows you to activate AdGuard on any **three** devices.
+1. **Personal** - This license key allows you to activate AdGuard on **any three** devices.
 
-2. **Family** is also a universal type of license, the only difference is the number of devices. By purchasing this key you become the owner of **nine** desired licenses for your devices.
+2. **Family** - This license key allows you to activate AdGuard on **any nine** devices.
 
-3. **Beta-test** - special type of license for AdGuard beta-testers. Program activated with this type of license is automatically updated to the latest available beta.   
-
-**Please NOTE**: All types of licenses are universal. You can activate any of the presented devices:
+**Please notice**: all types of licenses are universal. This means you can use them to activate any AdGuard products in any combination.
 - **Windows**, **Mac**, **Android** or **iOS**, in any combination.
 
 You can manage your license keys in your [AdGuard Account](http://adguard.com/login.html).
@@ -164,7 +162,7 @@ You can purchase an AdGuard license on our website. To do so:
 
 2\. Depending on whether you want to prolong an existing license Вkey or to purchase a new one, choose the appropriate option.
 
-3\. Choose the license type. Currently, we have three different license types - **Premium**, **Standard** and **Mobile**. 
+3\. Choose the license type. Currently, we have **two** different license types - **Personal** and **Family**. 
 
 4\. Choose the preferred currency, license period and the number of devices you want to use AdGuard on.
 
