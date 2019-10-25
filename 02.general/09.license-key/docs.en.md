@@ -16,13 +16,16 @@ visible: true
 <a name="key"></a>
 #### What is AdGuard license key?
 
-License key is a unique symbol sequence that activates AdGuard. License key is required for AdGuard’s work after trial period's expiration. There are few different types of licenses available:
+License key is a unique symbol sequence that activates AdGuard. License key is required for AdGuard’s work after trial period's expiration. There are three types of licenses available:
 
-1. **Standard** - allows you to activate AdGuard on Windows PC or Mac.
-2. **Mobile** - allows you to activate AdGuard on your Mobile device.
-2. **Premium** - mobile and standard in a single license. Allows you to activate both mobile device and computer with the same license key.
-4. **Bonus License** - is given for winning any contests or prize draws. Equivalent to standard license.
-5. **Beta-test** - special type of license for AdGuard beta-testers. Program activated with this type of license is automatically updated to the latest available beta.   
+1. **Personal** - This license key allows you to activate AdGuard on any **three** devices.
+
+2. **Family** is also a universal type of license, the only difference is the number of devices. By purchasing this key you become the owner of **nine** desired licenses for your devices.
+
+3. **Beta-test** - special type of license for AdGuard beta-testers. Program activated with this type of license is automatically updated to the latest available beta.   
+
+**Please NOTE**: All types of licenses are universal. You can activate any of the presented devices:
+- **Windows**, **Mac**, **Android** or **iOS**, in any combination.
 
 You can manage your license keys in your [AdGuard Account](http://adguard.com/login.html).
 
@@ -162,8 +165,6 @@ You can purchase an AdGuard license on our website. To do so:
 2\. Depending on whether you want to prolong an existing license Вkey or to purchase a new one, choose the appropriate option.
 
 3\. Choose the license type. Currently, we have three different license types - **Premium**, **Standard** and **Mobile**. 
-
-*Note that **Mobile** license only suits for the Android devices. AdGuard for iOS is not activated with license key - you can download it from iTunes AppStore.*
 
 4\. Choose the preferred currency, license period and the number of devices you want to use AdGuard on.
 
