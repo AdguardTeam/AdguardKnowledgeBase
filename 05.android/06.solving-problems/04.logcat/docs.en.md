@@ -5,8 +5,35 @@ taxonomy:
         - docs
 visible: true
 ---
+# General Instruction
 
 For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+
+## Capture a bug report from a device
+To get a bug report directly from your device, do the following:
+
+1) Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+2) In **Developer options**, tap **Take bug report**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png" width="301" />
+
+3) Select the type of bug report you want and tap **Report**.
+>After a moment you get a notification that the bug report is ready (see figure 2).
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png" width="301" />
+
+4) To share the bug report, tap the notification.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png" width="301" />
+
+5) Send this log to our [Support Team](support@adguard.com)
+
+>Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+
+
+# Additional Instruction (for old Android versions)
+On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
 
 **Part #1: prepare the device**
 
@@ -51,4 +78,6 @@ Send this log to us by contacting support or by any other way.
 
 4. Open CatLog press "Stop record" in the menu.
 
-5. Send this log to our Support Team.
+5. Send this log to our [Support Team](support@adguard.com)
+
+>Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
