@@ -19,7 +19,7 @@ To create a HAR file in Chrome:
 2. Open ***Developer Tools***:
 
 - From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or, ***Ctrl+Alt+I***, ***or ⌥+⌘+I for Mac***.
+- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
 
 3. Click on the ***Network tab***.
 
@@ -59,7 +59,7 @@ To create a HAR file in Firefox:
 
 2. Open Developer Tools in ***Network*** mode:
 - From menu: ***Menu > Web Developer > Network***.
-- Keyboard: ***Ctrl+Shift+C***, or, **⌥+⌘+E (Mac)**.
+- Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
 
 3. Note the ***play/pause*** button at the top left of the Network tab.
 - Button should be in play mode.
@@ -148,11 +148,3 @@ To compress a HAR file for Windows:
 
 
 
-<a id="howtoanalyze"></a>
-## How to analyze HAR files?
-
-To analyze HAR files we recommend to use the following tools:
-
-1. HAR analyzer tool: [http://gitgrimbo.github.io/harviewer/master/](http://gitgrimbo.github.io/harviewer/master/)
-
-2. Fiddler: [http://www.telerik.com/fiddler](http://www.telerik.com/fiddler)

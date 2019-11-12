@@ -27,42 +27,13 @@ To get a bug report directly from your device, do the following:
 
 4. To share the bug report, tap the notification.
 
-### Capture a bug report from the Android Emulator
-
-From the Android Emulator, you can use the File a bug feature in the extended controls:
-
-1. Click **More** in the emulator panel.
-2. In the **Extended controls window**, select **Bug report** on the left.
->This opens a screen where you can see the bug report details such as the screenshot, the AVD configuration info, and the bug report log. You can also type a message with reproduction steps to save with the report.
-3. Wait for the bug report to finish collecting, and then click **Save Report**.
-
-### Capture a bug report using adb
-If you have just one device connected, you can get a bugreport using [_adb_](https://developer.android.com/studio/command-line/adb.html) as follows:
-
->$ adb bugreport E:\Reports\MyBugReports
-
-If you do not specify a path for the bugreport, it is saved to the local directory.
-If you have multiple devices connected, you must specify the device with the **-s** option. Run the following **adb** commands to get the device serial number and generate the bug report.
-
-**$ adb devices**
-
-**List of devices attached**
-
-**emulator-5554      device**
-
-**8XV7N15C31003476 device**
-
-**$ adb -s 8XV7N15C31003476 bugreport**
-
-### Inspect the bug report ZIP file
-
-By default the ZIP file is called **bugreport-BUILD_ID-DATE.zip** and it it may contain multiple files, but the most important file is **bugreport-BUILD_ID-DATE.txt.** This is the bug report and it contains diagnostic output for system services _(dumpsys)_, error logs _(dumpstate)_, and system message logs _(logcat)_. The system messages include stack traces when the device throws an error, and messages written from all apps with the [Log](https://developer.android.com/reference/android/util/Log.html) class.
-
-The ZIP file contains a **version.txt** metadata file that contains the Android release letter, and when systrace is enabled, the ZIP file also contains a **systrace.txt** file. The [Systrace tool](https://developer.android.com/studio/profile/systrace-commandline.html) helps analyze the performance of your application by capturing and displaying execution times of your application processes and other Android system processes.
-
-The **dumpstate** tool copies files from the device’s filesystem into the ZIP file under the **FS** folder so you can reference them. For example, a **/dirA/dirB/fileC** file in the device would generate an **FS/dirA/dirB/fileC** entry in the ZIP file.
-
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png" width="301" />
+
+5. Send this log to our [Support Team](support@adguard.com)
+
+>Note: It is advisable to specify the HelpDesk order number or the GitHub request number.
+
+
 
 # Additional Instruction (for old Android versions)
 For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
@@ -110,4 +81,6 @@ Send this log to us by contacting support or by any other way.
 
 4. Open CatLog press "Stop record" in the menu.
 
-5. Send this log to our Support Team.
+5. Send this log to our [Support Team](support@adguard.com)
+
+>Note: It is advisable to specify the HelpDesk order number or the GitHub request number.
