@@ -6,13 +6,10 @@ taxonomy:
 visible: true
 ---
 # General Instruction
-## **Capture and read bug reports**
 
-A bug report contains device logs, stack traces, and other diagnostic information to help you find and fix bugs in your app. You can capture a bug report from your device by using either the **Take bug report** developer option on the device, the Android Emulator menu, or the *adb bugreport* command on your development machine.
+For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
 
-To take a bug report, you must have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled on your device so you can access the **Take bug report** option.
-
-### Capture a bug report from a device
+## Capture a bug report from a device
 To get a bug report directly from your device, do the following:
 
 1) Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
@@ -31,12 +28,12 @@ To get a bug report directly from your device, do the following:
 
 5. Send this log to our [Support Team](support@adguard.com)
 
->Note: It is advisable to specify the HelpDesk order number or the GitHub request number.
+>Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
 
 
 # Additional Instruction (for old Android versions)
-For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
 
 **Part #1: prepare the device**
 
@@ -83,4 +80,4 @@ Send this log to us by contacting support or by any other way.
 
 5. Send this log to our [Support Team](support@adguard.com)
 
->Note: It is advisable to specify the HelpDesk order number or the GitHub request number.
+>Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
