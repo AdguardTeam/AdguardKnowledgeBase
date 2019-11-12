@@ -10,6 +10,17 @@ taxonomy:
 
 HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide .har file generation and export capability.
 
+[Google Chrome](#Chrome)
+
+[Edge](#Edge)
+
+[Firefox](#Firefox)
+
+[Internet Explorer 11](#ie11)
+
+[Safari](#Safari)
+
+
 ## Chrome
 
 To create a HAR file in Chrome:
@@ -34,6 +45,7 @@ To create a HAR file in Chrome:
 8. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+
 
 ## Edge
 
@@ -74,7 +86,7 @@ To create a HAR file in Firefox:
 
 8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-## Internet Explorer 11
+## <a id="ie11"></a> Internet Explorer 11
 
 To create a HAR file in Internet Explorer 11:
 
