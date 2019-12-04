@@ -217,7 +217,7 @@ And here is one more thing to try:
 
 ## Sony
 
-Sony was the first developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled. Never use Stamina mode if you want your phone to do something useful when you are not actively using it.
+Sony was the first developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled.
 
 **Solution:**
 
