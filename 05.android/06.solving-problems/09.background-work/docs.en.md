@@ -182,7 +182,6 @@ Here are links to some other resources verifying that some of the above steps wo
 
 <a id="Oneplus"></a>  
 
-   
  ## Oneplus
 
 Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
@@ -234,7 +233,6 @@ Wiko devices are definitely problematic in terms of non-standard background proc
 - Go to Phone Assistant - Battery - turn off *Eco Mode*.
 - Go back and go to *Manual mode*
 - Tap on the Gear icon on top right - Background apps whitelist > Select *AdGuard*
-
 
 <a id="Google"></a>
 
