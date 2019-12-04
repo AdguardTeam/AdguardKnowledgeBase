@@ -174,12 +174,6 @@ Other solutions:
 * Enable your app in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 * Turn off battery optimizations
 
-Here are links to some other resources verifying that some of the above steps work on other Oppo devices:
-
-[XDA developers](https://forum.xda-developers.com/android/general/coloros-5-0-how-to-allow-apps-running-t3847738)
-[XDA developers](https://forum.xda-developers.com/find-X/help/killing-apps-screen-off-arghh-t3818105)
-[Oppo customer service portal](https://oppo-au.custhelp.com/app/answers/detail/a_id/1313/~/how-to-lock-applications-in-the-background%3F)
-
 <a id="Oneplus"></a>  
 
  ## Oneplus
@@ -216,7 +210,7 @@ And here is one more thing to try:
 
 ## Sony
 
-Sony was the first developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled.
+Sony was the first mobile OS developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled.
 
 **Solution:**
 
