@@ -34,13 +34,12 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 <a id="Asus"></a>
 
-On Asus devices, there seems to be an optimization app called Power Master pre-installed with some modifications made by default, eg. blocking apps from starting and killing background tasks when your screen turns off.
-
-However, if you know how, you can easily disable these. “ user_solution: “ The evil app on Asus is called Power Master. See the screens below. To make sure apps background processing works please make sure the following is set properly.
+Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
 
 Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start nanager - AdGuard - uncheck.
 
 <a id="Xiaomi"></a>
+
 ## Xiaomi
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
@@ -218,6 +217,8 @@ And here is one more thing to try:
 
 ## Sony
 
+Sony was the first developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled. Never use Stamina mode if you want your phone to do something useful when you are not actively using it.
+
 **Solution:**
 
 Go to Settings - Battery - Three dots in the top right corner - Battery optimisation - Apps - **AdGuard** - uncheck
@@ -225,6 +226,8 @@ Go to Settings - Battery - Three dots in the top right corner - Battery optimisa
 <a id="Wiko"></a>
 
 ## Wiko
+
+Wiko devices are definitely problematic in terms of non-standard background process optimizations and adjustments to the settings that need to be done to make apps work properly.
 
 **Solution:**
 
