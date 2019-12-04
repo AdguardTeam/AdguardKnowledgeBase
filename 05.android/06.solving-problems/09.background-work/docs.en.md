@@ -10,6 +10,8 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 **List of manufacturers with different versions of Android OS:**
 
+* [Asus](#Asus)
+
 * [Xiaomi](#Xiaomi)
 
 * [Samsung](#Samsung)
@@ -20,9 +22,23 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 * [Nokia](#Nokia)
 
+* [Oppo](#Oppo)
+
 * [Oneplus](#Oneplus)
 
+* [Sony](#Sony)
+
+* [Wiko](#Wiko)
+
 * [Android stock devices Pixel/Nexus/Essential](#Google)
+
+<a id="Asus"></a>
+
+On Asus devices, there seems to be an optimization app called Power Master pre-installed with some modifications made by default, eg. blocking apps from starting and killing background tasks when your screen turns off.
+
+However, if you know how, you can easily disable these. “ user_solution: “ The evil app on Asus is called Power Master. See the screens below. To make sure apps background processing works please make sure the following is set properly.
+
+Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start nanager - AdGuard - uncheck.
 
 <a id="Xiaomi"></a>
 ## Xiaomi
@@ -145,7 +161,28 @@ From now on, background apps are supposed to work smoothly and use the standard 
 `adb shell`
 `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
-<a id="Oneplus"></a>    
+<a id="Oppo"></a> 
+
+## Oppo
+
+Sometimes background services are being killed (including accessibility services, which then need re-enabling) every time you turn the screen off. So far, a workaround for this is:
+
+Go to “Security Centre” - tap on "Privacy Permissions" - "Startup manager" and allow AdGuard app to run in background.
+
+Other solutions: 
+
+* Pin your app to the recent apps screen
+* Enable your app in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+* Turn off battery optimizations
+
+Here are links to some other resources verifying that some of the above steps work on other Oppo devices:
+
+[XDA developers](https://forum.xda-developers.com/android/general/coloros-5-0-how-to-allow-apps-running-t3847738)
+[XDA developers](https://forum.xda-developers.com/find-X/help/killing-apps-screen-off-arghh-t3818105)
+[Oppo customer service portal](https://oppo-au.custhelp.com/app/answers/detail/a_id/1313/~/how-to-lock-applications-in-the-background%3F)
+
+<a id="Oneplus"></a>  
+
    
  ## Oneplus
 
@@ -176,6 +213,25 @@ And here is one more thing to try:
  - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
  
  - Open device settings > *Battery* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
+
+<a id="Sony"></a>
+
+## Sony
+
+**Solution:**
+
+Go to Settings - Battery - Three dots in the top right corner - Battery optimisation - Apps - **AdGuard** - uncheck
+
+<a id="Wiko"></a>
+
+## Wiko
+
+**Solution:**
+
+- Go to Phone Assistant - Battery - turn off *Eco Mode*.
+- Go back and go to *Manual mode*
+- Tap on the Gear icon on top right - Background apps whitelist > Select *AdGuard*
+
 
 <a id="Google"></a>
 
