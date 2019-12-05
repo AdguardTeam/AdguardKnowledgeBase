@@ -76,7 +76,6 @@ visible: true
         * [Псевдо-класс `:if-not()`](#extended-css-has)
         * [Псевдо-класс `:contains()`](#extended-css-contains)
         * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
-<!--    * [Псевдо-класс `:properties()`](#extended-css-properties)-->
         * [Режим отладки селекторов](#selectors-debugging-mode)
         * [Тестирование расширенных селекторов](#testing-extended-selectors)
 * [Правила фильтрации HTML](#html-filtering-rules)
@@ -1106,83 +1105,6 @@ div.banner[-ext-matches-css-before="content: block me"]
 //Регулярные выражения
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
-
-<!--
-<a id="extended-css-properties"></a>
-#### Псевдо-класс `:properties()`
-
-Изначально, этот псевдо-класс был предложен [разработчиками ABP](https://adblockplus.org/development-builds/new-css-property-filter-syntax).
-
-На первый взгляд, он в некоторой степени похож на [`:matches-css`](#extended-css-matches-css). Однако, внутри он устроен совсем иначе. `:matches-css` основан на использовании [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle), в то время как `:properties` основан на сканировании стилей страницы и последующем их использовании для нахождения элементов.
-
-Вкратце `:matches-css` — это про вкладку "Computed" в инструментах разработчика, в то время как `:properties` — про вкладку "Styles":
-
-![img](https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png)
-
-Ещё одно важное различие заключается в том, что не существует никаких особых классов "-до/-после". Соответствие по `:properties` уберёт как `::before`, так и `::after` из селекторов, найденных в стилях.
-
-> **Ограничения** 
-> * Cross-origin стили игнорируются
-> * [At-правила](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) также игнорируются. Это означает, что импортируемые (`@import`) стили и `@media` группы будут игнорироваться.
-
-##### Синтаксис `:properties()`
-
-```
-/* соответствие по стилю элемента */
-selector:properties(property-name ":" pattern)
-```
-
-Обратный синтаксис:
-```
-selector[-ext-properties="property-name ":" pattern"]
-```
-
-Поддерживаемый синонимы для лучшей совметсимости: `:-abp-properties`.
-
-###### `property-name`
-Имя CSS-свойства, на наличие которого проверяется элемент.
-
-###### `pattern`
-Это может быть как паттерн значений, использующий то же простое соответствие по вайлдкардам как и базовые правила URL-фильтрации, так и  регулярное выражение. Для этого типа соответствия AdGuard не обращает внимание на регистр.
-
-В случае с регулярными выражениями, паттерн будет выглядеть как `/regex/`.
-
-> * Для паттернов, не являющихся регулярными выражениями, символы (`,`),[`,`] должны быть экранированы, потому что мы экранируем их в правилах фильтрации.
-> * Для регулярных выражений символы [`"`],[`,`],[`\`] должны быть экранированы, потому что мы вручную экранируем их в extended-css-selector.js.
-
-##### `:properties()` examples
-
-Выделение всех элементов `div`, содержащих любой псевдо-класс (`::before` или `::after`) с указанным содержимым.
-
-**HTML код**
-```html
-<style type="text/css">
-    #to-be-blocked::before {
-        content: "Block me"
-    }
-</style>
-<div id="to-be-blocked" class="banner"></div>
-<div id="not-to-be-blocked" class="banner"></div>
-```
-
-**Селектор**
-```
-// Простое соответствие
-div.banner:properties(content: block me)
-
-// Регулярные выражения
-div.banner:properties(content: /block me/)
-```
-
-Обратный синтаксис:
-```
-// Простое соответствие
-div.banner[-ext-properties="content: block me"]
-
-// Регулярные выражения
-div.banner:properties(content: /block me/)
-```
--->
 
 <a id="selectors-debugging-mode"></a>
 #### Режим отладки селекторов
