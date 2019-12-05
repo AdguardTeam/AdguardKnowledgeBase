@@ -76,7 +76,7 @@ visible: true
         * [Pseudo-class `:if-not()`](#extended-css-has)
         * [Pseudo-class `:contains()`](#extended-css-contains)
         * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-        * [Pseudo-class `:properties()`](#extended-css-properties)
+<!---        * [Pseudo-class `:properties()`](#extended-css-properties)--->
         * [Selectors debugging mode](#selectors-debugging-mode)
         * [Testing extended selectors](#testing-extended-selectors)
 * [HTML filtering rules](#html-filtering-rules)
@@ -1108,7 +1108,7 @@ div.banner[-ext-matches-css-before="content: block me"]
 // Regular expressions
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
-
+<!---
 <a id="extended-css-properties"></a>
 #### Pseudo-class `:properties()`
 
@@ -1183,6 +1183,7 @@ div.banner[-ext-properties="content: block me"]
 // Regular expressions
 div.banner:properties(content: /block me/)
 ```
+--->
 
 <a id="selectors-debugging-mode"></a>
 #### Selectors debugging mode
