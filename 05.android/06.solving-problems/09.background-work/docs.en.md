@@ -34,6 +34,8 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 <a id="Asus"></a>
 
+## Asus
+
 Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
 
 Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start nanager - AdGuard - uncheck.
@@ -182,7 +184,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-sepcific ca
  
  - Go to Settings
  
- - Battery > Battery optimization
+ - Battery - Battery optimization
  
  - Find the app you want to keep awake all the time
  
