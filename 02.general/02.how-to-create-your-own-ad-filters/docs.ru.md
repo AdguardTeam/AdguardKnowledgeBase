@@ -76,7 +76,7 @@ visible: true
         * [Псевдо-класс `:if-not()`](#extended-css-has)
         * [Псевдо-класс `:contains()`](#extended-css-contains)
         * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
-        * [Псевдо-класс `:properties()`](#extended-css-properties)
+<!--    * [Псевдо-класс `:properties()`](#extended-css-properties)-->
         * [Режим отладки селекторов](#selectors-debugging-mode)
         * [Тестирование расширенных селекторов](#testing-extended-selectors)
 * [Правила фильтрации HTML](#html-filtering-rules)
@@ -1107,6 +1107,7 @@ div.banner[-ext-matches-css-before="content: block me"]
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
+<!--
 <a id="extended-css-properties"></a>
 #### Псевдо-класс `:properties()`
 
@@ -1181,6 +1182,7 @@ div.banner[-ext-properties="content: block me"]
 // Регулярные выражения
 div.banner:properties(content: /block me/)
 ```
+-->
 
 <a id="selectors-debugging-mode"></a>
 #### Режим отладки селекторов
