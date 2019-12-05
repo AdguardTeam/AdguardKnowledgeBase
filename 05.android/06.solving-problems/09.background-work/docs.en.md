@@ -224,7 +224,7 @@ Wiko devices are definitely problematic in terms of non-standard background proc
 
 **Solution:**
 
-- Go to Phone Assistant - Battery - turn off *Eco Mode*.
+- Go to Phone Assistant - Battery - turn off *Eco Mode*
 - Go back and go to *Manual mode*
 - Tap on the Gear icon on top right - Background apps whitelist > Select *AdGuard*
 
