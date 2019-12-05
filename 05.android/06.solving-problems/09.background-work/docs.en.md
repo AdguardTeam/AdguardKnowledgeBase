@@ -10,6 +10,8 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 **List of manufacturers with different versions of Android OS:**
 
+* [Asus](#Asus)
+
 * [Xiaomi](#Xiaomi)
 
 * [Samsung](#Samsung)
@@ -20,11 +22,24 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 * [Nokia](#Nokia)
 
+* [Oppo](#Oppo)
+
 * [Oneplus](#Oneplus)
+
+* [Sony](#Sony)
+
+* [Wiko](#Wiko)
 
 * [Android stock devices Pixel/Nexus/Essential](#Google)
 
+<a id="Asus"></a>
+
+Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
+
+Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start nanager - AdGuard - uncheck.
+
 <a id="Xiaomi"></a>
+
 ## Xiaomi
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
@@ -145,8 +160,22 @@ From now on, background apps are supposed to work smoothly and use the standard 
 `adb shell`
 `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
-<a id="Oneplus"></a>    
-   
+<a id="Oppo"></a> 
+
+## Oppo
+
+Sometimes background services are being killed (including accessibility services, which then need re-enabling) every time you turn the screen off. So far, a workaround for this is:
+
+Go to “Security Centre” - tap on "Privacy Permissions" - "Startup manager" and allow AdGuard app to run in background.
+
+Other solutions: 
+
+* Pin your app to the recent apps screen
+* Enable your app in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+* Turn off battery optimizations
+
+<a id="Oneplus"></a>  
+
  ## Oneplus
 
 Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
@@ -176,6 +205,28 @@ And here is one more thing to try:
  - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
  
  - Open device settings > *Battery* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
+
+<a id="Sony"></a>
+
+## Sony
+
+Sony was the first mobile OS developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled.
+
+**Solution:**
+
+Go to Settings - Battery - Three dots in the top right corner - Battery optimisation - Apps - **AdGuard** - uncheck
+
+<a id="Wiko"></a>
+
+## Wiko
+
+Wiko devices are definitely problematic in terms of non-standard background process optimizations and adjustments to the settings that need to be done to make apps work properly.
+
+**Solution:**
+
+- Go to Phone Assistant - Battery - turn off *Eco Mode*
+- Go back and go to *Manual mode*
+- Tap on the Gear icon on top right - Background apps whitelist > Select *AdGuard*
 
 <a id="Google"></a>
 
