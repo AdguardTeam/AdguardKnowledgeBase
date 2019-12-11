@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-## Creating a HAR File
+## Creating an HAR File
 
 HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide .har file generation and export capability.
 
