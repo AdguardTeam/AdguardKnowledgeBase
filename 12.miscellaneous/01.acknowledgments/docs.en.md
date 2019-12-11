@@ -84,6 +84,8 @@ AdGuard for Mac developers would like to thank:
 * Tony Million for Reachability component ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — [License](https://github.com/tonymillion/Reachability/blob/master/LICENCE.txt)
 * August «Gus» Mueller for Fmdb component ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — [License](https://github.com/ccgus/fmdb/blob/master/LICENSE.txt)
 * Stephen F. Booth for SFBCrashReporter project ([https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)) — [License](https://github.com/sbooth/SFBCrashReporter/blob/master/COPYING)
+* Bartosz Janda for Acextract component ([https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)) – [License](https://github.com/bartoszj/acextract/blob/master/LICENSE)
+
 
 <a id="test2"></a>
 ### Testers
