@@ -130,7 +130,7 @@ Sanjay Nand
 * Tony Million за компонент Reachability ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — [Лицензия](https://github.com/tonymillion/Reachability/blob/master/LICENCE.txt)
 * August «Gus» Mueller за компонент Fmdb ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — [Лицензия](https://github.com/ccgus/fmdb/blob/master/LICENSE.txt)
 * Stephen F. Booth за проект SFBCrashReporter ([https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)) — [Лицензия](https://github.com/sbooth/SFBCrashReporter/blob/master/COPYING)
-* Bartosz Janda за компонент Acextract ([https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)) – [Лицензия](https://github.com/bartoszj/acextract/blob/master/LICENSE)
+* Bartosz Janda за компонент Acextract ([https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)) — [Лицензия](https://github.com/bartoszj/acextract/blob/master/LICENSE)
 
 
 <a id="test2"></a>
