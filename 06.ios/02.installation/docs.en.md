@@ -11,7 +11,7 @@ taxonomy:
 * Compatible with iPhone 5s, iPhone 6, iPhone 6 Plus, iPhone 6s, iPhone 6s Plus, iPhone 7 (64-bit devices).
 * Compatible with iPad Air, iPad Air Wi-Fi + Cellular, iPad mini 2, iPad mini 2 Wi-Fi + Cellular, iPad Air 2, iPad Air 2 Wi-Fi + Cellular, iPad mini 3, iPad mini 3 Wi-Fi + Cellular, iPad mini 4, iPad mini 4 Wi-Fi + Cellular, iPad Pro, iPad Pro Wi-Fi + Cellular, and iPod touch 6th generation (64-bit devices).
 
-## Installation AdGuard for iOS
+## Installing AdGuard for iOS
 AdGuard for iOS is a free app which presented in the App Store. To install it on your device run the App Store application and tap the _Search_ icon on the bottom of the screen.
 
 ![](ios_install_EN_01.PNG?cropResize=800,600)
@@ -24,7 +24,7 @@ On the opened page of the App Store tap _GET_ button under the string _AdGuard -
 
 ![](ios_install_EN_03.PNG?cropResize=800,600)
 
-## Installation AdGuard Pro for iOS
+## Installing AdGuard Pro for iOS
 AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of functions. To install it on your device run the App Store application and tap the _Search_ icon on the bottom of the screen.
 
 ![](ios_install_EN_01.PNG?cropResize=800,600)
