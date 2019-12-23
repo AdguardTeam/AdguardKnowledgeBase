@@ -6,24 +6,27 @@ taxonomy:
         - docs
 ---
 
-## Creating a HAR File
+## Creating an HAR File
 
 HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide .har file generation and export capability.
 
-[Google Chrome](#Chrome)
+[Google Chrome](#chrome)
 
-[Edge](#Edge)
+[Edge](#edge)
 
-[Firefox](#Firefox)
+[Firefox](#firefox)
 
 [Internet Explorer 11](#ie11)
 
-[Safari](#Safari)
+[Safari](#safari)
 
+[Compressing an HAR file for Windows](#harwindows)
 
-## Chrome
+[Compressing an HAR file for Mac](#harmac)
 
-To create a HAR file in Chrome:
+## <a id="chrome"></a> Chrome
+
+To create an HAR file in Chrome:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -47,9 +50,9 @@ To create a HAR file in Chrome:
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 
-## Edge
+## <a id="edge"></a> Edge
 
-To create a HAR file in Edge:
+To create an HAR file in Edge:
 
 1. From the webpage experiencing the issue, press the ***F12*** key to open ***Developer Tools***.
 
@@ -63,9 +66,9 @@ To create a HAR file in Edge:
 
 6. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-## Firefox
+## <a id="firefox"></a> Firefox
 
-To create a HAR file in Firefox:
+To create an HAR file in Firefox:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -88,7 +91,7 @@ To create a HAR file in Firefox:
 
 ## <a id="ie11"></a> Internet Explorer 11
 
-To create a HAR file in Internet Explorer 11:
+To create an HAR file in Internet Explorer 11:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -108,9 +111,9 @@ To create a HAR file in Internet Explorer 11:
 
 7. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-## Safari
+## <a id="safari"></a> Safari
 
-To create a HAR file in Safari:
+To create an HAR file in Safari:
 
 1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
 - If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
@@ -132,9 +135,9 @@ To create a HAR file in Safari:
 8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 
-## Compressing a HAR file on Mac
+## <a id="harmac"></a> Compressing an HAR file for Mac
 
-To compress a HAR file for Mac:
+To compress an HAR file for Mac:
 
 1. Locate the HAR file that you want to compress.
 
@@ -144,9 +147,9 @@ To compress a HAR file for Mac:
 
 4. A compressed file will have the name of the original HAR file with a ***.zip*** extension.
 
-## Compressing a HAR file for Windows
+## <a id="harwindows"></a> Compressing an HAR file for Windows
 
-To compress a HAR file for Windows:
+To compress an HAR file for Windows:
 
 1. Locate the HAR file that you want to compress.
 

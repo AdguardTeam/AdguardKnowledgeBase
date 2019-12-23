@@ -26,24 +26,22 @@ To get a bug report directly from your device, do the following:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png" width="301" />
 
-5) Send this log to our [Support Team](support@adguard.com)
+5) Send this log to our [Support Team](support@adguard.com).
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
-
-
 
 # Additional Instruction (for old Android versions)
 On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to "Settings" -> "About" -> tap on Build Number 7 times.
+1. Switch device to the developer mode. To do this: go to Settings -> About -> tap on Build Number 7 times.
 
-2. Go to "Developer Options"
+2. Go to Developer Options.
 
-3. Enable "USB debugging"
+3. Enable USB debugging.
 
-4. If your device runs Android 5.0 or later, increase "Logger buffer sizes" to 4M per log buffer
+4. If your device runs Android 5.0 or later, increase Logger buffer sizes to 4M per log buffer.
 
 4M should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
@@ -54,7 +52,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 1. Connect your device to PC with USB cable.
 
-2. Download and install "Minimal ADB":
+2. Download and install Minimal ADB:
 
 <http://forum.xda-developers.com/showthread.php?t=2317790>
 
@@ -70,7 +68,7 @@ Send this log to us by contacting support or by any other way.
 
 **Alternative way for ROOT users:**
 
-1. Download and run [CatLog.](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess)
+1. Download and run [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
 2. Choose "Record" in the menu. Choose a name for a log file or just press OK. Now you can press Home button, CatLog will continue recording the log in background.
 
@@ -78,6 +76,6 @@ Send this log to us by contacting support or by any other way.
 
 4. Open CatLog press "Stop record" in the menu.
 
-5. Send this log to our [Support Team](support@adguard.com)
+5. Send this log to our [Support Team](support@adguard.com).
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.

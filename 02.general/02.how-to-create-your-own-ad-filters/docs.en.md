@@ -76,7 +76,6 @@ visible: true
         * [Pseudo-class `:if-not()`](#extended-css-has)
         * [Pseudo-class `:contains()`](#extended-css-contains)
         * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-        * [Pseudo-class `:properties()`](#extended-css-properties)
         * [Selectors debugging mode](#selectors-debugging-mode)
         * [Testing extended selectors](#testing-extended-selectors)
 * [HTML filtering rules](#html-filtering-rules)
@@ -1107,81 +1106,6 @@ div.banner[-ext-matches-css-before="content: block me"]
 
 // Regular expressions
 div.banner[-ext-matches-css-before="content: /block me/"]
-```
-
-<a id="extended-css-properties"></a>
-#### Pseudo-class `:properties()`
-
-Originally, this pseudo-class was [introduced by ABP](https://adblockplus.org/development-builds/new-css-property-filter-syntax).
-
-On the surface this pseudo class is somewhat similar to [`:matches-css`](#extended-css-matches-css). However, it is very different under the hood. `:matches-css` is based on using [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) while `:properties` is based on scanning page stylesheets and using them to lookup elements.
-
-In short, `:matches-css` is about "Computed" tab of the dev tools while `:properties` is about "Styles" tab:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/chrome_devtools.png" />
-
-Another notable difference is that there is no special "-before"/"-after" pseudo-classes. `:properties` matching strips both `::before` and `::after` pseudo-elements from the selectors found in the stylesheets.
-
-> **Limitations** 
-> * Cross-origin stylesheets are ignored
-> * [At-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are also ignored. This means that imported (`@import`) stylesheets and `@media` groups are ignored.
-
-##### `:properties()` syntax
-
-```
-/* element style matching */
-selector:properties(property-name ":" pattern)
-```
-
-Backward compatible syntax:
-```
-selector[-ext-properties="property-name ":" pattern"]
-```
-
-Supported synonyms for better compatibility: `:-abp-properties`.
-
-###### `property-name`
-A name of CSS property to check the element for.
-
-###### `pattern`
-This can be either a value pattern that is using the same simple wildcard matching as in the basic url filtering rules or it can be a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner.
-
-In the case of a regular expression, the pattern looks like `/regex/`.
-
-> * For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
-> * For regex patterns, ",\ should be escaped, because we manually escape those in extended-css-selector.js.
-
-##### `:properties()` examples
-
-Selecting all `div` elements which contain any pseudo-class (`::before` or `::after`) with the specified content.
-
-**HTML code**
-```html
-<style type="text/css">
-    #to-be-blocked::before {
-        content: "Block me"
-    }
-</style>
-<div id="to-be-blocked" class="banner"></div>
-<div id="not-to-be-blocked" class="banner"></div>
-```
-
-**Selector**
-```
-// Simple matching
-div.banner:properties(content: block me)
-
-// Regular expressions
-div.banner:properties(content: /block me/)
-```
-
-Backward compatible syntax:
-```
-// Simple matching
-div.banner[-ext-properties="content: block me"]
-
-// Regular expressions
-div.banner:properties(content: /block me/)
 ```
 
 <a id="selectors-debugging-mode"></a>
