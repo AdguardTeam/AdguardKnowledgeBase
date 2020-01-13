@@ -76,6 +76,8 @@ visible: true
         * [Псевдо-класс `:if-not()`](#extended-css-has)
         * [Псевдо-класс `:contains()`](#extended-css-contains)
         * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
+        * [Псевдо-класс `:xpath()`](#extended-css-xpath)
+        * [Псевдо-класс `:nth-ancestor()`](#extended-css-nth-ancestor)
         * [Режим отладки селекторов](#selectors-debugging-mode)
         * [Тестирование расширенных селекторов](#testing-extended-selectors)
 * [Правила фильтрации HTML](#html-filtering-rules)
@@ -1093,7 +1095,7 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 // Обычное соответствие
 div.banner:matches-css-before(content: block me)
 
-//Регулярные выражения
+// Регулярные выражения
 div.banner:matches-css-before(content: /block me/)
 ```
 
@@ -1102,8 +1104,62 @@ div.banner:matches-css-before(content: /block me/)
 // Обычное соответствие
 div.banner[-ext-matches-css-before="content: block me"]
 
-//Регулярные выражения
+// Регулярные выражения
 div.banner[-ext-matches-css-before="content: /block me/"]
+```
+
+<a id="extended-css-xpath"></a>
+#### Псевдо-класс `:xpath()`
+
+Этот псевдо-класс позволяет выбирать элементы согласно Xpath выражению.
+> **Может быть только в конце выражения.**
+
+Псевдо-класс `xpath` отличается от других, в отличие от них он может использоваться не только для фильтрации текущей выборки элементов, но и также для расширения или создания новой. По этой причине `selector` является необязательным параметром, и например выражение `:xpath(...)` может быть использовано для выбора всех родительских элементов данного, что невозможно было бы сделать находясь в рамках css-селекторов.
+
+#### синтаксис `:xpath()`
+
+```
+[selector]:xpath(expression)
+```
+
+##### `selector`
+Необязательно. Css-селектор.
+
+##### `expression`
+Xpath выражение.
+
+##### примеры `:xpath()`
+
+```
+// Фильтрация результатов выборки селектора
+div:xpath(//*[@class="test-xpath-class"])
+div:has-text(/test-xpath-content/):xpath(../../..)
+// Использование xpath для выборки элементов
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
+```
+
+<a id="extended-css-nth-ancestor"></a>
+#### Псевдо-класс `:nth-ancestor()`
+
+Этот псевдокласс позволяет выбирать родительские элементы выбранного поколения относительно элемента.
+> **Может быть только в конце выражения.**
+
+Эквивалент `:xpath(..[/..]*)`
+
+#### синтаксис `:nth-ancestor()`
+
+```
+selector:nth-ancestor(n)
+```
+
+##### `n`
+Положительное число от 1 до 255, количество поколений от выбранного элемента.
+
+##### примеры `:nth-ancestor()`
+
+```
+div.test:nth-ancestor(4)
+div:has-text(/test/):nth-ancestor(2)
 ```
 
 <a id="selectors-debugging-mode"></a>
