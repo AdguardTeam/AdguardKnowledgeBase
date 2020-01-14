@@ -1113,10 +1113,10 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 <a id="extended-css-xpath"></a>
 #### Pseudo-class `:xpath()`
 
-This pseudo-class allows to select an element by evaluating a XPath expression.
+This pseudo-class allows to select an element by evaluating an XPath expression.
 > **Limited to work properly only at the end of selector.**
 
-The :xpath(...) pseudo is different than other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the :xpath(...) operator can be used both to create a new resultset or filter down an existing one. For this reason, subject selector is optional. For example, an :xpath(...) operator could be used to create a new resultset consisting of all ancestors elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
+The `:xpath(...)` pseudo is different than other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath(...)` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath(...)` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
 
 #### `:xpath()` syntax
 
