@@ -5,10 +5,12 @@ taxonomy:
     category:
         - docs
 ---
+## Introduction
 
-If you suspect your computer is infected by malware or viruses, first of all you need to check your computer with free utilities from leading antiviruses.
+If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+There are many of them and you can use any one you prefer, here is simply a couple examples:
 
-**Free antivirus utility**
+**Free antivirus utilities**
 
 [Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
@@ -18,11 +20,11 @@ If this check with antivirus utilities revealed nothing, but the computer still 
 
 ## How to clean your system from Adware?
 
-In the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)** from **Malwarebytes**. This application is quite easy to use and you can test it by yourself.
+On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)** by **Malwarebytes**. This application is quite easy to use and you will be able to handle it by yourself.
 
 After the application has been downloaded and successfully installed, you should take the following steps:
 
-1) Start the application and tap **scan now**.
+1) Start the application and click **scan now**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware1.png" />
 
@@ -39,11 +41,11 @@ After the application has been downloaded and successfully installed, you should
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware4.png" />
 
-If it didn’t help - disable all settings in the browser in which this situation occurred. Use [this instructions](#instruction). 
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [this instructions](#instruction). 
 
 If disabling of settings and extensions does not help, try to [re-create shortcuts of your browsers](#shortcuts).
 
-Below on this page we’ve described the instructions for removing some of the most popular ad extensions.
+Further on this page we describe the instructions to remove some of the most commonly encountered ad extensions.
 
 <a id="instruction"></a>
 ### How to disable settings and extensions in the browser? 
@@ -54,31 +56,31 @@ If you use Google Chrome, [read this manual](https://support.google.com/chrome/a
 
 If you use Mozilla Firefox, [read this manual](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons).
 
-If you use the browser Opera, [read this manual](http://help.opera.com/Windows/11.50/en/extensions.html).
+If you use the Opera browser, [read this manual](http://help.opera.com/Windows/11.50/en/extensions.html).
 
 <a id="shortcuts"></a>
 ### How to re-create shortcuts of your browsers?
 
-Very often, malware and adware programs install you a homepage in a very simple way - they substitute your browser shortcut on the desktop, taskbar and "Start" menu, replacing it with the advertising link.
+Very often, malware and adware programs install their homepage in a very simple way - they substitute your browser's desktop shortcut, taskbar and "Start" menu items.
 
 The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
 
 ### How to remove sindex.biz?
 
-If instead of the home page, you always open sindex.biz, it’s most likely there was a substitution of shortcuts of your browser. Try to [recreate the shortcuts](#shortcuts) to get rid of this problem.
+If instead of the home page, you always open sindex.biz, it’s likely that shortcuts for your browser(s) have been substituted. Try to [recreate the shortcuts](#shortcuts) to get rid of this problem.
 
 ### How to remove Mobogenie?
 
-To get rid of this software, check your computer with a free utility from Doctor Web: [Dr.Web CureIt!](http://www.freedrweb.com/cureit/).
+To get rid of this software, check your computer with a free utility: e.g. the free one from Doctor Web: [Dr.Web CureIt!](http://www.freedrweb.com/cureit/).
 
 ### How to Remove Ads by BetterSurf?
 
 **What is BetterSurf?**
 
-BetterSurf - is an advertising program that is built into your browser. This program builds their ads on all the sites that you visit. Externally this ad looks quite ordinary, and you can easily not notice it among the banners posted on this site. But it can be seen as ad which "wasn’t here before". For example, on Facebook or Twitter.
+BetterSurf is an advertising program that builds itself into your browser. This program put up its ads on all websites that you visit. Externally such ads look quite ordinary, and you can easily not notice them among the regular banners posted by this site. But with a keen eye you will be able to easily recognize these ads as ads that "wasn’t here before". For example, it's extremely easy to notice on websites like Facebook or Twitter.
 
 To get rid of this program, use the [following instructions](http://malwaretips.com/blogs/bettersurf-virus-removal/).
 
 ### How to remove Rvzr-a.akamaihd.net?
 
-If you meet a pop-up Rvzr-a.akamaihd.net, then most likely, your computer is infected with malicious adware. You can find instructions for removing it at [this link](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).
+If you meet a pop-up by Rvzr-a.akamaihd.net, then most likely your computer is infected with malicious adware. You can find instructions for removing it at [this link](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).
