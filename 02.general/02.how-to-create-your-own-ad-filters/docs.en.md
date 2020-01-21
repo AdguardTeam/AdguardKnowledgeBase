@@ -997,6 +997,7 @@ This pseudo-class principle is very simple: it allows to select the elements tha
 
 // matching by a regular expression
 :contains(/regex/)
+:contains(/regex/gi)
 ```
 
 Backward compatible syntax:
@@ -1028,6 +1029,8 @@ div:contains(banner)
 
 // matching by a regular expression
 div:contains(/this .* banner/)
+// regex flags are supported
+div:contains(/this .* banner/gi)
 ```
 
 Backward compatible syntax:
