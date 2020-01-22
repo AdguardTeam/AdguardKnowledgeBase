@@ -8,9 +8,10 @@ taxonomy:
 ## Introduction
 
 If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
-There are many of them and you can use any one you prefer, here is simply a couple examples:
 
 **Free antivirus utilities**
+
+There are many of them and you can use any one you prefer, here is simply a couple examples:
 
 [Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
@@ -59,7 +60,7 @@ If you use Mozilla Firefox, [read this manual](https://support.mozilla.org/en-US
 If you use the Opera browser, [read this manual](http://help.opera.com/Windows/11.50/en/extensions.html).
 
 <a id="shortcuts"></a>
-### How to re-create shortcuts of your browsers?
+### How to re-create shortcuts for your browsers?
 
 Very often, malware and adware programs install their homepage in a very simple way - they substitute your browser's desktop shortcut, taskbar and "Start" menu items.
 
