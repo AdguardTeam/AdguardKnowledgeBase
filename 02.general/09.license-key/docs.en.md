@@ -63,11 +63,11 @@ or double click on AdGuard icon in the system tray: 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png"/>
 
 3. You will be presented with two options for activation:
-- Activation by entering **Login** and **Password** from **AdGuard  account**.
+- Via entering **Login** and **Password** from **AdGuard  account**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png"/>
 
-- Activation with the **license key**.
+- Via entering the **license key**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png" />
 
@@ -113,12 +113,12 @@ In the small window you will see 3 functions:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png" width="350" />
 
-- Get a free trial (14 days trial period).
+- Get a free trial (14-day trial period).
 - **Activate Premium**.
 - Restore purchases (Restores the license if you've reinstalled the app).
 
 3) After you press **Activate Premium**, you will be presented with several activation options:
-- Activation by entering **Login** and **Password** from **AdGuard account**.
+- Enter **Login** and **Password** from **AdGuard account**.
 - Sign in with one of the social networks (**Twitter, Google Account, Facebook, Yandex, VK**).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png" width="350" />
