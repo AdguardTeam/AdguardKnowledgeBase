@@ -38,7 +38,9 @@ visible: true
 
 [Как активировать AdGuard для macOS?](#activation_mac)
 
-[Как активировать AdGuard для Android?](#activation_android) 
+[Как активировать AdGuard для Android?](#activation_android)
+
+[Как активировать AdGuard на iOS](#activation_iOS)  
 
 [Привязка ключа](#activation_info)
 
@@ -51,18 +53,26 @@ visible: true
 
 Для этого дважды щелкните на иконке AdGuard на рабочем столе:   
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windowsRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windowsRu.png"/>
 
 Либо дважды щелкните на иконке AdGuard в области уведомлений на панели задач:   
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windows2Ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/windows2Ru.png"/>
 
 
-2. Перейдите в раздел "О программе" в главном меню.
+2. Перейдите в раздел **Лицензия** в главном меню, далее нажмите кнопку **Активировать лицензию**. 
+ 
 
-3. Введите лицензионный ключ и нажмите кнопку "Активировать".  
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1.png"/>
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/keyactivationRu.png" />
+3. Вы можете активировать лицензию двумя способами:
+- Введя **Логин** и **Пароль** от **учётной записи AdGuard**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2.png"/>
+
+- Введя **лицензионный ключ AdGuard**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3.png" />
 
 
 <a id="activation_mac"></a>
@@ -72,37 +82,63 @@ visible: true
 1. Откройте меню программы
 Для этого щелкните на иконке AdGuard в строке меню. 
 
-2. Откройте опции, щелкнув мышью на пиктограмме шестерёнки, и в выпадающем меню выберите "Лицензия".   
+2. Откройте опции, щёлкнув мышью на **иконке шестерёнки**, и в выпадающем меню выберите "Лицензия", далее кликните "Активировать".  
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/macRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicense1ru.png"/>
 
-3. В открывшемся окне введите лицензионный ключ и нажмите кнопку "Активация лицензионным ключом".
+3. Вам будет представлено два варианта для активации:
+- Активация путём введения **Логина** и **Пароля** от **учетной записи AdGuard**.
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/activation_ru.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicense2ru.png"/>
 
+- Активация при помощи лицензионного ключа.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicense3ru.png"/>
 
 <a id="activation_android"></a>
 
 #### Активация AdGuard для Android
 
 1. Откройте приложение и перейдите в меню лицензии. 
-Для этого нажмите на кнопку **Получить Премиум** в верхней части экрана.  
+Для этого нажмите на кнопку **Получить Премиум** в верхней части экрана. 
+Также вы можете перейти в меню лицензии, нажав **Статус лицензии**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licenseactivateRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1ru.png" width="350" />
 
 2. Обратите внимание на три точки в **правом верхнем углу** экрана.
-Нажав на них, вам будет предложено:
-1) Получить бесплатную версию (14 дней пробного периода).
-2) **Ввести ключ**.
-3) Восстановить покупки (Восстанавливает лицензию, если вы удалили приложение и установили его повторно).
+Нажав на них, вы сможете:
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2ru.png" width="350" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licenseactivateRu2.png" />
+- Получить бесплатную версию (14 дней пробного периода).
+- **Активировать Премиум**.
+- Восстановить покупки (Восстанавливает лицензию, если вы удалили приложение и установили его повторно).
 
-3. Введите лицензионный ключ и нажмите кнопку "Активировать".
+3) После того как вы нажмёте **Активировать Премиум**, вам будут представлены несколько вариантов активации:
+- Активация путём введения **Логина** и **Пароля** от **учётной записи AdGuard**.
+- Авторизация с помощью одной из социальных сетей (**Twitter, Google Account, Facebook, Яндекс, VK**).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/licensecativate3Ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2ru.png" width="350" />
 
+- Активация при помощи лицензионного ключа.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3ru.png" width="350" />
+
+<a id="activation_iOS"></a>
+
+### Активация AdGuard для iOS
+
+1. Откройте меню программы и нажмите на **иконку шестерёнки** в правом верхнем углу экрана.
+
+2. Далее перейдите в раздел **О программе** > **Лицензия**. После чего перед вами откроется следующее окно:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense1ru.png" width="350" />
+
+3. Вы можете приобрести лицензию непосредственно в **AppStore** либо активировать **Premium** при помощи **авторизации** в **личном кабинете** AdGuard.
+
+#### Внимание: Для успешной активации необходимо, чтобы у вас была хотя бы одна "свободная" лицензия на аккаунте.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2ru.png" width="350" />
 
 <a id="activation_info"></a>
 
