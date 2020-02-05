@@ -115,7 +115,7 @@ It's very likely that you've already installed AdGuard before.
 <a id="other"></a>
 ### Other errors
 
-If you've encountered an error that's not listed above, it is possible that we can be solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
 - Find and archive **AdGuard installation logs** as it is described in [this article](https://kb.adguard.com/en/windows/solving-problems/installation-logs).
 
