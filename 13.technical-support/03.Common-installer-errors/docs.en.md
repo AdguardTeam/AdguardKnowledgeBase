@@ -72,7 +72,7 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
     1) Press **Win + R** and enter "***services.msc***.
     2) Find in the list and double click on **Windows Installer**.
-    3) Hit **Start** button under *Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 
+    3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 
     4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**.
     5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
 
@@ -115,10 +115,10 @@ It's very likely that you've already installed AdGuard before.
 <a id="other"></a>
 ### Other errors
 
-If you've encountered an error that's not listed above, it is possible that it can be solved on our side. But in order to do that, we need log files from you. Please perform the following steps:
+If you've encountered an error that's not listed above, it is possible that we can be solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
 - Find and archive **AdGuard installation logs** as it is described in [this article](https://kb.adguard.com/en/windows/solving-problems/installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](https://kb.adguard.com/en/windows/solving-problems/system-logs) explains how you can do this.
+- Find and save to disk **Event Viewer** logs. [This article](https://kb.adguard.com/en/windows/solving-problems/system-logs) explains how to do that.
 
-- Please email all these files from two previous steps to **[support@adguard.com](mailto:support@adguard.com)** and explain the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Please email all these files from two previous steps to **[support@adguard.com](mailto:support@adguard.com)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
