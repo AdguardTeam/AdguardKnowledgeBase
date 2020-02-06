@@ -20,7 +20,7 @@ To use AdGuard on a PC or tablet under Microsoft Windows, you should download th
 
 1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing adguard.com in the address bar, and then click **DOWNLOAD**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/downloadscreenEn.png" style="border: 1px solid #efefef; max-width: 600px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/1.png" width="600" />
 
 2) When the download is finished, press the **Run** button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
 
@@ -30,21 +30,21 @@ To use AdGuard on a PC or tablet under Microsoft Windows, you should download th
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/yesEn.png" />
 
-4) The installation program will prompt you to read the License Agreement. 
+4) Next, choose the folder on your PC for the app to be installed to.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/installEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/2.png" width="500" />
 
-5 Next, choose the folder on your PC for the app to be installed to. If you do not agree with the default installation path, press the **[Customize]** select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Next** to proceed with installation.
+If you do not agree with the default installation path, press the **[Browse]** select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Install** to proceed with installation.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/instal2ndstageEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/3.png" width="500" />
 
-6) Wait for the installation to complete and click **Finish**.
+5) Wait for the installation to complete and click **Finish**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/finishinstallEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/4.png" width="500" />
 
-7) When the installation is complete, you can learn about the main functions of AdGuard. To begin your tour of the app and step-by-step adjustment of its principal parameters, click **Get started**. If you want to skip this step, press **Skip**.
+6) When the installation is complete, you can learn about the main functions of AdGuard. To begin your tour of the app and step-by-step adjustment of its principal parameters, click **Let's do it!**. If you want to skip this step, press **Leave as it is**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/tnxforinstallEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/5.png" width="500" />
 
 Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
 
