@@ -234,7 +234,7 @@ This section names third-party apps which are known to be incompatible to some d
 **Problem:** *Orbot: Proxy with Tor* is a VPN app and you cannot have two active VPNs at the same time.
 
 
-**Solution: **setup AdGuard to use Orbot as an outbound proxy.
+**Solution:** setup AdGuard to use Orbot as an outbound proxy.
 
 1. Run Orbot.
 
