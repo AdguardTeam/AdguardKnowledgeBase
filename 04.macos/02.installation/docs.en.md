@@ -21,7 +21,7 @@ To install AdGuard for macOS on your computer, launch your browser, type _adguar
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/1.png" width="600" />
 
-Wait for _AdguardInstaller.dmg_ to download and double-click on its icon in the list of downloaded files in the Dock panel. 
+Wait for _AdguardInstaller.dmg_ to download and double-click on its icon in the list of downloaded files on the Dock panel. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/2.png" width="600" />
 

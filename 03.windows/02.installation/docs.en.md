@@ -18,7 +18,7 @@ taxonomy:
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
-1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing adguard.com in the address bar, and then click **DOWNLOAD**.
+1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing adguard.com in the address bar and then click **DOWNLOAD**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/1.png" width="600" />
 
@@ -34,7 +34,7 @@ To use AdGuard on a PC or tablet under Microsoft Windows, you should download th
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/2.png" width="500" />
 
-If you do not agree with the default installation path, press the **[Browse]** select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Install** to proceed with installation.
+If you do not agree with the default installation path, press **[Browse]**, select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking** OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Install** to proceed with installation.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/en/3.png" width="500" />
 
