@@ -201,28 +201,38 @@ for ’Default’ servers;
 for ’Family protection’ servers.
 
 <a id="android"></a>
+
 #### Android
-1. From the Android Menu home screen, tap ’Settings’
 
-2. Tap Wi-Fi on the menu. The screen listing all of the available networks will be shown (it is impossible to set custom DNS for mobile connection)
+> #### Setting up AdGuard DNS for WiFI connections:
 
-3. Long press the network you’re connected to, and tap ’Modify Network’
-
-4. On some devices, you may need to check the box for ’Advanced’ to see further settings. To adjust your Android DNS settings, you will need to switch the IP settings from ’DHCP’ to ’Static’.
-
-5. Change set ’DNS 1′ and ’DNS 2′ values to following: 
+1. From the Android Menu home screen, tap «Settings».
+2. Tap Wi-Fi on the menu. The screen listing all of the available networks will be shown.
+3. Long press the network you’re connected to, and tap «Modify Network».
+4. On some devices, you may need to check the box for «Advanced» to see further settings. To adjust your Android DNS settings, you will need to switch the IP settings from «DHCP» to «Static».
+5. Change set «DNS 1» and «DNS 2» values to following: 
  
 >176.103.130.130 
 
 >176.103.130.131 
 
-for ’Default’ servers; 
+for «Default» servers; 
 
 >176.103.130.132 
 
 >176.103.130.134 
 
-for ’Family protection’ servers.
+for «Family protection» servers.
+
+>#### Setting up Adguard DNS for mobile connections (Android 9+)
+
+On Android version 9+, you can configure AdGuard DNS as follows:
+
+1. Open Android «Settings».
+2. «Network & Internet» > «Advanced».
+3. Select the «Private DNS» section.
+4. Type this address to «Private DNS provider hostname»:
+> dns.adguard.com
 
 <a id="iOS"></a>
 
