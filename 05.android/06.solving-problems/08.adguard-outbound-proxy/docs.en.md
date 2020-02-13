@@ -85,8 +85,6 @@ Proxy port | *1080* or *1085* or *1090*
 <a name="nordvpn"></a>
 ### How to use AdGuard with NordVPN
 
-*here we presume that you are already a NordVPN client and have it installed on your device*
-
 1. Open AdGuard and go to **Settings —— Proxy settings**.
 
 2. Tap on the **Add proxy** button and enter the following data:
