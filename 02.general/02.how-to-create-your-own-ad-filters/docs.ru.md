@@ -38,6 +38,7 @@ visible: true
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
+            * [$ping](#ping-modifier)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
@@ -425,6 +426,11 @@ AdGuard будет пытаться закрыть браузерную вкла
 ##### **`subdocument`**
 
 Правило будет соответствовать запросам к встроенным страницам (HTML-теги `frame` и `iframe`).
+
+<a id="ping-modifier"></a>
+##### **`ping`**
+
+Правило будет соответствовать запросам, сделанным либо `navigator.sendBeacon()`, либо атрибутом ссылки `ping`.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**

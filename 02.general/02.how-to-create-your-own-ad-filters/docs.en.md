@@ -38,6 +38,7 @@ visible: true
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
+            * [$ping](#subdocument-ping)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
             * [$other](#other-modifier)
@@ -423,6 +424,11 @@ The rule corresponds to requests for media files (music and video, e.g. .mp4 fil
 ##### **`subdocument`**
 
 The rule corresponds to requests for built-in pages (HTML tags `frame` and `iframe`).
+
+<a id="ping-modifier"></a>
+##### **`ping`**
+
+The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**
