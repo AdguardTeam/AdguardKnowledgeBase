@@ -25,7 +25,7 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads.
 * Added filters/extensions from third-party developers.
  
-Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an add was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). This complicates and impedes the search for new solutions, as we block older algorithms and don’t see new ones.
+Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an add was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). We don't see new-algorithm ads and it makes searching for the reasons they appear really difficult. We'd really appreciate your help here – the more screenshots with examples of ads you'll send, the better.
 
 ## Report a website
 
@@ -52,7 +52,7 @@ To submit a complaint, choose a method you like:
 ### **Android**
 
 1) Open AdGuard settings.
-2) Support.
+2) **Support**.
 3) Send Feedback.
 4) Missed ad or tracker/Incorrect blocking.
 
@@ -92,6 +92,8 @@ The complaint can be sent in two ways:
 <a id="form"></a>
 
 ## **Filling in the form**
+
+### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. If you're using a direct link, you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product.
 
