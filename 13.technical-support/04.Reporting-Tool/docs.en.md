@@ -24,12 +24,16 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Incorrect user rules.
 * Modified algorithms of adding ads.
 * Added filters/extensions from third-party developers.
+* It is not excluded that we might have made a mistake when creating a rule.
  
-Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an add was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). We don't see new-algorithm ads and it makes searching for the reasons they appear really difficult. We'd really appreciate your help here – the more screenshots with examples of ads you'll send, the better.
+Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an ad was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). This makes it very difficult to find the reason, as this advertising is not displayed by the developers. You can help us by filling out an application using instructions depending on your operating system.
 
 ## Report a website
 
 To report a re-insertion of an ad or incorrect displaying of a website, you need to:
+
+> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+
 
 <a id="Windows"></a>
 
@@ -45,20 +49,23 @@ To submit a complaint, choose a method you like:
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
 
 * Fill in the form for reporting a complaint.
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards a solution of your problem.
+* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="Android"></a>
 
 ### **Android**
 
-1) Open AdGuard settings.
-2) **Support**.
-3) Send Feedback.
-4) Missed ad or tracker/Incorrect blocking.
+1) Via [direct link](agrd.io/report) (All settings have to be entered manually).
+2) Directly form the AdGuard application:
+
+* Open AdGuard settings.
+* **Support**.
+* **Send Feedback**.
+* Missed ad or tracker/Incorrect blocking.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350"/>
 
-5. After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards a solution of your problem.
+5. After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="MAC"></a>
 
@@ -74,7 +81,7 @@ The complaint can be sent in two ways:
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
 
 * Then you'll need to fill in the form for reporting a complaint.
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards a solution of your problem.
+* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="iOS"></a>
 
@@ -87,13 +94,13 @@ The complaint can be sent in two ways:
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350"/>
 
 4) Fill in the form for reporting a complaint.
-5) After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards a solution of your problem.
+5) After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress owards the solution of your problem.
 
 <a id="form"></a>
 
 ## **Filling in the form**
 
-### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. If you're using a direct link, you’ll need to enter data manually.
+> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product.
 
@@ -135,23 +142,23 @@ Also enter your account on **GitHub**, if available.
 
 <a id="solo"></a>
 
-This option is suitable for those who aren’t afraid of difficulties  and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
 
 For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
 
 ### **Filters**
 
 1. Disable **Ad Blocker**.
-2. If it solved the problem, enable the module and disable filters one by one. This is done to identify filters that "break" the page.
-3. If turning off all the filters hasn't produced any results, rule **@@||example.com^$document,extension** should be applied.
-4. In case of failure, turn to section **Stealth Mode**.
+2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page.
+3. If turning off all the filters hasn't produced any results, rule **@@||example.com^$document,extension** should be applied(Where **example.com** is an example site name, you need to substitute your own option).
+4. In case of failure(issue not solved), turn to section **Stealth Mode**(It is desirable to return the filters to their original state).
 
 
 ### **Stealth Mode**. 
 
 1. Disable **Stealth Mode**.
-2. If it solved the problem, enable the module and disable Stealth Mode options one by one. 
-4. In case of failure, turn to section **Extensions**.
+2. If it solved the problem, enable back the module and disable Stealth Mode options one by one. 
+3. In case of failure(issue not solved), turn to section **Extensions**.
 
 
 ### **Extensions**
