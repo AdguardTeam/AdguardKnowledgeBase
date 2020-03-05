@@ -16,7 +16,6 @@ visible: true
 * [Filling in the form](#form)
 * [Diagnosis of a issue](#solo)
 
-Form
 
 When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
 
@@ -25,7 +24,7 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule.
  
-Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an ad was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). This makes it very difficult to find the reason, as this advertising is not displayed by the developers. You can help us by filling out an application using instructions depending on your operating system.
+Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an ad was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). This makes it very difficult to find the reason, as we don't see new types of ads. You can help us by filling out an application with examples of ads you faced with. To fill the application, please, use instructions for your OS.
 
 ## Report a website
 
@@ -55,7 +54,7 @@ To submit a complaint, choose a method you like:
 ### **Android**
 
 1) Via [direct link](agrd.io/report) (All settings have to be entered manually).
-2) Directly form the AdGuard application:
+2) Directly from the AdGuard app:
 
 * Open AdGuard settings;
 * **Support**;
@@ -99,7 +98,7 @@ The complaint can be sent in two ways:
 
 ### **Filling in the form**
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically(except for the screenshots, you'll have to make and attach them yourself). If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically (except for the screenshots, you'll have to make and attach them yourself). If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product;
 
@@ -149,21 +148,21 @@ For example, you are faced with a situation that your favorite website won’t o
 
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is advisable to return the filters to their original position.
-3. If turning off all the filters hasn't produced any results, rule **@@||example.com^$document,extension** should be applied(Where **example.com** is an example site name, you need to substitute your own option);
-4. In case of failure (issue not solved), turn to section **Stealth Mode**.
+3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+4. If turning off all the filters hasn't produced any results, rule **@@||example.com^$document,extension** should be applied (where **example.com** is an example site name that needs to be replaced by your own option);
+5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
 
 ### **Stealth Mode**. 
 
 1. Disable **Stealth Mode**;
-2. If this solves the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3 If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is advisable to return the settings to their original position;
-3. In case of failure(issue not solved), turn to section **Extensions**.
+2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
+3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+4. In case of failure(issue not solved), turn to section **Extensions**.
 
 
 ### **Extensions**
 
 1. Disable **Extensions**;
-2. If this solves the problem, turn on the module and turn off the settings **Extensions** one by one. This is done to find out which setting "breaks" the page;
-3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case it is desirable to return the settings to their original position;
+2. If this solved the problem, turn on the module and turn off the settings **Extensions** one by one. This is done to find out which setting "breaks" the page;
+3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
