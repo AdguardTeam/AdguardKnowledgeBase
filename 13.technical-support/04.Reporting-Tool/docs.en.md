@@ -23,14 +23,15 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads;
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule.
+* advertising reinjection.  More details about this method can be found in our [blog] (https://adguard.com/ru/blog/ad-reinsertion.html). 
  
-Advertisement creators don’t stay put, they’re constantly changing ways to implement ads. A website finds out that an ad was removed and inserts it back, bypassing protection. As a general rule, developers of such sites are testing new algorithms all the time on certain user groups, meanwhile all the rest receive ads where algorithms of the earlier versions were used (to which we’ve provided a solution). This makes it very difficult to find the reason, as we don't see new types of ads. You can help us by filling out an application with examples of ads you faced with. To fill the application, please, use instructions for your OS.
+You can help us by filling out an application with examples of ads you faced with. To fill the application, please, use instructions for your OS.
 
 ## Report a website
 
 To report a re-insertion of an ad or incorrect displaying of a website, you need to:
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically(except for the screenshots, you'll have to make and attach them yourself). If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
 
 <a id="Windows"></a>
@@ -98,7 +99,7 @@ The complaint can be sent in two ways:
 
 ### **Filling in the form**
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically (except for the screenshots, you'll have to make and attach them yourself). If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product;
 
@@ -166,3 +167,7 @@ For example, you are faced with a situation that your favorite website won’t o
 1. Disable **Extensions**;
 2. If this solved the problem, turn on the module and turn off the settings **Extensions** one by one. This is done to find out which setting "breaks" the page;
 3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+
+### **Third-party blockers** 
+Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
+If you use such programs, make sure that the problem is on the side of AdGuard: disable filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
