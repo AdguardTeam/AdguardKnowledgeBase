@@ -170,4 +170,5 @@ For example, you are faced with a situation that your favorite website won’t o
 
 ### **Third-party blockers** 
 Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
-If you use such programs, make sure that the problem is on the side of AdGuard: disable filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
+If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
+If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
