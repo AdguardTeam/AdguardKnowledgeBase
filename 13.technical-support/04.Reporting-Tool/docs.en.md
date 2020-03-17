@@ -40,8 +40,8 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 
 To submit a complaint, choose a method you like:
 
-1) Via [direct link](agrd.io/report) (All settings have to be entered manually);
-2) Using [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser):
+
+1) Using [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
 
 * Нit **Report the website**, as shown in the screenshot:
 
@@ -50,12 +50,13 @@ To submit a complaint, choose a method you like:
 * Fill in the form for reporting a complaint;
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
+2) [Report to GitHub](agrd.io/report) (All settings have to be entered manually).
+
 <a id="Android"></a>
 
 ### **Android**
 
-1) Via [direct link](agrd.io/report) (All settings have to be entered manually).
-2) Directly from the AdGuard app:
+1) Directly from the AdGuard app:
 
 * Open AdGuard settings;
 * **Support**;
@@ -66,14 +67,16 @@ To submit a complaint, choose a method you like:
 
 5. After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
+2) [Report to GitHub](agrd.io/report) (All settings have to be entered manually).
+
 <a id="MAC"></a>
 
 ### **MAC**
 
 The complaint can be sent in two ways:
 
-1) Via [direct link](agrd.io/report) (All settings have to be entered manually);
-2) Using [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser):
+
+1) Using [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
 
 * Нit **Report the website**, as shown in the screenshot:
 
@@ -81,6 +84,8 @@ The complaint can be sent in two ways:
 
 * Then you'll need to fill in the form for reporting a complaint;
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+
+2) [Report to GitHub](agrd.io/report) (All settings have to be entered manually).
 
 <a id="iOS"></a>
 
