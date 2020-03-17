@@ -10,6 +10,7 @@ visible: true
 
 
 * [Windows](#Windows)
+* [Browser extension](#extension)
 * [Android](#Android)
 * [MAC](#MAC)
 * [iOS](#iOS)
@@ -23,15 +24,15 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads;
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule.
-* advertising reinjection.  More details about this method can be found in our [blog] (https://adguard.com/ru/blog/ad-reinsertion.html). 
+* advertising reinjection.  More details about this method can be found in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html). 
  
 You can help us by filling out an application with examples of ads you faced with. To fill the application, please, use instructions for your OS.
 
 ## Report a website
 
-To report a re-insertion of an ad or incorrect displaying of a website, you need to:
-
 > ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+
+To report a re-insertion of an ad or incorrect displaying of a website, you need to:
 
 
 <a id="Windows"></a>
@@ -48,6 +49,17 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 * Fill in the form for reporting a complaint;
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
+<a id="extension"></a>
+
+### **Browser extension**
+
+* Open the browser extension settings by clicking on the corresponding icon;
+* Click on  **Submit a complaint about this website**:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
+
+* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+
 <a id="Android"></a>
 
 ### **Android**
@@ -59,13 +71,12 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350"/>
 
-*. After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 
 <a id="MAC"></a>
 
 ### **MAC**
-
 
 
 * Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
@@ -89,7 +100,7 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350"/>
 
 * Fill in the form for reporting a complaint;
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress owards the solution of your problem.
+* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="form"></a>
 
