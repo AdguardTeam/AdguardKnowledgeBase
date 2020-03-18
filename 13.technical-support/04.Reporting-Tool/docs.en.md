@@ -24,15 +24,15 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads;
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule.
-* advertising reinjection.  More details about this method can be found in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html). 
+* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html). 
  
-You can help us by filling out an application with examples of ads you faced with. To fill the application, please, use instructions for your OS.
+You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
 
 ## Report a website
 
 > ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
-To report a re-insertion of an ad or incorrect displaying of a website, you need to:
+To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
 
 <a id="Windows"></a>
@@ -47,14 +47,14 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
 
 * Fill in the form for reporting a complaint;
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="extension"></a>
 
 ### **Browser extension**
 
 * Open the browser extension settings by clicking on the corresponding icon;
-* Click on  **Submit a complaint about this website**:
+* Click on **Submit a complaint about this website**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
 
@@ -67,7 +67,7 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 * Open AdGuard settings;
 * **Support**;
 * **Send Feedback**.
-* Missed ad or tracker/Incorrect blocking:
+* **Missed ad or tracker**/**Incorrect blocking**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350"/>
 
@@ -86,7 +86,7 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
 
 * Then you'll need to fill in the form for reporting a complaint;
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 
 <a id="iOS"></a>
@@ -100,7 +100,7 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350"/>
 
 * Fill in the form for reporting a complaint;
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="form"></a>
 
@@ -131,7 +131,7 @@ To report a re-insertion of an ad or incorrect displaying of a website, you need
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500"/>
 
-6. Provide additional information that will help filter developers understand the situation
+6. Provide additional information that will help filter developers understand the situation;
 Also enter your account on **GitHub**, if available;
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500"/>
@@ -144,7 +144,7 @@ Also enter your account on **GitHub**, if available;
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8en.png" width="500"/>
 
-## Diagnosis of a issue
+## Diagnosis of an issue
 
 <a id="solo"></a>
 
@@ -165,15 +165,15 @@ For example, you are faced with a situation that your favorite website won’t o
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure(issue not solved), turn to section **Extensions**.
+3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling in the form (see above). In this case, it is desirable to return to the initial settings;
+4. In case of failure (issue not solved), turn to section **Extensions**.
 
 
 ### **Extensions**
 
 1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off the settings **Extensions** one by one. This is done to find out which setting "breaks" the page;
-3. If you are able to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
+3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
 
 ### **Third-party blockers** 
 Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
