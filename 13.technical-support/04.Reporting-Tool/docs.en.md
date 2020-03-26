@@ -116,7 +116,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2en.png" width="500"/>
 
-3. Enter page or app address and the browser where you've encountered a problem;
+3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem;
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png" width="500"/>
 
@@ -132,7 +132,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500"/>
 
 6. Provide additional information that will help filter developers understand the situation;
-Also enter your account on **GitHub**, if available;
+Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500"/>
 
@@ -157,7 +157,9 @@ For example, you are faced with a situation that your favorite website won’t o
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
 3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
-4. If turning off all the filters hasn't produced any results, rule **@@||example.com^$document,extension** should be applied (where **example.com** is an example site name that needs to be replaced by your own option);
+4. If turning off all the filters hasn't produced any results, apply rule 
+**@@||example.com^$document,extension**,
+where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
 
