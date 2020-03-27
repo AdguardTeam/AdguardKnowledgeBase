@@ -13,7 +13,7 @@ taxonomy:
 
 ### Браузерный Помощник AdGuard
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/browser_assistant_ru.png" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesRU/browser_assistant_ru.png" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;" />
 
 Браузерный Помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. Всё просто: если вы используете одно из десктопных приложений AdGuard, можете спокойно удалить наше расширение-блокировщик и установить Браузерный Помощник. Вам будет предложено сделать это при установке приложения, либо же вы можете скачать Помощник [напрямую с нашего сайта](https://adguard.com/ru/adguard-assistant/overview.html).
 
