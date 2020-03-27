@@ -13,7 +13,7 @@ The problem was, in some cases the app and the extension would hamper each other
 
 ### AdGuard Browser Assistant
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/browser_assistant.png" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/browser_assistant.png" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;" />
 
 AdGuard Browser Assistant is a new browser extension that works and feels just like the integration mode but much lighter, without redundant functions and doesn't interfere with the desktop apps. It's simple: if you already have one of the AdGuard desktop apps, feel free to remove AdGuard browser extension and install the Browser Assistant (you'll be prompted during the app installation or you can [download it directly](https://adguard.com/adguard-assistant/overview.html) from our website).
 
