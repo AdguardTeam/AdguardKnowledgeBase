@@ -18,6 +18,6 @@ To manually install the certificate into Firefox-like browser:
   
   4. Navigate to "Authorities" tab and click on "Import..." button
   
-  5. Select file `/Library/Application Support/com.adguard.Adguard/NfApiConfiguration/SSL/Adguard Perosnal CA.cer`
+  5. Select file `/Library/Application Support/com.adguard.Adguard/NfApiConfiguration/SSL/Adguard Personal CA.cer`
   
 Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
