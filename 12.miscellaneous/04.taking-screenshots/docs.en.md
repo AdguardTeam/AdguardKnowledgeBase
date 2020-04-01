@@ -12,7 +12,6 @@ visible: true
     * [iOS](#ios)
     * [Windows](#windows)
     * [MacOS](#mac)
-    * [Windows Phone](#windows-phone)
 
 <a name="intro"></a>
 
@@ -81,7 +80,7 @@ Windows captures the entire screen and copies it to the (invisible) clipboard.
 
 To take a screenshot of an active window, use the following combination:
 
-+ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some notebooks)**
++ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
 
 To take a screenshot of a specific area, you should use the following combination:
 
