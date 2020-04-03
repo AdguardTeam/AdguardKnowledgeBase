@@ -34,15 +34,11 @@ visible: true
 
 ## Как активировать AdGuard лицензионным ключом
 
-[Как активировать AdGuard для Windows?](#activation_windows)
-
-[Как активировать AdGuard для macOS?](#activation_mac)
-
-[Как активировать AdGuard для Android?](#activation_android)
-
-[Как активировать AdGuard на iOS](#activation_iOS)  
-
-[Привязка ключа](#activation_info)
+* [Как активировать AdGuard для Windows?](#activation_windows)
+* [Как активировать AdGuard для macOS?](#activation_mac)
+* [Как активировать AdGuard для Android?](#activation_android)
+* [Как активировать AdGuard на iOS](#activation_iOS)  
+* [Привязка ключа](#activation_info)
 
 
 <a id="activation_windows"></a>
@@ -126,7 +122,7 @@ visible: true
 
 <a id="activation_iOS"></a>
 
-### Активация AdGuard для iOS
+#### Активация AdGuard для iOS
 
 1. Откройте меню программы и нажмите на **иконку шестерёнки** в правом верхнем углу экрана.
 
@@ -136,7 +132,7 @@ visible: true
 
 3. Вы можете приобрести лицензию непосредственно в **AppStore** либо активировать **Premium** при помощи **авторизации** в **личном кабинете** AdGuard.
 
-#### Внимание: Для успешной активации необходимо, чтобы у вас была хотя бы одна "свободная" лицензия на аккаунте.
+> Внимание: Для успешной активации необходимо, чтобы у вас была хотя бы одна "свободная" лицензия на аккаунте.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2ru.png" width="350" />
 
@@ -185,7 +181,7 @@ visible: true
 <a id="payment"></a>
 ## Способы оплаты лицензии AdGuard
 
-Мы предоставляем множество способов приобретения лицензии AdGuard.
+Мы предоставляем несколько способов приобретения лицензии AdGuard.
 
 #### Оплата на сайте
 

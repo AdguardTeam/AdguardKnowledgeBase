@@ -11,7 +11,7 @@ visible: true
 * [How to recover my license key?](#recovery)
 * [How to register the AdGuard Account?](#account)
 * [What functions are available in AdGuard Account?](#account-functions)
-* [What to do after the key was renewed?](#account-renewal)
+* [What to do after the key was renewed?](#renewal)
 
 <a name="key"></a>
 #### What is AdGuard license key?
@@ -33,15 +33,11 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 ## How to activate AdGuard with a license key?
 
-[How to activate AdGuard for Windows](#activation_windows)
-
-[How to activate AdGuard for Mac](#activation_mac)
-
-[How to activate AdGuard for Android](#activation_android)
-
-[How to activate AdGuard for iOS](#activation_iOS) 
-
-[Transfering license to another device](#activation_info)
+* [How to activate AdGuard for Windows](#activation_windows)
+* [How to activate AdGuard for Mac](#activation_mac)
+* [How to activate AdGuard for Android](#activation_android)
+* [How to activate AdGuard for iOS](#activation_iOS) 
+* [Transfering license to another device](#activation_info)
 
 
 <a id="activation_windows"></a>
@@ -140,7 +136,7 @@ In the small window you will see 3 functions:
 
 3. You can purchase the license directly from the **AppStore**, or activate **Premium** using **authorization** in **AdGuard account**.
 
-#### Note: For successful activation you need to have at least one "free" license on your account.
+> Note: For successful activation you need to have at least one "free" license on your account.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2en.png" width="350" />
 
@@ -215,12 +211,12 @@ _**Attention!** Please, pay close attention to the email address you enter. The 
 
 We offer the possibility to pay with a credit card or PayPal. 
 
-<a id="refund"></a>
-
 #### License key activation
 
 The purchased license key will be sent to the indicated email address. You need to activate your AdGuard with this license key. The detailed instruction on how to do it is available [here](#activation).
 
-#### Refund policy
+<a id="refund"></a>
+
+## Refund policy
 
 To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option did you use. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.
