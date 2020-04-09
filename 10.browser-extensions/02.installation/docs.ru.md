@@ -12,12 +12,11 @@ taxonomy:
 * <a href="#t4">Установка AdGuard Антибаннер в Яндекс Браузере</a>
 * <a href="#t5">Установка AdGuard Антибаннер в Microsoft Edge</a>
 * <a href="#t6">Установка AdGuard Антибаннер в Safari</a>
-* <a href="#t7">Установка AdGuard Антибаннер в Pale moon</a>
 
 <a name="t1"></a>
 ##  Установка AdGuard Антибаннер в браузере Google Chrome или Chromium
 
-Откройте в браузере страницу [Chrome Web Store](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg) (<https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg>). В верхней части открывшегося окна нажмите кнопку _Установить_. 
+Откройте в браузере страницу [Chrome Web Store](https://agrd.io/extension_chrome). В верхней части открывшегося окна нажмите кнопку _Установить_. 
 
 ![](Chrome_01_ru.png)
 
@@ -28,7 +27,7 @@ taxonomy:
 <a name="t2"></a>
 ## Установка AdGuard Антибаннер в Opera
 
-Откройте в браузере страницу  [addons.opera.com](https://addons.opera.com/extensions/details/adguard/) (<https://addons.opera.com/extensions/details/adguard/>).
+Откройте в браузере страницу  [addons.opera.com](https://agrd.io/extension_opera).
 
 ![](Opera_01_RU.png)
 
@@ -37,7 +36,7 @@ taxonomy:
 <a name="t3"></a>
 ## Установка AdGuard Антибаннер в Firefox
 
-Откройте в браузере страницу [addons.mozilla.org](https://addons.mozilla.org/en-us/firefox/addon/adguard-adblocker/) (<https://addons.mozilla.org/en-us/firefox/addon/adguard-adblocker/>).
+Откройте в браузере страницу [addons.mozilla.org](https://agrd.io/extension_firefox).
 
 ![](Firefox_01_RU.png)
 
@@ -57,7 +56,7 @@ taxonomy:
 <a name="t5"></a>
 ## Установка AdGuard Антибаннер в Microsoft Edge
 
-Откройте в браузере [страницу расширения AdGuard](https://www.microsoft.com/ru-ru/store/p/adguard-adblocker/9mz607gwkbs7) (<https://www.microsoft.com/ru-ru/store/p/adguard-adblocker/9mz607gwkbs7>), затем нажмите кнопку _Получить приложение_. 
+Откройте в браузере [страницу расширения AdGuard](https://agrd.io/extension_edge), затем нажмите кнопку _Получить приложение_. 
 
 ![](Edge_01_RUS.png)
 
@@ -68,13 +67,6 @@ taxonomy:
 Дождитесь окончания установки. Браузер Edge откроется автоматически и предложит включить AdGuard. 
 
 <a name="t6"></a>
-## Установка AdGuard Антибаннер в Safari
+## Установка AdGuard для Safari
 
-Откройте в браузере Safari страницу [extensions.safari.com](https://safari-extensions.apple.com/details/?id=com.adguard.safari-N33TQXN8C7) (<https://safari-extensions.apple.com/details/?id=com.adguard.safari-N33TQXN8C7>) и нажмите на ссылку _Install now_. Дождитесь окончания установки расширения.
-
-![](safari.png)
-
-<a name="t7"></a>
-## Установка AdGuard Антибаннер в Pale moon
-
-Пользователи Pale moon и старых версий Firefox могут установить Legacy-версию расширения, которую можно скачать по адресу: <https://github.com/AdguardTeam/AdguardBrowserExtension/releases>. 
+После того, как Apple заставило разработчиков использовать новый SDK, браузерные расширения для Safari в привычном смысле перестали существовать. Чтобы заблокировать рекламу и трекинг в Safari, установите бесплатное расширение AdGuard для Safari. Для этого перейдите по [данной ссылке](https://agrd.io/safari_release). 
