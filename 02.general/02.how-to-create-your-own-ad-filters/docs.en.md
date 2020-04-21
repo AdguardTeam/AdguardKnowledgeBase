@@ -92,7 +92,7 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
-* [Scriptlets and redirects](#scriptlets)
+* [Scriptlets and redirect resources](#scriptlets-and-redirects)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -1307,8 +1307,8 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@%#window.__gaq = undefined;
 ```
 
-<a id="scriptlets"></a>
-## Scriptlets and redirects
+<a id="scriptlets-and-redirects"></a>
+## Scriptlets and redirect resources
 
 ### Scriptlets
 
@@ -1329,7 +1329,7 @@ rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
 ```
 example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
-This rule applies the abort-on-property-read scriptlet on all pages of example.org and its subdomains, and passes one orgument to it (alert).
+This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
 ### Redirect resources
 
@@ -1337,13 +1337,13 @@ AdGuard is able to redirect web requests to a local "resource".
 
 #### Syntax
 
-AdGuard uses the same filtering syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite` modifier.
+AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
-`$redirect` is a modifier for the basic filtering rules so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+`$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
-The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
+>The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+>`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
 
 #### Examples
 
@@ -1355,9 +1355,9 @@ This rule redirects all requests to script.js to the resource named noopjs.
 ```
 ||example.org/test.mp4$media,redirect=noopmp4-1s
 ```
-This rule redirects all requests to test.mp4 to the resource named noopmp4-1s.
+This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
->For more information on scriptlets, redirects, and their usage, follow [this link](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
+>More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
 
 
 <a id="for_maintainers"></a>
