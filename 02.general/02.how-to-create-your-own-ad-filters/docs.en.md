@@ -92,6 +92,7 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
+* [Scriptlets and redirect resources](#scriptlets-and-redirects)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -795,7 +796,9 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 * Android - use the apps' package names (i.e. `org.example.app`).
 * Windows - use the process name (i.e. `chrome.exe`).
-* Mac - use the process name (i.e. `firefox-bin`).
+* Mac - use the bundle ID or the process name (i.e. `com.google.Chrome`).
+
+>For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log
 
 In the case of Android, use the apps' package names (i.e. `org.example.app`). In the case of Windows
 
@@ -1303,6 +1306,59 @@ If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@%#window.__gaq = undefined;
 ```
+
+<a id="scriptlets-and-redirects"></a>
+## Scriptlets and redirect resources
+
+### Scriptlets
+
+Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+
+>AdGuard supports a lot of different scriptlets. Please note, that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+
+#### Syntax
+```
+rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+```
+
+`scriptletName` (mandatory) is a name of the scriptlet from AdGuard's scriptlets library
+`arguments` (optional) is a list of String arguments (no other types of arguments are supported)
+
+#### Example
+
+```
+example.org#%#//scriptlet("abort-on-property-read", "alert")
+```
+This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
+
+### Redirect resources
+
+AdGuard is able to redirect web requests to a local "resource".
+
+#### Syntax
+
+AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
+
+`$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+
+>The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
+
+>`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+
+#### Examples
+
+```
+||example.org/script.js$script,redirect=noopjs
+```
+This rule redirects all requests to script.js to the resource named noopjs.
+
+```
+||example.org/test.mp4$media,redirect=noopmp4-1s
+```
+This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
+
+>More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
+
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers 
