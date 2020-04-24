@@ -22,7 +22,7 @@ visible: true
 
 AdGuard for Safari was released in November, 2018 and soon became one of the most popular ad blockers for this browser. It [replaced](https://adguard.com/en/blog/adguard-safari-extension.html) our classic browser extension that existed before Apple’s restrictions, and we had to do our best to make the current extension comparable to the previous one. AdGuard for Safari can’t be compared to full-fledged desktop ad blocking apps, but has many virtues.  
 
-Firstly, it’s free! Secondly, it will protect you from ads, trackers, phishing, and malicious websites. But first things first.
+It’s free and it will protect you from ads, trackers, phishing, and malicious websites. But first things first.
 
 <a name="general"></a>
 
@@ -30,7 +30,7 @@ Firstly, it’s free! Secondly, it will protect you from ads, trackers, phishing
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png" style="border: 1px solid #efefef; max-width: 750px; padding: 2px;">
 <p align="center"><i>The General tab</i><p>
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AG icon in the menu bar – a nice option for minimalists, we’d say. And most importantly, you can choose which content blockers you’re going to use, but more on that later.
+The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AG icon in the menu bar. And most importantly, you can choose which content blockers you’re going to use, but more on that later.
 
 <a name="filters"></a>
 
@@ -48,7 +48,7 @@ In the Filters tab you can enable/disable the whole category, or fine-tune separ
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 <p align="center"><i>Content Blockers</i><p> 
 
-A сontent blocker is a thematic cluster of filters. For instance, all filters that come within the topic of privacy will be included in the content blocker with the corresponding name — AdGuard Privacy. “Why make it so difficult?”, you may ask. There are two reasons, in essence: it’s much more convenient to manage structured filters and there still is Apple’s restriction.
+A сontent blocker is a thematic cluster of filters. For instance, all filters that come within the topic of privacy will be included in the content blocker with the corresponding name — *AdGuard Privacy*. There were two reasons to make content blockers: it’s much more convenient to manage structured filters and there still exists Apple’s restriction.
 
 As you might [remember](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple has put limitations on ad blockers for Safari, particularly it allowed them to use only 50,000 filtering rules simultaneously. Don’t be deceived with this seemingly big number – actually, it’s too small. Luckily, there is a way to bypass this restriction. One ad blocker can be divided into several content blockers each containing up to 50K rules. This measure seems appropriate. 
 
@@ -72,7 +72,7 @@ Then goes *AdGuard Privacy* where the *Tracking Protection filter* developed by 
 <a name="agsocial"></a>
 
 ### AdGuard Social
-If you’re sick and tired of Like buttons and such, choose the *Social Media filter* – our own filter that we support – and you’ll feel much better afterwards. There are other options, for instance, a world-renowned *Fanboy's Social Blocking List*. It blocks social content, widgets, scripts and icons. To enable any of them, go to the Filters tab, press *Social Widgets* and switch the above-mentioned filters on.
+If you’re sick and tired of Like buttons and such, choose the *Social Media filter* – our own filter that we support. There are other options, for instance, a world-renowned *Fanboy's Social Blocking List*. It blocks social content, widgets, scripts and icons. To enable any of them, go to the Filters tab, press *Social Widgets* and switch the above-mentioned filters on.
 
 <a name="agsecurity"></a>
 
@@ -108,9 +108,10 @@ How is AdGuard for Safari different from other popular ad blockers for this brow
 <p align="center"><i>Whitelist</i><p> 
 
 To put it simply, Whitelist is a list of exceptions — websites that AdGuard won’t block. If you want to see some ads for a reason (say, you want to support your favorite website), there is a solution.
+
 How does it work? Add a website to Whitelist and ad blocking will be disabled for it. You can add as many websites as needed.
 
-There is an option to import/export a list of exclusions. If you’ve already created one and want to apply it to another device, just press the corresponding button. One click and no manual rewriting!
+There is an option to import/export a list of exclusions. If you’ve already created one and want to apply it to another device, just press the corresponding button.
 
 > Note: Whitelist can be inverted — this means AdGuard will not block ads and tracking anywhere except for the websites you’ve put on this list.
 
