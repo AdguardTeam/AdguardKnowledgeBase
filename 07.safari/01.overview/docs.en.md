@@ -96,16 +96,16 @@ This content blocker unites several security-related filters. *Malware Domains B
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png" width="800" />
 <p align="center"><i>Adding a custom filter is easy</i><p> 
 
-*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field, and voila.
+*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field, and voila.https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/comparisontable.png
 
-Also, we decided to check what has changed since AdGuard for Safari first release in November, 2018. Then we [made a comparison table](https://adguard.com/en/blog/legacy-safari-extensions.html) of popular ad blockers. Here is an updated version for April, 2020. 
+How is AdGuard for Safari different from other popular ad blockers for this browser? Here is a comparison table updated April, 2020. See for yourself!
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/comparisontable.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 <p align="center"><i>Ad blockers' comparison chart</i><p> 
 
 *⠀300K filtering rules vs. 50K
 
-<a name="agwhitelist"></a>
+<a name="whitelist"></a>
 
 ## Whitelist
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Whitelist.png" width="800" />
@@ -118,7 +118,7 @@ There is an option to import/export a list of exclusions. If you’ve already cr
 
 > Note: Whitelist can be inverted — this means AdGuard will not block ads and tracking anywhere except for the websites you’ve put on this list.
 
-<a name="aguserrules"></a>
+<a name="userrules"></a>
 
 ## User Rules
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Userrules.png" width="800" />
@@ -126,7 +126,7 @@ There is an option to import/export a list of exclusions. If you’ve already cr
 
 User rules are a great option for those who want to customize the filtering process. Of course, certain skills are required to write and apply those: in particular, you would need to master rule syntax. If you feel like learning something new (which might be especially useful during self-isolation), here is [a comprehensive guide](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) to that.
 
-<a name="agabout"></a>
+<a name="about"></a>
 
 ## About
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
@@ -136,4 +136,4 @@ Last but not least important tab. Here you can see what version you have, read E
 
 Finally, there is a link to our repository on GitHub. If you are even a little bit of a geek, it might be of interest to you. You can monitor the product development, create feature requests and report bugs there, for instance. 
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259?l=en&mt=12). Can’t stand those ads and be worried about trackers anymore? They shall not pass!
+> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259?l=en&mt=12).
