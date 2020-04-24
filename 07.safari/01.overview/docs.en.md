@@ -22,7 +22,7 @@ visible: true
 
 AdGuard for Safari was released in November, 2018 and soon became one of the most popular ad blockers for this browser. It [replaced](https://adguard.com/en/blog/adguard-safari-extension.html) our classic browser extension that existed before Apple’s restrictions, and we had to do our best to make the current extension comparable to the previous one. AdGuard for Safari can’t be compared to full-fledged desktop ad blocking apps, but has many virtues.  
 
-Firstly, it’s free! Secondly, it will protect you from ads, trackers, phishing, and malicious websites. But first things first. Let’s take a look inside AdGuard for Safari and find out what it can do.
+Firstly, it’s free! Secondly, it will protect you from ads, trackers, phishing, and malicious websites. But first things first.
 
 <a name="general"></a>
 
@@ -42,8 +42,6 @@ A filter is a set of rules that can filter web traffic and, in particular, block
 
 In the Filters tab you can enable/disable the whole category, or fine-tune separate filters inside it. If you make changes, this would be reflected in the Content Blockers section (located in the General tab). In other words, you can adjust things in the Filters tab and see what has changed in the Content Blockers section.
 
-Okay then, now that we’ve worked it out, let’s go back to the General tab and find the Content bloсkers section here.
-
 <a name="contentblockers"></a>
 
 ## Content Blockers
@@ -58,8 +56,6 @@ Here is a list of 6 content blockers grouped thematically. The good thing about 
 > AdGuard General
 > 21700 rules used
 > Enabled: AdGuard Base filter
-
-Now let’s look at each content blocker separately.
 
 <a name="aggeneral"></a>
  
@@ -96,7 +92,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png" width="800" />
 <p align="center"><i>Adding a custom filter is easy</i><p> 
 
-*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field, and voila.https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/comparisontable.png
+*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field, and voila.
 
 How is AdGuard for Safari different from other popular ad blockers for this browser? Here is a comparison table updated April, 2020. See for yourself!
 
@@ -124,7 +120,7 @@ There is an option to import/export a list of exclusions. If you’ve already cr
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Userrules.png" width="800" />
 <p align="center"><i>User rules</i><p> 
 
-User rules are a great option for those who want to customize the filtering process. Of course, certain skills are required to write and apply those: in particular, you would need to master rule syntax. If you feel like learning something new (which might be especially useful during self-isolation), here is [a comprehensive guide](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) to that.
+User rules are a great option for those who want to customize the filtering process. Of course, certain skills are required to write and apply those: in particular, you would need to master rule syntax. If you feel like learning something new, here is [a comprehensive guide](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) to that.
 
 <a name="about"></a>
 
@@ -136,4 +132,4 @@ Last but not least important tab. Here you can see what version you have, read E
 
 Finally, there is a link to our repository on GitHub. If you are even a little bit of a geek, it might be of interest to you. You can monitor the product development, create feature requests and report bugs there, for instance. 
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259?l=en&mt=12).
+> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259?l=en&mt=12). A detailed setup instruction is available [here](https://www.kb.adguard.com/en/safari/installation).
