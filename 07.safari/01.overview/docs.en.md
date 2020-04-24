@@ -92,9 +92,9 @@ This content blocker unites several security-related filters. *Malware Domains B
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png" width="800" />
 <p align="center"><i>Adding a custom filter is easy</i><p> 
 
-*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field, and voila.
+*AdGuard Custom* is extra space left for supplementary filters you may want to add. Adding a filter is not rocket science. There is no need to know how to create user rules, you can use the ready-made filters. Just enter a valid URL of the filter subscription in the field.
 
-How is AdGuard for Safari different from other popular ad blockers for this browser? Here is a comparison table updated April, 2020. See for yourself!
+How is AdGuard for Safari different from other popular ad blockers for this browser? Here is a comparison table updated April, 2020.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/comparisontable.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 <p align="center"><i>Ad blockers' comparison chart</i><p> 
