@@ -35,6 +35,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [blahdns.com](#blahdns.ger-dns)
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
+* [cira.ca](#cira.ca-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 
 <a name="adguard-dns"></a>
@@ -502,6 +503,25 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 | DNS, IPv6 | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`| <a href="sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ">Add to AdGuard</a>  |
 | DNS-over-TLS | Hostname: `dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLnN3aXRjaC5jaA">Add to AdGuard</a>  |
 
+
+
+<a name="cira.ca-dns"></a>
+
+### DNS-over-TLS and DNS-over-HTTPS Servers by cira.ca
+
+[DNS-over-TLS and DNS-over-HTTPS Servers by cira.ca](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) official canadian TLD provider. Offers different DoH and DoT DNS Servers.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+
+| DNS-over-TLS - Private | Hostname: `private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | <a href="sdns://AwAAAAAAAAAAAAAkdGxzOi8vcHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh">Add to AdGuard</a>  |
+| DNS-over-TLS - Protected | Hostname: `protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | <a href="sdns://AwAAAAAAAAAAAAAmdGxzOi8vcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a>  |
+| DNS-over-TLS - Family | Hostname: `protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | <a href="sdns://AwAAAAAAAAAAAAAjdGxzOi8vZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a>  |
+
+
+| DNS-over-HTTPS - Private | Hostname: `https://private.canadianshield.cira.ca/dns-query` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | <a href="sdns://AgEAAAAAAAAAAAAmaHR0cHM6Ly9wcml2YXRlLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ">Add to AdGuard</a>  |
+| DNS-over-HTTPS - Protected | Hostname: `https://protected.canadianshield.cira.ca/dns-query` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | <a href="sdns://AgEAAAAAAAAAAAAoaHR0cHM6Ly9wcm90ZWN0ZWQuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
+| DNS-over-HTTPS - Family | Hostname: `https://family.canadianshield.cira.ca/dns-query` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | <a href="sdns://AgEAAAAAAAAAAAAlaHR0cHM6Ly9mYW1pbHkuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
 
 <a name="dnsprivacy.org-dns"></a>
 
