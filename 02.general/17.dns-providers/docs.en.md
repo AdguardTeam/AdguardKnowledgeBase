@@ -33,6 +33,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
 * [securedns.eu](#securedns.eu-dns)
 * [blahdns.com](#blahdns.ger-dns)
+* [ffmuc.net](#ffmuc.net)
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
@@ -477,6 +478,19 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 | DNS-over-TLS, IPv4 | Hostname: `dot-de.blahdns.com`  IP: `159.69.198.101` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`  | <a href="sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443` | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
+
+<a name="ffmuc.net"></a>
+
+### ffmuc.net
+
+[ffmuc.net](https://https://ffmuc.net/) DNS-over-TLS, DNS-over-HTTPS DNS Server by Freifunk München
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS, IPv4 | Hostname: `dot.ffmuc.net` IP: `195.30.94.28` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Add to AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` IP: `195.30.94.28` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
+
+
 
 <a name="ibksturm-dns"></a>
 
