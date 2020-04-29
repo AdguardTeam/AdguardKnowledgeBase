@@ -31,7 +31,6 @@ visible: true
 * [Captnemo DNS](#captnemo-dns)
 * [fvz DNS](#fvz-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
-* [securedns.eu](#securedns.eu-dns)
 * [blahdns.com](#blahdns.ger-dns)
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
@@ -451,20 +450,6 @@ OpenDNS серверы с функцией блокировки контента
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">Добавить в AdGuard</a> |
-
-<a name="securedns.eu-dns"></a>
-
-### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS и DNSCrypt сервер
-
-[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS и DNSCrypt от securedns.eu
-
-| Протокол       | Адрес                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS| Хост: `dot.securedns.eu`  IP: `146.185.167.43:853 ` и IPv6: `[2a03:b0c0:0:1010::e9a:3001]:853 `| <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Добавить в AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Хост: `https://doh.securedns.eu/dns-query ` IP: `146.185.167.43:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
-| DNS-over-HTTPS, IPv6 | Хост: `https://doh.securedns.eu/dns-query ` IPv6: `[2a03:b0c0:0:1010::e9a:3001]:443` | <a href="sdns://AgcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0AEGRvaC5zZWN1cmVkbnMuZXUKL2Rucy1xdWVyeQ ">Добавить в AdGuard</a> |
-| DNSCrypt, IPv4 | Имя провайдера: `2.dnscrypt-cert.securedns.eu` IP: `146.185.167.43:5353` | <a href="sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMg9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Добавить в AdGuard</a> |
-| DNSCrypt, IPv6 | Имя провайдера: `2.dnscrypt-cert.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:5353 ` | <a href="sdns://AQcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0g9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Добавить в AdGuard</a> |
 
 <a name="blahdns.ger-dns"></a>
 
