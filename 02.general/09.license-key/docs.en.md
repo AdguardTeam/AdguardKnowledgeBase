@@ -46,11 +46,11 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 1. Open the program.
    
-To do it, doubleclick on AdGuard icon on the desktop:   
+To do it, doubleclick on the AdGuard icon on the desktop:   
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png" />
 
-or double click on AdGuard icon in the system tray:   
+or double click on the AdGuard icon in the system tray:   
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png" />
 
@@ -170,7 +170,7 @@ Find more on functions of the Account [below](#account-functions).
 
 
 <a id="account-functions"></a>
-## What functions are available in AdGuard Account?
+## What functions are available in my AdGuard personal account?
 
 When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status.
 
@@ -186,8 +186,7 @@ To unbind the license key from computer just click the “Reset” button as it�
 
 Once you have renewed AdGuard for another year - you will need to restart the program/app or go to the 'License' section and refresh the license status for changes to take effect. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/refresh_license.png)
-_E.g: AdGuard for Windows_
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/reneworupgradeen.png" width="350" />
 
 <a id="payment"></a>
 
