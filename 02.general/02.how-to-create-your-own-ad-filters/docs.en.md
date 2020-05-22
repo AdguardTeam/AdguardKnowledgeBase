@@ -523,9 +523,9 @@ Disables the Stealth Mode for all corresponding pages and requests.
 > #### Compatibility with different versions of AdGuard
 > Stealth Mode is currently available in AdGuard for Windows, Mac, Android and AdGuard browser extension. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
-###### `stealth` example
+###### `stealth` examples
 
-* `@@||example.com^$stealth` — disables `Stealth Mode` only for **first-party** requests on `example.com` and all subdomains.
+* `@@||example.com^$stealth` — disables `Stealth Mode` for `example.com` (and subdomains) requests.
 * `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script `domain.com` (and subdomains) requests on `example.com` and all subdomains.
 
 <a id="generic-rules"></a>
