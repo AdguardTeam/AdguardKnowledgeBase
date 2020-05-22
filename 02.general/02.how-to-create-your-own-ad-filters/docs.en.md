@@ -525,8 +525,8 @@ Disables the Stealth Mode for all corresponding pages and requests.
 
 ###### `stealth` example
 
-* `@@||example.com^$stealth` — disables `Stealth Mode` for only **first-party** requests on `example.com` and all subdomains.
-* `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` for only script `domain.com` (and subdomains) requests on `example.com` and all subdomains.
+* `@@||example.com^$stealth` — disables `Stealth Mode` only for **first-party** requests on `example.com` and all subdomains.
+* `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script `domain.com` (and subdomains) requests on `example.com` and all subdomains.
 
 <a id="generic-rules"></a>
 ##### Generic rules
