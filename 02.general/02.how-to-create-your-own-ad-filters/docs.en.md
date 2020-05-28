@@ -92,6 +92,9 @@ visible: true
     * [JavaScript rules syntax](#javascript-rules-syntax)
     * [JavaScript rules examples](#javascript-rules-examples)
     * [JavaScript rules exceptions](#javascript-rules-exceptions)
+    * [Modifiers](#modifiers)
+        * Syntax (#syntax)
+        * Modifiers (#modifiers2)
 * [Scriptlets and redirect resources](#scriptlets-and-redirects)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
@@ -1307,6 +1310,59 @@ If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@%#window.__gaq = undefined;
 ```
+<a id="modifiers"></a>
+### Modifiers
+Each cosmetic rule can be modified using the modifiers described in the following paragraphs.
+
+<a id="syntax"></a>
+### Syntax
+
+```
+rule = "[$" modifiers "]" [rule text]
+modifiers = modifier0[, modifier1[, ...[, modifierN]]]
+```
+
+* `modifier` - set of the modifiers described below.
+* `rule text` - cosmetic rule to be modified.
+
+For example: `[$domain=example.com,app=test_app]##selector`.
+
+In the modifiers values the following characters must be escaped: `[`, `]`, `,`, and `\` (unless
+it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
+this: `\]`.
+
+<a id="modifiers2"></a>
+### Modifiers
+
+#### app
+
+`app` lets you narrow the rule coverage down to a specific application (or a list of applications).
+The modifier's behavior and syntax perfectly match the corresponding
+[$app modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#app) of basic
+rules.
+
+`app` examples:
+* `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
+* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
+
+#### domain
+
+`domain` limits the rule application area to a list of domains (and their subdomains).
+The modifier's behavior and syntax perfectly match the corresponding
+[$domain modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#domain) of
+basic rules.
+
+`domain` examples:
+* `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
+* `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `[$domain=~example.com]##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
+
+Please note that there are 2 ways to specify domain restrictions for cosmetic rules:
+    1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
+    2) the modifier approach is to specify domains via `domain` modifier: `[$domain=example.com]##.textad`
+
+But rules with mixed style domains restriction are considered invalid. So, for example, the rule
+`[$domain=example.org]example.com##.textad` will be rejected.
 
 <a id="scriptlets-and-redirects"></a>
 ## Scriptlets and redirect resources
