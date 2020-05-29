@@ -1333,11 +1333,8 @@ In the modifiers values the following characters must be escaped: `[`, `]`, `,`,
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-<a id="cosmetic-rules-modifiers2"></a>
-### Modifiers
-
 <a id="cosmetic-rules-modifiers2-app"></a>
-#### app
+### app
 
 `app` lets you narrow the rule coverage down to a specific application (or a list of applications).
 The modifier's behavior and syntax perfectly match the corresponding
@@ -1349,7 +1346,7 @@ rules.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 
 <a id="cosmetic-rules-modifiers2-domain"></a>
-#### domain
+### domain
 
 `domain` limits the rule application area to a list of domains (and their subdomains).
 The modifier's behavior and syntax perfectly match the corresponding
