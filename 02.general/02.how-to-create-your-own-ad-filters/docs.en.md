@@ -65,13 +65,13 @@ visible: true
         * [$app](#app-modifier)
 * [Cosmetic rules](#cosmetic-rules)
     * [Element hiding rules](#cosmetic-elemhide-rules)
-        * [Element hiding rules syntax](#elemhide-syntax)
-        * [Element hiding rules examples](#elemhide-examples)
-        * [Element hiding rules exceptions](#elemhide-exceptions)
+        * [Syntax](#elemhide-syntax)
+        * [Examples](#elemhide-examples)
+        * [Exceptions](#elemhide-exceptions)
     * [CSS rules](#cosmetic-css-rules)
-        * [CSS rules syntax](#cosmetic-css-rules-syntax)
-        * [CSS rules examples](#cosmetic-css-rules-examples)
-        * [CSS rules exceptions](#cosmetic-css-rules-exceptions)
+        * [Syntax](#cosmetic-css-rules-syntax)
+        * [Examples](#cosmetic-css-rules-examples)
+        * [Exceptions](#cosmetic-css-rules-exceptions)
     * [Extended CSS selectors](#extended-css-selectors)
         * [Pseudo-class `:has()`](#extended-css-has)
         * [Pseudo-class `:if-not()`](#extended-css-has)
@@ -79,22 +79,24 @@ visible: true
         * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
         * [Selectors debugging mode](#selectors-debugging-mode)
         * [Testing extended selectors](#testing-extended-selectors)
-* [HTML filtering rules](#html-filtering-rules)
-    * [HTML filtering rules syntax](#html-filtering-rules-syntax)
-    * [HTML filtering rules examples](#html-filtering-rules-examples)
-    * [Special attributes](#html-filtering-rules-attributes)
-        * [tag-content](#tag-content-attribute)
-        * [wildcard](#wildcard-attribute)
-        * [max-length](#max-length-attribute)
-        * [min-length](#min-length-attribute)
-    * [HTML filtering rules exceptions](#html-filtering-rules-exceptions)
-* [JavaScript rules](#javascript-rules)
-    * [JavaScript rules syntax](#javascript-rules-syntax)
-    * [JavaScript rules examples](#javascript-rules-examples)
-    * [JavaScript rules exceptions](#javascript-rules-exceptions)
-    * [Modifiers](#modifiers)
-        * Syntax (#syntax)
-        * Modifiers (#modifiers2)
+    * [HTML filtering rules](#html-filtering-rules)
+        * [Syntax](#html-filtering-rules-syntax)
+        * [Examples](#html-filtering-rules-examples)
+        * [Special attributes](#html-filtering-rules-attributes)
+           * [tag-content](#tag-content-attribute)
+           * [wildcard](#wildcard-attribute)
+           * [max-length](#max-length-attribute)
+           * [min-length](#min-length-attribute)
+        * [Exceptions](#html-filtering-rules-exceptions)
+    * [JavaScript rules](#javascript-rules)
+        * [Syntax](#javascript-rules-syntax)
+        * [Examples](#javascript-rules-examples)
+        * [Exceptions](#javascript-rules-exceptions)
+    * [Modifiers](#cosmetic-rules-modifiers)
+        * [Syntax](#cosmetic-rules-modifiers-syntax)
+        * [Modifiers](#cosmetic-rules-modifiers2)
+           * [$app](#cosmetic-rules-modifiers2-app)
+           * [$domain](#cosmetic-rules-modifiers2-domain)
 * [Scriptlets and redirect resources](#scriptlets-and-redirects)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
@@ -831,7 +833,7 @@ As the name suggests, cosmetic rules are used not for blocking ad requests, but 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
 <a id="elemhide-syntax"></a>
-#### Element hiding rules syntax
+#### Syntax
 
 ```
    rule = [domains] "##" selector
@@ -854,14 +856,14 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 > Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
 
 <a id="elemhide-examples"></a>
-#### Element hiding rules examples
+#### Examples
 
 * `example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `~example.com##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
 
 <a id="elemhide-exceptions"></a>
-#### Element hiding rules exceptions
+#### Exceptions
 
 Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
 
@@ -880,7 +882,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 > Exception rule without any particular domains in it does not make sense and will be ignored.
 
 <a id="cosmetic-css-rules"></a>
-### Cosmetic css rules
+### CSS rules
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
@@ -888,7 +890,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 > Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
 <a id="cosmetic-css-rules-syntax"></a>
-#### Cosmetic css rules syntax
+#### Syntax
 
 ```
    rule = [domains] "#$#" selector "{" style "}"
@@ -900,7 +902,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 * **`style`** — CSS style, that we want to apply to selected elements.
 
 <a id="cosmetic-css-rules-examples"></a>
-#### Cosmetic css rules examples
+#### Examples
 
 ```
 example.com#$#body { background-color: #333!important; }
@@ -909,7 +911,7 @@ example.com#$#body { background-color: #333!important; }
 This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
 
 <a id="cosmetic-css-rules-exceptions"></a>
-#### Cosmetic css rules exceptions
+#### Exceptions
 
 Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains.
 Exception rules syntax is almost the same, you just have to change `#$#` to `#@$#`.
@@ -937,13 +939,13 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 > #### Application area
 > Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
-#### Extended CSS rules syntax
+#### Syntax
 Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to make these rules use the "Extended CSS" engine. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
 The syntax for extended CSS rules:
 * `#?#` — for element hiding (`#@?#` — for exceptions )
 * `#$?#` — for CSS injection (`#@$?#` — for exceptions )
 
-##### Extended CSS rules examples
+#### Examples
 
 * `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule will block all `div` elements that contain link as a child node with `[target="_blank"][rel="nofollow"]` attributes. The rule will only work for `example.org` and all it's subdomains.
 * `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all it's subdomains.
@@ -1159,7 +1161,7 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 ```
 
 <a id="html-filtering-rules"></a>
-## HTML filtering rules
+### HTML filtering rules
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
@@ -1168,7 +1170,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 > This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
 
 <a id="html-filtering-rules-syntax"></a>
-### HTML filtering rules syntax
+#### Syntax
 
 ```
       rule = [domains] "$$" tagName [attributes]
@@ -1181,7 +1183,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 * **`attributes`** — a list of attributes, that limit the elements selection. `name` - attribute name, `value` - substring, that is contained in attribute value.
 
 <a id="html-filtering-rules-examples"></a>
-### HTML filtering rules example
+#### Example
 
 **HTML code**
 ```html
@@ -1196,7 +1198,7 @@ example.org$$script[data-src="banner"]
 This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring. The rule will only work for `example.org` and all it's subdomains.
 
 <a id="html-filtering-rules-attributes"></a>
-### Special attributes
+#### Special attributes
 
 In addition to usual attribures, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
@@ -1257,7 +1259,7 @@ $$div[tag-content="banner"][min-length="400"]
 This rule will remove all the `div` elements, whose code contains the substring` banner` and the length of which exceeds `400` characters.
 
 <a id="html-filtering-rules-exceptions"></a>
-### HTML filtering rules exceptions
+#### Exceptions
 
 Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains.
 The syntax is the same, you just have to change `$$` to `$@$`.
@@ -1273,7 +1275,7 @@ example.com$@$script[tag-content="banner"]
 ```
 
 <a id="javascript-rules"></a>
-## Javascript rules
+### Javascript rules
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
@@ -1281,7 +1283,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 > Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
 <a id="javascript-rules-syntax"></a>
-### Javascript rules syntax
+#### Syntax
 
 ```
 rule = [domains]  "#%#" script
@@ -1291,12 +1293,12 @@ rule = [domains]  "#%#" script
 * **`script`** — arbitrary javascript code **in one string**.
 
 <a id="javascript-rules-examples"></a>
-### Javascript rules examples
+#### Examples
 
 * `example.org#%#window.__gaq = undefined;` — executes the code `window.__gaq = undefined;` on all pages at `example.org` and all subdomains.
 
 <a id="javascript-rules-exceptions"></a>
-### Javascript rules exceptions
+#### Exceptions
 
 Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains.
 The syntax is the same, you just have to change `#%#` to `#@%#`.
@@ -1310,12 +1312,12 @@ If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@%#window.__gaq = undefined;
 ```
-<a id="modifiers"></a>
+<a id="cosmetic-rules-modifiers"></a>(#)
 ### Modifiers
 Each cosmetic rule can be modified using the modifiers described in the following paragraphs.
 
-<a id="syntax"></a>
-### Syntax
+<a id="cosmetic-rules-modifiers-syntax"></a>
+#### Syntax
 
 ```
 rule = "[$" modifiers "]" [rule text]
@@ -1331,9 +1333,10 @@ In the modifiers values the following characters must be escaped: `[`, `]`, `,`,
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-<a id="modifiers2"></a>
+<a id="cosmetic-rules-modifiers2"></a>
 ### Modifiers
 
+<a id="cosmetic-rules-modifiers2-app"></a>
 #### app
 
 `app` lets you narrow the rule coverage down to a specific application (or a list of applications).
@@ -1345,6 +1348,7 @@ rules.
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 
+<a id="cosmetic-rules-modifiers2-domain"></a>
 #### domain
 
 `domain` limits the rule application area to a list of domains (and their subdomains).
@@ -1484,7 +1488,7 @@ Filter URL: `https://example.org/path/filter.txt`
 * Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 * Pre-processor directives can be used in the user filter (or in the custom local filters). Same-origin limitation should be disabled for local filters.
 
-#### What constants do we declare
+#### What constants we declare
 
 * `adguard` -- Declared always. Lets maintainers know that this is one of AdGuard products. Should be enough in 95% of cases.
 
@@ -1508,7 +1512,7 @@ Product-specific constants for some rare cases when you need a rule to work (or 
 "Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
 
 <a id="hints_syntax"></a>
-#### Hints syntax 
+#### Syntax 
 ```
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
 ```
@@ -1562,10 +1566,7 @@ Specify which platforms can apply this rule. List of existing platforms:
 
 * ext_safari - Example: AdGuard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-
 * ext_android_cb - Example: AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
-
-
 
 Examples:
 
