@@ -94,8 +94,8 @@ visible: true
         * [Exceptions](#javascript-rules-exceptions)
     * [Modifiers](#cosmetic-rules-modifiers)
         * [Syntax](#cosmetic-rules-modifiers-syntax)
-        * [$app](#cosmetic-rules-modifiers2-app)
-        * [$domain](#cosmetic-rules-modifiers2-domain)
+        * [$app](#cosmetic-rules-modifiers-app)
+        * [$domain](#cosmetic-rules-modifiers-domain)
 * [Scriptlets and redirect resources](#scriptlets-and-redirects)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
@@ -1332,7 +1332,7 @@ In the modifiers values the following characters must be escaped: `[`, `]`, `,`,
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-<a id="cosmetic-rules-modifiers2-app"></a>
+<a id="cosmetic-rules-modifiers-app"></a>
 ### app
 
 `app` lets you narrow the rule coverage down to a specific application (or a list of applications).
@@ -1344,7 +1344,7 @@ rules.
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 
-<a id="cosmetic-rules-modifiers2-domain"></a>
+<a id="cosmetic-rules-modifiers-domain"></a>
 ### domain
 
 `domain` limits the rule application area to a list of domains (and their subdomains).

@@ -94,8 +94,8 @@ visible: true
     * [Исключения](#javascript-rules-exceptions)
 * [Модификаторы](#cosmetic-rules-modifiers)
     * [Синтаксис](#cosmetic-rules-modifiers-syntax)
-    * [$app](#cosmetic-rules-modifiers2-app)
-    * [$domain](#cosmetic-rules-modifiers2-domain)
+    * [$app](#cosmetic-rules-modifiers-app)
+    * [$domain](#cosmetic-rules-modifiers-domain)
 * [Скриптлеты и редиректы](#scriptlets)
 * [Информация для разработчиков фильтров](#for_maintainers)
     * [Директивы пре-процессора](#pre_processor)
@@ -1327,17 +1327,17 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 В значениях модификаторов следующие символы должны быть экранированы: `[`, `]`, `,` и `\` (если он не используется для экранирования). Используйте `\`, чтобы экранировать их. Например, экранированная скобка выглядит так: `\]`.
 
-<a id="cosmetic-rules-modifiers2-app"></a>
+<a id="cosmetic-rules-modifiers-app"></a>
 ### app
 
 Модификатор `app` ограничивает действие правила до конкретного приложения (или списка приложений). 
-Поведение и синтаксис модификатора полностью совпадают с соответствующим [модификатором $app](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#app) из базовых правил.
+Поведение и синтаксис модификатора полностью совпадают с соответствующим [модификатором $app](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#app) для базовых правил.
 
 Примеры использования `app`:
 * `[$app=org.example.app]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из `org.example.app` приложения Android.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из любого приложения кроме `org.example.app1` и `org.example.app2`.
 
-<a id="cosmetic-rules-modifiers2-domain"></a>
+<a id="cosmetic-rules-modifiers-domain"></a>
 ### domain
 
 Модификатор `domain` ограничивает область действия правила списком доменов (и их поддоменов).
