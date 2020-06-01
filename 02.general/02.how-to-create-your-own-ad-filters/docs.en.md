@@ -63,16 +63,18 @@ visible: true
         * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
-* [Cosmetic rules](#cosmetic-rules)
-    * [Element hiding rules](#cosmetic-elemhide-rules)
-        * [Syntax](#elemhide-syntax)
-        * [Examples](#elemhide-examples)
-        * [Exceptions](#elemhide-exceptions)
-    * [CSS rules](#cosmetic-css-rules)
-        * [Syntax](#cosmetic-css-rules-syntax)
-        * [Examples](#cosmetic-css-rules-examples)
-        * [Exceptions](#cosmetic-css-rules-exceptions)
-    * [Extended CSS selectors](#extended-css-selectors)
+        * [$redirect](#redirect-modifier)
+* [Non-basic rules](#non-basic-rules)
+    * [Cosmetic rules](#cosmetic-rules)
+        * [Element hiding rules](#cosmetic-elemhide-rules)
+           * [Syntax](#elemhide-syntax)
+           * [Examples](#elemhide-examples)
+           * [Exceptions](#elemhide-exceptions)
+        * [CSS rules](#cosmetic-css-rules)
+           * [Syntax](#cosmetic-css-rules-syntax)
+           * [Examples](#cosmetic-css-rules-examples)
+           * [Exceptions](#cosmetic-css-rules-exceptions)
+        * [Extended CSS selectors](#extended-css-selectors)
         * [Pseudo-class `:has()`](#extended-css-has)
         * [Pseudo-class `:if-not()`](#extended-css-has)
         * [Pseudo-class `:contains()`](#extended-css-contains)
@@ -566,16 +568,16 @@ Disables generic basic rules on pages that correspond to exception rule.
 * `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
 
 <a id="advanced-modifiers"></a>
-### Advanced modifiers
+### Advanced capabilities
 
 These modifiers are able to completely change the behaviour of basic rules.
 
 <a id="important-modifier"></a>
-##### **`important`**
+#### **`important`**
 
 The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
 
-###### Example 1:
+##### Example 1:
 
 ```
 ||example.org^$important
@@ -584,7 +586,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 
 `||example.org^$important` will block all requests despite of the exception rule.
 
-###### Example 2:
+##### Example 2:
 
 ```
 ||example.org^$important
@@ -593,7 +595,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 
 Now the exception rule also has `$important` modifier so it will prevail.
 
-###### Example 3:
+##### Example 3:
 
 The `$important` modifier will be ignored if a document-level exception rule is applied to the document.
 
@@ -605,14 +607,14 @@ The `$important` modifier will be ignored if a document-level exception rule is 
 If a request to `example.org` is sent from the `test.org` domain, the rule won't be applied despite it has the `$important` modifier.
 
 <a id="badfilter-modifier"></a>
-##### **`badfilter`**
+#### **`badfilter`**
 
 > #### Compatibility with different versions of AdGuard
 > `badfilter` modifier is currently only available in AdGuard browser extensions. It will be added to other AdGuard products later.
 
 The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
-###### `badfilter` examples
+##### `badfilter` examples
 
 * `||example.com$badfilter` disables `||example.com`
 * `||example.com$image,badfilter` disables `||example.com,image`
@@ -623,25 +625,25 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 > Below modifiers from this section are only available in AdGuard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
 
 <a id="empty-modifier"></a>
-##### **`empty`**
+#### **`empty`**
 
 Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
 
-###### `empty` example
+##### `empty` example
 
 * `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
 
 <a id="mp4-modifier"></a>
-##### **`mp4`**
+#### **`mp4`**
 
 As a response to blocked request AdGuard returns a short video placeholder.
 
-###### `mp4` example
+##### `mp4` example
 
 * `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
 
 <a id="replace-modifier"></a>
-##### **`replace`**
+#### **`replace`**
 
 This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead. 
 
@@ -652,7 +654,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 > Rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on.
 > This type of rules don't work in extensions for other browsers because they are unable to modify content on the network level.
 
-###### `$replace` rules features
+##### `$replace` rules features
 
 * `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
 * `$replace` rules do not apply if the size of the original response is more than 3MB.
@@ -665,7 +667,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 > #### Multiple rules matching a single request
 > In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
-###### **$replace Syntax**
+##### **$replace Syntax**
 
 In general, `replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
@@ -679,7 +681,7 @@ replace = "/" regex "/" replacement "/" modifiers
 
 In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
 
-###### `$replace` example
+##### `$replace` example
 
 ```
 ||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
@@ -694,7 +696,7 @@ There are three parts in this rule:
 You can see how this rule works here:
 http://regexr.com/3cesk
 
-###### Multiple `$replace` rules example
+##### Multiple `$replace` rules example
 
 1. `||example.org^$replace=/X/Y/`
 2. `||example.org^$replace=/Z/Y/`
@@ -703,13 +705,13 @@ http://regexr.com/3cesk
 * Both rule 1 and 2 will be applied to all requests sent to `example.org`.
 * Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
 
-###### Disabling `$replace` rules
+##### Disabling `$replace` rules
 
 * `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 * `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
 <a id="csp-modifier"></a>
-##### **`csp`**
+#### **`csp`**
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
@@ -720,7 +722,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 >Multiple rules matching a single request.
 >In case if multiple `$csp` rules match a single request, we will apply each of them.
 
-**csp Syntax**
+##### **`csp` syntax**
 
 `$csp` value syntax is similar to the Content Security Policy header syntax.
 
@@ -732,7 +734,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 >2. `csp` rules support limited list of modifiers: `domain`, `important`, `subdocument`
 >3. Rules with `report-*` directives are considered invalid.
 
-###### `csp` examples
+##### `csp` examples
 
 * `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and it's subdomains.
 * `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
@@ -741,14 +743,14 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 * `@@||example.org^$document` or `@@||example.org^$urlblock` — disables all the `$csp` rules on all the pages matching the rule pattern.
 
 <a id="cookie-modifier"></a>
-##### **`cookie`**
+#### **`cookie`**
 
 The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
 
 > **Multiple rules matching a single request**
 > In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
 
-### `$cookie` syntax
+##### `$cookie` syntax
 The rule syntax depends on whether we are going to block all cookies or to remove a single cookie. The rule behavior can be changed with `maxAge` and `sameSite` modifiers.
 
 * `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
@@ -770,13 +772,13 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 > **Limitations**
 > `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
 
-### Real-life examples
+##### Real-life examples
 * `$cookie=__cfduid` -- blocks CloudFlare cookie everywhere
 * `$cookie=/__utm[a-z]/` -- blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` -- prevents Facebook from tracking you even if you are logged in
 
 <a id="network-modifier"></a>
-##### **`network`**
+#### **`network`**
 
 This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
 
@@ -787,7 +789,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. A whitelist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
 
-###### `network` examples
+##### `network` examples
 
 * `174.129.166.49:3478^$network` - blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
 * `[2001:4860:4860::8888]:443^$network` - blocks access to `[2001:4860:4860::8888]:443`.
@@ -795,7 +797,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 * `@@174.129.166.49$network` - makes AdGuard bypass data to the endpoint. No other rules will be applied.
 
 <a id="app-modifier"></a>
-##### **`app`**
+#### **`app`**
 
 This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
 
@@ -807,24 +809,55 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 In the case of Android, use the apps' package names (i.e. `org.example.app`). In the case of Windows
 
-###### `app` examples 
+##### `app` examples 
 
 * `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `com.adguard.android` Android app.
 * `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
 
 If you want the rule not to be applied to certain apps, start the app name with `~` sign.
 
-###### `app` and `~` examples
+##### `app` and `~` examples
 
 * `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
 * `||baddomain.com^$domain=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+<a id="redirect-modifier"></a>
+#### `redirect` modifier
+AdGuard is able to redirect web requests to a local "resource".
+
+##### `redirect` syntax
+
+AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
+
+`$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+
+>The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
+
+>`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+
+##### `redirect` examples
+
+```
+||example.org/script.js$script,redirect=noopjs
+```
+This rule redirects all requests to script.js to the resource named noopjs.
+
+```
+||example.org/test.mp4$media,redirect=noopmp4-1s
+```
+This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
+
+>More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
+
+<a id="non-basic-rules"></a>
+# Non-basic rules
+
+Other, or non-basic rules are used not for blocking ad requests, but for changing the page appearance. They can hide the elements or even convert the overall style of pages.
+
+> Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+
 <a id="cosmetic-rules"></a>
 ## Cosmetic rules
-
-As the name suggests, cosmetic rules are used not for blocking ad requests, but for changing the page appearance. They can hide the elements or even convert the overall style of pages.
-
-> Work with cosmetic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
 <a id="cosmetic-elemhide-rules"></a>
 ### Element hiding rules
@@ -1160,7 +1193,7 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 ```
 
 <a id="html-filtering-rules"></a>
-### HTML filtering rules
+## HTML filtering rules
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
@@ -1274,7 +1307,7 @@ example.com$@$script[tag-content="banner"]
 ```
 
 <a id="javascript-rules"></a>
-### Javascript rules
+## Javascript rules
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
@@ -1282,7 +1315,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 > Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
 <a id="javascript-rules-syntax"></a>
-#### Syntax
+### Syntax
 
 ```
 rule = [domains]  "#%#" script
@@ -1292,12 +1325,12 @@ rule = [domains]  "#%#" script
 * **`script`** — arbitrary javascript code **in one string**.
 
 <a id="javascript-rules-examples"></a>
-#### Examples
+### Examples
 
 * `example.org#%#window.__gaq = undefined;` — executes the code `window.__gaq = undefined;` on all pages at `example.org` and all subdomains.
 
 <a id="javascript-rules-exceptions"></a>
-#### Exceptions
+### Exceptions
 
 Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains.
 The syntax is the same, you just have to change `#%#` to `#@%#`.
@@ -1311,12 +1344,36 @@ If you want to disable it for `example.com`, you can create an exception rule:
 ```
 example.com#@%#window.__gaq = undefined;
 ```
+<a id="scriptlets"></a>
+## Scriptlets rules
+
+Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+
+>AdGuard supports a lot of different scriptlets. Please note, that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+
+<a id="scriptlets-syntax"></a>
+### Syntax
+```
+rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+```
+
+`scriptletName` (mandatory) is a name of the scriptlet from AdGuard's scriptlets library
+`arguments` (optional) is a list of String arguments (no other types of arguments are supported)
+
+<a id="scriptlets-example"></a>
+### Example
+
+```
+example.org#%#//scriptlet("abort-on-property-read", "alert")
+```
+This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
+
 <a id="cosmetic-rules-modifiers"></a>(#)
-### Modifiers
-Each cosmetic rule can be modified using the modifiers described in the following paragraphs.
+## Modifiers
+Each rule can be modified using the modifiers described in the following paragraphs.
 
 <a id="cosmetic-rules-modifiers-syntax"></a>
-#### Syntax
+### Syntax
 
 ```
 rule = "[$" modifiers "]" [rule text]
@@ -1328,7 +1385,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 For example: `[$domain=example.com,app=test_app]##selector`.
 
-In the modifiers values the following characters must be escaped: `[`, `]`, `,`, and `\` (unless
+In the modifiers values of the following characters must be escaped: `[`, `]`, `,`, and `\` (unless
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
@@ -1357,65 +1414,12 @@ basic rules.
 * `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `[$domain=~example.com]##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
 
-Please note that there are 2 ways to specify domain restrictions for cosmetic rules:
+Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
     2) the modifier approach is to specify domains via `domain` modifier: `[$domain=example.com]##.textad`
 
 But rules with mixed style domains restriction are considered invalid. So, for example, the rule
 `[$domain=example.org]example.com##.textad` will be rejected.
-
-<a id="scriptlets-and-redirects"></a>
-## Scriptlets and redirect resources
-
-### Scriptlets
-
-Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
-
->AdGuard supports a lot of different scriptlets. Please note, that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
-
-#### Syntax
-```
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
-```
-
-`scriptletName` (mandatory) is a name of the scriptlet from AdGuard's scriptlets library
-`arguments` (optional) is a list of String arguments (no other types of arguments are supported)
-
-#### Example
-
-```
-example.org#%#//scriptlet("abort-on-property-read", "alert")
-```
-This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
-
-### Redirect resources
-
-AdGuard is able to redirect web requests to a local "resource".
-
-#### Syntax
-
-AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
-
-`$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
-
->The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
-
->`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
-
-#### Examples
-
-```
-||example.org/script.js$script,redirect=noopjs
-```
-This rule redirects all requests to script.js to the resource named noopjs.
-
-```
-||example.org/test.mp4$media,redirect=noopmp4-1s
-```
-This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
-
->More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
-
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers 
