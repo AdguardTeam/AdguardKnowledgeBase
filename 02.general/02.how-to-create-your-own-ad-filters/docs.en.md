@@ -75,12 +75,12 @@ visible: true
            * [Examples](#cosmetic-css-rules-examples)
            * [Exceptions](#cosmetic-css-rules-exceptions)
         * [Extended CSS selectors](#extended-css-selectors)
-        * [Pseudo-class `:has()`](#extended-css-has)
-        * [Pseudo-class `:if-not()`](#extended-css-has)
-        * [Pseudo-class `:contains()`](#extended-css-contains)
-        * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-        * [Selectors debugging mode](#selectors-debugging-mode)
-        * [Testing extended selectors](#testing-extended-selectors)
+           * [Pseudo-class `:has()`](#extended-css-has)
+           * [Pseudo-class `:if-not()`](#extended-css-has)
+           * [Pseudo-class `:contains()`](#extended-css-contains)
+           * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+           * [Selectors debugging mode](#selectors-debugging-mode)
+           * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Examples](#html-filtering-rules-examples)
@@ -94,11 +94,13 @@ visible: true
         * [Syntax](#javascript-rules-syntax)
         * [Examples](#javascript-rules-examples)
         * [Exceptions](#javascript-rules-exceptions)
-    * [Modifiers](#cosmetic-rules-modifiers)
-        * [Syntax](#cosmetic-rules-modifiers-syntax)
-        * [$app](#cosmetic-rules-modifiers-app)
-        * [$domain](#cosmetic-rules-modifiers-domain)
-* [Scriptlets and redirect resources](#scriptlets-and-redirects)
+    * [Scriptlets](#scriptlets)
+        * [Syntax](#scriptlets-syntax)
+        * [Examples](#scriptlets-examples)
+    * [Modifiers](#non-basic-rules-modifiers)
+        * [Syntax](#non-basic-rules-modifiers-syntax)
+        * [$app](#non-basic-rules-modifiers-app)
+        * [$domain](#non-basic-rules-modifiers-domain)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -326,7 +328,7 @@ The following modifiers are the most simple and frequently used.
 
 ###### `domain` examples 
 
-* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or it's subdomains.
+* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
 * `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
 
 If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
@@ -822,7 +824,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 * `||baddomain.com^$domain=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 <a id="redirect-modifier"></a>
-#### `redirect` modifier
+#### `redirect`
 AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
@@ -847,17 +849,17 @@ This rule redirects all requests to script.js to the resource named noopjs.
 ```
 This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
->More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#adguard-scriptlets-and-redirect-resources).
+>More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
 
-Other, or non-basic rules are used not for blocking ad requests, but for changing the page appearance. They can hide the elements or even convert the overall style of pages.
-
-> Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
 <a id="cosmetic-rules"></a>
 ## Cosmetic rules
+
+> Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
 <a id="cosmetic-elemhide-rules"></a>
 ### Element hiding rules
@@ -1345,7 +1347,7 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@%#window.__gaq = undefined;
 ```
 <a id="scriptlets"></a>
-## Scriptlets rules
+## Scriptlet rules
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
@@ -1360,19 +1362,25 @@ rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
 `scriptletName` (mandatory) is a name of the scriptlet from AdGuard's scriptlets library
 `arguments` (optional) is a list of String arguments (no other types of arguments are supported)
 
-<a id="scriptlets-example"></a>
-### Example
+<a id="scriptlets-examples"></a>
+### Examples
 
 ```
 example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
-<a id="cosmetic-rules-modifiers"></a>(#)
+```
+[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')
+```
+
+This rule will apply the corresponding scriptlet only in Safari browser on Mac. 
+
+<a id="non-basic-rules-modifiers"></a>(#)
 ## Modifiers
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-<a id="cosmetic-rules-modifiers-syntax"></a>
+<a id="non-basic-rules-modifiers-syntax"></a>
 ### Syntax
 
 ```
@@ -1381,7 +1389,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 ```
 
 * `modifier` - set of the modifiers described below.
-* `rule text` - cosmetic rule to be modified.
+* `rule text` - a rule to be modified.
 
 For example: `[$domain=example.com,app=test_app]##selector`.
 
@@ -1389,7 +1397,7 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-<a id="cosmetic-rules-modifiers-app"></a>
+<a id="non-basic-rules-modifiers-app"></a>
 ### app
 
 `app` lets you narrow the rule coverage down to a specific application (or a list of applications).
@@ -1401,7 +1409,7 @@ rules.
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 
-<a id="cosmetic-rules-modifiers-domain"></a>
+<a id="non-basic-rules-modifiers-domain"></a>
 ### domain
 
 `domain` limits the rule application area to a list of domains (and their subdomains).
