@@ -842,7 +842,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 ```
 ||example.org/script.js$script,redirect=noopjs
 ```
-This rule redirects all requests to script.js to the resource named noopjs.
+This rule redirects all requests to script.js to the resource named noop.js.
 
 ```
 ||example.org/test.mp4$media,redirect=noopmp4-1s
@@ -990,11 +990,11 @@ The syntax for extended CSS rules:
 > `#?#div`
 
 <a id="extended-css-has"></a>
-#### Pseudo-class `:has()`
+##### Pseudo-class `:has()`
 
 Draft CSS 4.0 specification describes [pseudo-class `:has`](https://drafts.csswg.org/selectors/#relational). Unfortunately, it is not yet supported by browsers.
 
-##### `:has()` syntax
+###### `:has()` syntax
 
 ```
 :has(selector)
@@ -1009,7 +1009,7 @@ Supported synonyms for better compatibility: `:-abp-has`, `:if`.
 
 Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
 
-##### `:has()` examples
+###### `:has()` examples
 
 Selecting  all `div` elements, which contain an element with the `banner` class.
 
@@ -1030,16 +1030,16 @@ div[-ext-has=".banner"]
 ```
 
 <a id="extended-css-if-not"></a>
-#### Pseudo-class `:if-not()`
+##### Pseudo-class `:if-not()`
 
 This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
 
 <a id="extended-css-contains"></a>
-#### Pseudo-class `:contains()`
+##### Pseudo-class `:contains()`
 
 This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Please note, that this pseudo-class uses `innerText` element property for matching (and not the `innerHTML`).
 
-##### `:contains()` syntax
+###### `:contains()` syntax
 
 ```
 // matching by plain text
@@ -1060,7 +1060,7 @@ Backward compatible syntax:
 
 Supported synonyms for better compatibility: `:-abp-contains`, `:has-text`.
 
-##### `:contains()` examples
+###### `:contains()` examples
 
 Selecting all `div` elements, which contain text `banner`.
 
@@ -1092,11 +1092,11 @@ div[-ext-contains="/this .* banner/"]
 Please note that in this example only a `div` with `id=selected` will be selected, because the next element does not contain any text (`banner` is a part of code, not text).
 
 <a id="extended-css-matches-css"></a>
-#### Pseudo-class `:matches-css()`
+##### Pseudo-class `:matches-css()`
 
 These pseudo-classes allow to select an element by its current style property. The work of this pseudo-class is based on using the [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) function.
 
-##### `:matches-css()` syntax
+###### `:matches-css()` syntax
 
 ```
 /* element style matching */
@@ -1127,7 +1127,7 @@ In the case of a regular expression, the pattern looks like `/regex/`.
 > * For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
 > * For regex patterns, [`"`],[`,`],[`\`] should be escaped, because we manually escape those in extended-css-selector.js.
 
-##### `:matches-css()` examples
+###### `:matches-css()` examples
 
 Selecting all `div` elements which contain pseudo-class `::before` with specified content.
 
@@ -1161,7 +1161,7 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
 <a id="selectors-debugging-mode"></a>
-#### Selectors debugging mode
+##### Selectors debugging mode
 
 Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
 
@@ -1176,7 +1176,7 @@ Sometimes, you might need to check the performance of a given selector or a styl
 ```
 
 <a id="testing-extended-selectors"></a>
-#### Testing extended selectors
+##### Testing extended selectors
 
 To load ExtendedCss to a current page, copy and execute the following code in a browser console:
 ```
@@ -1204,7 +1204,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 > This type of rules don't work in extensions for other browsers because they are unable to modify content on network level.
 
 <a id="html-filtering-rules-syntax"></a>
-#### Syntax
+### Syntax
 
 ```
       rule = [domains] "$$" tagName [attributes]
@@ -1217,7 +1217,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 * **`attributes`** — a list of attributes, that limit the elements selection. `name` - attribute name, `value` - substring, that is contained in attribute value.
 
 <a id="html-filtering-rules-examples"></a>
-#### Example
+### Example
 
 **HTML code**
 ```html
@@ -1370,11 +1370,7 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
-```
-[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')
-```
-
-This rule will apply the corresponding scriptlet only in Safari browser on Mac. 
+More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
 <a id="non-basic-rules-modifiers"></a>(#)
 ## Modifiers
@@ -1408,6 +1404,7 @@ rules.
 `app` examples:
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
+* `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')`. This rule will apply the corresponding scriptlet only in Safari browser on Mac. 
 
 <a id="non-basic-rules-modifiers-domain"></a>
 ### domain

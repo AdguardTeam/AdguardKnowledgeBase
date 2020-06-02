@@ -63,22 +63,24 @@ visible: true
         * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
-* [Косметические правила](#cosmetic-rules)
-    * [Правила скрытия элементов](#cosmetic-elemhide-rules)
-        * [Синтаксис](#elemhide-syntax)
-        * [Примеры](#elemhide-examples)
-        * [Исключения](#elemhide-exceptions)
-    * [Правила CSS-стилей](#cosmetic-css-rules)
-        * [Синтаксис](#cosmetic-css-rules-syntax)
-        * [Примеры](#cosmetic-css-rules-examples)
-        * [Исключения](#cosmetic-css-rules-exceptions)
-    * [Расширенные CSS-селекторы](#extended-css-selectors)
-        * [Псевдо-класс `:has()`](#extended-css-has)
-        * [Псевдо-класс `:if-not()`](#extended-css-has)
-        * [Псевдо-класс `:contains()`](#extended-css-contains)
-        * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
-        * [Режим отладки селекторов](#selectors-debugging-mode)
-        * [Тестирование расширенных селекторов](#testing-extended-selectors)
+        * [$redirect](#redirect-modifier)
+* [Другие правила](#non-basic-rules)
+    * [Косметические правила](#cosmetic-rules)
+        * [Правила скрытия элементов](#cosmetic-elemhide-rules)
+            * [Синтаксис](#elemhide-syntax)
+            * [Примеры](#elemhide-examples)
+            * [Исключения](#elemhide-exceptions)
+        * [Правила CSS-стилей](#cosmetic-css-rules)
+            * [Синтаксис](#cosmetic-css-rules-syntax)
+            * [Примеры](#cosmetic-css-rules-examples)
+            * [Исключения](#cosmetic-css-rules-exceptions)
+        * [Расширенные CSS-селекторы](#extended-css-selectors)
+           * [Псевдо-класс `:has()`](#extended-css-has)
+           * [Псевдо-класс `:if-not()`](#extended-css-has)
+           * [Псевдо-класс `:contains()`](#extended-css-contains)
+           * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
+           * [Режим отладки селекторов](#selectors-debugging-mode)
+           * [Тестирование расширенных селекторов](#testing-extended-selectors)
     * [Правила фильтрации HTML](#html-filtering-rules)
         * [Синтаксис](#html-filtering-rules-syntax)
         * [Примеры](#html-filtering-rules-examples)
@@ -87,16 +89,18 @@ visible: true
             * [wildcard](#wildcard-attribute)
             * [max-length](#max-length-attribute)
             * [min-length](#min-length-attribute)
-            * [Исключения](#html-filtering-rules-exceptions)
+        * [Исключения](#html-filtering-rules-exceptions)
     * [JavaScript-правила](#javascript-rules)
         * [Синтаксис](#javascript-rules-syntax)
         * [Примеры](#javascript-rules-examples)
         * [Исключения](#javascript-rules-exceptions)
-    * [Модификаторы](#cosmetic-rules-modifiers)
-        * [Синтаксис](#cosmetic-rules-modifiers-syntax)
-        * [$app](#cosmetic-rules-modifiers-app)
-        * [$domain](#cosmetic-rules-modifiers-domain)
-* [Скриптлеты и редиректы](#scriptlets)
+    * [Скриптлеты](#scriptlets)
+        * [Синтаксис](#scriptlets-syntax)
+        * [Примеры](#scriptlets-examples)
+    * [Модификаторы](#non-basic-rules-modifiers)
+        * [Синтаксис](#non-basic-rules-modifiers-syntax)
+        * [$app](#non-basic-modifiers-app)
+        * [$domain](#non-basic-rules-modifiers-domain)
 * [Информация для разработчиков фильтров](#for_maintainers)
     * [Директивы пре-процессора](#pre_processor)
     * [Hints](#hints)
@@ -818,10 +822,39 @@ http://regexr.com/3cesk
 * `||baddomain.com^$app=~org.example.app` — правило, блокирующее запросы, подходящие под заданную маску и посылаемые любым приложением кроме `org.example.app`.
 * `||baddomain.com^$domain=~org.example.app1|~org.example.app2` — аналогично, но в исключениях два приложения: `org.example.app1` и `org.example.app2`.
 
+<a id="redirect-modifier"></a>
+#### `redirect`
+##### Синтаксис `redirect`
+
+AdGuard использует тот ж синтаксис правил фильтрации, что и uBlock Origin. Он совместим с модификатором `$rewrite=abp-resource` Adblock Plus.
+
+`$redirect` – это модификатор для [базовых правил](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#basic-rules), поэтому правила с ним поддерживают все остальные базовые модификаторы, такие как `$domain`, `$third-party`, `$script`, и т.д.
+
+> Значение модификатора `$redirect` должно быть именем ресурса, который будет использован для переадресации.
+
+> Приоритетность правил `$redirect` выше, чем у обычных базовых правил блокировки. Это означает, что, если есть базовое правило (даже с модификатором`$important`), `$redirect` будет иметь над ним преимущество. Если есть белый список (@@) с совпадающим URL, он также заблокирует переадресацию (только если правило `$redirect` также не отмечено как `$important`).
+
+##### примеры `redirect`
+
+```
+||example.org/script.js$script,redirect=noopjs
+```
+Это правило перенаправляет все запросы script.js к ресурсу noopjs.
+
+```
+||example.org/test.mp4$media,redirect=noopmp4-1s
+```
+Это правило перенаправляет все запросы example.org/test.mp4 к ресурсу noopmp4-1s.
+
+>Больше информации о скриптлетах, редиректах и их использовании доступно [в этом разделе GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+<a id="non-basic-rules"></a>
+# Другие правила
+
+Однако возможностей базовых правил может быть недостаточно, чтобы заблокировать рекламу. Иногда для этого требуется скрыть какой-нибудь элемент или изменить часть HTML-кода страницы, при этом ничего не сломав. Для этого предназначены правила, описанные в этом разделе.
+
 <a id="cosmetic-rules"></a>
 ## Косметические правила
-
-Принцип работы косметических правил понятен из их названия. В отличие от базовых правил, косметические предназначены не для блокирования рекламных запросов, а для обработки внешнего вида страниц. Например, они могут скрывать элементы страниц или даже преобразовывать общий стиль страниц.
 
 > Для работы с косметическими правилами необходимы знания HTML и CSS. Так что если вы хотите научиться самостоятельно составлять такие правила, нужно получить хотя бы базовые навыки владения этими технологиями. Рекомендуем ознакомиться с [этой документацией](https://developer.mozilla.org/ru/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
@@ -1308,12 +1341,45 @@ rule = [domains]  "#%#" script
 ```
 example.com#@%#window.__gaq = undefined;
 ```
-<a id="cosmetic-rules-modifiers"></a>
+
+<a id="scriptlets"></a>
+## Скриптлеты
+
+Скриптлет — это функция JavaScript, которая предоставляет расширенные возможности для блокирования контента. Эта функции могут использоваться в декларативной манере в правилах фильтрации AdGuard.
+
+>AdGuard поддерживает множество различных криптлетов. Пожалуйста, обратите внимание, что для того, чтобы добиться совместимости между различными блокировщиками, мы также поддерживаем синтаксис uBO и ABP.
+
+<a id="scriptlets-syntax"></a>
+### Синтаксис
+```
+rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+```
+
+`scriptletName` (обязательно) — это имя скриптлета из библиотеки скриптлетов AdGuard
+`arguments` (опционально) — это список аргументов в формате String (другие типы аргументов не поддерживаются)
+
+<a id="scriptlets-examples"></a>
+### Примеры
+
+```
+example.org#%#//scriptlet("abort-on-property-read", "alert")
+```
+Это правило применится на страницах домена example.org (и его поддоменов) и выполнит скриптлет "abort-on-property-read" с параметром "alert".
+
+```
+[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')
+```
+
+Это правило применит соответствующий скриптлет только в браузере Safari на Mac.
+
+Больше информации о скриптлетах можно найти [на GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+
+<a id="non-basic-rules-modifiers"></a>
 ## Модификаторы
 
 Вы можете изменить поведение косметического правила, используя модификаторы, описанные ниже.
 
-<a id="cosmetic-rules-modifiers-syntax"></a>
+<a id="non-basic-rules-modifiers-syntax"></a>
 ### Синтаксис
 ```
 rule = "[$" modifiers "]" [rule text]
@@ -1327,7 +1393,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 В значениях модификаторов следующие символы должны быть экранированы: `[`, `]`, `,` и `\` (если он не используется для экранирования). Используйте `\`, чтобы экранировать их. Например, экранированная скобка выглядит так: `\]`.
 
-<a id="cosmetic-rules-modifiers-app"></a>
+<a id="non-basic-rules-modifiers-app"></a>
 ### app
 
 Модификатор `app` ограничивает действие правила до конкретного приложения (или списка приложений). 
@@ -1337,7 +1403,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 * `[$app=org.example.app]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из `org.example.app` приложения Android.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из любого приложения кроме `org.example.app1` и `org.example.app2`.
 
-<a id="cosmetic-rules-modifiers-domain"></a>
+<a id="non-basic-rules-modifiers-domain"></a>
 ### domain
 
 Модификатор `domain` ограничивает область действия правила списком доменов (и их поддоменов).
@@ -1353,30 +1419,6 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
     2) с помощью модификаторов: обозначить ограничение на домены через модификатор `domain`: `[$domain=example.com]##.textad`.
 
 Но правила, в которых используется смешанный стиль ограничения на домены, считаются некорректными. Так, например, правило `[$domain=example.org]example.com##.textad` будет отклонено.
-
-<a id="scriptlets-and-redirects"></a>
-## Скриптлеты и редиректы
-
-### Скриптлеты
-
-Скриптлет — это функция JavaScript, которая предоставляет расширенные возможности для блокирования контента. Эта функции могут использоваться в декларативной манере в правилах фильтрации AdGuard.
-
->AdGuard поддерживает множество различных криптлетов. Пожалуйста, обратите внимание, что для того, чтобы добиться совместимости между различными блокировщиками, мы также поддерживаем синтаксис uBO и ABP.
-
-#### Синтаксис
-```
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
-```
-
-`scriptletName` (обязательно) — это имя скриптлета из библиотеки скриптлетов AdGuard
-`arguments` (опционально) — это список аргументов в формате String (другие типы аргументов не поддерживаются)
-
-#### Пример
-
-```
-example.org#%#//scriptlet("abort-on-property-read", "alert")
-```
-Это правило применится на страницах домена example.org (и его поддоменов) и выполнит скриптлет "abort-on-property-read" с параметром "alert".
 
 ### Редиректы
 
