@@ -658,7 +658,7 @@ With these rules the parameters `p1`, `p2`, and `p3` will be stripped out from a
 
 > **Please note** that blocking `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to example.com, but `@@||example.com^$urlblock` will.
 
-#### Examples from real filter lists
+##### Examples from real filter lists
 
 * `$removeparam=gclid|yclid|fbclid` -- strips Google, Yandex and Facebook Click IDs
 * `$removeparam=utm_source|utm_medium|utm_term|utm_content|utm_campaign|utm_referrer` -- strips some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters)
