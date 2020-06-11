@@ -54,6 +54,7 @@ visible: true
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Advanced capabilites](#advanced-modifiers)
+        * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
         * [$badfilter](#badfilter-modifier)
         * [$empty](#empty-modifier)
@@ -573,6 +574,95 @@ Disables generic basic rules on pages that correspond to exception rule.
 ### Advanced capabilities
 
 These modifiers are able to completely change the behaviour of basic rules.
+
+<a id="removeparam-modifier"></a>
+#### **`removeparam`**
+
+Rules with `$removeparam` modifier are intended to strip tracking parameters from pages’ URLs and effectively extend the list of stripped tracking parameters in Stealth Mode. *Please note*, that such rules are only applied to `GET` requests.
+
+> #### Compatibility with different versions of AdGuard
+> Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android.
+
+> #### Multiple rules matching a single request
+> In case if multiple `$removeparam` rules match a single request, we will apply each of them one by one.
+
+> #### Restrictions
+> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+
+> #### Compatibility with other modifiers
+> `$removeparam` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important` and `$match-case`. The rules which have any other modifiers are considered invalid and will be rejected.
+
+##### Syntax
+
+To specify a parameter affected by the rule one should use the following syntax:
+
+* `$removeparam=param` -- removes parameter with name `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to
+  `http://example.com/page?another=2`.
+
+Use `|` to separate parameters:
+
+* `$removeparam=p1|p2` -- removes parameters `p1` and `p2` from URL queries of any request, e.g. a request to `http://example.com/page?p1=1&p2&p3` will be transformed to `http://example.com/page?p3`.
+
+> **Please note** that a rule with `$removeparam` parameter must have at least some parameters specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
+
+Parameters are matched lexicographically. It means that the rule `$removeparam=param` won't strip the parameter named `Param` or `some_param`. If you want to overcome this behavior, you can use regular expressions:
+
+```
+removeparam = "/" regex "/" options
+```
+
+, where 
+
+* `regex` - a regular expression according to [Perl syntax](http://perldoc.perl.org/perlrequick.html#Search-and-replace),
+* `options` - regular expression options.
+
+The list of supported options for regular expressions:
+
+* `i` - makes matching case-insensitive.
+
+Examples:
+
+* `$removeparam=/param/` -- removes parameters matching the pattern `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page?some_pArAm=2`
+* `$removeparam=/param/i` -- removes parameters matching the pattern `param` case-insesitively from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page`
+
+> **Important:** don't forget to escape special symbols like `,`, `/` and `$` in regular expressions. Use (`\`) for it. For example, escaped comma should look like this: `\,`.
+
+`|`-separated lists also support regular expressions: `$removeparam=p1|/p2/i|/p3/|p4`.
+
+Use exceptions if you don't want to strip some URLs:
+
+1) Example 1:
+
+    ```
+    $removeparam=p1|p2|p3
+    @@||example.com^$removeparam=p1
+    ```
+With these rules parameters `p1`, `p2`, and `p3` will be stripped out, except that requests to `example.com` won't be stripped of `p1` parameter. E.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` will be transformed to `http://google.com/page?p1`.
+
+2) Example 2:
+
+    ```
+    $removeparam=p1|p2|p3
+    @@||example.com^$removeparam
+    ```
+With these rules the parameters `p1`, `p2`, and `p3` will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` won't be affected by the blocking rule.
+
+3) Example 3:
+
+    ```
+    $removeparam=p1|p2
+    $removeparam=p3
+    @@||example.com^$removeparam
+    ```
+With these rules the parameters `p1`, `p2`, and `p3` will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` won't be affected by the blocking rule.
+
+> **Please note** that blocking `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to example.com, but `@@||example.com^$urlblock` will.
+
+#### Examples from real filter lists
+
+* `$removeparam=gclid|yclid|fbclid` -- strips Google, Yandex and Facebook Click IDs
+* `$removeparam=utm_source|utm_medium|utm_term|utm_content|utm_campaign|utm_referrer` -- strips some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters)
+
 
 <a id="important-modifier"></a>
 #### **`important`**
