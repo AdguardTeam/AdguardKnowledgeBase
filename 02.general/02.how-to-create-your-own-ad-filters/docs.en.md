@@ -637,7 +637,7 @@ Use exceptions if you don't want to strip some URLs:
     $removeparam=gclid|yclid|fbclid
     @@||example.com^$removeparam=gclid
     ```
-With these rules Google, Yandex and Facebook Click IDs will be stripped out, except that requests to `example.com` won't be stripped of Google Click ID. E.g. `http://google.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page`, but `http://example.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page?gclid=1`.
+With these rules Google, Yandex and Facebook Click IDs will be stripped out, except that requests to `example.com` won't be stripped of Google Click ID. E.g. `http://google.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page`, but `http://example.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://example.com/page?gclid=1`.
 
 2) Example 2:
 
