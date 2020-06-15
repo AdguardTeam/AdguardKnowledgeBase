@@ -576,6 +576,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 These modifiers are able to completely change the behaviour of basic rules.
 
 <a id="removeparam-modifier"></a>
+
 #### **`removeparam`**
 
 Rules with `$removeparam` modifier are intended to strip tracking parameters from pages’ URLs and effectively extend the list of stripped tracking parameters in Stealth Mode. *Please note*, that such rules are only applied to `GET` requests.
@@ -623,7 +624,7 @@ The list of supported options for regular expressions:
 Examples:
 
 * `$removeparam=/param/` -- removes parameters matching the pattern `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page?some_pArAm=2`
-* `$removeparam=/param/i` -- removes parameters matching the pattern `param` case-insesitively from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page`
+* `$removeparam=/param/i` -- removes parameters matching the pattern `param` case-insensitively from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page`
 
 > **Important:** don't forget to escape special symbols like `,`, `/` and `$` in regular expressions. Use (`\`) for it. For example, escaped comma should look like this: `\,`.
 
