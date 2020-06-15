@@ -603,7 +603,7 @@ Use `|` to separate parameters:
 
 * `$removeparam=p1|p2` -- removes parameters `p1` and `p2` from URL queries of any request, e.g. a request to `http://example.com/page?p1=1&p2&p3` will be transformed to `http://example.com/page?p3`.
 
-> **Please note** that a rule with `$removeparam` parameter must have at least some parameters specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
+> **Please note** that a blocking rule with `$removeparam` parameter must have at least some parameters specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
 
 Parameters are matched lexicographically. It means that the rule `$removeparam=param` won't strip the parameter named `Param` or `some_param`. If you want to overcome this behavior, you can use regular expressions:
 
@@ -634,34 +634,21 @@ Use exceptions if you don't want to strip some URLs:
 1) Example 1:
 
     ```
-    $removeparam=p1|p2|p3
-    @@||example.com^$removeparam=p1
+    $removeparam=gclid|yclid|fbclid
+    @@||example.com^$removeparam=gclid
     ```
-With these rules parameters `p1`, `p2`, and `p3` will be stripped out, except that requests to `example.com` won't be stripped of `p1` parameter. E.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` will be transformed to `http://google.com/page?p1`.
+With these rules Google, Yandex and Facebook Click IDs will be stripped out, except that requests to `example.com` won't be stripped of Google Click ID. E.g. `http://google.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page`, but `http://example.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page?gclid=1`.
 
 2) Example 2:
 
     ```
-    $removeparam=p1|p2|p3
+    $removeparam=utm_source|utm_medium|utm_term
+    $removeparam=utm_content|utm_campaign|utm_referrer
     @@||example.com^$removeparam
     ```
-With these rules the parameters `p1`, `p2`, and `p3` will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` won't be affected by the blocking rule.
-
-3) Example 3:
-
-    ```
-    $removeparam=p1|p2
-    $removeparam=p3
-    @@||example.com^$removeparam
-    ```
-With these rules the parameters `p1`, `p2`, and `p3` will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?p1&p2&p3` will be transformed to `http://google.com/page`, but `http://example.com/page?p1&p2&p3` won't be affected by the blocking rule.
+With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
 
 > **Please note** that blocking `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to example.com, but `@@||example.com^$urlblock` will.
-
-##### Examples from real filter lists
-
-* `$removeparam=gclid|yclid|fbclid` -- strips Google, Yandex and Facebook Click IDs
-* `$removeparam=utm_source|utm_medium|utm_term|utm_content|utm_campaign|utm_referrer` -- strips some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters)
 
 
 <a id="important-modifier"></a>
