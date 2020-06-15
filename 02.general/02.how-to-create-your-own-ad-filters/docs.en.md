@@ -579,7 +579,7 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 #### **`removeparam`**
 
-Rules with `$removeparam` modifier are intended to strip tracking parameters from pages’ URLs and effectively extend the list of stripped tracking parameters in Stealth Mode. *Please note*, that such rules are only applied to `GET` requests.
+Rules with `$removeparam` modifier are intended to effectively extend Stealth Mode's capabilities to strip tracking parameters from pages’ URLs. *Please note*, that such rules are only applied to `GET` requests.
 
 > #### Compatibility with different versions of AdGuard
 > Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android.
@@ -604,7 +604,7 @@ Use `|` to separate parameters:
 
 * `$removeparam=p1|p2` -- removes parameters `p1` and `p2` from URL queries of any request, e.g. a request to `http://example.com/page?p1=1&p2&p3` will be transformed to `http://example.com/page?p3`.
 
-> **Please note** that a blocking rule with `$removeparam` parameter must have at least some parameters specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
+> **Please note** that a blocking rule with `$removeparam` parameter must have at least one parameter specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
 
 Parameters are matched lexicographically. It means that the rule `$removeparam=param` won't strip the parameter named `Param` or `some_param`. If you want to overcome this behavior, you can use regular expressions:
 
