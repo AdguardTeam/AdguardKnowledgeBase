@@ -37,4 +37,4 @@ On the opened page of the App Store tap the button with the cost of the license 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png" width="400" />
 
-*The license can be activated via entering user credentials from personal AdGuard account. To that end, it is required that the user has at least one spare license key.*
+*The license can be activated via entering user credentials from a personal AdGuard account. To that end, it is required that the user has at least one spare license key.*
