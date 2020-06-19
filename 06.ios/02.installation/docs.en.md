@@ -36,3 +36,5 @@ Type _adguard_ in the search form, and then tap the string _adGuard pro - adbloc
 On the opened page of the App Store tap the button with the cost of the license under the string _AdGuard Pro  - adblock_, and then press _BUY_ button. To complete the installation you may see a dialogue window requesting for your Apple ID login and password. Type it in, and wait for the installation to complete.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png" width="400" />
+
+*The license can be activated via entering user credentials from a personal AdGuard account. To that end, it is required that the user has at least one spare license key.*
