@@ -626,7 +626,7 @@ Examples:
 * `$removeparam=/param/` -- removes parameters matching the pattern `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page?some_pArAm=2`
 * `$removeparam=/param/i` -- removes parameters matching the pattern `param` case-insensitively from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page`
 
-> **Important:** don't forget to escape special symbols like `,`, `/` and `$` in regular expressions. Use (`\`) for it. For example, escaped comma should look like this: `\,`.
+> **Important:** don't forget to escape special characters like `,`, `/` and `$` in regular expressions. Use `\` character for it. For example, escaped comma should look like this: `\,`.
 
 `|`-separated lists also support regular expressions: `$removeparam=p1|/p2/i|/p3/|p4`.
 
