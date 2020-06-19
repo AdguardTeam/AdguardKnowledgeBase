@@ -219,4 +219,4 @@ The purchased license key will be sent to the indicated email address. You need 
 
 ## Refund policy
 
-To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option did you use. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.
+To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option you used. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.
