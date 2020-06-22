@@ -1254,7 +1254,7 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
 ##### `selector`
-Необязательно. Css-селектор.
+Необязательно. CSS-селектор.
 
 ##### `expression`
 XPath выражение.
@@ -1284,6 +1284,9 @@ facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed
 selector:nth-ancestor(n)
 ```
 
+##### `selector`
+CSS-селектор.
+
 ##### `n`
 Положительное число от 1 до 255, количество поколений от выбранного элемента.
 
@@ -1292,6 +1295,42 @@ selector:nth-ancestor(n)
 ```
 div.test:nth-ancestor(4)
 div:has-text(/test/):nth-ancestor(2)
+```
+
+<a id="extended-css-upward"></a>
+#### Псевдо-класс `:upward()`
+
+Этот псевдо-класс позволяет выбирать ближайшие родительские элементы относительно указанного элемента.
+
+> **Может быть только в конце выражения.**
+
+#### Синтаксис `:upward()`
+
+```
+/* параметр в виде селектора */
+subjectSelector:upward(targetSelector)
+
+/* параметр в виде числа */
+subjectSelector:upward(n)
+```
+
+##### `subjectSelector`
+CSS-селектор — элемент, относительно которого будет искаться родительский элемент.
+
+##### `targetSelector`
+CSS-селектор — условный родительский элемент.
+
+##### `n`
+Положительное число от 1 до 255, количество поколений от выбранного элемента.
+
+##### Примеры `:upward()`
+
+```
+div.child:upward(div[id])
+div:contains(test):upward(div[class^="parent-wrapper-")
+
+div.test:upward(4)
+div:has-text(/test/):upward(2)
 ```
 
 <a id="selectors-debugging-mode"></a>

@@ -82,6 +82,7 @@ visible: true
             * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+            * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Selectors debugging mode](#selectors-debugging-mode)
             * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
@@ -1299,6 +1300,42 @@ Positive number >= 1 and < 256, distance from the currently selected node.
 ```
 div.test:nth-ancestor(4)
 div:has-text(/test/):nth-ancestor(2)
+```
+
+<a id="extended-css-upward"></a>
+#### Pseudo-class `:upward()`
+
+This pseudo-class allows to lookup the ancestor relative to the currently selected node.
+
+> **Limited to work properly only at the end of selector.**
+
+#### `:upward()` syntax
+
+```
+/* selector parameter */
+subjectSelector:upward(targetSelector)
+
+/* number parameter */
+subjectSelector:upward(n)
+```
+
+##### `subjectSelector`
+Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `targetSelector`
+A valid plain CSS selector.
+
+##### `n`
+Positive number >= 1 and < 256, distance from the currently selected node.
+
+##### `:nth-ancestor()` examples
+
+```
+div.child:upward(div[id])
+div:contains(test):upward(div[class^="parent-wrapper-")
+
+div.test:upward(4)
+div:has-text(/test/):upward(2)
 ```
 
 <a id="selectors-debugging-mode"></a>
