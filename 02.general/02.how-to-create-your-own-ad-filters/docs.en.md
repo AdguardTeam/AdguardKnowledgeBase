@@ -1277,9 +1277,10 @@ facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed
 #### Pseudo-class `:nth-ancestor()`
 
 This pseudo-class allows to lookup the nth ancestor relative to the currently selected node.
-> **Limited to work properly only at the end of selector.**
 
-It is a low-overhead equivalent to :xpath(..[/..]*)
+It is a low-overhead equivalent to `:xpath(..[/..]*)`.
+
+> **Limited to work properly only at the end of selector.**
 
 #### `:nth-ancestor()` syntax
 
