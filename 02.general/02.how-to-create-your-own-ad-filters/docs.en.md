@@ -68,20 +68,23 @@ visible: true
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
-           * [Syntax](#elemhide-syntax)
-           * [Examples](#elemhide-examples)
-           * [Exceptions](#elemhide-exceptions)
+            * [Syntax](#elemhide-syntax)
+            * [Examples](#elemhide-examples)
+            * [Exceptions](#elemhide-exceptions)
         * [CSS rules](#cosmetic-css-rules)
-           * [Syntax](#cosmetic-css-rules-syntax)
-           * [Examples](#cosmetic-css-rules-examples)
-           * [Exceptions](#cosmetic-css-rules-exceptions)
+            * [Syntax](#cosmetic-css-rules-syntax)
+            * [Examples](#cosmetic-css-rules-examples)
+            * [Exceptions](#cosmetic-css-rules-exceptions)
         * [Extended CSS selectors](#extended-css-selectors)
-           * [Pseudo-class `:has()`](#extended-css-has)
-           * [Pseudo-class `:if-not()`](#extended-css-has)
-           * [Pseudo-class `:contains()`](#extended-css-contains)
-           * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-           * [Selectors debugging mode](#selectors-debugging-mode)
-           * [Testing extended selectors](#testing-extended-selectors)
+            * [Pseudo-class `:has()`](#extended-css-has)
+            * [Pseudo-class `:if-not()`](#extended-css-has)
+            * [Pseudo-class `:contains()`](#extended-css-contains)
+            * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+            * [Pseudo-class `:xpath()`](#extended-css-xpath)
+            * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+            * [Pseudo-class `:upward()`](#extended-css-upward)
+            * [Selectors debugging mode](#selectors-debugging-mode)
+            * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Examples](#html-filtering-rules-examples)
@@ -1125,6 +1128,7 @@ This pseudo-class principle is very simple: it allows to select the elements tha
 
 // matching by a regular expression
 :contains(/regex/)
+:contains(/regex/gi)
 ```
 
 Backward compatible syntax:
@@ -1156,6 +1160,8 @@ div:contains(banner)
 
 // matching by a regular expression
 div:contains(/this .* banner/)
+// regex flags are supported
+div:contains(/this .* banner/gi)
 ```
 
 Backward compatible syntax:
@@ -1236,6 +1242,100 @@ div.banner[-ext-matches-css-before="content: block me"]
 
 // Regular expressions
 div.banner[-ext-matches-css-before="content: /block me/"]
+```
+
+<a id="extended-css-xpath"></a>
+#### Pseudo-class `:xpath()`
+
+This pseudo-class allows to select an element by evaluating an XPath expression.
+> **Limited to work properly only at the end of selector.**
+
+The `:xpath(...)` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath(...)` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath(...)` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
+
+#### `:xpath()` syntax
+
+```
+[selector]:xpath(expression)
+```
+
+##### `selector`
+Optional. Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `expression`
+A valid XPath expression.
+
+##### `:xpath()` examples
+
+```
+// Filtering results from selector
+div:xpath(//*[@class="test-xpath-class"])
+div:has-text(/test-xpath-content/):xpath(../../..)
+// Use xpath only to select elements
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
+```
+
+<a id="extended-css-nth-ancestor"></a>
+#### Pseudo-class `:nth-ancestor()`
+
+This pseudo-class allows to lookup the nth ancestor relative to the currently selected node.
+
+It is a low-overhead equivalent to `:xpath(..[/..]*)`.
+
+> **Limited to work properly only at the end of selector.**
+
+#### `:nth-ancestor()` syntax
+
+```
+selector:nth-ancestor(n)
+```
+
+##### `selector`
+Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `n`
+Positive number >= 1 and < 256, distance from the currently selected node.
+
+##### `:nth-ancestor()` examples
+
+```
+div.test:nth-ancestor(4)
+div:has-text(/test/):nth-ancestor(2)
+```
+
+<a id="extended-css-upward"></a>
+#### Pseudo-class `:upward()`
+
+This pseudo-class allows to lookup the ancestor relative to the currently selected node.
+
+> **Limited to work properly only at the end of selector.**
+
+#### `:upward()` syntax
+
+```
+/* selector parameter */
+subjectSelector:upward(targetSelector)
+
+/* number parameter */
+subjectSelector:upward(n)
+```
+
+##### `subjectSelector`
+Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `targetSelector`
+A valid plain CSS selector.
+
+##### `n`
+Positive number >= 1 and < 256, distance from the currently selected node.
+
+##### `:nth-ancestor()` examples
+
+```
+div.child:upward(div[id])
+div:contains(test):upward(div[class^="parent-wrapper-")
+
+div.test:upward(4)
+div:has-text(/test/):upward(2)
 ```
 
 <a id="selectors-debugging-mode"></a>
