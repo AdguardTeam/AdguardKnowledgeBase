@@ -77,9 +77,51 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 <a name="action_proxy_server"></a>
 
-`proxy_default` – sets the proxy from the list of previously added ones as default. You need to include additional data:
+<a id="settings"></a>
+
+`proxy_default` – sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before. 
+
+You need to specify additional data:
 
 `server:[name]` – where `[name]` is the name of the outbound proxy from the list.
+
+Or you can configure server settings manually:
+
+`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
+
+`proxy_remove`: removes the proxy server from the list of previously added ones.
+
+`server:[name]` – where `[name]` is the name of the outbound proxy from the list.
+
+Or you  can configure remove settings manually:
+
+`server: [type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
+
+* **Compulsory parameters**:
+
+`[type]` -  proxy server type:
+- HTTP;
+- SOCKS4;
+- SOCKS5;
+- HTTPS_CONNECT.
+
+`[host]` - outbound proxy domain or IP adress;
+
+`[port]` - outbound proxy port (Integer number from 1 to 65535);
+
+* **Optional parameters**:
+
+ `[login and password]` - only if proxy requires it. This data is ignored when setting up **SOCKS 4**;
+ 
+ `[udp]` - applied only on **SOCKS 5** and includes **upd** through **SOCKS5**. It is necessary to set **true or false** value;
+ 
+ `[trust]` - applies for **HTTPS_CONNECT** only and includes **Trust any certificates**. It is necessary to set **true or false** value.
+
+ > **Example**:
+ 
+ `Server by name`: MyServer
+
+ `Manually settings`: host1.1.1.1&port=80&type=HTTP
 
 -----
 
