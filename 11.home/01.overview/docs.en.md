@@ -91,7 +91,7 @@ AdGuard Home can be installed on any of the following operating systems:
 * MIPS
 * MIPSLE
 
-A detailed installation guide can be found [here](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started). Starting the installtion process of AdGuard Home requires minimal technical knowledge and familiarity with such concepts as command prompt. However, once you perform first few steps, you'll be met with a visual installation wizard.
+A detailed installation guide can be found [here](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started). Starting the installation process of AdGuard Home requires minimal technical knowledge and familiarity with such concepts as command prompt. However, once you perform first few steps, you'll be met with a visual installation wizard.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AGHome/wizard.png" width="650" />
 
@@ -105,7 +105,7 @@ AdGuard Home can also be installed on a [virtual private server](https://github.
 
 ### Comparison to traditional ad blockers
 
-AdGuard Home can't be compared directly to traditional ad blockers, as they have intersecting, but ultimately different purposes. Traditional ad blockers are [better at blocking ads and tracking](https://adguard.com/en/blog/adguard-vs-adaway-dns66/) on any one particular device, but AdGuard Home will give you a degree of control over your home network that no ad blocker can. It also can be used on devices like smart TVs where it's not always possible to install a full-fledged ad blocker. It is absolutely normal to use ad blockers on your home devices in addition to AdGuard Home.
+AdGuard Home can't be compared directly to traditional ad blockers, as they have intersecting, but ultimately different purposes. Traditional ad blockers are [better at blocking ads and tracking](https://adguard.com/en/blog/adguard-vs-adaway-dns66/) on any one particular device, but AdGuard Home will give you a degree of control over your home network that no ad blocker can. It also can be used on devices like smart TVs where it's not always possible to install a full-fledged ad blocker. By the way, it is absolutely normal to use ad blockers on your home devices in addition to AdGuard Home.
 
 ### Comparison to public AdGuard DNS servers
 
