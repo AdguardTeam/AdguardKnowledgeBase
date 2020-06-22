@@ -5,17 +5,23 @@ taxonomy:
         - docs
 ---
 
+* [Системные требования](#system-requirements)
+* [Установка программы](#installation)
+* [Удаление программы](#uninstall)
+	* [Продвинутое удаление](#uninstall-advanced)
+
+<a id="system-requirements"></a>
 ## Системные требования
 
 **Версия операционной системы:** OS X 10.10 (64 bit) или более поздняя
 
 **Объем оперативной памяти:**	от 2 Гб
 
-**Браузеры:**	Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, любой другой браузер, совместимый с macOS
+**Браузеры:**	Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, и любой другой браузер, совместимый с macOS
 
 **Свободное пространство на диске:** 120 Мбайт
 
-
+<a id="installation"></a>
 ## Установка программы
 
 Для того, чтобы установить AdGuard для macOS на ваш компьютер, запустите браузер, наберите в адресной строке _adguard.com_ и на открывшейся веб-странице нажмите кнопку **_Скачать_**.
@@ -46,7 +52,13 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/7.png" width="300" />
 
-<a name="uninstall"></a>
+Далее вы увидите небольшую вступительную презентацию, где вы сможете настроить защиту под себя. Вы можете начать настройку сразу или пропустить её.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/installation-wizard-ru.png?" width="600" />
+
+Вот и всё, AdGuard установлен! 
+
+<a id="uninstall"></a>
 ## Удаление программы
 
 #### Стандартное удаление 
@@ -58,19 +70,23 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/1.png" width="600" />
 
+AdGuard удалён с вашего Mac!
+
+<a id="uninstall-advanced"></a>
 #### Продвинутое удаление
 
-Используйте эту инструкцию только после выполнения всех шагов из инструкции по «стандартному удалению». После её выполнения:
+**Используйте эту инструкцию только если вы точно знаете, что делаете, или если наша служба поддержки рекомендовала вам именно «продвинутое удаление». Прежде чем приступать, сначала выполните все шаги из инструкции по «стандартному удалению».** После её выполнения:
 
-1. Удалите следующие файлы Адгарда:
+
+1. Удалите следующие файлы AdGuard:
     * */Library/Application Support/com.adguard.mac.adguard* (папка)
     * *~/Library/Application Support/com.adguard.mac.adguard* (папка)
     * *~/Library/Preferences/com.adguard.mac.adguard.plist* (файл)
 
-Для этого введите и выполните следущие команды через Terminal: 
+Для этого введите и выполните следующие команды через Terminal: 
 
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-`rm -R "/Users/admin/Library/Application Support/com.adguard.mac.adguard"`
+`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
 `rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
 
 2. Запустите приложение «Мониторинг системы».
@@ -78,8 +94,8 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/2.png" width="600" />
 
-4. Остановите процесс, запущенный от имени пользователя. Подтвердите завершение процесса.
+4. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите завершение процесса.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/3.png" width="400" />
 
-AdGuard полностью удален с вашего компьютера.
+AdGuard полностью удален с вашего Mac.
