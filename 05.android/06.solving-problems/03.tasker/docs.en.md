@@ -113,7 +113,7 @@ Or you  can configure remove parameters manually:
 
  `[login and password]` - only if proxy requires it. This data is ignored when setting up **SOCKS4**;
  
- `[udp]` - applied only on **SOCKS5** server type and include option **upd** through **SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` - applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
  
  `[trust]` - applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
