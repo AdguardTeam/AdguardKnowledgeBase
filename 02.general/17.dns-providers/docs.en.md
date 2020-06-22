@@ -31,7 +31,6 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Captnemo DNS](#captnemo-dns)
 * [fvz DNS](#fvz-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
-* [securedns.eu](#securedns.eu-dns)
 * [blahdns.com](#blahdns.ger-dns)
 * [ffmuc.net](#ffmuc.net)
 * [ibksturm](#ibksturm-dns)
@@ -455,19 +454,6 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">Add to AdGuard</a> |
 
-<a name="securedns.eu-dns"></a>
-
-### securedns.eu:  DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider
-
-[securedns.eu](https://securedns.eu/) DNS-over-TLS, DNS-over-HTTPS and DNSCrypt Provider
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS| Hostname: `dot.securedns.eu` IP: `146.185.167.43:853 ` and IPv6: `[2a03:b0c0:0:1010::e9a:3001]:853 ` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vc2VjdXJlZG5zLmV1">Add to AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.securedns.eu/dns-query` IP: `146.185.167.43:443` | <a href="sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-HTTPS, IPv6 | Hostanme: `https://doh.securedns.eu/dns-query` IPv6: `[2a03:b0c0:0:1010::e9a:3001]:443` | <a href="sdns://AgcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0AEGRvaC5zZWN1cmVkbnMuZXUKL2Rucy1xdWVyeQ ">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.securedns.eu` IP: `146.185.167.43:5353` | <a href="sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMg9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Add to AdGuard</a> |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.securedns.eu` IP: `[2a03:b0c0:0:1010::e9a:3001]:5353 ` | <a href="sdns://AQcAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0g9J8sc01itoYxntB-aRlDOy8ThfQe-8ovF21ZCy5FPoYcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ">Add to AdGuard</a> |
 
 <a name="blahdns.ger-dns"></a>
 
