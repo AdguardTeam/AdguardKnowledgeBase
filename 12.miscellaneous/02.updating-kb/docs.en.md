@@ -25,7 +25,7 @@ This is why we moved all of our KB content to [GitHub](https://github.com/Adguar
 
 ## How to suggest a change?
 
-First things first — you will need a GitHub account. If you don't have one, join at [https://github.com/join](https://github.com/join). Now that this is settled, you can dive directly into writing. Navigate through the list of articles [here](https://github.com/AdguardTeam/AdguardKnowledgeBase/tree/master/pages/) and choose any one that you'd like to propose some changes for. Click on the `docs.en.md` file (provided you are writing in English) and then on the small pencil icon in the top-right corner of the frame.
+First things first — you will need a GitHub account. If you don't have one, join at [https://github.com/join](https://github.com/join). Now that this is settled, you can dive directly into writing. Navigate through the list of articles [here](https://github.com/AdguardTeam/AdguardKnowledgeBase) and choose any one that you'd like to propose some changes for. Click on the `docs.en.md` file (provided you are writing in English) and then on the small pencil icon in the top-right corner of the frame.
 
 Here you can finally show what you've got! Alter the article in any way you see fit (use [Markdown](https://github.com/LewisVo/Markdown-Tutorial)!), come up with a short description and a name for your soon-to-be pull request (more about it later), and click on "Propose file change". You'll be taken to another page with a lot of things seemingly going on, but all you have to do is basically click on the green button with "Create pull request" text on it. If you'd like to know more about the whole process, you can find plentiful GitHub tutorials online. 
 

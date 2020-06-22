@@ -19,6 +19,7 @@ visible: true
 *   [Голландский фильтр](#dutch)
 *   [Испано-Португальский фильтр](#spanish)
 *   [Турецкий фильтр](#turkish)
+*   [Китайский фильтр](#chinese)
 *   [Экспериментальный фильтр](#experimental)
 *   [Фильтр мобильной рекламы](#mobile)
 *   [Safari фильтр](#safari)
@@ -155,23 +156,34 @@ visible: true
 
 
 
-<a id="experimental"></a>
-
-## Экспериментальный фильтр
-
-Фильтр, предназначенный для проверки некоторых опасных правил фильтрации перед тем, как они будут добавлены в основные фильтры.
-
-[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/5.txt)
-
-
-
 <a id="turkish"></a>
 
 ## Турецкий фильтр
 
-Фильтр, позволяющий убрать рекламу с сайтов на турецки языке. Разрабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Фильтр, позволяющий убрать рекламу с сайтов на турецком языке. Разрабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
 [Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/13.txt)
+
+
+
+<a id="chinese"></a>
+
+## Китайский фильтр
+
+Фильтр, позволяющий убрать рекламу с сайтов на китайском языке. Изначально основан на фильтре [EasyList China](http://abpchina.org/forum/forum.php). Дорабатывается нами исходя из жалоб и сообщений пользователей. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/224.txt)
+
+
+
+<a id="experimental"></a>
+
+## Экспериментальный фильтр
+
+Фильтр, предназначенный для проверки некоторых новых правил фильтрации, которые потенциально могут вызывать конфликты или ломать работу сайтов. В случае успешной проверки правила из Экспериментального фильтра добавляются в основные фильтры.
+
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/5.txt)
+
 
 
 <a id="mobile"></a>
