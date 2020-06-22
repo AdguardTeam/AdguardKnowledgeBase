@@ -12,12 +12,11 @@ taxonomy:
 * <a href="#t4">AdGuard AdBlocker Installation in Yandex Browser</a>
 * <a href="#t5">AdGuard AdBlocker Installation in Microsoft Edge</a>
 * <a href="#t6">AdGuard AdBlocker Installation in Safari</a>
-* <a href="#t7">AdGuard AdBlocker Installation in Pale moon</a>
 
 <a name="t1"></a>
 ##  AdGuard AdBlocker Installation in Google Chrome or Chromium
 
-Open in your browser the page of [Chrome Web Store](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). In the top of window that opened click _Add to Chrome_ button. 
+Open in your browser the page of [Chrome Web Store](https://agrd.io/extension_chrome). In the top of window that opened click _Add to Chrome_ button. 
 
 ![](Chrome_01_EN.png)
 
@@ -28,7 +27,7 @@ In the opened dialogue window click _Add extension_ button.
 <a name="t2"></a>
 ## AdGuard AdBlocker Installation in Opera
 
-Open the page [addons.opera.com](https://addons.opera.com/extensions/details/adguard/) (<https://addons.opera.com/extensions/details/adguard/>) in your browser.
+Open the page [addons.opera.com](https://agrd.io/extension_opera) in your browser.
 
 ![](Opera_01_EN.png)
 
@@ -37,7 +36,7 @@ Click the button _Add to Opera_ in the right side of window.
 <a name="t3"></a>
 ## AdGuard AdBlocker Installation in Firefox
 
-Open the page [addons.mozilla.org](https://addons.mozilla.org/en-us/firefox/addon/adguard-adblocker/) (<https://addons.mozilla.org/en-us/firefox/addon/adguard-adblocker/>) in your browser.
+Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) in your browser.
 
 ![](Firefox_01_EN.png)
 
@@ -57,7 +56,7 @@ Scroll the page down and move _AdGuard_ switch in _Content blocking_ area to the
 <a name="t5"></a>
 ## AdGuard AdBlocker Installation in Microsoft Edge
 
-Open in your browser [AdGuard AdBlocker page](https://www.microsoft.com/ru-ru/store/p/adguard-adblocker/9mz607gwkbs7) (<https://www.microsoft.com/ru-ru/store/p/adguard-adblocker/9mz607gwkbs7>), and then click _Get the app_ button. 
+Open in your browser [AdGuard AdBlocker page](https://agrd.io/extension_edge), and then click _Get_ button. 
 
 ![](Edge_01_EN.png)
 
@@ -68,15 +67,6 @@ Press _Free_ button in the window that opened.
 Wait for the installation to complete. Microsoft Edge will be opened automatically and offers you to turn AdBlocker on. 
 
 <a name="t6"></a>
-## AdGuard AdBlocker Installation in Safari
+## AdGuard for Safari installer
 
-Open the page [extensions.safari.com](https://safari-extensions.apple.com/details/?id=com.adguard.safari-N33TQXN8C7) (<https://safari-extensions.apple.com/details/?id=com.adguard.safari-N33TQXN8C7>) in your Safari browser and click the  _Install now_ link. 
-
-Wait for the installation to complete.
-
-![](safari.png)
-
-<a name="t7"></a>
-## AdGuard AdBlocker Installation in Pale moon
-
-Users of Pale moon and older versions of Firefox  can install the Legacy-version of the extension, which can be downloaded from the following site: <https://github.com/AdguardTeam/AdguardBrowserExtension/releases>.
+After Apple started to force developers to use the new SDK, there are no more browser extensions in the familiar sense. Install the free AdGuard for Safari extension to block ads and trackers in Safari browser. To do so, follow [this link](https://agrd.io/safari_release).

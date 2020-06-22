@@ -126,14 +126,16 @@ Sanjay Nand
 * Red Sweater Software, LLC за компонент RSVerticallyCenteredTextFieldCell ([http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)) — [Лицензия](http://opensource.org/licenses/mit-license.php)
 * Ilija Tovilo за ITProgressIndicator component ([https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)) — [Лицензия](http://opensource.org/licenses/Apache-2.0)
 * Sparkle Project за компонент Sparkle.framework ([http://sparkle-project.org](http://sparkle-project.org)) — [Лицензия](https://github.com/sparkle-project/Sparkle/blob/master/LICENSE)
-* Robbie Hanson за компонент GCDAsyncSocket ([https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) — [Лицензия](https://github.com/robbiehanson/CocoaAsyncSocket/wiki/License)
+* Robbie Hanson за компонент GCDAsyncSocket ([https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)) — [Лицензия](https://github.com/robbiehanson/CocoaAsyncSocket/wiki/License)
 * Tony Million за компонент Reachability ([https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)) — [Лицензия](https://github.com/tonymillion/Reachability/blob/master/LICENCE.txt)
 * August «Gus» Mueller за компонент Fmdb ([https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)) — [Лицензия](https://github.com/ccgus/fmdb/blob/master/LICENSE.txt)
 * Stephen F. Booth за проект SFBCrashReporter ([https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)) — [Лицензия](https://github.com/sbooth/SFBCrashReporter/blob/master/COPYING)
+* Bartosz Janda за компонент Acextract ([https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)) — [Лицензия](https://github.com/bartoszj/acextract/blob/master/LICENSE)
+
 
 <a id="test2"></a>
 ### Тестировщики
-И конечно благодарим наших бета-тестировщиков. Особую признательность выражаем:
+И, конечно, благодарим наших бета-тестировщиков. Особую признательность выражаем:
 
 [milder](http://forum.adguard.com/member.php?4519-milder)
 

@@ -20,10 +20,12 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
 
-* For Android 6+: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
-* For Android 5: open **Settings**, then select **Security** in the **Personal** section. Switch on **Unknown sources** and press **OK** in the system warning window.
+* For Android 8+: start downloading AdGuard apk (see next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
+* For Android 6 and 7: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
 
 ![](android_install_EN_01.png?cropResize=400,600)
+
+* For Android 5: open **Settings**, then select **Security** in the **Personal** section. Switch on **Unknown sources** and press **OK** in the system warning window.
 
 ![](android_install_EN_02.png?cropResize=400,600)
 
@@ -37,53 +39,56 @@ You will see the request to save the downloaded file. Press **OK**.
 
 When the download is complete, the system will ask you if you want to install the AdGuard app. Press **Install**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/InstallMenuEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/1.png" width="400" />
 
-Wait for the installation procedure to finish. When it is finished, press the **Open** button. If you decide to postpone the launch of the application for another time, press **Done**.
+You will then be asked to read the **License agreement** and AdGuard's **Privacy Policy**. 
+You can also participate in product development. To do this, you should check boxes *Send automatic crash reports* and *Send technical and interaction data*. Tap **Accept** after that.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/Installmenu2En.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/2.png" width="400" />
 
-You will then be asked to read the **License agreement** and AdGuard's privacy policy. 
-You can participate in product development. 
-To do this, you should check the box *"Allow AdGuard to send automatic error reports"*.
-After that, you can pre-configure AdGuard protection by clicking **Continue**, or you can do it later by clicking **Skip quick settings**.
+Then you'll need to choose between a **Quick** and **Thorough** set-ups. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/installmainEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/3.png" width="400" />
 
-If you select the first option, a new dialog box will appear where you can configure privacy protection settings.
+The first one will ask you to enable local VPN which is required for AdGuard to function. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/installpersonaldataEn.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/4.png" width="400" />
 
-After pressing the **Block them** button, you will be offered to choose between three levels of protection:
+The latter starts a first launch sequence to configure the app to suit your needs. First, you'll be asked whether you want to enable search ads:
 
-- **Comfortable** (Blocks all known Analytics , reduces the time of third-party cookies).
-- **High** (Reduces cookie lifetime, removes tracking parameters from URLS).
-- **Ultimate** (Disables browser features that can be used for your tracking. In some cases, you may experience problems with the operation of the sites).
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/5.png" width="400" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/privacylevelEn.png" />
+The next step is to block or keep social widgets (e.g "Like" buttons):
 
-**High** as well as **Ultimate**  protection levels are available only in **Premium** version.
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/6.png" width="400" />
 
+Next is Annoyances: cookie notifications, support windows etc:
 
-In the next window, you will be given the option to hide irritating elements such as the **Like** and **Social media Widgets**.
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/7.png" width="400" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/installannoyancesEn.png" />
+Up next is privacy settings. Choose a desirable protection level:
 
-After selecting the last setting, you will be taken to the main menu, where you will need to create a **Local VPN connection**.
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/8.png" width="400" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/warninglocalvpnEn.png" />
+Same for security (warnings about dangerous websites):
 
-It is important to clarify that the VPN is local. That is, AdGuard filters traffic directly on your device without passing it through any remote server. After you click OK, you will see the following window.
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/9.png" width="400" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/vpnkeyEn.png" />
+The next step is rather important. It's about HTTPS filtering, and we recommend turning it on for best ad blocking quality:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/10.png" width="400" />
+
+The last step is to enable local VPN:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/4.png" width="400" />
 
 The **AdGuard** application installation is complete.
 
 <a name="uninstall"></a>
 ## </a>Uninstalling/Reinstalling Аdguard
 
-If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6) or **Apps** (Android 4, 5 and 7). Open the **Downloaded** tab in the list of installed apps, select **Adguard**, and press **Uninstall**.
+If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6), **Apps** (Android 5 and 7) or **Apps & notifications** (Android 8+). Find **AdGuard** in the list of installed apps and press **Uninstall**.
 
-![](android_install_EN_08.png?cropResize=400,600)
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/en/11.png" width="400" />
 
 To reinstall the app, repeat the actions described in section “Installation”.
