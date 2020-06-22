@@ -77,7 +77,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 <a name="action_proxy_server"></a>
 
-<a id="settings"></a>
+
 
 `proxy_default` – sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before. 
 
@@ -89,7 +89,7 @@ Or you can configure server parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-`proxy_remove`: removes the proxy server from the list of previously added ones.
+`proxy_remove` - removes the proxy server from the list of previously added ones.
 
 `server:[name]` – where `[name]` is the name of the outbound proxy from the list.
 
@@ -119,9 +119,9 @@ Or you  can configure remove parameters manually:
 
  > **Example**:
  
- `Server`:MyServer
+`setting by name`: server:MyServer
 
- `Manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+ `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 -----
 
