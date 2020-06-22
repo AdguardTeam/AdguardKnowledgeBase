@@ -36,6 +36,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
+* [evilvibes.com](#evilvibes.com)
 
 <a name="adguard-dns"></a>
 
@@ -523,3 +524,14 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 | DNS-over-TLS | Hostname `ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vbnMyLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a>  |
 | DNS-over-TLS, IPv4 | Hostname: `dns.bitgeek.in ` IP: `139.59.51.46` | <a href="sdns://AwAAAAAAAAAAAAAUdGxzOi8vZG5zLmJpdGdlZWsuaW4">Add to AdGuard</a> |
 | DNS-over-TLS | Hostname `dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2` | <a href="sdns://AwAAAAAAAAAAAAAWdGxzOi8vZG5zLm5ldXRvcGlhLm9yZw">Add to AdGuard</a>  |
+
+<a name="evilvibes.com"></a>
+
+### evilvibes.com
+
+[evilvibes.com](https://github.com/evilvibes/dnscrypt_stamps) Non-logging, uncensored DNS resolver provided by evilvibes.com
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `23.111.74.205` | Location: `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMDUg_0RyX8kcAcMdtRk5SAX5RKs3yiLLS6kdJlnsUpVbnOEdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.115` | Location: `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjExNSDaDhJ4Dk4cHSiJstKoSd4DcSH8xm16_TSA1PBuamRNzB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
