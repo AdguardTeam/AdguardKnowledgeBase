@@ -41,6 +41,7 @@ visible: true
             * [$ping](#ping-modifier)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
+            * [$webrtc](#webrtc-modifier)
             * [$other](#other-modifier)
         * [Модификаторы правил-исключений](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
@@ -460,6 +461,18 @@ AdGuard будет пытаться закрыть браузерную вкла
 ##### **`websocket`**
 
 Правило применяется только к WebSocket-соединениям.
+
+<a id="webrtc-modifier"></a>
+##### **`webrtc`**
+
+Правило применяется только к WebRTC-соединениям.
+
+> Обратите внимание, что блокировка WebRTC может мешать работе некоторых браузерных приложений, таких как мессенджеры, чаты, кинотеатры, игры и др.
+
+###### Примеры `webrtc`
+
+* `||example.com^$webrtc,domain=example.org` - это правило блокирует WebRTC-соединения c `example.com` для `example.org`.
+* `@@*$webrtc,domain=example.org` - это правило отменяет блокировку всех WebRTC-соединений для `example.org`.
 
 <a id="other-modifier"></a>
 ##### **`other`**
