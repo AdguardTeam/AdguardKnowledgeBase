@@ -85,6 +85,7 @@ visible: true
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Selectors debugging mode](#selectors-debugging-mode)
+            * [Pseudo-property `remove`](#pseudo-property-remove)
             * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
@@ -1365,6 +1366,13 @@ Sometimes, you might need to check the performance of a given selector or a styl
 ```
 #$#.banner { display: none; debug: global; }
 ```
+<a id="pseudo-property-remove"></a>
+### Pseudo-property `remove`
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use a special style property: `remove`.
+
+`.banner { remove: true; }`
+
+> Please note, that other style properties will be ignored if `remove` is specified.
 
 <a id="testing-extended-selectors"></a>
 ##### Testing extended selectors

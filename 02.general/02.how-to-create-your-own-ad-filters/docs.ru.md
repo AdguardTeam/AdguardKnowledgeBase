@@ -85,6 +85,7 @@ visible: true
             * [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Псевдокласс `:upward()`](#extended-css-upward)
             * [Режим отладки селекторов](#selectors-debugging-mode)
+            * [Псевдо-свойство `remove`](#pseudo-property-remove)
             * [Тестирование расширенных селекторов](#testing-extended-selectors)
     * [Правила фильтрации HTML](#html-filtering-rules)
         * [Синтаксис](#html-filtering-rules-syntax)
@@ -1361,6 +1362,14 @@ div:has-text(/test/):upward(2)
 ```
 #$#.banner { display: none; debug: global; }
 ```
+
+<a id="pseudo-property-remove"></a>
+### Псевдо-свойство `remove`
+Иногда необходимо именно убрать определенный элемент, а не просто скрыть его или применить какие-либо правила стиля. В таких случаях можно использовать специальное свойство `remove`.
+
+`.banner { remove: true; }`
+
+> Пожалуйста, обратите внимание, если используется свойство `remove`, то другие свойства этого стиля будут проигнорированы. 
 
 <a id="testing-extended-selectors"></a>
 #### Тестирование расширенных селекторов
