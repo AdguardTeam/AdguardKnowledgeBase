@@ -180,7 +180,7 @@ Filter that enables removing of the ads from websites in Chinese language. Orig
 
 ## Experimental filter
 
-Filter designed to test certain hazardous filtering rules before they are added to the basic filters.
+This filter serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perfrom without any issues, they get added to basic filters.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/5.txt)
 
