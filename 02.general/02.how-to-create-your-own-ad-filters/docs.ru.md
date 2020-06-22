@@ -82,6 +82,7 @@ visible: true
             * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
             * [Псевдо-класс `:xpath()`](#extended-css-xpath)
             * [Псевдо-класс `:nth-ancestor()`](#extended-css-nth-ancestor)
+            * [Псевдо-класс `:upward()`](#extended-css-upward)
             * [Режим отладки селекторов](#selectors-debugging-mode)
             * [Тестирование расширенных селекторов](#testing-extended-selectors)
     * [Правила фильтрации HTML](#html-filtering-rules)
