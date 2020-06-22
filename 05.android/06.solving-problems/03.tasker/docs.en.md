@@ -85,7 +85,7 @@ You need to specify additional data:
 
 `server:[name]` – where `[name]` is the name of the outbound proxy from the list.
 
-Or you can configure server settings manually:
+Or you can configure server parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -93,7 +93,7 @@ Or you can configure server settings manually:
 
 `server:[name]` – where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove settings manually:
+Or you  can configure remove parameters manually:
 
 `server: [type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -105,23 +105,23 @@ Or you  can configure remove settings manually:
 - SOCKS5;
 - HTTPS_CONNECT.
 
-`[host]` - outbound proxy domain or IP adress;
+`[host]` - outbound proxy domain or IP address;
 
 `[port]` - outbound proxy port (Integer number from 1 to 65535);
 
 * **Optional parameters**:
 
- `[login and password]` - only if proxy requires it. This data is ignored when setting up **SOCKS 4**;
+ `[login and password]` - only if proxy requires it. This data is ignored when setting up **SOCKS4**;
  
- `[udp]` - applied only on **SOCKS 5** and includes **upd** through **SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` - applied only on **SOCKS5** server type and include option **upd** through **SOCKS5**. It is necessary to set **true or false** value;
  
- `[trust]` - applies for **HTTPS_CONNECT** only and includes **Trust any certificates**. It is necessary to set **true or false** value.
+ `[trust]` - applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
  > **Example**:
  
- `Server by name`: MyServer
+ `Server`:MyServer
 
- `Manually settings`: host1.1.1.1&port=80&type=HTTP
+ `Manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 -----
 
