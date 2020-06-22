@@ -95,7 +95,7 @@ Or you can configure server parameters manually:
 
 Or you  can configure remove parameters manually:
 
-`server: [type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
+`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
 * **Compulsory parameters**:
 
