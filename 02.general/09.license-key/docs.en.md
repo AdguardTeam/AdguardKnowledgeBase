@@ -11,7 +11,7 @@ visible: true
 * [How to recover my license key?](#recovery)
 * [How to register the AdGuard Account?](#account)
 * [What functions are available in AdGuard Account?](#account-functions)
-* [What to do after the key was renewed?](#account-renewal)
+* [What to do after the key was renewed?](#renewal)
 
 <a name="key"></a>
 #### What is AdGuard license key?
@@ -33,13 +33,11 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 ## How to activate AdGuard with a license key?
 
-[How to activate AdGuard for Windows](#activation_windows)
-
-[How to activate AdGuard for Mac](#activation_mac)
-
-[How to activate AdGuard for Android](#activation_android) 
-
-[Transfering license to another device](#activation_info)
+* [How to activate AdGuard for Windows](#activation_windows)
+* [How to activate AdGuard for Mac](#activation_mac)
+* [How to activate AdGuard for Android](#activation_android)
+* [How to activate AdGuard for iOS](#activation_iOS) 
+* [Transfering license to another device](#activation_info)
 
 
 <a id="activation_windows"></a>
@@ -48,19 +46,26 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 
 1. Open the program.
    
-To do it, doubleclick on AdGuard icon on the desktop:   
+To do it, doubleclick on the AdGuard icon on the desktop:   
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png" />
 
-or double click on AdGuard icon in the system tray:   
+or double click on the AdGuard icon in the system tray:   
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png" />
 
-2. Choose 'About' inset in program's menu.  
+2. Go to **License** in the main menu, then click **Activate license**. 
 
-3. Enter your license key and click on the 'Activate license' button.
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png"/>
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows3En.png" />
+3. You will be presented with two options for activation:
+- Via entering **Login** and **Password** from **AdGuard  account**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png"/>
+
+- Via entering the **license key**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png" />
 
 
 <a id="activation_mac"></a>
@@ -71,36 +76,69 @@ or double click on AdGuard icon in the system tray: 
 
 To do it, click on the AdGuard icon in the menu bar: 
 
-2. Open options menu by clicking on gear icon and choose 'License...' 
+2. Open options menu by clicking on gear icon and choose **License...** 
+
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png" />
 
-3. In the opened window enter your license key and press 'Activate license key'.   
+3. In the opened window enter your license key and press **Activate**.   
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/activation_en.png)
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png" />
 
+4. You will be presented with two options for activation:
+- Activation by entering **Login** and **Password** from **AdGuard  account**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png" />
+
+- Activation with the **license key**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png" />
 
 <a id="activation_android"></a>
 
 #### Activating AdGuard for Android
 
-1. Open the app and go to main menu.   
-Click **Get Premium** button in the top of app's main screen:   
+1. Open the application and go to the license menu. 
+To do so, tap the **Get Premium** button at the top of the screen. 
+You can also go to the license menu by tap to **License Status**:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidRu.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png" width="350" />
 
 2. Click the three dots in the **top right corner** of the screen
 In the small window you will see 3 functions:
 
-1) Get a free trial (14 days trial period).
-2) **Enter key**.
-3) Restore purchases (Restores the license if you've reinstalled the app).
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png" width="350" />
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png" />
+- Get a free trial (14-day trial period).
+- **Activate Premium**.
+- Restore purchases (Restores the license if you've reinstalled the app).
 
-3. Enter your license key and click on 'Activate'.
+3) After you press **Activate Premium**, you will be presented with several activation options:
+- Enter **Login** and **Password** from **AdGuard account**.
+- Sign in with one of the social networks (**Twitter, Google Account, Facebook, Yandex, VK**).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidEn3.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png" width="350" />
+
+- Activation with the license key.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png" width="350" />
+
+
+<a id="activation_iOS"></a>
+
+#### Activating AdGuard for iOS
+
+1. Open the application menu and tap on the **gear icon** in the right top corner of the screen.
+
+2. Then go to **About** > **License**. You will see that window:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense1en.png" width="350" />
+
+3. You can purchase the license directly from the **AppStore**, or activate **Premium** using **authorization** in **AdGuard account**.
+
+> Note: For successful activation you need to have at least one "free" license on your account.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2en.png" width="350" />
 
 
 <a id="activation_info"></a>
@@ -132,7 +170,7 @@ Find more on functions of the Account [below](#account-functions).
 
 
 <a id="account-functions"></a>
-## What functions are available in AdGuard Account?
+## What functions are available in my AdGuard personal account?
 
 When you enter the AdGuard [personal account](https://adguard.com/en/login.html) you will see the list of your license keys and their current status.
 
@@ -148,8 +186,7 @@ To unbind the license key from computer just click the “Reset” button as it�
 
 Once you have renewed AdGuard for another year - you will need to restart the program/app or go to the 'License' section and refresh the license status for changes to take effect. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/refresh_license.png)
-_E.g: AdGuard for Windows_
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/reneworupgradeen.png" width="350" />
 
 <a id="payment"></a>
 
@@ -173,12 +210,12 @@ _**Attention!** Please, pay close attention to the email address you enter. The 
 
 We offer the possibility to pay with a credit card or PayPal. 
 
-<a id="refund"></a>
-
 #### License key activation
 
 The purchased license key will be sent to the indicated email address. You need to activate your AdGuard with this license key. The detailed instruction on how to do it is available [here](#activation).
 
-#### Refund policy
+<a id="refund"></a>
 
-To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option did you use. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.
+## Refund policy
+
+To get a refund, contact our [support team](mailto:support@adguard.com) and indicate what payment option you used. Note that refunds may be rejected if you've purchased the license key more than 60 days ago.
