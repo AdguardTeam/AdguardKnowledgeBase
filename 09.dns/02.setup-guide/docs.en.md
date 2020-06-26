@@ -5,23 +5,106 @@ taxonomy:
         - docs
 ---
 
+
+
 ## Our IP addresses
+
+* [Default](#default)
+* [Family protection](#family)
+* [Non-filtering](#nonfiltering)
+
+
+<a id="default"></a>
 
 **Default**
 Use these servers to block ads, trackers and phishing websites.
+
+IPV4:
 
 _176.103.130.130_
 
 _176.103.130.131_
 
+IPV6:
+
+*2a00:5a60::ad1:0ff*
+
+*2a00:5a60::ad2:0ff*
+
+DNSCrypt:
+
+*sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20*
+
+DNS-over-HTTPS:
+
+*https://dns.adguard.com/dns-query*
+
+DNS-over-TLS:
+
+*dns.adguard.com*
+
+
+<a id="family"></a>
+
 **Family Protection**
 Use these servers to block ads, trackers, phishing and adult websites, and to enforce safe search in your browser.
+
+IPV4:
 
 _176.103.130.132_
 
 _176.103.130.134_
 
-### Setup guide
+IPV6:
+
+*2a00:5a60::bad1:0ff*
+
+*2a00:5a60::bad2:0ff*
+
+DNSCrypt:
+
+*sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMjo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ*
+
+DNS-over-HTTPS:
+
+*https://dns-family.adguard.com/dns-query*
+
+DNS-over-TLS:
+
+*dns-family.adguard.com*
+
+
+<a id="nonfiltering"></a>
+
+**Non-filtering**
+"Non-filtering" DNS servers provide a secure and reliable connection, but they don't filter anything like the "Default" and "Family protection" servers do. Please don't use them unless you know what you're doing.
+
+IPV4:
+
+*176.103.130.136*
+
+*176.103.130.137*
+
+IPV6:
+
+*2a00:5a60::01:ff*
+
+*2a00:5a60::02:ff*
+
+DNSCrypt:
+
+*sdns://AQcAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzNjo1NDQzILXoRNa4Oj4-EmjraB--pw3jxfpo29aIFB2_LsBmstr6JTIuZG5zY3J5cHQudW5maWx0ZXJlZC5uczEuYWRndWFyZC5jb20*
+
+DNS-over-HTTPS:
+
+*https://dns-unfiltered.adguard.com/dns-query*
+
+DNS-over-TLS:
+
+*dns-unfiltered.adguard.com*
+
+
+## Setup guide
 
 * [Setup guide for Windows 10](#win10)
 * [Setup guide for Windows 8/8.1](#win8)
@@ -37,7 +120,7 @@ _176.103.130.134_
 
 <a id="win10"></a>
 
-#### Windows 10
+### Windows 10
 
 1. Open Control Panel through ’Start’ menu or Windows search
 
@@ -65,7 +148,7 @@ for ’Family protection’ servers.
 
 <a id="win8"></a>
 
-#### Windows 8/8.1
+### Windows 8/8.1
 
 1. Move the mouse cursor to the bottom or top right corner of the screen and select the cog icon for Settings, then click ’Control Panel’
 
@@ -93,7 +176,8 @@ for ’Default’ servers;
 for ’Family protection’ servers.
 
 <a id="win7"></a>
-#### Windows 7
+
+### Windows 7
 
 1. Click the Start menu, select ’Control Panel’
 
@@ -122,7 +206,7 @@ for ’Family protection’ servers.
 
 <a id="vista"></a>
 
-#### Windows Vista
+### Windows Vista
 
 1. Click the Start menu, select ’Control Panel’
 
@@ -150,7 +234,8 @@ for ’Default’ servers;
 for ’Family protection’ servers.
 
 <a id="xp"></a>
-#### Windows XP
+
+### Windows XP
 
 1. Open Control Panel through ’Start’ menu -> ’Settings’
 
@@ -178,7 +263,7 @@ for ’Family protection’ servers.
 
 <a id="macos"></a>
 
-#### macOS
+### macOS
 
 1. Click on Apple icon and go to ’System Preferences’
 
@@ -202,7 +287,7 @@ for ’Family protection’ servers.
 
 <a id="android"></a>
 
-#### Android
+### Android
 
 > #### Setting up AdGuard DNS for WiFI connections:
 
@@ -236,7 +321,7 @@ On Android version 9+, you can configure AdGuard DNS as follows:
 
 <a id="iOS"></a>
 
-#### iOS
+### iOS
 
 1. From the home screen, tap ’Settings’
 
@@ -259,7 +344,7 @@ for ’Family protection’ servers.
 
 <a id="router"></a>
 
-####  Routers
+###  Routers
 
 1. Open the preferences for your router 
 Usually you can access it from your browser via a URL (like **http://192.168.0.1/** or **http://192.168.1.1/**). You may be asked to enter the password. If you don’t remember it, you can often reset the password by pressing a button on the router itself. Some routers have a specific application which should be already installed on your computer in that case.
@@ -283,7 +368,7 @@ for ’Family protection’ servers.
 
 <a id="ubuntu"></a>
 
-#### Ubuntu
+### Ubuntu
 
 1. Click on ‘Network Icon’ (top-right panel by default) and click on ‘Edit Connections’ to open Network Connections Manager.
 
@@ -305,7 +390,7 @@ for ’Default’ servers;
 
 for ’Family protection’ servers.
 
-#### DNSCrypt for AdGuard DNS
+### DNSCrypt for AdGuard DNS
 
 * [Setup guide](https://dnscrypt.info/implementations/) 
 
