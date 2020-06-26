@@ -10,7 +10,7 @@ visible: true
 
 The "Connection is untrusted" error is most commonly encountered in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox and such.
 
-Starting with v68, Firefox automatically trusts certificates from the system storage. However, sometimes for reasons outside of our control the trust mechanism faults, which leads to the "Connection is untrusted" error. To fix it, it's necessary to download AdGuard certificate and install it to Firefox's local storage manually. To do so, follow these steps:
+Starting with v68, under certain conditions Firefox normally trusts certificates from the system storage. However, sometimes for reasons outside of our control the trust mechanism faults, which leads to the "Connection is untrusted" error. To fix it, it's necessary to download AdGuard certificate and install it to Firefox's local storage manually. To do so, follow these steps:
 
 >This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
