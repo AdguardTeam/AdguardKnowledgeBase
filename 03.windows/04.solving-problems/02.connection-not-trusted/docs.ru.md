@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
 Ошибка "Это соединение является недоверенным" чаще всего встречается в браузерах на основе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и другие.
 
@@ -20,7 +20,7 @@ visible: true
 
 >Также вы можете перейти на страницу скачаивания сертификата напрямую из раздела приложения *Настройки - Сеть - Фильтрация HTTPS*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_win_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_win_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px;" />
 
 3) Откройте ваш браузер и затем откройте в нём *Настройки*.
 
@@ -28,13 +28,13 @@ visible: true
 
 5) Прокрутите страницу вниз до раздела *Сертификаты* и кликните по кнопке *Просмотр сертификатов...*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_settings_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_settings_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
 6) Выберите вкладку *Центры сертификации*.
 
 7) Нажмите кнопку *Импортировать...*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_import_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_import_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px;" />
 
 8) Найдите загруженный файл **cert.cer** и нажмите *Открыть*.
 

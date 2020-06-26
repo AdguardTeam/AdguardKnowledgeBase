@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
 The "Connection is untrusted" error is most commonly encountered in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox and such.
 
@@ -20,7 +20,7 @@ Starting with v68, under certain conditions Firefox normally trusts certificates
 
 >You can also open the download page by clicking on the link via the AdGuard app at *Settings - Network - HTTPS filtering*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_win_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_win_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px;" />
 
 3) Open your browser and then open *Settings*.
 
@@ -28,13 +28,13 @@ Starting with v68, under certain conditions Firefox normally trusts certificates
 
 5) Scroll down to *Certificates* and click on the *View Certificates* button.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_settings_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_settings_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
 6) Select *Authorities* tab.
 
 7) Click *Import...*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_import_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_import_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px;" />
 
 8) Browse the downloaded **cert.cer** file and click *Open*.
 
