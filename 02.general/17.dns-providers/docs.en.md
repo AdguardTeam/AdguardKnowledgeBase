@@ -38,6 +38,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [cira.ca](#cira.ca-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 * [evilvibes.com](#evilvibes.com)
+* [arapurayil](#arapurayil)
 
 <a name="adguard-dns"></a>
 
@@ -556,3 +557,16 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 |----------------|-------------------------------------|---------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `23.111.74.205` | Location: `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMDUg_0RyX8kcAcMdtRk5SAX5RKs3yiLLS6kdJlnsUpVbnOEdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.115` | Location: `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjExNSDaDhJ4Dk4cHSiJstKoSd4DcSH8xm16_TSA1PBuamRNzB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
+
+<a name="arapurayil"></a>
+
+### arapurayil
+
+[www.dns.arapurayil.com](https://www.dns.arapurayil.com) | Hosted in Mumbai, India
+
+Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet
+
+| Protocol       | Address                                                          |                                                                                                                                                                    |
+|----------------|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://dns.arapurayil.com/dns-query`                           | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>                                                                        |
