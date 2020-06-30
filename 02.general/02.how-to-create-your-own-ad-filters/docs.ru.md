@@ -15,7 +15,6 @@ visible: true
     * [Разблокировка адреса](#example-unblocking-an-address)
     * [Разблокировка всего сайта](#example-unblocking-website)
     * [Косметические правила](#example-cosmetic-rule)
-        * [Популярные CSS-селекторы](#example-popular-css-selectors)
 * [Базовые правила](#basic-rules)
     * [Синтаксис базовых правил](#basic-rules-syntax)
     * [Специальные символы](#basic-rules-special-characters)
@@ -41,6 +40,7 @@ visible: true
             * [$ping](#ping-modifier)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
+            * [$webrtc](#webrtc-modifier)
             * [$other](#other-modifier)
         * [Модификаторы правил-исключений](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
@@ -68,23 +68,20 @@ visible: true
 * [Другие правила](#non-basic-rules)
     * [Косметические правила](#cosmetic-rules)
         * [Правила скрытия элементов](#cosmetic-elemhide-rules)
-            * [Синтаксис](#elemhide-syntax)
-            * [Примеры](#elemhide-examples)
-            * [Исключения](#elemhide-exceptions)
         * [Правила CSS-стилей](#cosmetic-css-rules)
-            * [Синтаксис](#cosmetic-css-rules-syntax)
-            * [Примеры](#cosmetic-css-rules-examples)
-            * [Исключения](#cosmetic-css-rules-exceptions)
         * [Расширенные CSS-селекторы](#extended-css-selectors)
-           * [Псевдо-класс `:has()`](#extended-css-has)
-           * [Псевдо-класс `:if-not()`](#extended-css-has)
-           * [Псевдо-класс `:contains()`](#extended-css-contains)
-           * [Псевдо-класс `:matches-css()`](#extended-css-matches-css)
-           * [Режим отладки селекторов](#selectors-debugging-mode)
-           * [Тестирование расширенных селекторов](#testing-extended-selectors)
+            * [Псевдокласс `:has()`](#extended-css-has)
+            * [Псевдокласс `:if-not()`](#extended-css-has)
+            * [Псевдокласс `:contains()`](#extended-css-contains)
+            * [Псевдокласс `:matches-css()`](#extended-css-matches-css)
+            * [Псевдокласс `:xpath()`](#extended-css-xpath)
+            * [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
+            * [Псевдокласс `:upward()`](#extended-css-upward)
+            * [Режим отладки селекторов](#selectors-debugging-mode)
+            * [Псевдо-свойство `remove`](#pseudo-property-remove)
+            * [Тестирование расширенных селекторов](#testing-extended-selectors)
     * [Правила фильтрации HTML](#html-filtering-rules)
         * [Синтаксис](#html-filtering-rules-syntax)
-        * [Примеры](#html-filtering-rules-examples)
         * [Специальные атрибуты](#html-filtering-rules-attributes)
             * [tag-content](#tag-content-attribute)
             * [wildcard](#wildcard-attribute)
@@ -92,12 +89,7 @@ visible: true
             * [min-length](#min-length-attribute)
         * [Исключения](#html-filtering-rules-exceptions)
     * [JavaScript-правила](#javascript-rules)
-        * [Синтаксис](#javascript-rules-syntax)
-        * [Примеры](#javascript-rules-examples)
-        * [Исключения](#javascript-rules-exceptions)
     * [Скриптлеты](#scriptlets)
-        * [Синтаксис](#scriptlets-syntax)
-        * [Примеры](#scriptlets-examples)
     * [Модификаторы](#non-basic-rules-modifiers)
         * [Синтаксис](#non-basic-rules-modifiers-syntax)
         * [$app](#non-basic-modifiers-app)
@@ -457,6 +449,18 @@ AdGuard будет пытаться закрыть браузерную вкла
 ##### **`websocket`**
 
 Правило применяется только к WebSocket-соединениям.
+
+<a id="webrtc-modifier"></a>
+##### **`webrtc`**
+
+Правило применяется только к WebRTC-соединениям.
+
+> Обратите внимание, что блокировка WebRTC может мешать работе некоторых браузерных приложений, таких как мессенджеры, чаты, кинотеатры, игры и др.
+
+###### Примеры `webrtc`
+
+* `||example.com^$webrtc,domain=example.org` - это правило блокирует WebRTC-соединения c `example.com` для `example.org`.
+* `@@*$webrtc,domain=example.org` - это правило отменяет блокировку всех WebRTC-соединений для `example.org`.
 
 <a id="other-modifier"></a>
 ##### **`other`**
@@ -1042,13 +1046,13 @@ example.com#@$#.textad { visibility: hidden; }
 Возможностей CSS 3.0 не всегда хватает для блокировки рекламы. Чтобы решить эту проблему, AdGuard расширяет возможности CSS, добавляя поддержку новых псевдо-элементов. Для поддержки расширенных CSS-селекторов нами был разработан отдельный модуль [с открытым кодом](https://github.com/AdguardTeam/ExtendedCss).
 
 > #### Обратная совместимость
-> В общедоступных фильтрах мы используем так называемый обратно-совместимый синтаксис. Дело в том, что использование расширенных псевдо-классов может помешать применению косметических правил в старых версиях AdGuard или других блокировщиках рекламы, не поддерживающих расширенный CSS. Например, вместо псевдо-класса `:has(selector)` можно использовать атрибут `[-ext-has="selector"]`.
+> В общедоступных фильтрах мы используем так называемый обратно-совместимый синтаксис. Дело в том, что использование расширенных псевдоклассов может помешать применению косметических правил в старых версиях AdGuard или других блокировщиках рекламы, не поддерживающих расширенный CSS. Например, вместо псевдокласса `:has(selector)` можно использовать атрибут `[-ext-has="selector"]`.
 
 > #### Область применения
 > Расширенные селекторы можно применять в любом косметическом правиле, будь то [правила скрытия](#cosmetic-elemhide-rules) или [правила CSS стилей](#cosmetic-css-rules).
 
 #### Синтаксис
-Независимо от того, какие CSS псевдо-классы вы используете в правилах, вы можете использовать специальные маркеры, чтобы эти правила обрабатывались движком "Extended CSS". Рекомендуется использовать эти маркеры для всех косметических расширенных CSS-правил, чтобы их было легче отличить.
+Независимо от того, какие CSS-псевдоклассы вы используете в правилах, вы можете использовать специальные маркеры, чтобы эти правила обрабатывались движком "Extended CSS". Рекомендуется использовать эти маркеры для всех косметических расширенных CSS-правил, чтобы их было легче отличить.
 Синтаксис расширенных CSS-правил:
 * `#?#` — для скрытия элементов (`#@?#` - для исключений)
 * `#$?#` — для вставки CSS (`#@$?#` - для исключений)
@@ -1064,7 +1068,7 @@ example.com#@$#.textad { visibility: hidden; }
 > `#?#div`
 
 <a id="extended-css-has"></a>
-#### Псевдо-класс `:has()`
+#### Псевдокласс `:has()`
 
 Черновик спецификации CSS 4.0 описывает [псевдо-элемент `:has`](https://drafts.csswg.org/selectors/#relational). К сожалению, пока что он не поддерживается браузерами.
 
@@ -1081,7 +1085,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 Поддерживаемые синонимы для лучшей совместимости: `:-abp-has`, `:if`.
 
-Псевдо-класс `:has()` выбирает те элементы, внутри которых есть элементы, подходящие под `selector`.
+Псевдокласс `:has()` выбирает те элементы, внутри которых есть элементы, подходящие под `selector`.
 
 ##### Примеры `:has()`
 
@@ -1104,14 +1108,14 @@ div[-ext-has=".banner"]
 ```
 
 <a id="extended-css-if-not"></a>
-#### Псевдо-класс `:if-not()`
+#### Псевдокласс `:if-not()`
 
-Этот псевдо-класс фактически является сокращением от `:not(:has())`. Он поддерживается ExtendedCSS для лучшей совместимости с некоторыми фильтрами, но не рекомендуется к использованию в фильтрах AdGuard. Обосновывается это тем, что однажды браузеры будет добавлять встроенную поддержку `:has`, но этого никогда не случится для этого псевдо-класса.
+Этот псевдокласс фактически является сокращением от `:not(:has())`. Он поддерживается ExtendedCSS для лучшей совместимости с некоторыми фильтрами, но не рекомендуется к использованию в фильтрах AdGuard. Обосновывается это тем, что однажды браузеры будет добавлять встроенную поддержку `:has`, но этого никогда не случится для этого псевдокласса.
 
 <a id="extended-css-contains"></a>
-#### Псевдо-класс `:contains()`
+#### Псевдокласс `:contains()`
 
-Принцип действия этого псевдо-класса очень прост: он позволяет выбрать элементы, которые содержат внутри заданный текст, либо чьё содержимое соответствует указанному регулярному выражению. Пожалуйста, обратите внимание, что этот псевдо-класс использует свойство элемента `innerText` для определения соответствия (а не `innerHTML`).
+Принцип действия этого псевдокласса очень прост: он позволяет выбрать элементы, которые содержат внутри заданный текст, либо чьё содержимое соответствует указанному регулярному выражению. Пожалуйста, обратите внимание, что этот псевдокласс использует свойство элемента `innerText` для определения соответствия (а не `innerHTML`).
 
 ##### Синтаксис `:contains()`
 
@@ -1121,6 +1125,7 @@ div[-ext-has=".banner"]
 
 // соответствие по регулярному выражению
 :contains(/regex/)
+:contains(/regex/gi)
 ```
 
 Обратно-совместимый синтаксис:
@@ -1152,6 +1157,8 @@ div:contains(banner)
 
 // соответствие по регулярному выражению
 div:contains(/this .* banner/)
+// поддерживаются флаги регулярных выражений
+div:contains(/this .* banner/gi)
 ```
 
 Обратно-совместимый синтаксис:
@@ -1166,9 +1173,9 @@ div[-ext-contains="/this .* banner/"]
 Обратите внимание, что в этом примере будет выбран только `div` с `id=selected`, так как следующий за ним элемент не содержит текст (`banner` является частью кода, а не текста).
 
 <a id="extended-css-matches-css"></a>
-#### Псевдо-класс `:matches-css()`
+#### Псевдокласс `:matches-css()`
 
-Эти псевдо-классы позволяют выделять элемент по его текущему свойству стиля. Работа этого псевдо-класса основана на использовании функции [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
+Эти псевдоклассы позволяют выделять элемент по его текущему свойству стиля. Работа этого псевдокласса основана на использовании функции [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
 
 ##### Синтаксис `:matches-css()`
 
@@ -1203,7 +1210,7 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 
 ##### Примеры `:matches-css()`
 
-Выделение всех элементов `div`, содержащих псевдо-класс `::before` с указанным содержимым.
+Выделение всех элементов `div`, содержащих псевдокласс `::before` с указанным содержимым.
 
 **HTML код**
 ```html
@@ -1221,7 +1228,7 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 // Обычное соответствие
 div.banner:matches-css-before(content: block me)
 
-//Регулярные выражения
+// Регулярные выражения
 div.banner:matches-css-before(content: /block me/)
 ```
 
@@ -1230,8 +1237,102 @@ div.banner:matches-css-before(content: /block me/)
 // Обычное соответствие
 div.banner[-ext-matches-css-before="content: block me"]
 
-//Регулярные выражения
+// Регулярные выражения
 div.banner[-ext-matches-css-before="content: /block me/"]
+```
+
+<a id="extended-css-xpath"></a>
+#### Псевдокласс `:xpath()`
+
+Этот псевдокласс позволяет выбирать элементы согласно Xpath выражению.
+> **Может быть только в конце выражения.**
+
+Этот псевдокласс отличается от других тем, что он может использоваться не только для фильтрации текущей выборки элементов, но и для расширения или создания новой. По этой причине `selector` является необязательным параметром. Например, выражение `:xpath(...)` может использоваться для выбора всех родительских элементов, что невозможно было бы сделать, находясь в рамках css-селекторов.
+
+#### Синтаксис `:xpath()`
+
+```
+[selector]:xpath(expression)
+```
+
+##### `selector`
+Необязательно. CSS-селектор.
+
+##### `expression`
+XPath выражение.
+
+##### Примеры `:xpath()`
+
+```
+// Фильтрация результатов выборки селектора
+div:xpath(//*[@class="test-xpath-class"])
+div:has-text(/test-xpath-content/):xpath(../../..)
+// Использование xpath для выборки элементов
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
+```
+
+<a id="extended-css-nth-ancestor"></a>
+#### Псевдокласс `:nth-ancestor()`
+
+Этот псевдокласс позволяет выбирать родительские элементы указанного n-поколения относительно элемента.
+
+Это своего рода эквивалент `:xpath(..[/..]*)`.
+
+> **Может быть только в конце выражения.**
+
+#### Синтаксис `:nth-ancestor()`
+
+```
+selector:nth-ancestor(n)
+```
+
+##### `selector`
+CSS-селектор.
+
+##### `n`
+Положительное число от 1 до 255, количество поколений от выбранного элемента.
+
+##### Примеры `:nth-ancestor()`
+
+```
+div.test:nth-ancestor(4)
+div:has-text(/test/):nth-ancestor(2)
+```
+
+<a id="extended-css-upward"></a>
+#### Псевдокласс `:upward()`
+
+Этот псевдокласс позволяет выбирать ближайшие родительские элементы относительно указанного элемента.
+
+> **Может быть только в конце выражения.**
+
+#### Синтаксис `:upward()`
+
+```
+/* параметр в виде селектора */
+subjectSelector:upward(targetSelector)
+
+/* параметр в виде числа */
+subjectSelector:upward(n)
+```
+
+##### `subjectSelector`
+CSS-селектор — элемент, относительно которого будет искаться родительский элемент.
+
+##### `targetSelector`
+CSS-селектор — условный родительский элемент.
+
+##### `n`
+Положительное число от 1 до 255, количество поколений от выбранного элемента.
+
+##### Примеры `:upward()`
+
+```
+div.child:upward(div[id])
+div:contains(test):upward(div[class^="parent-wrapper-")
+
+div.test:upward(4)
+div:has-text(/test/):upward(2)
 ```
 
 <a id="selectors-debugging-mode"></a>
@@ -1248,6 +1349,14 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 #$#.banner { display: none; debug: global; }
 ```
+
+<a id="pseudo-property-remove"></a>
+### Псевдо-свойство `remove`
+Иногда необходимо именно убрать определенный элемент, а не просто скрыть его или применить какие-либо правила стиля. В таких случаях можно использовать специальное свойство `remove`.
+
+`.banner { remove: true; }`
+
+> Пожалуйста, обратите внимание, если используется свойство `remove`, то другие свойства этого стиля будут проигнорированы. 
 
 <a id="testing-extended-selectors"></a>
 #### Тестирование расширенных селекторов
@@ -1315,6 +1424,9 @@ example.org$$script[data-src="banner"]
 
 Пожалуй, наиболее часто используемый специальный атрибут. Он ограничивает выбор теми элементами, внутренний HTML код которых (innerHTML) содержит указанную подстроку.
 
+> Используйте `""` для экранирования `"`, например:
+> `$$script[tag-content="alert(""this is ad"")"]`
+
 Например, рассмотрим такой HTML код:
 ```html
 <script type="text/javascript">
@@ -1334,6 +1446,9 @@ $$script[tag-content="banner"]
 ##### `wildcard`
 
 Этот специальный атрибут работает практически также как `tag-content` и позволяет проверить внутренний HTML-код элемента. Правило проверит, удовлетворяет ли HTML-код элемента заданному [шаблону поиска](https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0).
+
+> Используйте `""` для экранирования `"`, например:
+> `$$script[wildcard=""banner""]`
 
 Возьмем для примера следующее правило:
 `$$script[wildcard="*banner*text*"]`

@@ -15,7 +15,6 @@ visible: true
     * [Example: Unblocking an address](#example-unblocking-an-address)
     * [Example: Unblocking everything on a website](#example-unblocking-website)
     * [Example: Cosmetic rule](#example-cosmetic-rule)
-        * [Example: Popular CSS selectors](#example-popular-css-selectors)
 * [Basic rules](#basic-rules)
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
@@ -41,6 +40,7 @@ visible: true
             * [$ping](#ping-modifier)
             * [$xmlhttprequest](#xmlhttprequest-modifier)
             * [$websocket](#websocket-modifier)
+            * [$webrtc](#webrtc-modifier)
             * [$other](#other-modifier)
         * [Exception rules modifiers](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
@@ -68,23 +68,20 @@ visible: true
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
-           * [Syntax](#elemhide-syntax)
-           * [Examples](#elemhide-examples)
-           * [Exceptions](#elemhide-exceptions)
         * [CSS rules](#cosmetic-css-rules)
-           * [Syntax](#cosmetic-css-rules-syntax)
-           * [Examples](#cosmetic-css-rules-examples)
-           * [Exceptions](#cosmetic-css-rules-exceptions)
         * [Extended CSS selectors](#extended-css-selectors)
-           * [Pseudo-class `:has()`](#extended-css-has)
-           * [Pseudo-class `:if-not()`](#extended-css-has)
-           * [Pseudo-class `:contains()`](#extended-css-contains)
-           * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-           * [Selectors debugging mode](#selectors-debugging-mode)
-           * [Testing extended selectors](#testing-extended-selectors)
+            * [Pseudo-class `:has()`](#extended-css-has)
+            * [Pseudo-class `:if-not()`](#extended-css-has)
+            * [Pseudo-class `:contains()`](#extended-css-contains)
+            * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+            * [Pseudo-class `:xpath()`](#extended-css-xpath)
+            * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+            * [Pseudo-class `:upward()`](#extended-css-upward)
+            * [Selectors debugging mode](#selectors-debugging-mode)
+            * [Pseudo-property `remove`](#pseudo-property-remove)
+            * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
-        * [Examples](#html-filtering-rules-examples)
         * [Special attributes](#html-filtering-rules-attributes)
            * [tag-content](#tag-content-attribute)
            * [wildcard](#wildcard-attribute)
@@ -92,12 +89,7 @@ visible: true
            * [min-length](#min-length-attribute)
         * [Exceptions](#html-filtering-rules-exceptions)
     * [JavaScript rules](#javascript-rules)
-        * [Syntax](#javascript-rules-syntax)
-        * [Examples](#javascript-rules-examples)
-        * [Exceptions](#javascript-rules-exceptions)
     * [Scriptlets](#scriptlets)
-        * [Syntax](#scriptlets-syntax)
-        * [Examples](#scriptlets-examples)
     * [Modifiers](#non-basic-rules-modifiers)
         * [Syntax](#non-basic-rules-modifiers-syntax)
         * [$app](#non-basic-rules-modifiers-app)
@@ -455,6 +447,18 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 ##### **`websocket`**
 
 The rule applies only to WebSocket connections.
+
+<a id="webrtc-modifier"></a>
+##### **`webrtc`**
+
+The rule applies only to WebRTC connections.
+
+> Please note that blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
+
+###### `webrtc` example
+
+* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connectios to `example.com` for `example.org`.
+* `@@*$webrtc,domain=example.org` - this rule disables the RTC wrapper for `example.org`.
 
 <a id="other-modifier"></a>
 ##### **`other`**
@@ -1125,6 +1129,7 @@ This pseudo-class principle is very simple: it allows to select the elements tha
 
 // matching by a regular expression
 :contains(/regex/)
+:contains(/regex/gi)
 ```
 
 Backward compatible syntax:
@@ -1156,6 +1161,8 @@ div:contains(banner)
 
 // matching by a regular expression
 div:contains(/this .* banner/)
+// regex flags are supported
+div:contains(/this .* banner/gi)
 ```
 
 Backward compatible syntax:
@@ -1238,6 +1245,100 @@ div.banner[-ext-matches-css-before="content: block me"]
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
+<a id="extended-css-xpath"></a>
+#### Pseudo-class `:xpath()`
+
+This pseudo-class allows to select an element by evaluating an XPath expression.
+> **Limited to work properly only at the end of selector.**
+
+The `:xpath(...)` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath(...)` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath(...)` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
+
+#### `:xpath()` syntax
+
+```
+[selector]:xpath(expression)
+```
+
+##### `selector`
+Optional. Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `expression`
+A valid XPath expression.
+
+##### `:xpath()` examples
+
+```
+// Filtering results from selector
+div:xpath(//*[@class="test-xpath-class"])
+div:has-text(/test-xpath-content/):xpath(../../..)
+// Use xpath only to select elements
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
+```
+
+<a id="extended-css-nth-ancestor"></a>
+#### Pseudo-class `:nth-ancestor()`
+
+This pseudo-class allows to lookup the nth ancestor relative to the currently selected node.
+
+It is a low-overhead equivalent to `:xpath(..[/..]*)`.
+
+> **Limited to work properly only at the end of selector.**
+
+#### `:nth-ancestor()` syntax
+
+```
+selector:nth-ancestor(n)
+```
+
+##### `selector`
+Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `n`
+Positive number >= 1 and < 256, distance from the currently selected node.
+
+##### `:nth-ancestor()` examples
+
+```
+div.test:nth-ancestor(4)
+div:has-text(/test/):nth-ancestor(2)
+```
+
+<a id="extended-css-upward"></a>
+#### Pseudo-class `:upward()`
+
+This pseudo-class allows to lookup the ancestor relative to the currently selected node.
+
+> **Limited to work properly only at the end of selector.**
+
+#### `:upward()` syntax
+
+```
+/* selector parameter */
+subjectSelector:upward(targetSelector)
+
+/* number parameter */
+subjectSelector:upward(n)
+```
+
+##### `subjectSelector`
+Can be a plain CSS selector, or a Sizzle compatible selector.
+
+##### `targetSelector`
+A valid plain CSS selector.
+
+##### `n`
+Positive number >= 1 and < 256, distance from the currently selected node.
+
+##### `:nth-ancestor()` examples
+
+```
+div.child:upward(div[id])
+div:contains(test):upward(div[class^="parent-wrapper-")
+
+div.test:upward(4)
+div:has-text(/test/):upward(2)
+```
+
 <a id="selectors-debugging-mode"></a>
 ##### Selectors debugging mode
 
@@ -1252,6 +1353,13 @@ Sometimes, you might need to check the performance of a given selector or a styl
 ```
 #$#.banner { display: none; debug: global; }
 ```
+<a id="pseudo-property-remove"></a>
+### Pseudo-property `remove`
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use a special style property: `remove`.
+
+`.banner { remove: true; }`
+
+> Please note, that other style properties will be ignored if `remove` is specified.
 
 <a id="testing-extended-selectors"></a>
 ##### Testing extended selectors
@@ -1319,6 +1427,9 @@ In addition to usual attribures, which value is every element checked for, there
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
+> You should use `""` to escape `"`, for instance:
+> `$$script[tag-content="alert(""this is ad"")"]`
+
 For example, let's take a look at this HTML code:
 ```html
 <script type="text/javascript">
@@ -1338,6 +1449,9 @@ $$script[tag-content="banner"]
 ##### `wildcard`
 
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+
+> You should use `""` to escape `"`, for instance:
+> `$$script[wildcard=""banner""]`
 
 For example:
 `$$script[wildcard="*banner*text*"]`

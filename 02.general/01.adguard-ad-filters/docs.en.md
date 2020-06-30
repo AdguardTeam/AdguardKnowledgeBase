@@ -19,6 +19,7 @@ visible: true
 *   [Dutch filter](#dutch)
 *   [Spanish/Portuguese filter](#spanish)
 *   [Turkish filter](#turkish)
+*   [Chinese filter](#chinese)
 *   [Experimental filter](#experimental)
 *   [Mobile ads filter](#mobile)
 *   [Safari filter](#safari)
@@ -155,16 +156,6 @@ Filter that enables removing of the ads from websites in Spanish. Originally b
 
 
 
-<a name="experimental"></a>
-
-## Experimental filter
-
-Filter designed to test certain hazardous filtering rules before they are added to the basic filters.
-
-[View all the rules](https://filters.adtidy.org/extension/chromium/filters/5.txt)
-
-
-
 <a name="turkish"></a>
 
 ## Turkish filter
@@ -172,6 +163,27 @@ Filter designed to test certain hazardous filtering rules before they are added
 Filter that enables removing of the ads from websites with Turkish content. Created by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/13.txt)
+
+
+
+<a name="chinese"></a>
+
+## Chinese filter
+
+Filter that enables removing of the ads from websites in Chinese language. Originally based on the [EasyList China](http://abpchina.org/forum/forum.php) filter list. Modified by us according to the complaints from users. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/224.txt)
+
+
+
+<a name="experimental"></a>
+
+## Experimental filter
+
+This filter serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perfrom without any issues, they get added to basic filters.
+
+[View all the rules](https://filters.adtidy.org/extension/chromium/filters/5.txt)
+
 
 
 <a name="mobile"></a>
