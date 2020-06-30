@@ -1,14 +1,14 @@
 ---
-title: 'Ошибка "Это соединение является недоверенным"'
+title: 'Ошибка "Вероятная угроза безопасности"'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_error_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
-Ошибка "Это соединение является недоверенным" чаще всего встречается в браузерах на основе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и другие.
+Ошибка "Вероятная угроза безопасности" чаще всего встречается в браузерах на основе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и другие.
 
 Начиная с версии 68, Firefox доверяет сертификатам из системного хранилища при выполнении определённых условий. Но иногда по какой-либо причине (не зависящей от AdGuard) механизм доверия сертификатам из системного хранилища перестаёт работать, что и приводит к возникновению этой ошибки. Чтобы исправить её, необходимо скачать локальный сертификат AdGuard и затем добавить его в собственное хранилище сертификатов вручную. Для этого выполните следующие шаги: 
 

@@ -1,14 +1,14 @@
 ---
-title: '"The connection is untrusted" error'
+title: '"Potential Security Risk" error'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_error_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 700px;" />
 
-The "Connection is untrusted" error is most commonly encountered in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox and such.
+The "Potential security risk ahead" error is most commonly encountered in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox and such.
 
 Starting with v68, under certain conditions Firefox normally trusts certificates from the system storage. However, sometimes for reasons outside of our control the trust mechanism faults, which leads to the "Connection is untrusted" error. To fix it, it's necessary to download AdGuard certificate and install it to Firefox's local storage manually. To do so, follow these steps:
 
