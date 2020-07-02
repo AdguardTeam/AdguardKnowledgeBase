@@ -22,8 +22,8 @@ visible: true
 *   [Chinese filter](#chinese)
 *   [Experimental filter](#experimental)
 *   [Mobile ads filter](#mobile)
+*   [DNS filter](#domains)
 *   [Safari filter](#safari)
-*   [Simplified domain names filter](#domains)
 
 <a name="introduction"></a>
 
@@ -196,20 +196,22 @@ Filter that blocks ads on mobile devices. Contains all known mobile ad networks.
 
 
 
+<a name="domains"></a>
+
+## DNS filter
+
+A filter composed from several other filters (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads and tracking. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
+
+[View all the rules](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt)
+
+
+
 <a name="safari"></a>
 
 ## Safari filter
 
+**This filter is obsolete and no more used by AdGuard.**
+
 Special filter for Safari 9 and above on iOS and MacOS to use in combination with AdGuard (or other) filter lists. We need a seperate filter because Safari's Content Blocking API does not fully support AdGuard's advanced rules syntax. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
 [View all the rules](https://filters.adtidy.org/extension/chromium/filters/12.txt)
-
-
-
-<a name="domains"></a>
-
-## Simplified domain names filter
-
-A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
-
-[View all the rules](https://filters.adtidy.org/extension/chromium/filters/15.txt)
