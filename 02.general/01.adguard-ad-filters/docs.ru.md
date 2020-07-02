@@ -23,7 +23,7 @@ visible: true
 *   [Экспериментальный фильтр](#experimental)
 *   [Фильтр мобильной рекламы](#mobile)
 *   [Safari фильтр](#safari)
-*   [Упрощенный фильтр доменов](#domains)
+*   [DNS-фильтр](#dns)
 
 <a id="introduction"></a>
 
@@ -206,10 +206,10 @@ visible: true
 
 
 
-<a id="domains"></a>
+<a id="dns"></a>
 
-## Упрощенный фильтр доменов
+## DNS-фильтр
 
-Фильтр, составленный из нескольких фильтров (Английский фильтр, Фильтр социальных сетей, Фильтр счетчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy), и специально упрощенный для лучшей совместимости с блокировкой рекламы на уровне DNS. Этот фильтр используется серверами AdGuard DNS для блокировки рекламы. Узнать больше о блокировке на уровне DNS можно на [этой странице](https://adguard.com/ru/adguard-dns/overview.html). Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Фильтр, составленный из нескольких фильтров (Английский фильтр, Фильтр социальных сетей, Фильтр счетчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy) и специально упрощенный для лучшей совместимости с блокировкой рекламы на уровне DNS. Этот фильтр используется серверами AdGuard DNS для блокировки рекламы. Узнать больше о блокировке на уровне DNS можно на [этой странице](https://adguard.com/ru/adguard-dns/overview.html). Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
 [Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/15.txt)

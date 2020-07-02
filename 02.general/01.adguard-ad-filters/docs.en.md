@@ -23,7 +23,7 @@ visible: true
 *   [Experimental filter](#experimental)
 *   [Mobile ads filter](#mobile)
 *   [Safari filter](#safari)
-*   [Simplified domain names filter](#domains)
+*   [DNS filter](#dns)
 
 <a name="introduction"></a>
 
@@ -206,9 +206,9 @@ Special filter for Safari 9 and above on iOS and MacOS to use in combination wit
 
 
 
-<a name="domains"></a>
+<a name="dns"></a>
 
-## Simplified domain names filter
+## DNS filter
 
 A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
