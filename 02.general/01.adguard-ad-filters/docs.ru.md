@@ -22,8 +22,8 @@ visible: true
 *   [Китайский фильтр](#chinese)
 *   [Экспериментальный фильтр](#experimental)
 *   [Фильтр мобильной рекламы](#mobile)
+*   [DNS фильтр](#domains)
 *   [Safari фильтр](#safari)
-*   [Упрощенный фильтр доменов](#domains)
 
 <a id="introduction"></a>
 
@@ -196,20 +196,22 @@ visible: true
 
 
 
-<a id="safari"></a>
-
-## Safari фильтр
-
-Особый фильтр для Safari 9 и выше на iOS и MacOS для использования в комбинации с другими фильтрами AdGuard (или иными). Отдельный фильтр необходим, так как API блокировки контента Safari не полностью поддерживает продвинутый синтаксис правил AdGuard. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
-
-[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/12.txt)
-
-
-
 <a id="domains"></a>
 
 ## Упрощенный фильтр доменов
 
-Фильтр, составленный из нескольких фильтров (Английский фильтр, Фильтр социальных сетей, Фильтр счетчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy), и специально упрощенный для лучшей совместимости с блокировкой рекламы на уровне DNS. Этот фильтр используется серверами AdGuard DNS для блокировки рекламы. Узнать больше о блокировке на уровне DNS можно на [этой странице](https://adguard.com/ru/adguard-dns/overview.html). Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Фильтр, составленный из нескольких фильтров (Базовый фильтр AdGuard, Фильтр социальных сетей, Фильтр счетчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy), и специально упрощенный для лучшей совместимости с блокировкой рекламы на уровне DNS. Этот фильтр используется серверами AdGuard DNS для блокировки рекламы и трекинга. Узнать больше о блокировке на уровне DNS можно на [этой странице](https://adguard.com/ru/adguard-dns/overview.html). Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
 
-[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/15.txt)
+[Посмотреть все правила](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt)
+
+
+
+<a id="safari"></a>
+
+## Safari фильтр
+
+**Этот фильтр - устаревший, он больше не используется в продуктах AdGuard.**
+
+Особый фильтр для Safari 9 и выше на iOS и MacOS для использования в комбинации с другими фильтрами AdGuard (или иными). Отдельный фильтр необходим, так как API блокировки контента Safari не полностью поддерживает продвинутый синтаксис правил AdGuard. Фильтр опубликован под лицензией [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+
+[Посмотреть все правила](https://filters.adtidy.org/extension/chromium/filters/12.txt)
