@@ -23,7 +23,7 @@ visible: true
 *   [Experimental filter](#experimental)
 *   [Mobile ads filter](#mobile)
 *   [Safari filter](#safari)
-*   [DNS filter](#dns)
+*   [DNS filter](#domains)
 
 <a name="introduction"></a>
 
@@ -206,7 +206,7 @@ Special filter for Safari 9 and above on iOS and MacOS to use in combination wit
 
 
 
-<a name="dns"></a>
+<a name="domains"></a>
 
 ## DNS filter
 

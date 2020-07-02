@@ -23,7 +23,7 @@ visible: true
 *   [Экспериментальный фильтр](#experimental)
 *   [Фильтр мобильной рекламы](#mobile)
 *   [Safari фильтр](#safari)
-*   [DNS-фильтр](#dns)
+*   [DNS-фильтр](#domains)
 
 <a id="introduction"></a>
 
@@ -206,7 +206,7 @@ visible: true
 
 
 
-<a id="dns"></a>
+<a id="domains"></a>
 
 ## DNS-фильтр
 
