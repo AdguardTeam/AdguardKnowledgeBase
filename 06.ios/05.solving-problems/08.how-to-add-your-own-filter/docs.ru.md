@@ -22,7 +22,7 @@ taxonomy:
 2. Перейти в DNS-защиту —> Фильтрацию DNS-запросов —> DNS-фильтры —> Нажать «Добавить фильтр».
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/Pro/dns_filters_ru.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
 
-Для примера возьмём наш [AdGuard DNS-фильтр](https://kb.adguard.com/ru/general/adguard-ad-filters#domains).
+Для примера возьмём наш [DNS-фильтр](https://kb.adguard.com/ru/general/adguard-ad-filters#domains).
 
 > DNS-фильтр составлен из нескольких фильтров (Английский фильтр, Фильтр социальных сетей, Фильтр счётчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy) и упрощён для лучшей совместимости с блокировкой рекламы на уровне DNS.
 
