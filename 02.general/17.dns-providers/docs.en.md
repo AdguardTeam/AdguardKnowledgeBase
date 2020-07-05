@@ -513,17 +513,35 @@ Regular and DNS-over-TLS servers which provide protection from phishing and spyw
 
 [DNS-over-TLS and DNS-over-HTTPS Servers by cira.ca](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) official canadian TLD provider. Offers different DoH and DoT DNS Servers.
 
+#### Private
+
+DNS resolution only
+
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | `149.112.121.10` and `149.112.122.10` | <a href="sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://private.canadianshield.cira.ca` | <a href="sdns://AwAAAAAAAAAAAAAkdGxzOi8vcHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://private.canadianshield.cira.ca/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAmaHR0cHM6Ly9wcml2YXRlLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ">Add to AdGuard</a>  |
 
-| DNS-over-TLS - Private | Hostname: `private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | <a href="sdns://AwAAAAAAAAAAAAAkdGxzOi8vcHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh">Add to AdGuard</a>  |
-| DNS-over-TLS - Protected | Hostname: `protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | <a href="sdns://AwAAAAAAAAAAAAAmdGxzOi8vcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a>  |
-| DNS-over-TLS - Family | Hostname: `protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | <a href="sdns://AwAAAAAAAAAAAAAjdGxzOi8vZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a>  |
+#### Protected
 
+Malware and phishing protection
 
-| DNS-over-HTTPS - Private | Hostname: `https://private.canadianshield.cira.ca/dns-query` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | <a href="sdns://AgEAAAAAAAAAAAAmaHR0cHM6Ly9wcml2YXRlLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ">Add to AdGuard</a>  |
-| DNS-over-HTTPS - Protected | Hostname: `https://protected.canadianshield.cira.ca/dns-query` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | <a href="sdns://AgEAAAAAAAAAAAAoaHR0cHM6Ly9wcm90ZWN0ZWQuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
-| DNS-over-HTTPS - Family | Hostname: `https://family.canadianshield.cira.ca/dns-query` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | <a href="sdns://AgEAAAAAAAAAAAAlaHR0cHM6Ly9mYW1pbHkuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | `149.112.121.20` and `149.112.122.20` | <a href="sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://protected.canadianshield.cira.ca` | <a href="sdns://AwAAAAAAAAAAAAAmdGxzOi8vcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://protected.canadianshield.cira.ca/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAoaHR0cHM6Ly9wcm90ZWN0ZWQuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
+
+#### Family
+
+Protected + blocking pornographic content
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | `149.112.121.30` and `149.112.122.30` | <a href="sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://family.canadianshield.cira.ca` | <a href="sdns://AwAAAAAAAAAAAAAjdGxzOi8vZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://family.canadianshield.cira.ca/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAlaHR0cHM6Ly9mYW1pbHkuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Add to AdGuard</a>  |
 
 <a name="dnsprivacy.org-dns"></a>
 
