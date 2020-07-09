@@ -22,7 +22,7 @@ The best part is, you don't even need to choose a special DNS server to block ad
 
 ![dns-scheme](How_DNS_Filtering_works.png)
 
-For example, let's imagine you have AdGuard for Android app installed on your device. If you have DNS filtering enabled, all DNS requests will pass through AdGuard before reaching the DNS server. AdGuard has a special 'Simplified domain names filter' containing a large amount of ad and tracker domains, which it uses in conjunction with User filter to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'. Mind you, all this happens locally on your device!
+For example, let's imagine you have AdGuard for Android app installed on your device. If you have DNS filtering enabled, all DNS requests will pass through AdGuard before reaching the DNS server. AdGuard has a special 'DNS filter' containing a large amount of ad and tracker domains, which it uses in conjunction with User filter to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'. Mind you, all this happens locally on your device!
 
 The main advantage of this approach is it is extremely economical and saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage being the roughness of this method: specific URLs can't be blocked, only whole domains. It can sometimes lead to 'breaking' of a websites functionality.
 
