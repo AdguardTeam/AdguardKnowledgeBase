@@ -81,7 +81,7 @@ To do it, click on the AdGuard icon in the menu bar: 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png" />
 
-3. In the opened window enter your license key and press **Activate**.   
+3. In the opened window press **Activate**.   
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png" />
 
