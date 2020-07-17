@@ -70,7 +70,7 @@ Please enable:
 - *Settings > Additional Settings > Battery & Performance > Manage apps’ battery usage* and here:
 
 1. Switch Power Saving Modes to Off
-2. Choose the next options: *Saving Power in The Background > Choose apps > select your app > Background Settings > No restrictions*
+2. Choose the following options: *Saving Power in The Background > Choose apps > Select your app > Background Settings > No restrictions*
 
 #### App battery saver
 
@@ -80,7 +80,7 @@ Please enable:
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
-- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as shown in the screenshot):
+- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirecent.png" width="300">
 
@@ -121,8 +121,8 @@ Sleeping apps menu is the sniper’s nest for Samsung’s app killing policies. 
 
 Checklist:
 
-- Disable Put unused apps to sleep
-- Disable Auto-disable unused apps
+- Disable **Put unused apps to sleep**
+- Disable **Auto-disable unused apps**
 - Remove your app from the list of sleeping apps
 - Disable background restrictions for your app
 
@@ -130,21 +130,21 @@ Checklist:
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png" width="400" />
 
-2. Tap *Battery*
+2. Tap **Battery**
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png" width="400" />
 
 
-3. Tap the *3-dot menu* > *Settings*
+3. Tap the **3-dot menu** > **Settings**
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png" width="400" />
 
 4. Disable all toggles (except Notifications)
-5. Tap *Sleeping apps*
+5. Tap **Sleeping apps**
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.png" width="400" />
 
-6. Wake up all the apps using the trashcan icon
+6. **Wake up** all the apps using the trashcan icon
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png" width="400" />
 
