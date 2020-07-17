@@ -44,9 +44,43 @@ Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving opti
 
 ## Xiaomi
 
+#### MIUI 10-11
+
+To let your app run successfully in the background, configure settings as follows:
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1en.png" width="400" />
+
+- *Settings > Battery & performance* > switch-off *Battery saver* function
+
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2en.png" width="400" />
+
+- Then open *App battery saver* settings > *AdGuard* > *No restrictions*
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3en.png" width="400" />
+
+
+#### Power management
+
+Please enable:
+
+- *Settings > Advanced Settings > Battery manager > set *Power plan* to Performance*
+- *Device Settings > Advanced Settings > Battery Manager > Protected apps* – your app needs to be Protected
+- *Device Settings > Apps > your app > Battery > Power-intensive prompt* and *Keep running after screen off*
+- *Settings > Additional Settings > Battery & Performance > Manage apps’ battery usage* and here:
+
+1. Switch Power Saving Modes to Off
+2. Choose the following options: *Saving Power in The Background > Choose apps > Select your app > Background Settings > No restrictions*
+
+#### App battery saver
+
+*Security > Battery > App Battery Saver > AdGuard > No restriction*
+
+#### App pinning
+
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
-- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as presented on the screenshot):
+- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomirecent.png" width="300">
 
@@ -76,7 +110,49 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 ## Samsung
 
-For Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
+
+#### Galaxy S9 / S10
+
+Battery optimization is **turned on by default**. At some unclear moments (maybe on app update, OS update?), the settings also do revert back to the defaults, forcing you to turn them off again and again.
+
+#### Sleeping apps
+
+Sleeping apps menu is the sniper’s nest for Samsung’s app killing policies. Make sure to follow the instructions very carefully to prevent the apps from being killed.
+
+Checklist:
+
+- Disable **Put unused apps to sleep**
+- Disable **Auto-disable unused apps**
+- Remove your app from the list of sleeping apps
+- Disable background restrictions for your app
+
+1. Start **Device care** from phone settings
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png" width="400" />
+
+2. Tap **Battery**
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png" width="400" />
+
+
+3. Tap the **3-dot menu** > **Settings**
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png" width="400" />
+
+4. Disable all toggles (except Notifications)
+5. Tap **Sleeping apps**
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.png" width="400" />
+
+6. **Wake up** all the apps using the trashcan icon
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png" width="400" />
+
+> **Note**: Make sure that Put unused apps to sleep and Auto-disable unused apps is disabled. Otherwise Samsung will put your apps back to sleep after a few days (3 by default) even if you have woken them up manually!
+
+#### Old Samsung devices
+
+For early Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
 
  - Tap on the *Recent tasks* button, tap on the *Additional settings* icon. It should look like this:
  
@@ -94,7 +170,78 @@ For Samsung devices, there is no huge need for setting up the background work, b
  
  ## Huawei
  
-Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
+
+#### App Launch on some EMUI 8, 9 and 10 devices (Huawei P20, Huawei P20 Lite, Huawei Mate 10…)
+
+- *Phone settings* > *Battery* > *App launch* and then set your app to “Manage manually” and make sure everything is turned on.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.jpg" width="400" />
+
+1. *Phone settings > Battery > App launch*. This feature may or may not be available for all devices or labeled differently.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2en.png" width="400" />
+
+2. 2. Turn off “Manage all automatically"
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3en.png" width="400" />
+
+
+3. Make sure to **ENABLE** all toggles.
+
+Also for reliable background processes you may need to uninstall PowerGenie as detailed below.
+
+
+#### EMUI 9+ devices
+
+> Note: On some phones with EMUI 9+ (Android P+) Huawei introduced a new task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
+
+Huawei is extremely inventive in breaking apps on their devices. In addition to all the non-standard power management measures described below, they introduced a new task killer app build right into EMUI 9 on Android Pie.
+
+It is called **PowerGenie** and it kills all apps that are not on its whitelist. You cannot add custom apps on their pre-defined whitelist. This means there is no other way to fix proper app functionality on Huawei than uninstalling PowerGenie.
+
+Unfortunately, this is a system app that can only be fully uninstalled using ADB (Android Debug Bridge) Source: [XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+
+**You need to**:
+
+1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+
+2) Connect your phone with a data cable;
+
+3) Enable Developer options;
+
+4) Enable USB debugging within Developer options on your phone;
+
+5) Run the following commands on your computer:
+   
+`adb shell pm uninstall --user 0 com.huawei.powergenie`
+
+We did not yet have this confirmed but it is possible you can alternatively just disable PowerGenie in *Phone settings* > *Apps*. This setting would need to be re-applied every time you reboot your device.
+
+> Please still follow the steps below - Huawei phones usually have multiple powersaving mechanisms.
+Also, you may not have PowerGenie on your phone, but your apps may still get killed by another mechanism.
+
+#### EMUI 6+ devices (and some EMUI 5 devices):
+
+- *Phone settings* > *Advanced Settings* > *Battery manager* > *Power plan* set to *Performance*;
+- *Phone Settings* > *Advanced Settings* > *Battery Manager* > *Protected apps* – set your app as *Protected*;
+- *Phone Settings* > *Apps* > *Your app* > *Battery* > *Power-intensive prompt* `[uncheck]` and *Keep running after screen off* `[check]`;
+- *Phone settings* > *Apps* > *Advanced (At the bottom)* > *Ignore optimisations* > Press Allowed > *All apps* > Find your app on the list and set to *Allow*.
+
+#### Huawei P9 Plus:
+
+Open device settings > *Apps* > *Settings* > *Special access* > choose *Ignore battery optimization* > select *Allow* for your app.
+
+#### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro:
+
+Open device settings > *Battery* > *App launch* > then set your app to *Manage manually* and make sure everything is turned on.
+  
+#### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
+
+*Phone settings* > *Battery* > *App launch* and then set your app to “Manage manually” and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
+
+#### Early Huawei 
+
+Old Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
  
   - Tap on the *Recent tasks* button:
   
@@ -109,19 +256,9 @@ Besides, to set up the background work of your app more effectively, you should 
 - Go to *Advanced Settings* > then open *Battery Manager* > Set *Power plan* to "Performance";
 - Then choose *Protected apps* in the *Battery Manager* and check if your app is Protected;
 - Go to *Apps* in the main settings and click on AdGuard there > choose *Battery* > enable *Power-intensive prompt* and *Keep running after screen is off*;
-- Then in the *Apps* section open *Settings* (at the bottom) > *Special access* > choose *Ignore battery optimization* > press *Allowed* > *All apps* > find AdGuard on the list and set it to *Deny*
+- Then in the *Apps* section open *Settings* (at the bottom) > *Special access* > choose *Ignore battery optimization* > press *Allowed* > *All apps* > find AdGuard on the list and set it to *Deny*.
 
-And here are some specific settings for different Huawei devices:
 
-#### Huawei P9 Plus:
-
-Open device settings > *Apps* > *Settings* > *Special access* > choose *Ignore battery optimization* > select *Allow* for your app.
-
-#### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro:
-
-Open device settings > *Battery* > *App launch* > then set your app to *Manage manually* and make sure everything is turned on.
-  
-   
 <a id="Meizu"></a> 
    
  ## Meizu
