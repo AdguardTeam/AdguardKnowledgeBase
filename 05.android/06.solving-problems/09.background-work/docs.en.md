@@ -128,25 +128,25 @@ Checklist:
 
 1. Start **Device care** from phone settings
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png" width="400" />
 
 2. Tap *Battery*
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png" width="400" />
 
 
 3. Tap the *3-dot menu* > *Settings*
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png" width="400" />
 
 4. Disable all toggles (except Notifications)
 5. Tap *Sleeping apps*
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.png" width="400" />
 
 6. Wake up all the apps using the trashcan icon
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png" width="400" />
 
 > **Note**: Make sure that Put unused apps to sleep and Auto-disable unused apps is disabled. Otherwise Samsung will put your apps back to sleep after a few days (3 by default) even if you have woken them up manually!
 
