@@ -44,8 +44,13 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [OSZX DNS](#oszx-dns)
 * [Privacy-First DNS](#privacy-first-dns)
 * [Applied Privacy DNS](#applied-privacy-dns)
+* [OSZX DNS](#oszx-dns)
+* [Privacy-First DNS](#privacy-first-dns)
+* [Applied Privacy DNS](#applied-privacy-dns)
 * [Strongarm DNS](#strongarm-dns)
 * [SafeSurfer DNS](#safesurfer-dns)
+A* [DecloudUs DNS](#privacy-first-dns)
+A* [PI-DNS](#applied-privacy-dns)
 * [Captnemo DNS](#captnemo-dns)
 * [DNS.SB](#dns-sb)
 * [DNS Forge](#dns-forge)
@@ -936,7 +941,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) is a privacy focused DNS service provided by [Sebastian Schmidt](https://sebastian-schmidt.me/). No Logging, DNSSEC validation.
+[Seby DNS](https://dns.seby.io/) is a privacy focused DNS service provided by Sebastian Schmidt. No Logging, DNSSEC validation.
 
 #### DNS Server 1
 
