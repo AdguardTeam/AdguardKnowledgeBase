@@ -34,32 +34,31 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Ali DNS](#ali-dns) 
 * [CFIEC Public DNS](#cfiec-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
-* [360DNS](#360-dns)
+* [360 Secure DNS](#360-dns)
 * [IIJ.JP DNS](#iij-dns)
-* [114DNS](#114-dns)
+* [DNSPod](#dnspod-dns) /////
+* [114DNS](#114-dns) A
 * [Quad101](#quad101)
-* [OneDNS](#one-dns)
+* [OneDNS](#114-dns) A
 * [FreeDNS](#free-dns)
 * [Freenom World](#freenom-world)
 * [OSZX DNS](#oszx-dns)
 * [Privacy-First DNS](#privacy-first-dns)
 * [Applied Privacy DNS](#applied-privacy-dns)
-* [OSZX DNS](#oszx-dns)
-* [Privacy-First DNS](#privacy-first-dns)
-* [Applied Privacy DNS](#applied-privacy-dns)
 * [Strongarm DNS](#strongarm-dns)
 * [SafeSurfer DNS](#safesurfer-dns)
-A* [DecloudUs DNS](#privacy-first-dns)
-A* [PI-DNS](#applied-privacy-dns)
+* [DecloudUs DNS](#decloudus-dns)
 * [Captnemo DNS](#captnemo-dns)
 * [DNS.SB](#dns-sb)
 * [DNS Forge](#dns-forge)
 * [Fondation Restena DNS](#restena-dns)
 * [fvz DNS](#fvz-dns)
 * [FFMUC DNS](#ffmuc.net-dns)
+* [Digitale Gesellschaft DNS](#digitale-gesellschaft-dns)
 * [LibreDNS](#libre-dns)
 * [ibksturm DNS](#ibksturm-dns)
 * [DNS Privacy](#dnsprivacy.org-dns)
+* [PI-DNS](#pi-dns)
 * [Seby DNS](#seby-dns)
 * [Evilvibes DNS](#evilvibes-dns)
 * [puntCAT DNS](#puntcat-dns)
@@ -518,11 +517,17 @@ In "Family" mode, Protected + blocking adult content
 | DNS-over-HTTPS, IPv6 | Hostname: `https://doh-fi.blahdns.com/dns-query` IP: `2a01:4f9:c010:43ce::1` | `Finland` | <a href="sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjZiNGI6OjFdABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `95.216.212.177:8443`| `Finland` | <a href="sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f9:c010:43ce::1:8443`| `Finland` | <a href="sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
 | DNS-over-TLS, IPv4 | Hostname: `dot-jp.blahdns.com`  IP: `45.32.55.94` | `Japan` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWpwLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-jp.blahdns.com/dns-query` IP: `45.32.55.94` | `Japan` | <a href="sdns://AgMAAAAAAAAACzQ1LjMyLjU1Ljk0ABJkb2gtanAuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv6 | Hostname: `https://doh-jp.blahdns.com/dns-query` IP: `2001:19f0:7001:3259:5400:02ff:fe71:0bc9` | `Japan` | <a href="sdns://AgMAAAAAAAAAKVsyMDAxOjE5ZjA6NzAwMTozMjU5OjU0MDA6MDJmZjpmZTcxOjBiYzldABJkb2gtanAuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `45.32.55.94:8443`| `Japan` | <a href="sdns://AQMAAAAAAAAAEDQ1LjMyLjU1Ljk0Ojg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2001:19f0:7001:3259:5400:02ff:fe71:0bc9:8443`| `Japan` | <a href="sdns://AQMAAAAAAAAALlsyMDAxOjE5ZjA6NzAwMTozMjU5OjU0MDA6MDJmZjpmZTcxOjBiYzldOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
 | DNS-over-TLS, IPv4 | Hostname: `dot-de.blahdns.com`  IP: `159.69.198.101` | `Germany` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNS-over-TLS, IPv6 | Hostname: `dot-de.blahdns.com`  IP: `2a01:4f8:1c1c:6b4b::1` | `Germany` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWRlLmJsYWhkbnMuY29t">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101` | `Germany` | <a href="sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
@@ -609,9 +614,9 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 <a name="360-dns"></a>
 
-### 360DNS
+### 360 Secure DNS
 
-[360DNS](https://adguard.com/adguard-dns/overview.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+360 Secure DNS is a industry-leading recursiveDNS service with .
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -621,20 +626,17 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::ad2:0ff]:5443`| <a href="sdns://AQIAAAAAAAAAGVsyYTAwOjVhNjA6OmFkMjowZmZdOjU0NDMggdAC02pMpQxHO3R5ZQ_hLgKzIcthOFYqII5APf3FXpQiMi5kbnNjcnlwdC5kZWZhdWx0Lm5zMi5hZGd1YXJkLmNvbQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://dns.adguard.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://dns.adguard.com` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
-<a name="privacy-first-dns"></a>
 
 <a name="iij-dns"></a>
 
 ### IIJ.JP DNS
 
-Ali DNS is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It include AliGuard facility to protect users from various attacks and threats.
+[IIJ.JP](https://public.dns.iij.jp/) is a free DNS service operated by internet initiative japan. It also block child abuse contents.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `223.5.5.5` and `223.6.6.6`             | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
-| DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1`            | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://dns.alidns.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dns.alidns.com` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://public.dns.iij.jp/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://public.dns.iij.jp` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
 
 <a name="114-dns"></a>
 
@@ -750,6 +752,8 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 | DNS-over-HTTPS | `https://dns.pumplex.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://ddns.pumplex.com` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
 
+<a name="privacy-first-dns"></a>
+
 ### Privacy-First DNS
 
 [Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phising domains!. No Logging, No ECS, DNSSEC Validation, Free!
@@ -797,6 +801,21 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `104.155.237.225` and `104.197.28.121`             | <a href="dns://AAAAAAAAAAAADjA0LjE1NS4yMzcuMjI1">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121`| <a href="sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56">Add to AdGuard</a> |
+
+<a name="decloudus-dns"></a>
+
+### DeCloudUs DNS
+
+[DeCloudUs DNS](https://decloudus.com/) A secure, private, open source DNS resolver with no logs, malware protection, ad blocking. Degoogle and Ungoogle your phone, tablet, and computer.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `176.9.199.158`              | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a01:4f8:151:11b0::3`            | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `176.9.199.158:8443`| <a href="sdns://AQMAAAAAAAAAEjE3Ni45LjE5OS4xNTg6ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q">Add to AdGuard</a> |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:151:11b0::3]:8443`| <a href="sdns://AQMAAAAAAAAAG1syYTAxOjRmODoxNTE6MTFiMDo6M106ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dns.decloudus.com` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
 
 <a name="captnemo-dns"></a>
 
@@ -870,6 +889,19 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 | DNS-over-TLS, IPv4 | Hostname: `dot.ffmuc.net` IP: `195.30.94.28` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` IP: `195.30.94.28` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 
+<a name="digitale-gesellschaft"></a>
+
+### Digitale Gesellschaft DNS
+
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Hosted in Zurich, Switzerland
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `185.95.218.42` and `185.95.218.43`          | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a05:fc84::42` and `2a05:fc84::43`            | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://dns.digitale-gesellschaft.ch/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dns.digitale-gesellschaft.ch` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
 <a name="libre-dns"></a>
 
 ### LibreDNS
@@ -936,6 +968,60 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46` | <a href="sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG5zb3Rscy5sYWIubmljLmNs">Add to AdGuard</a>  |
 | DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | <a href="sdns://AwAAAAAAAAAAAAAhdGxzOi8vdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0">Add to AdGuard</a>  |
+
+<a name="pi-dns"></a>
+
+### PI-DNS
+
+[PI-DNS](https://pi-dns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `88.198.91.187` | `Central Europe` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a01:4f8:1c0c:8233::1`  | `Central Europe` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.centraleu.pi-dns.com/dns-query`  | `Central Europe`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.centraleu.pi-dns.com` | `Central Europe` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `95.216.181.228` | `North Europe` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a01:4f9:c01f:4::abcd`  | `North Europe` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.northeu.pi-dns.com/dns-query`  | `North Europe`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.northeu.pi-dns.com` | `North Europe` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `45.67.219.208` | `West USA` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a04:bdc7:100:70::abcd`  | `West USA` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.westus.pi-dns.com/dns-query`  | `West USA`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.westus.pi-dns.com` | `West USA` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `185.213.26.187` | `East USA` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2a0d:5600:33:3::abcd`  | `East USA` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.eastus.pi-dns.com/dns-query`  | `East USA`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.eastus.pi-dns.com` | `East USA` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `45.63.30.163` | `East Australia` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2001:19f0:5801:b7c::1`  | `East Australia` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.eastau.pi-dns.com/dns-query`  | `East Australia`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.eastau.pi-dns.com` | `East Australia` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+| Protocol       | Address                             | Location      |                |
+|----------------|-------------------------------------|---------------|----------------|
+| DNS, IPv4      | `66.42.33.135` | `East Asia` | <a href="sdns://AAAAAAAAAAAADzE3Ni4xMDMuMTMwLjEzMA">Add to AdGuard</a> |
+| DNS, IPv6      | `2001:19f0:7001:225d::1`  | `East Asia` | <a href="sdns://AAAAAAAAAAAAFFsyYTAwOjVhNjA6OmFkMTowZmZd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.eastas.pi-dns.com/dns-query`  | `East Asia`| <a href="sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.eastas.pi-dns.com` | `East Asia` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vZG5zLmFkZ3VhcmQuY29t">Add to AdGuard</a> |
+
+
+PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. This can be used if you don’t want to specify any specific server to connect to. Make sure you understand Cloudflare’s privacy policy before using this endpoint.
+
+Endpoint: `https://doh.pi-dns.com/dns-query`
+(Only this endpoint (doh.pi-dns.com) goes through Cloudflare).
 
 <a name="seby-dns"></a>
 
