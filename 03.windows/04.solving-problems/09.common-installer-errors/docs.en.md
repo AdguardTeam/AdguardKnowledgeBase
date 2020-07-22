@@ -72,6 +72,8 @@ If you got this error code, chances are you have interrupted the installation pr
 
 The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
 
+- Press the **Win** key, search for **Command Prompt** and run it. There, type in `sfc /scannow` and press **Enter**.
+
 - Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
 
 - Uninstall AdGuard using our special [uninstall tool](https://kb.adguard.com/en/windows/installation#advanced) and then repeat the installation.
