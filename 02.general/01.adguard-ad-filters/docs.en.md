@@ -210,7 +210,7 @@ A filter composed from several other filters (AdGuard Base filter, Social media
 
 ## Safari filter
 
-**This filter is obsolete and no more used by AdGuard.**
+**This filter is obsolete. It's not supported anymore and we do not recommend to use it. It was incorporated into AdGuard Base filter.**
 
 Special filter for Safari 9 and above on iOS and MacOS to use in combination with AdGuard (or other) filter lists. We need a seperate filter because Safari's Content Blocking API does not fully support AdGuard's advanced rules syntax. This filter is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
