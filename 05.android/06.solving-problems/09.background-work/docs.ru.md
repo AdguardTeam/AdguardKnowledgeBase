@@ -49,18 +49,19 @@ taxonomy:
 
 Чтобы приложение успешно работало в фоновом режиме, настройте следующие параметры:
 
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1ru.png" width="300">
 
 - *Настройки* > *Батарея и производительность* > отключите режим *«Экономия энергии»*
 
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2ru.png" width="300">
 
 - Затем откройте настройки *Контроль фоновой активности* > *AdGuard* > *Нет ограничений*
 
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3ru.png" width="300">
 
 
 #### Управление питанием
+
 
 Пожалуйста, включите:
 
@@ -126,25 +127,25 @@ taxonomy:
 
  1. Начните **Device care** с настроек телефона
 
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1ru.png" width="300">
 
  2. Нажмите на кнопку **Батарея**
 
- <img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2ru.png» width=«400» />
+ <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2ru.png" width="300">
 
  3. Нажмите на иконку меню в виде **трёх точек** > **Настройки**
 
- <img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3ru.png" width="300">
 
  4. Отключить все переключатели (кроме Уведомлений)
  
  5. Нажмите на **Приложения в спящем режиме**
 
- <img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45ru.png» width=«400» />
-
+ <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45ru.png" width="300">
+ 
  6. «Разбудите» все приложения с помощью значка мусорной корзины
 
- <img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6ru.png" width="300">
 
  > **Важно**: Убедитесь, что функции «Перевод в режим сна» и «Автоотключение приложений» отключены. В противном случае Samsung вернёт ваши приложения в спящий режим через несколько дней (по умолчанию через три), даже если вы разбудили их вручную!
  
@@ -376,3 +377,5 @@ Android на заводской прошивке как правило не ко
  - Выберите пункт "Постоянная VPN" 
  
  <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/stockadguard.png" width="300">
+
+
