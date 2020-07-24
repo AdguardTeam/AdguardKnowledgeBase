@@ -26,11 +26,11 @@ taxonomy:
 
 2) На открывшейся странице кликните **Добавить в Chrome**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_chromestore_ru.png" style="max-width: 650px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_chromestore_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 650px;" />
 
 3) Подтвердите установку, нажав кнопку **Добавить расширение**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addchrome_ru.png" style="max-width: 350px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addchrome_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 350px;" />
 
 AdGuard VPN для Chrome успешно установлен!
 
@@ -45,7 +45,7 @@ AdGuard VPN для Chrome успешно установлен!
 
 2) В открывшемся всплывающем окошке сликните по кнопке **Добавить**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addfirefox_ru.png" style="max-width: 400px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addfirefox_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 
 AdGuad VPN для Firefox успешно установлен!
 
@@ -60,7 +60,7 @@ AdGuad VPN для Firefox успешно установлен!
 
 2) Нажмите **Установить**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/android_store_ru.png" style="max-width: 400px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/android_store_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 
 3) Подождите, пока закончится процесс загрузки, и нажмите **Открыть**.
 

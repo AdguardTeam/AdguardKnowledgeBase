@@ -26,11 +26,11 @@ To install AdGuard VPN Chrome browser extension:
 
 2) On the opened page click **Add to Chrome**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_chromestore_en.png" style="max-width: 650px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_chromestore_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 650px;" />
 
 3) Confirm by clickimg **Add extension**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addchrome_en.png" style="max-width: 350px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addchrome_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 350px;" />
 
 AdGuard VPN for Chrome is successfully installed!
 
@@ -45,7 +45,7 @@ To install AdGuard VPN for Firefox browser extension:
 
 2) In the pop-up window click **Add**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addfirefox_en.png" style="max-width: 350px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addfirefox_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 350px;" />
 
 AdGuad VPN for Firefox is successfully installed!
 
@@ -60,7 +60,7 @@ To install AdGuard VPN for Android:
 
 2) Tap **Install**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/android_store_en.png" style="max-width: 400px" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/android_store_en.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 
 3) Wait until the downloading process is complete and then tap **Open**.
 
