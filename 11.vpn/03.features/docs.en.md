@@ -8,15 +8,31 @@ taxonomy:
 
 AdGuard VPN is a VPN service created by our company. An in-house developed VPN protocol makes it unique among competitors. AdGuard VPN is currently available as a browser extension for Chrome and Firefox and as a mobile app for Android; apps for IOS, Mac and Windows are coming soon. Both app and extensions have a free, basic plan and a paid subscription with more possibilities.
 
+[AdGuard VPN protocol](#protocol)
+[Fastest endpoints](#endpoints)
+[Subscriptions](#subscriptions)
+[Common user account](#account)
+[AdGuard VPN Browser Extension features](#extension)
+[AdGuard VPN for Android features](#android)
+
+
+<a name="protocol"></a>
+
 ## AdGuard VPN protocol
 
 Some VPNs are too easy to detect which makes them vulnerable and unreliable. We took a long time to develop and deliberate over our own solution. The result was AdGuard VPN protocol, perfect for uncompromised security. It disguises itself as normal traffic, so it is much more difficult to track and block it.
+
+
+<a name="endpoints"></a>
 
 ## Fastest endpoints with pings
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_endpoints_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 Among other things, VPN operating speed depends on the number of VPN servers and their bandwidth. AdGuard VPN has a plethora of servers with unlimited bandwidth dispersed worldwide. The closer a server is located to you, the faster the connection. The response time of each server is called a *ping* and is displayed right next to it. The top 3 fastest servers are highlighted in green, so it is very simple to pick the most optimal one.
+
+
+<a name="subscriptions"></a>
 
 ## Subscriptions
 
@@ -30,9 +46,15 @@ As it was mentioned at the beginning of this article, there are two options: fre
 
 Correspondingly, the paid version offers **unlimited** traffic and speed, yet the number of devices stays the same.
 
+
+<a name="account"></a>
+
 ## Common user account/Integration with AdGuard
 
 Finally, AdGuard VPN subscriptions are integrated in AdGuard personal account. So, if you have it, AdGuard VPN will be present [there](http://my.adguard.com/), too. A common user account is very convenient: all purchases, license keys and subscriptions will be in the same place.
+
+
+<a name="extension"></a>
 
 ## Extension-specific functions
 
@@ -53,6 +75,9 @@ The second tab *Settings* features a function that blocks WebRTC – a program t
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_dns_en.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 
 You can choose from several available DNS servers – by [AdGuard](https://kb.adguard.com/en/dns/overview), Google, Cloudflare, Cisco, or IBM (Quad9). Some of them remove ads and trackers from your device, others enable safe search and adult content blocking, still others protect your device from malware, phishing and spyware. It is not yet possible to add a custom DNS server in extension settings, but it can be done in AdGuard VPN for Android.
+
+
+<a name="android"></a>
 
 ## AdGuard VPN for Android
 
