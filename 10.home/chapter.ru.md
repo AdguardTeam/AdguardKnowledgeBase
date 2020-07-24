@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Раздел 8
+### Раздел 10
 
 # AdGuard Home
 

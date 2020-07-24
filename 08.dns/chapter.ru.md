@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Раздел 7
+### Раздел 8
 
 # AdGuard DNS
 

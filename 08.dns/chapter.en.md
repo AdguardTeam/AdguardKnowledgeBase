@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Chapter 7
+### Chapter 8
 
 # AdGuard DNS
 
