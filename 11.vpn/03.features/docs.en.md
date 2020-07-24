@@ -1,5 +1,5 @@
 ---
-title: Features
+title: AdGuard VPN features
 published: true
 taxonomy:
     category:

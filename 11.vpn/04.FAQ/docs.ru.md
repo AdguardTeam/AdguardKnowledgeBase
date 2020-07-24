@@ -1,5 +1,5 @@
 ---
-title: Функции AdGuard VPN
+title: FAQ
 published: true
 taxonomy:
     category:
