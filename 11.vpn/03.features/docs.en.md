@@ -49,7 +49,7 @@ Correspondingly, the paid version offers **unlimited** traffic and speed, yet th
 
 <a name="account"></a>
 
-## Common user account/Integration with AdGuard
+## Common user account
 
 Finally, AdGuard VPN subscriptions are integrated in AdGuard personal account. So, if you have it, AdGuard VPN will be present [there](http://my.adguard.com/), too. A common user account is very convenient: all purchases, license keys and subscriptions will be in the same place.
 
