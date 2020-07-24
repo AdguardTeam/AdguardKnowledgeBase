@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Chapter 6
+### Chapter 7
 
 # AdGuard Content Blocker
 

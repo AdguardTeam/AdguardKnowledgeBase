@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Chapter 5
+### Chapter 6
 
 # AdGuard for Safari
 

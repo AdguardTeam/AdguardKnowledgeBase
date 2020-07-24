@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Chapter 7
+### Chapter 5
 
 # AdGuard for iOS
 

@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Раздел 5
+### Раздел 6
 
 # AdGuard для Safari
 

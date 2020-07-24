@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### Раздел 6
+### Раздел 7
 
 # AdGuard Content Blocker
 
