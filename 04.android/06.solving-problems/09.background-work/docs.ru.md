@@ -165,6 +165,8 @@ taxonomy:
 
    <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglock.png" width="300">
 
+<a id="Huawei"></a>
+
  ## Huawei
  
 
