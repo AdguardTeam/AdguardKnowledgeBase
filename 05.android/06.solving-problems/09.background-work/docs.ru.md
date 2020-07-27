@@ -165,6 +165,8 @@ taxonomy:
 
    <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/samsunglock.png" width="300">
 
+<a id="Huawei"></a>
+
  ## Huawei
  
 
@@ -173,14 +175,15 @@ taxonomy:
 
 - *Настройки телефона* > *Батарея* > *Запуск приложений*. Активируйте у нужного приложения «Управление вручную» и убедитесь, что все тумблеры включены.
  
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1ru.png" width="300">
 
 1. *Настройки телефона* > *Батарея* > *Запуск приложений*. На некоторых устройствах эта функция может быть недоступна или названа по-другому.
 
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2ru.png» width=«400» />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2ru.png" width="300">
 
 2. Выключите «Управлять всем автоматически»
-<img src=«https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3ru.png» width=«400» />
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3ru.png" width="300">
 
 3. Убедитесь, что вы **включили** все тумблеры.
 
@@ -190,7 +193,7 @@ taxonomy:
 
 > Важно: На некоторых телефонах с EMUI 9 и позже (Android P+) Huawei представили новый менеджер процессов (task killer), названный PowerGenie. Это приложение закрывает все приложения, не находящиеся в белом списке Huawei, и не предоставляет пользователям никакие параметры конфигурации. Ниже описано, как его удалить.
 
-uawei чрезвычайно изобретательны в оптимизации ресурсов, используемых сторонники приложениями на своих устроствах. В дополнение ко всем нестандартным мерам управления питанием, описанным ниже, они представили новое приложение-менеджер процессов, встроенное прямо в EMUI 9 на Android Pie.
+Huawei чрезвычайно изобретательны в оптимизации ресурсов, используемых сторонники приложениями на своих устроствах. В дополнение ко всем нестандартным мерам управления питанием, описанным ниже, они представили новое приложение-менеджер процессов, встроенное прямо в EMUI 9 на Android Pie.
 
 Оно называется **PowerGenie** и «убивает» все приложения не из его белого списка. Вы не можете добавлять собственные приложения в предопределённый белый список. Это означает, что удаление Power Genie – единственный способ исправить правильную функциональность приложения на Huawei.
 
