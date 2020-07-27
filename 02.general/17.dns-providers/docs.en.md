@@ -456,8 +456,8 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 |----------------|-------------------------------------|---------------|----------------|
 | DNS, IPv4 | `92.38.152.163` and `93.115.24.204` | `West` | <a href="sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM">Add to AdGuard</a> |
 | DNS, IPv6 | `2a03:90c0:56::1a5` and `2a02:7b40:5eb0:e95d::1` | `West` | <a href="sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`| <a href="sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l">Add to AdGuard</a> |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443`| <a href="sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`  | `West` | <a href="sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l">Add to AdGuard</a> |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | `West` | <a href="sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | `West` | <a href="sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://dns.comss.one` | `West` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLmNvbXNzLm9uZQ">Add to AdGuard</a> |
 
