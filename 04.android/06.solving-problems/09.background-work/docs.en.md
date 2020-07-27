@@ -175,7 +175,7 @@ For early Samsung devices, there is no huge need for setting up the background w
 
 - *Phone settings* > *Battery* > *App launch* and then set your app to “Manage manually” and make sure everything is turned on.
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.png" width="400" />
 
 1. *Phone settings > Battery > App launch*. This feature may or may not be available for all devices or labeled differently.
 
