@@ -603,7 +603,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### Ali DNS
 
-Ali DNS is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It include AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It include AliGuard facility to protect users from various attacks and threats.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -639,7 +639,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### 360 Secure DNS
 
-360 Secure DNS is a industry-leading recursive DNS service with advanced network security threats protection.
+**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threats protection.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -676,7 +676,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### 114DNS
 
-114DNS is a professional and high-reliability DNS service.
+**114DNS** is a professional and high-reliability DNS service.
 
 #### Normal
 
@@ -719,7 +719,7 @@ These servers block adult websites and inappropriate contents.
 
 ### OneDNS
 
-OneDNS is a secure, fast, free niche DNS service with malicious domains blocking facility.
+**OneDNS** is a secure, fast, free niche DNS service with malicious domains blocking facility.
 
 #### Pure Edition
 
