@@ -49,7 +49,7 @@ taxonomy:
 
 * [How to manage AdGuard notifications?](#notifications)
 
-* [Problems caused by using a Restricted Mode profile](#restricted_account)
+* [Problems caused by using a Restricted Mode profile](#restrictedaccount)
 
 
 <a id="wtf"></a>
@@ -433,7 +433,7 @@ Here you can choose from the options:
 
 Please note: if the icon is removed, Android can stop AdGuard functioning any time. That's why we do not recommend you to choose "None" option. Please use "Notification without icon" instead.
 
-<a id="restricted_account"></a>
+<a id="restrictedaccount"></a>
 
 ##  Problems caused by using a **Restricted Mode** profile
 
