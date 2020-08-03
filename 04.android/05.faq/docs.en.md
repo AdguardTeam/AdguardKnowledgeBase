@@ -437,7 +437,7 @@ Please note: if the icon is removed, Android can stop AdGuard functioning any ti
 
 ##  Problems caused by using a **Restricted Mode** profile
 
-Some models of phones, tablets, or TVs running the Android operating system may have problems using a profile with **Restricted Mode**. If you have this profile, AdGuard, like other applications that use VPN, gets a restriction on selective filtering of VPN traffic. As a result, AdGuard starts filtering itself. This may lead to its malfunctioning and cause problems in other applications. The following describes what you can do if there is a problem creating a **local VPN** on your device.
+The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Below are described the recommendations that you can apply when a problem occurs.
 
 #### Problem solution options
 
@@ -447,5 +447,5 @@ Some models of phones, tablets, or TVs running the Android operating system may 
 
 - [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
 - Connect your device to a computer;
-- Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS)
+- Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
 - Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
