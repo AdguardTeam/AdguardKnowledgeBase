@@ -49,6 +49,8 @@ taxonomy:
 
 * [How to manage AdGuard notifications?](#notifications)
 
+* [Problems caused by using a Restricted Mode profile](#restrictedaccount)
+
 
 <a id="wtf"></a>
 ## What is AdGuard? ##
@@ -430,3 +432,20 @@ Here you can choose from the options:
 + **None** (you will see neither notification nor icon)
 
 Please note: if the icon is removed, Android can stop AdGuard functioning any time. That's why we do not recommend you to choose "None" option. Please use "Notification without icon" instead.
+
+<a id="restrictedaccount"></a>
+
+##  Problems caused by using a **Restricted Mode** profile
+
+The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Below are described the recommendations that you can apply when a problem occurs.
+
+#### Problem solution options
+
+1. Remove a **restricted user account**;
+2. Use AdGuard in **HTTP proxy mode** (*AdGuard Settings > Network > Filtering algorithm > HTTP proxy*);
+3. Allow *AdGuard* interaction between users to selectively filter traffic via [adb](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+
+- [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+- Connect your device to a computer;
+- Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
+- Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
