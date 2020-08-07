@@ -20,7 +20,7 @@ AdGuard Browser Assistant is a browser extension, it is installed in a browser, 
 If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](https://kb.adguard.com/en/browser-extensions/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
  
 Background information:  
-> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with an AdGuard desktop app (for Windows or for Mac), the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
+> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
  
 > The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension. 
 
@@ -32,7 +32,7 @@ When AdGuard for Windows is installed for the first time, the thing a user encou
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/Windows/v7.4/onboarding_en.png?1" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
-> On rare occasions, a browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
+> On rare occasions, the default browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
 
 ## Separate tab in settings
 
