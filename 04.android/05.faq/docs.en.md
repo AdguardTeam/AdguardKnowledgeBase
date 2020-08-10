@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-* [What is AdGuard?](#wtf)
+* [What is AdGuard?](#adguard)
 * [How does AdGuard protection work?](#howitworks)
 * [Do I need the ROOT access?](#root)
 * [How to manually configure a local HTTP proxy?](#http)
@@ -29,7 +29,8 @@ taxonomy:
 * [How to manage AdGuard notifications?](#notifications)
 
 
-<a id="wtf"></a>
+<a id="adguard"></a>
+
 ## What is AdGuard? ##
 
 AdGuard is a remarkable internet filter that protects you from annoying advertising, malicious and phishing websites, online tracking and much more. AdGuard handles all types of Internet ads, speeds up page loading, saves bandwidth and increases your device protection against possible threats.

@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Below are described the recommendations that you can apply when a problem occurs.
+The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual app/Dual manager profile** on your gadget. Below are described the recommendations that you can apply when this problem occurs.
 
 #### Problem solution options
 
@@ -20,8 +20,10 @@ The owners of phones, tablets, or TVs running the Android 7+ operating system mi
 - Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
 - Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
-4. Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual app/Dual manager** function (which automatically creates a restricted profile).
-To solve this issue problem, you need to disable this feature.
+### **LG** and **Samsung** devices
+
+Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual app/Dual manager** function (which automatically creates a restricted profile).
+To solve this issue, you need to disable this feature.
 
 #### Samsung
 - Open **Settings**;
