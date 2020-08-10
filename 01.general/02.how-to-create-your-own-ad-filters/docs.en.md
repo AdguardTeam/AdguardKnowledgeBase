@@ -77,8 +77,8 @@ visible: true
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
+            * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
             * [Selectors debugging mode](#selectors-debugging-mode)
-            * [Pseudo-property `remove`](#pseudo-property-remove)
             * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
@@ -1249,7 +1249,8 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 #### Pseudo-class `:xpath()`
 
 This pseudo-class allows to select an element by evaluating an XPath expression.
-> **Limited to work properly only at the end of selector.**
+
+> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
 
 The `:xpath(...)` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath(...)` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath(...)` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
 
@@ -1282,7 +1283,7 @@ This pseudo-class allows to lookup the nth ancestor relative to the currently se
 
 It is a low-overhead equivalent to `:xpath(..[/..]*)`.
 
-> **Limited to work properly only at the end of selector.**
+> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
 
 #### `:nth-ancestor()` syntax
 
@@ -1308,7 +1309,7 @@ div:has-text(/test/):nth-ancestor(2)
 
 This pseudo-class allows to lookup the ancestor relative to the currently selected node.
 
-> **Limited to work properly only at the end of selector.**
+> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
 
 #### `:upward()` syntax
 
@@ -1339,6 +1340,35 @@ div.test:upward(4)
 div:has-text(/test/):upward(2)
 ```
 
+<a id="remove-pseudos"></a>
+##### Pseudo-class `:remove()` and pseudo-property `remove`
+
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
+
+> **Pseudo-class `:remove()` is limited to work properly only at the end of selector.**
+
+**Syntax**
+```
+! pseudo-class
+selector:remove()
+
+! pseudo-property
+selector { remove: true; }
+```
+- `selector` — a plain CSS selector, or a Sizzle compatible selector
+
+**Examples**
+```
+div.inner:remove()
+div:has(> div[ad-attr]):remove()
+div:xpath(../..):remove()
+
+div:contains(target text) { remove: true; }
+div[class]:has(> a:not([id])) { remove: true; }
+```
+
+> Please note, that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
+
 <a id="selectors-debugging-mode"></a>
 ##### Selectors debugging mode
 
@@ -1353,13 +1383,6 @@ Sometimes, you might need to check the performance of a given selector or a styl
 ```
 #$#.banner { display: none; debug: global; }
 ```
-<a id="pseudo-property-remove"></a>
-### Pseudo-property `remove`
-Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use a special style property: `remove`.
-
-`.banner { remove: true; }`
-
-> Please note, that other style properties will be ignored if `remove` is specified.
 
 <a id="testing-extended-selectors"></a>
 ##### Testing extended selectors
