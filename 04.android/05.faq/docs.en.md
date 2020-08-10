@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-* [What is AdGuard?](#adguard)
+* [What is AdGuard?](#wtf)
 * [How does AdGuard protection work?](#howitworks)
 * [Do I need the ROOT access?](#root)
 * [How to manually configure a local HTTP proxy?](#http)
@@ -29,7 +29,7 @@ taxonomy:
 * [How to manage AdGuard notifications?](#notifications)
 
 
-<a id="adguard"></a>
+<a id="wtf"></a>
 
 ## What is AdGuard? ##
 
