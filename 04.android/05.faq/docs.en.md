@@ -6,50 +6,27 @@ taxonomy:
 ---
 
 * [What is AdGuard?](#wtf)
-
 * [How does AdGuard protection work?](#howitworks)
-
 * [Do I need the ROOT access?](#root)
-
 * [How to manually configure a local HTTP proxy?](#http)
-
 * [How to use a third-party VPN along with AdGuard?](#vpn)
-
 * [What restrictions does a VPN mode have?](#restrictions)
-
 * [When asked to enable VPN, I cannot tick the "I trust" checkbox. Why?](#trust)
-
 * [Why do I get a "VPN is not supported" dialog message?](#supp)
-
 * [Why do Android stats show that AdGuard consumed more traffic than it saved?](#traf)
-
 * [Why Wi-Fi and USB tethering do not work with AdGuard?](#usb)
-
 * [Which browsers are not supported by AdGuard?](#browsers)
-
 * [Why a VPN can not be started on Android 5.0?](#a5)
-
 * [How to resolve known compatibility issues with other apps?](#apps)
-
 * [Why is the firewall's function partial and the data stats not that accurate in proxy mode?](#prxy)
-
 * [Then, the proxy mode is bad?](#badproxy)
-
 * [Why are some apps excluded?](#excluded)
-
 * [How does DNS filtering work?](#DNS)
-
 * [How does HTTPS filtering work?](#https)
-
 * [All right, how can I enable it?](#how)
-
 * [How to remove a certificate from the system?](#remove)
-
 * [What is the difference between AdGuard filtering methods?](#methods)
-
 * [How to manage AdGuard notifications?](#notifications)
-
-* [Problems caused by using a Restricted Mode profile](#restrictedaccount)
 
 
 <a id="wtf"></a>
@@ -433,19 +410,4 @@ Here you can choose from the options:
 
 Please note: if the icon is removed, Android can stop AdGuard functioning any time. That's why we do not recommend you to choose "None" option. Please use "Notification without icon" instead.
 
-<a id="restrictedaccount"></a>
 
-##  Problems caused by using a **Restricted Mode** profile
-
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Below are described the recommendations that you can apply when a problem occurs.
-
-#### Problem solution options
-
-1. Remove a **restricted user account**;
-2. Use AdGuard in **HTTP proxy mode** (*AdGuard Settings > Network > Filtering algorithm > HTTP proxy*);
-3. Allow *AdGuard* interaction between users to selectively filter traffic via [adb](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
-
-- [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
-- Connect your device to a computer;
-- Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
-- Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
