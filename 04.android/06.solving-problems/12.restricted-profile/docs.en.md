@@ -34,7 +34,6 @@ To solve this issue, you need to disable this feature.
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
-
 #### LG
 
 - Open **Settings**;
