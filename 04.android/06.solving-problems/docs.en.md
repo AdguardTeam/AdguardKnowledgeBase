@@ -14,5 +14,6 @@ taxonomy:
 * [How to block ads in Youtube app](http://kb.adguard.com/en/android/solving-problems/youtube-ads)
 * [How to setup the outbound proxy](https://kb.adguard.com/en/android/solving-problems/adguard-outbound-proxy)
 * [How to protect AdGuard from being disabled by the system](https://kb.adguard.com/en/android/solving-problems/background-work)
+* [Problems caused by using a Restricted Mode profile](https://kb.adguard.com/en/android/solving-problems/restricted-profile)
 
 This section is regularly updated. If you haven't found a solution to your problem in our knowledge base, [AdGuard Support Team](http://kb.adguard.com/en/technical-support) will be happy to help.
