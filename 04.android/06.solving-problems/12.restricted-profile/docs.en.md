@@ -28,7 +28,7 @@ You have three ways to solve the issue:
 >  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
 2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
-3. Connect your device using the **USB cable** to the computer or laptop on which you installed **ADB**;
+3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 4. Open **the command line** on your PC: 
 - **Cmd.exe** if you are using **Windows**;
 - **Terminal** if you are using **macOS**;
@@ -36,7 +36,13 @@ You have three ways to solve the issue:
 
 #### Option 2: Remove *restricted user account*
 
-#### Option 3: Use AdGuard in *HTTP proxy mode* (requires root)
+About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+
+> Please note, that in some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+
+#### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+
+To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
 
 ### LG and Samsung devices
 
