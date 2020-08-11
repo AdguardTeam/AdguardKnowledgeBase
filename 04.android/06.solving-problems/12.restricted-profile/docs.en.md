@@ -9,43 +9,34 @@ taxonomy:
 
 The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual app/Dual messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
 
-### Problem solution options
+### Solutions
 
 You have three ways to solve the issue:
 
-#### Option 1
+#### Option 1: Grant permissions to AdGuard using ADB
 
-- #### Grant permissions to AdGuard using [ADB](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the nightly version [here](adguard.com/beta.html).
 
-> Available on [AdGuard v3.5 Nighty 6](https://static.adguard.com/android/nightly/adguard-3.5.33.apk) and [above](agrd.io/android_nightly)
+1. Activate **developer mode** and enable **USB debugging**:
+- Open the **Settings** application on your phone;
+- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
 
-> Activate **developer mode** and enable **USB debugging** if its necessary:
-> - Open the **Settings** application on your phone;
-> - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
+- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debbuging** after reading the warning carefully.
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode1en.png" width="600">
+>  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
-> - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+3. Connect your device using the **USB cable** to the computer or laptop on which you installed **ADB**;
+4. Open **the command line** on your PC: 
+- **Cmd.exe** if you are using **Windows**;
+- **Terminal** if you are using **macOS**;
+5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode2en.png" width="600">
+#### Option 2: Remove *restricted user account*
 
-> - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debbuging** after reading the warning carefully.
-
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode3en.png" width="600">
-
-2. Connect your device to a computer;
-3. Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
-4. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
-
-#### Option 2
-
-- #### Remove a *restricted user account*;
-
-#### Option 3
-
-- #### Use AdGuard in *HTTP proxy mode* (*AdGuard Settings > Network > Filtering algorithm HTTP proxy*);
+#### Option 3: Use AdGuard in *HTTP proxy mode* (requires root)
 
 ### LG and Samsung devices
 
