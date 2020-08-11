@@ -10,14 +10,41 @@ taxonomy:
 
 ### Варианты решения проблемы
 
-1. Удалить учетную запись с **ограниченным доступом**;
-2. Использовать AdGuard в режиме **HTTP прокси** (*Настройки AdGuard > Сеть > Алгоритм фильтрации > HTTP прокси*);
-3. Разрешить *AdGuard* взаимодействие между пользователями для выборочной фильтрации трафика через [**adb**](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+Есть три пути решения проблемы:
 
-- [Установить и настроить](https://www.xda-developers.com/install-adb-windows-macos-linux/) **adb**;
-- Подключить устройство к компьютеру;
-- Открыть **командную строку**(*Cmd.exe*)/**Терминал**(если используется MAC OS)
-- Ввести команду `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` и нажать **Enter**.
+#### Вариант 1
+
+- #### Разрешить *AdGuard* взаимодействие между пользователями для выборочной фильтрации трафика через [**adb**](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+
+> Доступно на версии [AdGuard v3.5 Nighty 6](https://static.adguard.com/android/nightly/adguard-3.5.33.apk) и [выше](agrd.io/android_nightly)
+
+1. [Установить и настроить](https://www.xda-developers.com/install-adb-windows-macos-linux/) **adb**;
+
+> При необходимости активировать **Режим разработчика** и разрешить **отладку по USB**:
+> - Открыть приложение **Настройки** на вашем телефоне;
+> - Перейти в раздел **Система** (последний пункт меню настроек). В этом разделе найти подпункт **О телефоне**;
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermoderu.png" width="600">
+
+> - Клинуть по строке **Номер сборки** 7 раз. После этого, вы получите уведомление о том, что стали разработчиком (При необходимости ввести код разблокировки устройства);
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode2ru.png" width="600">
+
+> - Открыть настройки **системы** > **Для разработчиков** > Прокрутить вниз и включить **отладку по USB** > Подтвердить включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode3ru.png" width="600">
+
+2. Подключить устройство к компьютеру;
+3. Открыть **командную строку**(*Cmd.exe*)/**Терминал**(если используется MAC OS)
+4. Ввести команду `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` и нажать **Enter**.
+
+#### Вариант 2
+
+- #### Удалить учетную запись с *ограниченным доступом*;
+
+#### Вариант 3
+
+- #### Использовать AdGuard в режиме *HTTP прокси* (*Настройки AdGuard > Сеть > Алгоритм фильтрации > HTTP прокси*);
 
 ### Устройства LG и Samsung 
 

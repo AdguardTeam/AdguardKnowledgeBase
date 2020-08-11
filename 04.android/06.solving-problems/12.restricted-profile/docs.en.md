@@ -11,14 +11,41 @@ The owners of phones, tablets, or TVs running the Android 7+ operating system mi
 
 ### Problem solution options
 
-1. Remove a **restricted user account**;
-2. Use AdGuard in **HTTP proxy mode** (*AdGuard Settings > Network > Filtering algorithm > HTTP proxy*);
-3. Allow *AdGuard* interaction between users to selectively filter traffic via [adb](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+You have three ways to solve the issue:
 
-- [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
-- Connect your device to a computer;
-- Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
-- Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+#### Option 1
+
+- #### Grant permissions to AdGuard using [ADB](https://developer.android.com/studio/command-line/adb) (*Android Debug Bridge*):
+
+> Available on [AdGuard v3.5 Nighty 6](https://static.adguard.com/android/nightly/adguard-3.5.33.apk) and [above](agrd.io/android_nightly)
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+
+> Activate **developer mode** and enable **USB debugging** if its necessary:
+> - Open the **Settings** application on your phone;
+> - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode1en.png" width="600">
+
+> - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode2en.png" width="600">
+
+> - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debbuging** after reading the warning carefully.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/developermode3en.png" width="600">
+
+2. Connect your device to a computer;
+3. Open **the command line** (*Cmd.exe*)/**Terminal** (if you are using MAC OS);
+4. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+
+#### Option 2
+
+- #### Remove a *restricted user account*;
+
+#### Option 3
+
+- #### Use AdGuard in *HTTP proxy mode* (*AdGuard Settings > Network > Filtering algorithm HTTP proxy*);
 
 ### LG and Samsung devices
 
