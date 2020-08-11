@@ -1,5 +1,5 @@
 ---
-title: 'Manually install the security certificate in FireFox browser'
+title: 'Manual installation of the security certificate into Firefox browser'
 published: false
 taxonomy:
     category:
