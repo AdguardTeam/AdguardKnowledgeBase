@@ -1200,9 +1200,9 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 - `property-name` — a name of CSS property to check the element for
 - `pattern` —  a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regex/`.
 
-> For non-regex patterns, (`,`),[`,`] must be unescaped, because we require escaping them in the filtering rules.
+> For non-regex patterns, `(`,`)`,`[`,`]` must be unescaped, because we require escaping them in the filtering rules.
 
-> For regex patterns, ",\ should be escaped, because we manually escape those in extended-css-selector.js.
+> For regex patterns, `"` and `\` should be escaped, because we manually escape those in extended-css-selector.js.
 
 **Examples**
 
