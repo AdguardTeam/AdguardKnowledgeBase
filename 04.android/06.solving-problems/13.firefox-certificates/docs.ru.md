@@ -48,5 +48,5 @@ taxonomy:
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxx.default/key4.db sdcard/Download`
 - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default` 
 - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`
-> Если `adb shell su` не срабатывает, изначально следует попробовать применить `adb shell`, а уже после `su`
+> Если `adb shell su` не срабатывает, изначально следует попробовать применить `adb shell`, а уже после `su`.
 
