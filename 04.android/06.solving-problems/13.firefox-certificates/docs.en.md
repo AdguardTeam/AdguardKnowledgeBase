@@ -15,15 +15,15 @@ Different versions of Firefox require different approaches for AdGuard to perfor
 
 To make Firefox (and browsers based on it) trust user certificates, you need to toggle the hidden option in the browser itself.
 
-1. Run **Firefox** 
-2. Navigate to **about:config** page
-3. Type **root** in the search field
-4. Locate the option “security.enterprise_roots.enabled” and toggle it, making it **true**
+1. Run **Firefox**;
+2. Navigate to **about:config** page;
+3. Type **root** in the search field;
+4. Locate the option “security.enterprise_roots.enabled” and toggle it, making it **true**.
 
 #### Certificate located in the System store
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
-> On the windows platform, **Samsung** owners may need to install [this utility.](https://developer.samsung.com/mobile/android-usb-driver.html)
+> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Activate the **developer mode** and enable **USB debugging**:
 - Open the **Settings** application on your phone;
 - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
@@ -31,7 +31,7 @@ To make Firefox (and browsers based on it) trust user certificates, you need to 
 - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debbuging** after reading the warning carefully.
 3. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
 4. Open the **AdGuard settings** > **Network** > **HTTPS Filtering** > Install the certificate in **Firefox** > Select **stable** option;
-5. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and remember its name.
+5. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
 6. In the specified folder we are interested in two files:
 - `cert9.db`
 - `key4.db`
@@ -49,4 +49,4 @@ The full command should look something like this:
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download `
 - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`. 
 - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`.
-If `adb shell su` does not work, you should try `adb shell` initially, and after `su`.
+If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
