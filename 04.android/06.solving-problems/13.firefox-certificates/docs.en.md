@@ -13,7 +13,7 @@ Different versions of Firefox require different approaches for AdGuard to perfor
 
 #### Certificate locate in the User store
 
-To make Firefox (and browsers based on it) trust system and user certificates, you need to toggle the hidden option in the browser itself.
+To make Firefox (and browsers based on it) trust user certificates, you need to toggle the hidden option in the browser itself.
 
 1. Run **Firefox** 
 2. Navigate to **about:config** page
