@@ -25,6 +25,7 @@ taxonomy:
 > Если у Вас возникли какие-либо трудности или дополнительные вопросы, с полной инструкцией Вы можете ознакомиться [здесь](https://developer.android.com/studio/debug/dev-options).
 
 2. [Установить и настроить](https://www.xda-developers.com/install-adb-windows-macos-linux/) **adb**;
+> При использовании платформы Windows, владельцам **Samsung** может понадобиться установка [данной утилиты](https://developer.samsung.com/mobile/android-usb-driver.html).
 3. Подключить устройство к компьютеру или ноутбуку, на котором установлен ADB, используя **USB кабель**;
 4. Открыть **командную строку** на вашем компьютере:
 - **Cmd.exe** если Вы используете **Windows**;
