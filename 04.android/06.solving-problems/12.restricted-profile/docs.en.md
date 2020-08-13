@@ -17,7 +17,7 @@ You have three ways to solve the issue:
 
 > Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the nightly version [here](adguard.com/beta.html).
 
-1. Activate **developer mode** and enable **USB debugging**:
+1. Activate the **developer mode** and enable **USB debugging**:
 - Open the **Settings** application on your phone;
 - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
 - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
