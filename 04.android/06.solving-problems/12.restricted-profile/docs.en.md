@@ -26,6 +26,7 @@ You have three ways to solve the issue:
 >  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
 2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+> On the windows platform, **Samsung** owners may need to install [this utility.](https://developer.samsung.com/mobile/android-usb-driver.html)
 3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 4. Open **the command line** on your PC: 
 - **Cmd.exe** if you are using **Windows**;
