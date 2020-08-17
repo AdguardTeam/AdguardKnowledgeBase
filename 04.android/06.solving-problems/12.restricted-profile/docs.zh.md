@@ -15,7 +15,7 @@ taxonomy:
 
 ### 方案 1：允许 AdGuard 使用 ADB
 
-> 请注意！该方法仅由 AdGuard v3.5 nightly 6 起可用。如您仍在使用旧版本，您可以[在此处]( https://testkb.adguard.com/en/android/solving-problems/restricted-profile/adguard.com/beta.html)下载 nightly 版本。
+> 请注意！该方法仅由 AdGuard v3.5 nightly 6 起可用。如您仍在使用旧版本，您可以[在此处](https://adguard.com/beta.html)下载 nightly 版本。
 
 1. 激活**开发人员模式**以及启用 **USB 调试**：
 - 在手机上前往**设置**；
@@ -34,7 +34,7 @@ taxonomy:
 
 ### 方案 2：移除受限用户帐户
 
-[在此]( https://support.google.com/a/answer/6223444?hl=en) 可以查看如何在安卓设备上管理用户帐户的相关信息。
+[在此](https://support.google.com/a/answer/6223444?hl=en) 可以查看如何在安卓设备上管理用户帐户的相关信息。
 
 > 请注意！ 在一些情况下，受限用户帐户是自动创建，因而无法被删除。例如，您在**安卓**或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户帐户。您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
 
