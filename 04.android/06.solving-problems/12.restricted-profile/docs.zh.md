@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 
-拥有安卓7+操作系统的手机、笔记本或电视的用户可能会遇到使用**受限模式（Restricted Mode）的配置文件**导致的问题。如您有遇到这种情况，**AdGuard** 与其他使用VPN的应用程序一样进行选择性过滤 VPN 流量时，受其限制。因此，AdGuard 无法使用**本地 VPN 模式**开启保护。除此之外，如您在设备上使用**双开应用/应用分身帐户**也会导致相似的问题。以下是您可以规避该问题的操作。
+拥有安卓7+操作系统的手机、笔记本或电视的用户可能会遇到使用**受限模式（Restricted Mode）的配置文件**导致的问题。如您有遇到这种情况，**AdGuard** 与其他使用 VPN的应用程序一样进行选择性过滤 VPN 流量时，受其限制。因此，AdGuard 无法使用**本地 VPN 模式**开启保护。除此之外，如您在设备上使用**双开应用/应用分身帐户**也会导致相似的问题。以下是您可以规避该问题的操作。
 
 ## 解决方法
 
@@ -28,8 +28,8 @@ taxonomy:
 2. [安装以及配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
 3. 使用**USB电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
 4. 在您的 PC 上打开 **命令行**：
-- 如您使用的是**Windows**,打开 **Cmd.exe**；
-- 如您使用的是**macOS**，打开**终端**；  
+- 如您使用的是 **Windows**,打开 **Cmd.exe**；
+- 如您使用的是 **macOS**，打开**终端**；  
 5. 输入` adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS `的命令并点击**回车键**。
 
 ### 方案 2：移除受限用户帐户
