@@ -15,7 +15,7 @@ You have three ways to solve the issue:
 
 #### Option 1: Grant permissions to AdGuard using ADB
 
-> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the nightly version [here](adguard.com/beta.html).
+> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the nightly version [here](https://adguard.com/en/beta.html).
 
 1. Activate the **developer mode** and enable **USB debugging**:
 - Open the **Settings** application on your phone;
