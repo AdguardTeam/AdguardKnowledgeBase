@@ -57,9 +57,6 @@ taxonomy:
 
 ※端末によってメニュー項目の名称が多少違ったりする場合がございます。
 
-
-
-
 >  上記に関してまだご不明やお困りな点ございましたら、[こちらで](https://developer.android.com/studio/debug/dev-options?hl=ja)さらに詳しい手順をご確認ください。
 
 ❷ADBをインストトールして設定します（方法：[Windows編](https://expnote.com/how-to-install-android-debug-bridge/)、[Mac編](https://child-programmer.com/m-adb/)）。
