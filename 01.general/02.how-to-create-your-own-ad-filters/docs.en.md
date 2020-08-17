@@ -998,7 +998,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 #@#.textad
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 <a id="cosmetic-css-rules"></a>
 ### CSS rules
@@ -1045,7 +1045,7 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@$#.textad { visibility: hidden; }
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other case it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 <a id="extended-css-selectors"></a>
 ### Extended CSS selectors
@@ -1508,7 +1508,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 $@$script[tag-content="banner"]
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 <a id="javascript-rules"></a>
 ## Javascript rules
@@ -1554,7 +1554,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 #@%#window.__gaq = undefined;
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other case it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 <a id="scriptlets"></a>
 ## Scriptlet rules
@@ -1615,7 +1615,7 @@ rules.
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 * `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')`. This rule will apply the corresponding scriptlet only in Safari browser on Mac.
-* `[$app=org.example.app]#@#.textad` — disable all `##.textad` rules for all domains during using `org.example.app`.
+* `[$app=org.example.app]#@#.textad` — disable all `##.textad` rules for all domains while using `org.example.app`.
 
 <a id="non-basic-rules-modifiers-domain"></a>
 ### domain
