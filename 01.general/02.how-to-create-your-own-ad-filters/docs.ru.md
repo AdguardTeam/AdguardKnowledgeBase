@@ -1241,11 +1241,13 @@ div.banner[-ext-matches-css-before="content: /block me/"]
 
 **Синтаксис**
 ```
-selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
+selector:matches-attr("name"[="value"])
 ```
 
-- `nameRegexp` — регулярное выражение для названия атрибута
-- `valueRegexp` — регулярное выражение для значение атрибута
+- `name` — название атрибута ИЛИ регулярное выражение для названия атрибута
+- `value` — необязательно, значение атрибута ИЛИ регулярное выражение для значения атрибута
+
+> Для регулярных выражений символы `"` и `\` должны быть экранированы.
 
 **Примеры**
 
@@ -1275,16 +1277,16 @@ selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
 
 ```
 // для div#targer1
-div:matches-attr(/-link/ = /-banner_/)
+div:matches-attr("/-link/")
 
 // для div#targer2
-div:has(> div:matches-attr(/data-/ = /adbanner/))
+div:has(> div:matches-attr("/data-/"="adbanner"))
 
 // для div#targer3
-div:matches-attr(/-unit/ = /click/):has(> span:contains(ads))
+div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 
 // для div#targer4
-*[class]:matches-attr(/.{5,}delay$/ = /^[0-9]*$/):upward(2)
+*[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
 
 <a id="extended-css-xpath"></a>

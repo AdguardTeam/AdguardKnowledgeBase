@@ -1247,11 +1247,13 @@ This pseudo-class allows to select an element by its attributes, especially if t
 
 **Syntax**
 ```
-selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
+selector:matches-attr("name"[="value"])
 ```
 
-- `nameRegexp` — regular expression for attribute name
-- `valueRegexp` — regular expression for attribute value
+- `name` — attribute name OR regular expression for attribute name
+- `value` — optional, attribute value OR regular expression for attribute value
+
+> For regex patterns, `"` and `\` should be escaped.
 
 **Examples**
 
@@ -1281,16 +1283,16 @@ selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
 
 ```
 // for div#targer1
-div:matches-attr(/-link/ = /-banner_/)
+div:matches-attr("/-link/")
 
 // for div#targer2
-div:has(> div:matches-attr(/data-/ = /adbanner/))
+div:has(> div:matches-attr("/data-/"="adbanner"))
 
 // for div#targer3
-div:matches-attr(/-unit/ = /click/):has(> span:contains(ads))
+div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 
 // for div#targer4
-*[class]:matches-attr(/.{5,}delay$/ = /^[0-9]*$/):upward(2)
+*[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
 
 <a id="extended-css-xpath"></a>
