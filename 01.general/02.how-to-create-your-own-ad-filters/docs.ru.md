@@ -1234,6 +1234,59 @@ div.banner[-ext-matches-css-before="content: block me"]
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
+<a id="extended-css-matches-attr"></a>
+##### Псевдокласс `:matches-attr()`
+
+Этот псевдокласс позволяет выделить элемент по его атрибутам, особенно если они рандомизированы и не постоянные.
+
+**Синтаксис**
+```
+selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
+```
+
+- `nameRegexp` — регулярное выражение для названия атрибута
+- `valueRegexp` — регулярное выражение для значение атрибута
+
+**Примеры**
+
+```html
+<!-- HTML code -->
+<div id="targer1" class="matches-attr" hsd4jkf-link="ssdgsg-banner_240x400"></div>
+
+<div id="targer2" class="has matches-attr">
+  <div data-sdfghlhw="adbanner"></div>
+</div>
+
+<div id="targer3-host" class="matches-attr has contains">
+  <div id="not-targer3" wsdfg-unit012="click">
+    <span>socials</span>
+  </div>
+  <div id="targer3" hrewq-unit094="click">
+    <span>ads</span>
+  </div>
+</div>
+
+<div id="targer4" class="matches-attr upward">
+  <div >
+    <inner-afhhw class="nyf5tx3" nt4f5be90delay="1000"></inner-afhhw>
+  </div>
+</div>
+```
+
+```
+// для div#targer1
+div:matches-attr(/-link/ = /-banner_/)
+
+// для div#targer2
+div:has(> div:matches-attr(/data-/ = /adbanner/))
+
+// для div#targer3
+div:matches-attr(/-unit/ = /click/):has(> span:contains(ads))
+
+// для div#targer4
+*[class]:matches-attr(/.{5,}delay$/ = /^[0-9]*$/):upward(2)
+```
+
 <a id="extended-css-xpath"></a>
 ##### Псевдокласс `:xpath()`
 

@@ -74,6 +74,7 @@ visible: true
             * [Pseudo-class `:if-not()`](#extended-css-has)
             * [Pseudo-class `:contains()`](#extended-css-contains)
             * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+            * [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
@@ -1237,6 +1238,59 @@ div.banner[-ext-matches-css-before="content: block me"]
 
 // Regular expressions
 div.banner[-ext-matches-css-before="content: /block me/"]
+```
+
+<a id="extended-css-matches-attr"></a>
+##### Pseudo-class `:matches-attr()`
+
+This pseudo-class allows to select an element by its attributes, especially if they are randomized.
+
+**Syntax**
+```
+selector:matches-attr(/nameRegexp/ "=" /valueRegexp/)
+```
+
+- `nameRegexp` — regular expression for attribute name
+- `valueRegexp` — regular expression for attribute value
+
+**Examples**
+
+```html
+<!-- HTML code -->
+<div id="targer1" class="matches-attr" hsd4jkf-link="ssdgsg-banner_240x400"></div>
+
+<div id="targer2" class="has matches-attr">
+  <div data-sdfghlhw="adbanner"></div>
+</div>
+
+<div id="targer3-host" class="matches-attr has contains">
+  <div id="not-targer3" wsdfg-unit012="click">
+    <span>socials</span>
+  </div>
+  <div id="targer3" hrewq-unit094="click">
+    <span>ads</span>
+  </div>
+</div>
+
+<div id="targer4" class="matches-attr upward">
+  <div >
+    <inner-afhhw class="nyf5tx3" nt4f5be90delay="1000"></inner-afhhw>
+  </div>
+</div>
+```
+
+```
+// for div#targer1
+div:matches-attr(/-link/ = /-banner_/)
+
+// for div#targer2
+div:has(> div:matches-attr(/data-/ = /adbanner/))
+
+// for div#targer3
+div:matches-attr(/-unit/ = /click/):has(> span:contains(ads))
+
+// for div#targer4
+*[class]:matches-attr(/.{5,}delay$/ = /^[0-9]*$/):upward(2)
 ```
 
 <a id="extended-css-xpath"></a>
