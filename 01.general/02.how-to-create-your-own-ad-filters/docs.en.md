@@ -433,7 +433,7 @@ The rule corresponds to requests for built-in pages (HTML tags `frame` and `ifra
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
 > #### Compatibility with different versions of AdGuard
-> This modifier is only supported in AdGuard browser extension.
+> AdGuard for Windows, macOS and Android often can't accurately determine `navigator.sendBeacon()`. For reliable detection, use the AdGuard browser extensions.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**
