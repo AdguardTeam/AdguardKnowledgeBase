@@ -410,7 +410,7 @@ The rule corresponds to browser plugins resourses. (e.g. Java or Flash).
 The rule corresponds to requests by browser plugins (it's usually Flash).
 
 > #### Compatibility with different versions of AdGuard
-> AdGuard for Windows, macOS and Android often can't accurately determine this type and defines it as `other`.
+> AdGuard for Windows, macOS and Android often can't accurately detect this type and defines it as `other`.
 
 <a id="font-modifier"></a>
 ##### **`font`**
@@ -433,7 +433,7 @@ The rule corresponds to requests for built-in pages (HTML tags `frame` and `ifra
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
 > #### Compatibility with different versions of AdGuard
-> AdGuard for Windows, macOS and Android often can't accurately determine `navigator.sendBeacon()`. For reliable detection, use the AdGuard browser extensions.
+> AdGuard for Windows, macOS and Android often can't accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard browser extensions.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**
@@ -441,7 +441,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
 > #### Compatibility with different versions of AdGuard
-> AdGuard for Windows, macOS and Android often can't accurately determine this type and defines it as `other` or `script`.
+> AdGuard for Windows, macOS and Android often can't accurately detect this type and defines it as `other` or `script`.
 
 <a id="websocket-modifier"></a>
 ##### **`websocket`**
