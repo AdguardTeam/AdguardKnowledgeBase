@@ -22,7 +22,7 @@ visible: true
 
 2. 가족 라이선스 키를 사용하면 최대 9개의 기기에서 AdGuard를 활성화할 수 있습니다.
 
->참고: AdGuard 라이선스는 Android, iOS, Windows 및 Mac에 모두 호환됩니다.*Windows**, **Mac**, **Android**, or **iOS**.
+>참고: AdGuard 라이선스는 Android, iOS, Windows 및 Mac에 모두 호환됩니다.
 
 [AdGuard 계정](https://auth.adguard.com/login.html)에서 라이선스 키를 관리할 수 있습니다.
 
@@ -145,17 +145,17 @@ AdGuard 라이선스 키를 구입하려면 [여기](https://adguard.com/ko/lice
 <a id="activation_info"></a>
 #### 다른 기기에 라이선스 연동
 
-프로그램이 라이선스 키로 활성화되면 라이선스 키는 활성화 상태인 기기에 결합됩니다. 라이선스 키는 정해진 수의 기기에서만 활성화될 수 있으며, 라이선스 키를 사용중인 기기가 최대를 초과한 경우, 이 키를 다시 사용하기 전에 [AdGuard 계정](https://kb.adguard.com/kor/general/license-key#account-functions)에서 재설정이 필요합니다.
+프로그램이 라이선스 키로 활성화되면 라이선스 키는 활성화 상태인 기기에 결합됩니다. 라이선스 키는 정해진 수의 기기에서만 활성화될 수 있으며, 라이선스 키를 사용중인 기기가 최대를 초과한 경우, 이 키를 다시 사용하기 전에 [AdGuard 계정](https://kb.adguard.com/ko/general/license-key#account-functions)에서 재설정이 필요합니다.
 
 
 <a id="recovery"></a>
 ## 라이선스 키를 복구하는 방법은 무엇인가요
 
-[AdGuard 계정](#account)에서 라이선스 키를 확인할 수 있습니다.
+[AdGuard 계정](https://kb.adguard.com/ko/general/license-key#account)에서 라이선스 키를 확인할 수 있습니다.
 
 라이선스 키의 기기 결합 상태는 AdGuard 구매에 사용된 이메일 주소 계정에서 확인할 수 있습니다.
 
-라이선스 키가 이미 다른 컴퓨터에서 사용되었을 경우, 재사용 전에 [AdGuard 계정](#account)을 통해 사용하지 않는 컴퓨터에서 결합을 해제해야 합니다.
+라이선스 키가 이미 다른 컴퓨터에서 사용되었을 경우, 재사용 전에 [AdGuard 계정](https://kb.adguard.com/ko/general/license-key#account)을 통해 사용하지 않는 컴퓨터에서 결합을 해제해야 합니다.
 
 
 
