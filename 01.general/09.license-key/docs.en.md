@@ -113,7 +113,7 @@ In the small window you will see 3 functions:
 - **Activate Premium**.
 - Restore purchases (Restores the license if you've reinstalled the app).
 
-3) After you press **Activate Premium**, you will be presented with several activation options:
+3. After you press **Activate Premium**, you will be presented with several activation options:
 - Enter **Login** and **Password** from **AdGuard account**.
 - Sign in with one of the social networks (**Twitter, Google Account, Facebook, Yandex, VK**).
 

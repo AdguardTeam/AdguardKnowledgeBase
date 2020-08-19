@@ -7,6 +7,6 @@ taxonomy:
 
 ### Раздел 11
 
-# AdGuard Home
+# AdGuard VPN
 
 Этот раздел описывает сервис AdGuard VPN.
