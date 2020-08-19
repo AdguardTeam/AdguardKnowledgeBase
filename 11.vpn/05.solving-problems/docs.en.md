@@ -13,9 +13,6 @@ The owners of phones and tablets running the Android 7+ operating system might f
 You have two ways to solve the issue:
 
 ### Option 1: Grant permissions to AdGuard VPN using ADB
-<!--- 
-> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the nightly version [here](https://adguard.com/en/beta.html).
--->
 
 1. Activate the **developer mode** and enable **USB debugging**:
 - Open the **Settings** application on your phone;
@@ -26,7 +23,7 @@ You have two ways to solve the issue:
 >  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
 2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
-> On the windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 4. Open **the command line** on your PC: 
