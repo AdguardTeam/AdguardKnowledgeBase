@@ -120,7 +120,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @resource
 @require
 @grant
-@noframes
+@connect
 @namespace
 ```
 
@@ -136,7 +136,8 @@ These properties will be simply ignored by Adguard.
 
 ```
 @unwrap
-@connect - Adguard uses `@grant host:site.com` instead!
+@noframes - Adguard won't execute a userscript inside of any iframe.
+
 ```
 
 #### Supported GM\_ functions
