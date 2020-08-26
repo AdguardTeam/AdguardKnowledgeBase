@@ -28,13 +28,13 @@ visible: true
 <i>버그 보고서가 준비된 상태</i>
 <br><br>
 
-4) 버그 보고서를 공유하려면 알림을 누릅니다.
+4) 알림을 누릅니다
 
 <center><img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/3.png" width="301" /></center>
 <i>버그 신고 파일 구조</i>
 <br><br>
 
-5) 이 로그를 지원팀[support@adguard.com](support@adguard.com)에 보냅니다
+5) 이 로그를 [지원팀](mailto:support@adguard.com)에 보냅니다. 
 
 > 참고 : 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
 
@@ -87,4 +87,4 @@ visible: true
 
 5. 이 로그를 지원팀에 보냅니다.
 
->참고 : 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부 시 지원 팀이 문제를 더 빠르게 처리할 수 있습니다.
+>참고 : 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부 시 지원팀이 문제를 더 빠르게 처리할 수 있습니다.
