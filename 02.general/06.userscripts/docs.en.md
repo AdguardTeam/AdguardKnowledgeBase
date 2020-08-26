@@ -106,6 +106,9 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @exclude
 @resource
 @require
+@grant
+@noframes 
+@namespace
 ```
 
 ##### Partially supported properties
@@ -116,10 +119,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 ##### Unsupported properties
 These properties will be simply ignored by Adguard.
 ```
-@namespace
 @unwrap
-@noframes - Adguard won't execute a userscript inside of any iframe.
-@grant - Everything is granted by default.
 @connect - Adguard uses `@grant host:site.com` instead!
 ```
 
