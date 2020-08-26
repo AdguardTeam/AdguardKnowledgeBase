@@ -23,7 +23,7 @@ visible: true
 2. 『**ファミリー**』　このライセンスキーでは、**9台**のデバイスでAdGuardを有効化化できます。
 
 
->※どのライセンスも全OS対応です。つまり、任意のライセンスを使用して、任意のオペレーティングシステム（** Windows **、** Mac **、** Android **、** iOS **）のどちらでもAdGuardを有効化できます。
+>※どのライセンスも全OS対応です。つまり、任意のライセンスを使用して、任意のオペレーティングシステム（**Windows**、**Mac**、**Android**、**iOS**）のどちらでもAdGuardを有効化できます。
 
 お持ちのライセンスキーはすべて[AdGuardマイ・アカウント](http://adguard.com/login.html)にて管理できます。
 
@@ -118,11 +118,11 @@ AdGuardライセンスキーは[こちら](https://adguard.com/license.html)か�
 - お持ちの**AdGuardアカウント**の**ログイン**と**パスワード**を入力して認証
 - SNSアカウントにログインして認証(**Twitter、Google、Facebook、Yandex、VK**)
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android-act-3.png" width="350" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/android-act-3.png" width="350" />
 
 - **ライセンスキー**を入力して認証
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android-act-4.png" width="350" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/android-act-4.png" width="350" />
 
 
 <a id="activation_iOS"></a>
@@ -138,8 +138,8 @@ AdGuardライセンスキーは[こちら](https://adguard.com/license.html)か�
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/ios2.jpeg" width="350" />
 
 3. **App Store**経由サブスクリプションを購入するか、[AdGuardウェブサイト](https://adguard.com/ja/license.html)でご購入いただいたライセンスを認証することで**プレミアム版**を有効化できます。
-画面右上の「ログイン」をタップすると、ログイン画面に移動します。  
-> ※有効化するには、お持ちのAdGuardアカウントにて他デバイスで未使用のライセンス最低1台分がある必要があります。
+画面右上の「ログイン」をタップ→ログイン画面に移動→AdGuardアカウントのメールアドレスとパスワードを入力してログイン→アカウントにあるライセンスが認証され、AdGuardプレミアム機能が有効化されます。  
+> ※有効化するには、お持ちのAdGuardアカウントには他デバイスで未使用のライセンス最低1台分がある必要があります。
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/ios3.jpeg" width="350" />
 
