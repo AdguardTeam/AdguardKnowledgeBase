@@ -1,10 +1,11 @@
 ---
 title: 'AdGuardライセンスキーについて'
 taxonomy:
-    category:
-        - docs
+    category:
+        - docs
 visible: true
 ---
+
 
 * [AdGuardライセンスキーとは？](#key)
 * [ライセンスキーでAdGuardを有効化する方法](#activation)
