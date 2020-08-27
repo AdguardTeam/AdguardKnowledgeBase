@@ -7,7 +7,7 @@ visible: true
 ---
 
 
-[AdGuard for Android](https://kb.adguard.com/android) and [Adguard Home](https://kb.adguard.com/home) provides a DNS ad blocking feature. To learn more about the principle of DNS filtering, read [this KB article](https://kb.adguard.com/general/dns-filtering-android). Compared to the [traditional ad blocking](https://kb.adguard.com/general/how-ad-blocking-works), DNS filtering is more "crude" and allows less customization. It doesn't support the complex [syntax](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) we use in our filters, but it does support simplified syntax that allows you to block certain domains.
+[AdGuard for Android](https://kb.adguard.com/android) and [AdGuard Home](https://kb.adguard.com/home) provides a DNS ad blocking feature. To learn more about the principle of DNS filtering, read [this KB article](https://kb.adguard.com/general/dns-filtering-android). Compared to the [traditional ad blocking](https://kb.adguard.com/general/how-ad-blocking-works), DNS filtering is more "crude" and allows less customization. It doesn't support the complex [syntax](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) we use in our filters, but it does support simplified syntax that allows you to block certain domains.
 
 DNS filtering supports two types of rules:
 
