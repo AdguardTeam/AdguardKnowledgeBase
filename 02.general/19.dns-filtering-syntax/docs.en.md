@@ -15,7 +15,8 @@ DNS filtering supports two types of rules:
 
     * [`$important`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#important-modifier)
     * [`$match-case`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#match-case-modifier)
-    * Rules with any other modifiers will be ignored
+    * [`$badfilter`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#badfilter-modifier)
+    * Rules with other modifiers will be ignored
 
 * “Hosts” rules, which is basically the same as `/etc/hosts` <br>
 * Domains names
