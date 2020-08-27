@@ -13,25 +13,25 @@ visible: true
 
 기기에서 직접 버그 보고서를 받으려면 다음을 수행하십시오.
 
-1) 기기가 개발자용으로 설정되어 있는지 확인합니다. 기기를 개발자용으로 설정하는 방법은 https://developer.android.com/studio/run/device.html#developer-device-options 에서 확인할 수 있습니다.
+1) 기기가 개발자용으로 설정되어 있는지 확인합니다. 기기를 개발자용으로 설정하는 방법은 [https://developer.android.com/studio/run/device.html#developer-device-options](https://developer.android.com/studio/run/device.html#developer-device-options) 에서 확인할 수 있습니다.
 
 2) **개발자 옵션**에서 **버그 신고**를 탭합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/kor1.png" width="301" />
+<center><img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/kor1.png" width="301" /></center>
 <i>개발자 옵션</i>
 <br><br>
 
 3) 버그 보고서의 유형을 선택하고 **신고**를 누릅니다.
 >잠시 후 버그 보고서가 준비되었다는 알림이 표시됩니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/kor2.png" width="301" />
-<i>버그 보고서가 준비된 상태</i>
+<center><img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/kor2.png" width="301" /></center>
+<center><i>버그 보고서가 준비된 상태</i></center>
 <br><br>
 
 4) 알림을 누릅니다
 
 <center><img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/3.png" width="301" /></center>
-<i>버그 신고 파일 구조</i>
+<center><i>버그 신고 파일 구조</i></center>
 <br><br>
 
 5) 이 로그를 [지원팀](mailto:support@adguard.com)에 보냅니다. 
