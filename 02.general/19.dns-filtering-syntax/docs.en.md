@@ -42,4 +42,4 @@ Wildcarding:
 2. `# Also a comment` - just a comment
 3. `! Title:` - the title that'll be used for the filterlist in AdGuard's settings (`# Title:` won't work).
 
-Use this syntax to create or import rules to the DNS filter. If you have any questions, feel free to post them on our [forum](https://forum.adguard.com/index.php?forums/69/).
+Based on the examples above, you can create rules for DNS filters. If you have any questions, feel free to post them on our [forum](https://forum.adguard.com/index.php?forums/69/).
