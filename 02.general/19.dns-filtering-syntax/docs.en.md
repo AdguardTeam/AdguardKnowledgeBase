@@ -18,7 +18,7 @@ DNS filtering supports two types of rules:
     * Rules with any other modifiers will be ignored
 
 * “Hosts” rules, which is basically the same as `/etc/hosts` <br>
-* Domains rules, which are simply domains
+* Domains names
 
 Examples:
 
