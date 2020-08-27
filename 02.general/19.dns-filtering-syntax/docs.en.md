@@ -24,7 +24,7 @@ DNS filtering supports two types of rules:
 Examples:
 
 General:
-1. `||example.org^`- block access to the example.org domain and all its subdomains
+1. `||example.org^` - block access to the example.org domain and all its subdomains
 2. `@@||example.org^` - unblock access to the example.org domain and all its subdomains
 3. `example.org` - block access to the example.org domain, but not its subdomains
 4. `0.0.0.0 example.org` - AdGuard will now return 0.0.0.0 address for the example.org domain (but not its subdomains). Other IP addresses can be specified.
@@ -32,7 +32,7 @@ General:
 6. `123.45.67.89` - block access to all domains whose CNAME response returns this IP address
 
 Wildcarding:
-1. `||example.TLD^` block access to "example" domains across all TLDs and all their subdomains
+1. `||example.TLD^` - block access to "example" domains across all TLDs and all their subdomains
 2. `://example.` - block access to domains that begin with "example."
 3. `.example.org` - only block access to the subdomains of example.org (incl. "www."), not its main domain
 4. `||com^` - block access to the .com top-level domain
