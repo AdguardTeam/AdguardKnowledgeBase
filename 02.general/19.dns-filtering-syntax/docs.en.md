@@ -11,11 +11,11 @@ visible: true
 
 DNS filtering supports two types of rules:
 
-* Basic filtering rules, which is the same as [AdGuard's basic rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules), but with a limited set of modifiers supported:
+* Basic filtering rules, which is the same as [AdGuard's basic rules](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#basic-rules), but with a limited set of modifiers supported:
 
-    * [`$important`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#important-modifier)
-    * [`$match-case`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#match-case-modifier)
-    * [`$badfilter`](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#badfilter-modifier)
+    * [`$important`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#important-modifier)
+    * [`$match-case`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#match-case-modifier)
+    * [`$badfilter`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#badfilter-modifier)
     * Rules with other modifiers will be ignored
 
 * “Hosts” rules, which is basically the same as `/etc/hosts` <br>
