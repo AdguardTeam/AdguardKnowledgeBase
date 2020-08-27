@@ -18,7 +18,7 @@ visible: true
 2) **개발자 옵션**에서 **버그 신고**를 탭합니다.
 
 <center><img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/LogCat/kor1.png" width="301" /></center>
-<i>개발자 옵션</i>
+<center><i>개발자 옵션</i></center>
 <br><br>
 
 3) 버그 보고서의 유형을 선택하고 **신고**를 누릅니다.
