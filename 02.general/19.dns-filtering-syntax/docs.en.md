@@ -34,7 +34,7 @@ General:
 Wildcarding:
 1. `||example.TLD^` block access to "example" domains across all TLDs and all their subdomains
 2. `://example.` - block access to domains that begin with "example."
-3. `.example.org` - only block the subdomains of example.org (incl. "www."), not its main domain
+3. `.example.org` - only block access to the subdomains of example.org (incl. "www."), not its main domain
 4. `||com^` - block access to the .com top-level domain
 
 ! Meta:
