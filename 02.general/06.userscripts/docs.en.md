@@ -162,18 +162,11 @@ GM_addStyle (deprecated)
 GM_log (deprecated)
 ```
 
-#### Unsupported GM functions
-
-```
-GM.openInTab / GM_openInTab - just a shortcut to window open.
-```
 
 #### Partially supported GM\_ functions
 
 ```
-GM_info
 GM_openInTab - Just a shortcut to window open.
-GM_registerMenuCommand - You can register a menu command, but it is very unclear for user how to access the menu. There is a hotkey that'll bring up the list of registered menu commands: `Shift+Alt+M`.
 ```
 
 <a name="example"></a>
