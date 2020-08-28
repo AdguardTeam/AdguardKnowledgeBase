@@ -15,7 +15,7 @@ taxonomy:
 
 [Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
-[Dr.Web CureIt! ](http://www.freedrweb.com/cureit/?lng=en)
+[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
 
 अगर इन एंटीवायरस यूटिलिटीज से कूच पता नहीं चला, लेकिन फिर भी कंप्यूटर अजीब तरीके से बर्ताव कर रहा है तो, ऐसे एडवेयर से टेस्ट करें, जो अपनी एडवरटाइजिंग कोई भी तेज पर डॉन सकता है जो आप खोलते हैं। 
 
