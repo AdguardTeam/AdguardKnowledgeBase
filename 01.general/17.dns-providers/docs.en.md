@@ -1068,8 +1068,8 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### East USA DNS Server
 
-| Protocol       | Address                             | Location      |                |
-|----------------|-------------------------------------|---------------|----------------|
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
 | DNS, IPv4      | `185.213.26.187` | <a href="sdns://AAAAAAAAAAAADjE4NS4yMTMuMjYuMTg3">Add to AdGuard</a> |
 | DNS, IPv6      | `2a0d:5600:33:3::abcd`  | <a href="sdns://AAAAAAAAAAAAFlsyYTBkOjU2MDA6MzM6Mzo6YWJjZF0">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.eastus.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLmVhc3R1cy5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
@@ -1077,8 +1077,8 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### East Australia DNS Server
 
-| Protocol       | Address                             | Location      |                |
-|----------------|-------------------------------------|---------------|----------------|
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
 | DNS, IPv4      | `45.63.30.163` | <a href="sdns://AAAAAAAAAAAADDQ1LjYzLjMwLjE2Mw">Add to AdGuard</a> |
 | DNS, IPv6      | `2001:19f0:5801:b7c::1`  | <a href="sdns://AAAAAAAAAAAAF1syMDAxOjE5ZjA6NTgwMTpiN2M6OjFd">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.eastau.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLmVhc3RhdS5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
