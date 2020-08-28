@@ -162,7 +162,6 @@ GM_addStyle (deprecated)
 GM_log (deprecated)
 ```
 
-
 #### Partially supported GM\_ functions
 
 ```
