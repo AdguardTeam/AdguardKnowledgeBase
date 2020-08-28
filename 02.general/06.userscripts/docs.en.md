@@ -140,22 +140,32 @@ These properties will be simply ignored by Adguard.
 
 ```
 
-#### Supported GM\_ functions
+#### Supported GM functions
+
+AdGuard supports both old GM_ functions and new GM4 API that use GM object.
 
 ##### Values
 
 ```
-GM_getValue
-GM_setValue
-GM_deleteValue
-GM_listValues
-GM_getResourceText
-GM_getResourceURL
-GM_addStyle
-GM_log
-GM_setClipboard
-GM_xmlhttpRequest
+GM.getValue / GM_getValue
+GM.setValue / GM_setValue
+GM.deleteValue / GM_deleteValue
+GM.listValues / GM_listValues
+GM.getResourceUrl / GM_getResourceURL
+GM.setClipboard / GM_setClipboard
+GM.xmlHttpRequest / GM_xmlhttpRequest
+GM.info / GM_info
+GM.notification
 unsafeWindow
+GM_getResourceText (deprecated)
+GM_addStyle (deprecated)
+GM_log (deprecated)
+```
+
+#### Unsupported GM functions
+
+```
+GM.openInTab / GM_openInTab - just a shortcut to window open. 
 ```
 
 #### Partially supported GM\_ functions
