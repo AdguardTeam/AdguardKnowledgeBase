@@ -142,7 +142,7 @@ These properties will be simply ignored by Adguard.
 
 #### Supported GM functions
 
-AdGuard supports both old GM_ functions and new GM4 API that use GM object.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 ##### Values
 
@@ -165,7 +165,7 @@ GM_log (deprecated)
 #### Unsupported GM functions
 
 ```
-GM.openInTab / GM_openInTab - just a shortcut to window open. 
+GM.openInTab / GM_openInTab - just a shortcut to window open.
 ```
 
 #### Partially supported GM\_ functions
