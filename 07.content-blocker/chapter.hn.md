@@ -9,4 +9,4 @@ taxonomy:
 
 # AdGuard Content Blocker
 
-यह सेक्शन AdGuard Content Blocker एप्लीकेशन को समझता करता है।  
+यह सेक्शन AdGuard Content Blocker एप्लीकेशन को समझता है।  
