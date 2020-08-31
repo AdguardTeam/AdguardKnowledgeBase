@@ -155,7 +155,7 @@ GM_log (устарело)
 #### Частично поддерживаемые функции GM
 
 ```
-GM.openInTab / GM_openInTab - Ярлык для открытия окна.
+GM.openInTab / GM_openInTab - Просто вызывает window.open.
 ```
 
 <a name="example"></a>
