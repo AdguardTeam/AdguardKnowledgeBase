@@ -54,7 +54,7 @@ Web traffic from any user may be of interest and is particularly valuable in ter
 
 ## Which platforms can I run AdGuard VPN on?
 AdGuard VPN is now available:
-- as a browser extension [for Chrome](https://agrd.io/vpn_chrome_extension) and [Firefox](https://agrd.io/vpn_firefox_extension_beta)
+- as a browser extension [for Chrome](https://agrd.io/vpn_chrome_extension) and [Firefox](https://agrd.io/vpn_firefox_extension)
 - and as a mobile app for [Android](https://agrd.io/vpn_android_beta).
 
 The app for iOS and desktop versions for Windows and Mac are coming soon!
