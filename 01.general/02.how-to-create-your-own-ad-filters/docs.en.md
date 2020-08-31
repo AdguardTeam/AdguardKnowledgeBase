@@ -145,7 +145,7 @@ For example:
 **This rule does not block:**
 
 * `http://ads.example.org.us/ad1.gif`
-* `http://example.org/redirect/http://ads.example.org/`
+* `http://example.com/redirect/http://ads.example.org/`
 
 <a id="example-blocking-exact-address"></a>
 ### Example: Blocking exact address
