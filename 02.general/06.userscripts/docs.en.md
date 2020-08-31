@@ -162,10 +162,10 @@ GM_addStyle (deprecated)
 GM_log (deprecated)
 ```
 
-#### Partially supported GM\_ functions
+#### Partially supported GM functions
 
 ```
-GM_openInTab - Just a shortcut to window open.
+GM.openInTab / GM_openInTab - Just a shortcut to window open.
 ```
 
 <a name="example"></a>
