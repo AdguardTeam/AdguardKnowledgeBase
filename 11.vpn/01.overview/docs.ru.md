@@ -55,7 +55,7 @@ VPN соединяет компьютер или мобильное устрой
 
 ## На каких платформах представлен AdGuard VPN
 Сейчас AdGuard VPN доступен как:
-- браузерное расширение [для Chrome](https://agrd.io/vpn_chrome_extension) и [Firefox](https://agrd.io/vpn_firefox_extension_beta)
+- браузерное расширение [для Chrome](https://agrd.io/vpn_chrome_extension) и [Firefox](https://agrd.io/vpn_firefox_extension)
 - и как приложение [для Android](https://agrd.io/vpn_android_beta).
 
 Скоро появятся приложение для iOS и десктопные версии для Windows и Mac!
