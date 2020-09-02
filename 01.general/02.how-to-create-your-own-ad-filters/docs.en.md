@@ -75,6 +75,7 @@ visible: true
             * [Pseudo-class `:contains()`](#extended-css-contains)
             * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
             * [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
+            * [Pseudo-class `:matches-property()`](#extended-css-matches-property)
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
@@ -975,9 +976,9 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 <a id="elemhide-examples"></a>
 #### Examples
 
-* `example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
+* `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
+* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and it's subdomains.
 
 <a id="elemhide-exceptions"></a>
 #### Exceptions
@@ -1294,6 +1295,63 @@ div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 // for div#targer4
 *[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
+
+<a id="extended-css-matches-property"></a>
+##### Pseudo-class `:matches-property()`
+
+This pseudo-class allows to select an element by its properties.
+
+**Syntax**
+```
+selector:matches-property("name"[="value"])
+```
+
+- `name` — property name OR regular expression for property name
+- `value` — optional, property value OR regular expression for property value
+
+> For regex patterns, `"` and `\` should be escaped.
+
+> `name` supports regexp for property in chain, e.g. `prop./^unit[\\d]{4}$/.type`
+
+**Examples**
+
+```javascript
+divProperties = {
+    id: 1,
+    check: {
+        track: true,
+        unit_2ksdf1: true,
+    },
+    memoizedProps: {
+        key: null,
+        tag: 12,
+        _owner: {
+            effectTag: 1,
+            src: 'ad.com',
+        },
+    },
+};
+```
+
+```
+// element with such properties can be matched by any of such rules:
+
+div:matches-property("check.track")
+
+div:matches-property("check./^unit_.{4,6}$/"))
+
+div:matches-property("memoizedProps.key"="null")
+
+div:matches-property("memoizedProps._owner.src"="/ad/")
+```
+
+<details>
+  <summary><b>For filters maintainers</b></summary>
+
+  To check properties of specific element, do:
+  1. Select the element on the page.
+  2. Go to Console tab and run `console.dir($0)`.
+</details>
 
 <a id="extended-css-xpath"></a>
 ##### Pseudo-class `:xpath()`

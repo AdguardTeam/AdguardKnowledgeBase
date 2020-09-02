@@ -74,6 +74,8 @@ visible: true
             * [Псевдокласс `:if-not()`](#extended-css-has)
             * [Псевдокласс `:contains()`](#extended-css-contains)
             * [Псевдокласс `:matches-css()`](#extended-css-matches-css)
+            * [Псевдокласс `:matches-attr()`](#extended-css-matches-attr)
+            * [Псевдокласс `:matches-property()`](#extended-css-matches-property)
             * [Псевдокласс `:xpath()`](#extended-css-xpath)
             * [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Псевдокласс `:upward()`](#extended-css-upward)
@@ -970,9 +972,9 @@ domains = [domain0, domain1[, ...[, domainN]]]
 <a id="elemhide-examples"></a>
 #### Примеры правил скрытия
 
-* `example.com##.textad` — скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
+* `example.com##div.textad` — скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
 * `example.com,example.org###adblock` - скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
-* `~example.com##.textad` - скроет элемент `div` с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменах.
+* `~example.com##.textad` - скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменах.
 
 <a id="elemhide-exceptions"></a>
 #### Исключения для правил скрытия
@@ -1288,6 +1290,63 @@ div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 // для div#targer4
 *[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
+
+<a id="extended-css-matches-property"></a>
+##### Псевдокласс `:matches-property()`
+
+Этот псевдокласс позволяет выделить элемент по его свойствам.
+
+**Синтаксис**
+```
+selector:matches-property("name"[="value"])
+```
+
+- `name` — название свойства ИЛИ регулярное выражение для названия свойства
+- `value` — необязательно, значение свойства ИЛИ регулярное выражение для значения свойства
+
+> Для регулярных выражений символы `"` и `\` должны быть экранированы.
+
+> `name` поддерживает регулярные выражения для обозначения свойства в цепи, например, `prop./^unit[\\d]{4}$/.type`
+
+**Примеры**
+
+```javascript
+divProperties = {
+    id: 1,
+    check: {
+        track: true,
+        unit_2ksdf1: true,
+    },
+    memoizedProps: {
+        key: null,
+        tag: 12,
+        _owner: {
+            effectTag: 1,
+            src: 'ad.com',
+        },
+    },
+};
+```
+
+```
+// элемент с такими свойствами может быть выделен любым из таких правил:
+
+div:matches-property("check.track")
+
+div:matches-property("check./^unit_.{4,6}$/"))
+
+div:matches-property("memoizedProps.key"="null")
+
+div:matches-property("memoizedProps._owner.src"="/ad/")
+```
+
+<details>
+  <summary><b>Для разработчиков фильтров</b></summary>
+
+  Чтобы проверить свойства елемента, нужно:
+  1. Выбрать нужный елемент во вкладке Elements.
+  2. В Консоли выполнить команду `console.dir($0)`.
+</details>
 
 <a id="extended-css-xpath"></a>
 ##### Псевдокласс `:xpath()`
