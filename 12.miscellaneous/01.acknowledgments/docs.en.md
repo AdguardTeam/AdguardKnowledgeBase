@@ -38,8 +38,6 @@ Our dev team would like to thank the developers of this third-party software and
 <a id="mac"></a>
 ## AdGuard for Mac
 
-* Mozilla Foundation for Network Security Services libraries: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)  
-
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 
 * Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator) 
