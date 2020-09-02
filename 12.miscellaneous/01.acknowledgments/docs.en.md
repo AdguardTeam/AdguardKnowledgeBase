@@ -6,23 +6,25 @@ taxonomy:
 published: true
 visible: true
 ---
-* [AdGuard for Windows](#win)
-* [AdGuard for Mac](#mac)
-* [AdGuard for Android](#android)
-* [AdGuard for iOS](#ios)
-* [AdGuard AdBlocker extension](#extension)
-* [AdGuard for Safari](#safari)
-* [AdGuard Browser Assistant](#assistant)
-* [AdGuard VPN extension](#vpn-extension)
-* [VPN Client](#vpn-client)
-* [CoreLibs](#corelibs)  
-* [DNS Libs](#dnslibs)
-* [Testers](#testers)
+
+* [Third-party software](#software)
+    * [AdGuard for Windows](#win)
+    * [AdGuard for Mac](#mac)
+    * [AdGuard for Android](#android)
+    * [AdGuard for iOS](#ios)
+    * [AdGuard AdBlocker extension](#extension)
+    * [AdGuard for Safari](#safari)
+    * [AdGuard Browser Assistant](#assistant)
+    * [AdGuard VPN extension](#vpn-extension)
+    * [VPN Client](#vpn-client)
+    * [CoreLibs](#corelibs)  
+    * [DNS Libs](#dnslibs)
+* [Special thanks](#testers)
 
 This is the list of libraries and other resources that really helped us with AdGuard software development process.
 Our dev team would like to thank the developers of this third-party software and our great beta testers (and other interested users) who helped AdGuard improve and grow. 
-
-
+<a id="software"></a>
+# Third-party software 
 <a id="win"></a>
 ## AdGuard for Windows
 
@@ -326,9 +328,9 @@ Our dev team would like to thank the developers of this third-party software and
 
 
 <a id="testers"></a>
-## Testers
+# Special thanks
 
-Also a huge thanks and gratitude to all beta testers, whose help in finding and eliminating all the bugs was priceless. Special thanks to:
+Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding and eliminating all the bugs was priceless. Special thanks to:
 
 [ag_bug_finder](http://forum.adguard.com/member.php?3639)
 
