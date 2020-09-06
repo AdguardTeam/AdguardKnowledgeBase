@@ -1,165 +1,162 @@
 ---
-title: How to collect HAR file
+title: 如何收集HAR文件
 published: true
 taxonomy:
     category:
         - docs
 ---
 
-## Creating an HAR File
+##创建HAR文件
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide .har file generation and export capability.
+HAR文件可帮助我们的技术支持团队解决复杂问题。要创建这些文件，我们建议使用Chrome或Firefox。但是，IE 11，Edge和Safari也提供.har文件生成和导出功能。
 
-[Google Chrome](#chrome)
+[Google Chrome](＃chrome)
 
-[Edge](#edge)
+[Edge](＃edge)
 
-[Firefox](#firefox)
+[Firefox](＃firefox)
 
-[Internet Explorer 11](#ie11)
+[Internet Explorer 11](＃ie11)
 
-[Safari](#safari)
+[Safari](＃safari)
 
-[Compressing an HAR file for Windows](#harwindows)
+[为Windows压缩HAR文件](＃harwindows)
 
-[Compressing an HAR file for Mac](#harmac)
+[为Mac压缩HAR文件](＃harmac)
 
 ## <a id="chrome"></a> Chrome
 
-To create an HAR file in Chrome:
+要在Chrome中创建HAR文件：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1.转到发生问题的URL。暂时不要重现该问题。
 
-2. Open ***Developer Tools***:
+2.打开***开发人员工具***：
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+-从菜单中：***菜单>更多工具>开发人员工具***。
+-键盘：*** Ctrl + Shift + C ***，或*** Ctrl + Alt + I ***，或***⌥+⌘+ I(对于Mac ***)。
 
-3. Click on the ***Network tab***.
+3.单击“网络”选项卡***。
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4.找到“网络”选项卡左上方的圆形按钮，并确认它处于红色录制模式。如果是灰色，请单击以变为红色以开始录制。
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5.使用***清除***按钮(记录按钮旁边带有圆圈的圆圈按钮)清除所有先前的活动。
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6.选择“网络”选项卡上的“保留日志”复选框。
 
-7. Reproduce the steps that create the issue.
+7.重现造成问题的步骤。
 
-8. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+8.通过右键单击网格并选择***另存为具有内容的HAR ***，将会话另存为.har文件。
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+9.转至AdGuard支持(support@adguard.com)，并详细说明问题。支持屏幕截图也可能会有所帮助。
 
 
-## <a id="edge"></a> Edge
+## <a id="edge"></a>Edge
 
-To create an HAR file in Edge:
+要在Edge中创建HAR文件：
 
-1. From the webpage experiencing the issue, press the ***F12*** key to open ***Developer Tools***.
+1.在遇到问题的网页上，按*** F12 ***键打开***开发人员工具***。
 
-2. Select the ***Network*** tab.
+2.选择***网络***选项卡。
 
-3. Refresh the webpage to engage HTTP communications, and wait for one minute.
+3.刷新网页以进行HTTP通信，然后等待一分钟。
 
-4. Click the ***Disk*** icon or press and hold ***CTRL+S*** to save a HAR file.
+4.单击*** Disk ***图标或按住*** CTRL + S ***以保存HAR文件。
 
-5. Complete saving by using ***Save As…***
+5.使用***另存为…***完成保存
 
-6. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+6.转至AdGuard支持(support@adguard.com)，并详细说明问题。支持屏幕截图也可能会有所帮助。
 
 ## <a id="firefox"></a> Firefox
 
-To create an HAR file in Firefox:
+要在Firefox中创建HAR文件：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1.转到发生问题的URL。暂时不要重现该问题。
 
-2. Open Developer Tools in ***Network*** mode:
-- From menu: ***Menu > Web Developer > Network***.
-- Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
+2.在***网络***模式下打开开发人员工具：
+-从菜单：***菜单> Web Developer>网络***。
+-键盘：*** Ctrl + Shift + C ***或**⌥+⌘+ E(Mac)**。
 
-3. Note the ***play/pause*** button at the top left of the Network tab.
-- Button should be in play mode.
+3.注意“网络”选项卡左上方的“播放/暂停”按钮。
+-按钮应处于播放模式。
 
-4. If any information is currently displayed in the grid, clear by clicking the ***delete trash can*** button next to the play/pause button.
+4.如果当前在网格中显示任何信息，请单击“播放/暂停”按钮旁边的“删除垃圾箱” ***按钮进行清除。
 
-5. Select the ***Persist Logs*** check box on the Network tab.
+5.选中“网络”选项卡上的“持久日志***”复选框。
 
-6. Reproduce the steps that create the issue.
+6.重现造成问题的步骤。
 
-7. Save session as a .har file by right clicking on the grid and selecting ***Save all as HAR***.
+7.通过右键单击网格并选择***将所有另存为HAR ***，将会话另存为.har文件。
 
-8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+8.转至AdGuard支持(support@adguard.com)，并详细说明问题。支持屏幕截图也可能会有所帮助。
 
 ## <a id="ie11"></a> Internet Explorer 11
 
-To create an HAR file in Internet Explorer 11:
+要在Internet Explorer 11中创建HAR文件：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1.转到发生问题的URL。暂时不要重现该问题。
 
-2. Open Developer Tools in ***Network*** mode:
-- From Tools cog wheel menu: ***Developer Tools*** > ***Network tab***.
-- Keyboard: ***F12 > Network*** tab
+2.在***网络***模式下打开开发人员工具：
+-从“工具”齿轮菜单中：***开发人员工具***> ***网络标签***。
+-键盘：*** F12>网络***标签
 
-3. Note the start profiling session ***Play*** button and stop profiling ***Stop*** button at top left of Network tab.
-- Play button will be gray when recording and Stop button will be red. Put in ***Play*** mode.
+3.请注意“网络”选项卡左上方的开始分析会话***播放***按钮和停止分析***停止***按钮。
+-录制时播放按钮将为灰色，停止按钮将为红色。置于***播放***模式。
 
-4. Clear any session info appearing in the lower grid using the ***Clear session*** button on Network tab. Hover over icons to see names.
-- ***Clear session*** button is a three line icon with an x on it.
+4.使用“网络”选项卡上的“清除会话”按钮清除显示在下部网格中的所有会话信息。将鼠标悬停在图标上可以查看名称。
+-***“清除会话” ***按钮是一个三行图标，上面带有一个x。
 
-5. Reproduce the steps that create the issue.
+5.重现造成问题的步骤。
 
-6. Save session as a .har file by clicking on the ***Save disk*** button (Export as HAR) on Network tab.
+6.单击“网络”选项卡上的“保存磁盘”按钮(“导出为HAR”)将会话另存为.har文件。
 
-7. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+7.转至AdGuard支持(support@adguard.com)，并详细说明问题。支持屏幕截图也可能会有所帮助。
 
 ## <a id="safari"></a> Safari
 
-To create an HAR file in Safari:
+要在Safari中创建HAR文件：
 
-1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
+1.检查屏幕顶部的Safari菜单栏是否有*** Develop ***菜单。选中“在菜单栏中显示开发菜单” ***底部底部的复选框。
+-如果看不见，请转到*** Safari>首选项>高级***将其打开。
 
-2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+2.转到发生问题的URL。暂时不要重现该问题。
 
-3. Open ***Network*** tab in Web Inspector:
-- From menu: ***Develop > Show Web Inspector > Network***.
-- Keyboard: ***⌥+⌘+I > Network***
+3.在Web Inspector中打开*** Network ***选项卡：
+-从菜单：***开发>显示Web检查器>网络***。
+-键盘：***⌥+⌘+ I>网络***
 
-4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
+4.选中“网络”选项卡右侧的“保留日志”复选框。
 
-5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
+5.单击“网络”选项卡最右侧的“删除垃圾箱”图标，清除当前的网络项目。
 
-6. Reproduce the steps that create the issue.
+6.重现造成问题的步骤。
 
-7. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
+7.单击“保留日志”旁边的“导出”图标，将会话另存为.har文件。
 
-8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
-
-
-## <a id="harmac"></a> Compressing an HAR file for Mac
-
-To compress an HAR file for Mac:
-
-1. Locate the HAR file that you want to compress.
-
-2. Right click on the HAR file.
-
-3. Choose ***Compress*** from the shortcut menu.
-
-4. A compressed file will have the name of the original HAR file with a ***.zip*** extension.
-
-## <a id="harwindows"></a> Compressing an HAR file for Windows
-
-To compress an HAR file for Windows:
-
-1. Locate the HAR file that you want to compress.
-
-2. Right-click on the HAR file.
-
-3. Choose ***Send to***.
-
-4. Select ***Compressed*** (zipped) folder.
-
-5. A new zipped folder with the same name is created in the same location.
+8.转至AdGuard支持(support@adguard.com)，并详细说明问题。支持屏幕截图也可能会有所帮助。
 
 
+## <a id="harmac"></a>为Mac压缩HAR文件
 
+要为Mac压缩HAR文件：
+
+1.找到要压缩的HAR文件。
+
+2.右键单击HAR文件。
+
+3.从快捷菜单中选择***压缩***。
+
+4.压缩文件的名称将为原始HAR文件的名称，扩展名为***。zip ***。
+
+## <a id="harwindows"></a>为Windows压缩HAR文件
+
+要为Windows压缩HAR文件：
+
+1.找到要压缩的HAR文件。
+
+2.右键单击HAR文件。
+
+3.选择***发送至***。
+
+4.选择*** Compressed ***(压缩)文件夹。
+
+5.在相同位置创建一个具有相同名称的新压缩文件夹。
