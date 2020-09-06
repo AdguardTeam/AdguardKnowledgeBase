@@ -1,13 +1,13 @@
 ---
-title: 'Writing about AdGuard'
+title: '撰写有关AdGuard的文章'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-Do you have a natural talent for writing? Do you also happen to enjoy AdGuard? Then this article is for you. We encourage everyone to express their impressions of AdGuard products in social media, personal blogs and on websites. How did you end up choosing AdGuard, what do you like about it? We'd be thrilled to see more stories about AdGuard spread over the internet!
+您有写作天赋吗？您是否也喜欢AdGuard？然后，本文适合您。我们鼓励所有人在社交媒体，个人博客和网站上表达对AdGuard产品的印象。您最终是如何选择AdGuard的，您对此感觉如何？我们很高兴看到有关AdGuard的更多故事在互联网上传播！
 
-Once you share your experience online, send us a link to [st@adguard.com](mailto:st@adguard.com) and we'll thank you with a free license key. It does not really matter if your website's audience is ten people or a thousand, we respect every effort. The only note to keep in mind is that your review should be roughly about 300 to 500 words.
+在线共享您的经验后，请向我们发送[st@adguard.com](mailto:st@adguard.com)的链接，我们将为您提供免费的许可证密钥。您的网站的访问者是十个人还是一千个人并不重要，我们尊重您的一切努力。要记住的唯一注意事项是，您的评论应大约为300到500个字。
 
-Want to go for something less conventional like shooting a video, or maybe you have some other genius idea on your mind? Don't limit yourself, but better let us know in advance just in case to avoid future misunderstandings. Same goes for when your grand plan involves using of AdGuard logo, banners or other visuals. The contact email remains the same: [st@adguard.com](mailto:st@adguard.com).
+是否想进行一些不太传统的事情，例如拍摄视频，或者您脑中有其他一些天才的想法？不要限制自己，但最好提前告知我们，以免将来产生误会。当您的总体计划涉及使用AdGuard徽标，横幅或其他视觉效果时，也是如此。联系人电子邮件保持不变：[st@adguard.com](mailto:st@adguard.com)。
