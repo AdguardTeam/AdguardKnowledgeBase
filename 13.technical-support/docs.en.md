@@ -1,12 +1,12 @@
 ---
-title: 'Technical support'
+title: '技术支持'
 taxonomy:
     category:
         - docs
 ---
 
-If you haven't found a solution to your problem in our knowledge base, AdGuard Support Team will be happy to help.
+如果您在我们的知识库中找不到解决问题的方法，AdGuard支持团队将很乐意为您提供帮助。
 
-You can send us a message from "Support" section in program preferences. In this case, you can also attach a program diagnostic report to the message (It might be useful for understanding the issue).
+您可以在程序首选项的“支持”部分向我们发送消息。 在这种情况下，您还可以将程序诊断报告附加到消息中（这对于理解问题可能很有用）。
 
-Also, you can just send us an [email](mailto:support@adguard.com) and we will answer you as soon as possible. Support Team usually responds within 24 hours.
+另外，您可以给我们发送[邮件](mailto:support@adguard.com)，我们会尽快给您答复。 支持团队通常会在24小时内做出回应。
