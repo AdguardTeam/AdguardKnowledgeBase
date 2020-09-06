@@ -1,183 +1,183 @@
 ---
-title: 'Report website'
+title: '报告网站'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-## Introduction
+＃＃ 介绍
 
 
-* [Windows](#Windows)
-* [Browser extension](#extension)
-* [Android](#Android)
-* [MAC](#MAC)
-* [iOS](#iOS)
-* [Filling in the form](#form)
-* [Diagnosis of a issue](#solo)
+* [Windows](＃Windows)
+* [浏览器扩展名](＃extension)
+* [Android](＃Android)
+* [MAC](＃MAC)
+* [iOS](＃iOS)
+* [填写表格](＃form)
+* [问题诊断](＃solo)
 
 
-When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
+使用广告拦截器时，您可能会遇到某些网站的错误工作或页面元素损坏的情况。这些问题可能是由于多种因素引起的：
 
-* Incorrect user rules;
-* Modified algorithms of adding ads;
-* Added filters/extensions from third-party developers;
-* The authors of one of the filters made a mistake when creating the rule.
-* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html). 
+*不正确的用户规则；
+*修改添加广告的算法；
+*添加了来自第三方开发人员的过滤器/扩展程序；
+*创建规则时，其中一个过滤器的作者犯了一个错误。
+*重新插入广告。在我们的[blog](https://adguard.com/ru/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
  
-You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
+您可以通过填写申请表中的广告示例来帮助我们。为此，请按照您的操作系统使用说明。
 
-## Report a website
+##报告网站
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
+> ### **注意**：当您通过应用或AdGuard Assistant发送投诉时，所有信息都会自动填写。除了屏幕截图，您还必须自己制作并附加它们。如果您使用的是[直接链接](https://agrd.io/report)，则需要手动输入数据。
 
-To report a reinsertion of an ad or incorrect displaying of a website, you need to:
+要报告广告已重新插入或网站显示不正确，您需要：
 
 
 <a id="Windows"></a>
 
-### **Windows**
+### ** Windows **
 
 
-* Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
+*打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
 
-* Нit **Report the website**, as shown in the screenshot:
+* **报告网站**，如屏幕截图所示：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png” width =“ 350” />
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+*填写举报表格；
+*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id="extension"></a>
 
-### **Browser extension**
+### **浏览器扩展**
 
-* Open the browser extension settings by clicking on the corresponding icon;
-* Click on **Submit a complaint about this website**:
+*通过单击相应的图标打开浏览器扩展设置；
+*单击**提交有关此网站的投诉**：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png” width =“ 350” />
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+*填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id="Android"></a>
 
-### **Android**
+### ** Android **
 
-* Open AdGuard settings;
-* **Support**;
-* **Send Feedback**.
-* **Missed ad or tracker**/**Incorrect blocking**:
+*打开AdGuard设置；
+* **支持**;
+* **发送反馈**。
+* **缺少广告或跟踪器** / **错误屏蔽**：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png” width =“ 350” />
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+*填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 
 <a id="MAC"></a>
 
-### **MAC**
+＃＃＃ **苹果电脑**
 
 
-* Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
+*打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
 
-* Нit **Report the website**, as shown in the screenshot:
+* **报告网站**，如屏幕截图所示：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png” width =“ 350” />
 
-* Then you'll need to fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+*然后，您需要填写投诉举报表格；
+*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 
 <a id="iOS"></a>
 
-### **iOS**
+### ** iOS **
 
-* Open AdGuard settings;
-* Send feedback;
-* Report incorrect blocking:
+*打开AdGuard设置；
+* 发送反馈;
+*报告错误的阻止：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png” width =“ 350” />
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+*填写举报表格；
+*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id="form"></a>
 
-### **Filling in the form**
+### **填写表格**
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+> ### **注意**：当您通过应用或AdGuard Assistant发送投诉时，所有信息都会自动填写。除了屏幕截图，您还必须自己制作并附加它们。如果您使用的是[直接链接](agrd.io/report)，则需要手动输入数据。
 
-1. Filling in the form starts with detailing the type and version of a product;
+1.填写表格始于详细说明产品的类型和版本；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1en.png” width =“ 500” />
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2.指定问题的类型以及有关使用第三方软件(防病毒，VPN)的其他信息；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2en.png” width =“ 500” />
 
-3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem;
+3.输入您遇到问题的页面的地址(如果是应用程序，则输入完整的下载链接)，以及遇到问题的浏览器；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png” width =“ 500” />
 
-4. Application configuration must be specified:
-* Filters you use;
-* Stealth mode settings, if this function is enabled.
+4.必须指定应用程序配置：
+*您使用的过滤器；
+*隐身模式设置(如果启用了此功能)。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma4en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma4en.png” width =“ 500” />
 
-5. [Provide a screenshot](https://kb.adguard.com/en/miscellaneous/taking-screenshots) that captures the essence of a problem;
-* **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+5. [提供屏幕截图](https://kb.adguard.com/en/miscellaneous/taking-screenshots)捕获了问题的实质；
+* **重要**：隐藏您的个人信息(电子邮件，电话号码等)，因为屏幕截图将公开显示。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png” width =“ 500” />
 
-6. Provide additional information that will help filter developers understand the situation;
-Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+6.提供其他信息，以帮助筛选开发人员了解情况；
+如果可以的话，还请在** GitHub **上输入您的帐户(开发人员必须与您联系，以防他们需要一些其他详细信息)；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png” width =“ 500” />
 
-7. Check each step before sending the form;
+7.在发送表格之前检查每一步；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma7en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma7en.png” width =“ 500” />
 
-8. You'll be provided with a link to track progress on your task.
+8.将为您提供一个链接，以跟踪您的任务进度。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8en.png" width="500"/>
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8en.png” width =“ 500” />
 
-## Diagnosis of an issue
+##问题诊断
 
 <a id="solo"></a>
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+此选项适用于那些不怕困难并且不介意自行寻找问题的人。这不需要任何特殊技能或对HTML和CSS的深入了解。
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+例如，您可能遇到无法打开您喜欢的网站，授权被破坏或某些页面元素显示不正确的情况。原因可能是使用特定的过滤器/扩展名/隐身模式设置。要诊断这些问题，您需要执行以下操作：
 
-### **Filters**
+### **过滤器**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
-4. If turning off all the filters hasn't produced any results, apply rule 
-**@@||example.com^$document,extension**,
-where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
-
-
-### **Stealth Mode**. 
-
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling in the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1.禁用**广告拦截器**；
+2.如果解决了问题，请重新启用模块并逐个禁用过滤器。这样做是为了识别“破坏”页面的过滤器。
+3.如果您设法找出哪个过滤器“破坏了”页面，则在填写表格时应通知开发人员(请参见上文)。在这种情况下，希望返回到初始设置。
+4.如果关闭所有过滤器均未产生任何结果，则应用规则
+** @@ || example.com ^ $ document，扩展名**，
+其中** example.com **是一个示例网站名称，需要用您自己的选项替换；
+5.如果发生故障(问题未解决)，请转到“隐身模式”一节。
 
 
-### **Extensions**
+＃＃＃ **隐身模式**。
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+1.禁用“隐身模式” **；
+2.如果这解决了问题，请依次打开模块并关闭“隐身模式”选项。这样做是为了检测哪些过滤器正在“破坏”页面；
+3.如果您设法检测到哪个设置“破坏了”页面，则应在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
+4.如果出现故障(问题未解决)，请转到“扩展”一节。
 
-### **Third-party blockers** 
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
-If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
-If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+
+### **扩展**
+
+1.禁用**扩展**；
+2.如果这解决了问题，请打开模块并逐个关闭**扩展**设置。这样做是为了找出哪个设置“破坏了”页面；
+3.如果您设法检测到哪个设置会“破坏”页面，请在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
+
+### **第三方拦截器**
+某些浏览器和防病毒程序(例如Yandex Browser，Kaspersky等)具有内置的广告拦截器。它们可能会影响站点的运行并引起问题。
+如果您使用此类程序，请确保问题出在** AdGuard **一边：禁用** AdGuard **过滤，然后尝试重复该问题。如果仍然存在，则表示问题是由其他应用程序或浏览器引起的。
+如果问题是由** AdGuard **引起的，请按照前面段落中描述的步骤进行操作。
