@@ -1,5 +1,5 @@
 ---
-title: 'Miscellaneous'
+title: '其他'
 taxonomy:
     category: 
         - chapter
@@ -7,8 +7,8 @@ published: true
 visible: true
 ---
 
-### Chapter 12
+###第12章
 
-# Miscellaneous
+＃其他
 
-This chapter includes miscellaneous articles on various topics.
+本章包括有关各种主题的其他文章。
