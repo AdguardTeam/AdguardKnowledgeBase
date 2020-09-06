@@ -1,12 +1,12 @@
 ---
-title: 'General questions'
+title: '一般的问题'
 taxonomy:
     category:
         - docs
 ---
 
-### Chapter 1
+＃＃＃ 第1章
 
-# General questions
+＃ 一般的问题
 
-This section describes general issues and principles of AdGuard products.
+本节介绍AdGuard产品的一般问题和原理。
