@@ -1,87 +1,87 @@
 ---
-title: Adware/Viruses
+title: 广告软件/病毒
 published: true
 taxonomy:
     category:
         - docs
 ---
-## Introduction
+＃＃ 介绍
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+如果您怀疑计算机感染了恶意软件或病毒，则首先可以使用领先的防病毒软件检查计算机。
 
-**Free antivirus utilities**
+**免费的防病毒实用程序**
 
-There are many of them and you can use any one you prefer, here is simply a couple examples:
+它们很多，您可以使用任何喜欢的方法，这里仅举几个例子：
 
-[Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
+[卡巴斯基病毒清除工具](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
-[Dr.Web CureIt! ](http://www.freedrweb.com/cureit/?lng=en)
+[Dr.Web CureIt！ ](http://www.freedrweb.com/cureit/?lng=zh-CN)
 
-If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+如果使用防病毒实用程序进行的检查没有发现任何问题，但计算机仍然表现可疑，请尝试对其进行广告软件测试，该广告软件可以在您打开的任何页面上实施其广告。
 
-## How to clean your system from Adware?
+##如何从广告软件清除系统？
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)** by **Malwarebytes**. This application is quite easy to use and you will be able to handle it by yourself.
+在Internet上，可以找到许多针对此问题的应用程序。您可以使用任何喜欢的实用程序。但是我们强烈建议您使用** Malwarebytes **的** [AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)**。此应用程序非常易于使用，您将可以自行处理。
 
-After the application has been downloaded and successfully installed, you should take the following steps:
+下载完应用程序并成功安装后，应执行以下步骤：
 
-1) Start the application and click **scan now**.
+1)启动应用程序，然后单击“立即扫描”。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware1.png" />
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware1.png” />
 
-2) Once the scan has been completed, you will need to send suspicious objects to **quarantine**.
+2)扫描完成后，您需要将可疑对象发送到“隔离区”。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware2.png" />
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware2.png” />
 
-3) When the items are moved to **quarantine**, you will be able to **clear the system** of unnecessary ballast.
-4) In some cases, you may need to **reboot the system** after cleaning is complete.
+3)将物品移至“隔离区”后，您将能够“清除系统”中不必要的压载物。
+4)在某些情况下，清洁完成后，您可能需要“重新启动系统”。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware3.png" />
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware3.png” />
 
-5) Once the system has been rebooted, cleaning will be completed, if necessary, you can always read the **report** on the work done.
+5)重新启动系统后，清洁将完成，如有必要，您始终可以阅读所做工作的“报告”。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware4.png" />
+<img src =“ https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware4.png” />
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [this instructions](#instruction). 
+如果没有帮助，请根据[此说明](＃说明)暂时禁用浏览器中的所有扩展程序和其他一些设置。
 
-If disabling of settings and extensions does not help, try to [re-create shortcuts of your browsers](#shortcuts).
+如果禁用设置和扩展名无济于事，请尝试[重新创建浏览器的快捷方式](＃shortcuts)。
 
-Further on this page we describe the instructions to remove some of the most commonly encountered ad extensions.
+在此页的进一步内容中，我们描述了删除一些最常见的广告附加信息的说明。
 
 <a id="instruction"></a>
-### How to disable settings and extensions in the browser? 
+###如何在浏览器中禁用设置和扩展名？
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers.
+以下是有关如何针对最流行的浏览器禁用设置和扩展名的说明。
 
-If you use Google Chrome, [read this manual](https://support.google.com/chrome/answer/187443?hl=en).
+如果您使用的是Google Chrome浏览器，请[阅读本手册](https://support.google.com/chrome/answer/187443?hl=zh_CN)。
 
-If you use Mozilla Firefox, [read this manual](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons).
+如果您使用Mozilla Firefox，请[阅读本手册](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)。
 
-If you use the Opera browser, [read this manual](http://help.opera.com/Windows/11.50/en/extensions.html).
+如果您使用Opera浏览器，请[阅读本手册](http://help.opera.com/Windows/11.50/en/extensions.html)。
 
 <a id="shortcuts"></a>
-### How to re-create shortcuts for your browsers?
+###如何为浏览器重新创建快捷方式？
 
-Very often, malware and adware programs install their homepage in a very simple way - they substitute your browser's desktop shortcut, taskbar and "Start" menu items.
+恶意软件和广告软件程序通常以非常简单的方式安装其首页-它们替代了浏览器的桌面快捷方式，任务栏和“开始”菜单项。
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+在这种情况下，最简单的解决方案是手动删除所有快捷方式，然后自己重​​新创建它们。
 
-### How to remove sindex.biz?
+###如何删除sindex.biz？
 
-If instead of the home page, you always open sindex.biz, it’s likely that shortcuts for your browser(s) have been substituted. Try to [recreate the shortcuts](#shortcuts) to get rid of this problem.
+如果您始终打开sindex.biz而不是首页，则可能已替换了浏览器的快捷方式。尝试[重新创建快捷方式](＃shortcuts)摆脱此问题。
 
-### How to remove Mobogenie?
+###如何删除Mobogenie？
 
-To get rid of this software, check your computer with a free utility: e.g. the free one from Doctor Web: [Dr.Web CureIt!](http://www.freedrweb.com/cureit/).
+要摆脱该软件，请使用免费的实用程序检查计算机：例如Doctor Web提供的免费软件：[Dr.Web CureIt！](http://www.freedrweb.com/cureit/)。
 
-### How to Remove Ads by BetterSurf?
+###如何通过BetterSurf删除广告？
 
-**What is BetterSurf?**
+**什么是BetterSurf？**
 
-BetterSurf is an advertising program that builds itself into your browser. This program put up its ads on all websites that you visit. Externally such ads look quite ordinary, and you can easily not notice them among the regular banners posted by this site. But with a keen eye you will be able to easily recognize these ads as ads that "wasn’t here before". For example, it's extremely easy to notice on websites like Facebook or Twitter.
+BetterSurf是一个广告程序，可将其内置到您的浏览器中。该程序在您访问的所有网站上投放广告。从外部看，此类广告看起来很普通，在此网站发布的常规横幅中，您很容易看不到它们。但是，只要敏锐的眼光，您就可以轻松地将这些广告识别为“以前不存在”的广告。例如，在Facebook或Twitter等网站上注意到这一点非常容易。
 
-To get rid of this program, use the [following instructions](http://malwaretips.com/blogs/bettersurf-virus-removal/).
+要摆脱此程序，请使用[遵循说明](http://malwaretips.com/blogs/bettersurf-virus-removal/)。
 
-### How to remove Rvzr-a.akamaihd.net?
+###如何删除Rvzr-a.akamaihd.net？
 
-If you meet a pop-up by Rvzr-a.akamaihd.net, then most likely your computer is infected with malicious adware. You can find instructions for removing it at [this link](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).
+如果遇到Rvzr-a.akamaihd.net的弹出窗口，则很可能是您的计算机感染了恶意广告软件。您可以在[此链接](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/)中找到有关删除它的说明。
