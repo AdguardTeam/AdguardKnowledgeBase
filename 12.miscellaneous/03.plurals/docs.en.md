@@ -1,193 +1,193 @@
 ---
-title: Plural forms
+title: 复数形式
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-* [Introduction](#intro)
-* [What do plural forms mean?](#plurals)
-* [Where can you learn about the number of plural forms?](#where-to-learn)
-* [Plurals in AdGuard translations](#translations)
-    * [Strings with `singular`, `dual`, `plural` keys](#1type)
-    * [Plural word forms separated by commas](#2type)
-    * [Crowdin supported patterns](#3type)
-    * [Strings with templates](#4type)
-* [Short summary](#summary)
+* [简介]（＃intro）
+* [复数形式是什么意思？]（＃plurals）
+* [在哪里可以了解复数形式的数量？]（＃where-to-learn）
+* [AdGuard翻译中的复数]（＃translations）
+    * [具有单数，双数，复数键的字符串]（＃1type）
+    * [用逗号分隔的多个单词形式]（＃2type）
+    * [Crowdin支持的模式]（＃3type）
+    * [带模板的字符串]（＃4type）
+* [简短摘要]（＃summary）
 
 <a name="intro"></a>
 
-## Introduction
+＃＃ 介绍
 
-It is no secret, that there are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
+众所周知，世界上的语言之间存在很多差异。这些差异之一是使用复数形式，在本地化问题上可能会造成巨大困难。
 
-That is why we strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
+因此，我们强烈建议您正确阅读本文，以详细了解复数形式以及如何在AdGuard转换中使用它们。
 
 <a name="plurals"></a>
 
-## What do plural forms mean?
+##复数形式是什么意思？
 
-Nouns in different languages can have several plural word forms. Their usage depends on the specific number that goes before the word to indicate the number of items expressed by the word. 
+不同语言的名词可以有几种复数词形式。它们的用法取决于单词前面的特定数字，以指示该单词表示的项目数。
 
-For instance, English words have two word forms when speaking about something in different numbers, like *'one star'* or *'two stars'*. It doesn’t matter if you say five, twenty-six or even five hundred thirty-two stars – the ending 's' will remain the same. And it happens because the English nouns have only two plural forms – for the singular number and for the plural one. 
+例如，当谈论不同数量的事物时，英语单词有两种词形式，例如*'one star'*或*'two star'*。无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾的“ s”都将保持不变。之所以会发生这种情况，是因为英语名词只有两种复数形式，即单数形式和复数形式。
 
-But some languages can contain only one or, conversely, many more plural forms. 
+但是某些语言只能包含一种形式，反之则可以包含更多种形式。
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the Singular, another form is used in the Plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+与英语相反，波兰语具有三种复数形式的名词。在谈论单数形式时使用一种形式，在复数形式中使用另一种形式，但数字以2-4结尾，但不包括12-14，第三种形式-前面带有其他数字的单词。
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.  
+让我们来看看这张照片。在这里，您可以看到一组数字，这些数字决定了站在单词前面的单词形式。
 
-![](Polish.png)
+！[]（Polish.png）
 
->Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+>在[此处]（https://developer.mozilla.org/zh-CN/docs/Mozilla/Localization/Localization_and_Plurals）查找其他示例。
 
-Let’s draw a small parallel between English and Polish for better understanding: 
+让我们在英语和波兰语之间做一个小比较，以便更好地理解:
 
-      The English version:                                                 The Polish equivalents:
+      英文版：波兰语等效：
 
       1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
       2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
       2. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
       
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+现在很明显，波兰语*（godzinę'*）（小时）具有三种不同的形式，而英语单词仅将给定数字更改其形式两次。
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+除波兰语外，还有许多其他语言具有三种复数形式，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等。但并非所有语言都遵循相同的规则。这就是为什么了解您的语言包含多少种复数形式以及如何应用它们如此重要的原因。
 
 <a name="where-to-learn"></a>
 
-## Where can you learn about the number of plural forms?
+##在哪里可以了解复数形式的数量？
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms one or another language provides. Fortunately, there are a lot of sources of information and some of them are listed below.
+当您面对需要使用复数形式的翻译时，您可能无法立即意识到一种或另一种语言提供了多少个单词形式。幸运的是，有很多信息来源，下面列出了其中一些。
 
-First of all, we would like to advise you to refer to the information of Mozilla’s [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article. There you will find different plural form rules and the languages that obey these rules. 
+首先，我们建议您参考Mozilla的[本地化和复数]（https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals）文章中的信息。在这里，您会发现不同的复数形式规则以及遵循这些规则的语言。
 
-But despite this article is (or at least supposed to be) quite informative and comprehensible, it doesn’t contain the entire list of world’s languages. That’s why we also advise you to turn to the [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html), where the wider list of languages is represented, but in another manner. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language. Besides, here you can see different formulas which can help you identify what form to use in each particular case.
+但是，尽管这篇文章（或至少应该是）内容丰富且易于理解，但并未包含世界语言的完整列表。因此，我们还建议您转到[本地化指南]（http://docs.translatehouse.org/projects/localization-guide/zh-CN/latest/l10n/pluralforms.html），该手册中列出了更多的语言，但以另一种方式。不同语言的复数形式的数量以这种方式显示：“ nplurals = 2”，“ nplurals = 4”，依此类推。等号“ =”后的数字表示相应语言的多种形式。此外，在这里您可以看到不同的公式，这些公式可以帮助您确定每种情况下要使用的格式。
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…) but we don’t use them in AdGuard translations.
+此外，您还可以在[Unicode通用语言环境数据存储库]（http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules）（CLDR）中获取有关复数形式的信息。 CLDR复数规则表示十进制数字（1.5; 2.3; 100.1…）的其他字词形式，但我们在AdGuard翻译中不使用它们。
 
 <a name="translations"></a>
 
-## Plurals in AdGuard translations
+## AdGuard翻译中的复数形式
 
-First of all, you need to understand, that not every AdGuard translation requires the use of plural forms. 
+首先，您需要了解，并非每个AdGuard译文都需要使用复数形式。
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.  
+当前，我们在Crowdin上有4种类型的字符串，涉及使用复数形式。
 
-Let's take a closer look at them.
+让我们仔细看看它们。
 
 <a name="1type"></a>
-#### 1. **Phrases with string keys ending in `.singular`, `.dual`, `.plural`**
+#### 1. **带有以.singular，.dual，.plural结尾的字符串键的短语**
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
+！[crowdin]（https://cdn.adguard.com/public/Adguard/kb/zh/plurals/dual_it.png）
 
-Most of them are in the `AdGuard for Windows` project and consist of only one or two words:  
+其中大多数位于“ AdGuard for Windows”项目中，仅包含一个或两个词：
 
 - `days;`
 - `extensions;`
 - `hours`
 
-Please pay attention to the string keys when you meet such phrases on Crowdin and to the "context" field where you can see some important notes about plurals.
+在Crowdin上遇到此类短语时，请注意字符串键，在“上下文”字段中您会看到一些关于复数的重要说明。
 
 <a name="2type"></a>
-#### 2. **Strings with singular and plural nouns separated by commas**
+#### 2. **具有单数和复数名词的字符串，以逗号分隔**
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+这种字符串主要集中在“ AdGuard for Android”项目中。
 
-Please look at the example:
+请看示例：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
+！[crowdin]（https://cdn.adguard.com/public/Adguard/kb/zh/plurals/android_fr.png）
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+如果您的语言中有3种名词的复数形式（如波兰语），请用逗号分隔所有复数形式。
 
 `hour, hours --> godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。但是，如果您重复两次该表格将不会出错。
 
 <a name="3type"></a>
-#### 3. **Strings that use the Crowdin-developed pattern** 
+#### 3. **使用Crowdin开发的模式的字符串**
 
-This is the most user-friendly scheme of translating strings with plurals.
+这是对字符串进行复数转换的最用户友好的方案。
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms. 
+Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语。
 
-If your language provides only one plural form, then you will see only one phrase to translate. If you have three forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+如果您的语言仅提供一种复数形式，则您只会看到一个要翻译的短语。如果您使用三种形式，Crowdin将为您提供分为其他两到三个字符串的字符串以进行翻译。
 
-For example:
+例如：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png) 
+！[crowdin]（https://cdn.adguard.com/public/Adguard/kb/zh/plurals/crowdin_scheme.png）
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The "Many" and "Other" fields' contents can be the same.
+在翻译和批准这些字符串时，请注意。如果您不知道“其他”字段的含义，则只需粘贴与“许多”字段中相同的表单即可。 “许多”和“其他”字段的内容可以相同。
 
 <a name="4type"></a>
-#### 4. **Strings with templates separated by the vertical bar sign**
+#### 4. **带有用竖线分隔的模板的字符串**
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project (namely in `"adguard.com"` folder).
+这是最复杂的AdGuard字符串类型，通常在“ AdGuard网站”项目（即“ adguard.com”文件夹中）中使用。
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+请密切注意句子与原始短语中的**％count％**占位符之间的竖线符号–这将帮助您识别需要翻译使用复数形式的短语。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png) 
+！[crowdin]（https://cdn.adguard.com/public/Adguard/kb/zh/plurals/plurals_site.png）
 
-Now, let’s imagine — you are faced with such phrase: *"Standard license for %count% computer|Standard license for %count% computers"*. 
+现在，让我们想象一下-您将面临这样的短语：*“％count％计算机的标准许可证|％count％计算机的标准许可证” *。
 
-What should you know to translate it correctly?
+您应该知道正确翻译什么？
 
-Let's call the sentences which are divided by a vertical bar sign ***"templates"***, because actually they serve as templates for phrases with different numbers. 
+我们称这些句子用竖线符号***称为“模板” ***，因为实际上它们用作具有不同数字的短语的模板。
 
-Coming back to the example, as the English language includes only two plural forms, there should be two templates respectively:
+回到示例，由于英语仅包含两种复数形式，因此应分别有两个模板：
 
-`**Standard license for *%count%* computer|Standard license for *%count%* computers**`
+`***％count％*计算机的标准许可| *％count％*计算机的标准许可**`
 
-where **template 1** – Standard license for *%count%* computer,  
+其中**模板1 ** – *％count％*计算机的标准许可，
 
-and **template 2** – Standard license for *%count%* computers 
+和** template 2 ** – *％count％*计算机的标准许可
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+您应注意的另一重要事项是**％count％**占位符，它们通常像在它们定义的单词之前一样出现。根据选择的模板，此处将显示不同的数字，而不是**％count％**。
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them. 
+在另一种语言具有三种复数形式的情况下，应该有三个模板，它们之间有两个竖线符号。
 
-For example, we would like to translate the above mentioned phrase into Slovak, that according to the rule of [Localizations and Plurals](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals) article has three plural forms of words to use with following numbers:
+例如，根据[本地化和复数]（https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals）文章的规则，我们希望将上述短语翻译成斯洛伐克文具有三种复数形式的单词，可与以下数字配合使用：
 
-![](Slovak.png)
+！[]（Slovak.png）
 
-Then the translation from English into Slovak should be: 
+那么从英语到斯洛伐克语的翻译应该是：
 
-`**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**` 
+`**tandartnálicencia pre *％count％*počítač|Štandartnálicencia pre *％count％*počítače|Štandartnálicencia pre *％count％*počítačov**`
 
-In this case, we see three templates which contain three plural forms of the word *"počítač"* (computer) in Slovak.
+在这种情况下，我们看到三个模板，其中包含斯洛伐克语中“ *počítač” *（计算机）三个复数形式。
 
-**If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers** and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
+**如果我们忽略其中一种形式，而只为斯洛伐克语使用两个模板，而不是三个，则系统将无法为某些数字采用适当的模板**，结果，句子中将出现语法错误，例如英语：* 5台计算机的标准许可*。
 
-But in some languages there can be words (let’s call them exclusions) that have fewer plural forms than the language itself. And that can cause some confusion. 
+但是在某些语言中，可能有一些单词（简称为排除词）的复数形式少于语言本身。这可能会引起一些混乱。
 
-The Serbian word *'računar'* (computer), for example, has only two forms: *'računar'* - for 1, 21, 31 (and other numbers ending in 1, excluding 11) computers and *'računara'* - for other numbers of computers. But in spite of this fact, there should be three templates in AdGuard translations according to the general rule (which states that there are three plural forms of words in Serbian): 
+例如，塞尔维亚单词*'računar'*（计算机）只有两种形式：*'računar'*-代表1、21、31（以及其他以1结尾的数字，不包括11）计算机和*'računara'* -用于其他数量的计算机。但是尽管如此，但根据一般规则（说明塞尔维亚语中的单词有三种复数形式），AdGuard翻译中应该有三个模板：
 
-![](Serbian.png)
+！[]（Serbian.png）
 
-Thus, the translation from English into Serbian should be:
+因此，从英语到塞尔维亚语的翻译应该是：
 
-`**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
+`** Standardna licenca za *％count％*računar| Standardna licenca za *％count％*računara| Standardna licenca za *％count％*računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: ***The number of templates should reflect the number of plural forms of the respective language!*** (typically for this type of strings with plurals).
+尽管很明显，最后两个模板没有区别，但保持规则非常重要：***模板的数量应反映相应语言的复数形式！***（通常针对这种类型的带复数的字符串）。
 
 <a name="summary"></a>
 
-## Short summary 
+＃＃ 简短的摘要
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+在翻译AdGuard项目时，请密切注意需要使用复数形式的短语。
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+尽管前三种类型的弦乐或多或少容易执行，但第四类要求更高的警惕性。
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+再说一次：如果您遇到包含两个重要元素的原始词组：**竖线符号**和**％count％**占位符，请执行以下操作：
 
-+ Refer to the plural rule of a language you translate into; 
++指翻译成一种语言的复数规则；
 
-+ Keep the exact number of templates;
++保留确切数量的模板；
 
->The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+>即使在某些单词本身具有较少形式的情况下，模板的数量也应与语言所包含的复数形式的数量相一致。两种复数形式–翻译中的两个模板；五个复数形式–五个模板等
 
-+ Do not forget to use a vertical bar sign between templates without any space before and after it (exceptions: strings with spaces in original phrases);
++不要忘记在模板之间使用竖线符号，在模板前后没有任何空格（例外：在原始短语中带有空格的字符串）；
 
-+ Do not translate, fill in or delete **%count%** placeholders.
++请勿翻译，填写或删除**％count％**占位符。
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process. Thank you!
+通过遵循这些简单的规则，您将帮助AdGuard开发人员避免本地化过程中的许多不必要的复杂情况。谢谢！
