@@ -20,8 +20,7 @@ visible: true
     * [DNS Libs](#dnslibs)
 * [Благодарности](#testers)
 
-Это список открытых библиотек и других ресурсов, которые помогли нам в процессе разработки программного обеспечения AdGuard.
-Наша команда хотела бы поблагодарить разработчиков этого стороннего программного обеспечения и наших замечательных бета-тестеров (и других заинтересованных пользователей), кто так или иначе помогал нам сделать AdGuard ещё лучше.
+Наша команда хотела бы поблагодарить разработчиков перечисленного ниже стороннего программного обеспечения и наших замечательных бета-тестеров (и других заинтересованных пользователей), кто так или иначе помогал нам сделать AdGuard ещё лучше.
 
 
 <a id="software"></a>
@@ -29,7 +28,7 @@ visible: true
 <a id="win"></a>
 ## AdGuard для Windows
 
-* SQL database engine: [https://sqlite.org](https://sqlite.org)
+* SQLLite database engine: [https://sqlite.org](https://sqlite.org)
 
 * ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 
@@ -230,7 +229,7 @@ visible: true
 * webpack: https://github.com/webpack/webpack
 
 <a id="vpn-client"></a>
-## VPN Client
+## VPN приложения
 
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 
@@ -463,5 +462,6 @@ TayTayTheKiller
 
 Также благодарим пользователей форума [4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691)! Спасибо за ваши полезные комментарии и замечания.
 
-Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму AdGuard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [форуму 4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
+Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму AdGuard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [AdGuard subreddit](https://reddit.com/r/adguard), [форуму 4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691), [форуму Xda-developers](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
+
 
