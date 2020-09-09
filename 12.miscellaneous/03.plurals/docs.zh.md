@@ -79,7 +79,7 @@ visible: true
 <a name="1type"></a>
 #### 1. **带有以 `.singular`, `.dual`, `.plural` 结尾的字符串键的短语**
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/dual_it.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
 
 其中大多数位于 `AdGuard for Windows` 项目中，仅包含一个或两个词：
 
@@ -96,7 +96,7 @@ visible: true
 
 请看示例：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/android_fr.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
 
 如果您的语言中有3种名词的复数形式(如波兰语)，请用逗号分隔所有复数形式。
 
@@ -115,7 +115,7 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 例如：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/crowdin_scheme.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
 在翻译和批准这些字符串时，请注意。 如果您不知道“其他”字段的含义，则只需粘贴与“许多”字段中相同的表单即可。 “许多”和“其他”字段的内容可以相同。
 
@@ -126,7 +126,7 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 请密切注意句子与原始短语中的 **%count%** 占位符之间的竖线符号–这将帮助您识别需要翻译使用复数形式的短语。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/plurals_site.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
 现在，让我们想象一下 — 您将面临这样的短语：*"Standard license for %count% computer|Standard license for %count% computers"*. 
 
