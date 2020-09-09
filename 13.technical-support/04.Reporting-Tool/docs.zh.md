@@ -28,7 +28,7 @@ visible: true
  
 您可以通过填写申请表中的广告示例来帮助我们。为此，请按照您的操作系统使用说明。
 
-##报告网站
+## 报告网站
 
 > ### **注意**：当您通过应用或AdGuard Assistant发送投诉时，所有信息都会自动填写。除了屏幕截图，您还必须自己制作并附加它们。如果您使用的是[直接链接](https://agrd.io/report)，则需要手动输入数据。
 
@@ -40,14 +40,14 @@ visible: true
 ### **Windows**
 
 
-*打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
+* 打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
 
 * **报告网站**，如屏幕截图所示：
 
 <img src =" https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width =" 350" />
 
-*填写举报表格；
-*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 填写举报表格；
+* 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id="extension"></a>
 
@@ -95,12 +95,12 @@ visible: true
 
 * 打开AdGuard设置；
 * 发送反馈;
-*报告错误的阻止：
+* 报告错误的阻止：
 
 <img src =" https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width =" 350" />
 
-*填写举报表格；
-*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 填写举报表格；
+* 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id="form"></a>
 
