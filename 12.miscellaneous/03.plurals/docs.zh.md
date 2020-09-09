@@ -62,7 +62,7 @@ visible: true
 
 首先，我们建议您参考Mozilla的[本地化和复数](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)文章中的信息。在这里，您会发现不同的复数形式规则以及遵循这些规则的语言。
 
-但是，尽管这篇文章(或至少应该是)内容丰富且易于理解，但并未包含世界语言的完整列表。因此，我们还建议您转到[本地化指南](http://docs.translatehouse.org/projects/localization-guide/zh-CN/latest/l10n/pluralforms.html)，该手册中列出了更多的语言，但以另一种方式。不同语言的复数形式的数量以这种方式显示： `nplurals=2` ， `nplurals=4` ，依此类推。等号 `=` 后的数字表示相应语言的多种形式。此外，在这里您可以看到不同的公式，这些公式可以帮助您确定每种情况下要使用的格式。
+但是，尽管这篇文章(或至少应该是)内容丰富且易于理解，但并未包含世界语言的完整列表。因此，我们还建议您转到[本地化指南](http://docs.translatehouse.org/projects/localization-guide/zh-CN/latest/l10n/pluralforms.html)，该手册中列出了更多的语言，但以另一种方式。不同语言的复数形式的数量以这种方式显示： 'nplurals=2', 'nplurals=4' ，依此类推。等号 '=' 后的数字表示相应语言的多种形式。此外，在这里您可以看到不同的公式，这些公式可以帮助您确定每种情况下要使用的格式。
 
 此外，您还可以在[Unicode通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR)中获取有关复数形式的信息。 CLDR复数规则表示十进制数字(1.5; 2.3; 100.1…)的其他字词形式，但我们在AdGuard翻译中不使用它们。
 
