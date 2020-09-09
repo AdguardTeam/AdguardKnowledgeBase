@@ -30,7 +30,7 @@ visible: true
 
 不同语言的名词可以有几种复数词形式。它们的用法取决于单词前面的特定数字，以指示该单词表示的项目数。
 
-例如，当谈论不同数量的事物时，英语单词有两种词形式，例如*'one star'*或*'two star'*。无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾的“ s”都将保持不变。之所以会发生这种情况，是因为英语名词只有两种复数形式，即单数形式和复数形式。
+例如，当谈论不同数量的事物时，英语单词有两种词形式，例如 *'one star'* 或 *'two star'*。无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾的 ` s` 都将保持不变。之所以会发生这种情况，是因为英语名词只有两种复数形式，即单数形式和复数形式。
 
 但是某些语言只能包含一种形式，反之则可以包含更多种形式。
 
@@ -50,7 +50,7 @@ visible: true
       2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
       2. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
       
-现在很明显，波兰语*(godzinę'*)(小时)具有三种不同的形式，而英语单词仅将给定数字更改其形式两次。
+现在很明显，波兰语 *'godzinę'* (小时)具有三种不同的形式，而英语单词仅将给定数字更改其形式两次。
 
 除波兰语外，还有许多其他语言具有三种复数形式，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等。但并非所有语言都遵循相同的规则。这就是为什么了解您的语言包含多少种复数形式以及如何应用它们如此重要的原因。
 
@@ -62,7 +62,7 @@ visible: true
 
 首先，我们建议您参考Mozilla的[本地化和复数](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)文章中的信息。在这里，您会发现不同的复数形式规则以及遵循这些规则的语言。
 
-但是，尽管这篇文章(或至少应该是)内容丰富且易于理解，但并未包含世界语言的完整列表。因此，我们还建议您转到[本地化指南](http://docs.translatehouse.org/projects/localization-guide/zh-CN/latest/l10n/pluralforms.html)，该手册中列出了更多的语言，但以另一种方式。不同语言的复数形式的数量以这种方式显示：“ nplurals = 2”，“ nplurals = 4”，依此类推。等号“ =”后的数字表示相应语言的多种形式。此外，在这里您可以看到不同的公式，这些公式可以帮助您确定每种情况下要使用的格式。
+但是，尽管这篇文章(或至少应该是)内容丰富且易于理解，但并未包含世界语言的完整列表。因此，我们还建议您转到[本地化指南](http://docs.translatehouse.org/projects/localization-guide/zh-CN/latest/l10n/pluralforms.html)，该手册中列出了更多的语言，但以另一种方式。不同语言的复数形式的数量以这种方式显示： ` nplurals = 2` ， ` nplurals = 4` ，依此类推。等号 ` =` 后的数字表示相应语言的多种形式。此外，在这里您可以看到不同的公式，这些公式可以帮助您确定每种情况下要使用的格式。
 
 此外，您还可以在[Unicode通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR)中获取有关复数形式的信息。 CLDR复数规则表示十进制数字(1.5; 2.3; 100.1…)的其他字词形式，但我们在AdGuard翻译中不使用它们。
 
@@ -77,26 +77,26 @@ visible: true
 让我们仔细看看它们。
 
 <a name="1type"></a>
-#### 1. **带有以.singular，.dual，.plural结尾的字符串键的短语**
+#### 1. **带有以`.singular`, `.dual`, `.plural`结尾的字符串键的短语**
 
-！[crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/dual_it.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/dual_it.png)
 
-其中大多数位于“ AdGuard for Windows”项目中，仅包含一个或两个词：
+其中大多数位于 `AdGuard for Windows` 项目中，仅包含一个或两个词：
 
 - `days;`
 - `extensions;`
 - `hours`
 
-在Crowdin上遇到此类短语时，请注意字符串键，在“上下文”字段中您会看到一些关于复数的重要说明。
+在Crowdin上遇到此类短语时，请注意字符串键，在 `上下文` 字段中您会看到一些关于复数的重要说明。
 
 <a name="2type"></a>
 #### 2. **具有单数和复数名词的字符串，以逗号分隔**
 
-这种字符串主要集中在“ AdGuard for Android”项目中。
+这种字符串主要集中在 `AdGuard for Android` 项目中。
 
 请看示例：
 
-！[crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/android_fr.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/android_fr.png)
 
 如果您的语言中有3种名词的复数形式(如波兰语)，请用逗号分隔所有复数形式。
 
@@ -115,24 +115,24 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 例如：
 
-！[crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/crowdin_scheme.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/crowdin_scheme.png)
 
-在翻译和批准这些字符串时，请注意。如果您不知道“其他”字段的含义，则只需粘贴与“许多”字段中相同的表单即可。 “许多”和“其他”字段的内容可以相同。
+在翻译和批准这些字符串时，请注意。如果您不知道 `其他` 字段的含义，则只需粘贴与 `许多` 字段中相同的表单即可。  `许多` 和 `其他` 字段的内容可以相同。
 
 <a name="4type"></a>
 #### 4. **带有用竖线分隔的模板的字符串**
 
-这是最复杂的AdGuard字符串类型，通常在“ AdGuard网站”项目(即“ adguard.com”文件夹中)中使用。
+这是最复杂的AdGuard字符串类型，通常在 ` AdGuard网站` 项目(即 ` adguard.com` 文件夹中)中使用。
 
 请密切注意句子与原始短语中的**％count％**占位符之间的竖线符号–这将帮助您识别需要翻译使用复数形式的短语。
 
-！[crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/plurals_site.png)
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/zh/plurals/plurals_site.png)
 
-现在，让我们想象一下-您将面临这样的短语：*“％count％计算机的标准许可证|％count％计算机的标准许可证” *。
+现在，让我们想象一下-您将面临这样的短语：* `％count％计算机的标准许可证|％count％计算机的标准许可证`  *。
 
 您应该知道正确翻译什么？
 
-我们称这些句子用竖线符号***称为“模板” ***，因为实际上它们用作具有不同数字的短语的模板。
+我们称这些句子用竖线符号***称为 `模板`  ***，因为实际上它们用作具有不同数字的短语的模板。
 
 回到示例，由于英语仅包含两种复数形式，因此应分别有两个模板：
 
@@ -154,7 +154,7 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 `**tandartnálicencia pre *％count％*počítač|Štandartnálicencia pre *％count％*počítače|Štandartnálicencia pre *％count％*počítačov**`
 
-在这种情况下，我们看到三个模板，其中包含斯洛伐克语中“ *počítač” *(计算机)三个复数形式。
+在这种情况下，我们看到三个模板，其中包含斯洛伐克语中 ` *počítač`  *(计算机)三个复数形式。
 
 **如果我们忽略其中一种形式，而只为斯洛伐克语使用两个模板，而不是三个，则系统将无法为某些数字采用适当的模板**，结果，句子中将出现语法错误，例如英语：* 5台计算机的标准许可*。
 
