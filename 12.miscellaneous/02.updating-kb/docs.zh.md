@@ -27,7 +27,7 @@ visible: true
 
 首先，您需要一个GitHub帐户。如果您没有，请加入[https://github.com/join](https://github.com/join)。现在已经解决了，您可以直接投入写作。浏览[此处](https://github.com/AdguardTeam/AdguardKnowledgeBase)的文章列表，然后选择您要提出一些更改的任何文章。单击“ docs.en.md”文件(如果您使用英语书写)，然后单击框架右上角的小铅笔图标。
 
-在这里，您终于可以展示您所拥有的！以您认为合适的任何方式更改文章( 使用[Markdown](https://github.com/LewisVo/Markdown-Tutorial)！)，并提供简短说明和名称，以供您即将使用的拉取请求(稍后会详细介绍)，然后单击建议更改文件。您将被带到另一个页面，该页面上似乎有很多事情正在进行，但是您所要做的基本上就是单击带有“创建请求请求”文本的绿色按钮。如果您想更多地了解整个过程，可以在线找到大量的GitHub教程。
+在这里，您终于可以展示您所拥有的！以您认为合适的任何方式更改文章 (使用[Markdown](https://github.com/LewisVo/Markdown-Tutorial)！)，并提供简短说明和名称，以供您即将使用的拉取请求(稍后会详细介绍)，然后单击建议更改文件。您将被带到另一个页面，该页面上似乎有很多事情正在进行，但是您所要做的基本上就是单击带有“创建请求请求”文本的绿色按钮。如果您想更多地了解整个过程，可以在线找到大量的GitHub教程。
 
 那么，什么是拉取请求(或PR)？简而言之，它向存储库作者/管理员传达了一条信息，即您做了一些很酷的事情，至少值得考虑添加。在我们的案例中，此内容是对文章的更改。管理员将看到您的PR并进行审查，如果他们认为您的建议合法有效，他们将予以批准。否则，他们可能会拒绝PR或要求您在批准之前进行更改。只需尝试一下，一试便是非常不言自明和直观的。
 
@@ -48,7 +48,7 @@ visible: true
 visible: true
 ---
 ```
-在下面输入其余文本(使用[Markdown](https://github.com/LewisVo/Markdown-Tutorial)！)，然后单击建议更改文件以创建PR。其余内容与[上文](#suggest-change)中所述完全相同。
+在下面输入其余文本 (使用[Markdown](https://github.com/LewisVo/Markdown-Tutorial)！)，然后单击建议更改文件以创建PR。其余内容与[上文](#suggest-change)中所述完全相同。
 
 <a name="translator"></a>
 
