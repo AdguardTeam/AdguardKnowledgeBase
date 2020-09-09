@@ -6,18 +6,18 @@ taxonomy:
 published: true
 visible: true
 ---
-* [Windows版AdGuard]（#win）
-  * [第三方软件]（#third1）
-  * [测试人员]（#test1）
-* [Mac版AdGuard]（#mac）
-  * [第三方软件]（#third2）
-  * [测试人员]（#test2）
-* [Android版AdGuard]（#android）
-  * [第三方软件]（#third3）
-  * [测试人员]（#test3）
-* [iOS版AdGuard]（#ios）
-  * [第三方软件]（#third4）
-  * [测试人员]（#test4）
+* [Windows版AdGuard](#win)
+  * [第三方软件](#third1)
+  * [测试人员](#test1)
+* [Mac版AdGuard](#mac)
+  * [第三方软件](#third2)
+  * [测试人员](#test2)
+* [Android版AdGuard](#android)
+  * [第三方软件](#third3)
+  * [测试人员](#test3)
+* [iOS版AdGuard](#ios)
+  * [第三方软件](#third4)
+  * [测试人员](#test4)
 
 在AdGuard软件开发过程中，我们使用了一系列开源软件，而我们出色的Beta测试人员和其他感兴趣的用户确实为AdGuard的进一步发展做出了贡献。我们的开发人员团队要感谢所有帮助我们改进AdGuard的人。
 
