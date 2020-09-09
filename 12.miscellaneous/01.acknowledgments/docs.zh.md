@@ -88,7 +88,7 @@ Sanjay Nand
 
 
 <a id="test2"></a>
-###测试人员
+### 测试人员
 当然，我们想对Beta测试人员大声疾呼。特别感谢：
 
 [milder](http://forum.adguard.com/member.php?4519-milder)
