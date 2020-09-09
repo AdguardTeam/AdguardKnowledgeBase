@@ -58,7 +58,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350" />
 
-*填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 <a id=" Android" ></a>
 
@@ -71,7 +71,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350" />
 
-*填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 
 <a id=" MAC" ></a>
@@ -121,8 +121,8 @@ visible: true
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png" width="500" />
 
 4.必须指定应用程序配置：
-*您使用的过滤器；
-*隐身模式设置(如果启用了此功能)。
+* 您使用的过滤器；
+* 隐身模式设置(如果启用了此功能)。
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma4en.png" width="500" />
 
@@ -132,7 +132,7 @@ visible: true
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500" />
 
 6.提供其他信息，以帮助筛选开发人员了解情况；
-如果可以的话，还请在** GitHub **上输入您的帐户(开发人员必须与您联系，以防他们需要一些其他详细信息)；
+如果可以的话，还请在**GitHub **上输入您的帐户(开发人员必须与您联系，以防他们需要一些其他详细信息)；
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500" />
 
@@ -155,27 +155,27 @@ visible: true
 ### **过滤器**
 
 1.禁用**广告拦截器**；
-2.如果解决了问题，请重新启用模块并逐个禁用过滤器。这样做是为了识别" 破坏" 页面的过滤器。
+2.如果解决了问题，请重新启用模块并逐个禁用过滤器。这样做是为了识别破坏页面的过滤器。
 3.如果您设法找出哪个过滤器" 破坏了" 页面，则在填写表格时应通知开发人员(请参见上文)。在这种情况下，希望返回到初始设置。
 4.如果关闭所有过滤器均未产生任何结果，则应用规则
 **@@||example.com^$document,extension**,
-其中** example.com **是一个示例网站名称，需要用您自己的选项替换；
-5.如果发生故障(问题未解决)，请转到" 隐身模式" 一节。
+其中**example.com**是一个示例网站名称，需要用您自己的选项替换；
+5.如果发生故障(问题未解决)，请转到隐身模式一节。
 
 
 ### **隐身模式**。
 
-1.禁用" 隐身模式" **；
-2.如果这解决了问题，请依次打开模块并关闭" 隐身模式" 选项。这样做是为了检测哪些过滤器正在" 破坏" 页面；
-3.如果您设法检测到哪个设置" 破坏了" 页面，则应在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
+1.禁用**隐身模式**；
+2.如果这解决了问题，请依次打开模块并关闭隐身模式选项。这样做是为了检测哪些过滤器正在破坏页面；
+3.如果您设法检测到哪个设置破坏了页面，则应在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
 4.如果出现故障(问题未解决)，请转到" 扩展" 一节。
 
 
 ### **扩展**
 
 1.禁用**扩展**；
-2.如果这解决了问题，请打开模块并逐个关闭**扩展**设置。这样做是为了找出哪个设置" 破坏了" 页面；
-3.如果您设法检测到哪个设置会" 破坏" 页面，请在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
+2.如果这解决了问题，请打开模块并逐个关闭**扩展**设置。这样做是为了找出哪个设置破坏了页面；
+3.如果您设法检测到哪个设置会破坏页面，请在填写表单时通知开发人员(请参见上文)。在这种情况下，最好返回到初始设置。
 
 ### **第三方拦截器**
 某些浏览器和防病毒程序(例如Yandex Browser，Kaspersky等)具有内置的广告拦截器。它们可能会影响站点的运行并引起问题。
