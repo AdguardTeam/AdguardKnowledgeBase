@@ -21,7 +21,7 @@ taxonomy:
 
 ## 如何从广告软件清除系统？
 
-在Internet上，可以找到许多针对此问题的应用程序。您可以使用任何喜欢的实用程序。但是我们强烈建议您使用**Malwarebytes**的**[AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)**。此应用程序非常易于使用，您将可以自行处理。
+在Internet上，可以找到许多针对此问题的应用程序。您可以使用任何喜欢的实用程序。但是我们强烈建议您使用**Malwarebytes**的 **[AdwareCleaner](https://downloads.malwarebytes.com/file/adwcleaner)**。此应用程序非常易于使用，您将可以自行处理。
 
 下载完应用程序并成功安装后，应执行以下步骤：
 
@@ -62,11 +62,11 @@ taxonomy:
 <a id="shortcuts"></a>
 ### 如何为浏览器重新创建快捷方式？
 
-恶意软件和广告软件程序通常以非常简单的方式安装其首页-它们替代了浏览器的桌面快捷方式，任务栏和"开始"菜单项。
+恶意软件和广告软件程序通常以非常简单的方式安装其首页- 它们替代了浏览器的桌面快捷方式，任务栏和"开始"菜单项。
 
 在这种情况下，最简单的解决方案是手动删除所有快捷方式，然后自己重​​新创建它们。
 
-###如何删除sindex.biz？
+### 如何删除sindex.biz？
 
 如果您始终打开sindex.biz而不是首页，则可能已替换了浏览器的快捷方式。尝试[重新创建快捷方式](#shortcuts)摆脱此问题。
 
