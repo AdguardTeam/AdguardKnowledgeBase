@@ -38,7 +38,7 @@ visible: true
 
 2.在要通过AdGuard路由流量的设备上，打开活动WiFi网络的高级设置。
 
-3.将代理类型切换为手动。对于代理主机名，请输入* 1)*中注明的IP地址。对于代理端口，输入在桌面AdGuard的网络设置中选择的端口。
+3.将代理类型切换为手动。对于代理主机名，请输入 *1)* 中注明的IP地址。对于代理端口，输入在桌面AdGuard的网络设置中选择的端口。
 
 4.打开Safari，转到[http://local.adguard.org/cert](http://local.adguard.org/cert)，然后点击下载。在打开的对话框中，允许网站下载配置文件。
 
