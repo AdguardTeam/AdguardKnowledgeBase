@@ -24,7 +24,7 @@ visible: true
 
 但是，使用阻止过滤器需要特定技能。如果您有它们并且知道如何创建规则，请直接访问GitHub上的我们的[AdGuard过滤器存储库](https://github.com/AdguardTeam/AdguardFilters)。在那里，您会发现很多未解决的问题，每个问题都涉及某个网站问题的问题-广告丢失，误报等-选择任何一个问题并在注释中建议您自己的规则。 AdGuard过滤器工程师将审核您的建议，如果发现正确，则您的规则将添加到AdGuard过滤器中。
 
-如果您还不熟悉我们的过滤规则语法，或者可能需要复习，则可以在[我们的知识库]中找到有关语法的基础知识(https://kb.adguard.com/general/how-to-)创建自己的广告过滤器。可以在Internet上找到更多高级指南，如果对语法有任何疑问，请访问我们的[论坛](https://forum.adguard.com/)。
+如果您还不熟悉我们的过滤规则语法，或者可能需要复习，则可以在[我们的知识库]中找到有关语法的基础知识(https://kb.adguard.com/general/how-to-).创建自己的广告过滤器。可以在Internet上找到更多高级指南，如果对语法有任何疑问，请访问我们的[论坛](https://forum.adguard.com/)。
 
 <a name="rewards"></a>
 
