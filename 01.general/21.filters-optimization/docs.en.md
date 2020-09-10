@@ -1,5 +1,5 @@
 ---
-title: 'About Filters Optimization'
+title: 'Filters Optimization'
 taxonomy:
     category:
         - docs
@@ -8,7 +8,7 @@ visible: true
 
 For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely. So it works faster and is easier to operate. 
 
-Basically, if some rule is used rarely, it becomes deleted from a filter list. That is why, if you add a rule, which you don’t want to be deleted, use the *[NOT_OPTIMIZED](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#not_optimized)* hint. 
+Basically, if some rule is used rarely, it becomes deleted from a filter list. That is why, if you add a rule, which you don’t want to be deleted, use the [*NOT_OPTIMIZED* hint](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#not_optimized). 
 
 Rules usage frequency comes from the collected [filter rules statistics](https://kb.adguard.com/en/general/filter-rules-statistics). But filters optimization is based on more than that — some filters have specific configuration for the process to be happening.
 
@@ -107,14 +107,13 @@ Rules usage frequency comes from the collected [filter rules statistics](https:/
 
 Where:
 
-* **filter** — Filter identifier
-* **percent** — Expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
-* **minPercent** — Lower bound of `percent` value
-* **maxPercent** — Upper bound of `percent` value
-* **strict** — If `percent < minPercent || percent  > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
+* **filter** — filter identifier
+* **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
+* **minPercent** — lower bound of `percent` value
+* **maxPercent** — upper bound of `percent` value
+* **strict** — if `percent < minPercent` OR `percent > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
 
->In other words, `percent` is the "compression level".
->For instance, "compression level" for the Base filter is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+>In other words, `percent` is the "compression level". For instance, "compression level" for the Base filter is configured to 40%. It means that optimization algorithm should strip 60% of rules.
 
 
 Eventually, as already mentioned, **we create two versions of each filter: full and optimized**. 
