@@ -15,7 +15,7 @@ taxonomy:
 
 [卡巴斯基病毒清除工具](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
-[Dr.Web CureIt！ ](http://www.freedrweb.com/cureit/?lng=zh-CN)
+[Dr.Web CureIt! ](http://www.freedrweb.com/cureit/?lng=en)
 
 如果使用防病毒实用程序进行的检查没有发现任何问题，但计算机仍然表现可疑，请尝试对其进行广告软件测试，该广告软件可以在您打开的任何页面上实施其广告。
 
@@ -25,22 +25,22 @@ taxonomy:
 
 下载完应用程序并成功安装后，应执行以下步骤：
 
-1)启动应用程序，然后单击立即扫描。
+1)启动应用程序，然后单击 **立即扫描**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware1.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware1.png" />
 
-2)扫描完成后，您需要将可疑对象发送到隔离区。
+2)扫描完成后，您需要将可疑对象发送到 **隔离区**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware2.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware2.png" />
 
-3)将物品移至隔离区后，您将能够清除系统中不必要的压载物。
-4)在某些情况下，清洁完成后，您可能需要重新启动系统。
+3)将物品移至 **隔离区后**，您将能够 **清除系统** 中不必要的压载物。
+4)在某些情况下，清洁完成后，您可能需要 **重新启动系统**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware3.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware3.png" />
 
-5)重新启动系统后，清洁将完成，如有必要，您始终可以阅读所做工作的报告。
+5)重新启动系统后，清洁将完成，如有必要，您始终可以阅读所做工作的 **报告** 。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/zh-CN/Windows7.1/adware4.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware4.png" />
 
 如果没有帮助，请根据[此说明](#说明)暂时禁用浏览器中的所有扩展程序和其他一些设置。
 
