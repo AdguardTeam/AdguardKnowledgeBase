@@ -6,13 +6,13 @@ taxonomy:
 visible: true
 ---
 
-* [简介](＃introduction)
-* [过滤条件](＃policy)
-* [贡献给AdGuard过滤器](＃contribute)
-* [AdGuard过滤器](＃filters)
+* [简介](#introduction)
+* [过滤条件](#policy)
+* [贡献给AdGuard过滤器](#contribute)
+* [AdGuard过滤器](#filters)
 
 <a name="introduction"></a>
-＃＃ 介绍
+## 介绍
 
 本文介绍了我们创建的过滤器，这些过滤器将在AdGuard和其他广告拦截软件(例如uBlock Origin)中使用。每个过滤器均代表一组文本格式的规则，AdGuard应用和程序可使用这些规则来过滤广告和威胁隐私的内容(例如横幅，弹出式窗口，跟踪器等)。特定于特定Internet网段的规则(德语过滤器，俄语过滤器等)或用于特定目的的规则(社交媒体过滤器，追踪保护过滤器等)被组合到一个列表中-过滤器-可以一次启用/停用所有规则。
 
