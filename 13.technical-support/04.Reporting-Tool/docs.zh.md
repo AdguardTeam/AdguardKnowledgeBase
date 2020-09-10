@@ -44,7 +44,7 @@ visible: true
 
 * **报告网站**，如屏幕截图所示：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
 
 * 填写举报表格；
 * 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
@@ -56,7 +56,7 @@ visible: true
 * 通过单击相应的图标打开浏览器扩展设置；
 * 单击**提交有关此网站的投诉**：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
 
 * 填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
@@ -69,7 +69,7 @@ visible: true
 * **发送反馈**。
 * **缺少广告或跟踪器** / **错误屏蔽**：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width="350"/>
 
 * 填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
@@ -83,7 +83,7 @@ visible: true
 
 * **报告网站**，如屏幕截图所示：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
 
 * 然后，您需要填写投诉举报表格；
 * 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
@@ -97,7 +97,7 @@ visible: true
 * 发送反馈;
 * 报告错误的阻止：
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1en.png" width="350"/>
 
 * 填写举报表格；
 * 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
@@ -110,39 +110,39 @@ visible: true
 
 1.填写表格始于详细说明产品的类型和版本；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1en.png" width="500"/>
 
 2.指定问题的类型以及有关使用第三方软件(防病毒，VPN)的其他信息；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2en.png" width="500"/>
 
 3.输入您遇到问题的页面的地址(如果是应用程序，则输入完整的下载链接)，以及遇到问题的浏览器；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3en.png" width="500"/>
 
 4.必须指定应用程序配置：
 * 您使用的过滤器；
 * 隐身模式设置(如果启用了此功能)。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma4en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma4en.png" width="500"/>
 
 5. [提供屏幕截图](https://kb.adguard.com/en/miscellaneous/taking-screenshots)捕获了问题的实质；
 * **重要**：隐藏您的个人信息(电子邮件，电话号码等)，因为屏幕截图将公开显示。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5en.png" width="500"/>
 
 6.提供其他信息，以帮助筛选开发人员了解情况；
 如果可以的话，还请在**GitHub**上输入您的帐户(开发人员必须与您联系，以防他们需要一些其他详细信息)；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6en.png" width="500"/>
 
 7.在发送表格之前检查每一步；
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma7en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma7en.png" width="500"/>
 
 8.将为您提供一个链接，以跟踪您的任务进度。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8en.png" width="500""/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8en.png" width="500"/>
 
 ## 问题诊断
 
