@@ -24,7 +24,7 @@ visible: true
 * 修改添加广告的算法；
 * 添加了来自第三方开发人员的过滤器/扩展程序；
 * 创建规则时，其中一个过滤器的作者犯了一个错误。
-* 重新插入广告。在我们的[blog](https://adguard.com/ru/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
+* 重新插入广告。在我们的[博客](https://adguard.com/ru/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
  
 您可以通过填写申请表中的广告示例来帮助我们。为此，请按照您的操作系统使用说明。
 
@@ -54,7 +54,7 @@ visible: true
 ### **浏览器扩展**
 
 * 通过单击相应的图标打开浏览器扩展设置；
-* 单击**提交有关此网站的投诉**：
+* 单击 **提交有关此网站的投诉**：
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
 
@@ -76,7 +76,7 @@ visible: true
 
 <a id=" MAC" ></a>
 
-### **苹果电脑**
+### **MacOS**
 
 
 * 打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
