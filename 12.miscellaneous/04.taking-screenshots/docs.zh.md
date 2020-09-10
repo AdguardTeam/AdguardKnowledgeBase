@@ -92,7 +92,7 @@ Windows 8和10使您可以通过 *Win + PrtScn* 组合快速捕获屏幕截图�
 
 还有一个专用的屏幕截图程序，称为 *截图工具*，可通过开始菜单在计算机的标准程序中找到。截图工具使您可以捕获桌面的任何区域或整个屏幕。使用此程序拍摄屏幕快照后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
-此外，您还可以尝试使用其他应用在计算机上截图，例如 **PicPick**， **Nimbus截图**，**Screenshot Captor**，**Snipaste**，**Monosnap**等。
+此外，您还可以尝试使用其他应用在计算机上截图，例如 **PicPick**， **Nimbus Screenshot**，**Screenshot Captor**，**Snipaste**，**Monosnap**等。
 
 <a name="mac"></a>
 
