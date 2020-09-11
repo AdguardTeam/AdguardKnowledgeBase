@@ -40,11 +40,11 @@ visible: true
 ### **Windows**
 
 
-* 打开[AdGuard 助手](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/assistant.png)(默认显示在浏览器的右下角)；
+* 打开[AdGuard 助手](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/assistant.png?!)(默认显示在浏览器的右下角)；
 
 * **报告网站**，如屏幕截图所示：
 
-<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/picture2.png" width = "350" />
+<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/picture2.png?" width = "350" />
 
 *填写举报表格；
 *完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
