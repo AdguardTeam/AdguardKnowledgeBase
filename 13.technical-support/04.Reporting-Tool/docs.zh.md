@@ -40,11 +40,11 @@ visible: true
 ### **Windows**
 
 
-* 打开[AdGuard Assistant](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/assistant.png)(默认显示在浏览器的右下角)；
+* 打开[AdGuard 助手](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/assistant.png)(默认显示在浏览器的右下角)；
 
 * **报告网站**，如屏幕截图所示：
 
-<img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture2.jpg" width = "350" />
+<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/picture2.png" width = "350" />
 
 *填写举报表格；
 *完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
@@ -54,7 +54,7 @@ visible: true
 ### **浏览器扩展**
 
 *通过单击相应的图标打开浏览器扩展设置；
-*单击**投诉此网站 (扩展里写的是投诉此网站)**：
+*单击**投诉此网站**：
 
 <img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture3.jpg" width = "350" />
 
@@ -69,7 +69,7 @@ visible: true
 * **发送反馈**；
 * **漏拦截的广告或跟踪器/拦截错误**：
 
-<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1en.png" width = "350" />
+<img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture4.jpg" width = "350" />
 
 *填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
@@ -79,11 +79,11 @@ visible: true
 ### **MAC**
 
 
-*打开[AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
+*打开[AdGuard 助手](https://uploads.adguard.com/Chinaskifgjv7.png)(默认显示在浏览器的右下角)；
 
 * **报告网站**，如屏幕截图所示：
 
-<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width = "350" />
+<img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/picture2.png" width = "350" />
 
 *然后，您需要填写投诉举报表格；
 *完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
@@ -132,7 +132,7 @@ visible: true
 <img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture10.jpg" width = "500" />
 
 6.提供其他信息，以帮助筛选开发人员了解情况；
-如已有GitHub账号，请您输入它。报告错误时有字符串，在字符串中要输入您的 GitHub 账号
+如已有GitHub账号，请您输入它（这是开发团队在需要更多信息的情况下联系您的重要方式）
 
 <img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture11.jpg" width = "500" />
 
