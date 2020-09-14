@@ -11,6 +11,7 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 * [Compatibility with local proxies](#local-proxies)
 * [Accepting connections to your Mac](#accepting-connections)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
+* [Solving issues with SSH](#ssh)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
 
 
@@ -20,7 +21,7 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
-<Screenshot>
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 Enter a string that looks like `scheme://user:passwrod@host:port`, where
 
@@ -45,7 +46,7 @@ In Big Sur, any server from a network that's filtered by AdGuard won't be able t
 
 Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value* area of the `network.extension.route.exclude` setting.
 
-<Screenshot>
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 Enter there any IP addresses and subnetworks, separating them with commas or line breaks.
 
@@ -62,7 +63,7 @@ If you face problems in Big Sur which can't be resolved by any of the methods ab
 4) Click the *Select Mode...* button.
 5) Select *Automatic Proxy*.
 
-<Screenshot>
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
@@ -87,13 +88,24 @@ By default AdGuard uses Network Extension framework in Big Sur as the old Kernel
 
 Now that SIP is disabled, this is how you enable Kernel Extension:
 
-<Screenshot>
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 1) Open AdGuard's menu.
 2) Select *Preferences...*. 
 3) Switch to the *Network* tab. 
 4) Click the *Select Mode...* button.
 5) Select *Kernel Extension*.
-6) Confirm that you want to switch to Kernel Extension. 
+6) Confirm that you want to switch to Kernel Extension.
 
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
+
+
+<a href="ssh"></a>
+
+## Solving issues with SSH
+
+Network Extension framework that AdGuard is forced to use in Big Sur conflicts with some other frameworks by Apple, such as Network framework (not to be confused with *Network Extension*). As a result, any process that involves these libraries may not work correctly when AdGuard is active. One of such issues is connecting to a remote server via SSH.
+
+To solve this problem, you can switch to [HomeBrew SSH](https://formulae.brew.sh/formula/openssh) that doesn't employ Network framework.
+
+Alternatively, you can select a different operating mode in AdGuard: [Automatic proxy](#automatic-proxy) or [Kernel Extension](#kernel-extension).
