@@ -41,7 +41,7 @@ Click *Apply* to make AdGuard route all traffic that went through it to the conf
 
 ## Accepting connections to your Mac
 
-In Big Sur, any server from a network that's filtered by AdGuard won't be able to reach your Mac if you use it as a server (and by default AdGuard filters all traffic except for localhost). To avoid this problem you need to add those hosts (and maybe their subnetworks) to exclusions.
+In Big Sur, any server from a network that's filtered by AdGuard won't be able to reach your Mac if you use it as a server (and by default AdGuard filters all traffic except for localhost). To avoid this problem you need to add to exclusions the hosts (and maybe entire subnetworks) that the connections originated from.
 
 Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value* area of the `network.extension.route.exclude` setting.
 
