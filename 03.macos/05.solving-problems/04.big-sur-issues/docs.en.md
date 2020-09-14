@@ -10,8 +10,8 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 
 * [Compatibility with local proxies](#local-proxies)
 * [Accepting connections to your Mac](#accepting-connections)
-* [Enabling the kernel extension in Big Sur](#kernel-extension)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
+* [Enabling Kernel Extension in Big Sur](#kernel-extension)
 
 
 <a htef="local-proxies"></a>
@@ -50,33 +50,6 @@ Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value
 Enter there any IP addresses and subnetworks, separating them with commas or line breaks.
 
 
-<a href="kernel-extension"></a>
-
-## Enabling kernel extension in Big Sur
-
-By default AdGuard uses Network Extension framework in Big Sur as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
-
-1) Click the *Apple symbol* in the Menu bar.
-2) Click *Restart…*
-3) Hold down *Command-R* to reboot into Recovery Mode.
-4) Click *Utilities*.
-5) Select *Terminal*.
-6) Type `csrutil disable`.
-7) Press *Return* or *Enter* on your keyboard.
-8) Click the *Apple symbol* in the Menu bar.
-9) Click *Restart…*
-
-Now that SIP is disabled, this is how you enable Kernel Extension:
-
-1) Open AdGuard's menu.
-2) Select *Preferences...*. 
-3) Switch to the *Network* tab. 
-4) Click the *Select Mode...* button.
-5) Select *Kernel Extension*.
-6) Confirm that you want to switch to Kernel Extension. 
-
-<Screenshot>
-
 <a href="automatic-proxy"></a>
 
 ## Using "Automatic proxy" filtering mode
@@ -93,4 +66,34 @@ If you face problems in Big Sur which can't be resolved by any of the methods ab
 
 Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
->However, we only recommend using this method if everything else fails, as many apps may ignore this system setting and their traffic will not be filtered.
+>Take into account that some apps may ignore this system setting and their traffic will not be filtered.
+
+
+<a href="kernel-extension"></a>
+
+## Enabling Kernel Extension in Big Sur
+
+By default AdGuard uses Network Extension framework in Big Sur as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
+
+1) Click the *Apple symbol* in the Menu bar.
+2) Click *Restart…*
+3) Hold down *Command-R* to reboot into Recovery Mode.
+4) Click *Utilities*.
+5) Select *Terminal*.
+6) Type `csrutil disable`.
+7) Press *Return* or *Enter* on your keyboard.
+8) Click the *Apple symbol* in the Menu bar.
+9) Click *Restart…*
+
+Now that SIP is disabled, this is how you enable Kernel Extension:
+
+<Screenshot>
+
+1) Open AdGuard's menu.
+2) Select *Preferences...*. 
+3) Switch to the *Network* tab. 
+4) Click the *Select Mode...* button.
+5) Select *Kernel Extension*.
+6) Confirm that you want to switch to Kernel Extension. 
+
+>However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
