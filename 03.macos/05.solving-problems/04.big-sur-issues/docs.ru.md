@@ -21,7 +21,7 @@ visible: true
 
 Чтобы настроить вышестоящий прокси в AdGuard для Mac на Big Sur, вам необходимо перейти в *Меню AdGuard -> Дополнительно -> Расширенные настройки...*. Кликните по области *Значение* настройки `upstream.proxy`, чтобы настроить прокси.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 Введите строку вида `scheme://user:passwrod@host:port`, где
 
@@ -46,7 +46,7 @@ visible: true
 
 Перейдите в *Меню AdGuard -> Дополнительно -> Расширенные Настройки...* и кликните по области *Значение* настройки `network.extension.route.exclude`.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 Введите здесь любые IP-адреса и подсети, разделяя их запятыми и переносами строки.
 
@@ -63,7 +63,7 @@ visible: true
 4) Кликните по кнопке *Выбрать режим...*.
 5) Выберите *Automatic proxy*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 AdGuard автоматически добавил **.pac**-файл в сетевые настройки вашего Mac, и теперь система будет распознавать AdGuard как прокси и попытается направлять через него весь трафик.
 
@@ -88,7 +88,7 @@ AdGuard автоматически добавил **.pac**-файл в сете�
 
 Теперь, когда SIP отключён, выполните следущие шаги для включения Kernel Extension:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
 
 1) Откройте меню AdGuard.
 2) Выберите *Настройки...*. 
