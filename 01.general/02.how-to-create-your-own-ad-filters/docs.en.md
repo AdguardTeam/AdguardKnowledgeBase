@@ -333,6 +333,15 @@ If you want the rule not to be applied to certain domains, start a domain name w
 * `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
 
+###### `domain` and requests with `document` type
+
+When a request has `document` type, rules with `domain` modifier behave differently. In the following examples it's implied that requests are sent from `http://example.org/page` (the referrer), and the target URL is `http://targetdomain.com/page`.
+
+*  `||page^$domain=example.org` will be matched, as it matches the referrer.
+* `||page^$domain=~example.org` will not be matched, as it explicitly excludes `example.org`.
+* `||page^$domain=targetdomain.com` will be matched, as it matches the target URL. This will not be true for all other types of requests.
+
+
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
