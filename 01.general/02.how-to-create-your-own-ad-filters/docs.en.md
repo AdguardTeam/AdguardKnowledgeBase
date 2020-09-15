@@ -1881,7 +1881,7 @@ Eventually, here are the two versions of the Base filter for AdGuard browser ext
 ||example.org^
 ```
 
-**And this rule won't be optimized only for Android OS:**
+**And this rule won't be optimized only for AdGuard for Android:**
 
 ```
 !+ NOT_OPTIMIZED PLATFORM(android)
