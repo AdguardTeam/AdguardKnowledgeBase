@@ -21,7 +21,7 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_en.png" style="max-width: 650px;">
 
 Enter a string that looks like `scheme://user:passwrod@host:port`, where
 
@@ -46,7 +46,7 @@ In Big Sur, any server from a network that's filtered by AdGuard won't be able t
 
 Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value* area of the `network.extension.route.exclude` setting.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_en.png" style="max-width: 650px;">
 
 Enter there any IP addresses and subnetworks, separating them with commas or line breaks.
 
@@ -63,7 +63,7 @@ If you face problems in Big Sur which can't be resolved by any of the methods ab
 4) Click the *Select Mode...* button.
 5) Select *Automatic Proxy*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_en.png" style="max-width: 650px;">
 
 Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
@@ -88,7 +88,7 @@ By default AdGuard uses Network Extension framework in Big Sur as the old Kernel
 
 Now that SIP is disabled, this is how you enable Kernel Extension:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_en.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_en.png" style="max-width: 650px;">
 
 1) Open AdGuard's menu.
 2) Select *Preferences...*. 
