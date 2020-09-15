@@ -1847,26 +1847,47 @@ Note, that you can apply multiple hints.
 
 <a id="not_optimized"></a>
 #### NOT_OPTIMIZED hint
-For large filters, AdGuard compiles two versions: full and optimized. Optimized version is much smaller and does not contain rules which are not used at all or used rarely. More information about rules optimization you may find in [this article](https://adguard.com/en/filter-rules-statistics.html).
 
-Example of optimized version of the English filter: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
+For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely. 
 
-Examples:
+Rules usage frequency comes from the collected [filter rules statistics](https://kb.adguard.com/en/general/filter-rules-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
 
-This rule won't be optimized:
+```
+"filter": AdGuard Base filter,
+"percent": 30,
+"minPercent": 20,
+"maxPercent": 40,
+"strict": true
+```
+Where:
+
+* **filter** — filter identifier
+* **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
+* **minPercent** — lower bound of `percent` value
+* **maxPercent** — upper bound of `percent` value
+* **strict** — if `percent < minPercent` OR `percent > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
+
+>In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+
+Eventually, here are the two versions of the Base filter for AdGuard browser extension: 
+- full: https://filters.adtidy.org/extension/chromium/filters/2.txt
+- optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+
+
+**Important: If you want to add a rule which shouldn't be removed at optimization use the NOT_OPTIMIZED hint:**
 
 ```
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-This rule won't be optimized and will be available for Android only:
+**And this rule won't be optimized only for Android OS:**
 
 ```
 !+ NOT_OPTIMIZED PLATFORM(android)
 ||example.org^
 
-```
+
 <a id="platform_not_platform"></a>
 #### PLATFORM and NOT_PLATFORM hints
 
