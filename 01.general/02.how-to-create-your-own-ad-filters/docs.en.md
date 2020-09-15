@@ -337,7 +337,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 When a request has `document` type, rules with `domain` modifier behave differently. In the following examples it's implied that requests are sent from `http://example.org/page` (the referrer), and the target URL is `http://targetdomain.com/page`.
 
-*  `||page^$domain=example.org` will be matched, as it matches the referrer.
+* `||page^$domain=example.org` will be matched, as it matches the referrer.
 * `||page^$domain=~example.org` will not be matched, as it explicitly excludes `example.org`.
 * `||page^$domain=targetdomain.com` will be matched, as it matches the target URL. This will not be true for all other types of requests.
 
