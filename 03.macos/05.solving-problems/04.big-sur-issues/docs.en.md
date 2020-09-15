@@ -15,7 +15,7 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
 
 
-<a htef="local-proxies"></a>
+<a id="local-proxies"></a>
 
 ## Compatibility with local proxies
 
@@ -38,7 +38,7 @@ Enter a string that looks like `scheme://user:passwrod@host:port`, where
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
 
 
-<a href="accepting-connections"></a>
+<a id="accepting-connections"></a>
 
 ## Accepting connections to your Mac
 
@@ -51,7 +51,7 @@ Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value
 Enter there any IP addresses and subnetworks, separating them with commas or line breaks.
 
 
-<a href="automatic-proxy"></a>
+<a id="automatic-proxy"></a>
 
 ## Using "Automatic proxy" filtering mode
 
@@ -70,7 +70,7 @@ Now AdGuard has automatically added a **.pac** file to your Mac's network settin
 >Take into account that some apps may ignore this system setting and their traffic will not be filtered.
 
 
-<a href="kernel-extension"></a>
+<a id="kernel-extension"></a>
 
 ## Enabling Kernel Extension in Big Sur
 
@@ -100,7 +100,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
 
 
-<a href="ssh"></a>
+<a id="ssh"></a>
 
 ## Solving issues with SSH
 
