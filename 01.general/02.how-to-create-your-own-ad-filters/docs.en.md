@@ -341,7 +341,6 @@ When a request has `document` type, rules with `domain` modifier behave differen
 * `||page^$domain=~example.org` will not be matched, as it explicitly excludes `example.org`.
 * `||page^$domain=targetdomain.com` will be matched, as it matches the target URL. This will not be true for all other types of requests.
 
-
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
@@ -496,7 +495,7 @@ Disables any cosmetic rules on the pages matching the rule. You will find the in
 <a id="content-modifier"></a>
 ##### **`content`**
 
-Disables HTML filtering rules on the pages matching the rule. You will find the information about HTML filtering rules [further](#html-filtering-rules).
+Disables HTML filtering rules and replace rules on the pages that match the rule. You will find the information about HTML filtering rules [here](#html-filtering-rules) and about replace rules [here](#replace-modifier).
 
 ###### `content` example
 
