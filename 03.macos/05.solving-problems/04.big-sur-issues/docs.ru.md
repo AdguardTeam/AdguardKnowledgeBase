@@ -15,13 +15,13 @@ visible: true
 * [Переключение на Kernel Extension в Big Sur](#kernel-extension)
 
 
-<a htef="local-proxies"></a>
+<a id="local-proxies"></a>
 
 ## Совместимость с локальными прокси
 
 Чтобы настроить вышестоящий прокси в AdGuard для Mac на Big Sur, вам необходимо перейти в *Меню AdGuard -> Дополнительно -> Расширенные настройки...*. Кликните по области *Значение* настройки `upstream.proxy`, чтобы настроить прокси.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_ru.png" style="max-width: 650px;">
 
 Введите строку вида `scheme://user:passwrod@host:port`, где
 
@@ -38,7 +38,7 @@ visible: true
 Нажмите *Применить*, чтобы заставить AdGuard пересылать весь трафик через настроенный прокси-сервер.
 
 
-<a href="accepting-connections"></a>
+<a id="accepting-connections"></a>
 
 ## Входящие соединения
 
@@ -46,12 +46,12 @@ visible: true
 
 Перейдите в *Меню AdGuard -> Дополнительно -> Расширенные Настройки...* и кликните по области *Значение* настройки `network.extension.route.exclude`.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_ru.png" style="max-width: 650px;">
 
 Введите здесь любые IP-адреса и подсети, разделяя их запятыми и переносами строки.
 
 
-<a href="automatic-proxy"></a>
+<a id="automatic-proxy"></a>
 
 ## Использование режиме "Автоматический прокси"
 
@@ -63,14 +63,14 @@ visible: true
 4) Кликните по кнопке *Выбрать режим...*.
 5) Выберите *Automatic proxy*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/automatic-proxy_ru.png" style="max-width: 650px;">
 
 AdGuard автоматически добавил **.pac**-файл в сетевые настройки вашего Mac, и теперь система будет распознавать AdGuard как прокси и попытается направлять через него весь трафик.
 
 >Примите во внимание, что некоторые приложения могут игнорировать это настройку, и в таком случае их трафик не будет фильтроваться.
 
 
-<a href="kernel-extension"></a>
+<a id="kernel-extension"></a>
 
 ## Переключение на Kernel Extension в Big Sur
 
@@ -88,7 +88,7 @@ AdGuard автоматически добавил **.pac**-файл в сете�
 
 Теперь, когда SIP отключён, выполните следущие шаги для включения Kernel Extension:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_ru.png" style="border: 1px solid #efefef; max-width: 500px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/kernel_ru.png" style="max-width: 650px;">
 
 1) Откройте меню AdGuard.
 2) Выберите *Настройки...*. 
@@ -99,7 +99,7 @@ AdGuard автоматически добавил **.pac**-файл в сете�
 >Однако, мы рекомендуем использовать этот метод только в том случае, если все остальные не дали результата, посколько он может привести к непредвиденным последствиям.
 
 
-<a href="ssh"></a>
+<a id="ssh"></a>
 
 ## Решение проблем с SSH
 
