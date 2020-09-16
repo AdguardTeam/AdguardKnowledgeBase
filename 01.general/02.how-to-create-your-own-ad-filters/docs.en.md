@@ -1830,7 +1830,7 @@ rules_list
 
 **Examples**
 ```
-! for all AdGuard propucts except of AdGuard for Safari
+! for all AdGuard propucts except AdGuard for Safari
 !#if (adguard && !adguard_ext_safari)
 ||example.org^$third-party
 domain.com##div.ad
@@ -1847,7 +1847,7 @@ domain.com##div.ad
 <a id="safari-affinity-directive"></a>
 #### Safari affinity
 
-Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But AdGuard for Safari and AdGuard for iOS max rule count raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
+Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
 - AdGuard General — Ad Blocking, Language-specific
 - AdGuard Privacy — Privacy
 - AdGuard Social — Social Widgets, Annoyances
