@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 
-[HTTPS filtering](https://kb.adguard.com/en/general/https-filtering) को काम करने के लिए अलाग अलग Firefox वरजेंस में अलग तरीकों की जरूरत पड़ती है। अगर स्टेबल Firefox वर्जन आपको डिरेक्ल्टी ब्राउज़र में ही सर्टिफिकेट इनस्टॉल करने देता है, फिर भी दूसरे वर्जन्स में फंक्शनलिटी लिमिटेड हो सकती है (Firefox Nightly, Beta, Developer Edition, और दूसरे ब्राउज़र जो Firefox पर बेस्ड हैं)। निचे हम आपको दो तरीके बताएँगे HTTPS फ़िल्टरिंग चालु करने  अलग Firefox वर्जन्स में। 
+[HTTPS फ़िल्टरिंग](https://kb.adguard.com/en/general/https-filtering) को काम करने के लिए अलाग अलग Firefox वरजेंस में अलग तरीकों की जरूरत पड़ती है। अगर स्टेबल Firefox वर्जन आपको डिरेक्ल्टी ब्राउज़र में ही सर्टिफिकेट इनस्टॉल करने देता है, फिर भी दूसरे वर्जन्स में फंक्शनलिटी लिमिटेड हो सकती है (Firefox Nightly, Beta, Developer Edition, और दूसरे ब्राउज़र जो Firefox पर बेस्ड हैं)। निचे हम आपको दो तरीके बताएँगे HTTPS फ़िल्टरिंग चालु करने  अलग Firefox वर्जन्स में। 
 
 
 
