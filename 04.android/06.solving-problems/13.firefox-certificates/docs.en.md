@@ -11,7 +11,7 @@ Different versions of Firefox require different approaches for AdGuard to perfor
 
 ### Enabling access to certificates installed on device
 
-#### Certificate locate in the User store
+#### Certificate located in the User store
 
 To make Firefox (and browsers based on it) trust user certificates, you need to toggle the hidden option in the browser itself.
 
