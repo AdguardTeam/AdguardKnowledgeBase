@@ -771,7 +771,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.htm) is a free anonymous DNS resolver by Freenom World
+[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -969,7 +969,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### ibksturm DNS
 
-[ibksturm DNS](https:/ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, No Filter, No Logging
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, No Filter, No Logging
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

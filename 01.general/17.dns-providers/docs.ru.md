@@ -377,7 +377,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.htm) — бесплатный анонимный DNS-сервер  от Freenom World.
+[Freenom World](https://freenom.world/en/index.html) — бесплатный анонимный DNS-сервер  от Freenom World.
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -471,7 +471,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### ibksturm
 
-[ibksturm](https:/ibksturm.synology.me/) Публичный DNS сервер (OPENNIC, DNSSEC) с поддержкой DNS-over-TLS, DNS-over-HTTPS и DNSCrypt от ibksturm.
+[ibksturm](https://ibksturm.synology.me/) Публичный DNS сервер (OPENNIC, DNSSEC) с поддержкой DNS-over-TLS, DNS-over-HTTPS и DNSCrypt от ibksturm.
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -551,7 +551,7 @@ OpenDNS серверы с функцией блокировки контента
 
 ### ffmuc.net
 
-[ffmuc.net](https://https://ffmuc.net/) — DNS-over-TLS и DNS-over-HTTPS серверы от Freifunk München
+[ffmuc.net](https://ffmuc.net/) — DNS-over-TLS и DNS-over-HTTPS серверы от Freifunk München
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
