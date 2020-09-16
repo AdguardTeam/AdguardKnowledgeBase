@@ -1798,7 +1798,7 @@ Filter URL: `https://example.org/path/filter.txt`
 <a id="conditions-directive"></a>
 #### Conditions
 
-Filters maintainers can use these conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
+Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
 
 > A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 
@@ -1811,7 +1811,7 @@ rules_list
 !#endif
 ```
 - `!#if (conditions)` — start of the block
-- `conditions` — just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers.Ad blocker authors define on their own what exact constants do they declare. Possible values:
+- `conditions` — just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
   - `adguard` — declared always; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
   - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
     - `adguard_app_windows` — AdGuard for Windows
@@ -1855,7 +1855,7 @@ Safari is notoriously known for its harsh 50k max limit for filtering rules in c
 - AdGuard Other — Other
 - AdGuard Custom — Custom
 
-> `User rules` and `Allowlist` are added to every content blocker
+> `User rules` and `Allowlist` are added to every content blocker.
 
 The main issue with using multiple content blockers is that rules inside these content blockers cannot influence each other. This may lead to different unexpected issues. So filters maintainers may use `!#safari_cb_affinity` to define Safari content blockers affinity for the rules inside of the directive block.
 
