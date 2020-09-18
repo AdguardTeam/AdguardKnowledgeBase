@@ -32,7 +32,7 @@ visible: true
 
 ### 建议过滤规则
 
-您会在[GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现很多未解决的问题。每个人都引用某个网站的问题-广告丢失，误报等-选择任何一个并在注释中提出自己的规则。 --> 您会在[GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现很多与广告丢失，错误报告等有关的未解决的问题。每个人都可以选择任何一个并在注释中提出自己的规则。
+您会在[GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现很多未解决的问题。每个人都引用某个网站的问题-广告丢失，误报等-选择任何一个并在注释中提出自己的规则。 AdGuard过滤器工程师将审核您的建议，如果发现正确，则您的规则将添加到AdGuard过滤器中。
 
 这是有关AdGuard过滤规则语法的[官方文档](https://kb.adguard.com/general/how-to-create-your-own-ad-filters)。您需要先阅读它，然后才能创建自己的过滤规则。
 
