@@ -32,7 +32,7 @@ visible: true
 
 ### 建议过滤规则
 
-您会在[GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现很多未解决的问题。每个人都引用某个网站的问题-广告丢失，误报等-选择任何一个并在注释中提出自己的规则。 AdGuard过滤器工程师将审核您的建议，如果发现正确，则您的规则将添加到AdGuard过滤器中。
+您会在[GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现很多与广告丢失，错误报告等有关的未解决的问题。每个人都可以选择任何一个并在注释中提出自己的规则。 AdGuard过滤器工程师将审核您的建议，如果发现正确，则您的规则将添加到AdGuard过滤器中。
 
 这是有关AdGuard过滤规则语法的[官方文档](https://kb.adguard.com/general/how-to-create-your-own-ad-filters)。您需要先阅读它，然后才能创建自己的过滤规则。
 
@@ -58,4 +58,4 @@ visible: true
 * **中文过滤器** — 从中文网站删除广告。最初基于[EasyList China](http://abpchina.org/forum/forum.php)过滤器，然后根据用户的投诉由我们进行了修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/224.txt)
 * **实验性过滤器** — 用于测试一些新的过滤规则，这些规则可能会引起网站工作的冲突和混乱。如果这些规则没有问题，则将它们添加到主过滤器中。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/5.txt)
 * **移动广告过滤器** — 阻止移动设备上的广告。包含所有已知的移动广告网络。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/11.txt)
-* **DNS过滤器** — 由其他几个过滤器(AdGuard基础过滤器，社交媒体过滤器，间谍软件过滤器，移动广告过滤器，EasyList和EasyPrivacy)组成，并经过专门简化以更好地与DNS级别的广告拦截兼容。 AdGuard DNS服务器使用此过滤器来阻止广告和跟踪。要了解有关DNS级别阻止的更多信息，请访问[本页](https://adguard.com/adguard-dns/overview.html)。 [查看规则](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt)
+* **DNS过滤器** — 由其他几个过滤器(AdGuard 基础过滤器，社交媒体过滤器，间谍软件过滤器，移动广告过滤器，EasyList和EasyPrivacy)组成，并经过专门简化以更好地与DNS级别的广告拦截兼容。 AdGuard DNS服务器使用此过滤器来阻止广告和跟踪。要了解有关DNS级别阻止的更多信息，请访问[本页](https://adguard.com/adguard-dns/overview.html)。 [查看规则](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt)
