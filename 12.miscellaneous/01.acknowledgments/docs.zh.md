@@ -19,7 +19,7 @@ visible: true
   * [第三方软件](#third4)
   * [测试人员](#test4)
 
-在AdGuard软件开发过程中，我们使用了一系列开源软件，而我们出色的Beta测试人员和其他感兴趣的用户确实为AdGuard的进一步发展做出了贡献。我们的开发人员团队要感谢所有帮助我们改进AdGuard的人。
+在AdGuard软件开发过程中，我们使用了一系列开源软件，而我们出色的Beta测试人员和其他感兴趣的用户确实为AdGuard的进一步发展做出了贡献。我们的开发人员团队要所有帮助我们改进AdGuard的人。
 
 <a id="win"></a>
 ## AdGuard Windows版
@@ -34,7 +34,7 @@ visible: true
 * AvalonEdit — WPF-based text editor component ([https://avalonedit.net](https://avalonedit.net))
 <a id="test1"></a>
 ### 测试人员
-此外，感谢所有beta测试人员，他们在发现和消除所有错误方面的帮助是无价的。特别感谢：
+此外，感谢所有beta测试人员，他们在发现和消除所有错误方面的帮助是无价的。特别致谢：
 
 [Boo Berry](http://forum.adguard.com/member.php?1905-Boo-Berry)
 
@@ -89,7 +89,7 @@ Sanjay Nand
 
 <a id="test2"></a>
 ### 测试人员
-当然，我们想对Beta测试人员大声疾呼。特别感谢：
+当然，我们想对Beta测试人员大声疾呼。特别致谢：
 
 [milder](http://forum.adguard.com/member.php?4519-milder)
 
