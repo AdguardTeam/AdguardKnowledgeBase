@@ -23,7 +23,7 @@ To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_en.png" style="max-width: 650px;">
 
-Enter a string that looks like `scheme://user:passwrod@host:port`, where
+Enter a string that looks like `scheme://user:password@host:port`, where
 
 * `scheme` is either `http`, `https`, `socks4` or `socks5`, depending on your proxy type.
 
