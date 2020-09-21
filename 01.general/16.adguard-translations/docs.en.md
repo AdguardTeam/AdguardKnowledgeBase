@@ -12,7 +12,7 @@ visible: true
 * [Who are Proofreaders?](#proofreaders)
 * [Reward system](#rewards)
 
->**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w).
+>**Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/CBcY6FgDNkjwGBAmxriwXg).
 
 <a name="program"></a>
 ### About AdGuard translation program

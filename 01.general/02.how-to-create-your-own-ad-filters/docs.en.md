@@ -75,6 +75,7 @@ visible: true
             * [Pseudo-class `:contains()`](#extended-css-contains)
             * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
             * [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
+            * [Pseudo-class `:matches-property()`](#extended-css-matches-property)
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
@@ -975,9 +976,9 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 <a id="elemhide-examples"></a>
 #### Examples
 
-* `example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
+* `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
+* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and it's subdomains.
 
 <a id="elemhide-exceptions"></a>
 #### Exceptions
@@ -1294,6 +1295,63 @@ div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 // for div#targer4
 *[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
+
+<a id="extended-css-matches-property"></a>
+##### Pseudo-class `:matches-property()`
+
+This pseudo-class allows to select an element by its properties.
+
+**Syntax**
+```
+selector:matches-property("name"[="value"])
+```
+
+- `name` — property name OR regular expression for property name
+- `value` — optional, property value OR regular expression for property value
+
+> For regex patterns, `"` and `\` should be escaped.
+
+> `name` supports regexp for property in chain, e.g. `prop./^unit[\\d]{4}$/.type`
+
+**Examples**
+
+```javascript
+divProperties = {
+    id: 1,
+    check: {
+        track: true,
+        unit_2ksdf1: true,
+    },
+    memoizedProps: {
+        key: null,
+        tag: 12,
+        _owner: {
+            effectTag: 1,
+            src: 'ad.com',
+        },
+    },
+};
+```
+
+```
+// element with such properties can be matched by any of such rules:
+
+div:matches-property("check.track")
+
+div:matches-property("check./^unit_.{4,6}$/"))
+
+div:matches-property("memoizedProps.key"="null")
+
+div:matches-property("memoizedProps._owner.src"="/ad/")
+```
+
+<details>
+  <summary><b>For filters maintainers</b></summary>
+
+  To check properties of specific element, do:
+  1. Select the element on the page.
+  2. Go to Console tab and run `console.dir($0)`.
+</details>
 
 <a id="extended-css-xpath"></a>
 ##### Pseudo-class `:xpath()`
@@ -1698,43 +1756,34 @@ If you maintain a third-party filter that is known to AdGuard, you might be inte
 <a id="pre_processor"></a>
 ### Pre-processor directives
 
-We provide multiple pre-processor directives that can be used by filters maintainers to improve compatibility with different ad blockers.
+We provide pre-processor directives that can be used by filters maintainers to improve compatibility with different ad blockers and provide:
+* [including a file](#include-directive)
+* [applying rules conditionally by ad blocker type](#conditions-directive)
+* [content blocker specifying for rules applying in Safari](#safari-affinity-directive)
 
-#### Syntax
+> Please note that any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
-```
-!#if condition
-Anything goes here
-!#include URL_or_a_relative_path
-!#endif
-```
+> Pre-processor directives can be used in the User Rules or in the custom filters.
 
-* `!#if`, `!#endif` -- filters maintainers can use these conditions to supply different rules depending on the ad blocker type.
-* `condition` -- just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare.
-* `!#include` -- this directive allows to include contents of a specified file into the filter.
-
-#### Conditions
-
-When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code between the directives only if the specified condition is true. Condition supports all the basic logical operators.
-
-**Example**:
-```
-!#if (adguard && !adguard_ext_safari)
-||example.org^$third-party
-!#endif
-```
-
+<a id="include-directive"></a>
 #### Including a file
 
-The `!#include` directive supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives).
+The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
-Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+**Syntax**
+```
+!#include file_path
+```
+- `file_path` — same origin absolute or relative file path to be included
+
+> If included file is not found or unavailable, the whole filter update should fail.
+
+> Same-origin limitation should be disabled for local custom filters.
 
 **Examples**
 
 Filter URL: `https://example.org/path/filter.txt`
 ```
-!
 ! Valid (same origin):
 !#include https://example.org/path/includedfile.txt
 !
@@ -1743,38 +1792,104 @@ Filter URL: `https://example.org/path/filter.txt`
 !#include ../path2/includedfile.txt
 !
 ! Invalid (another origin):
-!#include https://example.com/path/includedfile.txt
+!#include https://domain.com/path/includedfile.txt
 ```
 
-#### Remarks
+<a id="conditions-directive"></a>
+#### Conditions
 
-* If included file is not found or unavailable, the whole filter update should fail.
-* A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
-* Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
 
-#### AdGuard-specific
+> A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 
-* Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
-* Pre-processor directives can be used in the user filter (or in the custom local filters). Same-origin limitation should be disabled for local filters.
+> Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
-#### What constants we declare
+**Syntax**
+```
+!#if (conditions)
+rules_list
+!#endif
+```
+- `!#if (conditions)` — start of the block
+- `conditions` — just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
+  - `adguard` — declared always; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
+  - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
+    - `adguard_app_windows` — AdGuard for Windows
+    - `adguard_app_mac` — AdGuard for Mac
+    - `adguard_app_android` — AdGuard for Android
+    - `adguard_app_ios` — AdGuard for iOS
+    - `adguard_ext_safari` — AdGuard for Safari
+    - `adguard_ext_chromium` — AdGuard Browser extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
+    - `adguard_ext_firefox` — AdGuard Browser extension for Firefox
+    - `adguard_ext_edge` — AdGuard Browser extension for Edge Legacy
+    - `adguard_ext_opera` — AdGuard Browser extension for Opera
+    - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
+    - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
+- `rules_list` — list of rules
+- `!#endif` — end of the block
 
-* `adguard` -- Declared always. Lets maintainers know that this is one of AdGuard products. Should be enough in 95% of cases.
+**Examples**
+```
+! for all AdGuard propucts except AdGuard for Safari
+!#if (adguard && !adguard_ext_safari)
+||example.org^$third-party
+domain.com##div.ad
+!#endif
+```
 
-Product-specific constants for some rare cases when you need a rule to work (or not work) in a specific product only:
+```
+! directives even can be combined
+!#if (adguard_app_android)
+!#include /androidspecific.txt
+!#endif
+```
 
-* `adguard_app_windows` -- AG for Windows
-* `adguard_app_mac` -- AG for Mac
-* `adguard_app_android` -- AG for Android
-* `adguard_app_ios` -- AG for iOS
-* `adguard_ext_chromium` -- AG browser extension for Chrome
-* `adguard_ext_firefox` -- AG browser extension for Firefox
-* `adguard_ext_edge` -- AG browser extension for Edge
-* `adguard_ext_safari` -- AG browser extension for Safari
-* `adguard_ext_opera` -- AG browser extension for Opera
-* `adguard_ext_android_cb` -- AG content blocker for Samsung/Yandex
+<a id="safari-affinity-directive"></a>
+#### Safari affinity
 
-> Special case: `ext_ublock`. This constant is declared when a ublock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry).
+Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
+- AdGuard General — Ad Blocking, Language-specific
+- AdGuard Privacy — Privacy
+- AdGuard Social — Social Widgets, Annoyances
+- AdGuard Security — Security
+- AdGuard Other — Other
+- AdGuard Custom — Custom
+
+> `User rules` and `Allowlist` are added to every content blocker.
+
+The main issue with using multiple content blockers is that rules inside these content blockers cannot influence each other. This may lead to different unexpected issues. So filters maintainers may use `!#safari_cb_affinity` to define Safari content blockers affinity for the rules inside of the directive block.
+
+**Syntax**
+```
+!#safari_cb_affinity(content_blockers)
+rules_list
+!#safari_cb_affinity
+```
+- `!#safari_cb_affinity(content_blockers)` — start of the block
+- `content_blockers` — comma-separated list of content blockers. Possible values:
+  - `general` — AdGuard General content blocker
+  - `privacy` — AdGuard Privacy content blocker
+  - `social` — AdGuard Social content blocker
+  - `security` — AdGuard Security content blocker
+  - `other` — AdGuard Other content blocker
+  - `custom` — AdGuard Custom content blocker
+  - `all` — special keyword that means that the rules must be included into **all** content blockers
+- `rules_list` — list of rules
+- `!#safari_cb_affinity(content_blockers)` — end of the block
+
+**Examples**
+```
+! to unhide specific element which is hidden by AdGuard Base filter:
+!#safari_cb_affinity(general)
+example.org#@#.adBanner
+!#safari_cb_affinity
+```
+```
+! to whitelist basic rule from AdGuard Tracking Protection filter filter:
+!#safari_cb_affinity(privacy)
+@@||example.org^
+!#safari_cb_affinity
+```
 
 <a id="hints"></a>
 ### Hints
@@ -1789,26 +1904,47 @@ Note, that you can apply multiple hints.
 
 <a id="not_optimized"></a>
 #### NOT_OPTIMIZED hint
-For large filters, AdGuard compiles two versions: full and optimized. Optimized version is much smaller and does not contain rules which are not used at all or used rarely. More information about rules optimization you may find in [this article](https://adguard.com/en/filter-rules-statistics.html).
 
-Example of optimized version of the English filter: [https://filters.adtidy.org/extension/edge/filters/2_optimized.txt](https://filters.adtidy.org/extension/edge/filters/2_optimized.txt). 
+For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely. 
 
-Examples:
+Rules usage frequency comes from the collected [filter rules statistics](https://kb.adguard.com/en/general/filter-rules-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
 
-This rule won't be optimized:
+```
+"filter": AdGuard Base filter,
+"percent": 30,
+"minPercent": 20,
+"maxPercent": 40,
+"strict": true
+```
+Where:
+
+* **filter** — filter identifier
+* **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
+* **minPercent** — lower bound of `percent` value
+* **maxPercent** — upper bound of `percent` value
+* **strict** — if `percent < minPercent` OR `percent > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
+
+>In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+
+Eventually, here are the two versions of the Base filter for AdGuard browser extension: 
+- full: https://filters.adtidy.org/extension/chromium/filters/2.txt
+- optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+
+
+**Important: If you want to add a rule which shouldn't be removed at optimization use the NOT_OPTIMIZED hint:**
 
 ```
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-This rule won't be optimized and will be available for Android only:
+**And this rule won't be optimized only for AdGuard for Android:**
 
 ```
 !+ NOT_OPTIMIZED PLATFORM(android)
 ||example.org^
 
-```
+
 <a id="platform_not_platform"></a>
 #### PLATFORM and NOT_PLATFORM hints
 
