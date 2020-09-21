@@ -23,7 +23,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/proxy_ru.png" style="max-width: 650px;">
 
-Введите строку вида `scheme://user:passwrod@host:port`, где
+Введите строку вида `scheme://user:password@host:port`, где
 
 * `scheme` имеет значение `http`, `https`, `socks4` или `socks5`, в зависимости от типа прокси.
 
