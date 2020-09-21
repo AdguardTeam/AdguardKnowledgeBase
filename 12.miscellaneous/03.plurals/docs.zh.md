@@ -30,7 +30,7 @@ visible: true
 
 不同语言的名词可以有几种复数词形式。它们的用法取决于单词前面的特定数字，以指示该单词表示的项目数。
 
-例如，当谈论不同数量的事物时，英语单词有两种词形式，例如 *'one star'* 或 *'two star'*。无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾的 's' 都将保持不变。之所以会发生这种情况，是因为英语名词只有两种复数形式，即单数形式和复数形式。
+例如，当谈论不同数量的事物时，英语单词有两种词形式，例如 *'one star'* 或 *'two stars'*。无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾的 's' 都将保持不变。之所以会发生这种情况，是因为英语名词只有两种复数形式，即单数形式和复数形式。
 
 但是某些语言只能包含一种形式，反之则可以包含更多种形式。
 
@@ -58,7 +58,7 @@ visible: true
 
 ## 在哪里可以了解复数形式的数量？
 
-当您面对需要使用复数形式的翻译时，您可能无法立即意识到一种或另一种语言提供了多少个单词形式。幸运的是，有很多信息来源，下面列出了其中一些。
+当您面对需要使用复数形式的翻译时，您可能无法立即意识到某些语言提供了多少个单词形式。幸运的是，有很多信息来源，下面列出了其中一些。
 
 首先，我们建议您参考Mozilla的[本地化和复数](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)文章中的信息。在这里，您会发现不同的复数形式规则以及遵循这些规则的语言。
 
@@ -87,7 +87,7 @@ visible: true
 - `extensions;`
 - `hours`
 
-在Crowdin上遇到此类短语时，请注意字符串键，在 "上下文" 字段中您会看到一些关于复数的重要说明。
+在Crowdin上遇到此类短语时，请注意字符串键，在 "上下文"("context") 字段中您会看到一些关于复数的重要说明。
 
 <a name="2type"></a>
 #### 2. **具有单数和复数名词的字符串，以逗号分隔**
@@ -128,21 +128,21 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-现在，让我们想象一下 — 您将面临这样的短语：*"Standard license for %count% computer|Standard license for %count% computers"*. 
+现在，让我们想象一下。您将面临这样的短语：*"Standard license for %count% computer|Standard license for %count% computers"*. 
 
 您应该知道正确翻译什么？
 
-我们称这些句子用竖线符号称为 ***“模板”***，因为实际上它们用作具有不同数字的短语的模板。
+这些用竖线符号的句子称为 ***“模板”***，因为实际上它们用作具有不同数字的短语的模板。
 
 回到示例，由于英语仅包含两种复数形式，因此应分别有两个模板：
 
 `**Standard license for *%count%* computer|Standard license for *%count%* computers**`
 
-其中 **模板 1** – *％count％*计算机的标准许可，
+其中 **模板 1** – *％count％*计算机(computer)的标准许可，
 
-和 **模板 2** – *％count％*计算机的标准许可
+和 **模板 2** – *％count％*计算机(computers)的标准许可
 
-您应注意的另一重要事项是 **％count％** 占位符，它们通常像在它们定义的单词之前一样出现。根据选择的模板，此处将显示不同的数字，而不是 **％count％** 。
+您应注意的另一重要事项是 **％count％** 占位符。它们通常在它们定义的单词之前一样出现。根据选择的模板，此处将显示不同的数字，而不是 **％count％** 。
 
 在另一种语言具有三种复数形式的情况下，应该有三个模板，它们之间有两个竖线符号。
 
@@ -150,7 +150,7 @@ Crowdin建议用户，他们用不同的复数形式翻译一定数量的短语�
 
 ![](Slovak.png)
 
-那么从英语到斯洛伐克语的翻译应该是：
+那么从英语翻译成斯洛伐克语是：
 
 `**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**` 
 
