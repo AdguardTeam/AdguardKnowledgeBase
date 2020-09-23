@@ -44,7 +44,7 @@ visible: true
 
 让我们在英语和波兰语之间做一个小比较，以便更好地理解:
 
-      英文版：波兰语等效：
+      英文版：                                                          波兰语等效：
 
       1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
       2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
