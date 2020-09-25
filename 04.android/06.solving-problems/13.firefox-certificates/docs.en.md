@@ -6,12 +6,13 @@ taxonomy:
         - docs
 ---
 
-Different versions of Firefox require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). If the stable version of Firefox allows you to install the certificate directly into the browser itself, in other versions of the specified browser this functionality may be limited (Firefox Nightly, Beta, Developer Edition, and other browsers based on Firefox). Below we present two options to help you activate HTTPS filtering in different versions of the Firefox browser.
+Different versions of Firefox require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). 
+If you can't install the certificate directly into the browser itself (most of the time this happens in v79.0 or newer, but we are hoping Mozilla might fix this in upcoming versions), try method 1 described below. If that doesn't work too, try method 2 — it takes up some time but should work for any Firefox version.
 
 
 ### Enabling access to certificates installed on device
 
-#### Certificate locate in the User store
+#### Method 1 (Certificate located in the User store)
 
 To make Firefox (and browsers based on it) trust user certificates, you need to toggle the hidden option in the browser itself.
 
@@ -20,7 +21,7 @@ To make Firefox (and browsers based on it) trust user certificates, you need to 
 3. Type **root** in the search field;
 4. Locate the option “security.enterprise_roots.enabled” and toggle it, making it **true**.
 
-#### Certificate located in the System store
+#### Method 2 (Certificate located in the System store)
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
@@ -30,7 +31,7 @@ To make Firefox (and browsers based on it) trust user certificates, you need to 
 - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
 - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debbuging** after reading the warning carefully.
 3. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
-4. Open the **AdGuard settings** > **Network** > **HTTPS Filtering** > Install the certificate in **Firefox** > Select **stable** option;
+4. Open the **AdGuard settings** > **Network** > **HTTPS Filtering** > Install the certificate in **Firefox** > **INSTALL FOR OLD VERSIONS**;
 5. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
 6. In the specified folder we are interested in two files:
 - `cert9.db`
