@@ -19,7 +19,7 @@ taxonomy:
 3. Введите **root** в поле поиска;
 4. Найдите опцию "security.enterprise_roots.enabled" и переключите ее, выбрав значание **true**.
 
-#### Метод 2: Сертификат перенесен в **системное хранилище** 
+#### Метод 2: Сертификат находится в **системном хранилище** 
 
 1. [Установите и настройте ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/);
 > При использовании платформы Windows, владельцам **Samsung** может понадобиться установка [данной утилиты](https://developer.samsung.com/mobile/android-usb-driver.html).
