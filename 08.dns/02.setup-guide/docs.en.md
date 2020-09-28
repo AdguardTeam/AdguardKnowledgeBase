@@ -21,15 +21,15 @@ Use these servers to block ads, trackers and phishing websites.
 
 IPV4:
 
-_176.103.130.130_
+_94.140.14.14_
 
-_176.103.130.131_
+_94.140.15.15_
 
 IPV6:
 
-*2a00:5a60::ad1:0ff*
+*2a10:50c0::ad1:ff*
 
-*2a00:5a60::ad2:0ff*
+*2a10:50c0::ad2:ff*
 
 DNSCrypt:
 
@@ -51,15 +51,15 @@ Use these servers to block ads, trackers, phishing and adult websites, and to en
 
 IPV4:
 
-_176.103.130.132_
+_94.140.14.15_
 
-_176.103.130.134_
+_94.140.15.16_
 
 IPV6:
 
-*2a00:5a60::bad1:0ff*
+*2a10:50c0::bad1:ff*
 
-*2a00:5a60::bad2:0ff*
+*2a10:50c0::bad2:ff*
 
 DNSCrypt:
 
@@ -81,15 +81,15 @@ DNS-over-TLS:
 
 IPV4:
 
-*176.103.130.136*
+*94.140.14.140*
 
-*176.103.130.137*
+*94.140.14.141*
 
 IPV6:
 
-*2a00:5a60::01:ff*
+*2a10:50c0::1:ff*
 
-*2a00:5a60::02:ff*
+*2a10:50c0::2:ff*
 
 DNSCrypt:
 
