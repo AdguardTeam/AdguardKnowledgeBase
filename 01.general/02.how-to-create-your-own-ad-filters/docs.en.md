@@ -1943,7 +1943,7 @@ Eventually, here are the two versions of the Base filter for AdGuard browser ext
 ```
 !+ NOT_OPTIMIZED PLATFORM(android)
 ||example.org^
-
+```
 
 <a id="platform_not_platform"></a>
 #### PLATFORM and NOT_PLATFORM hints
