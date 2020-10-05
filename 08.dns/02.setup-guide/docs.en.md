@@ -21,15 +21,15 @@ Use these servers to block ads, trackers and phishing websites.
 
 IPV4:
 
-_176.103.130.130_
+_94.140.14.14_
 
-_176.103.130.131_
+_94.140.15.15_
 
 IPV6:
 
-*2a00:5a60::ad1:0ff*
+*2a10:50c0::ad1:ff*
 
-*2a00:5a60::ad2:0ff*
+*2a10:50c0::ad2:ff*
 
 DNSCrypt:
 
@@ -51,15 +51,15 @@ Use these servers to block ads, trackers, phishing and adult websites, and to en
 
 IPV4:
 
-_176.103.130.132_
+_94.140.14.15_
 
-_176.103.130.134_
+_94.140.15.16_
 
 IPV6:
 
-*2a00:5a60::bad1:0ff*
+*2a10:50c0::bad1:ff*
 
-*2a00:5a60::bad2:0ff*
+*2a10:50c0::bad2:ff*
 
 DNSCrypt:
 
@@ -81,15 +81,15 @@ DNS-over-TLS:
 
 IPV4:
 
-*176.103.130.136*
+*94.140.14.140*
 
-*176.103.130.137*
+*94.140.14.141* 
 
 IPV6:
 
-*2a00:5a60::01:ff*
+*2a10:50c0::1:ff*
 
-*2a00:5a60::02:ff*
+*2a10:50c0::2:ff*
 
 DNSCrypt:
 
@@ -134,15 +134,15 @@ DNS-over-TLS:
 
 6. Choose ’Use the following DNS server addresses’ and enter these: 
 
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -163,15 +163,15 @@ for ’Family protection’ servers.
 6. Select ’Use the following DNS server addresses’ and enter following:
  
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -192,15 +192,15 @@ for ’Family protection’ servers.
 6. Select ’Use the following DNS server addresses’ and enter following: 
  
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16
 
 for ’Family protection’ servers.
 
@@ -221,15 +221,15 @@ for ’Family protection’ servers.
 6. Select ’Use the following DNS server addresses’ and enter following: 
  
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -249,15 +249,15 @@ for ’Family protection’ servers.
 
 6. Select ’Use the following DNS server addresses’ and enter following: 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -273,15 +273,15 @@ for ’Family protection’ servers.
 
 4. Select the ’DNS’ tab and add following addresses to the list of DNS servers: 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15  
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -297,15 +297,15 @@ for ’Family protection’ servers.
 4. On some devices, you may need to check the box for «Advanced» to see further settings. To adjust your Android DNS settings, you will need to switch the IP settings from «DHCP» to «Static».
 5. Change set «DNS 1» and «DNS 2» values to following: 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for «Default» servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16
 
 for «Family protection» servers.
 
@@ -330,15 +330,15 @@ On Android version 9+, you can configure AdGuard DNS as follows:
 4. Tap on the name of the currently active network
 In the ’DNS’ field enter our DNS addresses: 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -354,15 +354,15 @@ Look for the ’DNS’ letters next to a field which allows two or three sets of
 
 3.Enter our DNS server addresses there 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 
@@ -378,15 +378,15 @@ for ’Family protection’ servers.
 
 4. Type in IP addresses of our DNS servers, separated by commas to the ‘DNS Servers’ field: 
  
->176.103.130.130 
+>94.140.14.14 
 
->176.103.130.131 
+>94.140.15.15 
 
 for ’Default’ servers; 
 
->176.103.130.132 
+>94.140.14.15
 
->176.103.130.134 
+>94.140.15.16 
 
 for ’Family protection’ servers.
 

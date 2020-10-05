@@ -6,17 +6,16 @@ taxonomy:
         - docs
 ---
 
-Different versions of Firefox require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). 
-If you can't install the certificate directly into the browser itself (most of the time this happens in v79.0 or newer, but we are hoping Mozilla might fix this in upcoming versions), try method 1 described below. If that doesn't work too, try method 2 — it takes up some time but should work for any Firefox version.
+Different versions of Firefox browser require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). Most of the time this happens in Firefox versions older than v81.1.1. To solve this issue, try Method 1 described below. It also works with nightly– and beta– version of browser.
 
 
 ### Enabling access to certificates installed on device
 
 #### Method 1 (Certificate located in the User store)
 
-To make Firefox (and browsers based on it) trust user certificates, you need to toggle the hidden option in the browser itself.
+To make the **latest stable** version of Firefox trust user certificates, make sure it updated to v81.1.1 or above. As an alternative you may install nightly- or beta-version. After that you need to toggle the hidden option in the browser itself:
 
-1. Run **Firefox**;
+1. Run the browser;
 2. Navigate to **about:config** page;
 3. Type **root** in the search field;
 4. Locate the option “security.enterprise_roots.enabled” and toggle it, making it **true**.
