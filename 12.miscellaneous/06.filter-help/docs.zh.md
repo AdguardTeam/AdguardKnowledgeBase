@@ -1,5 +1,5 @@
 ---
-title: '参与 AdGuard 过滤器'
+title: '对 AdGuard 过滤器做出贡献'
 taxonomy:
     category:
         - docs
@@ -14,20 +14,20 @@ visible: true
 
 ### 过滤规则
 
-您可能知道，AdGuard使用过滤规则来屏蔽广告，这些规则被组合到主题[屏蔽过滤器](https://kb.adguard.com/general/adguard-ad-filters)中，例如英语过滤器，移动广告过滤器等。有关此[KB文章](https://kb.adguard.com/general/how-ad-blocking-works)的广告阻止的一般原理的更多信息。
+可能众所周知，AdGuard 使用过滤规则拦截广告。这些规则被组合成不同主题的[拦截过滤器](https://kb.adguard.com/general/adguard-ad-filters)，例如，英语过滤器，移动广告过滤器等等。[本知识库的文章](https://kb.adguard.com/general/how-ad-blocking-works)内容包括更多关于，如何拦截广告的信息。
 
-许多网站会不断更改嵌入广告的方式，为了保持过滤器的有效性，我们必须通过添加新规则来对其进行更新。几个过滤器工程师正在努力创建新规则，但是我们总是可以使用一些帮助 — 实际上，有志愿者提出了针对现有问题的解决方案，我们非常感谢他们的帮助。
+许多网站会不断更改插入广告的方式。为了过滤器保持有效，我们要持续更新过滤器以及添加新规则。过滤器工程师一直都在努力创建新规则，因此我们非常愿意接受一些外界的帮助。且实际上，有很多志愿者已经为很多问题提出很好的解决方案。我们非常感激他们的帮助。
 
 <a name="how-to-start"></a>
 
 ### 如何开始？
 
-但是，使用阻止过滤器需要特定技能。如果您有它们并且知道如何创建规则，请直接访问GitHub上的我们的[AdGuard过滤器存储库](https://github.com/AdguardTeam/AdguardFilters)。在那里，您会发现很多未解决的问题，每个问题都涉及某个网站问题的问题-广告丢失，误报等-选择任何一个问题并在注释中建议您自己的规则。 AdGuard过滤器工程师将审核您的建议，如果发现正确，则您的规则将添加到AdGuard过滤器中。
+当然，改进并创建拦截过滤器需要有特定的技能。如果您已经了解如何创建规则，请直接访问我们在 GitHub 上的 [AdGuard 过滤器存储库](https://github.com/AdguardTeam/AdguardFilters)。在那里，您可发现很多待解决的问题。每个问题都涉及某个网站上的问题，包括广告漏洞，错误报告等等。选择任何一个问题并在注释中建议您个人的规则， AdGuard 过滤器工程师将审核您的建议。如果正确，则您的规则会被添加到 AdGuard 过滤器中。
 
-如果您还不熟悉我们的过滤规则语法，或者可能需要复习，则可以在中找到有关语法的基础知识[我们的知识库](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). 创建自己的广告过滤器。可以在Internet上找到更多高级指南，如果对语法有任何疑问，请访问我们的[论坛](https://forum.adguard.com/)。
+如果您还不太熟悉或者需要复习我们的过滤规则语法，则可以在[我们的知识库](https://kb.adguard.com/general/how-to-create-your-own-ad-filters)中找到有关语法的基础知识。当然，在网上还可以找到更多高级指南。如果有任何疑问，请您访问我们的[论坛](https://forum.adguard.com/)。
 
 <a name="rewards"></a>
 
 ### 奖励
 
-好的，假设您已经提出了一些过滤规则，其中一些已被批准。那么太好了！现在是时候获得回报了。使用您的GitHub帐户名在[st@adguard.com](mailto:st@adguard.com)上向我们发送消息，并考虑您的免费许可证密钥：)至于需要获得批准才能成为的确切规则数量合格，没有硬性规定。这个任务并不容易，所以大约在5以上的值就足够了。
+假设您已经提出了一些过滤规则，且其中一些还被批准通过了。那太好了！您可以获取奖励了。使用您的 GitHub 账号在 [st@adguard.com](mailto:st@adguard.com) 上给我们发送消息，并不要忘记考虑一下您的免费许可密钥 :) 我们并没有硬性规定，至少需要获得多少个规则批准才能获得免费许可。不过考虑到这个任务的难度系数，大约五个被批准的规则就足够了。
