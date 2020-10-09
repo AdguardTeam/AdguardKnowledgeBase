@@ -6,19 +6,21 @@ taxonomy:
         - docs
 ---
 
-Different versions of Firefox browser require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). Most of the time this happens in Firefox versions older than v81.1.1. To solve this issue, try Method 1 described below. It also works with nightly– and beta– version of browser.
+Different versions of Firefox browser require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). Most of the time this happens in Firefox versions older than v81.1.1. To solve this issue, try Method 1 described below  (it works with nightly– and beta–versions of the browser).
 
 
 ### Enabling access to certificates installed on device
 
 #### Method 1 (Certificate located in the User store)
 
-To make the **latest stable** version of Firefox trust user certificates, make sure it updated to v81.1.1 or above. As an alternative you may install nightly- or beta-version. After that you need to toggle the hidden option in the browser itself:
+>This method will only work in [Beta or Nightly](https://www.mozilla.org/firefox/channel/android/) versions of the browser, as regular versions of Firefox don't have `about:config` anymore.
+
+To make Firefox trust user certificates, you need to toggle the hidden option in the browser itself:
 
 1. Run the browser;
 2. Navigate to **about:config** page;
 3. Type **root** in the search field;
-4. Locate the option “security.enterprise_roots.enabled” and toggle it, making it **true**.
+4. Locate the option `security.enterprise_roots.enabled` and toggle it, making it **true**.
 
 #### Method 2 (Certificate located in the System store)
 
@@ -43,10 +45,13 @@ To make the **latest stable** version of Firefox trust user certificates, make s
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`.
 
 In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+
 The full command should look something like this:
+
 - `adb shell su`.
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download `
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download `
 - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`. 
 - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`.
+
 If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
