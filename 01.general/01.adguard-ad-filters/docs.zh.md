@@ -47,7 +47,7 @@ visible: true
 * **防跟踪保护过滤器** — 各种在线计数器和网络分析工具的综合列表。用它来隐藏你在网上的行动，避免跟踪。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 * **社交媒体过滤器** — 此过滤器适用于社交媒体小工具 "喜欢" 按钮及类似的元素。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
 * **恼人广告过滤器** —  屏蔽网页上的恼人元素，包括 Cookie 通知，第三方小部件和页内弹出式窗口。 (社交媒体元素除外). 受 Fanboy Annoyances List 启发， 但不重复。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
-* **解除搜索广告和自我推销过滤器** — 解除可能对用户有用的广告。在 [此页面](https://kb.adguard.com/en/general/search-ads-and-self-promotion).上了解更多关于此过滤器的信息。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+* **解除搜索广告和自我推销过滤器** — 解除可能对用户有用的广告。在 [此页](https://kb.adguard.com/en/general/search-ads-and-self-promotion).上了解更多关于此过滤器的信息。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
 * **俄语过滤器** — 删除俄语网站上的广告。最初是基于 [RU AdList](https://code.google.com/p/ruadlist/) 过滤器，但随后完全独立发展。目前，已脱离 RU AdList 开发。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 * **德语过滤器** — 删除德语网站上的广告。最初是基于 [EasyList Germany](https://easylist.to/) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
 * **法语过滤器** — 删除法语网站上的广告。最初是基于 [Liste FR](https://forums.lanik.us/viewforum.php?f=91) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
