@@ -71,7 +71,7 @@ visible: true
 
 <img src = "https://cdn.adguard.com/public/Adguard/Blog/Blog_ZH_CN/report/picture4.jpg" width = "350" />
 
-*填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 填写表格后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 
 <a id="MAC"></a>
@@ -85,13 +85,13 @@ visible: true
 
 <img src = "https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/picture2.png" width = "350" />
 
-*然后，您需要填写投诉举报表格；
-*完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
+* 然后，您需要填写投诉举报表格；
+* 完成后，将自动在[GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)上创建一个问题。也将有一个链接来监视解决问题的进度。
 
 
 <a id="iOS"></a>
 
-### ** iOS **
+### **iOS**
 
 * 打开AdGuard设置；
 * 发送反馈；
@@ -160,7 +160,7 @@ visible: true
 3. 如果您设法找出哪个过滤器“破坏了”页面，则在填写表格时应通知开发人员(请参见上文)。在这种情况下，希望返回到初始设置。
 4. 如果关闭所有过滤器均未产生任何结果，则应用规则
 **@@||example.com^$document,extension**,
-其中** example.com **是一个示例网站名称，需要用您自己的选项替换；
+其中**example.com**是一个示例网站名称，需要用您自己的选项替换；
 5. 如果发生故障(问题未解决)，请转到“隐身模式”一节。
 
 
