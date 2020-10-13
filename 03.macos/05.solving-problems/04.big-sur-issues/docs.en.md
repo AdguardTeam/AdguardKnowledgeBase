@@ -37,6 +37,28 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
 
+### Configuring an upstream Shadowsocks proxy
+
+Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org/en/index.html).
+
+First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
+
+```
+{
+    "server":"111.222.333.444",
+    "server_port":8388,
+    "local_port":1080,
+    "password":"barfoo!",
+    "timeout":600,
+    "method":"chacha20-ietf-poly1305"
+}
+```
+
+>You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/en/config/quick-guide.html).
+
+Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://user:barfoo!@111.222.333.444:8388`. Notice that you need to use "server", "server_port" and "password" values from the JSON file here.
+
+Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
 
 <a id="accepting-connections"></a>
 
