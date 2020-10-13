@@ -28,38 +28,38 @@ visible: true
 <a id="win"></a>
 ## AdGuard Windows版
 
-* SQLLite database engine: https://sqlite.org
-* ADO.NET provider for SQLite: https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki
-* Json.NET — high-performance JSON framework for .NET: https://www.newtonsoft.com/json
-* AvalonEdit — WPF-based text editor component: https://avalonedit.net
+* SQLLite database engine: [https://sqlite.org](https://sqlite.org/)
+* ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+* Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net/)
 <a id="mac"></a>
 ## AdGuard Mac版
 
-* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes
-* Ilija Tovilo for ITProgressIndicator component: https://github.com/iluuu1994/ITProgressIndicator
-* Sparkle Project for Sparkle.framework component: http://sparkle-project.org
-* Robbie Hanson for GCDAsyncSocket component: https://github.com/robbiehanson/CocoaAsyncSocket
-* Tony Million for Reachability component: https://github.com/tonymillion/Reachability
-* August «Gus» Mueller for Fmdb component: https://github.com/ccgus/fmdb
-* Stephen F. Booth for SFBCrashReporter project: https://github.com/sbooth/SFBCrashReporter
-* Bartosz Janda for Acextract component: https://github.com/bartoszj/acextract
+* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org/)
+* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+* Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController https://github.com/floschliep/FLOPageViewController
 <a id="android"></a>
 ## AdGuard 安卓版
 
-* Logback-android by Tony19: https://tony19.github.io/logback-android
-* Otto by Square: http://square.github.io/otto
-* RootTools Library by Stericson: https://github.com/Stericson/RootTools
-* MaterialDateRangePicker by Supratim Chakraborty: https://github.com/borax12/MaterialDateRangePicker
-* HelloCharts by Leszek Wach: https://github.com/lecho/hellocharts-android
+* Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+* Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
+* RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+* MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+* HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 <a id="ios"></a>
 ## AdGuard iOS版
 
-* StaticDataTableViewController by peterpaulis: https://github.com/peterpaulis/StaticDataTableViewController
-* GZIP by nicklockwood: https://github.com/nicklockwood/GZIP
-* Reachability component by Tony Million: https://github.com/tonymillion/Reachability
-* Fmdb component by August «Gus» Mueller: https://github.com/ccgus/fmdb
-* NSStringPunycodeAdditions component by Nate Weaver: https://github.com/Wevah/Punycode-Cocoa
+* StaticDataTableViewController by peterpaulis: [https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)
+* GZIP by nicklockwood: [https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP)
+* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
 <a id="extension"></a>
 ## AdGuard 广告拦截扩展
 
@@ -212,6 +212,6 @@ visible: true
 * Sanjay Nand
 * TayTayTheKiller
 ---
-除此之外。我们还想感谢[xda-developers users.](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)。非常感谢您向我们发送反馈意见！
+除此之外。我们想感谢[xda-developers users.](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)。非常感谢您向我们发送反馈意见！
 
 我们总是很感谢收到用户的反馈意见（特别是建设性的:)）。大家能随时随地与我们联系，请求新增功能以及提交错误报告。加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[AdGuard subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum ](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)或访问我们的[GitHub](https://github.com/AdguardTeam)。
