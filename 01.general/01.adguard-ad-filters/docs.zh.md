@@ -1,60 +1,61 @@
 ---
-title: 'AdGuard 广告过滤器'
+title: 'AdGuard广告过滤器'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-* [简介](#introduction)
-* [过滤器政策](#policy)
-* [献给 AdGuard 过滤器的改进](#contribute)
-* [AdGuard 过滤器](#filters)
+*   [简介](#introduction)
+*   [AdGuard过滤器政策](#policy)
+*   [帮助AdGuard过滤器的开发](#contribute)
+*   [AdGuard过滤器](#filters)
 
 <a name="introduction"></a>
-## 介绍
+## 简介
 
-本文介绍的是我们创建并在 AdGuard 和其他广告拦截程序 (例如 uBlock Origin) 中使用的过滤器。每个过滤器代表的是文本格式的一系列规则，而 AdGuard 应用程序可使用这些规则来过滤广告（例如横幅，弹出式窗口，跟踪器等）以及保护个人隐私信息 。用于特定 Internet 网段 (德语过滤器，俄语过滤器等) 或特定目的（社交媒体过滤器，防追踪保护过滤器等）的规则被合成一个列表（过滤器）。用户可以一键启用/停用所有规则。
+本文介绍的是我们创建用于 AdGuard 和其他广告拦截软件（例如 uBlock Origin）的过滤器。 每个过滤器均代表一组文本格式的规则，AdGuard应用和程序可使用这些规则来过滤广告和威胁隐私的内容（例如横幅、弹出式窗口、跟踪器等）。 特定于特定 Internet 网段的规则（德语过滤器，俄语过滤器等）或用于特定目的的规则（社交媒体过滤器、防跟踪保护过滤器等）被组合到一个列表中（过滤器）可以一次启用/停用所有规则 。
 
 <a name="policy"></a>
 ## AdGuard 过滤器政策
 
-在[此处](https://kb.adguard.com/general/adguard-filter-policy)可获得我们的过滤器政策。
+我们的过滤器政策在 [这里](https://kb.adguard.com/general/adguard-filter-policy).
 
 <a name="contribute"></a>
-## 献给 AdGuard 过滤器的改进
+## 参与AdGuard过滤器的开发
 
-我们很幸运，拥有不仅热爱 AdGuard 而且积极留下反馈的用户。许多人以各种方式开展志愿服务来改善其他用户对 AdGuard 的使用体验，您也可以加入其中！对我们而言，我们只能为最活跃的成员准备奖励。那你可以做什么呢？
+我们非常幸运的是，拥有一个不仅热爱AdGuard，还能回馈社会的社区。很多人以各种方式做志愿者，让其他用户使用 AdGuard 的体验更好，您也可以加入他们的行列! 而我们也乐于奖励最活跃的社区成员。那么，您能做什么呢？
 
 ### 报告问题
 
-我们的用户帮我们了解有关过滤器的问题。这样我们可以节省时间并保持过滤器的不断更新。如要提交报告，请使用此[网络报告工具](https://agrd.io/report)。
+我们依靠社区让我们知道过滤器的问题。这样我们才能最有效地利用我们的时间，并保持过滤器的不断更新。要提交报告，请使用 [网络报告工具](https://agrd.io/report).
 
-### 建议过滤规则
+### 建议的过滤规则
 
-在 [GitHub过滤器存储库](https://github.com/AdguardTeam/AdguardFilters/issues) 中您可以发现很多与广告丢失，错误报告等有关的待解决问题。每个人都可以选择任何一个并在注释中提出自己的规则。 AdGuard 过滤器工程师将审核您的建议。如果他们证明是正确的，那么您的规则将会被添加到 AdGuard 过滤器中。
+您会在[GitHub 过滤器仓库](https://github.com/AdguardTeam/AdguardFilters/issues).中发现大量未解决的问题。每个问题都涉及到某个网站的问题 — 遗漏的广告、误报等 — 请选择其中一个问题并在评论中提供您自己的规则。AdGuard 过滤器工程师将审查您的建议，如果证明是正确的，您的规则将被添加到 AdGuard 过滤器中。
 
-这是有关 AdGuard 过滤规则语法的[官方文档](https://kb.adguard.com/general/how-to-create-your-own-ad-filters)。您先要阅读它，然后就能创建自己的过滤规则。
+这里是 AdGuard 过滤规则语法的 [官方文档](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) 在您创建自己的过滤规则之前，您需要阅读它。
 
-### 其他帮助方式
+### 其他贡献方式
 
-  这是[“奉献”页面](https://adguard.com/contribute.html)，愿意以其他方式为 AdGuard 做出贡献的人们可使用。
+我们有 [专门的页面](https://adguard.com/contribute.html) 您可以在其中详细了解如何参与AdGuard开发。
+
 <a name="filters"></a>
-## AdGuard 过滤器
+## AdGuard过滤器
 
-* **基础过滤器** — 从具有英语内容的网站上删除广告。最初基于[EasyList](https://easylist.to/)并由我们修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/2.txt)
-* **防跟踪保护过滤器** — 各种在线计数器和 Web 分析工具的完整列表。使用它可以在线隐藏您的操作并避免跟踪。[查看规则](https://filters.adtidy.org/extension/chromium/filters/3.txt)
-* **社交媒体过滤器** — 删除了流行网站上的许多“赞”和“转发”按钮以及其他社交媒体集成。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/4.txt)
-* **恼人广告过滤器** — 阻止网页上的恼人元素，包括cookie通知，第三方小部件和页面内弹出窗口(社交媒体元素除外)。受 “Fanboy Annoyances List” 的启发，但不完全重叠。[查看规则](https://filters.adtidy.org/extension/chromium/filters/14.txt)
-* **解除搜索广告和自我促销的过滤器** — 解除可能对用户有用广告的阻止。在[本页](https://kb.adguard.com/zh/general/search-ads-and-self-promotion)上了解有关此过滤器的更多信息。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/10.txt)
-* **俄语过滤器** — 从俄语网站中删除广告。最初基于 [RUAdList](https://code.google.com/p/ruadlist/) 过滤器，但随后完全独立出去。目前，与 RUAdList 的共同点很少。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/1.txt)
-* **德语过滤器** — 从德语网站中删除广告。最初基于[EasyList Germany](https://easylist.to/)过滤器，然后由我们根据用户的错误报告对其进行了修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/6.txt)
-* **法语过滤器** — 从法语网站中删除广告。最初基于[Liste FR](https://forums.lanik.us/viewforum.php?f=91)过滤器，然后根据用户的错误报告由我们进行了修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/16.txt)
-* **日语过滤器** — 从日语网站中删除广告。最初基于[Fanboy的日语](https://www.fanboy.co.nz/fanboy-japanese.txt)过滤器，后来根据用户的错误报告被我们修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/7.txt)
-* **荷兰语过滤器** — 从荷兰语网站中删除广告。最初基于[EasyList Dutch](https://easylist.to/)过滤器，然后由我们根据用户的错误报告对其进行了修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/8.txt)
-* **西班牙语/葡萄牙语过滤器** — 从西班牙语和葡萄牙语网站中删除广告。最初基于[Fanboy的西班牙语/葡萄牙语](https://www.fanboy.co.nz/fanboy-espanol.txt)过滤器，后来根据用户的错误报告被我们修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/9.txt)
-* **土耳其语过滤器** — 从土耳其语网站中删除广告。由我们根据用户的错误报告创建。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/13.txt)
-* **中文过滤器** — 从中文网站删除广告。最初基于[EasyList China](http://abpchina.org/forum/forum.php)过滤器，然后根据用户的错误报告由我们进行了修改。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/224.txt)
-* **实验性过滤器** — 用于测试一些新的过滤规则，这些规则可能会引起网站工作的冲突和混乱。如果这些规则没有问题，则将它们添加到主过滤器中。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/5.txt)
-* **移动广告过滤器** — 阻止移动设备上的广告。包含所有已知的移动广告网络。 [查看规则](https://filters.adtidy.org/extension/chromium/filters/11.txt)
-* **DNS过滤器** — 由其他几个过滤器（AdGuard 基础过滤器，社交媒体过滤器，间谍软件过滤器，移动广告过滤器，EasyList 和 EasyPrivacy）组成，并经过专门简化让它们更好地与 DNS 级别的广告拦截兼容。 AdGuard DNS 服务器使用此过滤器来阻止广告和跟踪器。要了解有关 DNS 级别阻止的更多信息，请访问[本页](https://adguard.com/adguard-dns/overview.html)。[查看规则](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt)
+* **基础过滤器** — 删除英文内容网站的广告。最初是基于 [EasyList](https://easylist.to/) 并由我们修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt)
+* **防跟踪保护过滤器** — 各种在线计数器和网络分析工具的综合列表。用它来隐藏您在网上的行动，避免跟踪。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
+* **社交媒体过滤器** — 此过滤器适用于社交媒体小工具 "喜欢" 按钮及类似的元素。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
+* **恼人广告过滤器** —  屏蔽网页上的恼人元素，包括 Cookie 通知，第三方小部件和页内弹出式窗口。 (社交媒体元素除外). 受 Fanboy Annoyances List 启发， 但不重复。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
+* **解除搜索广告和自我推销过滤器** — 解除可能对用户有用的广告。在 [此页](https://kb.adguard.com/en/general/search-ads-and-self-promotion).上了解更多关于此过滤器的信息。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+* **俄语过滤器** — 删除俄语网站上的广告。最初是基于 [RU AdList](https://code.google.com/p/ruadlist/) 过滤器，但随后完全独立发展。目前，已脱离 RU AdList 开发。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
+* **德语过滤器** — 删除德语网站上的广告。最初是基于 [EasyList Germany](https://easylist.to/) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
+* **法语过滤器** — 删除法语网站上的广告。最初是基于 [Liste FR](https://forums.lanik.us/viewforum.php?f=91) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
+* **日语过滤器** — 删除日语网站上的广告。最初是基于 [Fanboy’s Japanese](https://www.fanboy.co.nz/fanboy-japanese.txt) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_7_Japanese/filter.txt)
+* **荷兰语过滤器** — 删除荷兰语网站上的广告。最初是基于 [EasyList Dutch](https://easylist.to/) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
+* **西班牙语/葡萄牙语过滤器** — 删除西班牙语和葡萄牙语网站上的广告。最初是基于 [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
+* **土耳其语过滤器** — 删除土耳其语网站上的广告。由我们根据用户的反馈创建。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
+* **中文过滤器** — 删除中文网站上的广告。最初是基于 [EasyList China](http://abpchina.org/forum/forum.php) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
+* **实验性过滤器** — 此过滤器设计用于在将某些有风险的过滤规则添加到基本过滤器之前对其进行测试。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
+* **移动广告过滤器** — 该过滤器将过滤已知的所有移动广告网络。对移动设备非常有帮助。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
+* **DNS过滤器** — 此过滤器由其他几个过滤器 (AdGuard 基础过滤器、社交媒体过滤器、防跟踪保护过滤器、移动广告过滤器、EasyList 和 EasyPrivacy) 组成，并经过简化，以便更好地与 DNS 级别的广告拦截兼容。AdGuard DNS 服务器使用此过滤器来拦截广告和跟踪。要了解更多有关 DNS 级别拦截的信息，请访问 [此页](https://adguard.com/adguard-dns/overview.html). [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
