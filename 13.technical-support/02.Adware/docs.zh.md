@@ -26,20 +26,20 @@ taxonomy:
 
 1.启动应用程序。单击**立即扫描**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware1.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/adwcleaner1.png" />
 
 2.扫描完成之后，您需要将可疑对象发送到**隔离区**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware2.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/adwcleaner2.png" />
 
 3.将选项被移至**隔离区后**，您将能够**清除系统**中不必要的选项。
 4.在某些情况下，清洁完成后，您可能需要**重新启动系统**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware3.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/adwcleaner3.png" />
 
 5.重新启动系统后，清洁就完成了，如有必要，您可以阅读该软件的运行**报告**。
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/adware4.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Zh/adwcleaner4.png" />
 
 如果没有效果，请根据[此说明](#说明)暂时禁用浏览器中的所有扩展程序，以及其他一些设置。
 
