@@ -25,16 +25,16 @@ visible: true
 ### 第三方软件
 
 帮我们开发 AdGuard 软件的文库、开源软件和其他资源的列表：
+
 <a id="win"></a>
 ## AdGuard Windows版
-
 * SQLLite database engine: [https://sqlite.org](https://sqlite.org/)
 * ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 * Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
 * AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net/)
+
 <a id="mac"></a>
 ## AdGuard Mac版
-
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 * Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
 * Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org/)
@@ -44,25 +44,25 @@ visible: true
 * Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
 * Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController https://github.com/floschliep/FLOPageViewController
+
 <a id="android"></a>
 ## AdGuard 安卓版
-
 * Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 * Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
 * RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
 * MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 * HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+
 <a id="ios"></a>
 ## AdGuard iOS版
-
 * StaticDataTableViewController by peterpaulis: [https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)
 * GZIP by nicklockwood: [https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP)
 * Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 * Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
 * NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+
 <a id="extension"></a>
 ## AdGuard 广告拦截扩展
-
 * moment: https://github.com/moment/moment
 * simply-deferred: https://github.com/sudhirj/simply-deferred
 * SHA256: https://github.com/AndersLindman/SHA256
@@ -71,9 +71,9 @@ visible: true
 * nanobar: https://github.com/jacoborus/nanobar
 * crypto-js: https://github.com/brix/crypto-js
 * ace: https://github.com/ajaxorg/ace
+
 <a id="safari"></a>
 ## 适用于 Safari 的 AdGuard 应用
-
 * ace: https://github.com/ajaxorg/ace
 * adm-zip: https://github.com/cthackers/adm-zip
 * config: https://github.com/lorenwest/node-config
@@ -96,9 +96,9 @@ visible: true
 * gulp-hash-creator: https://github.com/wahaha2012/gulp-hash-creator
 * request: https://github.com/request/request
 * require-dir: https://github.com/aseemk/requireDir
+
 <a id="assistant"></a>
 ## AdGuard 浏览器助手
-
 * React: https://github.com/facebook/react
 * webextension-polyfill: https://github.com/mozilla/webextension-polyfill
 * react-intl: https://github.com/formatjs/formatjs/tree/main/packages/react-intl
@@ -116,9 +116,9 @@ visible: true
 * postcss: https://github.com/postcss/postcss
 * web-ext: https://github.com/mozilla/web-ext
 * webpack: https://github.com/webpack/webpack
+
 <a id="vpn-extension"></a>
 ## AdGuard VPN 扩展
-
 * babel: https://github.com/babel/babel
 * crypto-js: https://github.com/brix/crypto-js
 * geolib: https://github.com/manuelbieh/geolib
@@ -128,9 +128,9 @@ visible: true
 * nanoid: https://github.com/ai/nanoid
 * protobufjs: https://github.com/protobufjs/protobuf.js
 * react: https://github.com/facebook/react
+
 <a id="vpn-client"></a>
 ## VPN 应用
-
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * brotli: https://github.com/google/brotli/blob/master/LICENSE
 * Detours: https://github.com/microsoft/Detours/blob/master/LICENSE.md
@@ -143,9 +143,9 @@ visible: true
 * nghttp2: https://github.com/nghttp2/nghttp2/blob/master/COPYING
 * Protocol Buffers - Google's data interchange format: https://github.com/protocolbuffers/protobuf/blob/master/LICENSE
 * zlib: https://zlib.net/zlib_license.html
+
 <a id="corelibs"></a>
 ## CoreLibs
-
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * brotli: https://github.com/google/brotli/blob/master/LICENSE
 * Chromium: https://github.com/chromium/chromium/blob/master/LICENSE
@@ -164,9 +164,9 @@ visible: true
 * PCRE2: https://www.pcre.org/licence.txt
 * SQLite: https://www.sqlite.org/copyright.html
 * zlib: https://zlib.net/zlib_license.html
+
 <a id="dnslibs"></a>
 ## DNS Libs
-
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * cURL: https://github.com/curl/curl/blob/master/COPYING
 * Detours: https://github.com/microsoft/Detours/blob/master/LICENSE.md
@@ -181,9 +181,9 @@ visible: true
 * PCRE2: https://www.pcre.org/licence.txt
 * Sodium: https://github.com/jedisct1/libsodium/blob/master/LICENSE
 * spdlog: https://github.com/gabime/spdlog/blob/v1.x/LICENSE
+
 <a id="testers"></a>
 ### 致谢
----
 热烈感谢所有beta测试用户和其他对 AdGuard 产品感兴趣的用户.他们对报告并解决错误做出了很大的贡献。
 特别感谢：
 
@@ -211,6 +211,7 @@ visible: true
 * ouzbed
 * Sanjay Nand
 * TayTayTheKiller
+
 ---
 除此之外。我们想感谢[xda-developers users.](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)。非常感谢您向我们发送反馈意见！
 
