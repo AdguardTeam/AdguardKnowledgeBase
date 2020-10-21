@@ -24,3 +24,17 @@ For analysis and diagnostic of different problems support service might need AdG
 4. **Important**: set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 
 5. Send the archive to the AdGuard [support service](mailto:support@adguard.com) (support@adguard.com), describe the problem and don't forget to mention the time when you reproduced the issue.
+
+**Note**: sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+
+1. Stop AdGuard.
+
+2. Open the console.
+
+3. Go to the folder C:\Program Files (x86)\Adguard>Adguard.exe /trace.
+
+4. Run the app with the /trace command.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
+
+Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
