@@ -29,11 +29,11 @@ For analysis and diagnostic of different problems support service might need AdG
 
 1. Stop AdGuard.
 
-2. Open the console.
+2. Open the console (type 'cmd' in the start panel).
 
-3. Go to the folder C:\Program Files (x86)\Adguard>Adguard.exe /trace.
+3. Go to the folder C:\Program Files (x86)\Adguard>Adguard.exe with the command cd C:\Program Files (x86)\Adguard if you are using 64bit Windows, and cd C:\Program Files\Adguard if you use 32 bit one).
 
-4. Run the app with the /trace command.
+4. Run the app with the command cd C:\Program Files (x86)\Adguard if you are using 64bit Windows, and cd C:\Program Files\Adguard in case if 32 bit one).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
 
