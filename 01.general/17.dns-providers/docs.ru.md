@@ -548,12 +548,9 @@ OpenDNS серверы с функцией блокировки контента
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-
 | DNS-over-TLS - Private | Имя провайдера: `private.canadianshield.cira.ca` IP: `149.112.121.10`  и IPv6: `2620:10A:80BB::10` | <a href="sdns://AwAAAAAAAAAAAAAkdGxzOi8vcHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh">Добавить в AdGuard</a>  |
 | DNS-over-TLS - Protected | Имя провайдера: `protected.canadianshield.cira.ca` IP: `149.112.121.20`  и IPv6: `2620:10A:80BB::20` | <a href="sdns://AwAAAAAAAAAAAAAmdGxzOi8vcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Добавить в AdGuard</a>  |
 | DNS-over-TLS - Family | Имя провайдера: `protected.canadianshield.cira.ca` IP: `149.112.121.30`  и IPv6: `2620:10A:80BB::30` | <a href="sdns://AwAAAAAAAAAAAAAjdGxzOi8vZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E">Добавить в AdGuard</a>  |
-
-
 | DNS-over-HTTPS - Private | Имя провайдера: `https://private.canadianshield.cira.ca/dns-query` IP: `149.112.121.10`  и IPv6: `2620:10A:80BB::10` | <a href="sdns://AgEAAAAAAAAAAAAmaHR0cHM6Ly9wcml2YXRlLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ">Добавить в AdGuard</a>  |
 | DNS-over-HTTPS - Protected | Имя провайдера: `https://protected.canadianshield.cira.ca/dns-query` IP: `149.112.121.20`  и IPv6: `2620:10A:80BB::20` | <a href="sdns://AgEAAAAAAAAAAAAoaHR0cHM6Ly9wcm90ZWN0ZWQuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Добавить в AdGuard</a>  |
 | DNS-over-HTTPS - Family | Имя провайдера: `https://family.canadianshield.cira.ca/dns-query` IP: `149.112.121.30`  и IPv6: `2620:10A:80BB::30` | <a href="sdns://AgEAAAAAAAAAAAAlaHR0cHM6Ly9mYW1pbHkuY2FuYWRpYW5zaGllbGQuY2lyYS5jYQovZG5zLXF1ZXJ5">Добавить в AdGuard</a>  |
