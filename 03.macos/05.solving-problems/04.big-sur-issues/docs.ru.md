@@ -72,7 +72,7 @@ visible: true
 
 Во-первых, проверьте, что отключён **System Proxy** в правом нижнем углу. В противном случа Surge не будет работать вместе с AdGuard. С другой стороны, **Enhanced Mode** включать можно, он не вызовет конфликтов.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 650px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/surge.png" style="max-width: 650px;">
 
 Теперь переходим в *Меню AdGuard -> Дополнительно -> Расширенные настройки...* и вписываем в поле *Значение* настройки `upstream.proxy` строку `socks5://localhost:6153` или `http://localhost:6152`, в зависимости от типа прокси, который вы хотите использовать. Обратите внимание, что нужно использовать значение **port**, указанное в разделе **Events** вкладки **Activity** в вашем клиенте Surge.
 
