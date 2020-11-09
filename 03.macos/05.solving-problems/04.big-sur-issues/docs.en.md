@@ -18,7 +18,7 @@ The next version of macOS, **Big Sur**, is scheduled for release in late 2020, b
 
 ## Compatibility with local proxies
 
-Any remote (non-local) proxy will work normally in Big Sur and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
+Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
@@ -57,7 +57,7 @@ First of all, you need a working server side for your proxy. Most likely, to set
 
 >You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/en/config/quick-guide.html).
 
-Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' in its settings! AdGuard won't work if you select 'Auto Mode' or 'Global Mode'.
+Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' in its settings! The configuration won't work if you select 'Auto Mode' or 'Global Mode'.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 350px;">
 
@@ -69,7 +69,7 @@ Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream
 
 Once you install Surge proxy client, you need to pay attention to several things to ensure it doesn't conflict with AdGuard.
 
-First, check that **System Proxy** in the bottom right corner is disabeld. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict.
+First, check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 650px;">
 
@@ -131,7 +131,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 
 ## VPN apps with legacy API
 
-Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any comflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside AppStore, there's a chance it uses the old VPN API and you have to exclude it from filtering:
+Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside AppStore, there's a chance it uses the old VPN API and you have to exclude it from filtering:
 
 1) Open AdGuard's menu.
 2) Select *Preferences...*. 
