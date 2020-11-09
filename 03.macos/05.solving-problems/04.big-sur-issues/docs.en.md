@@ -9,15 +9,16 @@ visible: true
 The next version of macOS, **Big Sur**, is scheduled for release in late 2020, but its beta is already available. And it already causes some problems to many applications, AdGuard not being an exception. In this article we go over the known issues and possible ways to solve them.
 
 * [Compatibility with local proxies](#local-proxies)
-* [Accepting connections to your Mac](#accepting-connections)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
-* [Solving issues with SSH](#ssh)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
+* [VPN apps with legacy API](#legacy-api)
 
 
 <a id="local-proxies"></a>
 
 ## Compatibility with local proxies
+
+Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
@@ -37,18 +38,44 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
 
+### Example 1: Configuring an upstream Shadowsocks proxy
 
-<a id="accepting-connections"></a>
+Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org/en/index.html).
 
-## Accepting connections to your Mac
+First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
 
-In Big Sur, any server from a network that's filtered by AdGuard won't be able to reach your Mac if you use it as a server (and by default AdGuard filters all traffic except for localhost). To avoid this problem you need to add to exclusions the hosts (and maybe entire subnetworks) that the connections originated from.
+```
+{
+    "server":"111.222.333.444",
+    "server_port":8388,
+    "local_port":1080,
+    "password":"barfoo!",
+    "timeout":600,
+    "method":"chacha20-ietf-poly1305"
+}
+```
 
-Go to *AdGuard menu -> Advanced -> Advanced Settings...* and click on the *Value* area of the `network.extension.route.exclude` setting.
+>You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/en/config/quick-guide.html).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/connections_en.png" style="max-width: 650px;">
+Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' in its settings! The configuration won't work if you select 'Auto Mode' or 'Global Mode'.
 
-Enter there any IP addresses and subnetworks, separating them with commas or line breaks.
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 350px;">
+
+Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:1080`. Notice that you need to use "local_port" value from the JSON file here.
+
+Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
+
+### Example 2: Configuring an upstream Surge proxy
+
+Once you install Surge proxy client, you need to pay attention to several things to ensure it doesn't conflict with AdGuard.
+
+First, check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 650px;">
+
+Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:6153` or `http://localhost:6152`, depending on which type of proxy you want to use. Notice that you need to use **port** value that's indicated in the **Events** area of the **Activity** tab in your Surge client. 
+
+If you chose SOCKS5 protocol, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
 
 
 <a id="automatic-proxy"></a>
@@ -100,12 +127,14 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
 
 
-<a id="ssh"></a>
+<a id="legacy-api"></a>
 
-## Solving issues with SSH
+## VPN apps with legacy API
 
-Network Extension framework that AdGuard is forced to use in Big Sur conflicts with some other frameworks by Apple, such as Network framework (not to be confused with *Network Extension*). As a result, any process that involves these libraries may not work correctly when AdGuard is active. One of such issues is connecting to a remote server via SSH.
+Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside AppStore, there's a chance it uses the old VPN API and you have to exclude it from filtering:
 
-To solve this problem, you can switch to [HomeBrew SSH](https://formulae.brew.sh/formula/openssh) that doesn't employ Network framework.
-
-Alternatively, you can select a different operating mode in AdGuard: [Automatic proxy](#automatic-proxy) or [Kernel Extension](#kernel-extension).
+1) Open AdGuard's menu.
+2) Select *Preferences...*. 
+3) Switch to the *Network* tab. 
+4) Click the *Applications...* button.
+5) Find the app you want to exclude and uncheck the checkbox next to it.
