@@ -96,6 +96,7 @@ visible: true
 4) Кликните по кнопке *Приложения...*.
 5) Найдите приложение, которое вы хотите добавить в исключения, и уберите галочку напротив него.
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api_ru.png" style="max-width: 650px;">
 
 ## Альтернативы ипользованию Network Extension
 
