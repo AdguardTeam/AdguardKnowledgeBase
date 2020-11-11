@@ -97,6 +97,8 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 4) Click the *Applications...* button.
 5) Find the app you want to exclude and uncheck the checkbox next to it.
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api.png" style="max-width: 650px;">
+
 
 <a id="alternatives"></a>
 ## Alternatives to using a Network Extension
