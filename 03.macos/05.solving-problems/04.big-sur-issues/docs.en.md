@@ -6,17 +6,22 @@ taxonomy:
 visible: true
 ---
 
-The next version of macOS, **Big Sur**, is scheduled for release in late 2020, but its beta is already available. And it already causes some problems to many applications, AdGuard not being an exception. In this article we go over the known issues and possible ways to solve them.
-
 * [Compatibility with local proxies](#local-proxies)
+    * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
+    * [Cofiguring an upstream Surge proxy](#surge)
+* [VPN apps with legacy API](#legacy-api)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
-* [VPN apps with legacy API](#legacy-api)
 
+
+
+## Known issues
+
+The newest version of macOS, **Big Sur**, has been released in late 2020. It introduces the new API, Network Extensions API to replace the old Kernel Extensions API. And it already causes some problems to many applications, AdGuard not being an exception. In this article we go over the known issues and possible ways to solve them.
 
 <a id="local-proxies"></a>
 
-## Compatibility with local proxies
+### Compatibility with local proxies
 
 Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
@@ -38,7 +43,8 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
 
-### Example 1: Configuring an upstream Shadowsocks proxy
+<a id="shadowsocks"></a>
+#### Example 1: Configuring an upstream Shadowsocks proxy
 
 Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org/en/index.html).
 
@@ -65,22 +71,43 @@ Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value*
 
 Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
 
-### Example 2: Configuring an upstream Surge proxy
+<a id="surge"></a>
+#### Example 2: Configuring an upstream Surge proxy
 
 Once you install Surge proxy client, you need to pay attention to several things to ensure it doesn't conflict with AdGuard.
 
 First, check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/surge.png" style="max-width: 650px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/surge.png" style="max-width: 800px;">
 
 Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:6153` or `http://localhost:6152`, depending on which type of proxy you want to use. Notice that you need to use **port** value that's indicated in the **Events** area of the **Activity** tab in your Surge client. 
 
 If you chose SOCKS5 protocol, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
 
 
+<a id="legacy-api"></a>
+
+### VPN apps with legacy API
+
+Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside AppStore, there's a chance it uses the old VPN API and you have to exclude it from filtering:
+
+1) Open AdGuard's menu.
+2) Select *Preferences...*. 
+3) Switch to the *Network* tab. 
+4) Click the *Applications...* button.
+5) Find the app you want to exclude and uncheck the checkbox next to it.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api.png" style="max-width: 650px;">
+
+
+<a id="alternatives"></a>
+## Alternatives to using a Network Extension
+
+It's impossible to foresee each and every possible problem that can pop up in Big Sur, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first:
+
 <a id="automatic-proxy"></a>
 
-## Using "Automatic proxy" filtering mode
+### Using "Automatic proxy" filtering mode
 
 If you face problems in Big Sur which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
 
@@ -99,7 +126,7 @@ Now AdGuard has automatically added a **.pac** file to your Mac's network settin
 
 <a id="kernel-extension"></a>
 
-## Enabling Kernel Extension in Big Sur
+### Enabling Kernel Extension in Big Sur
 
 By default AdGuard uses Network Extension framework in Big Sur as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
 
@@ -125,16 +152,3 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 6) Confirm that you want to switch to Kernel Extension.
 
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
-
-
-<a id="legacy-api"></a>
-
-## VPN apps with legacy API
-
-Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside AppStore, there's a chance it uses the old VPN API and you have to exclude it from filtering:
-
-1) Open AdGuard's menu.
-2) Select *Preferences...*. 
-3) Switch to the *Network* tab. 
-4) Click the *Applications...* button.
-5) Find the app you want to exclude and uncheck the checkbox next to it.

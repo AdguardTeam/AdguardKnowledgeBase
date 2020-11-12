@@ -10,7 +10,6 @@ visible: true
 
 * [How to get HAR files?](#howtoget)
 
-* [How to analyze HAR files?](#howtoanalyze)
 
 <a id="whatare"></a>
 ## What are HAR files?
