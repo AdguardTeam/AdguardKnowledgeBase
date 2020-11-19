@@ -22,15 +22,10 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 4. Activate "pref.har.capture" (you will have to restart the protection).
 5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
 6. Now turn "pref.har.capture" off again.
-7. Go to app cache folder and find the .har files. They are usually located in
-```**/storage/emulated/Android/data/com.adguard.android/cache/har**```
-   or, depending on device,
-```**/sdcard/Android/com.adguard.android/cache/har**```
-```**/sdcard/data/Android/com.adguard.android/cache/har**```
-```**/sdcard/Android/data/com.adguard.android/cache/har**```
+7. Go Back, then tap on "Export logs and system info" -> Save
 
-**Please send file that you've got as a result, to the AdGuard [support service](support@adguard.com) (support@adguard.com).**
->Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+**Please send the .zip file with logs (that you've got as a result) to the AdGuard [support service](support@adguard.com)(support@adguard.com).**
+>Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
 <a id="howtoanalyze"></a>
 ## How to analyze HAR files?
 Here are some sources that we can recommend to analyze HAR files:
