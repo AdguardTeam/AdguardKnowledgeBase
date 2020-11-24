@@ -10,6 +10,14 @@ When discussing AdGuard ad filters, there is often one topic that causes dispute
 
 ![](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
 
+## Terminology
+
+Throughout this text, we use terms **first party** and **third party**. 
+
+A first party is a website that a user is intentionally and knowingly visiting and the set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` are all the same party since `site.example` is their shared registrable domain.
+
+A third party is any party that does not fall within the definition of first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
+
 ## Common criteria
 
 These equally apply to rules in all filters.
@@ -39,11 +47,15 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that often cause problems with work of some websites will be deleted.
 
 
-## Spyware filter
+## Tracking Protection filter
 
 ##### What shall be blocked with this filter?
 
-- This filter shall block all counters that collect personal data of users.
+- This filter shall block all trackers that collect users' personal data.
+
+We define **tracking** as collection of data regarding an individual’s identity or activity across one or more websites. Even if such data is not believed to be personally identifiable, it’s still tracking.
+
+**Tracker** is an online script that has tracking as its only purpose, or as one of its purposes.
 
 ##### Limitations and Exceptions
 
@@ -53,7 +65,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
-## Social media filter
+## Social Media filter
 
 ##### What shall be blocked with this filter?
 
@@ -84,7 +96,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
-## Filter for useful ads
+## Filter unblocking search ads and self-promotion
 
 Unlike other filters, this filter **unblocks** certain ads. More about it in [this Knowledge Base article](https://kb.adguard.com/en/general/search-ads-and-self-promotion). 
 
