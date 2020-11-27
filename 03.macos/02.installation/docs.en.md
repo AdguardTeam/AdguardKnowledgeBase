@@ -12,23 +12,23 @@ taxonomy:
 <a id="system-requirements"></a>
 ## System  requirements
 
-**Operating system version:** OS X 10.10 (64 bit) or higher
+**Operating system version:** OS X Yosemite (10.10, 64 bit) or later
 
-**RAM:** at least 2 GB
+**RAM:** 2 GB or higher
 
 **Browsers:** Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, and any other macOS compatible browser
 
-**Free disk space:** 120 Mbytes
+**Free disk space:** 120 MB
 
 <a id="installation"></a>
 ## Installation
 
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
+To install AdGuard for macOS on your computer, launch your browser, type www.adguard.com in the address bar, and press **Download** on the page that opens.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/1.png" width="600" />
 
-Wait for _AdguardInstaller.dmg_ to download and double-click on its icon in the list of downloaded files on the Dock panel. 
+Wait for `AdguardInstaller.dmg` to download and double-click on its icon in the list of downloaded files on the Dock panel. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/2.png" width="600" />
 
@@ -53,7 +53,7 @@ To use the application, you will need the administrator password for your macOS 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/7.png" width="300" />
 
 
-Now, you'll see a quick installation wizard where we will offer you to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+Now, you'll see a quick installation wizard where we will offer you to configure protection to your needs. You can either start fine-tuning right away ("**Let's do it!**") or skip for now ("**Leave as it is**").
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/installation-wizard.png?" width="600" />
 
@@ -71,10 +71,13 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/uninstall/1.png" width="600" />
 
+#### Delete permanently using Terminal
+Execute `sudo rm -rf /Applications/Adguard.app` on Terminal to remove it without putting into Trash.
+
 <a id="uninstall-advanced"></a>
 ### Advanced
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.** After that, do the following:
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the *regular uninstall first*.** After that, do the following:
 
 * Delete following AdGuard files:
     * */Library/Application Support/com.adguard.mac.adguard* (folder)
@@ -83,9 +86,9 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 
 **To do so**, open the Terminal app, then enter and execute the following commands: 
 
-`sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
-`rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`sudo rm -rf /Library/Application\ Support/com.adguard.mac.adguard`
+`sudo rm -rf ~/Library/Application\ Support/com.adguard.mac.adguard`
+`sudo rm -rf ~/Library/Preferences/com.adguard.mac.adguard.plist`
 
 * Run ’Activity Monitor’ app.
 * Using search tool, find the process **cfprefsd**.
@@ -95,5 +98,9 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 * Stop the process which is being&nbsp;run under the user (not the one run under root). To do so, click on the process and then on the X on the upper left. Confirm it in the dialogue window.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/uninstall/3.png" width="400" />
+
+#### Use Terminal to terminate
+Execute `killall cfprefsd` to terminate **cfprefsd**.
+
 
 AdGuard is removed from your computer now.
