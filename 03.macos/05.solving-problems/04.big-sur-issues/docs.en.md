@@ -10,9 +10,9 @@ visible: true
     * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
     * [Cofiguring an upstream Surge proxy](#surge)
 * [VPN apps with legacy API](#legacy-api)
+* [Compatibility with LittleSnitch 5](#littlesnitch)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
-
 
 
 ## Known issues
@@ -100,7 +100,18 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api.png" style="max-width: 650px;">
 
 
+<a id="littlesnitch"></a>
+
+### Compatibility with LittleSnitch 5
+
+At this moment, Network Extension mode in AdGuard isn't compatible with [LittleSnitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly linked to BigSur, and we've already informed Apple about it.
+
+Needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload LittleSnitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with LittleSnitch on BigSur, at least until Apple fixes the bug.
+
+
+
 <a id="alternatives"></a>
+
 ## Alternatives to using a Network Extension
 
 It's impossible to foresee each and every possible problem that can pop up in Big Sur, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first:
