@@ -1,57 +1,52 @@
 ---
-title: "Credits and Acknowledgments"
+title: "致谢"
 taxonomy:
     category:
         - docs
 published: true
 visible: true
 ---
+* [第三方软件](#third)
+  * [AdGuard Windows版](#win)
+  * [AdGuard Mac版](#mac)
+  * [AdGuard 安卓版](#android)
+  * [AdGuard iOS版](#ios)
+  * [AdGuard 广告拦截扩展](#extension)
+  * [适用于 Safari 的 AdGuard](#safari)
+  * [AdGuard 浏览器助手](#assistant)
+  * [AdGuard VPN 扩展](#vpn-extension)
+  * [VPN 客户端](#vpn-client)
+  * [CoreLibs](#corelibs)
+  * [DNS Libs](#dnslibs)
+* [致谢](#testers)
 
-* [Third-party software](#software)
-    * [AdGuard for Windows](#win)
-    * [AdGuard for Mac](#mac)
-    * [AdGuard for Android](#android)
-    * [AdGuard for iOS](#ios)
-    * [AdGuard AdBlocker extension](#extension)
-    * [AdGuard for Safari](#safari)
-    * [AdGuard Browser Assistant](#assistant)
-    * [AdGuard VPN extension](#vpn-extension)
-    * [VPN Client](#vpn-client)
-    * [CoreLibs](#corelibs)  
-    * [DNS Libs](#dnslibs)
-* [Special thanks](#testers)
+我们开发人员团队热烈感谢第三方软件的开发者和出色的Beta测试用户(和其他对 AdGuard 产品感兴趣的用户)为 AdGuard 的进一步改进做出了贡献。
+<a id="third"></a>
+### 第三方软件
 
-Our dev team would like to thank the developers of this third-party software and our great beta testers (and other interested users) who helped AdGuard improve and grow.
-
-<a id="software"></a>
-# Third-party software 
-
-This is the list of libraries and other resources that really helped us with AdGuard software development process. 
+帮我们开发 AdGuard 软件的文库、开源软件和其他资源的列表：
 
 <a id="win"></a>
-## AdGuard for Windows
-
-* SQLLite database engine: [https://sqlite.org](https://sqlite.org)
+## AdGuard Windows版
+* SQLLite database engine: [https://sqlite.org](https://sqlite.org/)
 * ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 * Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
+* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net/)
 
 <a id="mac"></a>
-## AdGuard for Mac
-
+## AdGuard Mac版
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator) 
-* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org) 
-* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) 
-* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability) 
-* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb) 
-* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter) 
+* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org/)
+* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
 * Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController https://github.com/floschliep/FLOPageViewController
 
 <a id="android"></a>
-## AdGuard for Android
-
+## AdGuard 安卓版
 * Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 * Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
 * RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
@@ -59,17 +54,15 @@ This is the list of libraries and other resources that really helped us with AdG
 * HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
 <a id="ios"></a>
-## AdGuard for iOS
-
-* StaticDataTableViewController by peterpaulis: [https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)  
-* GZIP by nicklockwood: [https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP) 
-* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability) 
-* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb) 
-* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa) 
+## AdGuard iOS版
+* StaticDataTableViewController by peterpaulis: [https://github.com/peterpaulis/StaticDataTableViewController](https://github.com/peterpaulis/StaticDataTableViewController)
+* GZIP by nicklockwood: [https://github.com/nicklockwood/GZIP](https://github.com/nicklockwood/GZIP)
+* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
 
 <a id="extension"></a>
-## AdGuard AdBlocker extension
-
+## AdGuard 广告拦截扩展
 * moment: https://github.com/moment/moment
 * simply-deferred: https://github.com/sudhirj/simply-deferred
 * SHA256: https://github.com/AndersLindman/SHA256
@@ -80,8 +73,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * ace: https://github.com/ajaxorg/ace
 
 <a id="safari"></a>
-## AdGuard for Safari Application
-
+## 适用于 Safari 的 AdGuard 应用
 * ace: https://github.com/ajaxorg/ace
 * adm-zip: https://github.com/cthackers/adm-zip
 * config: https://github.com/lorenwest/node-config
@@ -106,8 +98,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * require-dir: https://github.com/aseemk/requireDir
 
 <a id="assistant"></a>
-## AdGuard Browser Assistant
-
+## AdGuard 浏览器助手
 * React: https://github.com/facebook/react
 * webextension-polyfill: https://github.com/mozilla/webextension-polyfill
 * react-intl: https://github.com/formatjs/formatjs/tree/main/packages/react-intl
@@ -127,8 +118,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * webpack: https://github.com/webpack/webpack
 
 <a id="vpn-extension"></a>
-# AdGuard VPN Extension
-
+## AdGuard VPN 扩展
 * babel: https://github.com/babel/babel
 * crypto-js: https://github.com/brix/crypto-js
 * geolib: https://github.com/manuelbieh/geolib
@@ -138,20 +128,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * nanoid: https://github.com/ai/nanoid
 * protobufjs: https://github.com/protobufjs/protobuf.js
 * react: https://github.com/facebook/react
-* react-lottie: https://github.com/chenqingspring/react-lottie
-* webextension-polyfill: https://github.com/mozilla/webextension-polyfill
-* xstate: https://github.com/davidkpiano/xstate
-* axios: https://github.com/axios/axios
-* crx: https://github.com/oncletom/crx
-* eslint: https://github.com/eslint/eslint
-* jest: https://github.com/facebook/jest
-* postcss: https://github.com/postcss/postcss
-* web-ext: https://github.com/mozilla/web-ext
-* webpack: https://github.com/webpack/webpack
 
 <a id="vpn-client"></a>
-## VPN apps
-
+## VPN 应用
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * brotli: https://github.com/google/brotli/blob/master/LICENSE
 * Detours: https://github.com/microsoft/Detours/blob/master/LICENSE.md
@@ -165,10 +144,8 @@ This is the list of libraries and other resources that really helped us with AdG
 * Protocol Buffers - Google's data interchange format: https://github.com/protocolbuffers/protobuf/blob/master/LICENSE
 * zlib: https://zlib.net/zlib_license.html
 
-
 <a id="corelibs"></a>
 ## CoreLibs
-
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * brotli: https://github.com/google/brotli/blob/master/LICENSE
 * Chromium: https://github.com/chromium/chromium/blob/master/LICENSE
@@ -190,7 +167,6 @@ This is the list of libraries and other resources that really helped us with AdG
 
 <a id="dnslibs"></a>
 ## DNS Libs
-
 * BoringSSL: https://github.com/google/boringssl/blob/master/LICENSE
 * cURL: https://github.com/curl/curl/blob/master/COPYING
 * Detours: https://github.com/microsoft/Detours/blob/master/LICENSE.md
@@ -207,9 +183,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * spdlog: https://github.com/gabime/spdlog/blob/v1.x/LICENSE
 
 <a id="testers"></a>
-# Special thanks
-
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding and eliminating all the bugs was priceless. Special thanks to:
+### 致谢
+热烈感谢所有beta测试用户和其他对 AdGuard 产品感兴趣的用户.他们对报告并解决错误做出了很大的贡献。
+特别感谢：
 
 * [ag_bug_finder](http://forum.adguard.com/member.php?3639)
 * [Blaz](http://forum.adguard.com/member.php?4656-Blaz)
@@ -237,6 +213,6 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * TayTayTheKiller
 
 ---
-We also want to thank the [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). Thank you for your much helpful feedback!
+除此之外。我们想感谢[xda-developers users.](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)。非常感谢您向我们发送反馈意见！
 
-We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join our [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) or visit our page on [GitHub](https://github.com/AdguardTeam).
+我们总是很感谢收到用户的反馈意见（特别是建设性的:)）。大家能随时随地与我们联系，请求新增功能以及提交错误报告。加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[AdGuard subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum ](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)或访问我们的[GitHub](https://github.com/AdguardTeam)。
