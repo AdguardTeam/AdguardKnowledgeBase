@@ -31,6 +31,6 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 <a id="howtoanalyze"></a>
 ## How to analyze HAR files?
 Here are some sources that we can recommend to analyze HAR files:
-* [HTTP Archive Viewer master](http://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
+* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
 * [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
 
