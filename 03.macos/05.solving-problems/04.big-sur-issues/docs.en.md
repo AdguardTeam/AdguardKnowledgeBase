@@ -10,7 +10,7 @@ visible: true
     * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
     * [Cofiguring an upstream Surge proxy](#surge)
 * [VPN apps with legacy API](#legacy-api)
-* [Compatibility with LittleSnitch 5](#littlesnitch)
+* [Compatibility with Little Snitch 5](#little-snitch)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
 
@@ -100,13 +100,13 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api.png" style="max-width: 650px;">
 
 
-<a id="littlesnitch"></a>
+<a id="little-snitch"></a>
 
-### Compatibility with LittleSnitch 5
+### Compatibility with Little Snitch 5
 
-At this moment, Network Extension mode in AdGuard isn't compatible with [LittleSnitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly linked to BigSur, and we've already informed Apple about it.
+At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly linked to Big Sur, and we've already informed Apple about it.
 
-Needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload LittleSnitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with LittleSnitch on BigSur, at least until Apple fixes the bug.
+Needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
 
 
 
