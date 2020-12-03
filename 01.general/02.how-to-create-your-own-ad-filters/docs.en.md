@@ -924,7 +924,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 ##### Disabling `$redirect` rules
 
 * `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
-* `@@||example.org^$redirect=redirectName` will disable the rule with `$redirect=redirectName` for any request matching `||example.org^`.
+* `@@||example.org^$redirect=redirectName` will disable all rules with `$redirect=redirectName` for any request that matches `||example.org^`.
 
 ##### `redirect` examples
 
