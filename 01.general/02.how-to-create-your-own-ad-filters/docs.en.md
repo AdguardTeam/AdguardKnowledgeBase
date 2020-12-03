@@ -921,6 +921,11 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 >`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
 
+##### Disabling `$redirect` rules
+
+* `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
+* `@@||example.org^$redirect=redirectName` will disable the rule with `$redirect=redirectName` for any request matching `||example.org^`.
+
 ##### `redirect` examples
 
 ```
