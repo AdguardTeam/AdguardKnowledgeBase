@@ -26,10 +26,17 @@ visible: true
 5. Отправьте сохранённый архив в [службу поддержки](mailto:support@adguard.com) AdGuard (support@adguard.com).
 
 **Примечание**: иногда в поддержке вас могут попросить прислать "трейсовые" логи. Тогда вам нужно будет сделать следующее:
+
 1. Остановите AdGuard.
-2. Откройте консоль.
-3. Зайдите в папку C:\Program Files (x86)\Adguard>Adguard.exe /trace. 
-4. Запустите приложение командой с ключом /trace.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/openadguard.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/exitadguard.png" />
+
+2. Откройте консоль (введите 'cmd' в стартовой панели).
+
+3. Зайдите в папку C:\Program Files (x86)\Adguard>Adguard.exe /trace, введя команду cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный). 
+
+4. Запустите приложение командой cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
 

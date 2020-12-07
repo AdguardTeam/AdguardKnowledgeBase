@@ -27,13 +27,16 @@ For analysis and diagnostic of different problems support service might need AdG
 
 **Note**: sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
-1. Stop AdGuard.
+1. Stop AdGuard. Please don't leave the service running.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/openadguard.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/exitadguard.png" />
 
 2. Open the console (type 'cmd' in the start panel).
 
-3. Go to the folder C:\Program Files (x86)\Adguard>Adguard.exe with the command cd C:\Program Files (x86)\Adguard if you are using 64bit Windows, and cd C:\Program Files\Adguard if you use 32 bit one).
+3. Go to the folder C:\Program Files (x86)\Adguard>Adguard.exe with the command cd C:\Program Files (x86)\Adguard if you are using 64-bit Windows, and cd C:\Program Files\Adguard if you use 32-bit one).
 
-4. Run the app with the command cd C:\Program Files (x86)\Adguard if you are using 64bit Windows, and cd C:\Program Files\Adguard in case if 32 bit one).
+4. Run the app with the command cd C:\Program Files (x86)\Adguard if you are using 64-bit Windows, and cd C:\Program Files\Adguard in case if you use 32-bit one).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
 
