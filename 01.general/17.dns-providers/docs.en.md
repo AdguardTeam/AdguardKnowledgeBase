@@ -1118,7 +1118,6 @@ PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. Th
 | Protocol       | Address                             | Location      |                |
 |----------------|-------------------------------------|---------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `104.36.148.221` | `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADjEwNC4zNi4xNDguMjIxIAIoavPDlz8aNzmlyqJLOWl_jbGqbpvdqCK-D_qVG5YCHTIuZG5zY3J5cHQtY2VydC5ldmlsdmliZXMuY29t">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.105` | `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjEwNSC6QJn8-PJkNi53ujMYD7pwvWcnj5l2xmuli-9JvEvMQR0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
 
 <a name="puntcat-dns"></a>
 
