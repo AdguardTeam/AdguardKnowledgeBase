@@ -34,8 +34,10 @@ visible: true
 
 2. Откройте консоль (введите 'cmd' в стартовой панели).
 
-3. Запустите приложение командой cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный).
+3. Запустите приложение командой C:\Program Files (x86)\Adguard\Adguard.exe /trace (если вы используете 64-битный Windows) или C:\Program Files (x86)\Adguard\Adguard.exe /trace (если вы используете 32-битный).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
+4. Выберите уровень логирования **Подробный**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsru.png" />
 
 Не пугайтесь, если файл с логами будет большим. Нам необходимо узнать как можно больше подробностей, чтобы исправить вашу проблему.

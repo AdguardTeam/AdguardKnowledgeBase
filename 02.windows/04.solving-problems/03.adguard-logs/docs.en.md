@@ -34,8 +34,10 @@ For analysis and diagnostic of different problems support service might need AdG
 
 2. Open the console (type 'cmd' in the start panel).
 
-3. Run the app with the command cd C:\Program Files (x86)\Adguard if you are using 64-bit Windows, and cd C:\Program Files\Adguard in case if you use 32-bit one).
+3. Run the app with the command C:\Program Files (x86)\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\Program Files (x86)\Adguard\Adguard.exe /trace in case if you use 32-bit one.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
+4. Selece **Debug** logging level.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
 
 Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
