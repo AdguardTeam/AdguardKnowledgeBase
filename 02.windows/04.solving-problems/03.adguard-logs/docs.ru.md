@@ -34,9 +34,7 @@ visible: true
 
 2. Откройте консоль (введите 'cmd' в стартовой панели).
 
-3. Зайдите в папку C:\Program Files (x86)\Adguard>Adguard.exe /trace, введя команду cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный). 
-
-4. Запустите приложение командой cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный).
+3. Запустите приложение командой cd C:\Program Files (x86)\Adguard (если вы используете 64-битный Windows) или cd C:\Program Files\Adguard (если вы используете 32-битный).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/buker-trace.png" />
 
