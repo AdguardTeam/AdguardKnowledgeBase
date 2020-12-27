@@ -36,6 +36,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
 * [360 Secure DNS](#360-dns)
 * [IIJ.JP DNS](#iij-dns)
+* [DNSCEPAT.ID](#dnscepat.id)
 * [DNSPod](#dnspod-dns)
 * [114DNS](#114-dns)
 * [Quad101](#quad101)
@@ -651,6 +652,19 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://public.dns.iij.jp/dns-query` | <a href="sdns://AgcAAAAAAAAAAAARcHVibGljLmRucy5paWouanAKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://public.dns.iij.jp` | <a href="sdns://AwAAAAAAAAAAAAAXdGxzOi8vcHVibGljLmRucy5paWouanA">Add to AdGuard</a> |
+
+<a name="dnscepat.id"></a>
+
+### DNSCEPAT
+
+[DNSCEPAT](https://dnscepat.id/) A small hobby DNS project. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares
+
+#### Asia DNS Server
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-TLS, IPv4 | Hostname: `tls://asia.dnscepat.id:853`  IP: `18.180.123.223` | <a href="sdns://AwcAAAAAAAAADjE4LjE4MC4xMjMuMjIzABRhc2lhLmRuc2NlcGF0LmlkOjg1Mw">Add to AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://asia.dnscepat.id/dns-query` IP: `18.180.123.223` | <a href="sdns://AgcAAAAAAAAADjE4LjE4MC4xMjMuMjIzABBhc2lhLmRuc2NlcGF0LmlkCi9kbnMtcXVlcnk">Add to AdGuard</a> |
 
 <a name="dnspod-dns"></a>
 
