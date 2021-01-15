@@ -13,6 +13,7 @@ visible: true
 * [Compatibility with Little Snitch 5](#little-snitch)
 * [Using "Automatic proxy" filtering mode](#automatic-proxy)
 * [Enabling Kernel Extension in Big Sur](#kernel-extension)
+* [Compatibility with Flutter app](#flutter)
 
 
 ## Known issues
@@ -22,6 +23,8 @@ The newest version of macOS, **Big Sur**, has been released in late 2020. It int
 <a id="local-proxies"></a>
 
 ### Compatibility with local proxies
+
+>Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies without any problems. The problems and solutions described below refer to Big Sur 11.0. If you encounter any issues in OS versions 11.1+, please contact technical support.
 
 Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
@@ -163,3 +166,14 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 6) Confirm that you want to switch to Kernel Extension.
 
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
+
+
+<a id="flutter"></a>
+
+### Compatibility with Flutter app
+
+If you use Flutter app alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
+
+1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
+
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
