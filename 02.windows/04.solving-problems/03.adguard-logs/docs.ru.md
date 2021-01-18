@@ -38,6 +38,6 @@ visible: true
 
 4. Выберите уровень логирования **Подробный**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
 
 Не пугайтесь, если файл с логами будет большим. Нам необходимо узнать как можно больше подробностей, чтобы исправить вашу проблему.
