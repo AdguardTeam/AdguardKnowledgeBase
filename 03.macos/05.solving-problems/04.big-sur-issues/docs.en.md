@@ -24,7 +24,7 @@ The newest version of macOS, **Big Sur**, has been released in late 2020. It int
 
 ### Compatibility with local proxies
 
->Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies without any problems. The problems and solutions described below refer to Big Sur 11.0. If you encounter any issues in OS versions 11.1+, please contact technical support.
+>Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies without any problems. The problems and solutions described below refer to Big Sur 11.0. If you encounter any issues in OS versions 11.1+, please contact technical support: support@adguard.com
 
 Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
