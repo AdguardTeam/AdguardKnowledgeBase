@@ -10,12 +10,12 @@ We have written this article to avoid confusion and explain in detail how you ca
 
 ### Table of contents
 
-[About the outdated licenses](#about)<br>
-[What happened to the outdated licenses?](#what-happened)<br>
-[I have an outdated (legacy) key. How do I switch to the new-type license?](#switch)<br>
-    [Licenses for 1/2/3 devices](#1-2-3)<br> 
-    [Licenses for 4+ devices (up to 9)](#4-9)<br>
-    [Licenses for 9+ devices](#9-and-more)
+* [About the outdated licenses](#about)<br>
+* [What happened to the outdated licenses?](#what-happened)<br>
+* [I have an outdated (legacy) key. How do I switch to the new-type license?](#switch)<br>
+   * [Licenses for 1/2/3 devices](#1-2-3)<br> 
+   * [Licenses for 4+ devices (up to 9)](#4-9)<br>
+   * [Licenses for 9+ devices](#9-and-more)
 
 <a name="about"></a>
 ## About the outdated licenses
