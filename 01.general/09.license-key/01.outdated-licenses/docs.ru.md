@@ -54,7 +54,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
->Все старые лицензии отображаются в личном кабинете с пометкой “старая версия”. 
+>Все старые лицензии отображаются в личном кабинете с пометкой «старая версия». 
 
 Ниже рассказываем, какие ключи можно конвертировать в новый тип и как это сделать.
 
@@ -65,7 +65,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-**Перейдите в “Мои лицензии” и проверьте, какие улучшения вам доступны для каждого конкретного ключа.**
+**Перейдите в «Мои лицензии» и проверьте, какие улучшения вам доступны для каждого конкретного ключа.**
 Ниже поясним на конкретных примерах.
 
 
