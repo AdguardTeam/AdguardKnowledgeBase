@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-> Last update: 14 June 2019
+> Last update: 18 January 2021
 > Understanding this article may require from you the basic knowledge about encrypting, TLS protocol and HTTPS.
 
 First, look at this simple diagram that shows the general structure of HTTPS protocol:
@@ -24,7 +24,7 @@ Effectively, it means that if you use a modern, safe browser, it will take all k
 
 ### Known issues
 
-HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the nearest upcoming AdGuard versions. Moreover, we are working on a separate certificate validation library, and we want to make it open source.
+HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the nearest upcoming AdGuard versions.
 
 Below are listed all issues known to us and ETAs for the fixes.
 
@@ -32,11 +32,7 @@ Below are listed all issues known to us and ETAs for the fixes.
 
 The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate that the website uses. You cannot simply check what was the original certificate, and can only see the one issued by AdGuard.
 
-**Our plans:**
-
-* We want to add an option to inspect the original certificate in the future versions of AdGuard. At a minimum, this will be possible with the help of AdGuard's filtering log. Also, we'd like to allow doing it via the AdGuard browser extension.
-
-**ETA:** ETA is Q1 2020.
+This problem has been solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering right from the browser and allows to inspect the original certificate of any website.
 
 #### Certificate Transparency
 
@@ -48,7 +44,7 @@ Browsers ignore the `Expect-CT` header in the case of local certificates and to 
 
 * Add the certificate transparency support to the certificate validation library.
 
-**ETA:** ETA is Q2 2020.
+**ETA:** ETA is Q3 2021.
 
 ### Have remarks or suggestions?
 
