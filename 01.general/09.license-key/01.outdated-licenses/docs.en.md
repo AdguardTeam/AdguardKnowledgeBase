@@ -61,11 +61,12 @@ Below we will tell you which licenses can be converted to a new type and how to 
 <a name="switch"></a>
 ## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
 
-You can do this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-**Go to “My Licenses” tab and check what actions are available to you for each specific key.**
+>Go to “My Licenses” tab and check what actions are available to you for each specific key.
+
 Below we will explain with specific examples.
 
 <a name="1-2-3"></a>
@@ -90,7 +91,7 @@ Or instead of renewal you can switch to Lifetime:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-The current AdGuard Personal plan includes 3 devices, so the only available conversion option is the one that covers more, which is Family license.
+>The current AdGuard Personal plan includes 3 devices, so logically the only available conversion option is the one that covers more devoces, which is Family license.
 
 **Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
 
