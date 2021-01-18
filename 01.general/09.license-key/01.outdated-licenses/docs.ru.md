@@ -52,7 +52,7 @@ visible: true
 
 Также, теперь **Премиум отображаются в личном кабинете по суммарному количеству устройств**. Вот так, например, выглядит ключ 1+1:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 >Все старые лицензии отображаются в личном кабинете с пометкой “старая версия”. 
 
@@ -63,7 +63,7 @@ visible: true
 
 Сделать это можно на [странице продления](https://adguard.com/renew.html) или в вашем [личном кабинете AdGuard](https://my.adguard.com/main.html):
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 **Перейдите в “Мои лицензии” и проверьте, какие улучшения вам доступны для каждого конкретного ключа.**
 Ниже поясним на конкретных примерах.
@@ -74,30 +74,30 @@ visible: true
 
 **Годовые** лицензии на 1, 2, 3 устройства могут быть сконвертированы как в Персональную, так и в Семейную лицензию при продлении:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 >Выбирайте, сколько устройств вам нужно защитить
 
 Вы также можете не продлевать лицензии, а сделать их вечными:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 **Вечные** лицензии из-за технических ограничений можно конвертировать только в Семейные (на 9 устройств). 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 <a name="4-9"></a>
 ### Лицензии на 4+ устройства (до 9)
 
 **Годовые** ключи такой конфигурации можно превратить только в Семейную лицензию: 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 >В текущий Персональный план AdGuard включены 3 устройства, поэтому единственная доступная опция для конвертации — Семейная лицензия
 
 *Вечные* ключи на 4 и более устройств нельзя улучшить. Здесь также действует техническое ограничение.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_ru.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_ru.png?" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 <a name="9-and-more"></a>
 ### Лицензии на 9+ устройств
