@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-> Last update: 15 January 2021
+> Last update: 18 January 2021
 > Understanding this article may require from you the basic knowledge about encrypting, TLS protocol and HTTPS.
 
 First, look at this simple diagram that shows the general structure of HTTPS protocol:
@@ -24,7 +24,7 @@ Effectively, it means that if you use a modern, safe browser, it will take all k
 
 ### Known issues
 
-HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the nearest upcoming AdGuard versions. Moreover, we are working on a separate certificate validation library, and we want to make it open source.
+HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the nearest upcoming AdGuard versions.
 
 Below are listed all issues known to us and ETAs for the fixes.
 
