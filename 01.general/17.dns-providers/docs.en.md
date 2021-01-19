@@ -34,6 +34,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Ali DNS](#ali-dns) 
 * [CFIEC Public DNS](#cfiec-dns)
 * [Nawala Childprotection DNS](#nawala-childprotection-dns)
+* [DNSCEPAT.ID](#dnscepat.id)
 * [360 Secure DNS](#360-dns)
 * [IIJ.JP DNS](#iij-dns)
 * [DNSPod](#dnspod-dns)
@@ -627,6 +628,31 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `180.131.144.144` and `180.131.145.145`             | <a href="sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">Add to AdGuard</a> |
+
+<a name="dnscepat.id"></a>
+
+### DNSCEPAT
+
+[DNSCEPAT](https://dnscepat.id/) DNS is built for Security, Privacy and Fast Connectivity for you.
+
+#### Asia DNS Server
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-TLS | Hostname: `tls://asia.dnscepat.id` | <a href="sdns://AwcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZA">Add to AdGuard</a> |
+| DNS IPv4 | IP: `172.105.216.54` | <a href="sdns://AAcAAAAAAAAADjE3Mi4xMDUuMjE2LjU0">Add to AdGuard</a> |
+| DNS IPv6 | IP: `2400:8902::f03c:92ff:fe09:48cc` | <a href="sdns://AAcAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTA5OjQ4Y2Nd">Add to AdGuard</a> |
+| DNS-over-HTTPS | Hostname: `https://asia.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
+
+#### Eropa DNS Server
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-TLS | Hostname: `tls://eropa.dnscepat.id` | <a href="sdns://AwcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQ">Add to AdGuard</a> |
+| DNS IPv4 | IP: `5.2.75.231` | <a href="sdns://AAcAAAAAAAAACjUuMi43NS4yMzE">Add to AdGuard</a> |
+| DNS IPv6 | IP: `2a04:52c0:101:98d::` | <a href="sdns://AAcAAAAAAAAAFVsyYTA0OjUyYzA6MTAxOjk4ZDo6XQ">Add to AdGuard</a> |
+| DNS-over-HTTPS | Hostname: `https://eropa.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+
 
 <a name="360-dns"></a>
 
