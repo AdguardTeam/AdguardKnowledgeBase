@@ -575,6 +575,8 @@ In "Family" mode, Protected + blocking adult content
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS     | `https://dns-doh.dnsforfamily.com/dns-query`             | <a href="sdns://AgcAAAAAAAAAAAAgaHR0cHM6Ly9kbnMtZG9oLmRuc2ZvcmZhbWlseS5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS     | `dns-dot.dnsforfamily.com`             | <a href="sdns://AgcAAAAAAAAAAAAYZG5zLWRvdC5kbnNmb3JmYW1pbHkuY29tAA">Add to AdGuard</a> |
 | DNS, IPv4      | `94.130.180.225` and `78.47.64.161`             | <a href="sdns://AAAAAAAAAAAADjk0LjEzMC4xODAuMjI1">Add to AdGuard</a> |
 | DNS, IPv6      | `2a01:4f8:1c0c:40db::1` and `2a01:4f8:1c17:4df8::1`            | <a href="sdns://AAAAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFd">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `dnsforfamily.com` IP: `94.130.180.225`| <a href="sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20">Add to AdGuard</a> |
