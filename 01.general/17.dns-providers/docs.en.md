@@ -640,8 +640,8 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
 | DNS-over-TLS | Hostname: `tls://asia.dnscepat.id` | <a href="sdns://AwcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZA">Add to AdGuard</a> |
-| DNS IPv4 | IP: `172.105.216.54` |
-| DNS IPv6 | IP: `2400:8902::f03c:92ff:fe09:48cc` |
+| DNS IPv4 | IP: `172.105.216.54` | <a href="sdns://AAcAAAAAAAAADjE3Mi4xMDUuMjE2LjU0">Add to AdGuard</a> |
+| DNS IPv6 | IP: `2400:8902::f03c:92ff:fe09:48cc` | <a href="sdns://AAcAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTA5OjQ4Y2Nd">Add to AdGuard</a> |
 | DNS-over-HTTPS | Hostname: `https://asia.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 
 #### Eropa DNS Server
@@ -649,8 +649,8 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
 | DNS-over-TLS | Hostname: `tls://eropa.dnscepat.id` | <a href="sdns://AwcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQ">Add to AdGuard</a> |
-| DNS IPv4 | IP: `5.2.75.231` |
-| DNS IPv6 | IP: `2a04:52c0:101:98d::` |
+| DNS IPv4 | IP: `5.2.75.231` | <a href="sdns://AAcAAAAAAAAACjUuMi43NS4yMzE">Add to AdGuard</a> |
+| DNS IPv6 | IP: `2a04:52c0:101:98d::` | <a href="sdns://AAcAAAAAAAAAFVsyYTA0OjUyYzA6MTAxOjk4ZDo6XQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | Hostname: `https://eropa.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 
 
