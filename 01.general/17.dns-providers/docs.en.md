@@ -1145,8 +1145,7 @@ PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. Th
 
 | Protocol       | Address                             | Location      |                |
 |----------------|-------------------------------------|---------------|----------------|
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `23.111.74.205` | `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMDUg_0RyX8kcAcMdtRk5SAX5RKs3yiLLS6kdJlnsUpVbnOEdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.115` | `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjExNSDaDhJ4Dk4cHSiJstKoSd4DcSH8xm16_TSA1PBuamRNzB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `104.36.148.2192` | `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADjEwNC4zNi4xNDguMTkyICVfoDkWgfKPndAAvW1ke5CZIlsVj92u6qbBHHCZWgG9JzIuZG5zY3J5cHQtY2VydC5ldi1jYW5hZGEuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
 
 <a name="puntcat-dns"></a>
 
