@@ -63,8 +63,8 @@ visible: true
 * Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 * Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
 * NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-* Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng]
-* Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios]
+* Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+* Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
 <a id="extension"></a>
 ## Расширение AdGuard AdBlocker
