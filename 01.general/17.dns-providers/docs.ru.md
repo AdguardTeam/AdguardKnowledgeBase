@@ -77,11 +77,11 @@ visible: true
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `94.140.14.140` and `94.140.14.141`             | <a href="sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA">Add to AdGuard</a> |
-| DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`            | <a href="sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `176.103.130.136:5443`| <a href="sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzNjo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20">Add to AdGuard</a> |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::01:ff]:5443`| <a href="sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS, IPv4      | `94.140.14.140` and `94.140.14.141`             | <a href="sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA">Добавить в AdGuard</a> |
+| DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`            | <a href="sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `176.103.130.136:5443`| <a href="sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzNjo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20">Добавить в AdGuard</a> |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::01:ff]:5443`| <a href="sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
 
 <a name="yandex-dns"></a>
 
@@ -507,24 +507,42 @@ OpenDNS серверы с функцией блокировки контента
 
 <a name="dnsprivacy.org-dns"></a>
 
-### DNS-over-TLS Серверы от dnsprivacy.org
+### DNS-over-TLS серверы от dnsprivacy.org
 
-[DNS-over-TLS dnsprivacy.org](https://dnsprivacy.org/) Список тестовых DNS-over-TLS серверов.
+Открытый проект-коллаборация для продвижения и внедрения [DNS Privacy](https://dnsprivacy.org/).
+
+DNS-серверы, оперируемые [Stubby developers](https://getdnsapi.net/):
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS | Имя провайдера: `Surfnet` Хост: `dnsovertls.sinodun.com`  IP: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15` | <a href="sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ">Добавить в AdGuard</a>  |
-| DNS-over-TLS | Имя провайдера: `Surfnet` Хост: `dnsovertls1.sinodun.com`  IP: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | <a href="sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20">Добавить в AdGuard</a>  |
 | DNS-over-TLS | Хост: `getdnsapi.net` IP: `185.49.141.37` и IPv6: `2a04:b900:0:100::37` | <a href="sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA">Добавить в AdGuard</a>  |
-| DNS-over-TLS | Имя провайдера: `UncensoredDNS` Хост: `unicast.censurfridns.dk` IP: `89.233.43.71 ` и IPv6: `2a01:3a0:53:53::0` | <a href="sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs">Добавить в AdGuard</a>  |
-| DNS-over-TLS| Имя провайдера: `Fondation RESTENA` Хост: `kaitain.restena.lu` IP: `158.64.1.29` и IPv6: `2001:a18:1::29` | <a href="sdns://AwAAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1">Добавить в AdGuard</a>  |
-| DNS-over-TLS | Имя провайдера: `dkg` Хост: `dns.cmrg.net` IP: `199.58.81.218`и IPv6: `2001:470:1c:76d::53` | <a href="sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `Surfnet` Хост `dnsovertls.sinodun.com` IP: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15` | <a href="sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `Surfnet` Хост `dnsovertls1.sinodun.com` IP: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | <a href="sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20">Добавить в AdGuard</a>  |
+
+Другие DNS-серверы с политикой 'без логирования':
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS | Имя провайдера: `UncensoredDNS` Хост `unicast.censurfridns.dk` IP: `89.233.43.71 ` и IPv6: `2a01:3a0:53:53::0` | <a href="sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `UncensoredDNS` Хост `anycast.censurfridns.dk` IP: `91.239.100.100` и IPv6: `2001:67c:28a4::` | <a href="sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `dkg` Хост `dns.cmrg.net` IP: `199.58.81.218`и IPv6: `2001:470:1c:76d::53` | <a href="sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0">Добавить в AdGuard</a>  |
 | DNS-over-TLS, IPv4 | Хост: `dns.larsdebruin.net` IP: `51.15.70.167` | <a href="sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA">Добавить в AdGuard</a> |
-| DNS-over-TLS | Хост: `dns-tls.bitwiseshift.net` IP: `81.187.221.24` и IPv6: `2001:8b0:24:24::24` | <a href="sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0">Добавить в AdGuard</a>  |
-| DNS-over-TLS | Хост: `ns1.dnsprivacy.at` IP: `94.130.110.185` и IPv6: `2a01:4f8:c0c:3c03::2` | <a href="sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
-| DNS-over-TLS | Хост: `ns2.dnsprivacy.at` IP: `94.130.110.178` и IPv6: `2a01:4f8:c0c:3bfc::2` | <a href="sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
-| DNS-over-TLS, IPv4 | Хост: `dns.bitgeek.in` IP: `139.59.51.46` | <a href="sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4">Добавить в AdGuard</a> |
-| DNS-over-TLS | Хост: `dns.neutopia.org`  IP: `89.234.186.112` и IPv6: `2a00:5884:8209::2` | <a href="sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Хост `dns-tls.bitwiseshift.net` IP: `81.187.221.24` и IPv6: `2001:8b0:24:24::24` | <a href="sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0">Добавить в AdGuard</a>  |
+| DNS-over-TLS| Имя провайдера: `Fondation RESTENA` Хост: `kaitain.restena.lu` IP: `158.64.1.29` и IPv6: `2001:a18:1::29` | <a href="sdns://AwAAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Хост `ns1.dnsprivacy.at` IP: `94.130.110.185` и IPv6: `2a01:4f8:c0c:3c03::2` | <a href="sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Хост `ns2.dnsprivacy.at` IP: `94.130.110.178` и IPv6: `2a01:4f8:c0c:3bfc::2` | <a href="sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ">Добавить в AdGuard</a>  |
+| DNS-over-TLS, IPv4 | Хост: `dns.bitgeek.in ` IP: `139.59.51.46` | <a href="sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост `dns.neutopia.org` IP: `89.234.186.112` и IPv6: `2a00:5884:8209::2` | <a href="sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `Go6Lab` Хост `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vcHJpdmFjeWRucy5nbzZsYWIuc2k">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Хост: `dot.securedns.eu` IP: `146.185.167.43` и IPv6: `2a03:b0c0:0:1010::e9a:3001` | <a href="sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ">Добавить в AdGuard</a>  |
+
+DNS-серверы с минимальным/ограниченным логированием. Эти серверы осуществляют логирование в какой-либо форме, имеют самоподписанные сертификаты или не поддерживают strict mode.
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-TLS | Имя провайдера: `NIC Chile` Хост `dnsotls.lab.nic.cl` IP: `200.1.123.46` и IPv6: `2001:1398:1:0:200:1:123:46` | <a href="sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs">Добавить в AdGuard</a>  |
+| DNS-over-TLS | Имя провайдера: `OARC` Хост `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` и IPv6: `2620:ff:c000:0:1::64:25` | <a href="sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0">Добавить в AdGuard</a>  |
+
 
 
 <a name="evilvibes.com"></a>
