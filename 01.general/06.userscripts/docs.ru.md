@@ -99,7 +99,6 @@ visible: true
 
 ```
 @name
-@icon
 @description
 @version
 @downloadURL
@@ -114,12 +113,6 @@ visible: true
 @namespace
 ```
 
-##### Частично поддерживаемые свойства
-
-```
-@run-at - опция document-idle не поддерживается.
-```
-
 ##### Неподдерживаемые свойства
 
 AdGuard проигнорирует эти свойства.
@@ -127,6 +120,8 @@ AdGuard проигнорирует эти свойства.
 ```
 @unwrap
 @noframes - AdGuard не будет выполнять пользовательский скрипт внутри любого iframe.
+@icon
+@run-at
 
 ```
 
