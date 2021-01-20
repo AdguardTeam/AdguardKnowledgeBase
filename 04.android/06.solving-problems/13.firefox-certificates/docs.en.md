@@ -24,6 +24,8 @@ To make Firefox trust user certificates, you need to toggle the hidden option in
 
 #### Method 2 (Certificate located in the System store)
 
+>This method will only work on **rooted** devices.
+
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Activate the **developer mode** and enable **USB debugging**:
