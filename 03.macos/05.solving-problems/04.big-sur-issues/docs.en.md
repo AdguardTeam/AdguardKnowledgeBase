@@ -10,7 +10,7 @@ visible: true
     * [Compatibility with local proxies](#local-proxies)
         * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
         * [Cofiguring an upstream Surge proxy](#surge)
-    * [Comaptibility with Cisco AnyConnect](#cisco)
+    * [Compatibility with Cisco AnyConnect](#cisco)
     * [Compatibility with Flutter app](#flutter)
     * [VPN apps with legacy API](#legacy-api)
 * [Already fixed problems](#fixed)
@@ -33,8 +33,6 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 <a id="local-proxies"></a>
 
 ### Compatibility with local proxies
-
->Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies without any problems. The problems and solutions described below refer to Big Sur 11.0. If you encounter any issues in OS versions 11.1+, please contact technical support: support@adguard.com
 
 Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
 
