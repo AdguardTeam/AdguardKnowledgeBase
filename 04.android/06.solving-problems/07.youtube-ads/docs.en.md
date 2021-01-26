@@ -6,12 +6,22 @@ taxonomy:
 visible: true
 ---
 
-One of the most popular questions users ask us - is it possible to block ads in YouTube app on Android? Unfortunately, there is no simple answer to it. In this article we will try to tell everything we know by this moment.
+One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube app on Android'? Unfortunately, there is no simple answer to it. In this article we will try to tell everything we know by this moment.
 
-At this moment, due to the nuances of Android OS there is no way to completely remove ads from the YouTube app. Each of the ways described below asks some additional actions of you, and many will find this too troublesome. We understand that, and continue monitoring the situation for a better solution, but for now we cannot guarantee that these ads will be blocked
+Due to the technical restrictions of the Android OS, there is no way to completely remove ads from the YouTube app. Second and third ways described below ask additional actions from a user, and many will find this too troublesome. But now we've found an alternative that brings you as close to it as possible, while getting around the Android-imposed restrictions.
 
 ## Instruction
-### Step 1: Enabling HTTPS filtering
+
+### The first way (the easiest one): Watch YouTube in the AdGuard app
+
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+
+1. Open YouTube app and start the video you want to watch.
+2. Tap on the *Share* button and select *AdGuard for Android* from the list of apps.
+
+That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+
+### The second way: Enable HTTPS filtering
 
 First of all, you have to enable HTTPS filtering in AdGuard settings. It is necessary for decrypting the data sent to YouTube by its servers. To do it, simply go to Settings -> HTTPS Filtering:
 
@@ -31,7 +41,7 @@ Sadly, HTTPS filtering capabilities in Android Nougat are limited, so in modern 
 
 2. If you have ROOT access, you can add AdGuard certificate to the system in the Settings - HTTPS Filtering - Certificate status - Move to the system store.
 
-### Step 2: Clearing the app data
+### The thrid way: Clear the app data
 
 The next step is to clear the Youtube app data. To do so, open Android settings, go to Application Manager, then tap on Youtube and on the "Clear storage” button:
 
