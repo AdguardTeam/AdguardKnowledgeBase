@@ -11,7 +11,7 @@ visible: true
         * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
         * [Cofiguring an upstream Surge proxy](#surge)
     * [Compatibility with Cisco AnyConnect](#cisco)
-    * [Compatibility with Flutter app](#flutter)
+    * [Compatibility with Flutter](#flutter)
     * [VPN apps with legacy API](#legacy-api)
 * [Already fixed problems](#fixed)
     * [Compatibility with Little Snitch 5](#little-snitch)
@@ -103,9 +103,9 @@ AdGuard will not work together with Cisco AnyConnect while in *Network Extension
 
 <a id="flutter"></a>
 
-### Compatibility with Flutter app
+### Compatibility with Flutter
 
-If you use Flutter app alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
+If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
 
 1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
 
