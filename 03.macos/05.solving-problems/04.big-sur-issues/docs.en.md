@@ -34,7 +34,7 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 ### Compatibility with local proxies
 
-Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
+>Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
@@ -53,6 +53,8 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 >Example: `socks5://localhost:6322` will configure a SOCKS5 local proxy that listens to port 6322 and doesn't require a username or a password.
 
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
+
+If you run into any problems, please contact our tech support: support@adguard.com.
 
 <a id="shadowsocks"></a>
 #### Example 1: Configuring an upstream Shadowsocks proxy
