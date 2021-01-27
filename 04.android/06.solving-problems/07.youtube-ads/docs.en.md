@@ -18,4 +18,4 @@ One of the most popular questions users ask us is: 'Is it possible to block ads 
 
 That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
-* You can also watch YouTube in a browser and there will be no ads if you have a decent ad blocker such as AdGuard installed and enabled. Of course, it can't be compared to the pure in-app experience but it will definitely minimise the chance of seeing another annoying mid-roll ad break. 
+* You can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
