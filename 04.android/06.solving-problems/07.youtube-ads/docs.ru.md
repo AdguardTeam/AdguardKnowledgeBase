@@ -14,7 +14,7 @@ visible: true
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
 
 1. Откройте приложение YouTube и включите видео, которое хотите посмотреть.
-2. Нажмите на кнопку *Поделиться* button и выберите *AdGuard для Android* в списке приложений.
+2. Нажмите на кнопку *Поделиться* и выберите *AdGuard для Android* в списке приложений.
 
 Вот и всё! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
 
