@@ -9,7 +9,7 @@ taxonomy:
 ### What is AdGuard VPN?
 AdGuard VPN a virtual private network (VPN), which is a secure tunnel between two or more devices.
 Connecting to a VPN gives you an encrypted connection to the Internet. This allows you to stay private, stay secure, and access the online content you want — no matter where you are.
-If you are interested in more details on what VPN is and how it works, check [this article](https://adguard.com/what-is-vpn.html).
+If you are interested in more details on what VPN is and how it works, check [this article](https://adguard.com/en/what-is-vpn.html).
  
 ### Why do I need VPN?
 A VPN is a multi-purpose digital survival tool. You can use your VPN to:
