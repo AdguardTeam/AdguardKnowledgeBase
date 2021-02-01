@@ -19,17 +19,17 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 1) [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 설정으로 이동합니다. 
 2) ‘비밀번호 및 보안’에서 ‘변경’을 클릭합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa1ko.png!"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa1ko.png!1"/>
 
 3) 휴대폰의 카메라 또는 인증 앱을 통해 인증 코드를 스캔합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa2ko.png!"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa2ko.png!1"/>
 
 **인증 백업 코드를 저장하십시오. 휴대폰 분실과 같은 비상시에 인증 코드를 통해 계정을 복구할 수 있습니다.**
 
 모든 것이 완료되면 다음번에 계정에 로그인할 때 다음과 같은 페이지가 표시됩니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa3ko.png!"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/2Fa3ko.png!1"/>
 
 이중 인증 코드를 입력하면 로그인됩니다!
 
