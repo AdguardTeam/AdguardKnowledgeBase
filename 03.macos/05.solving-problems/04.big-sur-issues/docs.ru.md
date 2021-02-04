@@ -16,7 +16,7 @@ visible: true
 * [Уже исправленные проблемы](#fixed)
     * [Совместимость с Little Snitch](#little-snitch)
 * [Альтернативы использованию Network Extension](#alternatives)   
-    * [Использование режима "Автоматический прокси"](#automatic-proxy)
+    * [Использование режима «Автоматический прокси»](#automatic-proxy)
     * [Переключение на Kernel Extension в Big Sur](#kernel-extension)
 
 
