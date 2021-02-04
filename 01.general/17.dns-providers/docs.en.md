@@ -691,7 +691,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS, IPv4      | `119.29.29.29` and `119.28.28.28`    | <a href="sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.pub/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://dns.pub/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAHZG5zLnB1YgovZG5zLXF1ZXJ5">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dns.pub` | <a href="sdns://AwAAAAAAAAAAAAANdGxzOi8vZG5zLnB1Yg">Add to AdGuard</a> |
+| DNS-over-TLS | `dot.pub` | <a href="sdns://AwcAAAAAAAAAB2RvdC5wdWIAAA">Add to AdGuard</a> |
 
 <a name="114-dns"></a>
 

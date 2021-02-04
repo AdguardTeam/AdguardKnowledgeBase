@@ -6,27 +6,35 @@ taxonomy:
 visible: true
 ---
 
-* [Compatibility with local proxies](#local-proxies)
-    * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
-    * [Cofiguring an upstream Surge proxy](#surge)
-* [VPN apps with legacy API](#legacy-api)
-* [Compatibility with Little Snitch 5](#little-snitch)
-* [Using "Automatic proxy" filtering mode](#automatic-proxy)
-* [Enabling Kernel Extension in Big Sur](#kernel-extension)
-* [Compatibility with Flutter app](#flutter)
+* [Currently existing problems (Big Sur 11.2)](#current)
+    * [Compatibility with local proxies](#local-proxies)
+        * [Configuring an upstream Shadowsocks proxy](#shadowsocks)
+        * [Cofiguring an upstream Surge proxy](#surge)
+    * [Compatibility with Cisco AnyConnect](#cisco)
+    * [Compatibility with Flutter](#flutter)
+    * [VPN apps with legacy API](#legacy-api)
+* [Already fixed problems](#fixed)
+    * [Compatibility with Little Snitch 5](#little-snitch)
+* [Alternatives to Network Extension](#alternatives)   
+    * [Using "Automatic proxy" filtering mode](#automatic-proxy)
+    * [Enabling Kernel Extension in Big Sur](#kernel-extension)
 
 
-## Known issues
+
 
 The newest version of macOS, **Big Sur**, has been released in late 2020. It introduces the new API, Network Extensions API to replace the old Kernel Extensions API. And it already causes some problems to many applications, AdGuard not being an exception. In this article we go over the known issues and possible ways to solve them.
+
+<a id="current"></a>
+
+## Currently existing problems (Big Sur 11.2)
+
+These problems aren't fixed by Apple yet, or fixed only partially.
 
 <a id="local-proxies"></a>
 
 ### Compatibility with local proxies
 
->Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies without any problems. The problems and solutions described below refer to Big Sur 11.0. If you encounter any issues in OS versions 11.1+, please contact technical support: support@adguard.com
-
-Any remote (non-local) proxy will work normally in Big Sur alongside AdGuard and doesn't require any additional actions from you. But with a local proxy (localhost), you have to remove it from System settings and configure it in AdGuard.
+>Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
@@ -45,6 +53,8 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 >Example: `socks5://localhost:6322` will configure a SOCKS5 local proxy that listens to port 6322 and doesn't require a username or a password.
 
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
+
+If you run into any problems, please contact our tech support: support@adguard.com.
 
 <a id="shadowsocks"></a>
 #### Example 1: Configuring an upstream Shadowsocks proxy
@@ -66,7 +76,7 @@ First of all, you need a working server side for your proxy. Most likely, to set
 
 >You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/en/config/quick-guide.html).
 
-Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' in its settings! The configuration won't work if you select 'Auto Mode' or 'Global Mode'.
+Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' or 'Auto Mode' in its settings! The configuration won't work if you select 'Global Mode' (or 'Auto Mode' in Big Sur versions prior to 11.1).
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/shadowsocks.png" style="max-width: 350px;">
 
@@ -77,15 +87,31 @@ Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream
 <a id="surge"></a>
 #### Example 2: Configuring an upstream Surge proxy
 
-Once you install Surge proxy client, you need to pay attention to several things to ensure it doesn't conflict with AdGuard.
-
-First, check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict.
+In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy. If you are using an older version of Big Sur (prior to 11.1), check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/surge.png" style="max-width: 800px;">
 
 Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:6153` or `http://localhost:6152`, depending on which type of proxy you want to use. Notice that you need to use **port** value that's indicated in the **Events** area of the **Activity** tab in your Surge client. 
 
 If you chose SOCKS5 protocol, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
+
+
+<a id="cisco"></a>
+
+### Compatibility with Cisco AnyConnect
+
+AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](#automatic-proxy).
+
+
+<a id="flutter"></a>
+
+### Compatibility with Flutter
+
+If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
+
+1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
+
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
 
 
 <a id="legacy-api"></a>
@@ -103,6 +129,12 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 <img src="https://cdn.adguard.com/public/Adguard/kb/BigSur/problems/legacy-api.png" style="max-width: 650px;">
 
 
+<a id="fixed"></a>
+
+## Already fixed problems
+
+These problems have been fixed by Apple by now but can be encountered in the older versions of macOS Big Sur. 
+
 <a id="little-snitch"></a>
 
 ### Compatibility with Little Snitch 5
@@ -110,7 +142,6 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
 
 Needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
-
 
 
 <a id="alternatives"></a>
@@ -166,14 +197,3 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 6) Confirm that you want to switch to Kernel Extension.
 
 >However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
-
-
-<a id="flutter"></a>
-
-### Compatibility with Flutter app
-
-If you use Flutter app alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
-
-1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
-
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
