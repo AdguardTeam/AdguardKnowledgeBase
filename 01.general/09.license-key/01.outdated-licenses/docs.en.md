@@ -53,7 +53,7 @@ Premium licenses also remained unchanged and platform-limited. And although **Pr
 For example, this is how the 1+1 key looks like:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
-*But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device.*
+_But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device._
 
 
 
