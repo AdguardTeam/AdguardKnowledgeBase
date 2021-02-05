@@ -44,19 +44,18 @@ One more change: **license keys of the new type can now be used on any device, i
 <a name="what-happened"></a>
 ## What happened to the outdated licenses?
 
+Standard were automatically made universal, which means that they can be activated on any devices.
+
 Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
 
-Standard and Premium licenses were automatically made universal.
+Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on dektop + mobile set of devices.
 
-That is, Premium 3+3 key, for example, can now be activated on **any** six devices.
-
-Also, **Premium licenses are now displayed in your personal account by the total number of devices**. For example, this is how the 1+1 key looks like:
+For example, this is how the 1+1 key looks like:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device.
 
->All the outdated licenses have a “legacy” badge in the AdGuard account. 
-
-Below we will tell you which licenses can be converted to a new type and how to do it.
+>All the outdated licenses have a “legacy” badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it. 
 
 <a name="switch"></a>
 ## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
