@@ -53,9 +53,12 @@ Premium licenses also remained unchanged and platform-limited. And although **Pr
 For example, this is how the 1+1 key looks like:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
-But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device.
+*But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device.*
+
+
 
 >All the outdated licenses have a “legacy” badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it. 
+
 
 <a name="switch"></a>
 ## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
