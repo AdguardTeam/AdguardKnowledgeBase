@@ -12,7 +12,7 @@ taxonomy:
 <a id="system-requirements"></a>
 ## System  requirements
 
-**Operating system version:** OS X 10.10 (64 bit) or higher
+**Operating system version:** macOS 10.12 (64 bit) or higher
 
 **RAM:** at least 2 GB
 
