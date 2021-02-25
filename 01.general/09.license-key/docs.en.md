@@ -12,6 +12,8 @@ visible: true
 * [How to register the AdGuard Account?](#account)
 * [What functions are available in AdGuard Account?](#account-functions)
 * [What to do after the key was renewed?](#renewal)
+* [Payment options](#payment)
+* [Refund policy](#refund)
 
 <a name="key"></a>
 #### What is AdGuard license key?
@@ -180,7 +182,7 @@ This is how you can manage your AdGuard licenses and subscriptions.
 You can renew your key for another year, switch to Lifetime protection or make your license Family (thus adding more devices to it).
 
 
-#### Unbind from the old device
+#### Unbind from the device
 If the license key is activated on one or more computers you will see the list of these devices under the license key. License key can be activated on a limited number of devices, before using it again you will have to unbind it from one of the computers.
 
 To unbind the license key from the device just click at the "cross" near the license as it’s showed on this picture:
