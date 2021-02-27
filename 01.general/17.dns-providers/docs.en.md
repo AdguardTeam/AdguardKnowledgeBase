@@ -770,6 +770,7 @@ These servers block adult websites and inappropriate contents.
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]`| <a href="sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party) | <a href="sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-Quic | `quic://doh.tiar.app` | <a href="quic://doh.tiar.app">Add to Adguard</a> |
 | DNS-over-TLS | `tls://dot.tiar.app` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vZG90LnRpYXIuYXBw">Add to AdGuard</a> |
 
 #### Japan DNS Server
