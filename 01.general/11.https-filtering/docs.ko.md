@@ -9,7 +9,7 @@ visible: true
 ### HTTPS란 무엇인가요?
 
 HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암호화를 지원하는 HTTP 프로토콜의 확장입니다. 이 프로토콜은 개인 데이터, 신용 카드 정보 등과 같은 중요한 지정보를 안전하게 전송하는 데 사용됩니다.
-암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. 최근 HTTPS는 Google 권장을 받고 있다는 점과 무료 인증 센터 Let ’s Encrypt의 등장으로 인해 확산되고 있습니다.
+암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. 최근 HTTPS는 Google 권장을 받고 있다는 점과 무료 인증 센터 [Let ’s Encrypt](https://ko.wikipedia.org/wiki/Let%27s_Encrypt)의 등장으로 인해 확산되고 있습니다.
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
 ![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png) 
