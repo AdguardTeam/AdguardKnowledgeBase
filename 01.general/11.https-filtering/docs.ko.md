@@ -14,7 +14,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 ![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png) 
 
-### What is a security certificate? 보안 인증서란 무엇인가요?
+### 보안 인증서란 무엇인가요?
 간단히 말하면 HTTPS는 데이터 암호화를 의미합니다. 그러나 원하시는 웹 사이트와 암호화된 연결을 했는지 어떻게 확인을 할 수 있을까요? 웹 사이트가 보안 인증서가 있으면 연결이 암호화됩니다. 웹 사이트가 보안 인증서가 없거나 인증서에 잘못된 정보가 포함된 경우, 브라우저에서 보안 연결이 될 수 없습니다. 웹 사이트에서 사용하는 인증서를 브라우저에서 신뢰하는 CA(인증 기관)에서 발급받는 것이 중요합니다. 인증 기관은 SSL 인증서가 웹 사이트 소유자에게 발급되는 것을 보장합니다.
 
 ### AdGuard가 HTTPS를 필터링해야 하는 이유는 무엇인가요?
