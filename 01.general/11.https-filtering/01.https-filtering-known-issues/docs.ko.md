@@ -1,4 +1,6 @@
+---
 title: 'HTTPS 필터링: 알려진 문제'
+published: true
 taxonomy:
     category:
         - docs
