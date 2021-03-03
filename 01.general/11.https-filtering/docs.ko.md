@@ -12,7 +12,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. 최근 HTTPS는 Google 권장을 받고 있다는 점과 무료 인증 센터 Let ’s Encrypt의 등장으로 인해 확산되고 있습니다.
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png) 
 
 ### What is a security certificate? 보안 인증서란 무엇인가요?
 간단히 말하면 HTTPS는 데이터 암호화를 의미합니다. 그러나 원하시는 웹 사이트와 암호화된 연결을 했는지 어떻게 확인을 할 수 있을까요? 웹 사이트가 보안 인증서가 있으면 연결이 암호화됩니다. 웹 사이트가 보안 인증서가 없거나 인증서에 잘못된 정보가 포함된 경우, 브라우저에서 보안 연결이 될 수 없습니다. 웹 사이트에서 사용하는 인증서를 브라우저에서 신뢰하는 CA(인증 기관)에서 발급받는 것이 중요합니다. 인증 기관은 SSL 인증서가 웹 사이트 소유자에게 발급되는 것을 보장합니다.
@@ -27,7 +27,7 @@ HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 �
 
 아래의 그림은 이러한 과정을 알기 쉽게 보여줍니다. 
 
-![How does HTTPS filtering work](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![How does HTTPS filtering work](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering_ko.png)
 
 
 ### 내 트래픽이 암호화되고 안전하나요?
@@ -43,9 +43,7 @@ HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 �
 
 ### EV(Extended Validation) 인증서
 AdGuard는 EV 인증서를 사용하는 모든 웹 사이트를 필터링에서 제외하는 기능을 제공합니다.
-EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보다 더 많은 보증을 제공하여 웹 사이트가 사기 또는 위조 웹 사이트가 아님을 증명합니다. EV 인증서로 보호되는 웹 사이트를 방문하면 주소 표시 줄이 녹색으로 바뀌고 브라우저 인터페이스에 조직 이름이 나타납니다.
-
-![EV certificate](https://cdn.adguard.com/public/Adguard/Blog/https/ev_certificate.png)
+EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보다 더 많은 보증을 제공하여 웹 사이트가 사기 또는 위조 웹 사이트가 아님을 증명합니다. 
 
 ### HTTPS 필터링과 관련된 문제
 
