@@ -51,9 +51,7 @@ If you believe some website should be added to this list, please [let us know](h
 
 AdGuard provides an ability to exclude from filtering all websites that use extended validation certificates. 
 
-EV certificate means a higher security level and provides more guarantees than a regular certificate, proving that the website is not fraudulent or fake. When you visit a website protected by such certificate, the address bar becomes green, and the organization’s name appears in the browser’s interface.
-
-![EV certificate](https://cdn.adguard.com/public/Adguard/Blog/https/ev_certificate.png)
+EV certificate means a higher security level and provides more guarantees than a regular certificate, proving that the website is not fraudulent or fake. 
 
 ### Problems related to HTTPS filtering
 
