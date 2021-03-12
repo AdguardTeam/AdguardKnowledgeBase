@@ -35,7 +35,6 @@ visible: true
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
-* [evilvibes.com](#evilvibes.com)
 * [cira.ca](#cira.ca-dns)
 * [ffmuc.net](#ffmuc.net)
 
@@ -542,20 +541,6 @@ DNS-серверы с минимальным/ограниченным логир
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-TLS | Имя провайдера: `NIC Chile` Хост `dnsotls.lab.nic.cl` IP: `200.1.123.46` и IPv6: `2001:1398:1:0:200:1:123:46` | <a href="sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs">Добавить в AdGuard</a>  |
 | DNS-over-TLS | Имя провайдера: `OARC` Хост `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` и IPv6: `2620:ff:c000:0:1::64:25` | <a href="sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0">Добавить в AdGuard</a>  |
-
-
-
-<a name="evilvibes.com"></a>
-
-### evilvibes.com
-
-[evilvibes.com](https://github.com/evilvibes/dnscrypt_stamps) — нелогирующий, неблокирующий DNS-резолвер от провайдера evilvibes.com.
-
-| Протокол       | Адрес                             | Локация      |                |
-|----------------|-------------------------------------|---------------|----------------|
-| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.evilvibes.com` IP: `23.111.74.205` | Локация: `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMDUg_0RyX8kcAcMdtRk5SAX5RKs3yiLLS6kdJlnsUpVbnOEdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20">Добавить в AdGuard</a> |
-| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.115` | Локация: `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjExNSDaDhJ4Dk4cHSiJstKoSd4DcSH8xm16_TSA1PBuamRNzB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Добавить в AdGuard</a> |
-
 
 
 <a name="cira.ca-dns"></a>
