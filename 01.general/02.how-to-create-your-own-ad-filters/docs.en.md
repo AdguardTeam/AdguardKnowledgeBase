@@ -640,19 +640,19 @@ Use exceptions if you don't want to strip some URLs:
 
 1) Example 1:
 
-    ```
-    $removeparam=gclid|yclid|fbclid
-    @@||example.com^$removeparam=gclid
-    ```
+```
+$removeparam=gclid|yclid|fbclid
+@@||example.com^$removeparam=gclid
+```
 With these rules Google, Yandex and Facebook Click IDs will be stripped out, except that requests to `example.com` won't be stripped of Google Click ID. E.g. `http://google.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page`, but `http://example.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://example.com/page?gclid=1`.
 
 2) Example 2:
 
-    ```
-    $removeparam=utm_source|utm_medium|utm_term
-    $removeparam=utm_content|utm_campaign|utm_referrer
-    @@||example.com^$removeparam
-    ```
+```
+$removeparam=utm_source|utm_medium|utm_term
+$removeparam=utm_content|utm_campaign|utm_referrer
+@@||example.com^$removeparam
+```
 With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
 
 > **Please note** that blocking `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to example.com, but `@@||example.com^$urlblock` will.

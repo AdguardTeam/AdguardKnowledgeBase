@@ -639,20 +639,20 @@ removeparam = "/" regex "/" options
 Используйте исключения, если вы не хотите очищать от параметров некоторые URL:
 
 1) Пример 1:
-    ```
-    $removeparam=gclid|yclid|fbclid
-    @@||example.com^$removeparam=gclid
-    ```
+```
+$removeparam=gclid|yclid|fbclid
+@@||example.com^$removeparam=gclid
+```
 
 С этими правилами метки метрик компаний Google, Yandex и Facebook будут удалены, кроме меток Google для запросов к `example.com`. Например: `http://google.com/page?gclid=1&fbclid=2&yclid=3` будет преобразован в `http://google.com/page`, но `http://example.com/page?gclid=1&fbclid=2&yclid=3` будет преобразован в `http://example.com/page?gclid=1`.
 
 2) Пример 2:
 
-    ```
-    $removeparam=utm_source|utm_medium|utm_term
-    $removeparam=utm_content|utm_campaign|utm_referrer
-    @@||example.com^$removeparam
-    ```
+```
+$removeparam=utm_source|utm_medium|utm_term
+$removeparam=utm_content|utm_campaign|utm_referrer
+@@||example.com^$removeparam
+```
 
 С этими правилами некоторые [utm-параметры](https://ru.wikipedia.org/wiki/UTM-%D0%BC%D0%B5%D1%82%D0%BA%D0%B8) будут удалены из любого запроса, но в запросах к `example.com` не будут удаляться совсем. Например: `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` будет преобразован в `http://google.com/page`, но `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` вообще не будет затронут этим правилом блокировки. 
 
