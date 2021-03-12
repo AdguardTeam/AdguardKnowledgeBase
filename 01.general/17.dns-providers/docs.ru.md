@@ -567,5 +567,7 @@ DNS-серверы с минимальным/ограниченным логир
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Имя провайдера: `dot.ffmuc.net` IP: `195.30.94.28` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Добавить в AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` IP: `195.30.94.28` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNS-over-TLS, IPv4 | Имя провайдера: `dot.ffmuc.net` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Добавить в AdGuard</a> |
+| DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Добавить в AdGuard</a> |
