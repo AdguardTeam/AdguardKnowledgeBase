@@ -65,6 +65,7 @@ visible: true
         * [$network](#network-modifier)
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
+        * [$denyallow](#denyallow-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -909,6 +910,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 <a id="redirect-modifier"></a>
 #### `redirect`
+
 AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
@@ -939,6 +941,24 @@ This rule redirects all requests to script.js to the resource named noop.js.
 This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
 >More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+
+<a id="denyallow-modifier"></a>
+
+#### **`denyallow`**
+
+This modifier makes it easier to implement default-deny/allow-exceptionally in static filter lists.
+
+##### `denyallow` syntax
+
+Example:
+
+```*$third-party,script,denyallow=x.com|y.com,domain=a.com|b.com```
+
+The above filter tells the network filtering engine that when the context is `a.com` or `b.com`, block all third-party scripts except those from `x.com` and `y.com`.
+
+>Note that `domain=` option is required!
+
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
