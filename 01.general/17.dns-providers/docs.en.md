@@ -62,7 +62,6 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [DNS Privacy](#dnsprivacy.org-dns)
 * [PI-DNS](#pi-dns)
 * [Seby DNS](#seby-dns)
-* [Evilvibes DNS](#evilvibes-dns)
 * [puntCAT DNS](#puntcat-dns)
 * [DNSlify DNS](#dnslify-dns)
 
@@ -1134,16 +1133,6 @@ PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. Th
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `139.99.222.72`| <a href="sdns://AQcAAAAAAAAADTEzOS45OS4yMjIuNzIgCwVoTw0L4dgal5LC1FbZUtHtLR_rVuV6rVnxO95e4GUbMi5kbnNjcnlwdC1jZXJ0LmRucy5zZWJ5Lmlv">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh-2.seby.io/dns-query` | <a href="sdns://AgcAAAAAAAAAAAANZG9oLTIuc2VieS5pbwovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://dot.seby.io` | <a href="sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8">Add to AdGuard</a> |
-
-<a name="evilvibes-dns"></a>
-
-### Evilvibes DNS
-
-[Evilvibes](https://github.com/evilvibes/dnscrypt_stamps) is a non-logging, uncensored DNS resolver provided by [evilvibes.com](evilvibes.com)
-
-| Protocol       | Address                             | Location      |                |
-|----------------|-------------------------------------|---------------|----------------|
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `104.36.148.2192` | `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADjEwNC4zNi4xNDguMTkyICVfoDkWgfKPndAAvW1ke5CZIlsVj92u6qbBHHCZWgG9JzIuZG5zY3J5cHQtY2VydC5ldi1jYW5hZGEuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
 
 <a name="puntcat-dns"></a>
 
