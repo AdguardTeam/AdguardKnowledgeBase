@@ -957,7 +957,7 @@ Example:
 
 The above filter tells the network filtering engine that when the context is `a.com` or `b.com`, block all third-party scripts except those from `x.com` and `y.com`.
 
->Note that `domain=` option is required!
+>Please note that [`$domain` modifier](#domain-modifier) is required!
 
 
 <a id="non-basic-rules"></a>
