@@ -921,7 +921,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 * `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 <a id="redirect-modifier"></a>
-#### `redirect`
+#### **`redirect`**
 AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
