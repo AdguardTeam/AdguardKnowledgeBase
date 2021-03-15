@@ -586,6 +586,8 @@ Has an opposite effect to `generichide`. Disables all specific element hiding an
 
 * `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
 
+>Please note that [`$elemhide` modifier](#elemhide-modifier) can disable all cosmetic rules at once.
+
 
 <a id="advanced-modifiers"></a>
 ### Advanced capabilities

@@ -587,6 +587,8 @@ domain.com###banner
 
 * `@@||example.org^$specifichide` — отключит `example.org##.banner`, но не `##.banner`.
 
+>Обратите внимание, что [модификатор `$elemhide`](#elemhide-modifier) может отключить все косметические правила разом.
+
 
 <a id="advanced-modifiers"></a>
 ### Расширенные возможности
