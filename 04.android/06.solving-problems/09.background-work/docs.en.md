@@ -127,7 +127,7 @@ Tap and hold on it until a special menu pops up. Select a lock icon.
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi7en.jpg" width="300">
 
-The lock icon should apper above the app's window.
+The lock icon should appear above the app window.
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi8en.jpg" width="300">
 

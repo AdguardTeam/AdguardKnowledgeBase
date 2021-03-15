@@ -108,14 +108,14 @@ taxonomy:
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
 
 #### MIUI 12
-All steps are almost the same.
+Почти все шаги те же.
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4ru.jpg" width="300">
 
 Зайдите в Настройки > Приложения > Управление приложениями > AdGuard. 
 
 - Включите Автостарт
-- В Разрешениях выберите "Нет ограничей" для Контроля фоновой активности
+- В Разрешениях выберите "Нет ограничений" для Контроля фоновой активности
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi5ru.jpg" width="300">
 
@@ -127,7 +127,7 @@ All steps are almost the same.
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi7ru.jpg" width="300">
 
-Этот значок теперь должен быть над окном AdGuard.
+Теперь этот значок должен быть над окном AdGuard.
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi8ru.jpg" width="300">
 
