@@ -66,6 +66,7 @@ visible: true
         * [$network](#network-modifier)
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
+        * [noop](#noop-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -952,6 +953,20 @@ This rule redirects all requests to script.js to the resource named noop.js.
 This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
 >More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+
+<a id="noop-modifier"></a>
+#### **`noop`**
+
+`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+
+##### `noop` examples:
+
+```
+||example.com$_,removeparam=/^ss\\$/,_,image
+||example.com$replace=/bad/good/,___,~third-party
+```
+
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
