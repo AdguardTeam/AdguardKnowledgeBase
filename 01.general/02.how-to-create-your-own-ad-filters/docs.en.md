@@ -52,8 +52,8 @@ visible: true
             * [$stealth](#stealth-modifier)
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
-                * [$specifichide](#specifichide-modifier)
                 * [$genericblock](#genericblock-modifier)
+            * [$specifichide](#specifichide-modifier)
     * [Advanced capabilites](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
@@ -571,20 +571,21 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
 
 
-<a id="specifichide-modifier"></a>
-###### **`specifichide`**
-
-Has an opposite effect to `generichide`. Disables all specific element hiding and CSS rules, but not general ones.
-
-* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
-
-
 <a id="genericblock-modifier"></a>
 ###### **`genericblock`**
 
 Disables generic basic rules on pages that correspond to exception rule.
 
 * `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
+
+
+<a id="specifichide-modifier"></a>
+##### **`specifichide`**
+
+Has an opposite effect to `generichide`. Disables all specific element hiding and CSS rules, but not general ones.
+
+* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
+
 
 <a id="advanced-modifiers"></a>
 ### Advanced capabilities

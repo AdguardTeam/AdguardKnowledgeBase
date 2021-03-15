@@ -52,8 +52,8 @@ visible: true
             * [$stealth](#stealth-modifier)
             * [Generic правила](#generic-rules)
                 * [$generichide](#generichide-modifier)
-                * [$specifichide](#specifichide-modifier)
                 * [$genericblock](#genericblock-modifier)
+            * [$specifichide](#specifichide-modifier)
     * [Расширенные возможности](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
@@ -572,20 +572,21 @@ domain.com###banner
 * `@@||example.com^generichide` — отключает "generic" косметические правила на страницах сайта `example.com` и всех его поддоменах.
 
 
-<a id="specifichide-modifier"></a>
-###### **`specifichide`**
-
-Имеет эффект, проитвоположный `generichide`. Отключает все "specific" правила сокрытия элементов и CSS-правила, но не отключает "general"-правила.
-
-* `@@||example.org^$specifichide` — отключит `example.org##.banner`, но не `##.banner`.
-
-
 <a id="genericblock-modifier"></a>
 ###### **`genericblock`**
 
 Отключает все generic базовые правила на страницах, подходящих под правило-исключение.
 
 * `@@||example.com^$genericblock` — отключает "generic" базовые правила на страницах сайта `example.com` и всех его поддоменах.
+
+
+<a id="specifichide-modifier"></a>
+##### **`specifichide`**
+
+Имеет эффект, проитвоположный `generichide`. Отключает все "specific" правила сокрытия элементов и CSS-правила, но не отключает "general"-правила.
+
+* `@@||example.org^$specifichide` — отключит `example.org##.banner`, но не `##.banner`.
+
 
 <a id="advanced-modifiers"></a>
 ### Расширенные возможности
