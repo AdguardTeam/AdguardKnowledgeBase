@@ -574,9 +574,9 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 <a id="specifichide-modifier"></a>
 ###### **`specifichide`**
 
-On the contrary, disables all specific element hiding and CSS rules, but not general ones.
+Has an opposite effect to `generichide`. Disables all specific element hiding and CSS rules, but not general ones.
 
-* `@@||example.org^$specifichide` — will disable `example.org##div` but not `#$#div`.
+* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
 
 
 <a id="genericblock-modifier"></a>

@@ -575,9 +575,9 @@ domain.com###banner
 <a id="specifichide-modifier"></a>
 ###### **`specifichide`**
 
-Наоборот, отключает все "specific" правила сокрытия элементов и CSS-правила, но не отключает "general"-правила.
+Имеет эффект, проитвоположный `generichide`. Отключает все "specific" правила сокрытия элементов и CSS-правила, но не отключает "general"-правила.
 
-* `@@||example.org^$specifichide` — отключит `example.org##div`, но не `#$#div`.
+* `@@||example.org^$specifichide` — отключит `example.org##.banner`, но не `##.banner`.
 
 
 <a id="genericblock-modifier"></a>
