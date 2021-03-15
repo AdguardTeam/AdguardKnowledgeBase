@@ -582,7 +582,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 <a id="specifichide-modifier"></a>
 ##### **`specifichide`**
 
-Has an opposite effect to `generichide`. Disables all specific element hiding and CSS rules, but not general ones.
+Has an opposite effect to [`generichide`](#generichide-modifier). Disables all specific element hiding and CSS rules, but not general ones.
 
 * `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
 
