@@ -106,6 +106,31 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
 
+
+#### MIUI 12
+All steps are almost the same.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
+
+Go to Settings > Apps > Manage apps > AdGuard. 
+
+- Set Autostart to “On”
+- Set Battery saver to “No restrictions”
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi5en.jpg" width="300">
+
+Now launch the active apps manager by swiping up from the bottom of the screen and look for the AdGuard app. 
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi6en.jpg" width="300">
+
+Tap and hold on it until a special menu pops up. Select a lock icon.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi7en.jpg" width="300">
+
+The lock icon should apper above the app's window.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi8en.jpg" width="300">
+
 <a id="Samsung"></a>
 
 ## Samsung

@@ -107,6 +107,30 @@ taxonomy:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/xiaomiautostart.png" width="300">
 
+#### MIUI 12
+All steps are almost the same.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4ru.jpg" width="300">
+
+Зайдите в Настройки > Приложения > Управление приложениями > AdGuard. 
+
+- Включите Автостарт
+- В Разрешениях выберите "Нет ограничей" для Контроля фоновой активности
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi5ru.jpg" width="300">
+
+Теперь запустите Диспетчер запущенных приложений, проведя пальцем вверх от нижней грани экрана. Найдите окно AdGuard.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi6ru.jpg" width="300">
+
+Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi7ru.jpg" width="300">
+
+Этот значок теперь должен быть над окном AdGuard.
+
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi8ru.jpg" width="300">
+
 <a id="Samsung"></a>
 
 ## Samsung
