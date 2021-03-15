@@ -52,6 +52,7 @@ visible: true
             * [$stealth](#stealth-modifier)
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
+                * [$specifichide](#specifichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Advanced capabilites](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
@@ -568,6 +569,15 @@ domain.com###banner
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
+
+
+<a id="specifichide-modifier"></a>
+###### **`specifichide`**
+
+On the contrary, disables all specific element hiding and CSS rules, but not general ones.
+
+* `@@||example.org^$specifichide` — will disable `example.org##div` but not `#$#div`.
+
 
 <a id="genericblock-modifier"></a>
 ###### **`genericblock`**

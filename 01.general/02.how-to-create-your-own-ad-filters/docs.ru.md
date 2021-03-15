@@ -52,6 +52,7 @@ visible: true
             * [$stealth](#stealth-modifier)
             * [Generic правила](#generic-rules)
                 * [$generichide](#generichide-modifier)
+                * [$specifichide](#specifichide-modifier)
                 * [$genericblock](#genericblock-modifier)
     * [Расширенные возможности](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
@@ -569,6 +570,15 @@ domain.com###banner
 Отключает все "generic" [косметические правила](#cosmetic-rules) на страницах, подходящих под правило-исключение.
 
 * `@@||example.com^generichide` — отключает "generic" косметические правила на страницах сайта `example.com` и всех его поддоменах.
+
+
+<a id="specifichide-modifier"></a>
+###### **`specifichide`**
+
+Наоборот, отключает все "specific" правила сокрытия элементов и CSS-правила, но не отключает "general"-правила.
+
+* `@@||example.org^$specifichide` — отключит `example.org##div`, но не `#$#div`.
+
 
 <a id="genericblock-modifier"></a>
 ###### **`genericblock`**
