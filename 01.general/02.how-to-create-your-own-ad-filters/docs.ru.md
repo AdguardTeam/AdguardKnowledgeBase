@@ -365,6 +365,11 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 * `||domain.com^$popup` — при попытке перехода на сайт `http://domain.com` с любой страницы в браузере, новая вкладка, в которой должен открыться указанный сайт, будет закрыта.
 
+>Модификатор может не работать, если всплывающая страница закэширована браузером. Также модификатор может не сработать, если для показа попапа используются нестандартные методы. В такие случаях лучше использовать расширение [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker).
+
+>**Важно!** В отличие от браузерных расширений, модификатор `$popup` крайне нестабильно работает с приложениями AdGuard для Windows, Mac и Android.  
+
+
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
 
@@ -1017,10 +1022,13 @@ http://regexr.com/3cesk
 * `||baddomain.com^$domain=~org.example.app1|~org.example.app2` — аналогично, но в исключениях два приложения: `org.example.app1` и `org.example.app2`.
 
 <a id="redirect-modifier"></a>
-#### `redirect`
+#### **`redirect`**
+
+AdGuard может перенаправлять веб-запросы к локальному "ресурсу".
+
 ##### Синтаксис `redirect`
 
-AdGuard использует тот ж синтаксис правил фильтрации, что и uBlock Origin. Он совместим с модификатором `$rewrite=abp-resource` Adblock Plus.
+AdGuard использует тот же синтаксис правил фильтрации, что и uBlock Origin. Он совместим с модификатором `$rewrite=abp-resource` Adblock Plus.
 
 `$redirect` – это модификатор для [базовых правил](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#basic-rules), поэтому правила с ним поддерживают все остальные базовые модификаторы, такие как `$domain`, `$third-party`, `$script`, и т.д.
 

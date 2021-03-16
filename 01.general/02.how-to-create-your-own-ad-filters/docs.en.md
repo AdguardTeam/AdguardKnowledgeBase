@@ -364,6 +364,10 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 * `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
+>It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
+
+>**Important!** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android.
+
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
 
@@ -943,7 +947,8 @@ If you want the rule not to be applied to certain apps, start the app name with 
 * `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 <a id="redirect-modifier"></a>
-#### `redirect`
+#### **`redirect`**
+
 AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
