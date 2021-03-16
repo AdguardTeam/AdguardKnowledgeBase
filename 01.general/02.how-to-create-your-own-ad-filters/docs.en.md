@@ -365,7 +365,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 >It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
 
->**Important!** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps.
+>**Important!** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android.
 
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
