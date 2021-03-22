@@ -184,7 +184,7 @@ AdGuard 帐号为您提供管理许可密钥并其绑定到设备的机会。
 
 找到您要修改的订阅并点击旁边的卡图标:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/unsubscribe-change-card.png?" width="900" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/unsubscribe-change-card-cn.png?" width="900" />
 
 <a name="renewal"></a>
 ## 更新密钥后，该做什么？
