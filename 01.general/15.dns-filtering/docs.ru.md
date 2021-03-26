@@ -31,7 +31,7 @@ DNS расшифровывается как "Domain name system", или "Сис
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ru.png" style="border: 1px solid #efefef; padding: 2px;" />
 
-DNS-фильтрация — это мощный инструмент, и она поддерживается всеми основными приложениями AdGuard: [AdGuard для Windows](https://kb.adguard.com/ru/windows), [AdGuard для Mac](https://kb.adguard.com/ru/macos), [AdGuard для Android](https://kb.adguard.com/ru/android) и [AdGuard для iOS](https://kb.adguard.com/ru/ios).
+DNS-фильтрация — это мощный инструмент, и она поддерживается всеми основными приложениями AdGuard: [AdGuard для Windows](https://adguard.com/ru/adguard-windows/overview.html), [AdGuard для Mac](https://adguard.com/ru/adguard-mac/overview.html), [AdGuard для Android](https://adguard.com/ru/adguard-android/overview.html) и [AdGuard для iOS](https://adguard.com/ru/adguard-ios/overview.html).
 
 Есть два разных способа, как можно фильтровать DNS-трафик: делать это на DNS-сервере либо локально.
 

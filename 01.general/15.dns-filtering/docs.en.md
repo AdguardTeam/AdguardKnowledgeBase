@@ -31,7 +31,7 @@ When you use one of the AdGuard apps that supports DNS filtering, it acts as a b
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png" style="border: 1px solid #efefef; padding: 2px;" />
 
-DNS filtering is a powerful tool and it's supported by all major AdGuard apps: [AdGuard for Windows](https://kb.adguard.com/en/windows), [AdGuard for Mac](https://kb.adguard.com/en/macos), [AdGuard for Android](https://kb.adguard.com/en/android) and [AdGuard for iOS](https://kb.adguard.com/en/ios).
+DNS filtering is a powerful tool and it's supported by all major AdGuard apps: [AdGuard for Windows](https://adguard.com/en/adguard-windows/overview.html), [AdGuard for Mac](https://adguard.com/en/adguard-mac/overview.html), [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html) and [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html).
 
 There are two different ways to filter DNS traffic: to do it on the DNS server or locally.
 
