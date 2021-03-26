@@ -33,7 +33,7 @@ When you use one of the AdGuard apps that supports DNS filtering, it acts as a b
 
 DNS filtering is a powerful tool and it's supported by all major AdGuard apps: [AdGuard for Windows](https://adguard.com/en/adguard-windows/overview.html), [AdGuard for Mac](https://adguard.com/en/adguard-mac/overview.html), [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html) and [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html).
 
-There are two different ways to filter DNS traffic: to do it on the DNS server or locally.
+DNS filtering can be broken down into two separate functions: to encrypt and reroute DNS traffic to DNS servers, and to block some domains locally by applying DNS blocklists.
 
 <a id="dns-servers"></a>
 #### DNS servers
@@ -57,6 +57,8 @@ You can add as many custom blocklists as you wish. For instance, you can use [Ad
 
 <a id="compare"></a>
 ### Comparing DNS filtering to network filtering
+
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://kb.adguard.com/en/general/how-ad-blocking-works).
 
 First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand the key differencies between the two. DNS filtering has both its unique advantages and drawbacks:
 
