@@ -13,7 +13,7 @@ visible: true
     * [Local DNS blocklists](#dns-blocklists)
 * [Comparing DNS filtering to network filtering](#compare)
 
-To better understand DNS filtering, first we should answer the question "What is DNS"?
+To better understand DNS filtering, first, we should answer the question "What is DNS"?
 
 <a id="what-is-dns"></a>
 ### What is DNS?
@@ -38,7 +38,7 @@ DNS filtering can be broken down into two separate functions: to encrypt and rer
 <a id="dns-servers"></a>
 #### DNS servers
 
-There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most simply return the IP address of the requested domain, but some have additional functions: they block ad, tracking, adult domains and so on. Nowadays all major DNS servers employ one of the reliable encryption protocols, or several: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard.com/en/adguard-dns/overview.html), and it was the world's first to offer the very new and promising [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard blocking servers work:
+There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most simply return the IP address of the requested domain, but some have additional functions: they block ad, tracking, adult domains and so on. Nowadays all major DNS servers employ one or more reliable encryption protocols: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard.com/en/adguard-dns/overview.html), and it was the world's first to offer the very new and promising [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard blocking servers work:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg" style="border: 1px solid #efefef; padding: 2px;" />
 
@@ -47,7 +47,7 @@ Other DNS providers may work differently, so learn more about them before commit
 <a id="dns-blocklists"></a>
 #### Local DNS blocklists
 
-But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](https://kb.adguard.com/en/general/dns-filtering-syntax). They work similar to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
+But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](https://kb.adguard.com/en/general/dns-filtering-syntax). They work similarly to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
 
 >In AdGuard for iOS, first you have to enable "Advanced mode" in settings in order to get access to DNS blocking.
 
@@ -60,11 +60,11 @@ You can add as many custom blocklists as you wish. For instance, you can use [Ad
 
 Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://kb.adguard.com/en/general/how-ad-blocking-works).
 
-First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand the key differencies between the two. DNS filtering has both its unique advantages and drawbacks:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differencies between the two. DNS filtering has both its unique advantages and drawbacks:
 
 **Pros of DNS filtering:**
 
-1. On some platforms this is the only way to achieve system-wide filtering. For example, on iOS only Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
+1. On some platforms this is the only way to achieve system-wide filtering. For example, on iOS only the Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
 2. Some forms of tracking (like [CNAME-cloaked tracking](https://adguard.com/en/blog/cname-tracking.html)) can only be dealt with by DNS filtering.
 3. The stage of processing a DNS request is the earliest you could possibly deal with an ad or a tracker, this helps save a little bit of battery life and traffic.
 
