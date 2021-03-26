@@ -49,7 +49,7 @@ Other DNS providers may work differently, so learn more about them before commit
 
 But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](https://kb.adguard.com/en/general/dns-filtering-syntax). They work similar to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
 
->In AdGuard for iOS, first you have to enable "Avanced mode" in settings in order to get access to DNS blocking.
+>In AdGuard for iOS, first you have to enable "Advanced mode" in settings in order to get access to DNS blocking.
 
 You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup. 
 
