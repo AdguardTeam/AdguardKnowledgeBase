@@ -64,6 +64,8 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Seby DNS](#seby-dns)
 * [puntCAT DNS](#puntcat-dns)
 * [DNSlify DNS](#dnslify-dns)
+* [NextDNS](#nextdns)
+* [RethinkDNS](#rethinkdns)
 
 <a name="adguard-dns"></a>
 
@@ -1182,3 +1184,28 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `185.235.81.5` and `185.235.81.6`             | <a href="sdns://AAAAAAAAAAAADDE4NS4yMzUuODEuNQ">Add to AdGuard</a> |
 | DNS, IPv6      | `2a0d:4d00:81::5` and `2a0d:4d00:81::6`            | <a href="sdns://AAAAAAAAAAAAEVsyYTBkOjRkMDA6ODE6OjVd">Add to AdGuard</a> |
+
+<a name="nextdns"></a>
+
+### NextDNS
+
+[NextDNS](https://nextdns.io/) provides publicly accessible unfiltered resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
+
+### Unfiltered
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://dns.nextdns.io`|<a href="sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A">Add to AdGuard</a>|
+|DNS-over-TLS|`tls://dns.nextdns.io`|<a href="sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8">Add to AdGuard</a>|
+
+<a name="rethinkdns"></a>
+
+### RethinkDNS
+
+[RethinkDNS](https://www.bravedns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker with configurable blocklists.
+
+### Unfiltered
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Add to AdGuard</a>|
