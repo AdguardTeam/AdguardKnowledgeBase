@@ -7,19 +7,21 @@ visible: true
 ---
 
 
-[AdGuard для Android](https://kb.adguard.com/ru/android) и [AdGuard Home](https://kb.adguard.com/ru/home) предоставляют функцию фильтрации DNS трафика. Чтобы узнать больше о DNS-фильтрации, перейдите в [эту статью](https://kb.adguard.com/ru/general/dns-filtering-android) Базы знаний. В сравнении с [традиционной](https://kb.adguard.com/ru/general/how-ad-blocking-works) блокировкой рекламы, DNS-фильтрация является более "грубым" методом и не даёт таких широких возможностей настройки. Она не поддерживает сложный [синтаксис](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), используемый нами в обычных фильтрах, но зато поддерживает упрощённый синтаксис, позволяющий блокировать конкретные домены.
+[AdGuard для Android](https://kb.adguard.com/ru/android), [AdGuard для Windows](https://kb.adguard.com/ru/windows) (Nightly), [AdGuard для Mac](https://kb.adguard.com/ru/macos) (Nightly) и [AdGuard Home](https://kb.adguard.com/ru/home) предоставляют функцию фильтрации DNS-трафика. Чтобы узнать больше о DNS-фильтрации, перейдите в [эту статью](https://kb.adguard.com/ru/general/dns-filtering-android) Базы знаний. В сравнении с [традиционной](https://kb.adguard.com/ru/general/how-ad-blocking-works) блокировкой рекламы, DNS-фильтрация является более "грубым" методом и не даёт таких широких возможностей настройки. С другой стороны, DNS-фильтрация прменяется значительно раньше, ещё до того, как браузеры и приложения отправляют веб-запросы. 
 
-DNS фильтрация поддерживает два типа правил:
+Она не поддерживает сложный [синтаксис](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), используемый нами в обычных фильтрах, но зато поддерживает упрощённый синтаксис, позволяющий блокировать конкретные домены. DNS фильтрация поддерживает следующие типы правил:
 
 * Основные правила фильтрации, такие как [Базовые правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), но с поддержкой ограниченного набора модификаторов:
 
     * [`$important`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#important-modifier)
-    * [`$match-case`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#match-case-modifier)
+    * [`$badfilter`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#badfilter-modifier)
     * Правила с другими модификаторами будут проигнорированы
+
+AdGuard Home поддерживает больше модификаторов, вы можете найти подробную информацию о DNS-синтаксисе AdGuard Home DNS [здесь](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists).
 
 * Правила «Hosts», такие же, как `/etc/hosts`
 
-Примеры:
+#### Примеры:
 
 1. `||example.org^` - блокирует доступ к example.org и ко всем его поддоменам
 2. `@@||example.org^` - разблокирует доступ к example.org и ко всем его поддоменам

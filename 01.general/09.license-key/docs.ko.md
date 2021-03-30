@@ -174,20 +174,28 @@ AdGuard 계정을 사용하여 라이선스 키와 컴퓨터간의 결합 상태
 
 AdGuard [개인 계정](https://auth.adguard.com/login.html)에서 라이선스 키 목록과 현재 상태를 확인할 수 있습니다.
 
-라이선스 키 아래에 라이선스 키가 활성화된 컴퓨터 목록이 표시됩니다. 라이선스 키는 정해진 수의 컴퓨터에서만 활성화할 수 있으며, 재사용 전 이용하지 않는 컴퓨터 중 하나에서 결합을 해제해주세요.
+AdGuard 라이선스 및 구독을 관리하는 방법은 다음과 같습니다.
 
-컴퓨터에서 라이선스 키의 결합을 해제하려면 아래 그림에 표시된 대로 "X" 버튼을 클릭하세요.
+## 갱신 또는 업그레이드
+라이선스 키를 1년 더 연장하고 평생 또는 가족 라이선스(최대 9개의 기기에서 사용 가능)로 전환할 수 있습니다.
 
+## 기기와의 연동을 해제
+라이선스 키 아래에 라이선스 키가 활성화된 기기 목록이 표시됩니다. 라이선스 키는 정해진 수의 기기에서만 활성화할 수 있으며, 재사용 전 이용하지 않는 기기 중 하나에서 결합을 해제해주세요.
+기기에서 라이선스 키의 결합을 해제하려면 아래 그림에 표시된 대로 "X" 버튼을 클릭하세요.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/RESET.png" width="800" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/RESET.png?" width="800" />
+
+## 카드 정보 변경 또는 구독 취소
+
+카드 정보를 변경하거나 구독을 취소하려면 이 구독을 찾아 카드 아이콘을 클릭하세요.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/unsubscribe-change-card-kor.png?" width="900" />
 
 
 <a name="renewal"></a>
 ## 키를 갱신한 후 어떻게 해야 합니까?
 
 AdGuard를 1년 더 갱신한 경우 프로그램/앱을 다시 시작하거나 '라이선스' 섹션으로 이동하여 라이선스 상태를 새로 고쳐 주세요.
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/RENEW.png" width="800" />
 
 <a id="payment"></a>
 

@@ -35,7 +35,6 @@ visible: true
 * [ibksturm](#ibksturm-dns)
 * [switch.ch](#switch.ch-dns)
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
-* [evilvibes.com](#evilvibes.com)
 * [cira.ca](#cira.ca-dns)
 * [ffmuc.net](#ffmuc.net)
 
@@ -544,20 +543,6 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-TLS | Имя провайдера: `OARC` Хост `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` и IPv6: `2620:ff:c000:0:1::64:25` | <a href="sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0">Добавить в AdGuard</a>  |
 
 
-
-<a name="evilvibes.com"></a>
-
-### evilvibes.com
-
-[evilvibes.com](https://github.com/evilvibes/dnscrypt_stamps) — нелогирующий, неблокирующий DNS-резолвер от провайдера evilvibes.com.
-
-| Протокол       | Адрес                             | Локация      |                |
-|----------------|-------------------------------------|---------------|----------------|
-| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.evilvibes.com` IP: `23.111.74.205` | Локация: `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMDUg_0RyX8kcAcMdtRk5SAX5RKs3yiLLS6kdJlnsUpVbnOEdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20">Добавить в AdGuard</a> |
-| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.evilvibes.com` IP: `66.85.30.115` | Локация: `Toronto, Canada` | <a href="sdns://AQcAAAAAAAAADDY2Ljg1LjMwLjExNSDaDhJ4Dk4cHSiJstKoSd4DcSH8xm16_TSA1PBuamRNzB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ">Добавить в AdGuard</a> |
-
-
-
 <a name="cira.ca-dns"></a>
 
 ### DNS-over-TLS and DNS-over-HTTPS Servers by cira.ca
@@ -582,5 +567,7 @@ DNS-серверы с минимальным/ограниченным логир
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Имя провайдера: `dot.ffmuc.net` IP: `195.30.94.28` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Добавить в AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` IP: `195.30.94.28` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNS-over-TLS, IPv4 | Имя провайдера: `dot.ffmuc.net` | <a href="sdns://AwAAAAAAAAAAAAATdGxzOi8vZG90LmZmbXVjLm5ldA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Добавить в AdGuard</a> |
+| DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Добавить в AdGuard</a> |

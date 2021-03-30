@@ -62,7 +62,6 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [DNS Privacy](#dnsprivacy.org-dns)
 * [PI-DNS](#pi-dns)
 * [Seby DNS](#seby-dns)
-* [Evilvibes DNS](#evilvibes-dns)
 * [puntCAT DNS](#puntcat-dns)
 * [DNSlify DNS](#dnslify-dns)
 
@@ -770,6 +769,7 @@ These servers block adult websites and inappropriate contents.
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]`| <a href="sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party) | <a href="sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-Quic | `quic://doh.tiar.app` | <a href="sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw">Add to Adguard</a> |
 | DNS-over-TLS | `tls://dot.tiar.app` | <a href="sdns://AwAAAAAAAAAAAAASdGxzOi8vZG90LnRpYXIuYXBw">Add to AdGuard</a> |
 
 #### Japan DNS Server
@@ -966,8 +966,10 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Hostname: `dot.ffmuc.net` IP: `195.30.94.28` | <a href="sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA">Add to AdGuard</a> |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` IP: `195.30.94.28` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
+| DNS-over-TLS, IPv4 | Hostname: `dot.ffmuc.net` | <a href="sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA">Add to AdGuard</a> |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAAAAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Add to AdGuard</a> |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Add to AdGuard</a> |
 
 <a name="digitale-gesellschaft"></a>
 
@@ -1134,16 +1136,6 @@ PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. Th
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `139.99.222.72`| <a href="sdns://AQcAAAAAAAAADTEzOS45OS4yMjIuNzIgCwVoTw0L4dgal5LC1FbZUtHtLR_rVuV6rVnxO95e4GUbMi5kbnNjcnlwdC1jZXJ0LmRucy5zZWJ5Lmlv">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh-2.seby.io/dns-query` | <a href="sdns://AgcAAAAAAAAAAAANZG9oLTIuc2VieS5pbwovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://dot.seby.io` | <a href="sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8">Add to AdGuard</a> |
-
-<a name="evilvibes-dns"></a>
-
-### Evilvibes DNS
-
-[Evilvibes](https://github.com/evilvibes/dnscrypt_stamps) is a non-logging, uncensored DNS resolver provided by [evilvibes.com](evilvibes.com)
-
-| Protocol       | Address                             | Location      |                |
-|----------------|-------------------------------------|---------------|----------------|
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.evilvibes.com` IP: `104.36.148.2192` | `Vancouver, Canada` | <a href="sdns://AQcAAAAAAAAADjEwNC4zNi4xNDguMTkyICVfoDkWgfKPndAAvW1ke5CZIlsVj92u6qbBHHCZWgG9JzIuZG5zY3J5cHQtY2VydC5ldi1jYW5hZGEuZXZpbHZpYmVzLmNvbQ">Add to AdGuard</a> |
 
 <a name="puntcat-dns"></a>
 

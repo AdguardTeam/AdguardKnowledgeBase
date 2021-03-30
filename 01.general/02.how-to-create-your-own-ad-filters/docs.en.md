@@ -53,6 +53,7 @@ visible: true
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
+            * [$specifichide](#specifichide-modifier)
     * [Advanced capabilites](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
@@ -65,6 +66,7 @@ visible: true
         * [$network](#network-modifier)
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
+        * [noop](#noop-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -362,6 +364,10 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 * `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
+>It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
+
+>**Important!** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android.
+
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
 
@@ -569,6 +575,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
 
+
 <a id="genericblock-modifier"></a>
 ###### **`genericblock`**
 
@@ -576,86 +583,118 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 * `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
 
+
+<a id="specifichide-modifier"></a>
+##### **`specifichide`**
+
+Has an opposite effect to [`generichide`](#generichide-modifier). Disables all specific element hiding and CSS rules, but not general ones.
+
+* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
+
+>Please note that [`$elemhide` modifier](#elemhide-modifier) can disable all cosmetic rules at once.
+
+
 <a id="advanced-modifiers"></a>
 ### Advanced capabilities
 
 These modifiers are able to completely change the behaviour of basic rules.
 
-<a id="removeparam-modifier"></a>
 
+<a id="removeparam-modifier"></a>
 #### **`removeparam`**
 
-Rules with `$removeparam` modifier are intended to effectively extend Stealth Mode's capabilities to strip tracking parameters from pages’ URLs. *Please note*, that such rules are only applied to `GET` requests.
+>`$removeparam` and `$queryprune` are completely interchangeable and are aliases to each other.
 
-> #### Compatibility with different versions of AdGuard
-> Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android.
+Rules with `$removeparam` modifier are intended to to strip query parameters from pages’ URLs. Please note, that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
 
-> #### Multiple rules matching a single request
-> In case if multiple `$removeparam` rules match a single request, we will apply each of them one by one.
+>**Compatibility with different versions of AdGuard**
+>Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android.
 
-> #### Restrictions
-> Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
-
-> #### Compatibility with other modifiers
-> `$removeparam` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important` and `$match-case`. The rules which have any other modifiers are considered invalid and will be rejected.
+>**Restrictions**
+>Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
 ##### Syntax
 
-To specify a parameter affected by the rule one should use the following syntax:
+###### Basic syntax
 
-* `$removeparam=param` -- removes parameter with name `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to
-  `http://example.com/page?another=2`.
+* `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to
+`http://example.com/page?another=2`.
 
-Use `|` to separate parameters:
+###### Regular expressions
 
-* `$removeparam=p1|p2` -- removes parameters `p1` and `p2` from URL queries of any request, e.g. a request to `http://example.com/page?p1=1&p2&p3` will be transformed to `http://example.com/page?p3`.
+You can also use regular expressions to match query parameters and/or their values:
 
-> **Please note** that a blocking rule with `$removeparam` parameter must have at least one parameter specified. For example, rule such as `example.com$removeparam` is considered invalid and will be rejected.
+* `$removeparam=/regex/[options]` -- removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
-Parameters are matched lexicographically. It means that the rule `$removeparam=param` won't strip the parameter named `Param` or `some_param`. If you want to overcome this behavior, you can use regular expressions:
+>**Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
+
+>Important: note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
+
+>We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
+>It is not an options delimiter if:
+>
+>It looks like `$/`,
+>There's another slash character (`/`) to the left of it,
+>There's another unescaped `$` character to the left of that slash character.
+
+###### Remove all query parameters
+
+Specify naked `$removeparam` to remove all query parameters:
+
+* `||example.org^$removeparam` -- removes all query parameters from URLs matching `||example.org^`.
+
+###### Inversion
+
+Use `~` to apply inversion:
+
+* `$removeparam=~param` -- removes all query parameters with the name different from `param`.
+* `$removeparam=~/regex/` -- removes all query parameters that do not match the regex regular expression.
+
+###### Negating `$removeparam`
+
+This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
+
+Use `@@` to negate `$removeparam`:
+
+* `@@||example.org^$removeparam` -- negates all `$removeparam` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeparam=param` -- negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regex/` -- negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
+
+>**Multiple rules matching a single request**
+>In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
+
+##### Examples
+
+* `$removeparam=utm_source` -- removes `utm_source` query parameter from all requests.
+
+* `$removeparam=/utm_.*/` -- removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+
+* `$removeparam=/^utm_source=campaign$/` -- removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
+
+Negating one `$removeparam` rule and replacing it with a different rule:
 
 ```
-removeparam = "/" regex "/" options
+$removeparam=/^(gclid|yclid|fbclid)$/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)$/
+||example.com^$removeparam=/^(yclid|fbclid)$/
 ```
 
-, where 
+With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There's one exception: Google Click ID (gclid) will not be removed from requests to example.com.
 
-* `regex` - a regular expression according to [Perl syntax](http://perldoc.perl.org/perlrequick.html#Search-and-replace),
-* `options` - regular expression options.
+Negating `$removeparam` for all parameters:
 
-The list of supported options for regular expressions:
+```
+$removeparam=/^(utm_source|utm_medium|utm_term)$/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)$/
+@@||example.com^$removeparam
+```
 
-* `i` - makes matching case-insensitive.
+With these rules, specified UTM parameters will be removed from any request save for requests to example.org.
 
-Examples:
+>**Compatibility with other modifiers**
+>`$removeparam` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important` and `$match-case`. The rules which have any other modifiers are considered invalid and will be discarded.
 
-* `$removeparam=/param/` -- removes parameters matching the pattern `param` from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page?some_pArAm=2`
-* `$removeparam=/param/i` -- removes parameters matching the pattern `param` case-insensitively from URL queries of any request, e.g. a request to `http://example.com/page?param=1&some_pArAm=2` will be transformed to `http://example.com/page`
-
-> **Important:** don't forget to escape special characters like `,`, `/` and `$` in regular expressions. Use `\` character for it. For example, escaped comma should look like this: `\,`.
-
-`|`-separated lists also support regular expressions: `$removeparam=p1|/p2/i|/p3/|p4`.
-
-Use exceptions if you don't want to strip some URLs:
-
-1) Example 1:
-
-    ```
-    $removeparam=gclid|yclid|fbclid
-    @@||example.com^$removeparam=gclid
-    ```
-With these rules Google, Yandex and Facebook Click IDs will be stripped out, except that requests to `example.com` won't be stripped of Google Click ID. E.g. `http://google.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://google.com/page`, but `http://example.com/page?gclid=1&fbclid=2&yclid=3` will be transformed to `http://example.com/page?gclid=1`.
-
-2) Example 2:
-
-    ```
-    $removeparam=utm_source|utm_medium|utm_term
-    $removeparam=utm_content|utm_campaign|utm_referrer
-    @@||example.com^$removeparam
-    ```
-With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
-
-> **Please note** that blocking `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to example.com, but `@@||example.com^$urlblock` will.
+>Please note that `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
 
 <a id="important-modifier"></a>
@@ -908,7 +947,8 @@ If you want the rule not to be applied to certain apps, start the app name with 
 * `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 <a id="redirect-modifier"></a>
-#### `redirect`
+#### **`redirect`**
+
 AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
@@ -939,6 +979,20 @@ This rule redirects all requests to script.js to the resource named noop.js.
 This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
 >More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+
+<a id="noop-modifier"></a>
+#### **`noop`**
+
+`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+
+##### `noop` examples:
+
+```
+||example.com$_,removeparam=/^ss\\$/,_,image
+||example.com$replace=/bad/good/,___,~third-party
+```
+
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
