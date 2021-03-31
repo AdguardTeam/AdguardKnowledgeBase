@@ -355,7 +355,7 @@ If there is a `~third-party` modifier, the rule is only applied to the requests 
 <a id="popup-modifier"></a>
 ##### **`popup`**
 
-AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note, that not all the tabs can be closed.
+AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note that not all the tabs can be closed.
 
 ###### `popup`examples
 
@@ -598,7 +598,7 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 >`$removeparam` and `$queryprune` are completely interchangeable and are aliases to each other.
 
-Rules with `$removeparam` modifier are intended to to strip query parameters from pages’ URLs. Please note, that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
+Rules with `$removeparam` modifier are intended to to strip query parameters from pages’ URLs. Please note that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
 
 ##### Syntax
 
@@ -742,7 +742,7 @@ Usually, blocked requests look like a server error to browser. If you use `empty
 
 * `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
 
-> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note, that it will be removed in the future.
+> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note that it will be removed in the future.
 
 > **Compatibility with different versions of AdGuard.** Rules with this modifier are not supported by AdGuard for Safari and iOS.
 
@@ -755,7 +755,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 * `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
 
-> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note, that it will be removed in the future.
+> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note that it will be removed in the future.
 
 > **Compatibility with different versions of AdGuard.** Rules with this modifier are not supported by AdGuard for Safari and iOS.
 
@@ -802,7 +802,7 @@ In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). 
 There are three parts in this rule:
 
 * Regular expression: `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
-* Replacement: `\$1<\/VAST>` (please note, that `$` is escaped)
+* Replacement: `\$1<\/VAST>` (please note that `$` is escaped)
 * Regular expression flags: `i` (insensitive search)
 
 You can see how this rule works here:
@@ -845,7 +845,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 
 >Limitations
 
->1. Please note, that there're a few characters forbidden in the `$csp` value: (`,`), (`$`)
+>1. Please note that there're a few characters forbidden in the `$csp` value: (`,`), (`$`)
 >2. `csp` rules support limited list of modifiers: `domain`, `important`, `subdocument`
 >3. Rules with `report-*` directives are considered invalid.
 
@@ -1120,7 +1120,7 @@ The syntax for extended CSS rules:
 * `#?#` — for element hiding (`#@?#` — for exceptions )
 * `#$?#` — for CSS injection (`#@$?#` — for exceptions )
 
-We **strongly recommend** use these markers any time when you use an extended CSS selector.
+We **strongly recommend** using these markers any time when you use an extended CSS selector.
 
 #### Examples
 
@@ -1129,7 +1129,7 @@ We **strongly recommend** use these markers any time when you use an extended CS
 * `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all it's subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
-> Please note, that now you can apply simple selectors using the ExtCss engine by using a rule like this:
+> Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
 > `#?#div`
 
 <a id="extended-css-has"></a>
@@ -1179,7 +1179,7 @@ This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by
 <a id="extended-css-contains"></a>
 ##### Pseudo-class `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regex flags are supported. Please note, that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
+This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regex flags are supported. Please note that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
 
 **Syntax**
 ```
@@ -1514,7 +1514,7 @@ div:contains(target text) { remove: true; }
 div[class]:has(> a:not([id])) { remove: true; }
 ```
 
-> Please note, that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
+> Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
 <a id="selectors-debugging-mode"></a>
 ##### Selectors debugging mode
@@ -1682,7 +1682,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Compatibility with different versions of AdGuard.** Javascript rules aren't supported by AdGuard for iOS.
 
-We **strongly recommend** use scriptlets instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
+We **strongly recommend** using scriptlets instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
 <a id="javascript-rules-syntax"></a>
 ### Syntax
@@ -1727,7 +1727,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
-> AdGuard supports a lot of different scriptlets. Please note, that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+> AdGuard supports a lot of different scriptlets. Please note that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
 > **Compatibility with different versions of AdGuard.** Scriptlet rules aren't supported by AdGuard for iOS.
 
@@ -1776,8 +1776,7 @@ this: `\]`.
 
 `app` lets you narrow the rule coverage down to a specific application (or a list of applications).
 
-The modifier's behavior and syntax perfectly match the corresponding [$app modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#app) of basic
-rules.
+The modifier's behavior and syntax perfectly match the corresponding [$app modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#app) of basic rules.
 
 `app` examples:
 * `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
@@ -1812,7 +1811,7 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 <a id="for_maintainers"></a>
 ## Information for filters maintainers 
 
-If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note, that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json).  If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
 <a id="pre_processor"></a>
 ### Pre-processor directives
