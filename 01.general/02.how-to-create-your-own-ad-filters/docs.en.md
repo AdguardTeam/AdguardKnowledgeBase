@@ -963,7 +963,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 ||example.org/script.js$script,redirect=noopjs
 ```
 
-This rule redirects all requests to `example.org/script.js` to the resource named `noop.js`.
+This rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
 
 ```
 ||example.org/test.mp4$media,redirect=noopmp4-1s
