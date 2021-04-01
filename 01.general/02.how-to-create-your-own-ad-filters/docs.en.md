@@ -618,11 +618,11 @@ You can also use regular expressions to match query parameters and/or their valu
 > Important: note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
-> It is not an options delimiter if:
+> It is not an options delimiter if all three are true:
 >
-> It looks like `$/`,
-> There's another slash character (`/`) to the left of it,
-> There's another unescaped `$` character to the left of that slash character.
+> 1. It looks like `$/`,
+> 2. There's another slash character (`/`) to the left of it,
+> 3. There's another unescaped `$` character to the left of that slash character.
 
 ###### Remove all query parameters
 
@@ -963,7 +963,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 ||example.org/script.js$script,redirect=noopjs
 ```
 
-This rule redirects all requests to `example.org/script.js` to the resource named `noop.js`.
+This rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
 
 ```
 ||example.org/test.mp4$media,redirect=noopmp4-1s
