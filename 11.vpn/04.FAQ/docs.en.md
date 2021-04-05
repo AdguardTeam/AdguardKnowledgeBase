@@ -20,7 +20,7 @@ A VPN is a multi-purpose digital survival tool. You can use your VPN to:
 * Get discounts when you shop online (local prices and special offers are sometimes more favorable).
 
 ### What makes AdGuard VPN better than other VPNs?
-Over the years we proved that we can be trusted, and 20M+ users agree. We have a strict no logging policy and we even developed our own safe protocol specifically for AdGuard VPN. Our VPN service has several advantages over its competitors. We provide unique features like domain exclusions and custom DNS servers (more [here](LINK NEEDED)).
+Over the years we proved that we can be trusted, and 20M+ users agree. We have a strict no logging policy and we even developed our own safe protocol specifically for AdGuard VPN. Our VPN service has several advantages over its competitors. We provide unique features like domain exclusions and custom DNS servers (more [here](https://kb.adguard.com/en/vpn/features)).
 
 ### What are the advantages of AdGuard VPN protocol?
 While there are other tested and proven solutions, AdGuard offers an unparalleled level of security compared to other popular communication protocols. Combined with high speed and reliability, it's a perfect choice for a multipurpose VPN service like AdGuard.
