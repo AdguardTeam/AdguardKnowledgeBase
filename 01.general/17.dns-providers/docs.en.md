@@ -1191,12 +1191,12 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 [NextDNS](https://nextdns.io/) provides publicly accessible unfiltered resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
 
-### Unfiltered
+#### Unfiltered
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`https://dns.nextdns.io`|<a href="sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A">Add to AdGuard</a>|
-|DNS-over-TLS|`tls://dns.nextdns.io`|<a href="sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8">Add to AdGuard</a>|
+|DNS-over-HTTPS|`dns.nextdns.io`|<a href="sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A">Add to AdGuard</a>|
+|DNS-over-TLS|`dns.nextdns.io`|<a href="sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8">Add to AdGuard</a>|
 
 <a name="rethinkdns"></a>
 
@@ -1204,7 +1204,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 [RethinkDNS](https://www.bravedns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker with configurable blocklists.
 
-### Unfiltered
+#### Unfiltered
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

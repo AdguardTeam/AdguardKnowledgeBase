@@ -37,6 +37,8 @@ visible: true
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 * [cira.ca](#cira.ca-dns)
 * [ffmuc.net](#ffmuc.net)
+* [NextDNS](#nextdns)
+* [RethinkDNS](#rethinkdns)
 
 <a name="adguard-dns"></a>
 
@@ -571,3 +573,28 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Добавить в AdGuard</a> |
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Добавить в AdGuard</a> |
+
+<a name="nextdns"></a>
+
+### NextDNS
+
+[NextDNS](https://nextdns.io/) предоставляет публично доступные нефильтрующие резолверы без логирования вдобавок к настраиваемым фримиум фильтрующим серверам с опциональным логированием.
+
+#### Нефильтрующие
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS| Хост `dns.nextdns.io`|<a href="sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A">Добавить в AdGuard</a>|
+|DNS-over-TLS| Хост `dns.nextdns.io`|<a href="sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8">Добавить в AdGuard</a>|
+
+<a name="rethinkdns"></a>
+
+### RethinkDNS
+
+[RethinkDNS](https://www.bravedns.com/configure) предоставляет DNS-over-HTTPS сервис, работающий как Cloudflare Worker с настраиваемыми списками блокировки.
+
+#### Нефильтрующий
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS| Хост `basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Добавить в AdGuard</a>|
