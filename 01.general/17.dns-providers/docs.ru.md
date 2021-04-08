@@ -604,7 +604,7 @@ DNS-серверы с минимальным/ограниченным логир
 
 ### ControlD DNS
 
-[ControlD](https://controld.com/) is a customizable DNS service that can be used to block unwanted categories of sites (like ads or porn), popular online services like Facebook or TikTok,  or any domain of your choice.
+[ControlD](https://controld.com/) — это настраиваемый DNS-сервис, который можно использовать для блокировки нежелательных категорий сайтов (рекламные, 18+ и т.д.), популярных сервисов (Facebook, TikTok) или любых доменов по вашему выбору.
 
 #### Нефильтрующий
 
