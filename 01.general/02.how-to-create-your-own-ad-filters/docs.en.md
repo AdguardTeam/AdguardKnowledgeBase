@@ -67,6 +67,7 @@ visible: true
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
         * [noop](#noop-modifier)
+        * [$removeheader](#removeheader-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -988,6 +989,106 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 ```
 
 > **Compatibility with different versions of AdGuard.** Available in **Developer builds only at this moment.**
+
+<a id="removeheader-modifier"></a>
+#### **`$removeheader`**
+
+Rules with `$removeheader` modifier are intended to remove headers from HTTP requests and responses. The initial motivation for this rule type is to be able to get rid of the `Refresh` header which is often used to redirect users to an undesirable location. However, this is not the only case where this modifier can be useful.
+
+Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exists independently, rules with it do not depend on the regular basic rules, i.e. regular exception or blocking rules will not affect it. By default, it only affects response headers. However, you can also change it to remove headers from HTTP requests as well.
+
+##### Syntax
+
+**Basic syntax**
+
+* `||example.org^$removeheader=header-name` — removes a **response** header called `header-name`
+* `||example.org^$removeheader=request:header-name` — removes a **request** header called `header-name`
+
+Please note, that `$removeheader` is case-insensitive, but we suggest always using lower case.
+
+**Negating `$removeheader`**
+
+This type of rules works pretty much the same way it works with `$csp` and `$redirect` modifiers.
+
+Use `@@` to negate `$removeheader`:
+
+* `@@||example.org^$removeheader` — negates **all** `$removeheader` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeheader=header` — negates the rule with `$removeheader=header` for any request matching `||example.org^`.
+* `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
+
+> **Multiple rules matching a single request**
+> In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
+
+##### Restrictions
+
+1. Please note that this type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+
+* `access-control-allow-origin`
+* `access-control-allow-credentials`
+* `access-control-allow-headers`
+* `access-control-allow-methods`
+* `access-control-expose-headers`
+* `access-control-max-age`
+* `access-control-request-headers`
+* `access-control-request-method`
+* `origin`
+* `timing-allow-origin`
+* `allow`
+* `cross-origin-embedder-policy`
+* `cross-origin-opener-policy`
+* `cross-origin-resource-policy`
+* `content-security-policy`
+* `content-security-policy-report-only`
+* `expect-ct`
+* `feature-policy`
+* `origin-isolation`
+* `strict-transport-security`
+* `upgrade-insecure-requests`
+* `x-content-type-options`
+* `x-download-options`
+* `x-frame-options`
+* `x-permitted-cross-domain-policies`
+* `x-powered-by`
+* `x-xss-protection`
+* `public-key-pins`
+* `public-key-pins-report-only`
+* `sec-websocket-key`
+* `sec-websocket-extensions`
+* `sec-websocket-accept`
+* `sec-websocket-protocol`
+* `sec-websocket-version`
+* `p3p`
+* `sec-fetch-mode`
+* `sec-fetch-dest`
+* `sec-fetch-site`
+* `sec-fetch-user`
+* `referrer-policy`
+* `content-type`
+* `content-length`
+* `accept`
+* `accept-encoding`
+* `host`
+* `connection`
+* `transfer-encoding`
+* `upgrade`
+
+3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and content type modifiers (e.g. `$script`, `$stylesheet`, etc). The rules which have any other modifiers are considered invalid and will be discarded.
+
+##### Examples
+
+* `||example.org^$removeheader=refresh` — removes `Refresh` header from all HTTP responses returned by `example.org` and it's subdomains.
+* `||example.org^$removeheader=request:x-client-data` — removes `X-Client-Data` header from all HTTP requests.
+* This block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
+
+    ```
+    ||example.org^$removeheader=refresh
+    ||example.org^$removeheader=location
+    @@||example.org/path/$removeheader
+    ```
+
+> **Compatibility with different versions of AdGuard.** Available in **Developer builds only at this moment.**
+
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
