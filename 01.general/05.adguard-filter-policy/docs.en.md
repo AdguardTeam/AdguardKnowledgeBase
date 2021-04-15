@@ -65,6 +65,23 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
 
 
+## AdGuard URL Tracking filter
+
+##### What shall be blocked with this filter?
+
+- This filter shall strip all tracking parameters from URLs.
+
+We define **tracking** as collection of data regarding an individual’s identity or activity across one or more websites. Even if such data is not believed to be personally identifiable, it’s still tracking.
+
+##### Limitations and Exceptions
+
+If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+
+- Rules that would risk lowering user's security level will be removed. 
+- Rules that cause problems with functioning of websites will be removed.
+- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example social media following. Website’s traffic is considered sufficient when it has 30 thousands visitors a month.
+
+
 ## Social Media filter
 
 ##### What shall be blocked with this filter?
