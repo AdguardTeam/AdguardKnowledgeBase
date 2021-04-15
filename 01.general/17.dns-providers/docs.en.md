@@ -66,6 +66,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [DNSlify DNS](#dnslify-dns)
 * [NextDNS](#nextdns)
 * [RethinkDNS](#rethinkdns)
+* [ControlD DNS](#controld)
 
 <a name="adguard-dns"></a>
 
@@ -1213,3 +1214,41 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS|`https://basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Add to AdGuard</a>|
+
+<a name="controld"></a>
+
+### ControlD DNS
+
+[ControlD](https://controld.com/) is a customizable DNS service that can be used to block unwanted categories of sites (like ads or porn), popular online services like Facebook or TikTok,  or any domain of your choice.
+
+#### Unfiltered
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.0`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMA">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDAAAAA">Add to AdGuard</a> |
+| DNS-over-TLS   | `p0.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AwLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
+
+#### Block malware
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.1`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p1`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA">Add to AdGuard</a> |
+| DNS-over-TLS   | `p1.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
+
+##### Block malware + ads
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.2`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMg">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p2`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA">Add to AdGuard</a> |
+| DNS-over-TLS   | `p2.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
+
+##### Block malware + ads + social
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Add to AdGuard</a> |
+| DNS-over-TLS   | `p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
