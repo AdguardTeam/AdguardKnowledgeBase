@@ -14,7 +14,7 @@ visible: true
 <a name="introduction"></a>
 ## Введение
 
-This article is about filters that we create to be used in AdGuard and other ad blocking software (e.g. uBlock Origin). Every filter represents a set of rules in text format which are used by AdGuard apps and programs to filter advertising and privacy-threatening content (such as banners, pop-ups, trackers etc.). Rules specific for a particular Internet segment (German filter, Russian filter etc.), or serving a specific purpose (Social media filter, Tracking Protection filter etc.) are combined into one list — filter — and can be enabled/disabled all at once.
+Эта статья посвящена фильтрам, которые мы создаём для использования в AdGuard и в других блокировщиках рекламы (например, uBlock Origin). Каждый фильтр представляет собой набор правил в текстовом формате, использующийся приложениями и программами AdGuard для фильтрации рекламного контента и контента, угрожающего приватности (такого, как баннеры, попапы, трекеры и т.д.). Правила, нацеленные на конкретный сегмент интернета (Немецкий фильтр, Русский фильтр и т.д.), либо служащие определённой цели (Фильтр счётчиков и систем аналитики, Фильтр виджетов социальных сетей и т.д.) объединяются в один список — фильтр — и могут быть включены или выключены все вместе разом.
 
 <a name="policy"></a>
 ## Политика фильтров AdGuard
@@ -45,6 +45,7 @@ This article is about filters that we create to be used in AdGuard and other ad 
 
 * **Базовый фильтр AdGuard** — убирает рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.to) и доработан нами исходя из жалоб и пожеланий пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt)
 * **Фильтр счетчиков и системы аналитики** — содержит наиболее полный список различных интернет-счётчиков и систем интернет-аналитики. Используйте его, чтобы избежать слежки за вашими действиями онлайн. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
+* **Фильтр параметров отслеживания** — повышает приватность путём удаления параметров отслеживания из адресов страниц и их ресурсов. Когда пользователь включает блокировку параметров отслеживания в модуле Антитрекинга, автоматически включается этот фильтр. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
 * **Фильтр виджетов социальных сетей** — скрывает многочисленные кнопки «Мне нравится», «Поделиться» и подобные им интеграции с социальными сетями на популярных сайтах.
 [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
 * **Фильтр раздражителей** — блокирует раздражающие элементы веб-сайтов, включая уведомления об использовании cookies, всплывающие сообщения внутри страниц и сторонние виджеты, не имеющие отношения к функциональности сайтов (но исключая виджеты и кнопки социальных сетей. Основан на фильтре Fanboy Annoyances List, но не дублирует его. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
