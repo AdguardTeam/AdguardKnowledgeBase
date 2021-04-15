@@ -1,5 +1,5 @@
 ---
-title: 'DNS-фильтрация на устройствах c Android'
+title: 'DNS-фильтрация'
 taxonomy:
     category:
         - docs
