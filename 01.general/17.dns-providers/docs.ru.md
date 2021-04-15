@@ -272,6 +272,7 @@ OpenDNS серверы с функцией блокировки контента
 | DNS, IPv4      | `1.1.1.2` and `1.0.0.2`           | <a href="sdns://AAAAAAAAAAAABzEuMS4xLjI">Добавить в AdGuard</a> |
 | DNS, IPv6      | `2606:4700:4700::1112` and `2606:4700:4700::1002`            | <a href="sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0">Добавить в AdGuard</a> |
 | DNS-over-HTTPS| `https://security.cloudflare-dns.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-TLS | `security.cloudflare-dns.com` | <a href="sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t">Добавить в AdGuard</a> |
 
 #### Блокировка вредоносных и "взрослых" доменов
 
@@ -280,6 +281,7 @@ OpenDNS серверы с функцией блокировки контента
 | DNS, IPv4      | `1.1.1.3` and `1.0.0.3`           | <a href="sdns://AAAAAAAAAAAABzEuMS4xLjM">Добавить в AdGuard</a> |
 | DNS, IPv6      | `2606:4700:4700::1113` and `2606:4700:4700::1003`            | <a href="sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10">Добавить в AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNS-over-TLS | `family.cloudflare-dns.com` | <a href="sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ">Добавить в AdGuard</a> |
 
 <a name="quad9"></a>
 
