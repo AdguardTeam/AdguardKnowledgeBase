@@ -99,7 +99,7 @@ You can also set Referer of your choice by typing it into the Custom Referer fie
 
 **Hide your User-Agent **
 
-When you visit a website, your browser send the server its information. It looks like a text line that is a part of HTTP request beginning with “User-Agent:”. It usually includes the name and version of the browser, operating system, and language settings. We always replace your operating system with Linux as we consider \*nix system users as less interesting for advertisers.
+When you visit a website, your browser send the server its information. It looks like a text line that is a part of HTTP request beginning with “User-Agent:”. It usually includes the name and version of the browser, operating system, and language settings. We strip User-Agent from identifying information so that advertisers can;t obtain it.
 
 You can also set User-Agent of your choice by typing it into the Custom User-Agent field. Leave the field empty to use the default User-Agent.
 
@@ -107,4 +107,3 @@ You can also set User-Agent of your choice by typing it into the Custom User-Age
 
 Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will take you for a proxy server. Sometimes, it helps, and websites ignore your real IP.
 You can set a random IP that you would like to be perceived as yours by simply typing it into the corresponding field. Leave the field empty to use the default IP address.
-
