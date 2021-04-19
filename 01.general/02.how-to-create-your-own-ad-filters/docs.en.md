@@ -959,6 +959,16 @@ The above filter tells the network filtering engine that when the context is `a.
 
 >Please note that [`$domain` modifier](#domain-modifier) is required!
 
+**AdGuard for Safari and AdGuard for iOS** convert $denyallow rule into blocking rule and additional exception rules:
+
+For example, the rule
+```*$script,domain=a.com|~b.com,denyallow=x.com|y.com```
+will be converted to:
+```
+*$script,domain=a.com|~b.com
+@@||x.com$script,domain=a.com|~b.com
+@@||y.com$script,domain=a.com|~b.com
+```
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
