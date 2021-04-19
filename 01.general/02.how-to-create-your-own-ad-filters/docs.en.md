@@ -662,9 +662,9 @@ Use `@@` to negate `$removeparam`:
 Negating one `$removeparam` rule and replacing it with a different rule:
 
 ```
-$removeparam=/^(gclid|yclid|fbclid)$/
-@@||example.com^$removeparam=/^(gclid|yclid|fbclid)$/
-||example.com^$removeparam=/^(yclid|fbclid)$/
+$removeparam=/^(gclid|yclid|fbclid)=/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
+||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
 With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There's one exception: Google Click ID (gclid) will not be removed from requests to example.com.
@@ -672,8 +672,8 @@ With these rules, Google, Yandex, and Facebook Click IDs will be removed from al
 Negating `$removeparam` for all parameters:
 
 ```
-$removeparam=/^(utm_source|utm_medium|utm_term)$/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)$/
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 

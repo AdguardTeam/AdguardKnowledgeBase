@@ -663,9 +663,9 @@ domain.com###banner
 Отмена одного правила `$removeparam` и замена его другим:
 
 ```
-$removeparam=/^(gclid|yclid|fbclid)$/
-@@||example.com^$removeparam=/^(gclid|yclid|fbclid)$/
-||example.com^$removeparam=/^(yclid|fbclid)$/
+$removeparam=/^(gclid|yclid|fbclid)=/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
+||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
 При помощи этих правил из всех запросов убираются Click ID от Google, Yandex, и Facebook. Есть одно исключение: Google Click ID (gclid) не будет убран для запросов к example.com.
@@ -673,8 +673,8 @@ $removeparam=/^(gclid|yclid|fbclid)$/
 Отмена `$removeparam` для всех параметров:
 
 ```
-$removeparam=/^(utm_source|utm_medium|utm_term)$/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)$/
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
