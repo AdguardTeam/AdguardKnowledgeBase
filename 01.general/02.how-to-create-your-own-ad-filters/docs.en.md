@@ -105,6 +105,11 @@ visible: true
         * [Hints syntax](#hints_syntax)
         * [NOT_OPTIMIZED hint](#not_optimized)
         * [PLATFORM and NOT_PLATFORM hints](#platform_not_platform)
+* [How to debug filtering rules](#how-to-debug)
+    * [Filtering log](#debug-filtering-log)
+    * [Selectors debugging mode](#selectors-debugging-mode)
+        * [Testing extended selectors](#testing-extended-selectors)
+    * [Debugging scriptlets](#debug-scriptlets)
 * [Good luck with creating filters!](#good-luck)
 
 <a id="introduction"></a>
@@ -1617,39 +1622,6 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
-<a id="selectors-debugging-mode"></a>
-##### Selectors debugging mode
-
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
-
-**Debugging a single selector**
-```
-#$#.banner { display: none; debug: true; }
-```
-
-**Enabling global debug**
-```
-#$#.banner { display: none; debug: global; }
-```
-
-<a id="testing-extended-selectors"></a>
-##### Testing extended selectors
-
-To load ExtendedCss to a current page, copy and execute the following code in a browser console:
-```
-!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
-C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
-(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
-```
-
-Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
-
-You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
-```
-var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
-
-ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
-```
 
 <a id="html-filtering-rules"></a>
 ## HTML filtering rules
@@ -2149,6 +2121,66 @@ This rule will be available for every platform except Safari extension, iOS, and
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
 ```
+
+
+<a id="how-to-debug"></a>
+## How to debug filtering rules
+
+It may be possible to create simple filtering rules "in your head", but for anything even slightly more complicated you'd need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers, but most AdGuard products provide another one: Filtering log.
+
+<a id="debug-filtering-log"></a>
+### Filtering log
+
+Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+
+Depending on which AdGuard product you're using, Filtering log can be located in different places. 
+
+* In **AdGuard for Windows** you'll find it inside *Ad Blocker* tab or via the tray menu;
+* In **AdGuard for Mac** it's under *Settings > Advanced > Filtering log*;
+* In **AdGuard for Android** it's a separate item in the side menu;
+* In **AdGuard browser extensions** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon.
+
+> In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard doesn't see the web requests and therefore can't display them.
+
+<a id="selectors-debugging-mode"></a>
+### Selectors debugging mode
+
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
+
+**Debugging a single selector**
+```
+#$#.banner { display: none; debug: true; }
+```
+
+**Enabling global debug**
+```
+#$#.banner { display: none; debug: global; }
+```
+
+<a id="testing-extended-selectors"></a>
+#### Testing extended selectors
+
+To load ExtendedCss to a current page, copy and execute the following code in a browser console:
+```
+!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
+C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
+(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
+```
+
+Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+
+You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
+```
+var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
+
+ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
+```
+
+<a id="debug-scriptlets"></a>
+### Debugging scriptlets
+
+If you're using AdGuard browser extension and want to debug a [scriptlet rule](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#scriptlets), you can get additional information by simpy having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser's console.
+
 
 <a id="good-luck"></a>
 ## Good luck with creating filters!
