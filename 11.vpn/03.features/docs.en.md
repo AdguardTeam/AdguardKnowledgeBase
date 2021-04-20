@@ -105,7 +105,7 @@ Turn off the switch next to any app to tell AdGuard VPN to ignore this app's tra
 
 ### Kill Switch
 
-If anonymity is absolutely essential for you, enable **Kill Switch** from the **Settings** tab. If connection drops for any reason, Kill Switch will block access to the Internet, thus preventing your anonyymity from becoming compromised.  
+If anonymity is absolutely essential for you, enable **Kill Switch** from the **Settings** tab. If connection drops for any reason, Kill Switch will block access to the Internet, thus preventing your anonymity from becoming compromised.  
 
 ### VPN mode
 
