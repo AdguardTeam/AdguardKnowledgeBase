@@ -67,6 +67,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [NextDNS](#nextdns)
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
+* [Mullvad](#mullvad)
 
 <a name="adguard-dns"></a>
 
@@ -1252,3 +1253,23 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | DNS, IPv4      | `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Add to AdGuard</a> |
 | DNS-over-TLS   | `p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
+
+<a name="mullvad"></a>
+
+### Mullvad
+
+[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles)
+
+#### Non-filtering
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS   | `doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Add to AdGuard</a> |
+
+#### Adblocking
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS   | `adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Add to AdGuard</a> |
