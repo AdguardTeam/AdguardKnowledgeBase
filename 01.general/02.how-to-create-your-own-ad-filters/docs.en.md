@@ -84,7 +84,7 @@ visible: true
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
             * [Selectors debugging mode](#selectors-debugging-mode)
-            * [Testing extended selectors](#testing-extended-selectors)
+            * [Testing extended selectors without AdGuard](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Special attributes](#html-filtering-rules-attributes)
@@ -2137,30 +2137,39 @@ Depending on which AdGuard product you're using, Filtering log can be located in
 
 * In **AdGuard for Windows** you'll find it inside *Ad Blocker* tab or via the tray menu;
 * In **AdGuard for Mac** it's under *Settings > Advanced > Filtering log*;
-* In **AdGuard for Android** it's a separate item in the side menu;
-* In **AdGuard browser extensions** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon.
+* In **AdGuard for Android** it's a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant. 
+* In **AdGuard browser extensions** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
 
 > In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard doesn't see the web requests and therefore can't display them.
 
 <a id="selectors-debugging-mode"></a>
 ### Selectors debugging mode
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectorsб depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there.
+
+#### Examples
 
 **Debugging a single selector**
+
+When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+
 ```
-#$#.banner { display: none; debug: true; }
+#$?#.banner { display: none; debug: true; }
 ```
 
 **Enabling global debug**
+
+When the value of the `debug` property is `global`, the console will display information about all selectors that have matches on the current page, for all ExtendedCSS rules from any of the enabled filters.
+
 ```
-#$#.banner { display: none; debug: global; }
+#$?#.banner { display: none; debug: global; }
 ```
 
 <a id="testing-extended-selectors"></a>
-#### Testing extended selectors
+#### Testing extended selectors without AdGuard
 
-To load ExtendedCss to a current page, copy and execute the following code in a browser console:
+If you don't have AdGuard installed, you can still test extended selectors, but you'll have to load ExtendedCSS to the current page first. To do so, copy and execute the following code in the browser console:
+
 ```
 !function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
 C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
@@ -2180,6 +2189,15 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 ### Debugging scriptlets
 
 If you're using AdGuard browser extension and want to debug a [scriptlet rule](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#scriptlets), you can get additional information by simpy having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser's console.
+
+The following scriptlets may be especially useful for debug purposes:
+
+[`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
+[`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
+[`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
+[`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
+[`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
+[`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
 
 <a id="good-luck"></a>
