@@ -2147,16 +2147,11 @@ Depending on which AdGuard product you're using, Filtering log can be located in
 
 Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
 
-`array`: time (in milliseconds) that it took to apply the selector on the page, for each of the instances that it's been applied
-
+`array`: time that it took to apply the selector on the page, for each of the instances that it's been applied (in milliseconds)
 `length`: total number of times that the selector has been applied on the page
-
 `mean`: mean time that it took to apply the selector on the page
-
 `stddev`: standard deviation
-
 `squaredSum`: sum of squared deviations from the mean
-
 `sum`: total time it took to apply the selector on the page across all instances
 
 
