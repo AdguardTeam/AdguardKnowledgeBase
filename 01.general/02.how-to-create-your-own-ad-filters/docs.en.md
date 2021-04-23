@@ -1236,6 +1236,9 @@ We **strongly recommend** using these markers any time when you use an extended 
 > Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
 > `#?#div`
 
+> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the artcile.
+
+
 <a id="extended-css-has"></a>
 ##### Pseudo-class `:has()`
 
@@ -1619,9 +1622,6 @@ div[class]:has(> a:not([id])) { remove: true; }
 ```
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
-
-
-> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the artcile.
 
 
 <a id="html-filtering-rules"></a>
