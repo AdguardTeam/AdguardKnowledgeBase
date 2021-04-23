@@ -83,8 +83,6 @@ visible: true
             * [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Псевдокласс `:upward()`](#extended-css-upward)
             * [Псевдокласс `:remove()` и псевдо-свойство `remove`](#remove-pseudos)
-            * [Режим отладки селекторов](#selectors-debugging-mode)
-            * [Тестирование расширенных селекторов](#testing-extended-selectors)
     * [Правила фильтрации HTML](#html-filtering-rules)
         * [Синтаксис](#html-filtering-rules-syntax)
         * [Специальные атрибуты](#html-filtering-rules-attributes)
@@ -105,6 +103,11 @@ visible: true
         * [Синтаксис Hints](#hints_syntax)
         * [Оптимизация фильтров и NOT_OPTIMIZED hint](#not_optimized)
         * [PLATFORM и NOT_PLATFORM hints](#platform_not_platform)
+* [Как отлаживать работу фильтров](#how-to-debug)
+    * [Журнал фильтрации](#debig-filtering-log)
+    * [Режим отладки селекторов](#selectors-debugging-mode)
+        * [Тестирование расширенных селекторов](#testing-extended-selectors)
+    * [Отладка скриптлетов](#debug-scriptlets)
 * [Удачи в составлении своих фильтров!](#good-luck)
 
 <a id="introduction"></a>
@@ -1611,39 +1614,6 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Пожалуйста, обратите внимание, если используется псевдокласс `:remove()` или псевдо-свойство `remove`, то другие свойства этого стиля будут проигнорированы. 
 
-<a id="selectors-debugging-mode"></a>
-#### Режим отладки селекторов
-
-Иногда вам может понадобиться проверить работу того или иного селектора или стиля. Чтобы сделать это без прямого взаимодействия с javascript, вы можете воспользоваться особым свойством стиля `debug`. Когда `ExtendedCss` сталкивается с этим свойством, он включает режим отладки, либо для отдельного селектора, либо для всех селекторов — в зависимости от значения `debug`. 
-
-**Отладка отдельного селектора**
-```
-#$#.banner { display: none; debug: true; }
-```
-
-**Включение глобальной отладки**
-```
-#$#.banner { display: none; debug: global; }
-```
-
-<a id="testing-extended-selectors"></a>
-#### Тестирование расширенных селекторов
-
-Чтобы загрузить ExtendedCss на текущую страницу, скопируйте и запустите в браузерной консоли следующий код:
-```
-!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
-C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
-(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
-```
-
-Как вариант, установите пользовательский скрипт "ExtendedCssDebugger": https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
-
-Вы теперь можете использовать конструктор `ExtendedCss` в глобальном масштабе, а его метод `ExtendedCss.query` — как `document.querySelectorAll`.
-```
-var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
-
-ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
-```
  
 <a id="html-filtering-rules"></a>
 ## Правила фильтрации HTML
@@ -2171,6 +2141,97 @@ example.org#@#.adBanner
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
 ```
+
+<a id="how-to-debug"></a>
+## Как отлаживать правила фильтрации
+
+Хоть самые простые правила фильтрации и возможно придумать "в голове", для чего-либо даже немного более сложного вам потребуются дополнительная помощь в отладке и итерировании. Для этой цели существуют различные инструменты. Вы можете использовать Инструменты разработчиа в Chrome и их аналоги в других браузерах, но большинство продуктов AdGuard предоставляют и другой инструмент: Журнал фильтрации.
+
+<a id="debug-filtering-log"></a>
+### Журнал фильтрации
+
+Журнал фильтрации — продвинутый инструмент, который полезен в основном для разработчиков фильтров. В нём отображаются все веб-запросы, проходящие через AdGuard, даётся исчерпывающая информация по каждому из них, предлагаются различные опции сортировки и другие полезные возможности.
+
+В зависимости от используемого вами продукта AdGuard, Журнал фильтрации может находиться в различных пунктах меню.
+
+* В **AdGuard для Windows** вы найдёте его во вкладке настроек *Антибаннер* или через меню трея;
+* В **AdGuard для Mac** он располагается в разделе *Настройки > Дополнительно > Журнал запросов*;
+* В **AdGuard для Android** это отдельный пункт бокового меню. Также в журнал фильтрации отдельного приложения или сайта можно перейти из Помощника. 
+* В **Браузерных расширениях AdGuard** он находится во вкладке настроек *Дополнительно*, а также доступен после правого клика по иконке расширения. Только браузеры на основе Chromium и Firefox отображают **правила скрытия элементов** (включая CSS, ExtCSS) и **JS-правила и скриптлеты** в своих Журналах фильтрации.
+
+> В **AdGuard для iOS** и в **AdGuard для Safari** Журнал фильтрации отсутствует из-за особенностей реализации блокировщиков контента в Safari. AdGuard сам не видит веб-запросы и поэтому не может отображать их.
+
+<a id="selectors-debugging-mode"></a>
+### Режим отладки селекторов
+
+Иногда у вас может возникнуть необходимость проверить быстродействие того или иного селектора или таблицы стилей. Чтобы сделать это без непосредственного взаимодействия с JavaScript, вы можете использовать свойство стиля `debug`. Когда `ExtendedCSS` встречает это свойство, он включает режим отладки для конкретного селектора или для всех селекторов, в зависимости от значения `debug`. Откройте консоль браузера, находясь на веб-странице, чтобы посмотреть статистику по времени, затраченному на применение селектора(-ов). Режим отладки покажет следующую статистику для каждого из отлаживаемых селекторов:
+
+`array`: время, которое ушло на применение селектора на странице, для каждого из случаев применения этого селектора (в миллисекундах)
+`length`: общее количество раз, когда на странице был применён данный селектор
+`mean`: среднее время, ушедшее на применение данного селектора на странице
+`stddev`: стандартное отклонение
+`squaredSum`: сумма квадратичных отклонений от среднего значения
+`sum`: общее время, ушедшее на все применения данного селектора на текущей странице
+
+
+#### Примеры
+
+**Отладка конкретного селектора**
+
+Когда значение свойства `debug` равно `true`, информация только по этому селектору будет отображена в консоли браузера.
+
+```
+#$?#.banner { display: none; debug: true; }
+```
+
+**Включение глобальной отладки**
+
+Когда значение свойства `debug` равно `global`, в консоли будет отображаться информация по всем ExtendedCSS-селекторам, которые были применены на данной странице, для всех ExtendedCSS-правил из любого из включённых фильтров.
+
+```
+#$?#.banner { display: none; debug: global; }
+```
+
+<a id="testing-extended-selectors"></a>
+#### Тестирование расширенных селекторов без AdGuard
+
+Если у вас не установлен AdGuard, вы всё равно можете тестировать расширенные селекторы, но для этого вам потребуется сначала загрузить в текущую страницу ExtendedCSS. ЧТобы сделать это, скопируйте и запустите следующий код в консоли браузера:
+
+```
+!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
+C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
+(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
+```
+
+В качестве альтернативы вы можете установить пользовательский скрипт "ExtendedCssDebugger": https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+
+Теперь вы можете использовать конструктор `ExtendedCss` в глобальном масштабе, а его метод `ExtendedCss.query` как `document.querySelectorAll`.
+```
+var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
+
+ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
+```
+
+<a id="debug-scriptlets"></a>
+### Отладка скриптлетов
+
+Если вы используете браузерное расширение AdGuard и хотите отладить [скриптлет-правило](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#scriptlets), вы можете получить дополнительную информацию, просто открыв Журнал фильтрации. В этом случае, скриптлеты переключатся в режим отладки и будут писать больше информации в браузерную консоль.
+
+Следующие скриптлеты могут быть особенно полезны в целях отладки:
+
+[`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
+[`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
+[`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
+[`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
+[`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
+[`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
+
+Следующие скриптлеты могут быть полезны в целях отладки, когда применяются без каких бы то ни было параметров:
+
+[`requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
+[`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
+[`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
+
 
 <a id="good-luck"></a>
 ## Удачи в составлении своих фильтров!
