@@ -37,6 +37,9 @@ visible: true
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 * [cira.ca](#cira.ca-dns)
 * [ffmuc.net](#ffmuc.net)
+* [NextDNS](#nextdns)
+* [RethinkDNS](#rethinkdns)
+* [ControlD DNS](#controld)
 
 <a name="adguard-dns"></a>
 
@@ -269,6 +272,7 @@ OpenDNS серверы с функцией блокировки контента
 | DNS, IPv4      | `1.1.1.2` and `1.0.0.2`           | <a href="sdns://AAAAAAAAAAAABzEuMS4xLjI">Добавить в AdGuard</a> |
 | DNS, IPv6      | `2606:4700:4700::1112` and `2606:4700:4700::1002`            | <a href="sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0">Добавить в AdGuard</a> |
 | DNS-over-HTTPS| `https://security.cloudflare-dns.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-TLS | `security.cloudflare-dns.com` | <a href="sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t">Добавить в AdGuard</a> |
 
 #### Блокировка вредоносных и "взрослых" доменов
 
@@ -277,6 +281,7 @@ OpenDNS серверы с функцией блокировки контента
 | DNS, IPv4      | `1.1.1.3` and `1.0.0.3`           | <a href="sdns://AAAAAAAAAAAABzEuMS4xLjM">Добавить в AdGuard</a> |
 | DNS, IPv6      | `2606:4700:4700::1113` and `2606:4700:4700::1003`            | <a href="sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10">Добавить в AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
+| DNS-over-TLS | `family.cloudflare-dns.com` | <a href="sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ">Добавить в AdGuard</a> |
 
 <a name="quad9"></a>
 
@@ -571,3 +576,66 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Добавить в AdGuard</a> |
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Добавить в AdGuard</a> |
+
+<a name="nextdns"></a>
+
+### NextDNS
+
+[NextDNS](https://nextdns.io/) предоставляет публично доступные нефильтрующие резолверы без логирования вдобавок к настраиваемым фримиум фильтрующим серверам с опциональным логированием.
+
+#### Нефильтрующие
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS| Хост `dns.nextdns.io`|<a href="sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A">Добавить в AdGuard</a>|
+|DNS-over-TLS| Хост `dns.nextdns.io`|<a href="sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8">Добавить в AdGuard</a>|
+
+<a name="rethinkdns"></a>
+
+### RethinkDNS
+
+[RethinkDNS](https://www.bravedns.com/configure) предоставляет DNS-over-HTTPS сервис, работающий как Cloudflare Worker с настраиваемыми списками блокировки.
+
+#### Нефильтрующий
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS| Хост `basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Добавить в AdGuard</a>|
+
+<a name="controld"></a>
+
+### ControlD DNS
+
+[ControlD](https://controld.com/) — это настраиваемый DNS-сервис, который можно использовать для блокировки нежелательных категорий сайтов (рекламные, 18+ и т.д.), популярных сервисов (Facebook, TikTok) или любых доменов по вашему выбору.
+
+#### Нефильтрующий
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.0`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDAAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | `p0.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AwLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+
+#### Блокирует вредоносные сайты
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.1`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p1`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | `p1.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+
+##### Блокирует вредоносные сайты + рекламу
+
+| Протокол       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.2`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMg">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p2`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | `p2.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+
+##### Блокирует вредоносные сайты + рекламу + соцмедиа
+
+| Протокол       | Адрес                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | `p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |

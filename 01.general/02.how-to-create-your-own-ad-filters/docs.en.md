@@ -67,6 +67,7 @@ visible: true
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
         * [noop](#noop-modifier)
+        * [$removeheader](#removeheader-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -82,8 +83,6 @@ visible: true
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
-            * [Selectors debugging mode](#selectors-debugging-mode)
-            * [Testing extended selectors](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Special attributes](#html-filtering-rules-attributes)
@@ -104,6 +103,11 @@ visible: true
         * [Hints syntax](#hints_syntax)
         * [NOT_OPTIMIZED hint](#not_optimized)
         * [PLATFORM and NOT_PLATFORM hints](#platform_not_platform)
+* [How to debug filtering rules](#how-to-debug)
+    * [Filtering log](#debug-filtering-log)
+    * [Selectors debugging mode](#selectors-debugging-mode)
+        * [Testing extended selectors](#testing-extended-selectors)
+    * [Debugging scriptlets](#debug-scriptlets)
 * [Good luck with creating filters!](#good-luck)
 
 <a id="introduction"></a>
@@ -661,9 +665,9 @@ Use `@@` to negate `$removeparam`:
 Negating one `$removeparam` rule and replacing it with a different rule:
 
 ```
-$removeparam=/^(gclid|yclid|fbclid)$/
-@@||example.com^$removeparam=/^(gclid|yclid|fbclid)$/
-||example.com^$removeparam=/^(yclid|fbclid)$/
+$removeparam=/^(gclid|yclid|fbclid)=/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
+||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
 With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There's one exception: Google Click ID (gclid) will not be removed from requests to example.com.
@@ -671,8 +675,8 @@ With these rules, Google, Yandex, and Facebook Click IDs will be removed from al
 Negating `$removeparam` for all parameters:
 
 ```
-$removeparam=/^(utm_source|utm_medium|utm_term)$/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)$/
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
@@ -989,6 +993,106 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 
 > **Compatibility with different versions of AdGuard.** Available in **Developer builds only at this moment.**
 
+<a id="removeheader-modifier"></a>
+#### **`$removeheader`**
+
+Rules with `$removeheader` modifier are intended to remove headers from HTTP requests and responses. The initial motivation for this rule type is to be able to get rid of the `Refresh` header which is often used to redirect users to an undesirable location. However, this is not the only case where this modifier can be useful.
+
+Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exists independently, rules with it do not depend on the regular basic rules, i.e. regular exception or blocking rules will not affect it. By default, it only affects response headers. However, you can also change it to remove headers from HTTP requests as well.
+
+##### Syntax
+
+**Basic syntax**
+
+* `||example.org^$removeheader=header-name` — removes a **response** header called `header-name`
+* `||example.org^$removeheader=request:header-name` — removes a **request** header called `header-name`
+
+Please note, that `$removeheader` is case-insensitive, but we suggest always using lower case.
+
+**Negating `$removeheader`**
+
+This type of rules works pretty much the same way it works with `$csp` and `$redirect` modifiers.
+
+Use `@@` to negate `$removeheader`:
+
+* `@@||example.org^$removeheader` — negates **all** `$removeheader` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeheader=header` — negates the rule with `$removeheader=header` for any request matching `||example.org^`.
+* `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
+
+> **Multiple rules matching a single request**
+> In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
+
+##### Restrictions
+
+1. Please note that this type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+
+* `access-control-allow-origin`
+* `access-control-allow-credentials`
+* `access-control-allow-headers`
+* `access-control-allow-methods`
+* `access-control-expose-headers`
+* `access-control-max-age`
+* `access-control-request-headers`
+* `access-control-request-method`
+* `origin`
+* `timing-allow-origin`
+* `allow`
+* `cross-origin-embedder-policy`
+* `cross-origin-opener-policy`
+* `cross-origin-resource-policy`
+* `content-security-policy`
+* `content-security-policy-report-only`
+* `expect-ct`
+* `feature-policy`
+* `origin-isolation`
+* `strict-transport-security`
+* `upgrade-insecure-requests`
+* `x-content-type-options`
+* `x-download-options`
+* `x-frame-options`
+* `x-permitted-cross-domain-policies`
+* `x-powered-by`
+* `x-xss-protection`
+* `public-key-pins`
+* `public-key-pins-report-only`
+* `sec-websocket-key`
+* `sec-websocket-extensions`
+* `sec-websocket-accept`
+* `sec-websocket-protocol`
+* `sec-websocket-version`
+* `p3p`
+* `sec-fetch-mode`
+* `sec-fetch-dest`
+* `sec-fetch-site`
+* `sec-fetch-user`
+* `referrer-policy`
+* `content-type`
+* `content-length`
+* `accept`
+* `accept-encoding`
+* `host`
+* `connection`
+* `transfer-encoding`
+* `upgrade`
+
+3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and content type modifiers (e.g. `$script`, `$stylesheet`, etc). The rules which have any other modifiers are considered invalid and will be discarded.
+
+##### Examples
+
+* `||example.org^$removeheader=refresh` — removes `Refresh` header from all HTTP responses returned by `example.org` and it's subdomains.
+* `||example.org^$removeheader=request:x-client-data` — removes `X-Client-Data` header from all HTTP requests.
+* This block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
+
+    ```
+    ||example.org^$removeheader=refresh
+    ||example.org^$removeheader=location
+    @@||example.org/path/$removeheader
+    ```
+
+> **Compatibility with different versions of AdGuard.** Available in **Developer builds only at this moment.**
+
+
 <a id="non-basic-rules"></a>
 # Non-basic rules
 
@@ -1131,6 +1235,9 @@ We **strongly recommend** using these markers any time when you use an extended 
 
 > Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
 > `#?#div`
+
+> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the artcile.
+
 
 <a id="extended-css-has"></a>
 ##### Pseudo-class `:has()`
@@ -1516,39 +1623,6 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
-<a id="selectors-debugging-mode"></a>
-##### Selectors debugging mode
-
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the "debug"-mode either for a single selector or for all selectors depending on the `debug` value.
-
-**Debugging a single selector**
-```
-#$#.banner { display: none; debug: true; }
-```
-
-**Enabling global debug**
-```
-#$#.banner { display: none; debug: global; }
-```
-
-<a id="testing-extended-selectors"></a>
-##### Testing extended selectors
-
-To load ExtendedCss to a current page, copy and execute the following code in a browser console:
-```
-!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
-C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
-(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
-```
-
-Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
-
-You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
-```
-var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
-
-ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
-```
 
 <a id="html-filtering-rules"></a>
 ## HTML filtering rules
@@ -1749,6 +1823,9 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+
+> For more information on how to debug scriptlets, jump to [this section](#debug-scriptlets) of the artcile.
+
 
 <a id="non-basic-rules-modifiers"></a>(#)
 ## Modifiers
@@ -2048,6 +2125,98 @@ This rule will be available for every platform except Safari extension, iOS, and
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
 ```
+
+
+<a id="how-to-debug"></a>
+## How to debug filtering rules
+
+It may be possible to create simple filtering rules "in your head", but for anything even slightly more complicated you'd need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers, but most AdGuard products provide another one: Filtering log.
+
+<a id="debug-filtering-log"></a>
+### Filtering log
+
+Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+
+Depending on which AdGuard product you're using, Filtering log can be located in different places. 
+
+* In **AdGuard for Windows** you'll find it inside *Ad Blocker* tab or via the tray menu;
+* In **AdGuard for Mac** it's under *Settings > Advanced > Filtering log*;
+* In **AdGuard for Android** it's a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant. 
+* In **AdGuard browser extensions** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
+
+> In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard doesn't see the web requests and therefore can't display them.
+
+<a id="selectors-debugging-mode"></a>
+### Selectors debugging mode
+
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
+
+`array`: time that it took to apply the selector on the page, for each of the instances that it's been applied (in milliseconds)
+`length`: total number of times that the selector has been applied on the page
+`mean`: mean time that it took to apply the selector on the page
+`stddev`: standard deviation
+`squaredSum`: sum of squared deviations from the mean
+`sum`: total time it took to apply the selector on the page across all instances
+
+
+#### Examples
+
+**Debugging a single selector**
+
+When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+
+```
+#$?#.banner { display: none; debug: true; }
+```
+
+**Enabling global debug**
+
+When the value of the `debug` property is `global`, the console will display information about all ExtendedCSS selectors that have matches on the current page, for all ExtendedCSS rules from any of the enabled filters.
+
+```
+#$?#.banner { display: none; debug: global; }
+```
+
+<a id="testing-extended-selectors"></a>
+#### Testing extended selectors without AdGuard
+
+If you don't have AdGuard installed, you can still test extended selectors, but you'll have to load ExtendedCSS to the current page first. To do so, copy and execute the following code in the browser console:
+
+```
+!function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
+C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefore(C,s)}
+(document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
+```
+
+Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+
+You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
+```
+var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
+
+ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
+```
+
+<a id="debug-scriptlets"></a>
+### Debugging scriptlets
+
+If you're using AdGuard browser extension and want to debug a [scriptlet rule](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#scriptlets), you can get additional information by simpy having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser's console.
+
+The following scriptlets may be especially useful for debug purposes:
+
+[`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
+[`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
+[`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
+[`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
+[`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
+[`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
+
+The following scriptlets may be used for debug purposes when applied without any parameters:
+
+[`requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
+[`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
+[`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
+
 
 <a id="good-luck"></a>
 ## Good luck with creating filters!
