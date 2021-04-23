@@ -1621,6 +1621,9 @@ div[class]:has(> a:not([id])) { remove: true; }
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
 
+> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the artcile.
+
+
 <a id="html-filtering-rules"></a>
 ## HTML filtering rules
 
@@ -1820,6 +1823,9 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+
+> For more information on how to debug scriptlets, jump to [this section](#debug-scriptlets) of the artcile.
+
 
 <a id="non-basic-rules-modifiers"></a>(#)
 ## Modifiers

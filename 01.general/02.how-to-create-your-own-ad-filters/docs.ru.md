@@ -1614,6 +1614,8 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Пожалуйста, обратите внимание, если используется псевдокласс `:remove()` или псевдо-свойство `remove`, то другие свойства этого стиля будут проигнорированы. 
 
+> Информация об отладке ExtendedCSS-селекторов доступна в [этой секции](#selectors-debugging-mode) статьи.
+
  
 <a id="html-filtering-rules"></a>
 ## Правила фильтрации HTML
@@ -1819,6 +1821,8 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 Это правило применит соответствующий скриптлет только в браузере Safari на Mac.
 
 Больше информации о редиректах можно найти [на GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+
+> Информация об отладке скриптлетов доступна в [этом разделе](#debug-scriptlets) статьи.
 
 <a id="non-basic-rules-modifiers"></a>
 ## Модификаторы
