@@ -83,8 +83,6 @@ visible: true
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
-            * [Selectors debugging mode](#selectors-debugging-mode)
-            * [Testing extended selectors without AdGuard](#testing-extended-selectors)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Special attributes](#html-filtering-rules-attributes)
