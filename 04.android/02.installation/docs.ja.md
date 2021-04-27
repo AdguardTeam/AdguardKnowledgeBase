@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: AdGuard for Android のインストール方法
 taxonomy:
     category:
         - docs
