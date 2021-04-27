@@ -26,23 +26,10 @@ taxonomy:
 
 で**インストールが完了します**。
 
-<div style="display:flex">
-     <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg" style="border: 1px solid #efefef; max-width: 300px; padding: 2px;">
-     </div>
-     <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d2.jpg" style="border: 1px solid #efefef; max-width: 300px; padding: 2px;">
-     </div>
-</div>
-
-<div style="display:flex">
-     <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d3.jpg" style="border: 1px solid #efefef; max-width: 300px; padding: 2px;">
-     </div>
-     <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d4.jpg" style="border: 1px solid #efefef; max-width: 300px; padding: 2px;">
-     </div>
-</div>
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d2.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d3.jpg" width="400" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d4.jpg" width="400" />
 
 * 【Android 7の場合】お使いのデバイスで「設定」→「セキュリティ」より「提供元不明のアプリ」をタップしてトグルをONにする。
 * 【Android 6の場合】[設定]を開き、[システムとデバイス]から[その他の設定]を選択。[セキュリティ]の[提供元不明のアプリ]をオンにし、システム警告ウィンドウが開きましたらOKをタップ。
