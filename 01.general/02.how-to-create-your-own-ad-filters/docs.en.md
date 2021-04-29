@@ -545,6 +545,8 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 
 * `@@||example.com^$stealth` — disables `Stealth Mode` for `example.com` (and subdomains) requests.
 * `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script `domain.com` (and subdomains) requests on `example.com` and all subdomains.
+* Please note, that blocking cookies and removing tracking parameters are achieved using rules with `$cookie` and `$removeparam` modifiers. `$stealth` - exceptions won't affect these rules. If you need t
+o completely disable all stealth mode features for a given URL, you'll need to add all three: `@@||example.org^$stealth,removeparam,cookie`
 
 > **Compatibility with different versions of AdGuard.** Stealth Mode is currently available in AdGuard for Windows, Mac, Android and AdGuard browser extensions for Chrome, Firefox, Edge. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
