@@ -34,7 +34,9 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 ### Compatibility with local proxies
 
->Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
+> Note: in Big Sur 11.1 (and newer macOS versions) AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
+
+> After Big Sur 11.3 update, the problems with local proxies came back. Apple will likely roll out a fix soon, and we're also working on a workaround. All required changes are already made to the [Nightly version](http://agrd.io/mac_nightly) of AdGuard for Mac.
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu -> Advanced -> Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
