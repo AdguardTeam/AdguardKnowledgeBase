@@ -919,9 +919,9 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 `$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
->The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
+> The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
->`$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (@@) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
 
 ##### Disabling `$redirect` rules
 
@@ -940,7 +940,7 @@ This rule redirects all requests to script.js to the resource named noop.js.
 ```
 This rule redirects all requests to example.org/test.mp4 to the resource named noopmp4-1s.
 
->More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+> More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
 
 <a id="denyallow-modifier"></a>
@@ -957,18 +957,18 @@ Example:
 
 The above filter tells the network filtering engine that when the context is `a.com` or `b.com`, block all third-party scripts except those from `x.com` and `y.com`.
 
->Please note that [`$domain` modifier](#domain-modifier) is required!
+**Please note that [`$domain` modifier](#domain-modifier) is required!**
 
-**AdGuard for Safari and AdGuard for iOS** convert $denyallow rule into blocking rule and additional exception rules:
-
-For example, the rule
-```*$script,domain=a.com|~b.com,denyallow=x.com|y.com```
-will be converted to:
-```
-*$script,domain=a.com|~b.com
-@@||x.com$script,domain=a.com|~b.com
-@@||y.com$script,domain=a.com|~b.com
-```
+> **AdGuard for Safari and AdGuard for iOS** convert $denyallow rule into blocking rule and additional exception rules:
+>
+> For example, the rule
+> ```*$script,domain=a.com|~b.com,denyallow=x.com|y.com```
+> will be converted to:
+> ```
+> *$script,domain=a.com|~b.com
+> @@||x.com$script,domain=a.com|~b.com
+> @@||y.com$script,domain=a.com|~b.com
+> ```
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
