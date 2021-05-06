@@ -1258,7 +1258,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### Mullvad
 
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles)
+[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles).
 
 #### Non-filtering
 
@@ -1267,7 +1267,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | DNS-over-HTTPS | `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
 | DNS-over-TLS   | `doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Add to AdGuard</a> |
 
-#### Adblocking
+#### Ad blocking
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

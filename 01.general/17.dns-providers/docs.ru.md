@@ -40,6 +40,7 @@ visible: true
 * [NextDNS](#nextdns)
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
+* [Mullvad](#mullvad)
 
 <a name="adguard-dns"></a>
 
@@ -639,3 +640,23 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS, IPv4      | `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Добавить в AdGuard</a> |
 | DNS-over-HTTPS | `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Добавить в AdGuard</a> |
 | DNS-over-TLS   | `p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+
+<a name="mullvad"></a>
+
+### Mullvad
+
+[Mullvad](https://mullvad.net/ru/help/dns-over-https-and-dns-over-tls/) предоставляет публично доступный DNS-сервис с минимизацией QNAME, с эндпоинтами в Австралии, Германии, Сингапуре, Швеции, Соединённом Королевстве и США (Нью-Йорк и Лос-Анджелес).
+
+#### Нефильтрующий
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | Host: `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Host: `tls://doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Добавить в AdGuard</a> |
+
+#### Блокирующий
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | Host: `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Host: `tls://adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Добавить в AdGuard</a> |
