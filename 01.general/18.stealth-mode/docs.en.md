@@ -99,7 +99,7 @@ You can also set Referer of your choice by typing it into the Custom Referer fie
 
 **Hide your User-Agent **
 
-When you visit a website, your browser send the server its information. It looks like a text line that is a part of HTTP request beginning with “User-Agent:”. It usually includes the name and version of the browser, operating system, and language settings. We strip User-Agent from identifying information so that advertisers can;t obtain it.
+When you visit a website, your browser send the server its information. It looks like a text line that is a part of HTTP request beginning with “User-Agent:”. It usually includes the name and version of the browser, operating system, and language settings. We strip User-Agent from identifying information so that advertisers can't obtain it.
 
 You can also set User-Agent of your choice by typing it into the Custom User-Agent field. Leave the field empty to use the default User-Agent.
 
