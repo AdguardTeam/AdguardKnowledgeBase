@@ -41,6 +41,8 @@ visible: true
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
 * [Mullvad](#mullvad)
+* [Небольшие персональные резолверы](#small-resolvers)
+    * [Arapurayil](#arapurayil)
 
 <a name="adguard-dns"></a>
 
@@ -613,33 +615,33 @@ DNS-серверы с минимальным/ограниченным логир
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `76.76.2.0`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMA">Добавить в AdGuard</a> |
-| DNS-over-HTTPS | `https://freedns.controld.com/p0`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDAAAAA">Добавить в AdGuard</a> |
-| DNS-over-TLS   | `tls://p0.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AwLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+| DNS, IPv4      | Хост: `76.76.2.0`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://freedns.controld.com/p0`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDAAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://p0.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AwLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
 
 #### Блокирует вредоносные сайты
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `76.76.2.1`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ">Добавить в AdGuard</a> |
-| DNS-over-HTTPS | `https://freedns.controld.com/p1`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA">Добавить в AdGuard</a> |
-| DNS-over-TLS   | `tls://p1.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+| DNS, IPv4      | Хост: `76.76.2.1`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://freedns.controld.com/p1`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://p1.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
 
 ##### Блокирует вредоносные сайты + рекламу
 
-| Протокол       | Address                                            |                |
+| Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `76.76.2.2`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMg">Добавить в AdGuard</a> |
-| DNS-over-HTTPS | `https://freedns.controld.com/p2`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA">Добавить в AdGuard</a> |
-| DNS-over-TLS   | `tls://p2.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+| DNS, IPv4      | Хост: `76.76.2.2`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMg">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://freedns.controld.com/p2`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://p2.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
 
 ##### Блокирует вредоносные сайты + рекламу + соцмедиа
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Добавить в AdGuard</a> |
-| DNS-over-HTTPS | `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Добавить в AdGuard</a> |
-| DNS-over-TLS   | `tls://p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
+| DNS, IPv4      | Хост: `76.76.2.3`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://freedns.controld.com/p3`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://p3.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AzLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
 
 <a name="mullvad"></a>
 
@@ -649,14 +651,35 @@ DNS-серверы с минимальным/ограниченным логир
 
 #### Нефильтрующий
 
-| Protocol       | Address                                            |                |
+| Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | Host: `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
-| DNS-over-TLS   | Host: `tls://doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Добавить в AdGuard</a> |
 
 #### Блокирующий
 
-| Protocol       | Address                                            |                |
+| Протокол       | Адрес                                           |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | Host: `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
-| DNS-over-TLS   | Host: `tls://adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Добавить в AdGuard</a> |
+
+
+<a name="small-resolvers"></a>
+
+### Небольшие персональные резолверы
+
+В этой секции собраны маленькие, в основном персональные DNS-резолверы. Они часто имеют всего один или очень мало серверов и в целом обладают худшим аптаймом в сравнении с "большими" провайдерами. Мы не имеем возможности должным образом следить за их доступностью. **Используйте на свой страх и риск!**
+
+
+<a name="arapurayil"></a>
+
+#### Arapurayil
+
+[Arapurayil](https://dns.arapurayil.com) — персональный DNS-сервис, расположенный в Мумбаи, Индия.
+
+Без логирования | Фильтрующий рекламу, трекеры, фишинг и т.д. | DNSSEC | Минимизация QNAME | Без EDNS Client-Subnet.
+
+| Протокол       | Адрес                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNSCrypt, IPv4 | Хост: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://dns.arapurayil.com/dns-query`                 | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Добавить в AdGuard</a>  |   
