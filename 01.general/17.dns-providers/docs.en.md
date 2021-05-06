@@ -68,7 +68,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
 * [Mullvad](#mullvad)
-* [Small personal resolvers](#-resolvers)
+* [Small personal resolvers](#small-resolvers)
     * [Arapurayil](#arapurayil)
 
 <a name="adguard-dns"></a>
@@ -1254,28 +1254,31 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS   | `doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Add to AdGuard</a> |
+| DNS-over-TLS   | `tls://doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0">Add to AdGuard</a> |
 
 #### Ad blocking
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
-| DNS-over-TLS   | `adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Add to AdGuard</a> |
+| DNS-over-TLS   | `tls://adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Add to AdGuard</a> |
 
 
 <a name="small-resolvers"></a>
 
+### Small personal resolvers
+
+In this section we list small, mostly personal DNS resolvers. They often have only one or very few servers and worse uptime than 'big' providers. We won't be able to proper monitor their availability. **Use them at your own risk!**
 
 <a name="arapurayil"></a>
 
 #### Arapurayil
 
-[www.dns.arapurayil.com](https://www.dns.arapurayil.com) | Hosted in Mumbai, India
+[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet
+Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
 
-| Protocol       | Address                                                          |                                                                                                                                                                    |
-|----------------|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://dns.arapurayil.com/dns-query`                           | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>     
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
+| DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>  |   
