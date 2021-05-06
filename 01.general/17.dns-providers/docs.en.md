@@ -68,6 +68,8 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
 * [Mullvad](#mullvad)
+* [Small personal resolvers](#-resolvers)
+    * [Arapurayil](#arapurayil)
 
 <a name="adguard-dns"></a>
 
@@ -1260,3 +1262,20 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-TLS   | `adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Add to AdGuard</a> |
+
+
+<a name="small-resolvers"></a>
+
+
+<a name="arapurayil"></a>
+
+#### Arapurayil
+
+[www.dns.arapurayil.com](https://www.dns.arapurayil.com) | Hosted in Mumbai, India
+
+Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet
+
+| Protocol       | Address                                                          |                                                                                                                                                                    |
+|----------------|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://dns.arapurayil.com/dns-query`                           | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>     
