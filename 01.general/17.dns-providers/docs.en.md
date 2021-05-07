@@ -60,7 +60,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [LibreDNS](#libre-dns)
 * [ibksturm DNS](#ibksturm-dns)
 * [DNS Privacy](#dnsprivacy.org-dns)
-* [PI-DNS](#pi-dns)
+* [AhaDNS](#ahadns)
 * [Seby DNS](#seby-dns)
 * [puntCAT DNS](#puntcat-dns)
 * [DNSlify DNS](#dnslify-dns)
@@ -1042,74 +1042,89 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 | DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46` | <a href="sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs">Add to AdGuard</a>  |
 | DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | <a href="sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0">Add to AdGuard</a>  |
 
-<a name="pi-dns"></a>
+<a name="ahadns"></a>
 
-### PI-DNS
+### AhaDNS
 
-[PI-DNS](https://pi-dns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
 
-#### Central Europe DNS Server
-
-| Protocol       | Address                             |                |
-|----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `88.198.91.187` | <a href="sdns://AAAAAAAAAAAADTg4LjE5OC45MS4xODc">Add to AdGuard</a> |
-| DNS, IPv6      | `2a01:4f8:1c0c:8233::1`  | <a href="sdns://AAAAAAAAAAAAF1syYTAxOjRmODoxYzBjOjgyMzM6OjFd">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.centraleu.pi-dns.com/dns-query`  | <a href="sdns://AgMAAAAAAAAAAAAYZG9oLmNlbnRyYWxldS5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.centraleu.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAedGxzOi8vZG90LmNlbnRyYWxldS5waS1kbnMuY29t">Add to AdGuard</a> |
-
-#### North Europe DNS Server
+#### Netherlands
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `95.216.181.228` | <a href="sdns://AAAAAAAAAAAADjk1LjIxNi4xODEuMjI4">Add to AdGuard</a> |
-| DNS, IPv6      | `2a01:4f9:c01f:4::abcd`  | <a href="sdns://AAAAAAAAAAAAF1syYTAxOjRmOTpjMDFmOjQ6OmFiY2Rd">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.northeu.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAWZG9oLm5vcnRoZXUucGktZG5zLmNvbQovZG5zLXF1ZXJ5">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.northeu.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAcdGxzOi8vZG90Lm5vcnRoZXUucGktZG5zLmNvbQ">Add to AdGuard</a> |
+| DNS, IPv4      | `5.2.75.75` | <a href="sdns://AAcAAAAAAAAACTUuMi43NS43NQ">Add to AdGuard</a> |
+| DNS, IPv6      | `2a04:52c0:101:75::75` | <a href="sdns://AAAAAAAAAAAAFlsyYTA0OjUyYzA6MTAxOjc1Ojo3NV0">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm5sLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.nl.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm5sLmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
-#### West USA DNS Server
+#### India
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4      | `45.79.120.233` | <a href="sdns://AAAAAAAAAAAADTQ1Ljc5LjEyMC4yMzM">Add to AdGuard</a> |
+| DNS, IPv6      | `2400:8904:e001:43::43` | <a href="sdns://AAAAAAAAAAAAF1syNDAwOjg5MDQ6ZTAwMTo0Mzo6NDNd">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.in.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmluLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.in.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmluLmFoYWRucy5uZXQ">Add to AdGuard</a> |
+
+#### Los Angeles
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
 | DNS, IPv4      | `45.67.219.208` | <a href="sdns://AAAAAAAAAAAADTQ1LjY3LjIxOS4yMDg">Add to AdGuard</a> |
-| DNS, IPv6      | `2a04:bdc7:100:70::abcd`  | <a href="sdns://AAAAAAAAAAAAGFsyYTA0OmJkYzc6MTAwOjcwOjphYmNkXQ">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.westus.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLndlc3R1cy5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.westus.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAbdGxzOi8vZG90Lndlc3R1cy5waS1kbnMuY29t">Add to AdGuard</a> |
+| DNS, IPv6      | `2a04:bdc7:100:70::70` | <a href="sdns://AAAAAAAAAAAAFlsyYTA0OmJkYzc6MTAwOjcwOjo3MF0">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.la.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmxhLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.la.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmxhLmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
-#### East USA DNS Server
+#### New York
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
 | DNS, IPv4      | `185.213.26.187` | <a href="sdns://AAAAAAAAAAAADjE4NS4yMTMuMjYuMTg3">Add to AdGuard</a> |
-| DNS, IPv6      | `2a0d:5600:33:3::abcd`  | <a href="sdns://AAAAAAAAAAAAFlsyYTBkOjU2MDA6MzM6Mzo6YWJjZF0">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.eastus.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLmVhc3R1cy5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.eastus.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAbdGxzOi8vZG90LmVhc3R1cy5waS1kbnMuY29t">Add to AdGuard</a> |
+| DNS, IPv6      | `2a0d:5600:33:3::3` | <a href="sdns://AAAAAAAAAAAAE1syYTBkOjU2MDA6MzM6Mzo6M10">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.ny.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm55LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.ny.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm55LmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
-#### East Australia DNS Server
-
-| Protocol       | Address                             |                |
-|----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `45.63.30.163` | <a href="sdns://AAAAAAAAAAAADDQ1LjYzLjMwLjE2Mw">Add to AdGuard</a> |
-| DNS, IPv6      | `2001:19f0:5801:b7c::1`  | <a href="sdns://AAAAAAAAAAAAF1syMDAxOjE5ZjA6NTgwMTpiN2M6OjFd">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.eastau.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLmVhc3RhdS5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.eastau.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAbdGxzOi8vZG90LmVhc3RhdS5waS1kbnMuY29t">Add to AdGuard</a> |
-
-#### East Asia DNS Server
+#### Poland
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `66.42.33.135` | <a href="sdns://AAAAAAAAAAAADDY2LjQyLjMzLjEzNQ">Add to AdGuard</a> |
-| DNS, IPv6      | `2001:19f0:7001:225d::1`  | <a href="sdns://AAAAAAAAAAAAGFsyMDAxOjE5ZjA6NzAwMToyMjVkOjoxXQ">Add to AdGuard</a> |
-| DNS-over-HTTPS | `https://doh.eastas.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAVZG9oLmVhc3Rhcy5waS1kbnMuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a> |
-| DNS-over-TLS | `tls://dot.eastas.pi-dns.com` | <a href="sdns://AwAAAAAAAAAAAAAbdGxzOi8vZG90LmVhc3Rhcy5waS1kbnMuY29t">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLnBsLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.pl.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LnBsLmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
-
-PI-DNS currently provide a DoH endpoint delivered through Cloudflare’s CDN. This can be used if you don’t want to specify any specific server to connect to. Make sure you understand Cloudflare’s privacy policy before using this endpoint.
+#### Italy
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.pi-dns.com/dns-query`  | <a href="sdns://AgcAAAAAAAAAAAAYZG9oLnBpLWRucy5jb20vZG5zLXF1ZXJ5Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.it.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
-(Only this endpoint (doh.pi-dns.com) goes through Cloudflare).
+#### Spain
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmVzLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.es.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmVzLmFoYWRucy5uZXQ">Add to AdGuard</a> |
+
+#### Norway
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.no.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm5vLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.no.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm5vLmFoYWRucy5uZXQ">Add to AdGuard</a> |
+
+#### Chicago
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAASZG9oLmNoaS5haGFkbnMubmV0Ci9kbnMtcXVlcnk">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.chi.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAASZG90LmNoaS5haGFkbnMubmV0">Add to AdGuard</a> |
+
+#### Australia
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.au.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmF1LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS | `tls://dot.au.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmF1LmFoYWRucy5uZXQ">Add to AdGuard</a> |
 
 <a name="seby-dns"></a>
 
