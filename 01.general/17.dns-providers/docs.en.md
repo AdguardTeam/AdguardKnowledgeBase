@@ -1026,7 +1026,7 @@ Other DNS servers with 'no logging' policy
 | DNS-over-TLS | Hostname `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2` | <a href="sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ">Add to AdGuard</a>  |
 | DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in ` IP: `139.59.51.46` | <a href="sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4">Add to AdGuard</a> |
 | DNS-over-TLS | Hostname `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2` | <a href="sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw">Add to AdGuard</a>  |
-| DNS-over-TLS | Provider: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35` | <a href="sdns://AwAAAAAAAAAAAAAadGxzOi8vcHJpdmFjeWRucy5nbzZsYWIuc2k">Add to AdGuard</a>  |
+| DNS-over-TLS | Provider: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35` | <a href="sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k">Add to AdGuard</a>  |
 | DNS-over-TLS | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001` | <a href="sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ">Add to AdGuard</a>  |
 
 DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
