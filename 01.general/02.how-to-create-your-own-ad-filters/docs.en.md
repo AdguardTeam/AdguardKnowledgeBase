@@ -985,7 +985,7 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 #### **`redirect-rule`**
 This is basically an alias to `$redirect` since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
 
-> Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule rules`.
+> Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
 
 Examples:
 
