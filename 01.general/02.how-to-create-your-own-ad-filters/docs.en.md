@@ -1153,7 +1153,7 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@#.textad
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS or elemhide rule on ALL domains:
+Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
 ```
 #@#.textad
 ```
