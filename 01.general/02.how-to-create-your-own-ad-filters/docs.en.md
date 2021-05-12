@@ -1110,7 +1110,7 @@ However, the capabilities of the basic rules may not be sufficient to block ads.
 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
-Note that element hiding rules may operate differently depending on the platform. Read more [here](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+> Note that element hiding rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
 <a id="elemhide-syntax"></a>
 #### Syntax
@@ -1170,9 +1170,9 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Restrictions.** Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard for iOS.
 
-Note that CSS rules may operate differently depending on the platform. Read more [here](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+> Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Syntax
@@ -1221,8 +1221,6 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 > **Application area.** Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
 > **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
-
-Note that extended CSS selectors may operate differently depending on the platform. Read more [here](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
 #### Syntax
 
