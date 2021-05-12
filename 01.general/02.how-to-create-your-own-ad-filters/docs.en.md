@@ -66,6 +66,7 @@ visible: true
         * [$network](#network-modifier)
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
+        * [$redirect-rule](#redirect-rule-modifier)
         * [noop](#noop-modifier)
         * [$removeheader](#removeheader-modifier)
 * [Non-basic rules](#non-basic-rules)
@@ -979,6 +980,21 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 > More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
 > **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
+
+<a id="redirect-rule-modifier"></a>
+#### **`redirect-rule`**
+This is basically an alias to `$redirect` since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
+
+> Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
+
+Examples:
+
+```
+||example.org/script.js`
+||example.org^$redirect-rule=noopjs`
+```
+
+In this case, only requests to `example.org/script.js` will be "redirected". All other requests to `example.org` will be kept intact.
 
 <a id="noop-modifier"></a>
 #### **`noop`**
