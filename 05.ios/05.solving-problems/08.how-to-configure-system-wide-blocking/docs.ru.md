@@ -22,7 +22,7 @@ taxonomy:
 * Вы можете добавлять сразу несколько DNS-фильтров и/или hosts-файлов, но вы не можете одновременно использовать несколько DNS-серверов.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ru.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 650px; padding: 2px;">
-<p align="center"><i>Схематичное объяснение DNS-фильтрации</i><p>
+<p align="center"><i>Схематичное объяснение DNS-фильтрации</i></p>
 
 ### Как добавить DNS-фильтр/hosts-файл
 
