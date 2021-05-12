@@ -22,7 +22,7 @@ The second option takes a bit more time to set up but has several advantages:
 * You can add multiple DNS filters and/or hosts files at the same time, but you can't use multiple DNS servers at once.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 650px; padding: 2px;">
-<p align="center"><i>How DNS filtering works</i><p>
+<p align="center"><i>How DNS filtering works</i></p>
 
 ### How to add a DNS filter/hosts file
 
