@@ -66,6 +66,7 @@ visible: true
         * [$network](#network-modifier)
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
+        * [$redirect-rule](#redirect-rule-modifier)
         * [noop](#noop-modifier)
         * [$removeheader](#removeheader-modifier)
 * [Non-basic rules](#non-basic-rules)
@@ -83,6 +84,7 @@ visible: true
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
+        * [Cosmetic rules priority](#cosmetic-rules-priority) 
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Special attributes](#html-filtering-rules-attributes)
@@ -543,8 +545,9 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 
 ###### `stealth` examples
 
-* `@@||example.com^$stealth` — disables `Stealth Mode` for `example.com` (and subdomains) requests.
-* `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script `domain.com` (and subdomains) requests on `example.com` and all subdomains.
+* `@@||example.com^$stealth` — disables `Stealth Mode` for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
+* `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
+* Please note that blocking cookies and removing tracking parameters is achieved by using rules with `$cookie` and `$removeparam` modifiers. Exceptions with only `$stealth` modifier won't do those things. If you want to completely disable all Stealth Mode features for a given URL, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
 
 > **Compatibility with different versions of AdGuard.** Stealth Mode is currently available in AdGuard for Windows, Mac, Android and AdGuard browser extensions for Chrome, Firefox, Edge. For now, the products that do not support Stealth Mode will ignore the rules with this modifier.
 
@@ -979,6 +982,21 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 
 > **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
 
+<a id="redirect-rule-modifier"></a>
+#### **`redirect-rule`**
+This is basically an alias to `$redirect` since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
+
+> Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
+
+Examples:
+
+```
+||example.org/script.js`
+||example.org^$redirect-rule=noopjs`
+```
+
+In this case, only requests to `example.org/script.js` will be "redirected". All other requests to `example.org` will be kept intact.
+
 <a id="noop-modifier"></a>
 #### **`noop`**
 
@@ -1108,6 +1126,8 @@ However, the capabilities of the basic rules may not be sufficient to block ads.
 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
+> Note that element hiding rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+
 <a id="elemhide-syntax"></a>
 #### Syntax
 
@@ -1152,9 +1172,14 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@#.textad
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
 ```
 #@#.textad
+```
+
+The same can be achieved by adding this rule:
+```
+*#@#.textad
 ```
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
@@ -1166,7 +1191,9 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Restrictions.** Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard for iOS.
+
+> Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Syntax
@@ -1623,6 +1650,16 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
+<a id="cosmetic-rules-priority"></a>
+### Cosmetic rules priority
+
+The way **element hiding** and **CSS rules** are applied is platform-specific. 
+
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#elemhide-rules) and [CSS](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules) rules cannot override inline styles. In such cases, it's recommended to use extended selectors or HTML filtering.
+
+**In AdGuard browser extensions**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+
+**Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
 
 <a id="html-filtering-rules"></a>
 ## HTML filtering rules
