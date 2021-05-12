@@ -84,6 +84,7 @@ visible: true
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
             * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
+        * [Cosmetic rules priority](#cosmetic-rules-priority) 
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
         * [Special attributes](#html-filtering-rules-attributes)
@@ -1125,6 +1126,8 @@ However, the capabilities of the basic rules may not be sufficient to block ads.
 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
+> Note that element hiding rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+
 <a id="elemhide-syntax"></a>
 #### Syntax
 
@@ -1188,7 +1191,9 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Restrictions.** Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard for iOS.
+
+> Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Syntax
@@ -1645,6 +1650,16 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
+<a id="cosmetic-rules-priority"></a>
+### Cosmetic rules priority
+
+The way **element hiding** and **CSS rules** are applied is platform-specific. 
+
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#elemhide-rules) and [CSS](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules) rules cannot override inline styles. In such cases, it's recommended to use extended selectors or HTML filtering.
+
+**In AdGuard browser extensions**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+
+**Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
 
 <a id="html-filtering-rules"></a>
 ## HTML filtering rules
