@@ -85,7 +85,7 @@ Assistant is a tool that helps you manage filtering in Safari right from the bro
 <a id="dns-protection"></a>
 ## DNS protection
 
-DNS protection module enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. It can be done either from the home screen or from *Settings > DNS protection*.
+[DNS protection module](https://kb.adguard.com/en/general/dns-filtering) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. It can be done either from the home screen or from *Settings > DNS protection*.
 
 > To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
 
