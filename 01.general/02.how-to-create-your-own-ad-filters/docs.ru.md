@@ -340,6 +340,9 @@ pattern = "/" regexp "/"
 * `||baddomain.com^$domain=~example.org` — правило для блокировки запросов, которые соответствуют указанной маске, и отправленных с любого домена, кроме `example.org` и его поддоменов.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — в данном примере правило будет соответствовать запросам, отправленным с домена `example.org` и всех его поддоменов, кроме поддомена `foo.example.org`.
 
+> **Важно!** Safari не поддерживает одновременно разрешенные и запрещенные домены,
+> поэтому правила вида `||baddomain.com^$domain=example.org|~foo.example.org` в AdGuard для Safari яюляются невалидными.
+
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
@@ -1149,6 +1152,9 @@ domains = [domain0, domain1[, ...[, domainN]]]
 * `example.com##div.textad` — скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
 * `example.com,example.org###adblock` - скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
 * `~example.com##.textad` - скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменах.
+
+> **Важно!** Safari не поддерживает одновременно разрешенные и запрещенные домены,
+> поэтому правила вида `example.org,~foo.example.org##.textad` в AdGuard для Safari яюляются невалидными.
 
 <a id="elemhide-exceptions"></a>
 #### Исключения для правил скрытия
