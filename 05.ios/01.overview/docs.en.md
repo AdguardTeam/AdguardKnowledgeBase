@@ -126,9 +126,7 @@ To get access to this setting, Advanced mode has to be enabled from the General 
 <a id="dns-filters"></a>
 #### DNS filters
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special syntax. AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as AdGuard DNS filter or add hosts files as filters.  Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking).
-
-> *DNS protection, Advanced mode, DNS filters* are settings needed for system-wide blocking, i.e. blocking ads and trackers beyond the Safari browser, in other apps and browsers. Learn [how to configure it with AdGuard for iOS](https://adguard.com/en/blog/how-to-configure-system-wide-blocking.html). 
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special syntax. AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as AdGuard DNS filter or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking). 
 
 <a id="allowlist-blocklist"></a>
 #### Allowlist/Blocklist
