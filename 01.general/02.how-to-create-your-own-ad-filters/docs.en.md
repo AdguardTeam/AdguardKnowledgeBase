@@ -610,8 +610,7 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 ###### Basic syntax
 
-* `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to
-`http://example.com/page?another=2`.
+* `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
 
 ###### Regular expressions
 
@@ -619,13 +618,14 @@ You can also use regular expressions to match query parameters and/or their valu
 
 * `$removeparam=/regex/[options]` -- removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
+> `$removeparam` syntax for regular expressions will only be available in the future versions of AdGuard. For now, use the simplified version: `$removeparam=param`.
+
 > **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
 
 > Important: note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
->
 > 1. It looks like `$/`,
 > 2. There's another slash character (`/`) to the left of it,
 > 3. There's another unescaped `$` character to the left of that slash character.
