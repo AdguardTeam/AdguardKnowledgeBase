@@ -18,6 +18,6 @@ visible: true
   
   4. Перйдите во вкладку "Центры сертификации" и кликните по кнопке "Импортировать..."
   
-  5. Выберите файл `/Library/Application Support/com.adguard.Adguard/NfApiConfiguration/SSL/Adguard Perosnal CA.cer` или скачайте его через любой браузер на основе Chromium (например, Google Chrome или новый Edge) с запущенной HTTPS-фильтрацией в AdGuard
+  5. Выберите файл `/Library/Application Support/com.adguard.Adguard/AdguardCore/Adguard Perosnal CA.cer` или скачайте его через любой браузер на основе Chromium (например, Google Chrome или новый Edge) с запущенной HTTPS-фильтрацией в AdGuard
   
 Точные действия могут различаться для разных браузеров, но общая последовательность и путь к файлу `AdGuard Personal CA.cer` остаются теми же.
