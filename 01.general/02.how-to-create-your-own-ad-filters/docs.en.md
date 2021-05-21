@@ -618,7 +618,7 @@ You can also use regular expressions to match query parameters and/or their valu
 
 * `$removeparam=/regex/[options]` -- removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
-> `$removeparam` syntax for regular expressions will only be available in the future versions of AdGuard. For now, use the simplified version: `$removeparam=param`.
+> `$removeparam` syntax for regular expressions will be supported starting with v1.8 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6.7 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
 
 > **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
 
