@@ -1,5 +1,5 @@
 ---
-title: Feature overview
+title: Features overview
 taxonomy:
     category:
         - docs
@@ -114,22 +114,22 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/Pro/network_settings_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
-Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at Wi-Fi exceptions, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use AdGuard Home).
+Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/ru/adguard-home/overview.html)).
 
 <a id="dns-filtering"></a>
 ### DNS filtering
 
-To get access to this setting, Advanced mode has to be enabled from the General settings screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
+To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/dns_filtering_en.jpg?1" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 <a id="dns-filters"></a>
 #### DNS filters
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special syntax. AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as AdGuard DNS filter or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking). 
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://kb.adguard.com/ru/general/dns-filtering-syntax). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://kb.adguard.com/ru/general/adguard-ad-filters#domains) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking). 
 
 <a id="allowlist-blocklist"></a>
-#### Allowlist/Blocklist
+#### Allowlist and Blocklist
 
 On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
 
@@ -141,7 +141,7 @@ This is the 'information hub' of AdGuard's DNS protection suite. You can quicksw
 
 Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
 
-Below is the Recent activity feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
 > AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
 
@@ -149,12 +149,12 @@ Tap on any request to view more details. There will also be buttons to add the r
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/request_info_en.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
-Above the activity feed, there's a Most active companies button. It shows aggregated data on the last 1500 requests, specifically which companies sent the most amount.
+Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
 
 <a id="statistics"></a>
 ### Statistics
 
-Aside from the Activity screen, you can find global statistics on the home screen and on widgets.
+Aside from the *Activity* screen, you can find global statistics on the home screen and on widgets.
 
 <a id="low-level-settings"></a>
 ## Low-level settings
