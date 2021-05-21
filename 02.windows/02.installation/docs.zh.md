@@ -7,13 +7,13 @@ taxonomy:
 
 ## 系统需求
 
-**操作系统：**Microsoft Windows 10、8.1、8、7、Vista。
+**操作系统：** Microsoft Windows 10、8.1、8、7、Vista。
 
 **RAM：** 至少 512 MB 
 
-**可用磁盘空间：**170 MB。
+**可用磁盘空间：** 170 MB。
 
-**浏览器：**Microsoft Edge、Microsoft Internet Explorer（所有版本）、Opera、Google Chrome、Yandex.Browser、Mozilla Firefox、百度和其他浏览器。
+**浏览器：** Microsoft Edge、Microsoft Internet Explorer（所有版本）、Opera、Google Chrome、Yandex.Browser、Mozilla Firefox、百度和其他浏览器。
 
 ## AdGuard 安装过程
 
@@ -72,7 +72,7 @@ taxonomy:
 
 ### 卸载的进阶方法
 
-首先，您要通过[该链接](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip")下载并安装我们开发人员创建的卸载软件。
+首先，您要通过[该链接](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip)下载并安装我们开发人员创建的卸载软件。
 
 您可以将压缩包发送到您的电脑上的任何一个文件夹里。解压后，请您开启 **Adguard_Uninstall_Utility.exe** 文件。 
 
