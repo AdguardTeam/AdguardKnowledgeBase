@@ -1,6 +1,7 @@
 ---
 title: Features
 published: true
+visibility: false
 taxonomy:
     category:
         - docs
