@@ -555,10 +555,14 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 ##### Generic rules
 
 Before we can proceed to the next modifiers, we have to make a definition of _generic rules_. The rule is generic if it is not limited to specific domains.
+Wildcard character `*` is supported as well.
 
 For example, these rules are generic:
 ```
 ###banner
+*###banner
+#@#.adsblock
+*#@#.adsblock
 ~domain.com###banner
 ||domain.com^
 ||domain.com^$domain=~example.com
