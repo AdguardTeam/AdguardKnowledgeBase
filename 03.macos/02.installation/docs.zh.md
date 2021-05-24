@@ -8,8 +8,10 @@ taxonomy:
 * [安装过程](#installation)
 * [卸载](#uninstall)
 	* [进阶卸载](#uninstall-advanced)
+
 <a id="system-requirements"></a>
 ## 系统需求
+
 **操作系统版本：** macOS 10.12（64 位）或更高版本
 
 **RAM：** 至少 2 GB
