@@ -21,7 +21,7 @@ taxonomy:
 
 首先，请在操作系统设置里允许安装未知来源的应用程序。以执行此操作请您：
 
-* 安卓 8+：开始安装 AdGuard APK 文件（查看下一步）。您将会看到允许安装应用程序的窗口。在打开的窗口点击**设置**并启用**允许次来源**。
+* 安卓 8+：开始安装 AdGuard APK 文件（查看下一步）。您将会看到允许安装应用程序的窗口。在打开的窗口点击**设置**并启用**允许此来源**。
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/zh/1.jpg" width="400" />
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Android/zh/2.jpg" width="400" />
 

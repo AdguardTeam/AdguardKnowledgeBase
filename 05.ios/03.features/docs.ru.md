@@ -1,7 +1,7 @@
 ---
 title: Функции
 published: true
-visibility: false
+visible: false
 taxonomy:
     category:
         - docs
