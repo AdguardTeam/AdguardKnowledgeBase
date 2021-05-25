@@ -78,7 +78,7 @@ To install AdGuard VPN for iOS:
 
 3) Wait until the downloading process is complete and then tap **Open**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios.jpg" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 
 AdGuard VPN for iOS is successfully installed!
 
@@ -110,9 +110,7 @@ To install AdGuard VPN for Windows beta:
 
 1) Follow [this link](https://agrd.io/windows_vpn_beta). `installer.exe` file will appear in the downloads list of your browser.  
 
-2) Open it and follow the installation instructions.
-
-3) The AdGuard VPN installer will do the rest, just click **Install**.
+2) Open it. The AdGuard VPN installer will do the rest, just click **Install**.
 
 4) When you see the screen saying 'Installaion completed successfully', tap **Finish**.
 
