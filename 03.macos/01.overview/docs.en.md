@@ -77,7 +77,7 @@ Another vital part of the Ad Blocker module are its User rules. If you have some
 <a id="stealth-mode"></a>
 ## Stealth Mode
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/3-Stealth Mode-1.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/3-StealthMode-1.png" />
     
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical adress and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best. 
 
