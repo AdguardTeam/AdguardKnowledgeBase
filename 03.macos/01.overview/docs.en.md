@@ -1,26 +1,29 @@
-[Getting started](#1)
-[Home panel](#2)
-[General preferences](#3)
-[Filters](#4)
-[User rules](#5)
-[Stealth Mode](#6)
-[Browsing Security](#7)
-[Extensions](#8)
-[Browser Assistant](#9)
-[Network Filtering](#10)
-[Others](#11)
-    - [License Management](#12)
-    - [Support](#13)
-    - [Updates check](#14)
+---
+title: Feature review
+taxonomy:
+    category:
+        - docs
+---
+
+[Home panel](#home-panel)
+[General preferences](#general)
+[Filters](#filters)
+[User rules](#user-rules)
+[Stealth Mode](#stealth-mode)
+[Browsing Security](#browsing-security)
+[Extensions](#extensions)
+[Browser Assistant](#browser-assistant)
+[Network Filtering](#network-filtering)
+[Others](#others)
+    - [License Management](#license-management)
+    - [Support](#support)
+    - [Updates check](#updates-check)
 
 AdGuard for Mac, as one of our main staples, merits a full how-to guide. We decided to help new users out and to highlight some finer, but less obvious points that even seasoned AdGuard for Mac fans might have been missing.
 
-<a id="1"></a>
-## Getting started
+AdGuard for Mac is a <i>standalone ad blocker program</i> for macOS computers. While AdGuard for Safari browser extension is [limited in ad blocking capabilities](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) due to Safari Content Blocking, AdGuard for Mac software is full-fledged and can offer more to its users. Let us walk you through the main features.
 
-AdGuard for Mac is a <i>standalone ad blocker program</i> for macOS computers. While browser extensions are often limited in ad blocking capabilities, such software is full-fledged and can offer more to its users. Let us walk you through the main features.
-
-<a id="2"></a>
+<a id="home-panel)"></a>
 ## Home panel
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/1-Mainscreen.png" style="max-width: 600px">
@@ -29,7 +32,7 @@ The first thing you see upon startup will be a screen with a big On/Off toggle. 
     
 To start configuring AdGuard for Mac, you need to tap the gear in the upper right corner of the window and select “Preferences”.
 
-<a id="3"></a>
+<a id="general"></a>
 ## General Preferences
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/1-General.png" />
@@ -40,16 +43,17 @@ Descriptions under option titles seem self-explanatory, but still:
 Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving yourself some time.
 
 **Launch AdGuard at login** 
+A simple and convenient feature with with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
 **Do not block search ads and websites' self-promotion**
 This option might be useful to online shoppers: instead of whitelisting all your favourite e-shops and sites, you can simply exclude self-promos and search ads from filtering. AdGuard will automatically detect those and let them be, while ruthlessly zapping everything else ad-like.  
 
 **Hide menu bar icon**
-The menu icon can get boring, tiresome, or irritating. For these and other cases there is an option to hide it. But don't worry: even if you remove the icon from the menu bar, AdGuard will continue to run in the background.
+If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
 
 From this same window you can access the above mentioned Whitelist, to which you can add websites you do not wish AdGuard to filter. Just tap the corresponding button located at the bottom of the window.
 
-<a id="4"></a>
+<a id="filters"></a>
 ## Filters
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/4-Filters.png" />
@@ -62,14 +66,14 @@ Aside from the more general and universally applicable filters (like Base filter
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about filters, here is [some info](https://kb.adguard.com/en/general/adguard-ad-filters).
 
-<a id="5"></a>
+<a id="user-rules"></a>
 ##User rules
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/4-Filters.png" />
     
 Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters). 
 
-<a id="6"></a>
+<a id="stealth-mode"></a>
 ## Stealth Mode
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/3-Stealth Mode-1.png" />
@@ -78,7 +82,7 @@ This module is a very useful tool that will help you maintain your privacy from 
 
 Stealth Mode contains a wide range of options, which ensure its flexible configuration. They are divided into several categories, and for an unprepared user many of them will seem confusing and maybe even complicated. We provided each option with a hint to make up for the deficiency — hints appear when you hover over the icon with a question mark. If you still wish to know more about the whole concept, we encourage you to proceed to [this article](https://kb.adguard.com/en/general/stealth-mode).
 
-<a id="7"></a>
+<a id="browsing-security"></a>
 ## Browsing Security
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/6-BrowsingSecurity.png" />
@@ -95,7 +99,7 @@ Some web pages are not malicious themselves, but they may contain elements built
 
 If you wish to help us in perfecting this module, you can check the lower box on the panel near the “Help us with Browsing Security filters development” phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
 
-<a id="8"></a>
+<a id="extensions"></a>
 ## Extensions
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/7-Extensions.png" />
@@ -111,47 +115,40 @@ Prevents all these annoying popup windows from opening when you view webpages. B
 
 One of the important features of AdGuard for Mac is that the application can work as a cross-browser userscript manager. You can easily add any scripts you like and manage existing ones without having to switch browsers every time.
 
-<a id="9"></a>
+<a id="browser-assistant"></a>
 ## Browser Assistant
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/ru/Mac-indepth/5-BrowserAssistant.png" />
 
-Since AdGuard v2.4 for Mac, the old Assistant was replaced with a native Assistant browser extension. The latter one simultaneously takes over the roles of the old Assistant and of the integration mode. [In Integration mode](https://kb.adguard.com/en/browser-extensions/integration-mode), workload was distributed between the browser extension and the desktop program, but the new Assistant can handle it better alone.
+Browser Assistant (not to be confused with the legacy Assistant that existed until v2.4 of AdGuard for Mac) is a native browser extension. It simultaneously takes over the roles of the old Assistant and of the Integration mode. [In Integration mode](https://kb.adguard.com/en/browser-extensions/integration-mode), workload was distributed between the browser extension and the desktop program, but the Browser Assistant can handle it better alone.
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/safari_assistant_pop-up_menu_ru.png" />
 
-The new Browser Assistant helped us solve three problems:
+With the Browser Assistant, the main AdGuard app can be managed from the BA's settings: launch it if it doesn't work, enable/disable protection in a single click, and quickly access settings or filtering log directly from the browser. Another useful feature is displaying the real certificate of a filtered page.
 
-1. Functionality
-Now you can manage the main AdGuard app from the BA's settings: launch it if it doesn't work, enable/disable protection in a single click, and quickly access settings or filtering log directly from the browser. In other words, the new BA has more tools that are extremely handy in a browser. Another useful feature is displaying the real certificate of a filtered page – we couldn't do it before we implemented the Assistant as an extension.
-2. Compatibility
-When desktop AdGuard program and browser extension were used in integration mode, they could hamper each other’s work. On some websites this integration glitched and the filtering was performed by the less powerful browser extension. With the new Assistant, there is no more such risk of an incompatibility.
-3. Minimalism
-Some people didn't like the older Assistant’s constant presence at the corner of any webpage, it disturbed them – now the familiar green shield icon won’t be there.
+When desktop AdGuard program and browser extension were used in Integration mode, they could hamper each other’s work. On some websites this integration glitched and the filtering was performed by the less powerful browser extension. With the Browser Assistant, there is no more such risk of an incompatibility.
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/assistant_onboarding_safari_ru.png" />
 
-If you use AdGuard for MacOS, the Assistant for Safari is included there and you don't need to download it. If you use another browser, you can download the Assistant for it [at this link](https://adguard.com/en/adguard-assistant/overview.html#safari). Or, you can install the Browser Assistant for your default browser via app settings or during the onboarding process.
+If you use AdGuard for MacOS, the Browser Assistant is included there and you don't need to download it. If you use another browser, you can download the Assistant for it [at this link](https://adguard.com/en/adguard-assistant/overview.html#safari). Or, you can install the Browser Assistant for your default browser via app settings or during the onboarding process.
 
-<a id="10"></a>
+<a id="network-filtering"></a>
 ## Network Filtering
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/9-NetworkFiltering.png" />
     
-This last panel is dedicated to Network filtering, and you will find extra functionalities here. We do recommend to enable HTTPS filtering and automatic filtering of applications. Those are very self-explanatory and are an important added precaution to better filter your web space.
+This last panel is dedicated to Network filtering, and you will find extra functionalities here. We do recommend to enable the first two ones: "Automatically filter applications" and "Filter HTTPS protocol". Those are an important added precaution to better filter your web space. HTTP is the primary protocol for transmitting information over the Internet. Most data including ads is transferred via it, but it has one disadvantage — the connection is unencrypted. Thanks to the HTTPS filtering feature AdGuard has, not only HTTP traffic is filtered, but also HTTPS traffic (S stands for ‘secure’).
  
-There are also the options of "Do not filter websites with EV certificates" and "Use AdGuard as an HTTP Proxy". 
-
-They are both pretty self-explanatory, we will just precise that Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardised identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+There are also the options of "Do not filter websites with EV certificates" and "Use AdGuard as an HTTP Proxy". Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardised identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
  
 As for the second option — well, yes, in fact you can use AdGuard as a regular HTTP proxy server. All traffic coming through it will be filtered. This proxy will also be available on your local network, so you may use it for traffic filtering on other devices that are able to reach the proxy directly. To filter traffic on another device connected to proxy you will need to install an AdGuard root certificate there. After you configure proxy, open your browser and go to [this page](http://local.adguard.org/cert).
 
-<a id="11"></a>
+<a id="others"></a>
 ## Others
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience. 
 
-<a id="12"></a>
+<a id="license-management"></a>
 ### License management
 
 First, there's the License management tab which you can open from the dropdown main menu (the one that opens once you click on the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
@@ -160,10 +157,10 @@ First, there's the License management tab which you can open from the dropdown m
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
-<a id="13"></a>
+<a id="support"></a>
 ### Support
 
-Another "must-have" option that seems so evident but often gets overlooked would be the Support tool. Click on the gear in the upper right corner, select "Support", and you will be able to send a Bug Report, Feature request, or any other type of message to our Technical Support team. Be sure to add your real actual email though, because without it the message won't be sent. 
+Click on the gear in the upper right corner, select "Support", and you will be able to send a Bug Report, Feature request, or any other type of message to our Technical Support team. Be sure to add your real actual email though, because without it the message won't be sent. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/12-support.png" />
     
@@ -171,7 +168,7 @@ To report a missed ad or a broken website, please follow the link above the mess
 
 It is possible to attach a diagnostic report to your message, you only need to check the box in the lower part of the tab. 
 
-<a id="14"></a>
+<a id="updates-check"></a>
 ### Updates check
 
-Last but not least. You can check for Filters updates and Program updates by simply clicking on the corresponding menu options in the dropdown menu (tap on the gear icon, and you'll see it).
+Last but not least. You can check for Filter updates and Program updates by simply clicking on the corresponding menu options in the dropdown menu (tap on the gear icon, and you'll see it).
