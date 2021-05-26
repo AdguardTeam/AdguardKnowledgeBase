@@ -79,7 +79,7 @@ AdGuard VPN для Android успешно установлен!
 
 3) Подождите, пока закончится процесс загрузки, и нажмите **Открыть**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios-ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios-ru.jpg" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 
 AdGuard VPN для iOS успешно установлен!
 
