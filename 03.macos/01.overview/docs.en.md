@@ -105,11 +105,11 @@ If you wish to help us in perfecting this module, you can check the lower box on
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/ru/Mac-indepth/5-BrowserAssistant.png" />
 
-AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into AdGuard for Mac app and became a full-fledged browser extension. Now it definitely yields [more benefits](https://kb.adguard.com/en/macos/features/browser-assistant).
+AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](https://kb.adguard.com/en/macos/overview/browser-assistant).
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/safari_assistant_pop-up_menu_ru.png" />
 
-If you use AdGuard for MacOS, the Browser Assistant is included there and you don't need to download it. If you use another browser, you can download the Assistant for it [at this link](https://adguard.com/en/adguard-assistant/overview.html#safari). Or, you can install the Browser Assistant for your default browser via app settings or during the onboarding process.
+You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can download it for any browser [at this link](https://adguard.com/en/adguard-assistant/overview.html).
 
 <a id="extensions"></a>
 ## Extensions
