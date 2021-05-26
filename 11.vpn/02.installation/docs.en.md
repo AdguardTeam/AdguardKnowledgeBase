@@ -56,7 +56,7 @@ AdGuad VPN for Firefox is successfully installed!
 
 To install AdGuard VPN for Android:
 
-1) Follow [this link](https://agrd.io/vpn_android_beta) or open navigate to AdGuard VPN's page in Google Play Store.
+1) Follow [this link](https://agrd.io/vpn_android_beta) or navigate to AdGuard VPN's page in Google Play Store.
 
 2) Tap **Install**.
 
@@ -70,19 +70,50 @@ AdGuard VPN for Android is successfully installed!
 <a name="ios"></a>
 
 ## AdGuard VPN for iOS
+To install AdGuard VPN for iOS:
 
-AdGuard VPN for iOS is coming soon!
+1) Follow [this link](https://agrd.io/ios_vpn) or open App Store and type in "AdGuard VPN" in the search bar.
+
+2) Click the **GET** button next to the string AdGuard VPN — Unlimited & Fast, and then confirm installation by double-clicking the side button of your iOS device. 
+
+3) Wait until the downloading process is complete and then tap **Open**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios.jpg" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+
+AdGuard VPN for iOS is successfully installed!
 
 
 <a name="mac"></a>
 
 ## AdGuard VPN for Mac
 
-AdGuard VPN for Mac is coming soon!
+To install AdGuard VPN for Mac beta:
+
+1) Follow [this link](https://agrd.io/mac_vpn_beta). A DMG file will appear in the downloads list of your browser.  
+
+2) Open it. You'll see the screen 'Install AdGuard VPN'. Double-click the icon.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/install-vpn-mac.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+ 
+3) The AdGuard VPN installer will do the rest, just click **Continue** and **Install**. Or you can change the install location, if needed.
+
+4) When you see the screen saying 'The installaion was successful', tap **Close**.
+
+That's it, AdGuard VPN for Mac beta is installed to your device!
 
 
 <a name="windows"></a>
 
 ## AdGuard VPN for Windows
 
-AdGuard VPN for Windows is coming soon!
+To install AdGuard VPN for Windows beta:
+
+1) Follow [this link](https://agrd.io/windows_vpn_beta). `installer.exe` file will appear in the downloads list of your browser.  
+
+2) Open it. The AdGuard VPN installer will do the rest, just click **Install**.
+
+4) When you see the screen saying 'Installaion completed successfully', tap **Finish**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/installed-vpn-windows.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+
+That's it, AdGuard VPN for Windows beta is installed to your device!
