@@ -107,8 +107,8 @@ PC에 AdGuard를 재설치하려면 설치 과정을 다시 시작하고 AdGuard
 <pre>'[OK] Uninstall finished'</pre>
 ![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/standard_uninstall.png)
 
-주의! 1~2 단계를 수행해도 프로그램이 제거되지 않은 경우에만 3~4 단계를 따르십시오.
-AdGuard의 잘못된 재설치로 판단될 수 있지만 고급 제거 지침의 3~4 단계를 사용하기 전에 지원 팀에 문의하는 것이 좋습니다.
+주의! 1 ~ 2 단계를 수행해도 프로그램이 제거되지 않은 경우에만 3 ~ 4 단계를 따르십시오.
+AdGuard의 잘못된 재설치로 판단될 수 있지만 고급 제거 지침의 3 ~ 4 단계를 사용하기 전에 지원 팀에 문의하는 것이 좋습니다.
 
 * 'Advanced uninstall'를 선택하고 'uninstall'를 클릭합니다.
 ![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu_adv.png)
