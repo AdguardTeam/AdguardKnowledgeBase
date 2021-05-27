@@ -29,7 +29,7 @@ AdGuard for Mac is a <i>standalone ad blocker program</i> for macOS computers. W
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/1-Mainscreen.png" style="max-width: 600px">
     
-The first thing you see upon startup will be a screen with a big On/Off toggle. Various stats counting since AdGuard has been installed and switched on (or since stats have been reset for the last time) is displayed here: the number of trackers, threats and ads blocked, and the amount of data saved.
+The first thing you see upon startup will be a screen with a big On/Off toggle. Below are shown various stats (ads blocked, trackers blocked, data saved) since the installation or since the last stats reset.
     
 To start configuring AdGuard for Mac, you need to tap the gear in the upper right corner of the window and select “Preferences”.
 
@@ -64,7 +64,7 @@ Filters are the main driving force behind the Ad blocker module. To understand h
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList etc) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program. 
 
 Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
-* filters aimed solely at tracking (like Tracking Protection filter),
+* filters aimed at tracking prevention (like Tracking Protection filter),
 * language-specific ad filters that block content in a selected language,
 * Social media filter (bye-bye, “Like” and “Share” buttons),
 * Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk;
@@ -126,7 +126,7 @@ Extensions are small programs that do exactly what their name implies — they e
 **1. AdGuard Assistant** (legacy version)
 This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the “do not block” list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
 
-> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if you have a browser not supported by AdGuard, for which we don't have our new Browser Assistant, then it makes sense to use the legacy version.
+> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
 **2. AdGuard Extra**
 This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to. 
