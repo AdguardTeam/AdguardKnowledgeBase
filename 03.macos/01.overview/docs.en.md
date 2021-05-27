@@ -29,7 +29,7 @@ AdGuard for Mac is a <i>standalone ad blocker program</i> for macOS computers. W
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/1-Mainscreen.png" style="max-width: 600px">
     
-The first thing you see upon startup will be a screen with a big On/Off toggle. Various stats of what AdGuard has achieved to date (counting since it’s been installed and switched on) can be found here: the number of trackers, threats and ads blocked, the amount of data saved will be displayed.
+The first thing you see upon startup will be a screen with a big On/Off toggle. Various stats counting since AdGuard has been installed and switched on (or since stats have been reset for the last time) is displayed here: the number of trackers, threats and ads blocked, and the amount of data saved.
     
 To start configuring AdGuard for Mac, you need to tap the gear in the upper right corner of the window and select “Preferences”.
 
@@ -41,13 +41,13 @@ To start configuring AdGuard for Mac, you need to tap the gear in the upper righ
 Descriptions under option titles seem self-explanatory, but still:
 
 **Activate language-specific filters automatically** 
-Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving yourself some time.
+Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving you some time.
 
 **Launch AdGuard at login** 
 A simple and convenient feature with with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
 **Do not block search ads and websites' self-promotion**
-This option might be useful to online shoppers: instead of whitelisting all your favourite e-shops and sites, you can simply exclude self-promos and search ads from filtering. AdGuard will automatically detect those and let them be, while ruthlessly zapping everything else ad-like.  
+This option might be useful to online shoppers: instead of whitelisting all your favourite e-shops and sites, you can simply exclude [self-promos and search ads](https://kb.adguard.com/en/general/search-ads-and-self-promotion) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.  
 
 **Hide menu bar icon**
 If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
@@ -63,7 +63,12 @@ Filters are the main driving force behind the Ad blocker module. To understand h
 
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList etc) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program. 
 
-Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion. There are filters aimed solely at tracking (like Tracking Protection filter), language-specific ad filters that block content in a selected language, Social media filter (bye-bye, “Like” and “Share” buttons), Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk, and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions. 
+Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
+* filters aimed solely at tracking (like Tracking Protection filter),
+* language-specific ad filters that block content in a selected language,
+* Social media filter (bye-bye, “Like” and “Share” buttons),
+* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk;
+* and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions. 
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](https://kb.adguard.com/en/general/adguard-ad-filters).
 
@@ -88,9 +93,9 @@ Stealth Mode contains a wide range of options, which ensure its flexible configu
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/6-BrowsingSecurity.png" />
     
-Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malware and phishing websites. In essence, it is designed to warn you about malware and to protect you from web frauds such as the infamous phishing. 
+Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malware and phishing websites.
 
-> Please note that AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses.
+> Note that AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses.
 
 Phishing is a very common web fraud aimed at stealing personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put you off your guard. If a user enters their details on such a website, they’ll definitely end up in the wrong hands.
 
@@ -98,18 +103,18 @@ Browsing Security gives strong protection against such incidents. At the same ti
 
 Some web pages are not malicious themselves, but they may contain elements built into their structure by other websites. Unlike browser plug-ins, Browsing Security module checks each object built into any web page, ensuring maximum protection.
 
-If you wish to help us in perfecting this module, you can check the lower box on the panel near the “Help us with Browsing Security filters development” phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
+If you wish to help us in perfecting this module, you can check the lower box on the panel near the "Help us with Browsing Security filters development" phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
 
 <a id="browser-assistant"></a>
 ## Browser Assistant
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/ru/Mac-indepth/5-BrowserAssistant.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/en/Mac-indepth/5-BrowserAssistant.png" />
 
 AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](https://kb.adguard.com/en/macos/overview/browser-assistant).
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/safari_assistant_pop-up_menu_ru.png" />
+<img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/safari_assistant_pop-up_menu.png" />
 
-You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can download it for any browser [at this link](https://adguard.com/en/adguard-assistant/overview.html).
+You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/en/adguard-assistant/overview.html) at any time.
 
 <a id="extensions"></a>
 ## Extensions
@@ -119,9 +124,13 @@ You will be prompted to install the Browser Assistant for your default browser w
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
 **1. AdGuard Assistant** (legacy version)
-This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the “do not block” list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you. *But note that this version is legacy, we recommend using the new one — Browser Assistant.*
+This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the “do not block” list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
+
+> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if you have a browser not supported by AdGuard, for which we don't have our new Browser Assistant, then it makes sense to use the legacy version.
+
 **2. AdGuard Extra**
 This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to. 
+
 **3. AdGuard Popup Blocker**
 Prevents all these annoying popup windows from opening when you view webpages. Blocks popup ads on web pages.
 
