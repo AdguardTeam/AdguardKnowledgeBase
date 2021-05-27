@@ -339,6 +339,8 @@ If you want the rule not to be applied to certain domains, start a domain name w
 * `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
 
+> **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `||baddomain.com^$domain=example.org|~foo.example.org` are invalid in AdGuard for Safari.
+
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
@@ -1162,6 +1164,8 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 * `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and it's subdomains.
+
+> **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
 <a id="elemhide-exceptions"></a>
 #### Exceptions
