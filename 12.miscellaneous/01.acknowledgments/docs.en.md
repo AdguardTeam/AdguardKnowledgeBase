@@ -209,25 +209,25 @@ This is the list of libraries and other resources that really helped us with AdG
 <a id="testers"></a>
 # Special thanks
 
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding and eliminating all the bugs was priceless. Special thanks to:
+Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
 
-* [ag_bug_finder](http://forum.adguard.com/member.php?3639) - beta tester of AdGuard for Windows
-* [Blaz](http://forum.adguard.com/member.php?4656-Blaz)
-* [Boo Berry](http://forum.adguard.com/member.php?1905-Boo-Berry) - forum and Telegram group moderator
-* [buuuuuuu190](http://forum.adguard.com/member.php?3571-buuuuuuu190)
-* [clarke](http://forum.adguard.com/member.php?3985-clarke)
+* ag_bug_finder - beta tester of AdGuard for Windows
+* Blaz - started as a filter contributor and now working at AdGuard
+* Boo Berry - forum and Telegram group moderator
+* buuuuuuu190 
+* clarke 
 * [dartrax](https://github.com/dartrax)
-* [dja2k](http://forum.adguard.com/member.php?3933-dja2k)
-* [hanschke](http://forum.adguard.com/member.php?3946-hanschke)
-* [itabmedia](http://forum.adguard.com/member.php?4711-itabmedia)
-* [Lord Ami](http://forum.adguard.com/member.php?5374-Lord-Ami)
-* [milder](http://forum.adguard.com/member.php?4519-milder)
-* [Nicos18](http://forum.adguard.com/member.php?5726-Nicos18)
-* [rickyoh](http://forum.adguard.com/member.php?1507-rickyoh)
-* [Ronin427](http://forum.adguard.com/member.php?4116-Ronin427)
-* [saturnotaku](http://forum.adguard.com/member.php?4782-saturnotaku)
-* [steve1209](http://forum.adguard.com/member.php?3437-steve1209)
-* [streetwolf](http://forum.adguard.com/member.php?3482-streetwolf)
+* dja2k 
+* hanschke
+* itabmedia
+* Lord Ami
+* milder
+* Nicos18
+* rickyoh
+* Ronin427
+* saturnotaku
+* steve1209 
+* streetwolf
 * [TPS](https://github.com/TPS) - bug finder, filter contributor
 * fabjazz
 * kirasam
