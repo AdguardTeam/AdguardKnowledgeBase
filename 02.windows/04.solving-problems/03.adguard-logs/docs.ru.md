@@ -34,7 +34,7 @@ visible: true
 
 2. Откройте консоль (введите 'cmd' в стартовой панели).
 
-3. Запустите приложение командой C:\Program Files (x86)\Adguard\Adguard.exe /trace (если вы используете 64-битный Windows) или C:\Program Files\Adguard\Adguard.exe /trace (если вы используете 32-битный).
+3. Запустите приложение командой `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` (если вы используете 64-битный Windows) или C:\Program Files\Adguard\Adguard.exe /trace (если вы используете 32-битный).
 
 4. Выберите уровень логирования **Подробный**.
 
