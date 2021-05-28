@@ -211,9 +211,9 @@ This is the list of libraries and other resources that really helped us with AdG
 
 Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding and eliminating all the bugs was priceless. Special thanks to:
 
-* [ag_bug_finder](http://forum.adguard.com/member.php?3639)
+* [ag_bug_finder](http://forum.adguard.com/member.php?3639) - beta tester of AdGuard for Windows
 * [Blaz](http://forum.adguard.com/member.php?4656-Blaz)
-* [Boo Berry](http://forum.adguard.com/member.php?1905-Boo-Berry)
+* [Boo Berry](http://forum.adguard.com/member.php?1905-Boo-Berry) - forum and Telegram group moderator
 * [buuuuuuu190](http://forum.adguard.com/member.php?3571-buuuuuuu190)
 * [clarke](http://forum.adguard.com/member.php?3985-clarke)
 * [dartrax](https://github.com/dartrax)
@@ -228,15 +228,35 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * [saturnotaku](http://forum.adguard.com/member.php?4782-saturnotaku)
 * [steve1209](http://forum.adguard.com/member.php?3437-steve1209)
 * [streetwolf](http://forum.adguard.com/member.php?3482-streetwolf)
-* [TPS](https://github.com/TPS)
+* [TPS](https://github.com/TPS) - bug finder, filter contributor
 * fabjazz
 * kirasam
 * malware1
 * ouzbed
 * Sanjay Nand
 * TayTayTheKiller
-
+* Andy Kleinert (AndyKl) – translator and proofreader to German in Crowdin
+* Oskari Lavinto (olavinto) – translator and proofreader to Finnish in Crowdin
+* Oizaro – translator and proofreader to Italian in Crowdin
+* lancelot.moon – translator and proofreader to Chinese Traditional in Crowdin, beta tester
+* Peter Hubinsky (hubak) – translator and proofreader to Slovak in Crowdin
+* IONIL – translator and proofreader to Hebrew in Crowdin
+* Eduardo Addad de Oliveira (eduardoaddad) – translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
+* Görkem Emrah Güler (gork7777) – translator and proofreader to Turkish in Crowdin
+* Yuki2718 – actively contributes to AdGuard filters
+* iDjay – outstanding beta tester of AdGuard for iOS
+* BigDargon – contributed the hostsVN project as a source to the list of AdGuard DNS
+* Aikatsui – active contributor to AdGuard Home
+* Oleg Chashko — very active beta tester of AdGuard for Safari
+* Сергей Зозуля (sviperz) — active member of our Telegram group, beta tester 
+* zznosar — active beta tester focused on AdGuard for iOS
+* Imre Kristoffer Eilertsen (DandelionSprout) – maintainer of “Dandelion Sprout’s Nordic Filters” that are included in all AdGuard tools
+* krystian3w – very active filter contributor
+* PentagramTr – filter contributor, namely, he has brought a lot of new things to the Turkish filter
+* PiQuark6046 – filter contributor
+* superlex – helps us with scriptlets, filters, and AdGuard for Safari
 ---
+
 We also want to thank the [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). Thank you for your much helpful feedback!
 
 We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join our [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) or visit our page on [GitHub](https://github.com/AdguardTeam).
