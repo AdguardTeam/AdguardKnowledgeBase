@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: 설치 방법
 published: true
 taxonomy:
     category:
