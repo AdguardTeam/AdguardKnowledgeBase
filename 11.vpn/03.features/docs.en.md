@@ -115,6 +115,18 @@ We don't recommend using *SOCKS5* mode unless you know what you're doing.
 
 >*NOTE*: *SOCKS5* mode can be used as a [temporary solution](https://adguard.com/en/blog/introducing-adguard-vpn-for-android.html#compatibilitywiththeadguardmainapp) to run AdGuard VPN alongside [AdGuard for Android](https://adguard.com/adguard-android/overview.html) ad blocker until we implement a proper solution.
 
+### Compatibility with AdGuard ad blocker
+
+Normally, two VPN-based apps can't work simultaneously on Android. But we made it possible for AdGuard VPN and [AdGuard ad blocker](https://adguard.com/en/adguard-android/overview.html). All you have to do is to install both applications on your device, AdGuard will do the rest automatically.
+
+Compatibility mode comes with a few limiations:
+
+* Application tunneling and other app settings are now available only via the AdGuard ad blocker app
+* Switching to a custom DNS server can be performed only via AdGuard ad blocker
+* Kill Switch option becomes unavailable
+
+If you want to disable Compatibility mode, go to *Settings > App settings > Advanced settings > Operating mode* and select a different mode. This will unlink AdGuard VPN from the ad blocker app, and AdGuard ad blocker will stop protecting your device.
+
 ### Custom DNS and low level settings
 
 Normally, we strongly discourage from messing with **Low level settings** (located at **Settings > Advanced settings > Low level settings**) without consulting tech support. However, **DNS servers** option can prove useful to many users. It allows to indicate any custom DNS server that will be forced for all traffic coming through AdGuard VPN. 
