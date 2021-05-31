@@ -999,8 +999,8 @@ This is basically an alias to `$redirect` since it has the same "redirection" va
 Examples:
 
 ```
-||example.org/script.js`
-||example.org^$redirect-rule=noopjs`
+||example.org/script.js
+||example.org^$redirect-rule=noopjs
 ```
 
 In this case, only requests to `example.org/script.js` will be "redirected". All other requests to `example.org` will be kept intact.
