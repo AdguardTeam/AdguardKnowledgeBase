@@ -62,6 +62,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-8-ko.png?" width="400" />
 
 AdGuard가 프록시 구성을 추가하도록 허용할지 여부를 확인하는 창이 표시됩니다.
+
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-9-ko.png" width="400" />
 
 이제 사용자의 필요에 맞게 보호를 설정할 수 있습니다.  프로그램 기능의 단계별 설정을 조정하려면 **네 알겠습니다**을 클릭합니다. 이 단계를 건너 뛰려면 **아니요 하지않겠습니다**를 누릅니다.
