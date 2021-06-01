@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-Debug logs are required whenever there's an atypical technical issue that calls for a close look from the developers. If you've run into such issue and want to record relevant logs, or if you were asked by the support team to collect debug logs, here's what you need to do, depending on your OS.
+Debug logs are required whenever there's an atypical technical issue that calls for a close look from the developers. If you've run into such an issue and want to record relevant logs, or if you were asked by the support team to collect debug logs, here's what you need to do, depending on your OS.
 
 ## Android
 
