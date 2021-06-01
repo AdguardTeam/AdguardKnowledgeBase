@@ -24,7 +24,6 @@ taxonomy:
 <a id="installation"></a>
 ## 설치 방법
 
-
 컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 열고 주소 표시 줄에 _adguard.com_ 을 입력한 후 열리는 페이지에서 **다운로드**를 누릅니다.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-1-ko.png" width="600" />
