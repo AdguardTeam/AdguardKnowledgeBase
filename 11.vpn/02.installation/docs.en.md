@@ -56,7 +56,7 @@ AdGuad VPN for Firefox is successfully installed!
 
 To install AdGuard VPN for Android:
 
-1) Follow [this link](https://agrd.io/vpn_android_beta) or navigate to AdGuard VPN's page in Google Play Store.
+1) Follow [this link](https://agrd.io/adguard_vpn_android) or navigate to AdGuard VPN's page in Google Play Store.
 
 2) Tap **Install**.
 
