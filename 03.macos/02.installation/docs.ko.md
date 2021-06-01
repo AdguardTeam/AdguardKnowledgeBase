@@ -1,3 +1,4 @@
+---
 title: '설치 방법/ 제거 방법'
 taxonomy:
     category:
@@ -24,11 +25,11 @@ taxonomy:
 ## 설치 방법
 
 
-컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 열고 주소 표시 줄에 _adguard.com_을 입력한 후 열리는 페이지에서 **다운로드**를 누릅니다.
+컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 열고 주소 표시 줄에 _adguard.com_ 을 입력한 후 열리는 페이지에서 **다운로드**를 누릅니다.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-1-ko.png" width="600" />
 
-_AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
+_AdguardInstaller.dmg_ 가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-2-ko.png" width="600" />
 
@@ -36,7 +37,7 @@ _AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널�
 
 AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷에서 다운로드되었음을 경고합니다. **열기**를 클릭합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-3-ko.png" width="300" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-3-ko.png" width="400" />
 
 
 다음에 **Install**를 클릭합니다.
@@ -46,7 +47,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 
 설치 프로그램이 필요한 파일을 다운로드할 때까지 기다립니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-5-ko.png" width="300" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-5-ko.png" width="500" />
 
 
 프로그램을 사용하시려면 macOS 계정의 관리자 암호가 필요합니다. 대화 상자에 암호를 입력하고 **확인**를 누릅니다.
@@ -55,18 +56,18 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 
 프로그램을 설정하려면 **시스템 환경 설정 열기**를 클릭합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-7-ko.png" width="300" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-7-ko.png" width="500" />
 
 다음에 자물쇠 아이콘을 클릭하고 **App Store 및 확인된 개발자**를 선택합니다.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-8-ko.png?" width="600" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-8-ko.png?" width="400" />
 
 AdGuard가 프록시 구성을 추가하도록 허용할지 여부를 확인하는 창이 표시됩니다.
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-9-ko.png" width="600" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ko/installation-9-ko.png" width="400" />
 
 이제 사용자의 필요에 맞게 보호를 설정할 수 있습니다.  프로그램 기능의 단계별 설정을 조정하려면 **네 알겠습니다**을 클릭합니다. 이 단계를 건너 뛰려면 **아니요 하지않겠습니다**를 누릅니다.
  
-<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/ko/mac.png" width="500" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/installation/Win/ko/mac.png" width="600" />
 
 맥북에 AdGuard가 설치되었습니다!
 
