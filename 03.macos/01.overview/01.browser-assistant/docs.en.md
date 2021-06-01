@@ -37,7 +37,7 @@ When AdGuard for Mac is installed for the first time, the thing a user encounter
 > On rare occasions, a browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
 
 ## Separate tab in settings
-The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
+The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/Mac/v2.4/assistant-separate-tab.png" style="solid #efefef; max-width: 650px; padding: 2px;">
 
