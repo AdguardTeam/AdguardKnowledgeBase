@@ -12,7 +12,7 @@ For AdGuard to [successfully filter HTTPS traffic](https://kb.adguard.com/en/gen
 
 > This method so far only works in [Firefox Nightly](https://www.mozilla.org/firefox/channel/android/) v90.0a1. Once beta- and regular versions of Firefox reach v90, this method will be applicable to them, too.
 
-To add a trusted certificate to Firefox Nightly, follow this instruction:
+To make Firefox Nightly trust AdGuard certificate, follow this instruction:
 
 1. Run the browser.
 2. Go to *Settings > About Firefox Nightly*.
