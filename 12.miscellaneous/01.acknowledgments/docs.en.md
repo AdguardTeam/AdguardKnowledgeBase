@@ -214,27 +214,27 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * ag_bug_finder - beta tester of AdGuard for Windows
 * Blaz - started as a filter contributor and now working at AdGuard
 * Boo Berry - forum and Telegram group moderator
-* buuuuuuu190 
-* clarke 
-* [dartrax](https://github.com/dartrax)
-* dja2k 
-* hanschke
-* itabmedia
-* Lord Ami
-* milder
-* Nicos18
-* rickyoh
-* Ronin427
-* saturnotaku
-* steve1209 
-* streetwolf
+* buuuuuuu190 - beta tester, active AdGuard Forum member
+* clarke - beta tester, active AdGuard Forum member
+* [dartrax](https://github.com/dartrax) - beta tester, active AdGuard Forum member
+* dja2k - beta tester, active AdGuard Forum member
+* hanschke - beta tester, active AdGuard Forum member
+* itabmedia - beta tester, active AdGuard Forum member
+* Lord Ami - beta tester, active AdGuard Forum member
+* milder - beta tester, active AdGuard Forum member
+* Nicos18 - beta tester, active AdGuard Forum member
+* rickyoh - beta tester, active AdGuard Forum member
+* Ronin427 - beta tester, active AdGuard Forum member
+* saturnotaku - beta tester, active AdGuard Forum member
+* steve1209 - beta tester, active AdGuard Forum member
+* streetwolf - beta tester, active AdGuard Forum member
 * [TPS](https://github.com/TPS) - bug finder, filter contributor
-* fabjazz
-* kirasam
-* malware1
-* ouzbed
-* Sanjay Nand
-* TayTayTheKiller
+* fabjazz - beta tester, active AdGuard Forum member
+* kirasam - beta tester, active AdGuard Forum member
+* malware1 - beta tester, active AdGuard Forum member
+* ouzbed - beta tester, active AdGuard Forum member
+* Sanjay Nand - beta tester, active AdGuard Forum member
+* TayTayTheKiller - beta tester, active AdGuard Forum member
 * Andy Kleinert (AndyKl) – translator and proofreader to German in Crowdin
 * Oskari Lavinto (olavinto) – translator and proofreader to Finnish in Crowdin
 * Oizaro – translator and proofreader to Italian in Crowdin
