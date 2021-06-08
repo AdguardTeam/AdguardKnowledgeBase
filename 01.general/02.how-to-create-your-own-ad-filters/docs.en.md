@@ -346,7 +346,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 A restriction of third-party and own requests. A third-party request is a request from different domain. For example, a request to `example.org`, from `domain.com` is a third-party request. 
 
-> **Subdomains.** Please note that request from domain to it's subdomain (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain` example.org` is not a third-party request. 
+> **Subdomains.** Please note that request from domain to it's subdomain (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain `example.org` is not a third-party request. 
 
 If there is a `third-party` modifier, the rule is only applied to third-party request.
 

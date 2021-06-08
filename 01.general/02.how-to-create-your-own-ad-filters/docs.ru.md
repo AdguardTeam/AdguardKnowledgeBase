@@ -881,7 +881,7 @@ http://regexr.com/3cesk
 ### синтаксис `$cookie`
 Синтаксис правила зависит от того, собираемся ли мы заблокировать все cookie или удалить один cookie. Поведение правила можно изменить с помощью модификаторов `maxAge` и `sameSite`.
 
-* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- каждый раз, когда AdGuard встречает cookie с именем `NAME` в запросе к` example.org`, он будет делать следующее:
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- каждый раз, когда AdGuard встречает cookie с именем `NAME` в запросе к `example.org`, он будет делать следующее:
   
   * Установит дату истечения срока хранения на текущее время плюс `3600` секунд
   * Позволяет cookie использовать [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" стратегию.
