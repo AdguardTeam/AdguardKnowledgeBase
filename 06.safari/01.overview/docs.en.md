@@ -50,7 +50,7 @@ The first tab is the General screen where you can set up basic things like notif
      </div>
 </div>
  
-A filter is a content blocker based on rules that can filter web traffic and, in particular, block advertising content (banners, pop-ups and such) and stop tracking. For the convenience of users we have combined them into thematic categories. Eight categories of filters are at your disposal: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific, Custom and Other filters*. If you’re curious to know more about them, here is [an extensive article](https://kb.adguard.com/en/general/adguard-ad-filters) describing them.
+A filter is a content blocker based on rules that can filter web traffic and, in particular, block advertising content (banners, pop-ups and such) and stop tracking. For the convenience of users we have combined them into thematic categories. Eight categories of filters are at your disposal: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific, Custom and Other filters*. If you’re curious to know more, here are extensive articles [about AdGuard filters](https://kb.adguard.com/en/general/adguard-ad-filters) and about [ad filtering in general](https://kb.adguard.com/ru/general/how-ad-blocking-works).
 
 In the Filters tab you can enable/disable the whole category, or fine-tune separate filters inside it. If you make changes, this would be reflected in the Content Blockers section (located in the General tab). In other words, you can adjust things in the Filters tab and see what has changed in the Content Blockers section.
 
