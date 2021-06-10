@@ -43,10 +43,10 @@ The first tab is the General screen where you can set up basic things like notif
 ## Filters
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters_ru.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters1_ru.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
      </div>
 </div>
  
