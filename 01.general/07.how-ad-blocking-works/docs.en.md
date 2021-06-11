@@ -10,7 +10,7 @@ visible: true
 *   [General principle](#general)
 *   [Filter lists](#filter-lists)
 *   [Types of filtering rules](#types-filtering)
-    *   [Basic filtering rules](#vasic)
+    *   [Basic filtering rules](#basic)
     *   [Cosmetic filtering rules](#cosmetic)
     *   [HTML filtering rules](#html)
 
@@ -38,7 +38,7 @@ To better understand ad blocking, it's important to know the underlying principl
 
 Filtering rules, which filters consist of, aren't created automatically. They are a product of filter maintainers' work, both professionals and volunteers. They use browsers' developer consoles and other tools (like AdGuard's Filtering log) to determine what rule would block a particular ad or tracker. This is a very simplified description of the process, as some ads are especially hard to block, require multiple rules, multiple iterations, and the use of complex syntax.
 
-As a rule gets added to the filter, it's not for good. Ads change, ways to serve the same ads on the same websites change, and so filter rules have to change too. Sometimes rules get obsolete, sometimes a new ad appears, sometimes a new filtering rule is needed to block the same ad. Filters are often maintained by a single person, but even for a team of maintainers it's impossible to constantly monitor the entire web. This is why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+And even when a rule finally gets added to the filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and so filter rules have to change too. Sometimes rules get obsolete, sometimes a new ad appears, sometimes a new filtering rule is needed to block the same ad. Filters are often maintained by a single person, but even for a team of maintainers it's impossible to constantly monitor the entire web. This is why many ad blockers have tools to help users easily report any filter-related issues they encounter.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/manifestv3/filtersupdates.png" style="max-width: 750px; border: 1px solid #efefef;">
 
@@ -79,4 +79,4 @@ In most cases, the aforementioned basic and cosmetic rules are enough to filter 
 
 This kind of rules is quite complicated and demands that the ad blocker possesses certain rights, so not all platforms support it. Such rules work only in AdGuard apps for Windows, Mac, and Android, and for AdGuard Firefox add-on.
 
-> There are more types of filtering rules, but they require even more technical knowledge to understand how they operate. You will find the [exhaustive guide on filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) in this linked article.
+> There are more types of filtering rules, but they require even more technical knowledge to understand how they operate. If you're interested, [you can find the exhaustive guide on filtering rules in the linked article](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters).
