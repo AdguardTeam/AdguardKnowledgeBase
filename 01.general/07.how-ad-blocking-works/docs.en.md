@@ -9,10 +9,10 @@ visible: true
 *   [Introduction](#introduction)
 *   [General principle](#general)
 *   [Filter lists](#filter-lists)
-*   [Types of filtering](#types-filtering)
-    *   [Basic filtering](#vasic)
-    *   [Cosmetic filtering](#cosmetic)
-    *   [HTML filtering](#html)
+*   [Types of filtering rules](#types-filtering)
+    *   [Basic filtering rules](#vasic)
+    *   [Cosmetic filtering rules](#cosmetic)
+    *   [HTML filtering rules](#html)
 
 <a name="introduction"></a>
 
@@ -36,7 +36,7 @@ At the core of any ad blocker lie filter lists, also called filters. Filters are
 
 To better understand ad blocking, it's important to know the underlying principles of how filters work.
 
-Filter rules, which filters consist of, aren't created automatically. They are a product of filter maintainers' work, both professionals and volunteers. They use browsers' developer consoles and other tools (like AdGuard's Filtering log) to determine what rule would block a particular ad or tracker. This is a very simplified description of the process, as some ads are especially hard to block, require multiple rules, multiple iterations, and the use of complex syntax.
+Filtering rules, which filters consist of, aren't created automatically. They are a product of filter maintainers' work, both professionals and volunteers. They use browsers' developer consoles and other tools (like AdGuard's Filtering log) to determine what rule would block a particular ad or tracker. This is a very simplified description of the process, as some ads are especially hard to block, require multiple rules, multiple iterations, and the use of complex syntax.
 
 As a rule gets added to the filter, it's not for good. Ads change, ways to serve the same ads on the same websites change, and so filter rules have to change too. Sometimes rules get obsolete, sometimes a new ad appears, sometimes a new filtering rule is needed to block the same ad. Filters are often maintained by a single person, but even for a team of maintainers it's impossible to constantly monitor the entire web. This is why many ad blockers have tools to help users easily report any filter-related issues they encounter.
 
@@ -51,32 +51,32 @@ Filters can do more than just block ads. There are filters that block tracking, 
 
 <a name="types-filtering"></a>
 
-## Types of filtering
+## Types of filtering rules
 
 There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, certain types of rules may not by supported.
 
 <a name="basic"></a>
 
-### Basic network filtering
+### Basic filtering rules
 
 To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
 
-All AdGuard ad blocker products can block web requests (according to the active filter rules). This method is very effective at stopping the ad but shows some drawbacks, the most obvious one is that whatever place the ad was taking up will be left empty or occupied by an ad leftover.
+Basically, all AdGuard ad blocker products can block web requests (according to the active filter rules). This method is very effective at stopping the ad but shows some drawbacks, the most obvious one is that whatever place the ad was taking up will be left empty or occupied by an ad leftover.
 
 <a name="cosmetic"></a>
 
-### Cosmetic filtering
+### Cosmetic filtering rules
 
 Every web page has a DOM ("document object model"), basically an HTML document that contains the page's structure and all its elements. Ads on the page are also elements and therefore reflected in the DOM. Ad blockers can remove parts of the DOM, and filtering rules help them understand which parts are ads and should be removed, and which shouldn't be messed with.
 
-This method allows to hide whitespaces and ad leftovers mentioned above, but also to perform other, more complicated tasks.
+This method allows to avoid whitespaces and ad leftovers mentioned above, but also to perform other, more complicated tasks.
 
 <a name="html"></a>
 
-### HTML filtering
+### HTML filtering rules
 
 In most cases, the aforementioned basic and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML code of the page itself before it is loaded. This is when you need filtering rules for HTML content. These rules allow to indicate the HTML elements to be cut out before the browser even loads the page.
 
 This kind of rules is quite complicated and demands that the ad blocker possesses certain rights, so not all platforms support it. Such rules work only in AdGuard apps for Windows, Mac, and Android, and for AdGuard Firefox add-on.
 
-> There are more types of filtering rules, but they require even more technical knowledge to understand how they operate. You will find the [exhaustive guide on filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) in this article.
+> There are more types of filtering rules, but they require even more technical knowledge to understand how they operate. You will find the [exhaustive guide on filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) in this linked article.
