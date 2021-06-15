@@ -208,70 +208,90 @@ visible: true
 <a id="testers"></a>
 # Благодарности
 
-Огромное спасибо всем бета-тестерам и другим пользователям, чья помощь в поиске и устранении ошибок была поистине бесценной. Особая благодарность:
+Также огромное спасибо всем бета-тестерам и другим неравнодушным пользователям, чья помощь в поиске и устранении ошибок, переводе AdGuard и модерации наших сообществ была бесценной. Особая благодарность:
 
-* [dartrax](https://github.com/dartrax)
-* [Petrovic](http://forum.adguard.com/member.php?3037-Petrovic)
-* [leh-stav](http://forum.adguard.com/member.php?2624-leh-stav)
-* [Анатолий1978](http://forum.adguard.com/member.php?3153-%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D0%B91978)
-* [toby_43](http://forum.adguard.com/member.php?371-toby_43)
-* [N3m0s](http://forum.adguard.com/member.php?4159-N3m0s)
-* [Иван Кузенков](http://forum.adguard.com/member.php?2801-%D0%98%D0%B2%D0%B0%D0%BD-%D0%9A%D1%83%D0%B7%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2)
-* [ZP](http://forum.adguard.com/member.php?4531-ZP)
-* [vampir900](http://forum.adguard.com/member.php?809-vampir900)
-* [4pokMEN](http://forum.adguard.com/member.php?5932-4pokMEN)
-* [jesus_c31](http://forum.adguard.com/member.php?2286-jesus_c31)
-* [Хых](http://forum.adguard.com/member.php?1846-%D0%A5%D1%8B%D1%85)
-* [KiLlArMy_Juni](http://forum.adguard.com/member.php?107-KiLlArMy_Juni)
-* [dr_max](http://forum.adguard.com/member.php?3114-dr_max)
-* [iluhin](http://forum.adguard.com/member.php?1764-iluhin)
-* [MisterMyth](http://forum.adguard.com/member.php?6006-MisterMyth)
-* [BigStone](http://forum.adguard.com/member.php?3284-BigStone)
-* [sasanau](http://forum.adguard.com/member.php?3705-rasanau)
-* [focus](http://forum.adguard.com/member.php?5323-focus)
-* Sanjay Nand
-* [fix](http://forum.adguard.com/member.php?4077-fix)
-* [Domovou](http://forum.adguard.com/member.php?2695-Domovou)
-* [D1MSON](http://forum.adguard.com/member.php?6057-D1MSON)
-* [RicuOne](http://forum.adguard.com/member.php?5182-RicuOne)
-* [Fantom](http://forum.adguard.com/member.php?65-Fantom)
-* [WSK](http://forum.adguard.com/member.php?1746-WSK)
-* [Martin_Devil](http://forum.adguard.com/member.php?2148-Martin_Devil)
-* [Gumbo](http://forum.adguard.com/member.php?791-Gumbo)
-* [maxvelamx](http://forum.adguard.com/member.php?506-maxvelamx)
-* [Talisman](http://forum.adguard.com/member.php?80-Talisman)
-* [ArgoS](http://forum.adguard.com/member.php?4023-ArgoS)
-* [re1ko](http://forum.adguard.com/member.php?6171-re1ko)
-* [Maxim PRO](http://forum.adguard.com/member.php?440-Maxim-PRO)
-* [Malahiya](http://forum.adguard.com/member.php?2549-Malahiya)
-* [biomednet](http://forum.adguard.com/member.php?6196-biomednet)
-* [RybakOFF](http://forum.adguard.com/member.php?4260-RybakOFF)
-* [Wusa](http://forum.adguard.com/member.php?4345-Wusa)
-* [Ligre](http://forum.adguard.com/member.php?3681-Ligre)
-* [Hercules](http://forum.adguard.com/member.php?5881-Hercules)
-* [ag_bug_finder](http://forum.adguard.com/member.php?3639)
-* [milder](http://forum.adguard.com/member.php?4519-milder)
-* [Ronin427](http://forum.adguard.com/member.php?4116-Ronin427)
-* [itabmedia](http://forum.adguard.com/member.php?4711-itabmedia)
-* [saturnotaku](http://forum.adguard.com/member.php?4782-saturnotaku)
-* [Ариша](http://forum.adguard.com/member.php?5173-%D0%90%D1%80%D0%B8%D1%88%D0%B0)
-* [Blaz](http://forum.adguard.com/member.php?4656-Blaz)
-* [Boo Berry](http://forum.adguard.com/member.php?1905-Boo-Berry)
-* [buuuuuuu190](http://forum.adguard.com/member.php?3571-buuuuuuu190)
-* [clarke](http://forum.adguard.com/member.php?3985-clarke)
-* [dja2k](http://forum.adguard.com/member.php?3933-dja2k)
-* [hanschke](http://forum.adguard.com/member.php?3946-hanschke)
-* [Lord Ami](http://forum.adguard.com/member.php?5374-Lord-Ami)
-* [Nicos18](http://forum.adguard.com/member.php?5726-Nicos18)
-* [rickyoh](http://forum.adguard.com/member.php?1507-rickyoh)
-* [steve1209](http://forum.adguard.com/member.php?3437-steve1209)
-* [streetwolf](http://forum.adguard.com/member.php?3482-streetwolf)
-* [TPS](https://github.com/TPS)
-* fabjazz
-* kirasam
-* malware1
-* ouzbed
-* TayTayTheKiller
+* ag_bug_finder – бета-тестер AdGuard для Windows
+* Aikatsui – активный контрибьютор AdGuard Home
+* Andy Kleinert (AndyKl) – переводчик и редактор немецкого языка в Crowdin
+* ArgoS – бета-тестер AdGuard для Windows
+* BigDargon – добавил проект hostsVN в качестве источника в список AdGuard DNS
+* BigStone – бета-тестер, активный участник форума AdGuard 
+* biomednet – бета-тестер, активный участник форума AdGuard 
+* Blaz – начинал как контрибьютор, пополняя наши фильтры (а теперь работает в AdGuard)
+* Boo Berry – модератор нашего форума и группы Telegram
+* buuuuuuu190 – бета-тестер, активный участник форума AdGuard 
+* clarke – бета-тестер, активный участник форума AdGuard 
+* D1MSON – бета-тестер, активный участник форума AdGuard 
+* [dartrax](https://github.com/dartrax) – бета-тестер, активный участник форума AdGuard 
+* dja2k – бета-тестер, активный учаcтник форума AdGuard 
+* Domovou – бета-тестер, активный учаcтник форума AdGuard 
+* dr_max – бета-тестер, активный учаcтник форума AdGuard 
+* Eduardo Addad de Oliveira (eduardoaddad) – переводчик и редактор португальского и португальского бразильского языков в Crowdin
+* Fantom – бета-тестер, активный участник форума AdGuard 
+* fabjazz – бета-тестер, активный участник форума AdGuard 
+* fix – бета-тестер, активный участник форума AdGuard
+* focus – бета-тестер, активный участник форума AdGuard 
+* Görkem Emrah Güler (gork7777) – переводчик и редактор турецкого языка в Crowdin
+* Gumbo – бета-тестер, активный участник форума AdGuard 
+* hanschke – бета-тестер, активный участник форума AdGuard 
+* Hercules – бета-тестер, активный участник форума AdGuard 
+* iDjay – выдающийся бета-тестер AdGuard для iOS
+* iluhin – бета-тестер, активный участник форума AdGuard
+* Imre Kristoffer Eilertsen (DandelionSprout) – разработчик "Nordic Filters" от Dandelion Sprout, которые включены во все инструменты AdGuard
+* IONIL – переводчик и редактор иврита в Crowdin
+* itabmedia – бета-тестер, активный участник форума AdGuard 
+* jesus_c31 – бета-тестер, активный участник форума AdGuard 
+* KiLlArMy_Juni – бета-тестер, активный участник форума AdGuard 
+* kirasam – бета-тестер, активный участник форума AdGuard 
+* krystian3w – очень активный разработчик фильтров
+* lancelot.moon – переводчик и редактор традиционного китайского языка в Crowdin, бета-тестер
+* leh-stav – бета-тестер, активный участник форума AdGuard 
+* Ligre – бета-тестер, активный участник форума AdGuard 
+* Lord Ami – бета-тестер, активный участник форума AdGuard 
+* Malahiya – бета-тестер, активный участник форума AdGuard 
+* malware1 – бета-тестер, активный участник форума AdGuard 
+* Maxim PRO – бета-тестер, активный участник форума AdGuard 
+* maxvelamx – бета-тестер, активный участник форума AdGuard 
+* Martin_Devil – бета-тестер, активный участник форума AdGuard 
+* milder – бета-тестер, активный участник форума AdGuard 
+* MisterMyth – бета-тестер, активный участник форума AdGuard 
+* N3m0s – бета-тестер, активный участник форума AdGuard
+* Nicos18 – бета-тестер, активный участник форума AdGuard 
+* Oizaro – переводчик и редактор итальянского языка в Crowdin
+* Oleg Chashko – очень активный бета-тестер AdGuard для Safari
+* Oskari Lavinto (olavinto) – переводчик и редактор финского языка в Crowdin
+* ouzbed – бета-тестер, активный участник форума AdGuard 
+* PentagramTr – разработчик фильтров, очень многое добавил в турецкий рекламный фильтр
+* Peter Hubinsky (hubak) – переводчик и редактор словацкого языка в Crowdin
+* Petrovic – бета-тестер, активный участник форума AdGuard 
+* PiQuark6046 – разработчик фильтров
+* rickyoh – бета-тестер, активный участник форума AdGuard
+* re1ko – бета-тестер, активный участник форума AdGuard
+* RicuOne – бета-тестер, активный участник форума AdGuard
+* Ronin427 – бета-тестер, активный участник форума AdGuard 
+* RybakOFF – бета-тестер, активный участник форума AdGuard 
+* Sanjay Nand – бета-тестер, активный участник форума AdGuard 
+* sasanau – бета-тестер, активный участник форума AdGuard
+* saturnotaku – бета-тестер, активный участник форума AdGuard 
+* steve1209 – бета-тестер, активный участник форума AdGuard 
+* streetwolf – бета-тестер, активный участник форума AdGuard 
+* superlex – помогает нам со скриптлетами, фильтрами и AdGuard для Safari
+* Talisman – бета-тестер, активный участник форума AdGuard 
+* TayTayTheKiller – бета-тестер, активный участник форума AdGuard 
+* toby_43 – бета-тестер, активный участник форума AdGuard 
+* [TPS](https://github.com/TPS) – бета-тестер, разработчик фильтров
+* Yuki2718 – активный контрибьютор, помогает с фильтрами AdGuard
+* vampir900 – бета-тестер, активный участник форума AdGuard 
+* WSK – бета-тестер, активный участник форума AdGuard 
+* Wusa – бета-тестер, активный участник форума AdGuard 
+* ZP – бета-тестер, активный участник форума AdGuard 
+* zznosar – активный бета-тестер, особенно помогает с AdGuard для iOS
+* 4pokMEN – бета-тестер, активный участник форума AdGuard 
+* Анатолий1978 – бета-тестер, активный участник форума AdGuard 
+* Ариша – бета-тестер, активный участник форума AdGuard 
+* Иван Кузенков – бета-тестер, активный участник форума AdGuard 
+* Сергей Зозуля (sviperz) – активный участник нашей группы в Telegram, бета-тестер
+* Хых – бета-тестер, активный участник форума AdGuard 
 
 ---
 
