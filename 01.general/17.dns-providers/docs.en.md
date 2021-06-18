@@ -206,9 +206,9 @@ Blocks phishing, spam and malicious domains
 
 <a name="neustar-dns"></a>
 
-### Neustar UltraDNS
+### Neustar Recursive DNS
 
-[Neustar UltraDNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
+[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
 
 #### Reliability & Performance 1
 
@@ -364,7 +364,7 @@ Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-S
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provide security blocklist, DNSSEC, EDNS Client-Subnet.
+EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client-Subnet.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -470,7 +470,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### CIRA Canadian Shield DNS
 
-[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protect against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
+[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
 
 #### Private
 
