@@ -6,10 +6,13 @@ taxonomy:
 visible: true
 ---
 
-*   [Introduction](#introduction)
-*   [Filters policy](#policy)
-*   [Contributing to AdGuard filters](#contribute)
-*   [AdGuard filters](#filters)
+- [Introduction](#introduction)
+- [AdGuard Filters Policy](#adguard-filters-policy)
+- [Contributing to AdGuard filters](#contributing-to-adguard-filters)
+  - [Report Issues](#report-issues)
+  - [Suggest Filtering Rules](#suggest-filtering-rules)
+  - [Other ways to contribute](#other-ways-to-contribute)
+- [AdGuard filters](#adguard-filters)
 
 <a name="introduction"></a>
 ## Introduction
@@ -57,6 +60,6 @@ Here is [a dedicated page](https://adguard.com/contribute.html) for people willi
 * **Spanish/Portuguese filter** — removes ads from websites in Spanish and Portuguese. Originally based on the [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
 * **Turkish filter** — removes ads from websites in Turkish. Created by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
 * **Chinese filter** — removes ads from websites in Chinese. Originally based on the [EasyList China](http://abpchina.org/forum/forum.php) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
-* **Experimental filter** — serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perfrom without any issues, they get added to main filters. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
+* **Experimental filter** — serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perform without any issues, they get added to main filters. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 * **Mobile ads filter** — blocks ads on mobile devices. Contains all known mobile ad networks. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 * **DNS filter** — composed of several other filters (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads and tracking. To learn more about DNS-level blocking, visit [this page](https://adguard.com/adguard-dns/overview.html). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
