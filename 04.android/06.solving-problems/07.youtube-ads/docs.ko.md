@@ -1,5 +1,5 @@
 ---
-title: 'YouTube/ KakaoTalk/Facebook 광고 차단하는 방법'
+title: 'YouTube/KakaoTalk/Facebook 광고 차단하는 방법'
 taxonomy:
     category:
         - docs
