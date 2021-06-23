@@ -74,7 +74,7 @@ To add a filter, just click the **Add custom filter** button and then enter the 
 
 In this tab it is possible to create your own filtering rules. There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters).
     
-Then, it's possible to import a ready-to-use filter list from a text file. *Make sure that different rules are separated by line breaks.*  Besides, you can export filtering rules created by you. But first and foremost, this section is for transferring your list of rules between browsers or devices, while for importing ready-to-use filters it is better to use [Custom filters](https://kb.adguard.com/en/browser-extensions/overview.html#custom).
+Then, it's possible to import a ready-to-use filter list from a text file. *Make sure that different rules are separated by line breaks.*  Besides, you can export filtering rules created by you. But first and foremost, this option is for transferring your list of rules between browsers or devices, while for importing ready-to-use filters it is better to use [Custom filters](https://kb.adguard.com/en/browser-extensions/overview.html#custom).
 
 When you add a website to allowlist (more about it [below](#allowlist)) or use [the Assistant tool](https://kb.adguard.com/en/browser-extensions/overview.html#assistant) for hiding an element on the page, a corresponding rule goes to *User rules*.
     
@@ -98,7 +98,7 @@ The *Stealth Mode* module aims to ensure the protection of sensitive personal in
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/stealth_mode.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-The Stealth Mode can be flexibly adjusted — you can prohibit a website to receive the search requests you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and so on. [A separate article](https://kb.adguard.com/en/general/stealth-mode) is devoted to all these features.
+Stealth Mode can be flexibly adjusted — you can prohibit a website to receive the search requests you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and so on. [A separate article](https://kb.adguard.com/en/general/stealth-mode) is devoted to all these features.
 
 > Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
     
@@ -114,9 +114,9 @@ In the *General* settings you can allow [search ads and the self-promotion of we
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/general.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-Besides, here you can manage the *Browsing security* module by enabling or disabling the *Phishing and malware protection* and also opt to help us in the development of filters by sending some anonymized information. Naturally, all data is sent strictly anonymously, and it is crucial for us to obtain statistics on rules — which ones are triggered, on which websites and how often — because we use this data to optimize our filters. By agreeing to share this data, you will help us improve filtering, and eventually you will also help yourself, because the filters in the extension will become better. But don't worry, no data will be sent without your consent, this option is disabled by default.
+Besides, here you can enable *Phishing and malware protection* (read more about [how it works](https://kb.adguard.com/en/general/how-malware-protection-works#phishing)).
 
-In case you want to keep your settings configuration, you can use the **Export settings** option to save it as a file. And vice versa, use the **Import settings** button to upload settings from a previously stored settings file. You can even use to quickly switch between different settings profiles or even to transfer settings configurations between different browsers. 
+In case you want to keep your settings configuration, you can use the **Export settings** option to save it as a file. And vice versa, use the **Import settings** button to upload settings from a previously stored settings file. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers. 
 
 <a name="misc"></a>
 ### Miscellaneous 
@@ -125,9 +125,9 @@ The *Miscellaneous* settings section contains a range of various settings that a
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/stealth_mode_misc.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-Here you can activate optimized filters, enable notifications about extension updates, etc.
+From this settings tab you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, see the most recent *Сhangelog*, and reset blocked ads statistics by clicking the **Reset statistics** button.
 
-Also, from the *Miscellaneous* settings tab you can open the *Filtering log*, see the most recent *Сhangelog* and reset blocked ads statistics by clicking the **Reset statistics** button.
+Besides, you can opt to help us in the development of filters by sending some anonymized information. Naturally, all data is sent strictly anonymously, and it is crucial for us to obtain statistics on rules — which ones are triggered, on which websites and how often — because we use this data to optimize our filters. By agreeing to share this data, you will help us improve filtering, and eventually you will also help yourself, because the filters in the extension will become better. But don't worry, no data will be sent without your consent, this option is disabled by default.
     
 <a name="about"></a>
 ### About
