@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that is accessible for five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex.Browser. Browser extensions include basic ad blocking features but cannot be compared with full-featured desktop programs such as *AdGuard for Windows* and *AdGuard for Mac*.
+AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that is accessible for five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex.Browser. Browser extensions include basic ad blocking features but cannot be compared with full-featured desktop programs such as [*AdGuard for Windows*](https://kb.adguard.com/en/windows/overview) and [*AdGuard for Mac*](https://kb.adguard.com/en/mac/overview).
 
 In this article we’ll reveal to you all its useful options. If you're looking for some specific information, navigate directly to the appropriate item or read the entire article to learn more about the product.
 
@@ -16,8 +16,8 @@ In this article we’ll reveal to you all its useful options. If you're looking 
     - [Filters](#filters)
         - [Custom filters](#custom)
     - [User rules](#user-rules)
-    - [Allowlist](#whitelist)
-- [Stealth mode](#stealth-mode)
+    - [Allowlist](#allowlist)
+- [Stealth Mode](#stealth-mode)
 - [Other features and options](#other)
     - [General](#general)
     - [Miscellaneous](#misc)
@@ -44,7 +44,7 @@ Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is 
 <a name="filters"></a>
 ### Filters
 
-In essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your webpages and life gets lots better.
+In essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your webpages and life gets a lot better.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/filters.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
@@ -59,7 +59,7 @@ While the features of other filter groups are more or less predictable, there is
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/custom.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-In this tab you can add filters that are not present in the extension by default. There are plenty of publicly [available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like. 
+In this tab you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like. 
 
 To add a filter, just click the **Add custom filter** button and then enter the URL or the file path of the filter you want to be added, and then click the **Next** button.
 
@@ -74,33 +74,33 @@ To add a filter, just click the **Add custom filter** button and then enter the 
 
 In this tab it is possible to create your own filtering rules. There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters).
     
-Then, it's possible to import a ready-to-use filter list from a text file. *Make sure that different rules are separated by line breaks.*  Besides, you can export filtering rules created by you.
+Then, it's possible to import a ready-to-use filter list from a text file. *Make sure that different rules are separated by line breaks.*  Besides, you can export filtering rules created by you. But first and foremost, this section is for transferring your list of rules between browsers or devices, while for importing ready-to-use filters it is better to use [Custom filters](https://kb.adguard.com/en/browser-extensions/overview.html#custom).
 
-When you add a website to allowlist (more about it [below](#whitelist)) or use the Assistant tool for hiding an element on the page, a corresponding rule goes to *User rules*.
+When you add a website to allowlist (more about it [below](#allowlist)) or use [the Assistant tool](https://kb.adguard.com/en/browser-extensions/overview.html#assistant) for hiding an element on the page, a corresponding rule goes to *User rules*.
     
-<a name="whitelist"></a>
+<a name="allowlist"></a>
 ### Allowlist
 
 If you want to exclude certain websites from filtering, the *Allowlist* option will be of help. Here you can add particular websites to the list of exceptions, it will disable blocking for those trusted domains. Just put the websites you want to exclude into the Allowlist and the ad blocking rules won’t be applied to them. 
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/whitelist.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/allowlist.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 The *Allowlist* can be inverted, too — you can unblock ads everywhere except the sites that you added to this list. Just activate the **Invert Allowlist** option.
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/invert_whitelist.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/invert_allowlist.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-Also, you can either import or export already created lists of exclusions if needed. It is especially useful when you want to apply the same list of sites on other devices and you don’t want to spend time on its creation. The *Allowlist* can be configured just in a couple of clicks.
+Also, you can either import or export already existing lists of exclusions if needed. It is especially useful when you want to apply the same list of sites on other devices and you don’t want to spend time on its creation. The *Allowlist* can be configured just in a couple of clicks.
 
 <a name="stealth-mode"></a>
-## Stealth mode
+## Stealth Mode
 
-The *Stealth mode* module aims to ensure the protection of sensitive personal information from online trackers and other fraudsters. 
+The *Stealth Mode* module aims to ensure the protection of sensitive personal information from online trackers and other fraudsters. 
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/stealth_mode.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-The Stealth mode can be flexibly adjusted — you can prohibit a website to receive the search requests you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and so on. [A separate article](https://kb.adguard.com/ru/general/stealth-mode) is devoted to all these features.
+The Stealth Mode can be flexibly adjusted — you can prohibit a website to receive the search requests you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and so on. [A separate article](https://kb.adguard.com/en/general/stealth-mode) is devoted to all these features.
 
-> Note that some of the *Stealth mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+> Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
     
 <a name="other"></a>
 ## Other features and options
@@ -114,9 +114,9 @@ In the *General* settings you can allow [search ads and the self-promotion of we
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/general.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-Besides, here you can manage the *Browsing security* module by enabling or disabling the *Phishing and malware protection* and also opt to help us in the development of the security filters by sending some anonymized security-related information. Naturally, all data is sent strictly anonymously, and it is crucial for us to obtain statistics on rules — which ones are triggered, on which websites and how often — because we use this data to optimize our filters. By agreeing to share this data, you will help us improve filtering, and eventually you will also help yourself, because the filters in the extension will become better. But don't worry, no data will be sent without your consent, this option is disabled by default.
+Besides, here you can manage the *Browsing security* module by enabling or disabling the *Phishing and malware protection* and also opt to help us in the development of filters by sending some anonymized information. Naturally, all data is sent strictly anonymously, and it is crucial for us to obtain statistics on rules — which ones are triggered, on which websites and how often — because we use this data to optimize our filters. By agreeing to share this data, you will help us improve filtering, and eventually you will also help yourself, because the filters in the extension will become better. But don't worry, no data will be sent without your consent, this option is disabled by default.
 
-In case you want to keep your settings configuration, you can use the **Export settings** option to save it in a file. And vice versa, use the **Import settings** button to upload settings from a previously stored settings file. You can even use to quickly switch between different settings profiles or even to transfer settings configurations between different browsers. 
+In case you want to keep your settings configuration, you can use the **Export settings** option to save it as a file. And vice versa, use the **Import settings** button to upload settings from a previously stored settings file. You can even use to quickly switch between different settings profiles or even to transfer settings configurations between different browsers. 
 
 <a name="misc"></a>
 ### Miscellaneous 
@@ -143,6 +143,7 @@ Now let's get back to the very beginning and have a look at the interface of the
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/adguard_br_extension.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
+<a name="assistant"></a>
 It provides several options. You can hide any element on any page manually (corresponding rule will be added to *User rules*), open *Filtering log* to view the comlete information about your browser's traffic, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page — our filter engineers will review the report and fix the problem) and see the statistics on blocked ads. 
 
 All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by the AdGuard Browser extension. Besides, it allows you to block any request or add a previously blocked request to allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be extremely helpful when creating your own filtering rules.
@@ -163,6 +164,6 @@ AdGuard Browser extension has its advantages: it's absolutely free, you don’t 
 
 `1 – within browser restrictions and only in the browser where it is installed;`
 
-`2 –  the extension is unable to detect requests from other extensions. So if some other, malicious or tracking extension wants to send a request to its server to show you ads or track your activity, the extension will not be able to block that request;`
+`2 –  the extension is unable to detect requests from other extensions. So if some other, malicious or tracking extension wants to send a request to its server to show you ads or track your activity, AdGuard Browser extension will not be able to block that request;`
 
 `3 – not all types of ads and threats can be blocked by browser extensions because of certain browser restrictions. It means that some elements may get to the page and slow down the loading process. Besides, unlike browser ad blockers, AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.`
