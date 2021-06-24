@@ -52,9 +52,11 @@ Type the rest of the text below (use [Markdown](https://github.com/LewisVo/Markd
 
 <a name="translating"></a>
 
+<strong>Please note! At the moment, we accept articles only in Chinese, English, Japanese, Korean and Russian languages.</strong>
+
 ## Translating an article
 
-This part is tricky. Currently, our Knowledgebase only supports the English and Russian languages, but we can envision a future where we have many more to choose from. You can help us lay the foundation of this future by suggesting translations to existing articles. Everything that was said about [writing new articles](#new-article) applies here too, the main difference is that you should always create the new file in the same folder as the original one, and name it accordingly (e.g. `docs.es.md` for Spanish). Use the English original's raw text to copy the structure of the article, it will eliminate a lot of possible misunderstandings and inconsistencies.
+This part is tricky. Currently, our Knowledgebase only supports the English and Russian languages, but we can envision a future where we have some more to choose from. You can help us lay the foundation of this future by suggesting translations to existing articles in Chinese, Japanese and Korean. Everything that was said about [writing new articles](#new-article) applies here too, the main difference is that you should always create the new file in the same folder as the original one, and name it accordingly (e.g. `docs.ko.md` for Korean). Use the English original's raw text to copy the structure of the article, it will eliminate a lot of possible misunderstandings and inconsistencies.
 
 <a name="issues"></a>
 
