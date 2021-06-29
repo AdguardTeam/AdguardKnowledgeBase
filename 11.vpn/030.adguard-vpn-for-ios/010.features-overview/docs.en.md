@@ -29,7 +29,7 @@ Speaking of AdGuard VPN, it has several functions:
 * allows to bypass geo-blocking of some websites by hiding your location and changing your IP address
 * encrypts your traffic to protect your data from tracking
 
-The next advantage of AdGuard VPN for iOS is our own VPN protocol. It has two main benefits: comparing to other VPN protocols it is extremely hard to detect and it works stably even with a poor Internet connection. More about AdGuard VPN protocol you can read [here](link).
+The next advantage of AdGuard VPN for iOS is our own VPN protocol. It has two main benefits: comparing to other VPN protocols it is extremely hard to detect and it works stably even with a poor Internet connection. You can read more about AdGuard VPN protocol [in this article](link).
 
 <a name="use"></a>
 
@@ -43,10 +43,10 @@ Using AdGuard VPN is quite easy. On the main screen you can see the *Connect/Dis
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/connected.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/connected.png" style=" max-width: 350px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/locations.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/locations.png" style=" max-width: 350px; ">
      </div>
 </div>
 
@@ -58,10 +58,10 @@ You can find the exclusion feature by tapping the middle button below. There you
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/exclusions.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/exclusions.png" style=" max-width: 350px; ">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/add-an-exclusion.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/add-an-exclusion.png" style=" max-width: 350px; ">
      </div>
 </div>
 
@@ -75,7 +75,7 @@ Another useful feature is the import/export of exclusion lists. You can do it by
 
 4. Open AdGuard VPN on the device where you want to import the archive with the ready lists of exclusions. Find the appropriate section, click on the *Import* button and select the archive.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/import-export-exclusions.png" class="center-img" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/import-export-exclusions.png" class="center-img" style="max-width: 350px; ">
 
 <a name="settings"></a>
 
@@ -85,10 +85,10 @@ You can find App settings by pressing the *Settings* button in the bottom right 
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/settings.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/settings.png" style=" max-width: 350px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/app-settings.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/app-settings.png" style=" max-width: 350px;">
      </div>
 </div>
 
@@ -110,7 +110,7 @@ In **Integrated** mode, AdGuard VPN will be able to work at the same time with A
 
 The purpose of Domain name system (DNS) is to translate websites' names into something browsers can understand, i.e. IP addresses. This job is performed by DNS servers. AdGuard VPN for iOS offers a choice between several DNS servers, each with their own special qualities. For example, AdGuard DNS removes ads and protects your device from tracking while AdGuard DNS Family Protection combines the functions of AdGuard DNS with SafeSearch and adult content blocking. DNS servers by different DNS providers may also work faster or slower depending on your location, ISP, and other factors. Choose the one that works best for you. You can find out more about DNS and its characteristics [in this article](https://kb.adguard.com/en/general/dns-filtering#what-is-dns).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/dns-server.png" class="center-img" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/dns-server.png" class="center-img" style=" max-width: 350px; ">
 
 <a name="wi-fi"></a>
 
@@ -136,7 +136,7 @@ In the *Advanced settings* you can find two sections — Logging level and Diagn
 
 To access this feature, touch and hold the app icon, then lift your finger. You'll see a list of Quick Actions: Connect/Disconnect to the currently selected server, Choose location to select a new server location. You can also, of course, access all default actions like removing the app or moving the app icon around.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/quick-actions.png" class="center-img" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/quick-actions.png" class="center-img" style="max-width: 350px;">
 
 <a name="support"></a>
 
@@ -144,7 +144,7 @@ To access this feature, touch and hold the app icon, then lift your finger. You'
 
 The users' accomplishment is the high priority for us. So there is a variety of helping features in the app (press the *Settings* button at the bottom right and then *Support*): you can see the FAQ section, report a bug, leave feedback, discuss your problems and suggestions on our forum, in social networks, or on GitHub, rate AdGuard VPN for iOS in the App Store and export logs.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/support.png" class="center-img" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">!
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/support.png" class="center-img" style="max-width: 350px;" >
 
 <a name="unlimited-version"></a>
 
