@@ -150,7 +150,7 @@ The users' accomplishment is the high priority for us. So there is a variety of 
 
 ## Unlimited version
 
-You can buy a license of AdGuard VPN to get the unlimited version of the App. In the *Settings* choose *About license* and press the *Manage* button. You will be sent to the browser page where you can choose a monthly or a yearly payment plan. 
+You can purchase a subscription of AdGuard VPN to get the unlimited version of the App. In the *Settings* choose *About license* and press the *Manage* button. You will be sent to the browser page where you can choose a monthly or a yearly payment plan. 
 
 A subscription allows to have more benefits comparing to a free account:
 
