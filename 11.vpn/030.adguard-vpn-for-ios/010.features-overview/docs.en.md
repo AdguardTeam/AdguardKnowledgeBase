@@ -9,6 +9,11 @@ taxonomy:
 *   [How to use AdGuard VPN for iOS](#use)
 *   [Lists of exclusions](#exclusion)
 *   [App settings](#settings)
+    * [Operating mode](#operating-mode)
+    * [DNS server](#dns-server)
+    * [Wi-Fi auto-protection](#wi-fi)
+    * [Theme](#theme)
+    * [Advanced settings](#advanced-settings)
 *   [Quick Actions](#quick-actions)
 *   [Support](#support)
 *   [Unlimited version](#unlimited-version)
@@ -24,7 +29,7 @@ Speaking of AdGuard VPN, it has several functions:
 * allows to bypass geo-blocking of some websites by hiding your location and changing your IP address
 * encrypts your traffic to protect your data from tracking
 
-The next advantage of AdGuard VPN for iOS is our own VPN protocol. It helps to combine the App with our another app - AdGuard Ad Blocker and saves high connection speed while encrypting your traffic.
+The next advantage of AdGuard VPN for iOS is our own VPN protocol. It has two main benefits: comparing to other VPN protocols it is extremely hard to detect and it works stably even with a poor Internet connection.
 
 SCREENSHOTS!
 
@@ -32,9 +37,9 @@ SCREENSHOTS!
 
 ## How to use AdGuard VPN for iOS
 
-Before using AdGuard VPN for iOS, you need to pass authorization. Your can sign in via your Facebook or Google account, Apple ID or by creating an AdGuard account.
+Before using AdGuard VPN for iOS, you need to pass authorization. Your can sign in via your Facebook or Google account, Apple ID or by creating an AdGuard account. If you don't have an AdGuard account yet, you should create it in any case.
 
-Using AdGuard VPN is quite easy. On the main screen you can see the *Connect/Disconnect* button and the list of available servers. There servers have their own location (a certain country and a city) and ping indicator. TThe ping describes the response time of the server (in milliseconds). For example, choosing the server with the ping of 22 ms means that information from the device will reach this server and turn back from it in 22 milliseconds. So the lower this rate, the faster is your connection. In AdGuard VPN you can choose among over 50 locations in dozens of countries.
+Using AdGuard VPN is quite easy. On the main screen you can see the *Connect/Disconnect* button and the list of available servers. There servers have their own location (a certain country and a city) and ping indicator. TThe ping describes the response time of the server (in milliseconds). For example, choosing the server with the ping of 22 ms means that the signal will reach the server and return back in 22 milliseconds. So the lower this rate, the faster is your connection. In AdGuard VPN you can choose among over 50 locations in dozens of countries.
 
 SCREENSHOTS!
 
@@ -62,6 +67,8 @@ SCREENSHOTS!
 
 You can find App settings by pressing the *Settings* button in the bottom right of the screen. You can configure AdGuard VPN for iOS as you need by selecting different options.
 
+<a name="operating-mode"></a>
+
 ### Operating mode
 
 AdGuard VPN for iOS can operate in two modes: **General** and **Integrated**.
@@ -72,17 +79,25 @@ In **Integrated** mode, AdGuard VPN will be able to work at the same time with A
 
 >Note that in **Integrated** mode you can't use the Exclusions feature or choose a DNS server.
 
+<a name="dns-server"></a>
+
 ### DNS server
 
-The purpose of Domain name system (DNS) is to translate websites' names into something browsers can understand, i.e. IP addresses. This job is performed by DNS servers. AdGuard VPN for iOS offers a choice between several DNS servers, each with their own special qualities. For example, AdGuard DNS removes ads and protects your device from tracking while Adguard DNS Family Protection combines the functions of AdGuard DNS with SafeSearch and adult content blocking. DNS servers by different DNS providers may also work faster or slower depending on your location, ISP, and other factors. Choose the one that works best for you. You can find out more about DNS and its characteristics [in this article](https://kb.adguard.com/en/general/dns-filtering#what-is-dns).
+The purpose of Domain name system (DNS) is to translate websites' names into something browsers can understand, i.e. IP addresses. This job is performed by DNS servers. AdGuard VPN for iOS offers a choice between several DNS servers, each with their own special qualities. For example, AdGuard DNS removes ads and protects your device from tracking while AdGuard DNS Family Protection combines the functions of AdGuard DNS with SafeSearch and adult content blocking. DNS servers by different DNS providers may also work faster or slower depending on your location, ISP, and other factors. Choose the one that works best for you. You can find out more about DNS and its characteristics [in this article](https://kb.adguard.com/en/general/dns-filtering#what-is-dns).
+
+<a name="wi-fi"></a>
 
 ### Wi-Fi auto-protection
 
 VPN will automatically turn on when the device connects to a Wi-Fi network.
 
+<a name="theme"></a>
+
 ### Theme
 
 You can choose system default, dark or light theme of the app (available in iOS 13 and later versions).
+
+<a name="advanced-settings"></a>
 
 ### Advanced settings
 
@@ -102,7 +117,7 @@ SCREENSHOTS!
 
 ## Support
 
-The users' accomplishment is the high priority for us. So there is a variety of helping features in the app (press the *Settings* button in the bottom right and then *Support*): you can see the FAQ section, report a bug, leave feedback, discuss your problems and suggestions on our forum, in social networks, or on GitHub, rate AdGuard VPN for iOS in the App Store and export logs.
+The users' accomplishment is the high priority for us. So there is a variety of helping features in the app (press the *Settings* button at the bottom right and then *Support*): you can see the FAQ section, report a bug, leave feedback, discuss your problems and suggestions on our forum, in social networks, or on GitHub, rate AdGuard VPN for iOS in the App Store and export logs.
 
 SCREENSHOTS!
 
