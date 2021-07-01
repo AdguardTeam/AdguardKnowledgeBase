@@ -333,13 +333,28 @@ If you want the rule not to be applied to certain domains, start a domain name w
 * `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
 
-###### `domain` and requests with `document` type
+###### `domain` modifier matching target domain
 
-When a request has `document` type, rules with `domain` modifier behave differently. In the following examples it's implied that requests are sent from `http://example.org/page` (the referrer), and the target URL is `http://targetdomain.com/page`.
+In some cases the `$domain` modifier can match not only the referer domain, but also the target domain. This happens when all of the following is true:
 
-* `||page^$domain=example.org` will be matched, as it matches the referrer.
-* `||page^$domain=~example.org` will not be matched, as it explicitly excludes `example.org`.
-* `||page^$domain=targetdomain.com` will be matched, as it matches the target URL. This will not be true for all other types of requests.
+1) The request has `document` type
+2) The rule's pattern doesn't match any particular domain(s)
+3) The rule's pattern doesn't contain regular expressions
+
+When all these conditions are met, the `domain` modifier will match both the referer doman **and** the target domain.
+
+**Examples:**
+
+* `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
+* `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+
+In the following examples it's implied that requests are sent from `http://example.org/page`(the referer) and the target URL is `http://targetdomain.com/page`.
+
+* `page$domain=example.org` will be matched, as it matches the referer domain.
+* `page$domain=targetdomain.com` will be matched, as it matches the target domain but satisfies all requirements mentioned above.
+* `||page^$domain=targetdomain.com` will not be matched, as the pattern `||page^` matches specific domains.
+* `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
+
 
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
