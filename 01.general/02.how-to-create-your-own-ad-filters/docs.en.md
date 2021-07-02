@@ -721,20 +721,30 @@ If a request to `example.org` is sent from the `test.org` domain, the rule won't
 <a id="badfilter-modifier"></a>
 #### **`badfilter`**
 
-> #### Compatibility with different versions of AdGuard
-> `badfilter` modifier is currently only available in AdGuard browser extensions. It will be added to other AdGuard products later.
-
 The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
-##### `badfilter` examples
+**Examples:**
 
 * `||example.com$badfilter` disables `||example.com`
 * `||example.com$image,badfilter` disables `||example.com,image`
 * `@@||example.com$badfilter` disables `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
-> #### Compatibility with different versions of AdGuard
-> Below modifiers from this section are only available in AdGuard for Windows, macOS and Android. Browser extension capabilities are limited by browser itself and some methods are just not available to them.
+Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfil the following conditions:
+
+* The rule has a `$domain` modifier
+* The rule does not have a negated domain `~` in `$domain` modifier's value.
+
+In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note, that [wildcard-TLD logic](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#wildcard-for-tld) works here as well. 
+
+**Examples:**
+
+* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` by `/some$domain=example.com,badfilter`
+* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org` and `/some$domain=example.io` are disabled completely by `/some$domain=example.com|example.org|example.io,badfilter`
+* `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
+* `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `domain` modifier contains a negated domain
 
 <a id="empty-modifier"></a>
 #### **`empty`**

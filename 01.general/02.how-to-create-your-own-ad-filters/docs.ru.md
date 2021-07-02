@@ -722,20 +722,30 @@ removeparam = "/" regex "/" options
 <a id="badfilter-modifier"></a>
 ##### **`badfilter`**
 
-> #### Совместимость с разными версиями AdGuard
-> Модификатор `badfilter` на данный момент работает только в браузерных расширениях AdGuard. Мы планируем в скором времени добавить поддержку этого модификатора и другими продуктами AdGuard.
-
 Правила, содержащие модификатор `badfilter`, отключают базовые правила, на которые они ссылаются. Это означает, что текст отключенного правила должен соответствовать тексту `badfilter`-правила (за исключением самого модификатора `badfilter`).
 
-###### Примеры `badfilter`
+**Примеры:**
 
 * `||example.com$badfilter` отключает `||example.com`
 * `||example.com$image,badfilter` отключает `||example.com,image`
 * `@@||example.com$badfilter` отключает `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
 
-> #### Совместимость с разными версиями AdGuard
-> Модификаторы ниже из этого раздела доступны только в AdGuard для Windows, macOS и Android. Браузерные расширения ограничены возможностями, предоставляемыми браузерами, и некоторые функции им просто недоступны.
+Правила с модификатором `$badfilter` могут отключать другие базовые правила для определённых доменов, если они выполняют следующие условия:
+
+* Правило имеет модификатор `$domain`
+* Правило не имеет отрицания домена `~` в значении модификатора `$domain`.
+
+В этом случае, правило с `$badfilter` отключит соответствующее базовое правило для доменов, указанных как в правиле с `$badfilter`, так и в базовом правиле. Обратите внимание, что [логика wildcard для доменов верхнего уровня (TLD)](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#wildcard-for-tld) здесь также применима. 
+
+**Примеры:**
+
+* `/some$domain=example.com|example.org|example.io` отключно для `example.com` правилом `/some$domain=example.com,badfilter`
+* `/some$domain=example.com|example.org|example.io` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org` и `/some$domain=example.io` полностью отключены правилом `/some$domain=example.com|example.org|example.io,badfilter`
+* `/some$domain=example.com|example.org|example.io` полностью отключено правилом `/some$domain=example.*,badfilter`
+* `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку в значении модификатора `domain` содержится отрицание домена
 
 <a id="empty-modifier"></a>
 ##### **`empty`**
