@@ -367,6 +367,9 @@ In the following examples it's implied that requests are sent from `http://examp
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 * `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
+> **Important!** Safari doesn't support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+
+
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
