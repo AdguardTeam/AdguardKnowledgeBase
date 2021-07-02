@@ -340,6 +340,34 @@ pattern = "/" regexp "/"
 * `||baddomain.com^$domain=~example.org` — правило для блокировки запросов, которые соответствуют указанной маске, и отправленных с любого домена, кроме `example.org` и его поддоменов.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — в данном примере правило будет соответствовать запросам, отправленным с домена `example.org` и всех его поддоменов, кроме поддомена `foo.example.org`.
 
+###### Когда `domain` соответствует целевому домену
+
+В некоторых случаях модификатор `$domain` может соответствовать не только домену-рефереру, но и целевому домену. Это происходит в случае, когда всё из перечисленного верно:
+
+1) Запрос имеет тип `document`
+2) Паттерн правила не соответствует какому-либо или каким-либо конкретным доменам
+3) Паттерн правила не содержит регулярных выражений
+
+Если все условия выполнены, модификатор `domain` будет соответствовать как рефереру, так и целевому домену.
+
+Если какие-либо из условий выше не выполнены, но правило содержит модификатор `cookie` или `csp`, модификатор `domain` всё равно будет соответствовать целевому домену.
+
+Если реферер соответствует правилу с `domain`, которое явно исключает домен реферера, то правило не сработает, даже если целевой домен тоже ему соответствует. Это также касается правил с модификаторами `cookie` и `csp`.
+
+**Примеры:**
+
+* `*$cookie,domain=example.org|example.com` заблокирует cookies для всех запросов от и к `example.org` и `example.com`.
+* `*$document,domain=example.org|example.com` заблокирует все запросы от и к `example.org` и `example.com`.
+
+В следующих примерах предполагается, что запросы отправляются от `http://example.org/page`(реферер), а целевой URL - `http://targetdomain.com/page`.
+
+* `page$domain=example.org` сработает, так как соответствует рефереру.
+* `page$domain=targetdomain.com` сработает, так как соответствует целевому домену, но выполнены все условия, перечисленные выше.
+* `||*page$domain=targetdomain.com` не сработает, поскольку паттерн `||*page` указывает на конкретные домены.
+* `||*page$domain=targetdomain.com,cookie` сработает несмотря на то, что паттерн `||*page` указывает на кокретные домены, поскольку правило содержит модификатор `$cookie`. 
+* `/banner\d+/$domain=targetdomain.com` не сработает, поскольку правило содержит регулярное выражение.
+* `page$domain=targetdomain.com|~example.org` не сработает, так как домен реферера явно исключён.
+
 > **Важно!** Safari не поддерживает одновременно разрешенные и запрещенные домены, поэтому правила вида `||baddomain.com^$domain=example.org|~foo.example.org` не действуют в AdGuard для Safari.
 
 <a id="third-party-modifier"></a>
@@ -500,7 +528,7 @@ AdGuard будет пытаться закрыть браузерную вкла
 <a id="content-modifier"></a>
 ##### **`content`**
 
-Отключает правила фильтрации HTML-элементов на страницах, подходящих под правило. О правилах фильтрации HTML-элементов речь [пойдет ниже](#html-filtering-rules).
+Отключает правила фильтрации HTML-элементов и replace-правила на страницах, подходящих под правило. О правилах фильтрации HTML-элементов речь пойдёт [здесь](#html-filtering-rules), а о replace-правилах — [здесь](#replace-modifier).
 
 ###### Примеры `content`
 
@@ -741,12 +769,28 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 Правила, содержащие модификатор `badfilter`, отключают базовые правила, на которые они ссылаются. Это означает, что текст отключенного правила должен соответствовать тексту `badfilter`-правила (за исключением самого модификатора `badfilter`).
 
-###### Примеры `badfilter`
+**Примеры:**
 
 * `||example.com$badfilter` отключает `||example.com`
 * `||example.com$image,badfilter` отключает `||example.com,image`
 * `@@||example.com$badfilter` отключает `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
+
+Правила с модификатором `$badfilter` могут отключать другие базовые правила для определённых доменов, если они выполняют следующие условия:
+
+* Правило имеет модификатор `$domain`
+* Правило не имеет отрицания домена `~` в значении модификатора `$domain`.
+
+В этом случае, правило с `$badfilter` отключит соответствующее базовое правило для доменов, указанных как в правиле с `$badfilter`, так и в базовом правиле. Обратите внимание, что [логика wildcard для доменов верхнего уровня (TLD)](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#wildcard-for-tld) здесь также применима. 
+
+**Примеры:**
+
+* `/some$domain=example.com|example.org|example.io` отключно для `example.com` правилом `/some$domain=example.com,badfilter`
+* `/some$domain=example.com|example.org|example.io` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org` и `/some$domain=example.io` полностью отключены правилом `/some$domain=example.com|example.org|example.io,badfilter`
+* `/some$domain=example.com|example.org|example.io` полностью отключено правилом `/some$domain=example.*,badfilter`
+* `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку в значении модификатора `domain` содержится отрицание домена
 
 <a id="empty-modifier"></a>
 ##### **`empty`**

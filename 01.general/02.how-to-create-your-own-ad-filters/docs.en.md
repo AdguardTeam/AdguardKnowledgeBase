@@ -339,7 +339,36 @@ If you want the rule not to be applied to certain domains, start a domain name w
 * `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
 
-> **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `||baddomain.com^$domain=example.org|~foo.example.org` are invalid in AdGuard for Safari.
+###### `domain` modifier matching target domain
+
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
+
+1) The request has `document` type
+2) The rule's pattern doesn't match any particular domain(s)
+3) The rule's pattern doesn't contain regular expressions
+
+When all these conditions are met, the `domain` modifier will match both the referrer doman **and** the target domain.
+
+If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
+
+If the referrer matches a rule with `domain` that explicitly excludes the referrer domain, then the rule won't be applied even if the target domain also matches the rule. This affects rules with `cookie` and `csp` modifiers, too.
+
+**Examples:**
+
+* `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
+* `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+
+In the following examples it's implied that requests are sent from `http://example.org/page`(the referrer) and the target URL is `http://targetdomain.com/page`.
+
+* `page$domain=example.org` will be matched, as it matches the referrer domain.
+* `page$domain=targetdomain.com` will be matched, as it matches the target domain but satisfies all requirements mentioned above.
+* `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` matches specific domains.
+* `||*page$domain=targetdomain.com,cookie` will be matched despite the pattern `||*page` matches specific domains because it contains `$cookie` modifier. 
+* `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
+* `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
+
+> **Important!** Safari doesn't support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+
 
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
@@ -497,7 +526,7 @@ Disables any cosmetic rules on the pages matching the rule. You will find the in
 <a id="content-modifier"></a>
 ##### **`content`**
 
-Disables HTML filtering rules on the pages matching the rule. You will find the information about HTML filtering rules [further](#html-filtering-rules).
+Disables HTML filtering rules and replace rules on the pages that match the rule. You will find the information about HTML filtering rules [here](#html-filtering-rules) and about replace rules [here](#replace-modifier).
 
 ###### `content` example
 
@@ -741,12 +770,28 @@ If a request to `example.org` is sent from the `test.org` domain, the rule won't
 
 The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
-##### `badfilter` examples
+**Examples:**
 
 * `||example.com$badfilter` disables `||example.com`
 * `||example.com$image,badfilter` disables `||example.com,image`
 * `@@||example.com$badfilter` disables `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
+
+Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfil the following conditions:
+
+* The rule has a `$domain` modifier
+* The rule does not have a negated domain `~` in `$domain` modifier's value.
+
+In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note, that [wildcard-TLD logic](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#wildcard-for-tld) works here as well. 
+
+**Examples:**
+
+* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` by `/some$domain=example.com,badfilter`
+* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org` and `/some$domain=example.io` are disabled completely by `/some$domain=example.com|example.org|example.io,badfilter`
+* `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
+* `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `domain` modifier contains a negated domain
 
 <a id="empty-modifier"></a>
 #### **`empty`**
