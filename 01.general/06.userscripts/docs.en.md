@@ -109,7 +109,6 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ```
 @name
-@icon
 @description
 @version
 @downloadURL
@@ -124,12 +123,6 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @namespace
 ```
 
-##### Partially supported properties
-
-```
-@run-at - document-idle option is not supported.
-```
-
 ##### Unsupported properties
 
 These properties will be simply ignored by Adguard.
@@ -137,6 +130,8 @@ These properties will be simply ignored by Adguard.
 ```
 @unwrap
 @noframes - Adguard won't execute a userscript inside of any iframe.
+@icon
+@run-at
 
 ```
 

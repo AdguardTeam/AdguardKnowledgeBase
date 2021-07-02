@@ -1,25 +1,34 @@
 ---
-title: 'Ручная установка сертификата безопаности в браузер FireFox'
+title: 'Проблемы доверия сертификатам безопасности в браузере Firefox'
 published: true
 taxonomy:
     category:
         - docs
 ---
 
-Различные версии браузера Firefox требуют разных подходов для осуществления [HTTPS-фильтрации](https://kb.adguard.com/ru/general/https-filtering). Если стабильная версия Firefox позволяет установить сертификат непосредственно в сам браузер, то в других версиях указанного браузера данный функционал может быть ограничен (Firefox Nightly, Beta, Developer Edition, а также в других браузерах на базе Firefox). Ниже мы представлены два варианта, которые помогут вам активировать HTTPS-фильтрацию в различных версиях браузера Firefox.
+Чтобы AdGuard мог [успешно фильтровать HTTPS-трафик](https://kb.adguard.com/ru/general/https-filtering) в Firefox, браузер должен доверять сертификату AdGuard. Этого можно добиться по-разному в зависимости от версии Firefox.
 
-### Предоставление доступа к сертификатам
+#### Метод 1
 
-#### Сертификат находится в разделе **Пользовательские**
+> Пока что этот метод работает только в [Firefox Nightly](https://www.mozilla.org/firefox/channel/android/) версии 90.0a1. Как только бета- и обычная сборка Firefox достигнут версии 90, данный метод будет также применим к ним.
 
-Чтобы начать использовать пользовательские сертификаты в Firefox (и браузерах на основе Firefox), вам необходимо активировать скрытую опцию в настройках браузера:
+Чтобы Firefox Nightly доверял сертификату AdGuard, выполните следующие шаги:
 
-1. Запустите браузер **Firefox**;
-2. Перейдите на страницу **about:config**;
-3. Введите **root** в поле поиска;
-4. Найдите опцию "security.enterprise_roots.enabled" и переключите ее, выбрав значание **true**.
+1. Запустите браузер.
+2. Перейдите в *Настройки > О Firefox Nightly*.
 
-#### Сертификат перенесен в раздел **системные** (Наличие root-прав)
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_about_ru.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+
+3. Несколько раз быстро нажмите на логотип Firefox Nightly в верху экрана.
+4. Перейдите в раздел *Настройки > Secret Settings*.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_secret.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+
+5. Включите настройку **Use third party CA certificates**.
+
+#### Метод 2
+
+>Этот метод будет работать **только** на устройствах с рут-доступом!
 
 1. [Установите и настройте ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/);
 > При использовании платформы Windows, владельцам **Samsung** может понадобиться установка [данной утилиты](https://developer.samsung.com/mobile/android-usb-driver.html).
@@ -29,7 +38,7 @@ taxonomy:
 - Кликните по строке **Номер сборки** 7 раз. После этого, вы получите уведомление о том, что стали разработчиком (возможно, вам потребуется ввести код разблокировки устройства);
 - Откройте **настройки системы** > **Для разработчиков** > Прокрутите вниз и включите **отладку по USB** > Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
 3. Установите браузер [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (релизную версию);
-4. Откройте **настройки AdGuard** > **Сеть** > **Фильрация HTTPS** > Установить сертификат в браузер **Firefox** > выберите вариант **Стабильный**;
+4. Откройте **настройки AdGuard** > **Сеть** > **Фильрация HTTPS** > Установить сертификат в браузер **Firefox** > **УСТАНОВИТЬ ДЛЯ СТАРЫХ ВЕРСИЙ**;
 5. Откройте папку `data/data/org.mozilla.firefox/files/mozilla` применив `adb shell su` и `cd data/data/…`, далее отыщите папку с названием `xxxxxxx.default` и запомните её название.
 6. В указанной папке нас интересуют два файла:
 - `cert9.db`
@@ -42,11 +51,12 @@ taxonomy:
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyy.default`
 
 В том случае, если вы получили системное уведомление **permission denied**, вам необходимо сначала перенести указанные файлы в свободную от разрешений директорию. А уже после перенести их в нужную папку в браузере Firefox.
+
 Полная команда будет иметь примерное такой вид:
 - `adb shell su`
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxx.default/cert9.db sdcard/Download`
 - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxx.default/key4.db sdcard/Download`
 - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default` 
 - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`
-> Если `adb shell su` не срабатывает, изначально следует попробовать применить `adb shell`, а уже после `su`.
 
+> Если `adb shell su` не срабатывает, изначально следует попробовать применить `adb shell`, а уже после `su`.

@@ -105,7 +105,7 @@ Turn off the switch next to any app to tell AdGuard VPN to ignore this app's tra
 
 ### Kill Switch
 
-If anonymity is absolutely essential for you, enable **Kill Switch** from the **Settings** tab. If connection drops for any reason, Kill Switch will block access to the Internet, thus preventing your anonyymity from becoming compromised.  
+If anonymity is absolutely essential for you, enable **Kill Switch** from the **Settings** tab. If connection drops for any reason, Kill Switch will block access to the Internet, thus preventing your anonymity from becoming compromised.  
 
 ### VPN mode
 
@@ -114,6 +114,18 @@ Inside **Settings > Advanced Settings** there's a **VPN mode** option. By defaul
 We don't recommend using *SOCKS5* mode unless you know what you're doing.
 
 >*NOTE*: *SOCKS5* mode can be used as a [temporary solution](https://adguard.com/en/blog/introducing-adguard-vpn-for-android.html#compatibilitywiththeadguardmainapp) to run AdGuard VPN alongside [AdGuard for Android](https://adguard.com/adguard-android/overview.html) ad blocker until we implement a proper solution.
+
+### Compatibility with AdGuard ad blocker
+
+Normally, two VPN-based apps can't work simultaneously on Android. But we made it possible for AdGuard VPN and [AdGuard ad blocker](https://adguard.com/en/adguard-android/overview.html). All you have to do is to install both applications on your device, AdGuard will do the rest automatically.
+
+Compatibility mode comes with a few limiations:
+
+* Application tunneling and other app settings are now available only via the AdGuard ad blocker app
+* Switching to a custom DNS server can be performed only via AdGuard ad blocker
+* Kill Switch option becomes unavailable
+
+If you want to disable Compatibility mode, go to *Settings > App settings > Advanced settings > Operating mode* and select a different mode. This will unlink AdGuard VPN from the ad blocker app, and AdGuard ad blocker will stop protecting your device.
 
 ### Custom DNS and low level settings
 
