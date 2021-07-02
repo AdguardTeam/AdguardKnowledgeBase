@@ -1,30 +1,34 @@
 ---
-title: 'Manual installation of the security certificate into the Firefox browser'
+title: 'Certificates trust issues in Firefox browser'
 published: true
 taxonomy:
     category:
         - docs
 ---
 
-Different versions of Firefox browser require different approaches for AdGuard to perform [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering). Most of the time this happens in Firefox versions older than v81.1.1. To solve this issue, try Method 1 described below  (it works with nightly– and beta–versions of the browser).
+For AdGuard to [successfully filter HTTPS traffic](https://kb.adguard.com/en/general/https-filtering) in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
 
+#### Method 1
 
-### Enabling access to certificates installed on device
+> This method so far only works in [Firefox Nightly](https://www.mozilla.org/firefox/channel/android/) v90.0a1. Once beta- and regular versions of Firefox reach v90, this method will be applicable to them, too.
 
-#### Method 1 (Certificate located in the User store)
+To make Firefox Nightly trust AdGuard certificate, follow this instruction:
 
->This method will only work in [Beta or Nightly](https://www.mozilla.org/firefox/channel/android/) versions of the browser, as regular versions of Firefox don't have `about:config` anymore.
+1. Run the browser.
+2. Go to *Settings > About Firefox Nightly*.
 
-To make Firefox trust user certificates, you need to toggle the hidden option in the browser itself:
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_about_en.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-1. Run the browser;
-2. Navigate to **about:config** page;
-3. Type **root** in the search field;
-4. Locate the option `security.enterprise_roots.enabled` and toggle it, making it **true**.
+3. Rapidly tap several times on the Firefox Nightly logo at the top of the screen.
+4. Navigate to *Settings > Secret Settings*.
 
-#### Method 2 (Certificate located in the System store)
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_secret.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
->This method will only work on **rooted** devices.
+5. Toggle **Use third party CA certificates**.
+
+#### Method 2
+
+> This method will only work on **rooted** devices.
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
