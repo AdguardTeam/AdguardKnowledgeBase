@@ -343,7 +343,9 @@ In some cases the `$domain` modifier can match not only the referer domain, but 
 
 When all these conditions are met, the `domain` modifier will match both the referer doman **and** the target domain.
 
->If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
+If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
+
+If the referer matches a rule with `domain` that explicitly excludes the referer domain, then the rule won't be applied even if the target domain also matches the rule. This affects rules with `cookie` and `csp` modifiers, too.
 
 **Examples:**
 
@@ -357,6 +359,7 @@ In the following examples it's implied that requests are sent from `http://examp
 * `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` matches specific domains.
 * `||*page$domain=targetdomain.com,cookie` will be matched despite the pattern `||*page` matches specific domains because it contains `$cookie` modifier. 
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
+* `page$domain=targetdomain.com|~example.org` will not be matched because the referer domain is explicitly excluded.
 
 
 <a id="third-party-modifier"></a>
