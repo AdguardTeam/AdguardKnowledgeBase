@@ -43,10 +43,10 @@ AdGuard VPN выполняет несколько функций:
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/connected.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/connected-ru.png" style=" max-width: 350px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/locations.png" style=" max-width: 350px; ">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/locations-ru.png" style=" max-width: 350px; ">
      </div>
 </div>
 
@@ -58,10 +58,10 @@ AdGuard VPN выполняет несколько функций:
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/exclusions.png" style=" max-width: 350px; ">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/exclusions-ru.png" style=" max-width: 350px; ">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/add-an-exclusion.png" style=" max-width: 350px; ">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/add-an-exclusion-ru.png" style=" max-width: 350px; ">
      </div>
 </div>
 
@@ -75,7 +75,7 @@ AdGuard VPN выполняет несколько функций:
 
 4. Откройте AdGuard VPN на устройстве, на которое вы хотите импортировать архив с готовыми списками исключений. Найдите соответствующий раздел, нажмите на кнопку *Импорт* и выберите архив.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/import-export-exclusions.png" class="center-img" style="max-width: 350px; ">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/import-export-exclusions-ru.png" class="center-img" style="max-width: 350px; ">
 
 <a name="settings"></a>
 
@@ -85,10 +85,10 @@ AdGuard VPN выполняет несколько функций:
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/settings.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/settings-ru.png" style=" max-width: 350px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/app-settings.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/app-settings-ru.png" style=" max-width: 350px;">
      </div>
 </div>
 
@@ -110,7 +110,7 @@ AdGuard VPN для iOS может работать в двух режимах: *
 
 Цель системы доменных имен (DNS) состоит в том, чтобы перевести имена веб-сайтов в то, что могут понять браузеры, то есть в IP-адреса. Эта работа выполняется DNS-серверами. AdGuard VPN для iOS предлагает выбор между несколькими DNS-серверами, каждый из которых обладает своими особыми качествами. Например, сервер *AdGuard DNS* удаляет рекламу и защищает ваше устройство от трекинга, в то время как сервер *AdGuard DNS Family Protection* сочетает *AdGuard DNS* с функцией безопасного поиска и блокировки контента для взрослых. DNS-серверы разных DNS-провайдера также могут работать быстрее или медленнее в зависимости от вашего местоположения, интернет-провайдера и других факторов. Выберите тот, который лучше всего подходит для вас. Вы можете узнать больше о DNS и его характеристиках [в этой статье](https://kb.adguard.com/en/general/dns-filtering#what-is-dns).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/dns-server.png" class="center-img" style=" max-width: 350px; ">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/dns-server-ru.png" class="center-img" style=" max-width: 350px; ">
 
 <a name="wi-fi"></a>
 
@@ -136,7 +136,7 @@ VPN автоматически включится, когда устройств
 
 Чтобы получить доступ к этой функции, коснитесь и удерживайте значок приложения. Вы увидите список быстрых команд: *Подкючить/Отключить*, *Выбрать локацию*. Вы также, конечно, можете получить доступ к таким командам по умолчанию, как *Удалить приложение*, *Поделиться приложением* и *Изменить экран "Домой"*. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/quick-actions.png" class="center-img" style="max-width: 350px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/quick-actions-ru.png" class="center-img" style="max-width: 350px;">
 
 <a name="support"></a>
 
@@ -144,7 +144,7 @@ VPN автоматически включится, когда устройств
 
 Удобство пользователей является для нас приоритетом. Поэтому в AdGuard VPN для iOS есть множество возможностей поддержки (нажмите кнопку *Настройки* в правом нижнем углу, а затем *Поддержка*): вы можете просмотреть раздел часто задаваемых вопросов (FAQ), сообщить об ошибке, оставить отзыв, обсудить проблемы и предложения на нашем форуме, в социальных сетях или на GitHub, оценить приложение в App Store и экспортировать логи.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/support.png" class="center-img" style="max-width: 350px;" >
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-ios-screenshots/support-ru.png" class="center-img" style="max-width: 350px;" >
 
 <a name="unlimited-version"></a>
 
