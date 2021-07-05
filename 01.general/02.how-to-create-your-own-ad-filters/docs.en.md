@@ -1063,28 +1063,38 @@ In this case, only requests to `example.org/script.js` will be "redirected". All
 
 #### **`denyallow`**
 
-This modifier makes it easier to implement default-deny/allow-exceptionally in static filter lists.
+`denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for a specific domain(s). This modifier makes it easier to implement default-deny/allow-exceptionally in static filter lists.
 
-##### `denyallow` syntax
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
 
-Example:
+Please note that rules with the `$denyallow` modifier have the following restrictions:
+ 
+* the rule's matching pattern cannot target any specific domain(s) (e.g., it can't start with `||`)
+* domains in the modifier's parameter cannot be negated (e.g. `$denyallow=~x.com`) or have a wildcard TLD (e.g. `$denyallow=x.*`)
 
-```*$third-party,script,denyallow=x.com|y.com,domain=a.com|b.com```
+The rules which violate these restrictions are considered invalid.
 
-The above filter tells the network filtering engine that when the context is `a.com` or `b.com`, block all third-party scripts except those from `x.com` and `y.com`.
+**Example:**
 
-**Please note that [`$domain` modifier](#domain-modifier) is required!**
+This rule:
 
-> **AdGuard for Safari and AdGuard for iOS** convert $denyallow rule into blocking rule and additional exception rules:
->
-> For example, the rule
-> ```*$script,domain=a.com|~b.com,denyallow=x.com|y.com```
-> will be converted to:
-> ```
-> *$script,domain=a.com|~b.com
-> @@||x.com$script,domain=a.com|~b.com
-> @@||y.com$script,domain=a.com|~b.com
-> ```
+```
+*$script,domain=a.com|b.com,denyallow=x.com|y.com
+```
+
+is equivalent to this one:
+
+```
+/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
+```
+
+or to these three:
+
+```
+*$script,domain=a.com|b.com
+@@||x.com$script,domain=a.com|b.com
+@@||y.com$script,domain=a.com|b.com
+```
 
 <a id="noop-modifier"></a>
 #### **`noop`**
