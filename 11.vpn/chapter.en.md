@@ -1,5 +1,5 @@
 ---
-title: 'AdGuard VPN for iOS'
+title: 'AdGuard VPN'
 taxonomy:
     category:
         - docs
