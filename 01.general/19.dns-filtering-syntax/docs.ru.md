@@ -13,8 +13,9 @@ visible: true
 
 * Основные правила фильтрации, такие как [Базовые правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters), но с поддержкой ограниченного набора модификаторов:
 
-    * [`$important`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#important-modifier)
-    * [`$badfilter`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#badfilter-modifier)
+    * [`$important`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#important-modifier) — повышает приоритет правила
+    * [`$badfilter`](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#badfilter-modifier) — отключает правила, на которые ссылается
+    * [`$denyallow`](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#denyallow) — исключает домены из области действия правила
     * Правила с другими модификаторами будут проигнорированы
 
 AdGuard Home поддерживает больше модификаторов, вы можете найти подробную информацию о DNS-синтаксисе AdGuard Home DNS [здесь](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists).

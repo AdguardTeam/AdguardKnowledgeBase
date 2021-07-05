@@ -13,8 +13,9 @@ It doesn't support the complex [syntax](https://kb.adguard.com/general/how-to-cr
 
 * Basic filtering rules, which is the same as [AdGuard's basic rules](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#basic-rules), but with a limited set of modifiers supported:
 
-    * [`$important`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#important-modifier)
-    * [`$badfilter`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#badfilter-modifier)
+    * [`$important`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#important-modifier) — increases rule's priority
+    * [`$badfilter`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#badfilter-modifier) — disables other rules it references
+    * [`$denyallow`](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#denyallow) — excludes certain domains from the rule's application area
     * Rules with other modifiers will be ignored
 
 AdGuard Home supports more modifiers, you can find more information about AdGuard Home DNS syntax [here](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists).
