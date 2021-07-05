@@ -1063,7 +1063,7 @@ In this case, only requests to `example.org/script.js` will be "redirected". All
 
 #### **`denyallow`**
 
-`denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for a specific domain(s). This modifier makes it easier to implement default-deny/allow-exceptionally in static filter lists.
+`denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for a specific domain(s). `denyallow` matches only target domains and not referrer domains.
 
 Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
 
