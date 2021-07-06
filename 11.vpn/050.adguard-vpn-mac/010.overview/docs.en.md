@@ -6,7 +6,7 @@ taxonomy:
 ---
 
 * [Home screen](#home)
-* [Exclusions](#content-blockers)
+* [Exclusions](#exclisions)
 * [Filters](#filters)
 * [Support](#support)
 * [Settings](#settings)
@@ -14,9 +14,9 @@ taxonomy:
 *	 [Advanced settings](#advanced-settings)
 * [Benefits of the unlimited version](#unlimited)
 
-AdGuard VPN for Mac is a desktop VPN service. It is currently in the beta stage, but it doesn’t mean that the app is raw. Quite the opposite, it is working stable and can be used. AdGuard VPN is fully compatible with AdGuard ad blocker, they can be safely used together and will operate seamlessly. Let’s see what features it has to offer.
+AdGuard VPN for Mac is a desktop VPN service. It is currently in the beta stage, but it doesn’t mean that the app is raw. Quite the opposite, it is working stable and can be used safely. AdGuard VPN is fully compatible with AdGuard ad blocker, they can be used together and will operate seamlessly. Let’s see what features it has to offer.
 
-> Note that **you can't use AdGuard VPN for Mac unless you have logged into your AdGuard account**. You can either sign in with your AdGuard account or with an external account, namely, via Google or Facebook. Make sure that your external account is bound to the same e-mail address as your AdGuard account. If there is a suitable subscription in your AdGuard account, it will be automatically activated on the desktop app. 
+Note that **you can't use AdGuard VPN for Mac unless you have logged into your AdGuard account**. You can either sign in with your AdGuard account or with an external account, namely, via Google or Facebook. Make sure that your external account is bound to the same e-mail address as your AdGuard account. If there is a suitable subscription in your AdGuard account, it will be automatically activated on the desktop app. 
 Still don't have an AdGuard account? Create it [here](https://auth.adguard.com/registration.html).
  
 > AdGuard VPN for Mac is currently supported on Catalina and Big Sur. The support for older versions of macOS will be available shortly.
@@ -39,11 +39,11 @@ Next goes the *Exclusions* screen. AdGuard VPN has several features that make it
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn_export_exclusions.png?" style="max-width: 700px" /><p align="center">
 
-What’s more, ready-made exclusions lists can be transferred to other devices with the installed AdGuard VPN. To export exclusions, follow the four-step instruction below:
+What’s more, ready-made exclusions lists can be transferred to other devices with installed AdGuard VPN. To export exclusions, follow the four-step instruction below:
 
-1. Open AdGuard VPN on the device/in the browser from where you want to export your lists of exclusions. Find the appropriate section and click on the *Export* button. The `exclusions.zip` archive will be downloaded.
-2. There are two TXT files inside the archive, each for Regular and Selective lists. Add more exclusions to them, delete the existing ones, rename files (but more on this later), or just leave the archive with files as it is.
-3. When transferring between different devices, don't forget to send the zip file to the device for import. For example, if you import exclusion lists from your Android device to your PC, make sure to send the zip file to your PC beforehand.
+1. Open AdGuard VPN on the device from where you want to export your lists of exclusions. Find the appropriate section and click on the *Export* button. The `exclusions.zip` archive will be downloaded.
+2. There are two .txt files inside the archive, each for Regular and Selective lists. Add more exclusions to them, delete the existing ones, rename files (but more on this later), or just leave the archive with files as it is.
+3. When transferring between different devices, don't forget to send the .zip file to the device for import. For example, if you import exclusion lists from your Mac to your iPhone, make sure to send the .zip file to your phone beforehand.
 4. Open AdGuard VPN on the device/in the browser where you want to export the archive with the ready lists of exclusions. Find the appropriate section, click on the *Import* button and select the archive. Done!
 
 <a id="support"></a>
@@ -99,6 +99,5 @@ As mentioned above, the free version of AdGuard VPN has its limitations. Let's s
  * All locations are available
  * Streaming services are supported
  * Torrents are supported
- * Email clients can be used for sending messages (for AdGuard VPN for iOS and Android)
 
-> The last point should be addressed separately: users of the free version of AdGuard VPN for iOS and Android cannot send emails in email clients. It’s impossible because we block port 25, which is used for outgoing emails, and thus reinsure against spam. However, sending emails in the browser version of email services works perfectly, and on AdGuard VPN for Android you can add apps to exclusions so that email apps will function as well.
+ Learn more about the benefits of the unlimited version [in the dedicated article](url).
