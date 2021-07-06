@@ -6,7 +6,7 @@ taxonomy:
 ---
 
 * [Home screen](#home)
-* [Exclusions](#exclisions)
+* [Exclusions](#exclusions)
 * [Support](#support)
 * [Settings](#settings)
 * 	 [General settings](#general-settings)
@@ -25,7 +25,7 @@ Still don't have an AdGuard account? Create it [here](https://auth.adguard.com/r
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/mac-vpn-main.png" style="border: 0px solid #efefef; max-height: 700px; max-width: 800px; padding: 2px;">
 
-The first tab is the *Home* screen. Here you can see AdGuard VPN current status and [operating mode](#exclusions), chosen location (if enabled) and its ping. If VPN is disabled, the last location you connected to is displayed below. The fastest locations with the lowest pings are displayed in the upper right corner of the screen. Below you can see the full list of locations. Through the search function, the needed location can be easily found. 
+The first tab is the *Home* screen. Here you can see AdGuard VPN current status and [operating mode](#exclusions), chosen location (if enabled) and its ping. Ping is the response time of a VPN server. Consequently, the lower this number is, the faster the connection. If VPN is disabled, the last location you connected to is displayed below. The fastest locations with the lowest pings are displayed in the upper right corner of the screen. Below you can see the full list of locations. Through the search function, the needed location can be easily found. 
 
 > Free users can connect only to certain locations, while others are blocked. Besides, there is a 3GB monthly traffic limit in the free version.
 
@@ -52,7 +52,7 @@ What’s more, ready-made exclusions lists can be transferred to other devices w
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/release/VPN_for_Mac/support.png" style="border: 0px solid #efefef; max-height: 700px; max-width: 800px; padding: 2px;">
 
-The third tab is the *Support* screen. Find answers to any questions in the [FAQ](https://adguard-vpn.com/en/welcome.html#faq) or in the [Knowledge base](https://kb.adguard-vpn.com/en) sections, report a bug if you encounter one, or [discuss AdGuard on any of the platforms](https://adguard.com/en/discuss.html). And feel free to [leave feedback about our product](https://surveys.adguard.com/en/vpn_mac/form.html), we’d appreciate it. 
+The third tab is the *Support* screen. Find answers to any questions in the [FAQ](https://adguard-vpn.com/en/welcome.html#faq) or in the [Knowledge base](https://kb.adguard.com/en/vpn) sections, report a bug if you encounter one, or [discuss AdGuard on any of the platforms](https://adguard.com/en/discuss.html). And feel free to [leave feedback about our product](https://surveys.adguard.com/en/vpn_mac/form.html), we’d appreciate it. 
  
 <a id="settings"></a> 
 ## Settings
@@ -75,9 +75,9 @@ Finally, we come to the most important tab — Settings. In the *About program* 
 
 The first three basic features make the application more convenient and user-friendly, i.e. *autoupdate*, *launch AdGuard VPN at login*, and *auto-connect on app launch*. What’s more, you can choose between light, dark, and system themes — the latter one matches the theme on your Mac. 
 
-Another option that shouldn't be overlooked is that you can allow AdGuard VPN to gather and send anonymized crash reports, technical and interaction data in order to help us improve our app. Last but not least, thanks to to the button on the right, you can export logs to your Mac.
+Another option that shouldn't be overlooked is that you can allow AdGuard VPN to gather and send anonymized crash reports, technical and interaction data in order to help us improve our app. Last but not least, thanks to to the button on the right, you can export logs to your Mac. This can be useful if you want to attach logs to your message to support.
 
-<a id="general-settings"></a>
+<a id="advanced-settings"></a>
 ### Advanced settings
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/release/VPN_for_Mac/advanced-settings.png" style="border: 0px solid #efefef; max-height: 700px; max-width: 800px; padding: 2px;">
@@ -85,7 +85,7 @@ Another option that shouldn't be overlooked is that you can allow AdGuard VPN to
 Advanced settings are not recommended to be adjusted. Don't change them unless asked by our technical support or unless you're sure what you're doing.
 
 #### Logging level
-There are only two logging levels but we strongly recommend that you use the first, default one. The second option (extended logging) should be set only to record a strange program behavior after consulting our technical support. Even if you enabled  the second logging level, make sure to go back to the default one after recording logs.
+There are only two logging levels but we strongly recommend that you use the first, default one. The second option (extended logging) should be set only to record a strange program behavior after consulting our technical support. Even if you enabled the second logging level, make sure to go back to the default one after recording logs.
 
 #### Hide menu bar icon 
 Although this option is located in *Advanced settings*, it can be enabled without hesitation. You can hide the AdGuard VPN icon from the menu bar, it won’t prevent our app from running in the background.
