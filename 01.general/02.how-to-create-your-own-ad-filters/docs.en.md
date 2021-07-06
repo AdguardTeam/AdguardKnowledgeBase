@@ -67,6 +67,7 @@ visible: true
         * [$app](#app-modifier)
         * [$redirect](#redirect-modifier)
         * [$redirect-rule](#redirect-rule-modifier)
+        * [$denyallow](#denyallow-modifier)
         * [noop](#noop-modifier)
         * [$removeheader](#removeheader-modifier)
 * [Non-basic rules](#non-basic-rules)
@@ -696,6 +697,13 @@ Use `@@` to negate `$removeparam`:
 
 ##### Examples
 
+```
+$removeparam=utm_source|utm_medium|utm_term
+$removeparam=utm_content|utm_campaign|utm_referrer
+@@||example.com^$removeparam
+```
+With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
+
 * `$removeparam=utm_source` -- removes `utm_source` query parameter from all requests.
 
 * `$removeparam=/utm_.*/` -- removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
@@ -998,6 +1006,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using this type of rules.
 
 <a id="redirect-modifier"></a>
+
 #### **`redirect`**
 
 AdGuard is able to redirect web requests to a local "resource".
@@ -1049,6 +1058,43 @@ Examples:
 ```
 
 In this case, only requests to `example.org/script.js` will be "redirected". All other requests to `example.org` will be kept intact.
+
+<a id="denyallow-modifier"></a>
+
+#### **`denyallow`**
+
+`denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for a specific domain(s). `denyallow` matches only target domains and not referrer domains.
+
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
+
+Please note that rules with the `$denyallow` modifier have the following restrictions:
+ 
+* the rule's matching pattern cannot target any specific domain(s) (e.g., it can't start with `||`)
+* domains in the modifier's parameter cannot be negated (e.g. `$denyallow=~x.com`) or have a wildcard TLD (e.g. `$denyallow=x.*`)
+
+The rules which violate these restrictions are considered invalid.
+
+**Example:**
+
+This rule:
+
+```
+*$script,domain=a.com|b.com,denyallow=x.com|y.com
+```
+
+is equivalent to this one:
+
+```
+/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
+```
+
+or to these three:
+
+```
+*$script,domain=a.com|b.com
+@@||x.com$script,domain=a.com|b.com
+@@||y.com$script,domain=a.com|b.com
+```
 
 <a id="noop-modifier"></a>
 #### **`noop`**
@@ -1162,7 +1208,6 @@ Use `@@` to negate `$removeheader`:
     ```
 
 > **Compatibility with different versions of AdGuard.** Available in **Developer builds only at this moment.**
-
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
