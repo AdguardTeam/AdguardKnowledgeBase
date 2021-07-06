@@ -79,12 +79,14 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 * Delete following AdGuard files:
     * */Library/Application Support/com.adguard.mac.adguard* (folder)
     * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
+    * *~/Library/Group Containers/TC3Q7MAJXF.com.adguard.com* (folder)
     * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
 
 **To do so**, open the Terminal app, then enter and execute the following commands: 
 
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
 `rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
+`rm -R "~/Library/Group Containers/TC3Q7MAJXF.com.adguard.com"`
 `rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
 
 * Run ’Activity Monitor’ app.
