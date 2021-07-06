@@ -16,7 +16,7 @@ taxonomy:
 
 AdGuard VPN for Mac is a desktop VPN service. It is currently in the beta stage, but it doesn’t mean that the app is raw. Quite the opposite, it is working stable and can be used. AdGuard VPN is fully compatible with AdGuard ad blocker, they can be safely used together and will operate seamlessly. Let’s see what features it has to offer.
 
-> Note that **you can't use AdGuard VPN for Mac unless you have logged into your AdGuard account**. You can either sign in with your AdGuard account or with an external account, namely, via Google or Facebook. Make sure that your external account is bound to the same e-mail address as your AdGuard account. Otherwise, you won't be able to use your subscription of you have one. 
+> Note that **you can't use AdGuard VPN for Mac unless you have logged into your AdGuard account**. You can either sign in with your AdGuard account or with an external account, namely, via Google or Facebook. Make sure that your external account is bound to the same e-mail address as your AdGuard account. If there is a suitable subscription in your AdGuard account, it will be automatically activated on the desktop app. 
 Still don't have an AdGuard account? Create it [here](https://auth.adguard.com/registration.html).
  
 > AdGuard VPN for Mac is currently supported on Catalina and Big Sur. The support for older versions of macOS will be available shortly.
@@ -72,7 +72,9 @@ Finally, we come to the most important tab — Settings. In the *About program* 
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/release/VPN_for_Mac/general-settings.png" style="border: 0px solid #efefef; max-height: 700px; max-width: 800px; padding: 2px;">
 
-The first three basic features make the application more convenient and user-friendly, i.e. *autoupdate*, *launch AdGuard VPN at login*, and *auto-connect on app launch*. What’s more, you can choose between light, dark, and system themes. The latter one matches the theme on your Mac. Last but not least, you can allow AdGuard VPN to gather and send anonymized crash reports, technical and interaction data in order to help us improve our app.
+The first three basic features make the application more convenient and user-friendly, i.e. *autoupdate*, *launch AdGuard VPN at login*, and *auto-connect on app launch*. What’s more, you can choose between light, dark, and system themes — the latter one matches the theme on your Mac. 
+
+Another option that shouldn't be overlooked is that you can allow AdGuard VPN to gather and send anonymized crash reports, technical and interaction data in order to help us improve our app. Last but not least, thanks to to the button on the right, you can export logs to your Mac.
 
 <a id="general-settings"></a>
 ### Advanced settings
