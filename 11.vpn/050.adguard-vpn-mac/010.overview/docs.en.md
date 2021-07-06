@@ -7,7 +7,6 @@ taxonomy:
 
 * [Home screen](#home)
 * [Exclusions](#exclisions)
-* [Filters](#filters)
 * [Support](#support)
 * [Settings](#settings)
 * 	 [General settings](#general-settings)
@@ -42,9 +41,11 @@ Next goes the *Exclusions* screen. AdGuard VPN has several features that make it
 What’s more, ready-made exclusions lists can be transferred to other devices with installed AdGuard VPN. To export exclusions, follow the four-step instruction below:
 
 1. Open AdGuard VPN on the device from where you want to export your lists of exclusions. Find the appropriate section and click on the *Export* button. The `exclusions.zip` archive will be downloaded.
-2. There are two .txt files inside the archive, each for Regular and Selective lists. Add more exclusions to them, delete the existing ones, rename files (but more on this later), or just leave the archive with files as it is.
-3. When transferring between different devices, don't forget to send the .zip file to the device for import. For example, if you import exclusion lists from your Mac to your iPhone, make sure to send the .zip file to your phone beforehand.
+2. There are two `.txt` files inside the archive, each for Regular and Selective lists. Add more exclusions to them, delete the existing ones, rename files (but more on this later), or just leave the archive with files as it is.
+3. When transferring between different devices, don't forget to send the `.zip` file to the device for import. For example, if you import exclusion lists from your Mac to your iPhone, make sure to send the `.zip` file to your phone beforehand.
 4. Open AdGuard VPN on the device/in the browser where you want to export the archive with the ready lists of exclusions. Find the appropriate section, click on the *Import* button and select the archive. Done!
+
+> Archive files from other devices can be similarly imported to your AdGuard VPN for Mac.
 
 <a id="support"></a>
 ## Support
