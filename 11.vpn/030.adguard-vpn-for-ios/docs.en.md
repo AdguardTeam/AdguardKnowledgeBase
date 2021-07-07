@@ -1,5 +1,5 @@
 ---
-title: 'Общие вопросы'
+title: 'AdGuard VPN for iOS'
 taxonomy:
     category:
         - docs
