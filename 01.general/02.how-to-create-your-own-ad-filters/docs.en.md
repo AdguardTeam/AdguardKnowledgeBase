@@ -2050,6 +2050,8 @@ The `!#include` directive allows to include contents of a specified file into th
 ```
 - `file_path` — same origin absolute or relative file path to be included
 
+> The files must originate from the same domain but may be located in a different folder.
+
 > If included file is not found or unavailable, the whole filter update should fail.
 
 > Same-origin limitation should be disabled for local custom filters.
