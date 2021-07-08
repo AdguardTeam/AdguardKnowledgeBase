@@ -85,6 +85,7 @@ taxonomy:
     * */Library/Application Support/com.adguard.mac.adguard*（文件夹）
     * *~/Library/Application Support/com.adguard.mac.adguard*（文件夹）
     * *~/Library/Preferences/com.adguard.mac.adguard.plist*（文件）
+    * *rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac*（文件夹）
 
 **为了执行上述步骤**，请您打开 Terminal。然后输入并执行以下的指令：
 

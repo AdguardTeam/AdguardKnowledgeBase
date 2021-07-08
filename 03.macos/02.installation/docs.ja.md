@@ -88,6 +88,7 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
 `rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
 `rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac`
 
 * 「アクティビティモニタ」アプリを起動する
 * 検索ツールを使用して「**cfprefsd**」プロセスを見つける

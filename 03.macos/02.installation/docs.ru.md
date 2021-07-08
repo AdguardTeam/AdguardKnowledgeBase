@@ -82,6 +82,7 @@ AdGuard удалён с вашего Mac!
     * */Library/Application Support/com.adguard.mac.adguard* (папка)
     * *~/Library/Application Support/com.adguard.mac.adguard* (папка)
     * *~/Library/Preferences/com.adguard.mac.adguard.plist* (файл)
+    * *rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (папка)
 
 Для этого введите и выполните следующие команды через Terminal: 
 

@@ -103,6 +103,7 @@ Finder 앱을 엽니다.
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
 `rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
 `rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac`
 
 * '활동 모니터' 앱을 실행합니다.
 * 검색 도구를 사용하여 **cfprefsd** 프로세스를 찾습니다.

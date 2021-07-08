@@ -86,6 +86,7 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
 `rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
 `rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm ~/Library/Group Containers/TC3Q7MAJXF.com.adguard.com`
 
 * Run ’Activity Monitor’ app.
 * Using search tool, find the process **cfprefsd**.
