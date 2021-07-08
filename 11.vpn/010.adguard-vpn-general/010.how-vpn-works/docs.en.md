@@ -33,9 +33,9 @@ In that way, a VPN has 3 main advantages:
 
 ## VPN structure
 
-When you connect to a network, your computer or mobile device is assigned a unique ID number, or IP address. It usually consists of numbers from 0 to 255, separated by dots or colons. Knowing this sequence, one can determine the geolocation of the device, and therefore the location. The IP address is usually set by your Internet Service Provider, and it will be visible all the way to the desired resource. For this reason, the web server of the site you are visiting can register your IP address and record what you have requested on it. This record can then be used primarily for data collection and traffic analysis.
+When you connect to a network, your computer or mobile device is assigned a unique ID number, or IP address. It usually consists of numbers from 0 to 255, separated by dots or colons. Knowing this sequence, one can determine the geolocation of the device, and therefore the location. The IP address is usually set by your ISP, and it will be visible all the way to the desired resource. For this reason, the web server of the site you are visiting can register your IP address and record what you have requested on it. This record can then be used primarily for data collection and traffic analysis.
 
-A VPN creates a tunnel between your device and the VPN server, in which your data is encrypted and then gets into the open Internet in a secure form. Therefore, it will seem to the web server that your device has no longer your real IP address, but the IP address of the endpoint of the tunnel, that is, the VPN server. Thus, the site that you get to after passing through the VPN tunnel will consider the geolocation of the VPN server you selected as your real location. And the encrypted data will not fall into the hands of advertisers, hackers and security services.
+A VPN creates a tunnel between your device and the VPN server. Your data goes through this tunnel, gets encrypted and then enters the open Internet in a secure form. Therefore, it will seem to the web server that your device has no longer your real IP address, but the IP address of the endpoint of the tunnel, that is, the VPN server. Thus, the site that you get to after passing through the VPN tunnel will consider the geolocation of the VPN server you selected as your real location. And the encrypted data will not fall into the hands of advertisers, hackers and security services.
 
 <img src="https://cdn.adguard.com/public/Adguard/Website/Images/seo/en/how_vpn_3.jpg" style="max-width: 350px; ">
 
@@ -63,7 +63,7 @@ A VPN performs three important functions:
 
 1. **Maintaining anonymity**
 
-Using an Internet connection, the user leaves their digital footprint, which can then be analyzed and used by third parties. For example, one of the online stores that you have visited can save your search history and then offer you their products based on it through targeted advertising. Or the secret services, having learned your location through the IP address of your device and having determined your identity, can secretly monitor your activity on the web. In addition, web browsers and Internet service providers themselves can use your browsing history for their own purposes, as well as sell it to advertisers and provide it to government institutions. VPN allows you to hide your IP address and replace it with the IP address of the VPN server to which you are connected. This way you will be able to maintain your privacy and anonymously search for information on the web.
+Using an Internet connection, the user leaves their digital footprint, which can then be analyzed and used by third parties. For example, one of the online stores that you have visited can save your search history and then offer you their products based on it through targeted advertising. Or the secret services, having learned your location through the IP address of your device and having determined your identity, can secretly monitor your activity on the web. In addition, web browsers and ISPs themselves can use your browsing history for their own purposes, as well as sell it to advertisers and provide it to government institutions. VPN allows you to hide your IP address and replace it with the IP address of the VPN server to which you are connected. This way you will be able to maintain your privacy and anonymously search for information on the web.
 
 2. **Data protection**
 
@@ -71,7 +71,7 @@ If you connect to an unreliable or public network, the data on your device may b
 
 3. **Bypassing geoblocking**
 
-Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some online movie theaters are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. Besides, torrent clients are also blocked in some states. You can learn more about streaming and torrents in [this article](link). With a VPN, you can change your visible IP address (and the location that can be defined on the web) and use previously blocked resources.
+Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. Besides, torrent clients are also blocked in some states. You can learn more about streaming and torrents in [this article](link). With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
 
 <a name="drawbacks"></a>
 
@@ -85,7 +85,7 @@ Since your traffic does not go directly to the web server, but first passes thro
 
 **Access blocking**
 
-Many VPN providers use protocols that do not allow the VPN connection to imitate normal traffic. Therefore, some online services may detect a VPN connection and block users who utilize it.
+Many VPN providers use protocols that do not allow the VPN connection to imitate normal traffic. Therefore, some online services may detect a VPN connection and restrict access for users with VPNs.
 
 **VPN connections breaking**
 
@@ -99,7 +99,7 @@ Our VPN service has several important [advantages](link):
 
 * [*Own VPN protocol*](link), which works stably even with a weak Internet connection and disguises itself as normal traffic, making it more difficult to track and block it
 
-* [*"No logs" policy*](https://adguard-vpn.com/en/privacy.html), which means that AdGuard VPN does not collect your personal data and does not transfer it to third parties
+* [*"No-logs" policy*](https://adguard-vpn.com/en/privacy.html), which means that AdGuard VPN does not collect your personal data and does not transfer it to third parties
 
 * *More than 50 VPN servers in dozens of countries*
 
