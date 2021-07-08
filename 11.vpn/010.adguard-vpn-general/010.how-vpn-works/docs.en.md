@@ -19,8 +19,6 @@ To understand how AdGuard VPN works, you should at first understand the general 
 
 A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to access various Internet resources and protect your personal data.
 
-<img src="https://cdn.adguard.com/public/Adguard/Website/Images/seo/en/how_vpn_2.jpg" style="max-width: 350px; ">
-
 In that way, a VPN has 3 main advantages:
 
 1. *Anonymity*. A VPN hides your real location by replacing the IP address of your device with the IP address of the selected VPN server.
@@ -53,7 +51,13 @@ VPN security protocols are tools that encrypt data in a VPN tunnel and allow you
 
 In addition to these VPN protocols, there are others (for example, TLS, SSTP, IKEv2), but they are unpopular or do not meet modern data encryption standards.
 
+<object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg"></object>
+
 AdGuard VPN also has its own [*protocol*](link). One of its advantages is that the traffic transmitted using the AdGuard protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
+
+<object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg" type="image/svg+xml">
+    <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg"></object>
 
 <a name="use"></a>
 
