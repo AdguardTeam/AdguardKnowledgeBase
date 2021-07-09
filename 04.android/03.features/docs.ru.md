@@ -1,5 +1,7 @@
 ---
 title: Функции
+published: true
+visible: false
 taxonomy:
     category:
         - docs
