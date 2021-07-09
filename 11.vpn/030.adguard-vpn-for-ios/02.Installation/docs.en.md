@@ -12,7 +12,7 @@ taxonomy:
 
 ## System requirements
 
-You can install AdGuard VPN on your iPhone or iPad if you have **iOS 11.2 on the iPhone and iPadOS 13.1 on the iPad or later version**.
+AdGuard VPN can only be installed on devices with **iOS 11.2 or iPadOS 13.1, or later versions**.
 
 <a name="install"></a>
 
@@ -40,7 +40,7 @@ AdGuard VPN for iOS has been successfully installed!
 
 ## AdGuard VPN for iOS uninstallation
 
-If you decided to delete the AdGuard VPN for iOS, find the icon of this app on the Home Screen and hold it. In the opened list, tap *Remove App*.
+If you decided to delete AdGuard VPN for iOS, find the icon of this app on the Home Screen and hold it. In the opened list, tap *Remove App*.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/deinstall-en.png" style="max-width: 350px; ">
 
