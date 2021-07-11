@@ -18,7 +18,7 @@ AdGuard DNS 可以工作在任何设备上, 包括智能手机和平板电脑。
 
 ### AdGuard DNS 的优势
 
-* 不需要安装任何应用程序。你所需要做的就是按照它 [simple setup guide](https://kb.adguard.com/zh/dns/setup-guide).
+* 不需要安装任何应用程序。你所需要做的就是按照它 [简易设置指南](https://kb.adguard.com/zh/dns/setup-guide).
 
 * AdGuard DNS 在个人使用领域内 **开放源代码，完全免费** 
 
