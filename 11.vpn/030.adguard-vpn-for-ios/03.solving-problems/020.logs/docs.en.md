@@ -16,11 +16,11 @@ If you encounter a problem when using AdGuard VPN for iOS, you can inform us abo
 
 By default, AdGuard VPN for iOS uses the standard logging level, that is, the basic collection of data about running processes of the app. To send these logs, follow the next steps:
 
-1. Open AdGuard VPN for iOS and, if possible, replay the actions that led to the error. Remember the exact time when this error occurred.
+1. Open AdGuard VPN for iOS and, if possible, repeat the actions that led to the error. Note the exact time when this error occurred.
 
 2. Select "Settings" in the lower-right corner of the screen, then select "Support" and click "Report a bug" in it.
 
-3. In the opened form, enter your Email address for feedback and describe the error found, including the time when this error occurred. If you can't reproduce the problem, specify as accurately as possible when it last occurred.
+3. In the opened form, enter your email address for feedback and describe the error found, including the time when this error occurred. If you can't reproduce the problem, specify as accurately as possible when it last occurred.
 
 4. There is a check mark next to the "Send detailed system info", which means that when you send a report, you also send logs.
 
@@ -38,13 +38,13 @@ In most cases, the default logging level is sufficient to trace down possible bu
 
 3. In the "Logging level" section, select "Extended".
 
-4. Replay the actions that led to the error, and remember the time when it occurred.
+4. Repeat the actions that led to the error, and note the time when it occurred.
 
 5. Switch the logging level back to "Default".
 
 6. Then go back to the main section "Settings", select "Support" and then "Report a bug".
 
-7. In the opened form, enter your Email address for feedback and describe the error found, including the time when this error occurred.
+7. In the opened form, enter your email address for feedback and describe the error found, including the time when this error occurred.
 
 8. Make sure that there is a check mark next to "Submit detailed system info" and click "Submit a report".
 
