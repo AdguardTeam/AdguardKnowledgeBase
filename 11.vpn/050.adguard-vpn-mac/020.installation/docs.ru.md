@@ -26,13 +26,26 @@ taxonomy:
 
 1. Для того, чтобы установить AdGuard VPN для Mac, просто перейдите по [этой ссылке](https://agrd.io/mac_vpn_beta) или откройте браузер, напишите в адресной строке adguard-vpn.com и на открывшейся странице нажмите «Попробуйте бесплатно».
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-install-ru.png" style="max-width: 350px; ">
+
 2. Дождитесь окончания загрузки файла *AdGuardVPN.dmg* и откройте его в папке «Загрузки».
 
 3. Дождитесь, пока откроется окно программы установки. В нём дважды нажмите *AdGuard VPN*.
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-install-ru-1.png" style="max-width: 350px; ">
+
 4. При первом запуске AdGuard VPN операционная система покажет на экране предупреждение о том, что это приложение загружено из интернета. Нажмите *Открыть*.
 
 5. Далее нажмите *Продолжить* и *Установить*.
+
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-install-ru-2.png" style=" max-width: 320px;">
+     </div>
+     <div style="flex:1;padding-left:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-install-ru-3.png" style=" max-width: 350px;">
+     </div>
+</div>
 
 6. Подождите, пока установщик загрузит необходимые файлы.
 
@@ -50,6 +63,8 @@ AdGuard VPN для Mac установлен!
 
 2. Выберите в списке *AdGuard VPN*, кликните по нему правой кнопкой мыши и нажмите *Переместить в корзину*.
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-uninstall-1-ru.png" style="max-width: 350px; ">
+
 <a id="advanced-uninstall"></a>
 
 ### Продвинутое удаление
@@ -60,9 +75,13 @@ AdGuard VPN для Mac установлен!
 
 2. Откройте «Finder» и в поиске введите «Связка ключей».
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-key-chain-ru.png" style="max-width: 350px; ">
+
 3. Нажмите на значок найденной программы и в ней в поиске введите `com.adguard.mac.vpn`. Если в результатах поиска есть такая запись, удалите её.
 
 4. Вернитесь в «Finder» и в поиске введите «Терминал».
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-terminal-ru.png" style="max-width: 350px; ">
 
 5. Откройте найденную программу и введите команду — `defaults delete com.adguard.mac.vpn`.
 
