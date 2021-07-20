@@ -1,5 +1,5 @@
 ---
-title: Установка и удаление AdGuard VPN для Mac
+title: AdGuard VPN for Mac installation and removal
 published: true
 taxonomy:
     category:
@@ -16,15 +16,15 @@ taxonomy:
 
 **Operating system version**: macOS 10.12 (64 bit) or higher
 
-**RAM (Random Access Memory)**: at least 2 GB
+**RAM**: at least 2 GB
 
-**Free disk space**: 120 Mbytes
+**Free disk space**: 120 Mb
 
 <a id="install"></a>
 
 ## Installation
 
-1. To install AdGuard VPN for Mac, just follow [this link](https://agrd.io/mac_vpn_beta) or open a browser, type *adguard-vpn.com* in the address bar and on the opened page click "Try for free".
+1. To install AdGuard VPN for Mac, just follow [this link](https://agrd.io/mac_vpn) or open a browser, type *adguard-vpn.com* in the address bar and on the opened page click "Try for free".
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-install-en.png" style="max-width: 350px; ">
 
@@ -59,7 +59,7 @@ AdGuard VPN for Mac is installed!
 
 To uninstall AdGuard VPN for Mac, follow two simple steps:
 
-1. Open the "Finder" and go to the "Programs" section.
+1. Open "Finder" and go to the "Programs" section.
 
 2. Select *AdGuard VPN* from the list, right-click on it and then click *Move to Trash*.
 
@@ -73,13 +73,13 @@ Sometimes, as a result of incorrect removal, or in other rare cases, the standar
 
 1. Follow the steps described in the section ["Standard uninstallation"](#uninstall).
 
-2. Open the "Finder" and enter "Keychain" in the search.
+2. Open "Finder" and enter `Keychain` in the search.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-key-chain-en.png" style="max-width: 350px; ">
 
 3. Click the icon of the found program and enter `com.adguard.mac.vpn` in the search. If there is such a record in the search results, delete it.
 
-4. Go back to the "Finder" and enter "Terminal" in the search.
+4. Go back to "Finder" and enter `Terminal` in the search.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/vpn-install/mac-terminal-en.png" style="max-width: 350px; ">
 
