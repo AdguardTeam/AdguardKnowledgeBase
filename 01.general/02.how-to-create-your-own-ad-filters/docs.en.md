@@ -967,7 +967,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
-3. A whitelist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
+3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
 
 ##### `network` examples
 
@@ -1019,7 +1019,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's a whitelist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there's a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there's an allowlist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
 
 ##### Disabling `$redirect` rules
 
@@ -2161,7 +2161,7 @@ example.org#@#.adBanner
 !#safari_cb_affinity
 ```
 ```
-! to whitelist basic rule from AdGuard Tracking Protection filter filter:
+! to allowlist basic rule from AdGuard Tracking Protection filter filter:
 !#safari_cb_affinity(privacy)
 @@||example.org^
 !#safari_cb_affinity
