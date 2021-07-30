@@ -29,8 +29,8 @@ For analysis and diagnostic of different problems support service might need AdG
 
 1. Stop AdGuard. Please don't leave the service running.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_3.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_4.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_3.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 2. Open the console (type 'cmd' in the start panel).
 
 3. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace in case if you use 32-bit one.
