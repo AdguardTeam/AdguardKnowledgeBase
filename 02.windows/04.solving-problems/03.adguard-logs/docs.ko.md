@@ -31,9 +31,9 @@ visible: true
 
 1. AdGuard를 중지합니다.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_3.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_3.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_4.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
 
 2.콘솔을 엽니다(시작 패널에 'cmd' 입력).
