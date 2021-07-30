@@ -11,11 +11,11 @@ For analysis and diagnostic of different problems connected with the work of AdG
 1. Press Win+R
 2. In the window that appears type in **eventvwr** and click on 'OK':
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_event_logs_1.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
 3. Event Viewer window appears as shown in the picture.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_event_logs_2.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_event_logs_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
 To save files that we need, do the following:
 
