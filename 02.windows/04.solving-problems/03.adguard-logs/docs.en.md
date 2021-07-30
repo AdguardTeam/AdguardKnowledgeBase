@@ -10,14 +10,14 @@ For analysis and diagnostic of different problems support service might need AdG
 
 1. Open the AdGuard settings. Go to the General Settings section, scroll down to the end of the screen and select **Debug** Logging Level.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_1.png" />
 
 2. Reproduce the issue. 
 - We strongly advise to specify the time when you reproduced the issue: it will help our support team to solve the problem.
 
 3. Export the recorded logs using the **Export Log** button.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen2.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_2.png" />
 
 - Save the archive to any folder.
 
@@ -29,15 +29,14 @@ For analysis and diagnostic of different problems support service might need AdG
 
 1. Stop AdGuard. Please don't leave the service running.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/openadguard.png" />
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/exitadguard.png" />
-
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_3.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_4.png" />
 2. Open the console (type 'cmd' in the start panel).
 
 3. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace in case if you use 32-bit one.
 
 4. Select **Debug** logging level.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
+<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_5.png" />
 
 Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
