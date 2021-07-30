@@ -5,9 +5,9 @@ taxonomy:
         - docs
 ---
 
-The free version of AdGuard VPN for macOS has 3 GB of monthly traffic, connetion speed up to 20 Mb/s, more than 10 locations in different countries and the ability to work on two devices simultaneously. If you want to use the app without restrictions, you can purchase a [subscription](link).
+The free version of AdGuard VPN for macOS provides 3 GB of monthly traffic, connetion speed up to 20 Mb/s, more than 10 locations in different countries and the ability to work on two devices simultaneously. If you want to use the app without restrictions, you can purchase a subscription. You can learn more about all the differences between the paid and free versions of AdGuard VPN [here](link).
 
-There are two ways to do this:
+There are two ways to purchase a subscription:
 
 1. You can subscribe to AdGuard VPN on [our website](https://adguard-vpn.com/license.html) or by clicking **Upgrade** in the lower right corner of the app. Choose a convenient subscription plan (monthly or yearly), enter the email address to which a receipt will be sent, and click **Buy now**. Pay the bill using your credit card or PayPal account. Ready!
 
