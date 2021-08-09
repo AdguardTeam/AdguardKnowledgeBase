@@ -25,9 +25,7 @@ taxonomy:
 * [License](#license) 
 * [Other features](#other-features)
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker.
-
-AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. 
+> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app [available in Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker&hl=en&gl=US) that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be [downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
 
 <a id="ad-blocking"></a>
 # Ad blocking
@@ -102,7 +100,7 @@ You can find extra settings in the upper right corner of the Apps Management scr
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/apps-management.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
-All the icons you will see on the screen are clickable, and by tapping on them you will open a screen showing app-specific traffic to help you make more informed decisions. As can be seen, AdGuard is of help not only with the ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
+All the icons you will see on the screen are clickable, and by tapping on them you will open a screen showing app-specific traffic to help you make more informed decisions. As can be seen, AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
 
 <a id=" filtering-log"></a> 
 ## Filtering log
@@ -131,11 +129,11 @@ By the way, whenever you use Filtering Log to block anything, a corresponding ru
 <a id="dns-filtering"></a> 
 # DNS filtering
 
-The DNS Filtering module allows to configure DNS settings of a user's device, including the chosen DNS server, DNS protocol, and DNS filters that block ads and trackers. 
+The DNS Filtering module allows to configure DNS settings on the user's device, including the chosen DNS server, DNS protocol, and DNS filters that block ads and trackers. 
     
-A bit of a theory refresher: [DNS](https://kb.adguard.com/en/general/dns-filtering#what-is-dns) stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
+A bit of a theory refresher: DNS stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
 
-DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
+[DNS filtering](https://kb.adguard.com/en/general/dns-filtering#what-is-dns) has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
 
 <a id="dns-blocking"></a> 
 ## DNS blocking
@@ -146,7 +144,7 @@ DNS blocking is a standalone feature that complements AdGuard protection suit.
 
 There are two methods of DNS blocking:
 1) some [DNS servers](https://kb.adguard.com/en/general/dns-filtering#dns-servers-1) can block DNS requests to potentially harmful domains;
-2) there is built-in DNS filtering that blocks DNS requests in addition to what the DNS server does.
+2) there is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
 
 [How exactly does DNS filtering work](https://kb.adguard.com/en/general/dns-filtering#how-does-dns-filtering-work)? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
 
@@ -165,6 +163,7 @@ But DNS servers not only vary by function. Besides, they can also differ by supp
 
 <a id="dns-over-quic"></a>   
 ### DNS-over-QUIC
+
 DNS-over-QUIC (DoQ) is a rather new encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
 
 To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/en/blog/dns-over-quic.html) dedicated entirely to it.
@@ -233,6 +232,7 @@ If you'd like to disable Compatibility Mode for any reason, it's very simple to 
 
 <a id="license"></a>
 # License
+
 While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
 * Stealth Mode
 * Browsing security
@@ -244,6 +244,7 @@ Read [this article](https://kb.adguard.com/en/general/license-key#activating-adg
     
 <a id="other-features"></a>     
 # Other features    
+
 There are too many features to describe them all in detail, so let us simply list them here:
 
 * When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
