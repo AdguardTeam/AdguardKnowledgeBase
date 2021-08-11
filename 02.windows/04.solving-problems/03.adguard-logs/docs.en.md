@@ -23,7 +23,7 @@ For analysis and diagnostic of different problems support service might need AdG
 
 4. **Important**: set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 
-5. Send the archive to the AdGuard [support service](mailto:support@adguard.com) (support@adguard.com), describe the problem and don't forget to mention the time when you reproduced the issue.
+5. Send the archive to the AdGuard support service at support@adguard.com, describe the problem and don't forget to mention the time when you reproduced the issue.
 
 **Note**: sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
@@ -33,10 +33,12 @@ For analysis and diagnostic of different problems support service might need AdG
 <img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 2. Open the console (type 'cmd' in the start panel).
 
-3. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace in case if you use 32-bit one.
+3. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
 
 4. Select **Debug** logging level.
 
 <img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_logs_5.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+
+5. **Important**: set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 
 Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
