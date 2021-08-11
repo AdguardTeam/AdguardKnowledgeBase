@@ -31,5 +31,5 @@ To save files that we need, do the following:
 
  2.6 Choose a location, enter the name, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**. 
 
-Please send two files that you've got as a result, to the AdGuard [support service](mailto:support@adguard.com).
+Please send two files that you've got as a result, to the AdGuard support service at support@adguard.com.
 
