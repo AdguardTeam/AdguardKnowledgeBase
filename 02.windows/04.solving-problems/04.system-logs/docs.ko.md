@@ -8,9 +8,9 @@ visible: true
 
 다양한 문제의 분석 및 진단을 위해 지원 서비스는 Windows 로그 파일이 필요할 수 있습니다. 이 파일에는 소프트웨어에서 발생한 모든 오류에 대한 기록이 있습니다. Windows 로그를 수집하여 지원 팀에 보내는 방법을 살펴보겠습니다. 
 
-1. Windows 로그를 수집하려면 키보드에서 Win+R을 함께 누릅니다.
+1. Windows 로그를 수집하려면 키보드에서 **Win+R**을 함께 누릅니다.
 
-2. 화면 하단에 나타나는 창에서 **eventvwr**을 입력하고 Enter 키를 누릅니다.
+2. 화면 하단에 나타나는 창에서 `eventvwr`을 입력하고 Enter 키를 누릅니다.
 
 <img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
@@ -32,4 +32,4 @@ visible: true
 
  6. 저장할 위치를 선택하고 이름을 입력한 후 **저장**을 클릭합니다. 그다음에는 **언어에 대한 정보 표시**를 선택합니다. **영어** 옆의 확인란을 선택하고 **확인**을 클릭합니다.
 
-[AdGuard 지원 서비스](mailto:support@adguard.com)에 support@adguard.com으로 두 개의 파일을 보내 주십시오.
+AdGuard 지원 서비스에 support@adguard.com으로 두 개의 파일을 보내 주십시오.
