@@ -10,7 +10,7 @@ visible: true
 
 1. Windows 로그를 수집하려면 키보드에서 **Win+R**을 함께 누릅니다.
 
-2. 화면 하단에 나타나는 창에서 `eventvwr`을 입력하고 Enter 키를 누릅니다.
+2. 화면 하단에 나타나는 창에서 `eventvwr`을 입력하고 **Enter** 키를 누릅니다.
 
 <img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
