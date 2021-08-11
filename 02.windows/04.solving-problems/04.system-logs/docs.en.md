@@ -8,8 +8,8 @@ visible: true
 
 For analysis and diagnostic of different problems connected with the work of AdGuard, support service might need Windows log files. Windows event logs contain records about all errors occurred with the software recently. Below is the brief instruction describing the way to get the log files and send them to support service. 
 
-1. Press Win+R
-2. In the window that appears type in **eventvwr** and click on 'OK':
+1. Press **Win+R**
+2. In the window that appears type in `eventvwr` and click on **OK**:
 
 <img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/En/eng_event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
