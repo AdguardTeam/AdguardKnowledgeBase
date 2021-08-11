@@ -31,7 +31,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-2. Откройте консоль (введите **cmd** в стартовой панели).
+2. Откройте консоль (введите `cmd` в стартовой панели).
 
 3. Запустите приложение командой `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` (если вы используете 64-битный Windows) или `C:\"Program Files"\Adguard\Adguard.exe /trace` (если вы используете 32-битный).
 
