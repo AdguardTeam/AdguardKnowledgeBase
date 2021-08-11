@@ -19,17 +19,17 @@ For analysis and diagnostic of different problems connected with the work of AdG
 
 To save files that we need, do the following:
 
- 2.1 Open "Application" ("Event Viewer (Local)" -> "Windows Logs" -> " Application")
+ 2.1 Open **Application** (**Event Viewer (Local)** -> **Windows Logs** -> **Application**)
 
- 2.2 Right-click on the "Application" and in drop-down menu select "Save All Events As..."
+ 2.2 Right-click on the **Application** and in drop-down menu select **Save All Events As...**
 
- 2.3 Select a name and where to save, click "Save." Select "Display information for the following languages". You need to tick the box next to "English”. Click "OK".
+ 2.3 Select a name and where to save, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**.
 
- 2.4 Open "System" ("Event Viewer (Local)" -> "Windows Logs" ->  “System" ) .
+ 2.4 Open **System** (**Event Viewer (Local** -> **Windows Logs** ->  **System** ).
 
- 2.5 Right-click on "System" and in the drop-down menu, select "Save All Events As ..."
+ 2.5 Right-click on **System** and in the drop-down menu, select **Save All Events As...**
 
- 2.6 Choose a location, enter the name, click "Save." Select "Display information for the following languages". You need to tick the box next to "English”. Click "OK". 
+ 2.6 Choose a location, enter the name, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**. 
 
 Please send two files that you've got as a result, to the AdGuard [support service](mailto:support@adguard.com).
 
