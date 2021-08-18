@@ -65,7 +65,7 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn all the main features and options you can manage in the Stealth mode settings, [read this article](https://kb.adguard.com/en/general/stealth-mode).
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/privacy-protection.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/stealth-mode.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
 <a id="browsing-security"></a>
 # Browsing Security
