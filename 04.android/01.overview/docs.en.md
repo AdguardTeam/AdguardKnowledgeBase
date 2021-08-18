@@ -8,8 +8,8 @@ taxonomy:
 * [Ad blocking](#ad-blocking)
 	* [Filters](#filters)
 	* [HTTPS filtering](#https-filtering)
-	* [Stealth mode](#stealth-mode)
-* [Phishing and malware](#phishing-malware)
+	* [Stealth Mode](#stealth-mode)
+* [Browsing Security](#browsing-security)
 * [Control your apps](#app-control)
 	* [Apps management](#apps-management)
 	* [Filtering log](#filtering-log)
@@ -25,7 +25,7 @@ taxonomy:
 * [License](#license) 
 * [Other features](#other-features)
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app [available in Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker&hl=en&gl=US) that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be [downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
+> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app [available in Google Play] that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
 
 <a id="ad-blocking"></a>
 # Ad blocking
@@ -57,7 +57,7 @@ Nowadays most websites work via HTTPS, the web protocol where the last S letter 
 > To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. Unfortunately, on Android 11 automatic certificate installation is no longer available. Now a [manual installation](https://kb.adguard.com/en/android/solving-problems/manual-certificate) is required.
  
 <a id="stealth-mode"></a>   
-## Stealth mode
+## Stealth Mode
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
@@ -67,8 +67,8 @@ To learn all the main features and options you can manage in the Stealth mode se
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/privacy-protection.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
-<a id="phishing-malware"></a>
-# Browsing security
+<a id="browsing-security"></a>
+# Browsing Security
 
 The Internet is a pretty dangerous place where your device can be attacked by viruses, whereas your personal or financial information can be stolen. Such terms as malware or phishing have become commonplace.
 
