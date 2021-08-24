@@ -7,8 +7,9 @@ taxonomy:
 
 * [Ad blocking](#ad-blocking)
 	* [Filters](#filters)
+		* [Custom filters](#custom-filters) 
 	* [HTTPS filtering](#https-filtering)
-	* [Stealth Mode](#stealth-mode)
+* [Stealth Mode](#stealth-mode)
 * [Browsing Security](#browsing-security)
 * [Control your apps](#app-control)
 	* [Apps management](#apps-management)
@@ -30,7 +31,7 @@ taxonomy:
 <a id="ad-blocking"></a>
 # Ad blocking
 
-Any ad blocker's main purpose is to block ads and for the majority of software ad blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](https://kb.adguard.com/en/general/how-ad-blocking-works).
+Any ad blocker's main purpose is to block ads and for the majority of AdGuard software ad blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](https://kb.adguard.com/en/general/how-ad-blocking-works).
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/android-features/filtering-mechanism.jpg" style="border: 1px solid #efefef; padding: 2px;" />
 
@@ -47,6 +48,15 @@ The program uses a lot of different filters, both public third-party and our own
     
 Find out more about all the filters available for AdGuard products by reading their descriptions in the app or this [comprehensive article](https://kb.adguard.com/en/general/adguard-ad-filters). 
 
+<a id="custom-filters"></a>
+### Custom filters
+
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+
+> Tip: use the Import feature to tranfser your rules to a different device. 
+
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/log-details.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
+
 <a id="https-filtering"></a> 
 ## HTTPS filtering
 
@@ -57,7 +67,7 @@ Nowadays most websites work via HTTPS, the web protocol where the last S letter 
 > To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. Unfortunately, on Android 11 automatic certificate installation is no longer available. Now a [manual installation](https://kb.adguard.com/en/android/solving-problems/manual-certificate) is required.
  
 <a id="stealth-mode"></a>   
-## Stealth Mode
+# Stealth Mode
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
@@ -100,7 +110,7 @@ You can find extra settings in the upper right corner of the Apps Management scr
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/apps-management.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
-All the icons you will see on the screen are clickable, and by tapping on them you will open a screen showing app-specific traffic to help you make more informed decisions. As can be seen, AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
+Tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. As can be noted, AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
 
 <a id=" filtering-log"></a> 
 ## Filtering log
@@ -119,10 +129,6 @@ As mentioned above, AdGuard for Android uses a set of filters to block ads. And 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/user-rules.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
 When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's [a good place to start](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) should you feel an urge to delve deeper into custom rules creation.
-    
-> Tip: use the Import feature to tranfser your rules to a different device. 
-
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/log-details.png" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
 By the way, whenever you use Filtering Log to block anything, a corresponding rule will appear in User rules, so use it if you ever want to undo the blocking. And generally speaking, Filtering Log and User rules go together particularly well: you can use the former to monitor requests in order to build a correct rule for the User rules.
 
