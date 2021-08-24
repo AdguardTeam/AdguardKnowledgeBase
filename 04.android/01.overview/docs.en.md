@@ -232,12 +232,6 @@ The best kind of compatibility is when you install two apps and they just start 
 
 Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. By the way, it works the other way around just as well: install AdGuard ad blocker on top of an already-running AdGuard VPN and you're good.
 
-But the Compatibility mode has its limitations. Namely, you can't use:
-* DNS
-* The *Apps management* module (previously configured settings won't be disrupted, but won't be applied
-* Kill Switch (AdGuard VPN feature)
-* Auto-protection (AdGuard VPN feature)
-
 If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard ad blocker settings, just toggle the switch. Additionally, you can add AdGuard ad blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/tile-en.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
