@@ -1292,7 +1292,7 @@ Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, b
 |----------------|------------------------------------------------------------------|------------------|
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAhZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbToyNTAxCi9kbnMtcXVlcnk">Add to AdGuard</a>
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853` | <a href="sdns://AwEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
-| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | <a href="sdns://BAEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
+| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | <a href="sdns://BAEAAAAAAAAAAAAiZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo0ODU4Mg">Add to AdGuard</a>
 | DNS, IPv4      | Varies; see link above. |
 | DNS, IPv6      | Varies; see link above. |
 | DNSCrypt, IPv4 | Varies; see link above. |
