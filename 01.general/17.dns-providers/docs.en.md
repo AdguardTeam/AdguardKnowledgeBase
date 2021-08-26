@@ -70,6 +70,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Mullvad](#mullvad)
 * [Small personal resolvers](#small-resolvers)
     * [Arapurayil](#arapurayil)
+    * [Dandelion Sprout's Official DNS Server](#dandelion-sprouts-official-dns-server)
 
 <a name="adguard-dns"></a>
 
@@ -1285,12 +1286,13 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. For more important info, see the link above.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. For additional important info, see the link above.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAhZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbToyNTAxCi9kbnMtcXVlcnk">Add to AdGuard</a>
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853` | <a href="sdns://AwEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
-| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:853` | <a href="sdns://BAEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
+| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | <a href="sdns://BAEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
 | DNS, IPv4      | Varies; see link above. |
 | DNS, IPv6      | Varies; see link above. |
+| DNSCrypt, IPv4 | Varies; see link above. |
