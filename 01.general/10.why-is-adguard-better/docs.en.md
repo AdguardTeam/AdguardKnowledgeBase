@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-AdGuard is often compared with well-known browser-extensions - Adblock and Adblock Plus. In this article we describe what main advantages AdGuard has, that his competitors haven’t.
+AdGuard is often compared with well-known browser-extensions - Adblock, Adblock Plus, and uBlock Origin. In this article we describe what main advantages AdGuard has, that his competitors haven’t.
 
 Adguard’s advantages are largely due to the limitations that are imposed on browser-based extensions. Adblock and Adblock Plus technologically are not able to remove all the ads on the page. That’s because AdGuard processes page even before it is loaded into the browser, removing all advertising elements. Extensions work on a different principle based on ad blocking capabilities of a browser. That is why an additional page [post-processing](http://adguard.com/en/how-ads-blocked.html#cosmetic) step is required for hiding the blocked elements. If you've ever used Adblock, then you surely noticed how the hiding banners “blink”.
 
