@@ -26,7 +26,7 @@ taxonomy:
 * [License](#license) 
 * [Other features](#other-features)
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app [available in Google Play] that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
+> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
 
 <a id="ad-blocking"></a>
 # Ad blocking
@@ -37,7 +37,7 @@ Any ad blocker's main purpose is to block ads and for the majority of AdGuard so
 
 The ad blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set. 
 
-Most mobile ad blockers for Android use this principle, but what is pretty much the whole app in their case is only one of the many features for AdGuard. Read [this comparative article](https://adguard.com/en/blog/adguard-vs-adaway-dns66/) to learn the differences between AdGuard and other ad blockers.
+Most mobile ad blockers for Android use this principle, but what is pretty much the whole app in their case is only one of the many features for AdGuard. Read [this comparative article](https://adguard.com/en/blog/adguard-vs-adaway-dns66) to learn the differences between AdGuard and other ad blockers.
 
 <a id="filters"></a>
 ## Filters
@@ -55,7 +55,7 @@ Find out more about all the filters available for AdGuard products by reading th
 
 AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
 
-> Tip: use the Import feature to tranfser your rules to a different device. 
+> Tip: use the Import feature to transfer your rules to a different device. 
 
 <a id="https-filtering"></a> 
 ## HTTPS filtering
