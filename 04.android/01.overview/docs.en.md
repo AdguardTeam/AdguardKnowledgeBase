@@ -14,7 +14,7 @@ taxonomy:
 * [Control your apps](#app-control)
 	* [Apps management](#apps-management)
 	* [Filtering log](#filtering-log)
-	* [User filters](#user-filter)
+	* [User rules](#user-rules)
 * [DNS filtering](#dns-filtering)
 	* [DNS blocking](#dns-blocking)
 	* [DNS servers](#dns-servers)
@@ -121,7 +121,7 @@ In the Filtering Log, you can directly observe all web requests made by browsers
     
 You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
 
-<a id="user-filters"></a> 
+<a id="user-rules"></a> 
 ## User rules
 
 As mentioned above, AdGuard for Android uses a set of filters to block ads. And then there is the User rules section that allows you to create and adjust your own filtering rules. It is located in the Settings tab of the AdGuard menu.
@@ -215,7 +215,7 @@ Contrary to a popular opinion, using a proxy server is not just about bypassing 
 
 Userscripts (we also call them extensions) are basically mini-programs written in Javascript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/extensions?9" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/extensions.png?9" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
 By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
 
@@ -224,7 +224,7 @@ By the way, you can tap any added userscript to see more details, and to reinsta
 
 The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard ad blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/compatibility?9" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/compatibility.png?9" style="border: 0px solid #efefef; max-width: 300px; padding: 2px;" />
 
 Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. By the way, it works the other way around just as well: install AdGuard ad blocker on top of an already-running AdGuard VPN and you're good.
 
