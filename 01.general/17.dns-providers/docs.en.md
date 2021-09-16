@@ -913,8 +913,8 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `185.222.222.222` and `185.184.222.222`             | <a href="sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg">Add to AdGuard</a> |
-| DNS, IPv6      | `2a09::` and `2a09::1`            | <a href="sdns://AAAAAAAAAAAACFsyYTA5Ojpd">Add to AdGuard</a> |
+| DNS, IPv4      | `185.222.222.222` and `45.11.45.11`             | <a href="sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg">Add to AdGuard</a> |
+| DNS, IPv6      | `2a09::` and `2a11::`            | <a href="sdns://AAAAAAAAAAAACFsyYTA5Ojpd">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.dns.sb/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAKZG9oLmRucy5zYgovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://185.222.222.222` | <a href="sdns://AwAAAAAAAAAAAAAVdGxzOi8vMTg1LjIyMi4yMjIuMjIy">Add to AdGuard</a> |
 
