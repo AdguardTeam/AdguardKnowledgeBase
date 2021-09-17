@@ -84,9 +84,10 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 **To do so**, open the Terminal app, then enter and execute the following commands: 
 
 `sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
-`rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
-`rm ~/Library/Group Containers/TC3Q7MAJXF.com.adguard.com`
+`rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+`rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+`find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
 
 * Run ’Activity Monitor’ app.
 * Using search tool, find the process **cfprefsd**.
