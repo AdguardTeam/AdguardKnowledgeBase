@@ -1282,6 +1282,8 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128:8443` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>  |   
 
+<a name="dandelion-sprouts-official-dns-server"></a>
+
 #### Dandelion Sprout's Official DNS Server
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
