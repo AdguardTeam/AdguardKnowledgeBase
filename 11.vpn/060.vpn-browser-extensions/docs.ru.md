@@ -1,5 +1,5 @@
 ---
-title: 'Feartures overview'
+title: 'Обзор функций'
 taxonomy:
     category:
         - docs

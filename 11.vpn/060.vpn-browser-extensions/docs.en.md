@@ -1,5 +1,5 @@
 ---
-title: 'Feartures overview'
+title: 'Features overview'
 taxonomy:
     category:
         - docs
