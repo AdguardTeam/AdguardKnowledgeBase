@@ -185,9 +185,9 @@ You can renew your key for another year, switch to Lifetime protection or make y
 #### Unbind from the device
 If the license key is activated on one or more computers you will see the list of these devices under the license key. License key can be activated on a limited number of devices, before using it again you will have to unbind it from one of the computers.
 
-To unbind the license key from the device just click at the "cross" near the license as it’s showed on this picture:
+To unbind the license key from the device just click the cross icon next to that device as it's shown on this picture:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/unbind-license.png?" width="900" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/unbind-en.png?" max-width="900" />
 
 #### Change card details or cancel subscription
 To do so, find the subscription you need to manage and click on the card icon near it:
