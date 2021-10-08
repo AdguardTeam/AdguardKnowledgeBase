@@ -2033,11 +2033,12 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 path=pattern
 ```
 
-`pattern` is a path mask to which the rule is restricted. Its syntax and behaviour are pretty much the same as the [pattern of basic rules](#basic-rules-syntax). [The special characters](#basic-rules-special-characters) can also be used (except for ||, as it does not make any sense in this case) (see examples below).
+`pattern` is a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
 
-> Please note, that the path modifier matches the query string as well.
 
-> The path modifier supports regular expressions in [the same way](#regexp-support) the basic rules do.
+> Please note that `path` modifier matches the query string as well.
+
+> `path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
 
 `path` examples:
 * `[$path=page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
@@ -2047,6 +2048,8 @@ path=pattern
 * `[$path=/page*.html]example.com##.textad` - hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` - hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+> **Compatibility with different versions of AdGuard.** AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers
