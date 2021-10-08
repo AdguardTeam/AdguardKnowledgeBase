@@ -100,6 +100,7 @@ visible: true
         * [Syntax](#non-basic-rules-modifiers-syntax)
         * [$app](#non-basic-rules-modifiers-app)
         * [$domain](#non-basic-rules-modifiers-domain)
+        * [$path](#non-basic-rules-modifiers-path)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -2021,6 +2022,34 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 `[$domain=example.org]example.com##.textad` will be rejected.
 
 > **Compatibility with different versions of AdGuard.** This type of rules is supported by AdGuard for Windows, Mac and Android. **Developer builds only at this moment.**
+
+<a id="non-basic-rules-modifiers-path"></a>
+### path
+
+`path` limits the rule application area to specific locations or pages on websites.
+
+#### Syntax
+```
+path=pattern
+```
+
+`pattern` is a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
+
+
+> Please note that `path` modifier matches the query string as well.
+
+> `path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
+
+`path` examples:
+* `[$path=page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
+* `[$path=/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
+* `[$path=|/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
+* `[$path=/page.html|]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>` 
+* `[$path=/page*.html]example.com##.textad` - hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` - hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+> **Compatibility with different versions of AdGuard.** Rules with `path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge. **Developer builds only at this moment.**
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers
