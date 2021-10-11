@@ -97,7 +97,7 @@ PC에 AdGuard를 재설치하려면 설치 과정을 다시 시작하고 AdGuard
 
 ### 고급 방법
 
-먼저 개발자들이 만든 제거 도구를 다운로드하십시오. 이 링크를 클릭하면 제거 도구를 다운로드할 수 있습니다. PC의 폴더에 압축을 풀고 Adguard_Uninstall_Utility.exe 파일을 실행합니다. 그런 다음 아래 지침을 따르십시오.
+먼저 개발자들이 만든 제거 도구를 다운로드하십시오. [이 링크](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip)를 클릭하면 제거 도구를 다운로드할 수 있습니다. PC의 폴더에 압축을 풀고 Adguard_Uninstall_Utility.exe 파일을 실행합니다. 그런 다음 아래 지침을 따르십시오.
 
 * 'Standart uninstall'를 선택하고 'uninstall'를 클릭합니다.
 ![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu.png)
