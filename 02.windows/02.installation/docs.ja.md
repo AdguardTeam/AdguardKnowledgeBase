@@ -92,7 +92,7 @@ AdGuardをアンインストールまたは再インストールする必要が�
 
 ### アドバンスド方法
 まず、AdGuardの開発者が作成したアンインストーラーツールをダウンロードする必要があります。方法は以下の通りです:
-[このリンク](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip")をクリックしてください。
+[このリンク](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip)をクリックしてください。
 アーカイブをお使いのPCの任意のフォルダに解凍し、 「**Adguard_Uninstall_Utility.exe**」ファイルを実行してください。
 その後、以下の手順に行なってください。
 
