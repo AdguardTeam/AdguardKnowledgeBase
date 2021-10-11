@@ -27,7 +27,7 @@ To learn more about Stealth Mode, read the [dedicated article](https://kb.adguar
 
 ## Parental Control
 
-The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html). To learn more about Parental Control, read the [dedicated article](http://testkb.adguard.com/en/windows/features/parental-control) of our Knowledgebase.
+The Parental Control module ensures children’s web safety. Enable it for users you would like to protect from unacceptable information. [How Parental Control works and what it’s for](https://adguard.com/en/adguard-parental-control.html). To learn more about Parental Control, read the [dedicated article](http://kb.adguard.com/en/windows/features/parental-control) of our Knowledgebase.
 
 ## Extensions
 To make your browsing experience even more comfortable, AdGuard can perform the functions of a convenient user script manager. Moreover, AdGuard utilizes several pre-installed extensions.
