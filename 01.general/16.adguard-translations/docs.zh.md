@@ -40,22 +40,18 @@ visible: true
 
 选择相应的文件，您就可以开始翻译任何您喜欢的产品了。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders_cn.png) 
 
 筛选还未翻译的短语，并开始将自己融入到翻译历史之中！
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter_cn.png) 
 
 在文字框中输入您的翻译并点击“Save”（保存）。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box_cn.png) 
 
 如您对现存的翻译有异议，您还是可以推荐您自己的翻译。此外，通过点击“➕”和“➖”按钮您还可以评价其他志愿者的翻译内容。  
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/vote.png) 
-
-除此之外，如您只想评价翻译，您可以将翻译打开为 “Voting mode”。
-
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
 
 请您记得阅读下述的信息以获取更多实用的小建议。
  
@@ -67,27 +63,27 @@ visible: true
 
 1. 请注意在源短语用虚线突出的词语。这些一般是专有名词（比如，商标名称），因此无需翻译。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms_cn.png) 
 
 在 [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) 项目里，您可以为能翻译的术语推荐您自己的翻译。
 
 2. Crowdin 上的短语有时包含实用的提示，它们会帮助您更好地了解并翻译短语。在 "Context" 字段您可以找到短语的解释。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note_cn.png) 
 
 它们值得您花几分钟的时间看看，总会有所收获的。
 
 3. 请注意，一般在源短语 "Context" 字段下显示的图片。它们会帮助您了解短语的使用背景、用法以表达短语的准确意义。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot_cn.png) 
 
 请注意您也可以按 "REQUEST" 按钮以要求我们为您提供具体的内容。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request_cn.png) 
 
 4. 除了翻译以外，志愿者也可以为某一个短语留下注释，以此提示我们或其他翻译者存在的错误、留下一些建议或问问题。有时您会看到一些其他人留下的注释，别忘了去看一眼。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments_cn.png) 
 
 在首页还有 **Discussions** 标签。“Discussions” 标签允许您查看某一个项目中所有的特定语言的注释。
 
@@ -95,7 +91,7 @@ visible: true
 
 5. Crowdin 平台具有一款好用便捷的工具叫 _Translation Memory_。使用它，您可以查找同一个单词与短语以前做过的翻译。如果 _Translation Memory_ 提供的翻译没有错误，您可以直接用它。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm_cn.png) 
 
 6. 在首页点击 "Join" 按钮加入项目后，您可以看到 **Tasks** 标签。这是专门为特定项目创建的任务。请注意这些任务。在大部分情况下，它们具有更高的优先权。
 
@@ -110,7 +106,7 @@ visible: true
 
 您还可以向我们发邮件：[translate@adguard.com](mailto:translate@adguard.com) 或在 [Telegram 群](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w) 问问题。群主会尽快回复您。
 
-在[知识库](https://support.crowdin.com/?utm_source=email&utm_campaign=md_en_2019-07-29_27&utm_medium=other&utm_content=body)您可以找到更多关于 Crowdin 翻译系统的详情。
+在[知识库](https://support.crowdin.com)您可以找到更多关于 Crowdin 翻译系统的详情。
 
 <a name="proofreaders"></a>
 ### 审核员
