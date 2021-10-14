@@ -137,7 +137,7 @@ If you have any questions about translations, you can always ask proofreaders or
 
 Also, you can send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w). The Admins will answer you as soon as possible.
 
-Find more information on Crowdin translation system in this [Knowledge base](https://support.crowdin.com/?utm_source=email&utm_campaign=md_en_2019-07-29_27&utm_medium=other&utm_content=body).
+Find more information on Crowdin translation system in this [Knowledge base](https://support.crowdin.com).
 
 
 <a name="proofreaders"></a>
