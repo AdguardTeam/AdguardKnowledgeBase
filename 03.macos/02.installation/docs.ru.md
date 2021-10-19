@@ -79,16 +79,26 @@ AdGuard удалён с вашего Mac!
 
 
 1. Удалите следующие файлы AdGuard:
-    * */Library/Application Support/com.adguard.mac.adguard* (папка)
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (папка)
     * *~/Library/Application Support/com.adguard.mac.adguard* (папка)
     * *~/Library/Preferences/com.adguard.mac.adguard.plist* (файл)
-    * *rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (папка)
+    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (папка)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (файл)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (файл)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (файл)
 
 Для этого введите и выполните следующие команды через Terminal: 
 
-`sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
-`rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+`rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+`rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+`find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
 2. Запустите приложение «Мониторинг системы».
 3. Через поиск найдите процесс *’cfprefsd’*.
