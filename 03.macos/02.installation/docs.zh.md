@@ -82,18 +82,26 @@ taxonomy:
 
 如果一般卸载方式无效，再请您执行以下操作：
 * 删除以下的 AdGuard 文件：
-    * */Library/Application Support/com.adguard.mac.adguard*（文件夹）
-    * *~/Library/Application Support/com.adguard.mac.adguard*（文件夹）
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist*（文件）
-    * *rm -R ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac*（文件夹）
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+    * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
+    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
+    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (folder)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
 **为了执行上述步骤**，请您打开 Terminal。然后输入并执行以下的指令：
 
-`sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-
-`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
-
-`rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+`rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+`rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+`find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
 * 开启  ’活动监视器’。
 * 通过搜索查找 **cfprefsd** 进程。
