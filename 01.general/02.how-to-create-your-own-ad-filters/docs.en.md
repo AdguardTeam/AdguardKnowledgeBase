@@ -988,13 +988,13 @@ This modifier lets you narrow the rule coverage down to a specific application (
 * Windows - use the process name (i.e. `chrome.exe`).
 * Mac - use the bundle ID or the process name (i.e. `com.google.Chrome`).
 
->For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log
+>For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
 In the case of Android, use the apps' package names (i.e. `org.example.app`). In the case of Windows
 
 ##### `app` examples
 
-* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `com.adguard.android` Android app.
+* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `org.example.app` Android app.
 * `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
 
 If you want the rule not to be applied to certain apps, start the app name with `~` sign.
