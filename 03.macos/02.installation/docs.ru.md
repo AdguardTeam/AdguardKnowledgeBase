@@ -80,9 +80,9 @@ AdGuard удалён с вашего Mac!
 
 1. Удалите следующие файлы AdGuard:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (папка)
-    * *~/Library/Application Support/com.adguard.mac.adguard* (папка)
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (файл)
-    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (папка)
+    * ~/Library/Application Support/com.adguard.mac.adguard (папка)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (файл)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (папка)
     * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (файл)
     * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (файл)
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)

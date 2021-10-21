@@ -94,14 +94,14 @@ Finder 앱을 엽니다.
 고객 지원 팀에서 특별히 '고급 제거'를 권장하거나 고급 제거에 익숙한 경우에만 이 지침을 사용하십시오. 먼저 '일반 제거' 지침의 모든 단계를 수행한 후 다음 단계를 수행합니다.
 
 * 다음과 같은 AdGuard 파일을 삭제합니다.
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
-    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (folder)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (폴더)
+    * ~/Library/Application Support/com.adguard.mac.adguard (폴더)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (파일)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (폴더)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (파일)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (파일)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (파일)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (파일)
 
 * 이 파일을 삭제하시려면 터미널 앱을 열고 다음 명령을 입력하고 실행하십시오.
 

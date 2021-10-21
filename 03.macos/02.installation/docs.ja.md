@@ -80,9 +80,9 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 
 * 以下のAdGuardファイルを削除してください:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
-    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (folder)
+    * ~/Library/Application Support/com.adguard.mac.adguard (folder)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
     * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
     * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)

@@ -82,14 +82,14 @@ taxonomy:
 
 如果一般卸载方式无效，再请您执行以下操作：
 * 删除以下的 AdGuard 文件：
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
-    * *~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac* (folder)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (文件夹)
+    * ~/Library/Application Support/com.adguard.mac.adguard (文件夹)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (文件)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (文件夹)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (文件)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (文件)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (文件)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (文件)
 
 **为了执行上述步骤**，请您打开 Terminal。然后输入并执行以下的指令：
 
