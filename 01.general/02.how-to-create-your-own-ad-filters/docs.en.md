@@ -990,8 +990,6 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 >For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log
 
-In the case of Android, use the apps' package names (i.e. `org.example.app`). In the case of Windows
-
 ##### `app` examples
 
 * `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `com.adguard.android` Android app.
