@@ -62,7 +62,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
 
 Nowadays most websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that advertisers use it as well, this is why [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering) is crucial for a modern ad blocker. 
     
-<img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png" style="border: 0px solid #efefef; padding: 2px;" />
+<img src="https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png" style="border: 0px solid #efefef; padding: 2px;" />
 
 > To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. Unfortunately, on Android 11 automatic certificate installation is no longer available. Now a [manual installation](https://kb.adguard.com/en/android/solving-problems/manual-certificate) is required.
  
