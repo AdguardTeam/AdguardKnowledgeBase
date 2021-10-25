@@ -303,7 +303,7 @@ For the basic rules the described logic will be applicable only for the domains 
 
 * `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-* `||example.org^$third-party` —  a rule that blocks third-party requests to `example.org` and it's subdomains.
+* `||example.org^$third-party` —  a rule that blocks third-party requests to `example.org` and its subdomains.
 
 * `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exceptions-modifiers).
 
@@ -338,8 +338,8 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 ###### `domain` and `~` examples
 
-* `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or it's subdomains.
-* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all it's subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or its subdomains.
+* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all its subdomains, except the subdomain `foo.example.org`.
 
 ###### `domain` modifier matching target domain
 
@@ -377,13 +377,13 @@ In the following examples it's implied that requests are sent from `http://examp
 
 A restriction of third-party and own requests. A third-party request is a request from different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
-> **Subdomains.** Please note that request from domain to it's subdomain (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain `example.org` is not a third-party request.
+> **Subdomains.** Please note that request from domain to its subdomains (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain `example.org` is not a third-party request.
 
 If there is a `third-party` modifier, the rule is only applied to third-party request.
 
 ###### `third-party` examples
 
-* `||domain.com^$third-party` — rule is applied to all domains, except `domain.com` and it's subdomains. Third-party request example: `http://example.org/banner.jpg`.
+* `||domain.com^$third-party` — rule is applied to all domains, except `domain.com` and its subdomains. Third-party request example: `http://example.org/banner.jpg`.
 
 If there is a `~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
 
@@ -920,7 +920,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 
 ##### `csp` examples
 
-* `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and it's subdomains.
+* `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and its subdomains.
 * `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$csp` — disables all the `$csp` rules on all the pages matching the rule pattern.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
@@ -1196,7 +1196,7 @@ Use `@@` to negate `$removeheader`:
 
 ##### Examples
 
-* `||example.org^$removeheader=refresh` — removes `Refresh` header from all HTTP responses returned by `example.org` and it's subdomains.
+* `||example.org^$removeheader=refresh` — removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
 * `||example.org^$removeheader=request:x-client-data` — removes `X-Client-Data` header from all HTTP requests.
 * This block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
 
@@ -1252,7 +1252,7 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 
 * `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and it's subdomains.
+* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
 
 > **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -1354,9 +1354,9 @@ We **strongly recommend** using these markers any time when you use an extended 
 
 #### Examples
 
-* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule will block all `div` elements that contain link as a child node with `[target="_blank"][rel="nofollow"]` attributes. The rule will only work for `example.org` and all it's subdomains.
-* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all it's subdomains.
-* `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all it's subdomains.
+* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule will block all `div` elements that contain link as a child node with `[target="_blank"][rel="nofollow"]` attributes. The rule will only work for `example.org` and all its subdomains.
+* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all its subdomains.
+* `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all its subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
 > Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
@@ -1793,7 +1793,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 example.org$$script[data-src="banner"]
 ```
 
-This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring. The rule will only work for `example.org` and all it's subdomains.
+This rule will delete all `script` elements with `data-src` attribute that contain `banner` substring. The rule will only work for `example.org` and all its subdomains.
 
 <a id="html-filtering-rules-attributes"></a>
 #### Special attributes
@@ -2010,7 +2010,7 @@ basic rules.
 `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `[$domain=~example.com]##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and it's subdomains.
+* `[$domain=~example.com]##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and its subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
