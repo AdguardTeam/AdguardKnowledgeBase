@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-AdGuard가 Firefox에서 [HTTPS 트래픽을 성공적으로 필터링](https://kb.adguard.com/en/general/https-filtering)하기 위해서는 브라우저가 AdGuard의 인증서를 신뢰해야 합니다. Firefox 버전에 따라 브라우저가 인증서를 신뢰하도록 하는 방법은 다릅니다.
+AdGuard가 Firefox에서 [HTTPS 트래픽을 성공적으로 필터링](https://kb.adguard.com/ko/general/https-filtering)하기 위해서는 브라우저가 AdGuard의 인증서를 신뢰해야 합니다. Firefox 버전에 따라 브라우저가 인증서를 신뢰하도록 하는 방법은 다릅니다.
 
 
 #### 방법 1
