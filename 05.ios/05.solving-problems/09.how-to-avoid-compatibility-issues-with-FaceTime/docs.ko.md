@@ -1,5 +1,5 @@
 ---
-title: 'How to avoid compatibility issues with FaceTime FaceTime과의 호환성 문제를 해결하는 방법'
+title: 'FaceTime과의 호환성 문제를 해결하는 방법'
 taxonomy:
     category:
         - docs
