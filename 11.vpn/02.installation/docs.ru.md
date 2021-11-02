@@ -56,7 +56,7 @@ AdGuad VPN для Firefox успешно установлен!
 
 Чтобы установить AdGuard VPN для Android:
 
-1) Перейдите по [этой ссылке](https://agrd.io/vpn_android_beta) или откройте страницу AdGuard VPN в магазине приложений Google Play.
+1) Перейдите по [этой ссылке](https://agrd.io/adguard_vpn_android) или откройте страницу AdGuard VPN в магазине приложений Google Play.
 
 2) Нажмите **Установить**.
 
@@ -64,25 +64,57 @@ AdGuad VPN для Firefox успешно установлен!
 
 3) Подождите, пока закончится процесс загрузки, и нажмите **Открыть**.
 
-AdGuard VPN для Android упешно установлен!
+AdGuard VPN для Android успешно установлен!
 
 
 <a name="ios"></a>
 
 ## AdGuard VPN для iOS
 
-AdGuard VPN для iOS пока находится в разработке. Ожидайте его выход в ближайшем будущем!
+Чтобы установить AdGuard VPN для iOS:
+
+1) Перейдите по [этой ссылке](https://agrd.io/ios_vpn) или откройте App Store и введите "AdGuard VPN" в поле для поиска.
+
+2) Нажмите **ЗАГРУЗИТЬ** рядом с AdGuard VPN — Unlimited & Fast и подтвердите установку двойным нажатием на боковую кнопку устройства iOS. 
+
+3) Подождите, пока закончится процесс загрузки, и нажмите **Открыть**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/open-vpn-ios-ru.jpg" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+
+AdGuard VPN для iOS успешно установлен!
 
 
 <a name="mac"></a>
 
 ## AdGuard VPN для Mac
 
-AdGuard VPN для Mac пока находится в разработке. Ожидайте его выход в ближайшем будущем!
+Чтобы установить AdGuard VPN для Mac beta:
 
+1) Перейдите по [этой ссылке](https://agrd.io/mac_vpn_beta). DMG-файл появится в списке загрузок вашего браузера.
+
+2) Откройте его. Вы увидите экран "Установить AdGuard VPN". Дважды нажмите на иконку.
+ 
+3) Установщик AdGuard VPN сделает всё сам, просто нажмите **Продолжить** и **Установить**. Или можете изменить размещение установки, если потребуется.
+
+4) Когда вы увидите экран "Установка прошла успешно", нажмите **Закрыть**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/installed-vpn-mac-ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+
+Вот и всё, AdGuard VPN для Mac beta установлен на ваше устройство!
+ 
 
 <a name="windows"></a>
 
 ## AdGuard VPN for Windows
 
-AdGuard VPN для Windows пока находится в разработке. Ожидайте его выход в ближайшем будущем!
+Чтобы установить AdGuard VPN для Windows beta:
+
+1) Перейдите по [этой ссылке](https://agrd.io/windows_vpn_beta). Файл `installer.exe`  появится в списке загрузок вашего браузера.
+
+2) Откройте его. Установщик AdGuard VPN сделает всё сам, просто нажмите **Установить**.
+
+3) Когда вы увидите экран "Установка успешно завершена", нажмите **Завершить**.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/VPN/installed-vpn-windows-ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
+
+Вот и всё, AdGuard VPN для Windows beta установлен на ваше устройство!

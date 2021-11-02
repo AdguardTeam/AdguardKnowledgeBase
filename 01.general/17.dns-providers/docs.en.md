@@ -23,7 +23,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Dyn DNS](#dyn-dns)
 * [DNS.WATCH](#dnswatch-dns)
 * [SkyDNS RU](#sky-dns)
-* [Comss.ru DNS](#comss.ru-dns)
+* [Comss.ru DNS](#comss-ru-dns)
 * [Safe DNS](#safe-dns)
 * [CIRA Shield DNS](#cira.ca-dns)
 * [OpenNIC DNS](#opennic-dns)
@@ -40,7 +40,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [DNSPod](#dnspod-dns)
 * [114DNS](#114-dns)
 * [Quad101](#quad101)
-* [OneDNS](#114-dns) 
+* [OneDNS](#onedns) 
 * [Privacy-First DNS](#privacy-first-dns)
 * [FreeDNS](#free-dns)
 * [Freenom World](#freenom-world)
@@ -70,6 +70,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 * [Mullvad](#mullvad)
 * [Small personal resolvers](#small-resolvers)
     * [Arapurayil](#arapurayil)
+    * [Dandelion Sprout's Official DNS Server](#dandelion-sprouts-official-dns-server)
 
 <a name="adguard-dns"></a>
 
@@ -206,9 +207,9 @@ Blocks phishing, spam and malicious domains
 
 <a name="neustar-dns"></a>
 
-### Neustar UltraDNS
+### Neustar Recursive DNS
 
-[Neustar UltraDNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
+[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
 
 #### Reliability & Performance 1
 
@@ -364,7 +365,7 @@ Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-S
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provide security blocklist, DNSSEC, EDNS Client-Subnet.
+EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client-Subnet.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -470,7 +471,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### CIRA Canadian Shield DNS
 
-[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protect against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
+[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
 
 #### Private
 
@@ -564,7 +565,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block websites which are considered as adult related. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites..
+[DNS for Family](https://dnsforfamily.com/) aims to block websites which are considered as adult related. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
 | Protocol       | Address                                            |                |
@@ -625,7 +626,6 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS, IPv4      | `180.131.144.144` and `180.131.145.145`             | <a href="sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA">Add to AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">Add to AdGuard</a> |
 
-<!---
 <a name="dnscepat.id"></a>
 
 ### DNSCEPAT
@@ -649,7 +649,6 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS IPv4 | IP: `5.2.75.231` | <a href="sdns://AAcAAAAAAAAACjUuMi43NS4yMzE">Add to AdGuard</a> |
 | DNS IPv6 | IP: `2a04:52c0:101:98d::` | <a href="sdns://AAcAAAAAAAAAFVsyYTA0OjUyYzA6MTAxOjk4ZDo6XQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | Hostname: `https://eropa.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
---->
 
 
 <a name="360-dns"></a>
@@ -909,8 +908,8 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `185.222.222.222` and `185.184.222.222`             | <a href="sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg">Add to AdGuard</a> |
-| DNS, IPv6      | `2a09::` and `2a09::1`            | <a href="sdns://AAAAAAAAAAAACFsyYTA5Ojpd">Add to AdGuard</a> |
+| DNS, IPv4      | `185.222.222.222` and `45.11.45.11`             | <a href="sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg">Add to AdGuard</a> |
+| DNS, IPv6      | `2a09::` and `2a11::`            | <a href="sdns://AAAAAAAAAAAACFsyYTA5Ojpd">Add to AdGuard</a> |
 | DNS-over-HTTPS | `https://doh.dns.sb/dns-query` | <a href="sdns://AgcAAAAAAAAAAAAKZG9oLmRucy5zYgovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 | DNS-over-TLS | `tls://185.222.222.222` | <a href="sdns://AwAAAAAAAAAAAAAPMTg1LjIyMi4yMjIuMjIy">Add to AdGuard</a> |
 
@@ -959,8 +958,8 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-TLS, IPv4 | Hostname: `tls://dot.ffmuc.net` | <a href="sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA">Add to AdGuard</a> |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAAAAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Add to AdGuard</a> |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Add to AdGuard</a> |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Add to AdGuard</a> |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Add to AdGuard</a> |
 
 <a name="digitale-gesellschaft"></a>
 
@@ -1291,3 +1290,20 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 |----------------|------------------------------------------------------------------|------------------|
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | <a href="sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ">Add to AdGuard</a> |
 | DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | <a href="sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk">Add to AdGuard</a>  |   
+
+<a name="dandelion-sprouts-official-dns-server"></a>
+
+#### Dandelion Sprout's Official DNS Server
+
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
+
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. For additional important info, see the link above.
+
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | <a href="sdns://AgEAAAAAAAAAAAAhZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbToyNTAxCi9kbnMtcXVlcnk">Add to AdGuard</a>
+| DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853` | <a href="sdns://AwEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM">Add to AdGuard</a>
+| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | <a href="sdns://BAEAAAAAAAAAAAAiZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo0ODU4Mg">Add to AdGuard</a>
+| DNS, IPv4      | Varies; see link above. |
+| DNS, IPv6      | Varies; see link above. |
+| DNSCrypt, IPv4 | Varies; see link above. |

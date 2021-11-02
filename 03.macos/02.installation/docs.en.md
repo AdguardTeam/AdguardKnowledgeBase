@@ -77,15 +77,26 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 **Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.** After that, do the following:
 
 * Delete following AdGuard files:
-    * */Library/Application Support/com.adguard.mac.adguard* (folder)
-    * *~/Library/Application Support/com.adguard.mac.adguard* (folder)
-    * *~/Library/Preferences/com.adguard.mac.adguard.plist* (file)
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+    * ~/Library/Application Support/com.adguard.mac.adguard (folder)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
 **To do so**, open the Terminal app, then enter and execute the following commands: 
 
-`sudo rm -R "/Library/Application Support/com.adguard.mac.adguard"`
-`rm -R "~/Library/Application Support/com.adguard.mac.adguard"`
-`rm ~/Library/Preferences/com.adguard.mac.adguard.plist`
+`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+`rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+`rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+`rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+`find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+`sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+`sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
 * Run ’Activity Monitor’ app.
 * Using search tool, find the process **cfprefsd**.

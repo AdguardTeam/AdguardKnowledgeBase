@@ -13,9 +13,10 @@ DNS filtering supports three types of rules:
 
 * Basic filtering rules, which is the same as [AdGuard's basic rules](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#basic-rules), but with a limited set of modifiers supported:
 
-    * [`$important`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#important-modifier)
-    * [`$match-case`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#match-case-modifier)
-    * [`$badfilter`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#badfilter-modifier)
+    * [`$important`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#important-modifier) — increases rule's priority
+    * [`$badfilter`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#badfilter-modifier) — disables other rules it references
+    * [`$match-case`](https://kb.adguard.com/general/how-to-create-your-own-ad-filters#match-case-modifier) — makes the rule match addresses with lower/upper case consideration
+    * [`$denyallow`](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#denyallow) — excludes certain domains from the rule's application area
     * Rules with other modifiers will be ignored
 
 * “Hosts” rules, which is basically the same as `/etc/hosts` <br>

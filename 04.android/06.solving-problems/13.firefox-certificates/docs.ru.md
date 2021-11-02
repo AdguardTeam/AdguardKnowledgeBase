@@ -1,27 +1,32 @@
 ---
-title: 'Ручная установка сертификата безопасности в браузер Firefox'
+title: 'Проблемы доверия сертификатам безопасности в браузере Firefox'
 published: true
 taxonomy:
     category:
         - docs
 ---
 
-Различные версии Firefox требуют разных подходов для осуществления [HTTPS-фильтрации](https://kb.adguard.com/ru/general/https-filtering). Как правило, проблема установки пользовательского сертификата возникает в версиях Firefox до 81.1.1. Для решения воспользуйтесь Методом 1, описанным ниже (он подходит для nightly- и beta-версий браузера).
+Чтобы AdGuard мог [успешно фильтровать HTTPS-трафик](https://kb.adguard.com/ru/general/https-filtering) в Firefox, браузер должен доверять сертификату AdGuard. Этого можно добиться по-разному в зависимости от версии Firefox.
 
-### Предоставление доступа к сертификатам
+#### Метод 1
 
-#### Метод 1: Сертификат находится в **пользовательском хранилище**
+> Пока что этот метод работает только в [Firefox Nightly](https://www.mozilla.org/firefox/channel/android/) версии 90.0a1. Как только бета- и обычная сборка Firefox достигнут версии 90, данный метод будет также применим к ним.
 
->Этот метод будет работать только в [Beta- или Nightly-версии](https://www.mozilla.org/firefox/channel/android/) браузера, поскольку обычные версии Firefox более не предоставляют доступа к `about:config`. 
+Чтобы Firefox Nightly доверял сертификату AdGuard, выполните следующие шаги:
 
-Чтобы начать использовать пользовательские сертификаты, активируйте скрытую опцию в настройках браузера:
+1. Запустите браузер.
+2. Перейдите в *Настройки > О Firefox Nightly*.
 
-1. Запустите браузер;
-2. Перейдите на страницу **about:config**;
-3. Введите **root** в поле поиска;
-4. Найдите опцию `security.enterprise_roots.enabled` и переключите ее, выбрав значание **true**.
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_about_ru.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-#### Метод 2: Сертификат находится в **системном хранилище**
+3. Несколько раз быстро нажмите на логотип Firefox Nightly в верху экрана.
+4. Перейдите в раздел *Настройки > Secret Settings*.
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_secret.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+
+5. Включите настройку **Use third party CA certificates**.
+
+#### Метод 2
 
 >Этот метод будет работать **только** на устройствах с рут-доступом!
 

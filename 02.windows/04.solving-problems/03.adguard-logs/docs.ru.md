@@ -8,36 +8,41 @@ visible: true
 
 Для анализа и диагностики различных проблем службе поддержки могут понадобиться файлы журнала AdGuard. Эти файлы содержат записи обо всех ошибках, которые произошли с программой за последнее время. Ниже представлена краткая инструкция, описывающая как получить и отправить в службу поддержки файлы журнала.
 
-1. Откройте настройки AdGuard. Перейдите в раздел "Общие настройки", прокрутите вниз до конца экрана и выберите уровень логирования **Подробный**.
+1. Откройте настройки AdGuard. Перейдите в раздел **Общие настройки**, прокрутите вниз до конца экрана и выберите уровень логирования **Подробный**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logsru.png" />
-
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_1.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 2. Воспроизведите проблему.
 - Настоятельно советуем обратить внимание на время воспроизведения, это значительно поможет нашей команде поддержки в решении проблемы.
 
 3. Экспортируйте полученные логи при помощи кнопки **Экпортировать лог**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logsru2.png" />
-
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 - Сохраните архив в любую удобную для вас папку.
 
 4. **Важно**: Не забудьте вернуть **Стандартный** уровень логирования. **Подробный** уровень логирования может значительно замедлить работу приложения.
 
-5. Отправьте сохранённый архив в [службу поддержки](mailto:support@adguard.com) AdGuard (support@adguard.com).
+5. Отправьте сохранённый архив в службу поддержки AdGuard по адресу support@adguard.com .
 
 **Примечание**: иногда в поддержке вас могут попросить прислать "трейсовые" логи. Тогда вам нужно будет сделать следующее:
 
 1. Остановите AdGuard.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/openadguard.png" />
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/exitadguard.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_3.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-2. Откройте консоль (введите 'cmd' в стартовой панели).
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-3. Запустите приложение командой C:\Program Files (x86)\Adguard\Adguard.exe /trace (если вы используете 64-битный Windows) или C:\Program Files\Adguard\Adguard.exe /trace (если вы используете 32-битный).
+2. Откройте консоль (введите `cmd` в стартовой панели).
+
+3. Запустите приложение командой `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` (если вы используете 64-битный Windows) или `C:\"Program Files"\Adguard\Adguard.exe /trace` (если вы используете 32-битный).
 
 4. Выберите уровень логирования **Подробный**.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/logsen.png" />
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_5.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+
+5. Воспроизведите проблему.
+- Настоятельно советуем обратить внимание на время воспроизведения, это значительно поможет нашей команде поддержки в решении проблемы.
+
+6. Экспортируйте полученные логи при помощи кнопки **Экпортировать лог**.
+7. **Важно**: Не забудьте вернуть **Стандартный** уровень логирования. **Подробный** уровень логирования может значительно замедлить работу приложения.
 
 Не пугайтесь, если файл с логами будет большим. Нам необходимо узнать как можно больше подробностей, чтобы исправить вашу проблему.

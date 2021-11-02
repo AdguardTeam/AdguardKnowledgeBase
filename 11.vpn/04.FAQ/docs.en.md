@@ -54,10 +54,16 @@ In the paid version there is unlimited speed and no traffic limit (as opposed to
 ### How to buy AdGuard VPN?
 Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choose the plan that suits you best. We have 1-month or 1-year subscription options.
 
-### What do I get with the paid subscription?
-* Unlimited speed
-* Unlimited traffic (as opposed to the free version with only 3GB of monthly traffic).
-* Subscription will be valid for 5 devices at once (whether it be the extension or Android app or future products that are yet to come). 
+### What restrictions do users of the free version have?
+* VPN can be used only on two devices simultaneously
+* Speed cap is 20 Mbit/s
+* Traffic limit is 3 GB per month
+* Some locations are not available
+* Streaming services are not supported
+* Torrents are not supported
+* Email clients can’t be used for sending messages (for AdGuard VPN for iOS and Android)
+
+> The last point should be addressed separately: users of the free version of AdGuard VPN for iOS and Android cannot send emails in email clients. It’s impossible because we block port 25, which is used for outgoing emails, and thus reinsure against spam. However, sending emails in the browser version of email services works perfectly, and on AdGuard VPN for Android you can add apps to exclusions so that email apps will function as well.
  
 ### How many devices can be connected to AdGuard VPN simultaneously?
 Most likely you are reading this because you’ve seen the “Maximum number of connections reached”  warning. 

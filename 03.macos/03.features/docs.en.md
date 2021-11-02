@@ -3,6 +3,7 @@ title: Features
 taxonomy:
     category:
         - docs
+visible: false
 ---
 
 AdGuard for macOS is designed to block ads on web pages and in applications installed on your computer. In addition, AdGuard protects users from fraudulent websites and their information from statistics gathering systems. This section gives a brief overview of the AdGuard for macOS functions.
