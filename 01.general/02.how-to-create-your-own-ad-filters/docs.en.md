@@ -84,7 +84,7 @@ visible: true
             * [Pseudo-class `:xpath()`](#extended-css-xpath)
             * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
             * [Pseudo-class `:upward()`](#extended-css-upward)
-            * [Pseudo-class :remove() and pseudo-property `remove`](#remove-pseudos)
+            * [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
         * [Cosmetic rules priority](#cosmetic-rules-priority)
     * [HTML filtering rules](#html-filtering-rules)
         * [Syntax](#html-filtering-rules-syntax)
@@ -1647,7 +1647,7 @@ div:matches-property("memoizedProps._owner.src"="/ad/")
 
 This pseudo-class allows to select an element by evaluating an XPath expression.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
+> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
 
 The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath()` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath()` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
 
@@ -1676,7 +1676,7 @@ This pseudo-class allows to lookup the nth ancestor relative to the currently se
 
 It is a low-overhead equivalent to `:xpath(..[/..]*)`.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
+> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
 
 **Syntax**
 ```
@@ -1697,7 +1697,7 @@ div:has-text(/test/):nth-ancestor(2)
 
 This pseudo-class allows to lookup the ancestor relative to the currently selected node.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).**
+> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
 
 **Syntax**
 ```
