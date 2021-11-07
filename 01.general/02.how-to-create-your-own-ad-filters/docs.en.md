@@ -29,6 +29,7 @@ visible: true
             * [$match-case](#match-case-modifier)
         * [Content type modifiers](#content-type-modifiers)
             * [Content type modifiers examples](#content-type-modifiers-examples)
+            * [$document](#document-modifier)
             * [$image](#image-modifier)
             * [$stylesheet](#stylesheet-modifier)
             * [$script](#script-modifier)
@@ -48,7 +49,6 @@ visible: true
             * [$jsinject](#jsinject-modifier)
             * [$urlblock](#urlblock-modifier)
             * [$extension](#extension-modifier)
-            * [$document](#document-modifier)
             * [$stealth](#stealth-modifier)
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
@@ -427,6 +427,24 @@ There is a set of modifiers, which can be used to limit the rule's application a
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
 * `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
 
+<a id="document-modifier"></a>
+##### **`document`**
+
+The rule corresponds to HTML document requests, it applies to main frames only (i.e. HTML documents).
+
+In the case of blocking rules, `$document` also disables "main frame bypass" logic and blocks requests _strictly_ with a blocking page.
+
+In case of allowlist it completely disables blocking on corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and `extension`.
+
+> **Compatibility with different versions of AdGuard.** Blocking request type logic now only supported by dev-build of AdGuard.
+
+###### `document` example
+
+* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
+* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
+
+* `||example.com^$document` — blocks HTML document request to `example.com` with a blocking page.
+
 <a id="image-modifier"></a>
 ##### **`image`**
 
@@ -560,16 +578,6 @@ Disables all userscripts on the pages matching this rule. Note, that this modifi
 ###### `extension` example
 
 * `@@||example.com^$extension` — userscripts won't work on all pages of the `example.com` website.
-
-<a id="document-modifier"></a>
-##### **`document`**
-
-Completely disables blocking on corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and `extension`.
-
-###### `document` example
-
-* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
