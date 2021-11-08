@@ -430,7 +430,7 @@ There is a set of modifiers, which can be used to limit the rule's application a
 <a id="document-modifier"></a>
 ##### **`document`**
 
-The rule corresponds to HTML document requests, it applies to main frames only (i.e. HTML documents).
+The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes (there's a `$subdocument` modifier for these).
 
 In the case of blocking rules, `$document` also disables "main frame bypass" logic and blocks requests _strictly_ with a blocking page.
 
