@@ -444,6 +444,9 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 * `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 * `||example.com^$document` — blocks HTML document request to `example.com` with a blocking page.
+* `||example.com^$document,redirect=noopframe` — redirects HTML document request to `example.com` to an empty html document.
+* `||example.com^$document,removeparam=test` — removes `test` query parameter from HTML document request to  `example.com`.
+* `||example.com^$document,replace=/test1/test2/` — replaces `test1` with `test2` in  HTML document request to `example.com`.
 
 <a id="image-modifier"></a>
 ##### **`image`**
