@@ -432,7 +432,7 @@ There is a set of modifiers, which can be used to limit the rule's application a
 
 The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes (there's a `$subdocument` modifier for these).
 
-In the case of blocking rules, `$document` also disables "main frame bypass" logic and blocks requests _strictly_ with a blocking page.
+By default, AdGuard won't block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
 In case of allowlist it completely disables blocking on corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and `extension`.
 
