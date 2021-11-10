@@ -6,4 +6,4 @@ taxonomy:
         - docs
 ---
 
-The FAQ regarding AdGuard DNS can be found on the [official website](https://adguard.com/en/adguard-dns/overview.html).
+The FAQ regarding AdGuard DNS can be found on the [official website](https://adguard-dns.com/en/welcome.html).
