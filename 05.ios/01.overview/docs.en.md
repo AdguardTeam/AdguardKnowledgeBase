@@ -114,7 +114,7 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 
 <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/Pro/network_settings_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
-Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/ru/adguard-home/overview.html)).
+Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
 
 <a id="dns-filtering"></a>
 ### DNS filtering
@@ -126,7 +126,7 @@ To get access to this setting, *Advanced mode* has to be enabled from the *Gener
 <a id="dns-filters"></a>
 #### DNS filters
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://kb.adguard.com/ru/general/dns-filtering-syntax). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://kb.adguard.com/ru/general/adguard-ad-filters#domains) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking). 
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://kb.adguard.com/en/general/dns-filtering-syntax). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://kb.adguard.com/en/general/adguard-ad-filters#domains) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking). 
 
 <a id="allowlist-blocklist"></a>
 #### Allowlist and Blocklist
