@@ -56,29 +56,28 @@ To let your AdGuard app run successfully in the background, do the following:
 
 2. *Security* app -> Tap *Gear* at the top-right corner -> *Boost speed* -> *Lock apps* -> *Lock AdGuard*
 
-Open *Security* app and tap *Gear* at the top-right corner of the screen.
+Open *Security* app and tap the *Gear* icon at the top-right corner of the screen.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en1.png" width="300">
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_1.png" width="300">
 
-Tap *Boost speed* -> *Lock apps* -> *Lock AdGuard*
-
-Select the built-in *Security app*. Then tap the gear icon at the top-right corner to open *"Special Settings"*. 
+Tap *Boost speed* in Feature Settings
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en2.png" width="300">
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_2.png" width="300">
 
-Select *"Boost speed"*.
+Tap *"Lock apps"*.
+
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en3.png" width="300">
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_3.png" width="300">
 
-Then tap the *"Locked apps"* line. 
+ In the *Lock apps* screen, set the toggle switch for the AdGuard app to On.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en4.jpg" width="300">
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_4.png" width="300">
 
-Now toggle the switch opposite the AdGuard app. That’s all! You’ve successfully pinned the AdGuard app. 
+That’s all! You’ve successfully pinned the AdGuard app. 
 
 #### MIUI 12
 
