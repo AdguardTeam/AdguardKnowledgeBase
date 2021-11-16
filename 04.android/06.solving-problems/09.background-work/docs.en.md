@@ -44,30 +44,39 @@ Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving opti
 
 ## Xiaomi
 
-#### MIUI 12.5
+#### MIUI 12.0.8+
 
-To let your app run successfully in the background, configure settings as follows:
+To let your AdGuard app run successfully in the background, do the following:
+
+1. Go to *Settings* > *Apps* > *Manage apps* > *AdGuard*. 
+- Set *Autostart* to "On".
+- Set *Battery saver* to "No restrictions".
 
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
 
-Go to *Settings* > *Apps* > *Manage apps* > *AdGuard*. 
+2. *Security* app -> Tap *Gear* at the top-right corner -> *Boost speed* -> *Lock apps* -> *Lock AdGuard*
 
-- Set *Autostart* to "On"
-- Set *Battery saver* to "No restrictions"
+Open *Security* app and tap *Gear* at the top-right corner of the screen.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en1.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_1.png" width="300">
 
-Select the built-in *Security app*. Then tap the gear icon in the upper right corner to open *"Special Settings"*. 
+Tap *Boost speed* -> *Lock apps* -> *Lock AdGuard*
+
+Select the built-in *Security app*. Then tap the gear icon at the top-right corner to open *"Special Settings"*. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en2.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_2.png" width="300">
 
 Select *"Boost speed"*.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en3.png" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_3.png" width="300">
 
 Then tap the *"Locked apps"* line. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_en4.jpg" width="300">
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_4.png" width="300">
 
 Now toggle the switch opposite the AdGuard app. That’s all! You’ve successfully pinned the AdGuard app. 
 
