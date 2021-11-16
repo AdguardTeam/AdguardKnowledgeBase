@@ -3,7 +3,7 @@ title: 'How to use Samsung Pay with AdGuard in South Korea'
 taxonomy:
     category:
         - docs
-visible: true
+visible: false
 ---
 
 In the 'Advanced settings' of AdGuard for Android app there is a 'Low Level Settings' section where you can see a list of various features, the activation of which requires users' special understanding. Among these features you can find one that is called **"pref.samsungpay.autopause.enable"** and that is developed specifically for the South Korean users. Please read more to learn what this feature does.
