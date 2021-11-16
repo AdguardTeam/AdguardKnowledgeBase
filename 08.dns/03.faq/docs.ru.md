@@ -5,4 +5,4 @@ taxonomy:
         - docs
 ---
 
-Ответы на часто задаваемые вопросы относительно AdGuard DNS можно найти на официальном сайте [adguard.com](https://adguard.com/ru/adguard-dns/overview.html).
+Ответы на часто задаваемые вопросы относительно AdGuard DNS можно найти на официальном сайте [adguard.com](https://adguard-dns.com/ru/welcome.html).
