@@ -258,6 +258,6 @@ visible: true
 
 ---
 
-我们也要感谢 [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). 非常感谢向我们发送反馈意见！愿原力与你同在！
+除此之外，我们也要感谢 [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). 非常感谢向我们发送反馈意见！愿原力与你同在！
 
 我们会积极听取用户的意见，尤其是建设性的意见 :) 你可以随时与我们联系，分享你对 AdGuard 的想法，要求新的功能，或报告错误。 加入我们的 [AdGuard 社区](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers 社区](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) 或访问我们的 [GitHub](https://github.com/AdguardTeam).
