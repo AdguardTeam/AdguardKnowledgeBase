@@ -3,6 +3,7 @@ title: 'How to collect DNS requests log on AdGuard Pro?'
 taxonomy:
     category:
         - docs
+visible: false
 ---
 
 Sometimes we need to troubleshoot something that we can't reproduce on our side. In that case we usually need a log - and this article tells how to obtain a DNS requests log on AdGuard Pro for iOS.

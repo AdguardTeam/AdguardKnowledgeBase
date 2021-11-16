@@ -3,6 +3,7 @@ title: 'AdGuard Pro에서 DNS 요청 로그를 수집하는 방법'
 taxonomy:
     category:
         - docs
+visible: false
 ---
 
 저희는 사용자의 문제를 가끔 재현할 수 없으므로 로그가 필요합니다. 이번에는 iOS용 AdGuard Pro에서 DNS 요청 로그를 수집하는 방법을 살펴보겠습니다. 
