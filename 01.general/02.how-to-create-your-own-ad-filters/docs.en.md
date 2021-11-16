@@ -29,6 +29,7 @@ visible: true
             * [$match-case](#match-case-modifier)
         * [Content type modifiers](#content-type-modifiers)
             * [Content type modifiers examples](#content-type-modifiers-examples)
+            * [$document](#document-modifier)
             * [$image](#image-modifier)
             * [$stylesheet](#stylesheet-modifier)
             * [$script](#script-modifier)
@@ -48,7 +49,6 @@ visible: true
             * [$jsinject](#jsinject-modifier)
             * [$urlblock](#urlblock-modifier)
             * [$extension](#extension-modifier)
-            * [$document](#document-modifier)
             * [$stealth](#stealth-modifier)
             * [Generic rules](#generic-rules)
                 * [$generichide](#generichide-modifier)
@@ -427,6 +427,27 @@ There is a set of modifiers, which can be used to limit the rule's application a
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
 * `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
 
+<a id="document-modifier"></a>
+##### **`document`**
+
+The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes (there's a `$subdocument` modifier for these).
+
+By default, AdGuard won't block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
+
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equal to the simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and, `extension` modifiers.
+
+> **Compatibility with different versions of AdGuard.** Blocking request type logic now only supported by dev-build of AdGuard.
+
+###### `document` example
+
+* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
+* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
+
+* `||example.com^$document` — blocks HTML document request to `example.com` with a blocking page.
+* `||example.com^$document,redirect=noopframe` — redirects HTML document request to `example.com` to an empty html document.
+* `||example.com^$document,removeparam=test` — removes `test` query parameter from HTML document request to  `example.com`.
+* `||example.com^$document,replace=/test1/test2/` — replaces `test1` with `test2` in  HTML document request to `example.com`.
+
 <a id="image-modifier"></a>
 ##### **`image`**
 
@@ -560,16 +581,6 @@ Disables all userscripts on the pages matching this rule. Note, that this modifi
 ###### `extension` example
 
 * `@@||example.com^$extension` — userscripts won't work on all pages of the `example.com` website.
-
-<a id="document-modifier"></a>
-##### **`document`**
-
-Completely disables blocking on corresponding pages. It is equal to simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and `extension`.
-
-###### `document` example
-
-* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
