@@ -5,7 +5,6 @@ taxonomy:
         - docs
 ---
 
-* [How to collect DNS requests log on AdGuard Pro](http://kb.adguard.com/en/ios/solving-problems/dns-requests-log)
 * [How to activate premium features](http://kb.adguard.com/en/ios/solving-problems/premium-activation)
 * [How to configure system-wide blocking](https://kb.adguard.com/en/ios/solving-problems/how-to-configure-system-wide-blocking)
 * [How to avoid compatibility issues with FaceTime](https://kb.adguard.com/en/ios/solving-problems/how-to-avoid-compatibility-issues-with-facetime)
