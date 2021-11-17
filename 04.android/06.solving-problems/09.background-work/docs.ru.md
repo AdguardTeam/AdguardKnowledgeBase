@@ -44,30 +44,48 @@ taxonomy:
 
 ## Xiaomi
 
-#### MIUI 12.5
-
-<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4ru.jpg" width="300">
+#### MIUI 12.0.8+
 
 Зайдите в *Настройки* > *Приложения* > *Управление приложениями* > *AdGuard*. 
 
 - Включите *Автостарт*
 - В *Разрешениях* выберите *"Нет ограничений"* для *Контроля фоновой активности*
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_ru1.png" width="300">
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4ru.jpg" width="300">
+</kbd>
 
-Выберите встроенное приложение *"Безопасность"*. Затем нажмите на иконку с изображением шестеренки в правом верхнем углу, чтобы открыть *"Специальные настройки"*.
+Выберите встроенное приложение *"Безопасность"*. Затем нажмите на иконку с изображением шестеренки в правом верхнем углу, чтобы попасть в *"Настройки"*.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_ru2.png" width="300">
 
-Выберите пункт *"Ускорение"*.
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_1.jpg" width="300">
+</kbd>
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_ru3.png" width="300">
+
+
+На экране *"Настройки"* выберите пункт *"Ускорение"*.
+
+
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_2.jpg" width="300"> 
+</kbd>
+
+
 
 Затем нажмите на строку *"Закрепленные приложения"*. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui_ru4.jpg" width="300">
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_3.jpg" width="300"> 
+</kbd>
 
-Теперь, чтобы закрепить приложение AdGuard, переведите тумблер напротив него в активное положение. Готово! 
+Теперь, чтобы закрепить приложение AdGuard, переведите тумблер напротив него в активное положение.
+
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_4.jpg" width="300"> 
+</kbd>
+
+Готово! 
 
 #### MIUI 12
 
