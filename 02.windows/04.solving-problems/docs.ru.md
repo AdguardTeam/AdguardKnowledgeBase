@@ -13,5 +13,6 @@ taxonomy:
 * [Как получить логи установки AdGuard](http://kb.adguard.com/ru/windows/solving-problems/installation-logs)
 * [Проблемы с вирусами](http://kb.adguard.com/ru/windows/solving-problems/malware)
 * [Яндекс.Браузер и сертификат AdGuard](https://kb.adguard.com/ru/windows/solving-problems/yandex-warning)
+* [Типичные ошибки установщика AdGuard](https://kb.adguard.com/ru/windows/solving-problems/common-installer-errors)
 
 Со временем этот раздел будет пополняться новыми статьями. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку AdGuard](http://kb.adguard.com/ru/technical-support).

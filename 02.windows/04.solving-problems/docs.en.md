@@ -13,5 +13,6 @@ taxonomy:
 * [How to find AdGuard installation logs](http://kb.adguard.com/en/windows/solving-problems/installation-logs)
 * [If you suspect infection](http://kb.adguard.com/en/windows/solving-problems/malware)
 * [Yandex.Browser certificate warning](http://kb.adguard.com/en/windows/solving-problems/yandex-warning)
+* [Common AdGuard installer errors](https://kb.adguard.com/en/windows/solving-problems/common-installer-errors)
 
 New articles will be added to this section with time. If you haven't found a solution to your problem in our knowledge base, [AdGuard Support Team](http://kb.adguard.com/en/technical-support) will be happy to help.
