@@ -52,27 +52,42 @@ To let your AdGuard app run successfully in the background, do the following:
 - Set *Autostart* to "On".
 - Set *Battery saver* to "No restrictions".
 
+<kbd>
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
+</kbd>
 
 2. *Security* app -> Tap *Gear* at the top-right corner -> *Boost speed* -> *Lock apps* -> *Lock AdGuard*
 
 Open *Security* app and tap the *Gear* icon at the top-right corner of the screen.
 
+<kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_1.jpg" width="300">
+</kbd>    
+
 
 Tap *Boost speed* in Feature Settings
 
+<kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_2.jpg" width="300">
+</kbd>    
+
 
 Tap *"Lock apps"*.
 
+<kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_3.jpg" width="300">
+</kbd>
 
- In the *Lock apps* screen, set the toggle switch for the AdGuard app to On.
 
+In the *Lock apps* screen, set the toggle switch for the AdGuard app to On.
+
+<kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_4.jpg" width="300">
+</kbd>    
+
 
 That’s all! You’ve successfully pinned the AdGuard app. 
+
 
 #### MIUI 12
 
