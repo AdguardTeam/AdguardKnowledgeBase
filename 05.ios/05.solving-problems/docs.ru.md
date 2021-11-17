@@ -5,7 +5,6 @@ taxonomy:
         - docs
 ---
 
-* [Как собрать лог DNS запросов в AdGuard Pro](http://kb.adguard.com/ru/ios/solving-problems/dns-requests-log)
 * [Как активировать премиум-функции](http://kb.adguard.com/ru/ios/solving-problems/premium-activation)
 * [Как настроить системную блокировку](https://kb.adguard.com/ru/ios/solving-problems/how-to-configure-system-wide-blocking)
 * [Как избежать проблем с совместимостью с FaceTime](https://kb.adguard.com/ru/ios/solving-problems/how-to-avoid-compatibility-issues-with-facetime)
