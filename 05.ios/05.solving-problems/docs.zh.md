@@ -5,8 +5,6 @@ taxonomy:
         - docs
 ---
 
-* [如何在 AdGuard Pro 收集 DNS 请求的日志记录](http://kb.adguard.com/en/ios/solving-problems/dns-requests-log)
-
 * [如何激活高级功能](http://kb.adguard.com/en/ios/solving-problems/premium-activation)
 
 * [如何配置全系统层面上的广告拦截](https://kb.adguard.com/zh/ios/solving-problems/how-to-configure-system-wide-blocking)
