@@ -18,7 +18,7 @@ iOSでのシステムワイドブロックとは、Safariブラウザ以外、�
 この記事では、お使いのiOSデバイスでこの機能を設定する方法をご紹介します。
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 650px; padding: 2px;">
-<p align="center"><i>AdGuardがDNSフィルタリングを使って広告をブロックする流れ</i><p>
+<p align="center"><i>AdGuardがDNSフィルタリングを使って広告をブロックする流れ</i></p>
     
 AdGuardを使ってシステムワイドブロックを行うには2つの方法があります。
 
