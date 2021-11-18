@@ -29,6 +29,7 @@ visible: true
             * [$match-case](#match-case-modifier)
         * [Ограничение по типу контента](#content-type-modifiers)
             * [Примеры ограничений](#content-type-modifiers-examples)
+            * [$document](#document-modifier)
             * [$image](#image-modifier)
             * [$stylesheet](#stylesheet-modifier)
             * [$script](#script-modifier)
@@ -48,7 +49,6 @@ visible: true
             * [$jsinject](#jsinject-modifier)
             * [$urlblock](#urlblock-modifier)
             * [$extension](#extension-modifier)
-            * [$document](#document-modifier)
             * [$stealth](#stealth-modifier)
             * [Generic правила](#generic-rules)
                 * [$generichide](#generichide-modifier)
@@ -428,7 +428,29 @@ AdGuard будет пытаться закрыть браузерную вкла
 * `||example.org^$script,stylesheet` — соответствует всем скриптам и стилям с домена `example.org`.
 * `||example.org^$~image,~script,~stylesheet` — соответствует всем запросам к домену `example.org` кроме картинок, скриптов и стилей.
 
+<a id="document-modifier"></a>
+##### **`document`**
+
+Правило соответствует запросам основного документа страницы, т.е. HTML-документа, который загружается во вкладке браузера. Оно не подходит для frame-элементов, для которых существует модификатор `$subdocument`.
+
+По умолчанию AdGuard не будет блокировать запросы, которые загружаются во вкладке браузера. Идея заключается в том, чтобы не препятствовать загрузке страниц, поскольку пользователь явно указал, что он хочет, чтобы эта страница была загружена. Однако, если использовать модификатор `$document`, то AdGuard будет предотвращать загрузку страницы, то есть заблокирует её. 
+
+Если этот модификатор используется в правиле-исключении (`@@`), то оно полностью отключает блокировку на соответствующих страницах. Это равносильно одновременному использованию модификаторов `$elemhide`, `$content`, `$urlblock`, `$jsinject` и `$extension`.
+
+> **Совместимость с различными версиями AdGuard.** Логика блокировки типов запросов теперь поддерживается только dev-сборкой AdGuard.
+
+###### Примеры `document`
+
+* `@@||example.com^$document` — полностью отключает фильтрацию на всех страницах сайта `example.com` и всех его поддоменах.
+* `@@|||example.com^$document,~extension` — полностью отключает блокировку на любых страницах сайта `example.com` и всех его поддоменах, кроме применения пользовательских скриптов.
+
+* `|||example.com^$document` — блокирует запрос HTML-документа на `example.com`.
+* `||example.com^$document,redirect=noopframe` — перенаправляет запрос HTML-документа сайта `example.com` на пустой HTML-документ.
+* `||example.com^$document,removeparam=test` — удаляет параметр `test` из запроса HTML-документа к `example.com`.
+* `||example.com^$document,replace=/test1/test2/` — заменяет `test1` на `test2` в запросе HTML-документа к `example.com`.
+
 <a id="image-modifier"></a>
+
 ##### **`image`**
 
 Правило будет соответствовать запросам к изображениям.
@@ -562,16 +584,6 @@ AdGuard будет пытаться закрыть браузерную вкла
 ###### `extension` example
 
 * `@@||example.com^$extension` — пользовательские скрипты не будут работать на всех страницах сайта `example.com`.
-
-<a id="document-modifier"></a>
-##### **`document`**
-
-Полностью отключает блокировку на страницах, подходящих под это правило. Эквивалентно одновременному использованию модификаторов `elemhide`, `content`, `urlblock` и `jsinject`.
-
-###### Примеры `document`
-
-* `@@||example.com^$document` — полностью отключает блокировку для всех страниц на домене `example.com` и всех его поддоменах.
-* `@@||example.com^$document,~extension` — полностью отключает блокировку для всех страниц на домене `example.com` и его поддоменах, но разрешает работу пользовательских скриптов.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
