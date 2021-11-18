@@ -48,7 +48,7 @@ Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving opti
 
 To let your AdGuard app run successfully in the background, do the following:
 
-In *Settings* > *Apps* > *Manage apps* > *AdGuard*, set *Autostart* to "On".
+In *Settings* > *Apps* > *Manage apps* > scroll down to locate *AdGuard*, set *Autostart* to "On".
 
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
