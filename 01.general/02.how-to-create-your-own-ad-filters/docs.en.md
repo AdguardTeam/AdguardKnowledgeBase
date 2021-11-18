@@ -434,7 +434,7 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard won't block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equal to the simultaneous use of `elemhide`, `content`, `urlblock`, `jsinject` and, `extension` modifiers.
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equal to the simultaneous use of `$elemhide`, `$content`, `$urlblock`, `j$sinject` and, `$extension` modifiers.
 
 > **Compatibility with different versions of AdGuard.** Blocking request type logic now only supported by dev-build of AdGuard.
 
