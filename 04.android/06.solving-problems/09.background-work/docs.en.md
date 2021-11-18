@@ -48,17 +48,26 @@ Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving opti
 
 To let your AdGuard app run successfully in the background, do the following:
 
-1. Go to *Settings* > *Apps* > *Manage apps* > *AdGuard*. 
-- Set *Autostart* to "On".
-- Set *Battery saver* to "No restrictions".
+In *Settings* > *Apps* > *Manage apps* > *AdGuard*, set *Autostart* to "On".
 
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
 </kbd>
 
-2. *Security* app -> Tap *Gear* at the top-right corner -> *Boost speed* -> *Lock apps* -> *Lock AdGuard*
+Set *Battery saver* to "No restrictions".
+ 
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_0a.png" width="300">
+</kbd>
 
-Open *Security* app and tap the *Gear* icon at the top-right corner of the screen.
+In *Settings* > *Apps* > *Manage apps*, scroll down and tap *Security* app.
+
+<kbd>
+<img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_0.png" width="300">
+</kbd>
+
+
+Tap the *Gear* icon at the top-right corner of the screen.
 
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_1.jpg" width="300">
