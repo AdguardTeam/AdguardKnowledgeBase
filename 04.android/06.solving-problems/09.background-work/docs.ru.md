@@ -52,14 +52,14 @@ taxonomy:
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4ru.jpg" width="300">
 </kbd>
 
-В *Разрешениях* выберите *"Нет ограничений"* для *Контроля фоновой активности*
+В *Разрешениях приложений* выберите *"Нет ограничений"* для *Контроля фоновой активности*
 
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_0a.png" width="300">
 </kbd>
 
 
-Выберите встроенное приложение *"Безопасность"*. 
+Зайдите в Настройки > Приложения и выберите встроенное приложение *"Безопасность"*. 
 
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_0.png" width="300">
