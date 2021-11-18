@@ -15,6 +15,7 @@ taxonomy:
  * [Проблемы, специфичные для macOS 11 Big Sur](https://kb.adguard.com/ru/macos/solving-problems/big-sur-issues)
  * [Решение проблем с установкой](https://kb.adguard.com/ru/macos/solving-problems/installation-issues)
  * [Проблемы с запуском на macOS](https://kb.adguard.com/ru/macos/solving-problems/launch-issues)
+ * [iCloud Private Relay не работает с AdGuard](https://kb.adguard.com/ru/macos/solving-problems/icloud-private-relay)
 
  
 
