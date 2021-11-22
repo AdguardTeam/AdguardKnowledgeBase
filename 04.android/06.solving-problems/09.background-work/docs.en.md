@@ -54,7 +54,7 @@ In *Settings* > *Apps* > *Manage apps* > scroll down to locate *AdGuard*, set *A
 <img src="https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi4en.jpg" width="300">
 </kbd>
 
-Set *Battery saver* to "No restrictions".
+Scroll down to *Battery saver*, tap it, and set to "No restrictions".
  
 <kbd>
 <img src="https://cdn.adguard.com/public/Adguard/kb/android/miui12_en_0a.png" width="300">
