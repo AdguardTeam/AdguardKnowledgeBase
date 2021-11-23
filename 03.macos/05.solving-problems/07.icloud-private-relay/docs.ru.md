@@ -10,7 +10,7 @@ visible: true
 
 По-умолчанию, AdGuard использует "default route", таким образом отключая iCloud Private Relay.
 
-В настоящее время AdGuard и iCloud Private Relay не могут работать одновременно. AdGuard не может блокировать рекламу, так как iCloud Private Relay шифрует трафик до того, как AdGuard сможет фильтровать сетевые соединения.  Использование iCloud Private Relay блокирует любую фильтрацию, включая локальную. Таким образом, AdGuard не может фильтровать трафик или выполнять фильтрацию DNS в Safari. Однако AdGuard по-прежнему фильтрует трафик в других браузерах. Если вы хотите использовать iCloud Private Relay, подумайте об установке [AdGuard для Safari](https://adguard.com/en/adguard-safari/overview.html). 
+В настоящее время AdGuard и iCloud Private Relay не могут работать одновременно. AdGuard не может блокировать рекламу, так как iCloud Private Relay шифрует трафик до того, как AdGuard сможет фильтровать сетевые соединения.  Использование iCloud Private Relay блокирует любую фильтрацию, включая локальную. Таким образом, AdGuard не может фильтровать трафик или выполнять фильтрацию DNS в Safari. Однако AdGuard по-прежнему фильтрует трафик в других браузерах. Если вы хотите использовать iCloud Private Relay, подумайте об установке [AdGuard для Safari](https://adguard.com/ru/adguard-safari/overview.html). 
 
 То же самое касается использования любых VPN-приложений на Mac: либо вы используете iCloud Private Relay, либо VPN-сервис.
 
@@ -20,8 +20,8 @@ visible: true
 
 ## Альтернативное решение
 
-Вы можете запретить AdGuard использовать "default route", отключив "default route".  Это можно сделать через Дополнительные настройки -> ``network.extension.monterey.force.split.tunnel``. 
+Вы можете запретить AdGuard использовать "default route", отключив "default route".  Это можно сделать через Расширенные настройки -> ``network.extension.monterey.force.split.tunnel``. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings.png" width="300">. 
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings_ru.png" width="300">. 
 
 Имейте в виду, что в этом случае вы столкнетесь с проблемами, описанными выше.
