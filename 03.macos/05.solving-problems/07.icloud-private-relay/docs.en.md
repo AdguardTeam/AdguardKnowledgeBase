@@ -22,6 +22,6 @@ We recommend using AdGuard together with a more traditional VPN service such as 
 
 You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings -> ```network.extension.monterey.force.split.tunnel```. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings.png" width="300"> 
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings.png"> 
 
 Bear in mind that, in this case, you'll face the issues described above.
