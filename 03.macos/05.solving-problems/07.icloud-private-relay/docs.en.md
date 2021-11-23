@@ -1,5 +1,5 @@
 ---
-title: 'iCloud Private Relay not working alongside AdGuard for Mac'
+title: 'iCloud Private Relay and AdGuard'
 taxonomy:
     category:
         - docs
@@ -14,6 +14,8 @@ When iCloud Private Relay is active, any filtering (including local filtering) b
 
 The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
 
-You can make AdGuard use the "default route" but it disables iCloud Private Relay. In this case, iCloud Private Relay gets disabled automatically when AdGuard is active.
+AdGuard uses the "default route" by default and thus disables iCloud Private Relay.
+
+You can change this behavior and disable the "default route". It can be done via Advanced Settings -> network.extension.monterey.force.split.tunnel. In this case, you'll face the issues described above.
 
 We recommend using AdGuard together with more traditional VPN services.
