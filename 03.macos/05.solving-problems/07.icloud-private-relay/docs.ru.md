@@ -22,6 +22,6 @@ visible: true
 
 Вы можете запретить AdGuard использовать "default route", отключив "default route".  Это можно сделать через Расширенные настройки -> ``network.extension.monterey.force.split.tunnel``. 
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings_ru.png" width="300">. 
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings_ru.png">. 
 
 Имейте в виду, что в этом случае вы столкнетесь с проблемами, описанными выше.
