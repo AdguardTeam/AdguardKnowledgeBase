@@ -16,7 +16,7 @@ visible: true
 
 ## Рекомендуемое решение
 
-Мы рекомендуем использовать AdGuard вместе с более традиционным VPN-сервисом, таким как [AdGuard VPN](https://adguard-vpn.com/en/welcome.html).
+Мы рекомендуем использовать AdGuard вместе с более традиционным VPN-сервисом, таким как [AdGuard VPN](https://adguard-vpn.com/).
 
 ## Альтернативное решение
 
