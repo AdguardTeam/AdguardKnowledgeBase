@@ -338,7 +338,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 ###### `domain` and `~` examples
 
-* `||baddomain.com^$domain=~example.org` — a rule to block requests that match the specified mask, and are sent from any domain except `example.org` or its subdomains.
+* `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests that are sent from `example.org` and all its subdomains, except the subdomain `foo.example.org`.
 
 ###### `domain` modifier matching target domain
