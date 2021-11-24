@@ -920,7 +920,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 
 ##### `csp` examples
 
-* `||example.org^$csp=frame-src 'none'` — prohibits all frames on example.org and its subdomains.
+* `||example.org^$csp=frame-src 'none'` — this rule blocks all frames on example.org and its subdomains.
 * `@@||example.org/page/*$csp=frame-src 'none'` — disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$csp` — disables all the `$csp` rules on all the pages matching the rule pattern.
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
