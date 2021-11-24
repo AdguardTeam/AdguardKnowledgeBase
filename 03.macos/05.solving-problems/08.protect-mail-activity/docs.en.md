@@ -39,4 +39,4 @@ We keep searching for a solution to this issue. One of the options is implementi
 
 ## Recommended solution
 
-At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/en/welcome.html), instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the new Apple's privacy features.
