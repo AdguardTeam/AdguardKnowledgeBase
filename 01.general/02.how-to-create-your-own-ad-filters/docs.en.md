@@ -303,7 +303,7 @@ For the basic rules the described logic will be applicable only for the domains 
 
 * `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-* `||example.org^$third-party` —  a rule that blocks third-party requests to `example.org` and its subdomains.
+* `||example.org^$third-party` —  this rule blocks third-party requests to `example.org` and its subdomains.
 
 * `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exceptions-modifiers).
 
