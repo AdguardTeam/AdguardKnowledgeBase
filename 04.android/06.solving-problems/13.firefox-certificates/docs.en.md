@@ -19,7 +19,7 @@ To make Firefox trust AdGuard certificate, follow this instruction:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_about_en.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-3. Rapidly tap several times on the Firefox logo at the top of the screen.
+3. Tap the Firefox logo five times.
 4. Navigate to *Settings > Secret Settings*.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/Firefox_cert/ff_nightly_secret.jpg" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
