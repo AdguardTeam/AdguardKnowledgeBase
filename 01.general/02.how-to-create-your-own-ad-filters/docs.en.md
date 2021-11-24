@@ -2010,7 +2010,7 @@ basic rules.
 `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `[$domain=~example.com]##.textad` - hides a `div` with a class `textad` at all domains, except `example.com` and its subdomains.
+* `[$domain=~example.com]##.textad` - this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
