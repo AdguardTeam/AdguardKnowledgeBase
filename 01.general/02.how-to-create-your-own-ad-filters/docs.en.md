@@ -383,7 +383,7 @@ If there is a `third-party` modifier, the rule is only applied to third-party re
 
 ###### `third-party` examples
 
-* `||domain.com^$third-party` — rule is applied to all domains, except `domain.com` and its subdomains. Third-party request example: `http://example.org/banner.jpg`.
+* `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. A third-party request example: `http://example.org/banner.jpg`.
 
 If there is a `~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
 
