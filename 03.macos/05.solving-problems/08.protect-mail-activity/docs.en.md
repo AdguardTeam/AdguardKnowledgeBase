@@ -21,7 +21,7 @@ Apple explains this issue [here](https://support.apple.com/en-us/HT212797).
 AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 
 The network extensions API has a VPN-like configuration with a list of route-like entries.
-On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
+On Big Sur, AdGuard used "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases. These problems were solved in Monterey so nothing prevents us from using the "default route" rule.
 
 On Monterey, iCloud Private Relay got introduced. Privacy features of Mail.app also use Private Relay servers.
 
