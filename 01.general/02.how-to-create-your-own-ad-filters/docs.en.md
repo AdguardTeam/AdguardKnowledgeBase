@@ -377,7 +377,7 @@ In the following examples it's implied that requests are sent from `http://examp
 
 A restriction of third-party and own requests. A third-party request is a request from different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
-> **Subdomains.** Please note that request from domain to its subdomains (or vice versa) is not considered a third-party request. For example, a request to `subdomain.example.org`, sent from the domain `example.org` is not a third-party request.
+> **Subdomains.** Requests to subdomains from their parent domain, or the other way round, are not third-party requests. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
 
 If there is a `third-party` modifier, the rule is only applied to third-party request.
 
