@@ -12,7 +12,7 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_protectMailActivity.png">. 
 
-Однако это не работает при наличии активного VPN-соединения. Поскольку AdGuard рассматривается системой Apple Mail как VPN, изображения автоматически перестают загружаться.
+Однако, это не работает при наличии активного VPN-соединения. Поскольку AdGuard рассматривается системой Apple Mail как VPN, изображения автоматически перестают загружаться.
 
 Apple комментирует эту проблему [здесь] (https://support.apple.com/en-us/HT212797).
 
