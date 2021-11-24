@@ -16,6 +16,7 @@ taxonomy:
  * [Решение проблем с установкой](https://kb.adguard.com/ru/macos/solving-problems/installation-issues)
  * [Проблемы с запуском на macOS](https://kb.adguard.com/ru/macos/solving-problems/launch-issues)
  * [iCloud Private Relay и AdGuard](https://kb.adguard.com/ru/macos/solving-problems/icloud-private-relay)
+ * [Protect Mail Activity и AdGuard](https://kb.adguard.com/ru/macos/solving-problems/protect-mail-activity)
 
  
 
