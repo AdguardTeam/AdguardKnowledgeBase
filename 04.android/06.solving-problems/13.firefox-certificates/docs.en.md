@@ -10,7 +10,7 @@ For AdGuard to [successfully filter HTTPS traffic](https://kb.adguard.com/en/gen
 
 #### Method 1
 
-> This method works in Firefox Android versions 90 and later. 
+> This method works in Firefox for Android version 90.0 and later. 
 
 To make Firefox trust AdGuard certificate, follow this instruction:
 
