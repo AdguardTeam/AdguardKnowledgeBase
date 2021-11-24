@@ -1355,7 +1355,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 #### Examples
 
 * `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule blocks all `div` elements containing a child node that has a link with the attributes `[target="_blank"][rel="nofollow"]`. The rule applies only to `example.org` and its subdomains.
-* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule will set style  `display: none!important` for all `h3` elements that contain `cookies` word. The rule will only work for `example.com` and all its subdomains.
+* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule sets the style `display: none!important` to all `h3` elements that contain the word `cookies`. The rule applies only to `example.com` and all its subdomains.
 * `example.net#?#.banner:matches-css(width: 360px)` — this rule will block all `.banner` elements that contain `width: 360px` style property. The rule will only work for `example.net` and all its subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
