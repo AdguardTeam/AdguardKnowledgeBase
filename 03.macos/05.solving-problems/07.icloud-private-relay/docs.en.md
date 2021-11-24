@@ -16,7 +16,7 @@ The same applies to using any VPN apps on Mac: you have to choose between using 
 
 ## Recommended solution
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/en/welcome.html).
+We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
 ## Alternative solution
 
