@@ -1725,7 +1725,7 @@ div:has-text(/test/):upward(2)
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
 
-> **Pseudo-class `:remove()` is limited to work properly only at the end of selector.**
+> **Pseudo-class `:remove()` can be placed only at the end of a selector.**
 
 **Syntax**
 ```
