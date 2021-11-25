@@ -1697,7 +1697,7 @@ div:has-text(/test/):nth-ancestor(2)
 
 This pseudo-class allows to lookup the ancestor relative to the currently selected node.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
+> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
 
 **Syntax**
 ```
