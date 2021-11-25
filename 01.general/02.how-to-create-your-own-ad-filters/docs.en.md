@@ -1647,7 +1647,7 @@ div:matches-property("memoizedProps._owner.src"="/ad/")
 
 This pseudo-class allows to select an element by evaluating an XPath expression.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
+> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
 
 The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath()` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath()` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
 
