@@ -1676,7 +1676,7 @@ This pseudo-class allows to lookup the nth ancestor relative to the currently se
 
 It is a low-overhead equivalent to `:xpath(..[/..]*)`.
 
-> **Limited to work properly only at the end of selector, except of [pseudo-class `:remove()`](#remove-pseudos).**
+> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
 
 **Syntax**
 ```
