@@ -1041,6 +1041,16 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 [AhaDNS](https://ahadns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
 
+#### Blitz
+
+[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
+
+| Protocol       | Address                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS, uncensored | `https://blitz.ahadns.com` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQA">Add to AdGuard</a> |
+| DNS-over-HTTPS, OISD filter | `https://blitz.ahadns.com/1:1` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQQvMTox">Add to AdGuard</a> |
+| DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQcvMToxLjEy">Add to AdGuard</a> |
+
 #### Netherlands
 
 | Protocol       | Address                             |                |
