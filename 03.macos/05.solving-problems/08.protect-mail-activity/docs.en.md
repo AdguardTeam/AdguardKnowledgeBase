@@ -14,7 +14,7 @@ Apple's Mail app now uses a proxy to hide a user's IP Address when downloading i
 
 However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
-Apple explains this issue [here](https://support.apple.com/en-us/HT212797).
+Apple explains this issue [here](https://support.apple.com/HT212797).
 
 ## In detail
 
