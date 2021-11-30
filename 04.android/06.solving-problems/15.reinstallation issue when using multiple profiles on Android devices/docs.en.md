@@ -1,5 +1,5 @@
 ---
-title: 'Problem with reinstalling AdGuard on Android devices when using the app on multiple accounts'
+title: 'Problem with reinstalling AdGuard on Android devices when using the app on more than one user account'
 taxonomy:
     category:
         - docs
