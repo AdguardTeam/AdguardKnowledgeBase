@@ -375,11 +375,13 @@ In the following examples it's implied that requests are sent from `http://examp
 <a id="third-party-modifier"></a>
 ##### **`third-party`**
 
-A restriction of third-party and own requests. A third-party request is a request from different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
+A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
-> **Subdomains.** Requests to subdomains from their parent domain, or the other way round, are not third-party requests. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
+> To be considered as such, a third-party request should meet one of the following conditions:
+> 1) Its referrer is not a subdomain of the target domain or the other way round.  For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
+> 2) Its `Sec-Fetch-Site` header is set to `cross-site`.
 
-If there is a `third-party` modifier, the rule is only applied to third-party request.
+If there is a `third-party` modifier, the rule is only applied to third-party requests.
 
 ###### `third-party` examples
 
