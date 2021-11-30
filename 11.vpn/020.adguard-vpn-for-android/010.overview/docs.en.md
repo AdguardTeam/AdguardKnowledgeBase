@@ -29,9 +29,9 @@ A VPN is an ideal tool that provides security and anonymity each time you browse
  
 **VPN is frequently used for:**
  
-Keeping personal data safe even while using public Wi-Fi.
-Preventing tracking online activity by masking the IP address.
-Hiding the real geolocation to gain access to blocked resources.
+* Keeping personal data safe even while using public Wi-Fi
+* Preventing tracking online activity by masking the IP address
+* Hiding the real geolocation to gain access to blocked resources
  
 AdGuard VPN for Android can do it all for you — and even offer something unique. To find out why AdGuard VPN is the better option — read [this article](link). 
  
@@ -39,13 +39,13 @@ AdGuard VPN for Android can do it all for you — and even offer something uniqu
  
 ## How to use AdGuard VPN for Android
  
-AdGuard VPN for Android is a pretty user-friendly app easy to use. Firstly, download it from Google Play and log into your [AdGuard account](https://auth.adguard.com/login.html). In case you don’t have it — you should create it. You can sign in directly with your AdGuard account credentials. Or do it via Google or Facebook, if your AdGuard account was registered using the same email address.
+AdGuard VPN for Android is a pretty user-friendly app easy to use. Firstly, download it from [Google Play](https://play.google.com/store/apps/details?id=com.adguard.vpn) and log into your AdGuard account. In case you don’t have it — you should [create it](https://auth.adguard.com/login.html). You can sign in directly with your AdGuard account credentials. Or do it via Google or Facebook, if your AdGuard account was registered using the same email address.
  
 <a name="main"></a>
  
 ## Main Screen
  
-There are two bars on the main screen, reflecting the status of the application (Connected/Disconnected) and the selected Exclusions mode ([General/Selective])(#lists-of-exclusions). On the same screen, there are also a *Connect/Disconnect* button and a list of available servers.
+There are two bars on the main screen, reflecting the status of the application (Connected/Disconnected) and the selected Exclusions mode ([General/Selective](#lists-of-exclusions)). On the same screen, there are also a *Connect/Disconnect* button and a list of available servers.
  
 Each server has its location and its ping rate, describing the response time of the server. The lower this rate, the faster is your connection. The fastest options are always displayed at the top of the list which consists of more than 50 locations in dozens of countries. You can enable the app by tapping the *Connect/Disconnect* button or by picking a location.
  
@@ -169,7 +169,7 @@ In the *Advanced settings*, you can find five sections. You can *Help us to beco
  
 *Operating mode* section allows you to choose one of three options: VPN, Proxy, and Compatibility mode. In *VPN mode* all traffic is routed through AdGuard VPN automatically. When the *Proxy mode* (SOCKS5) is on, AdGuard VPN runs a local proxy sever which can be used by other apps to route their traffic through it. Choose this option only if you know what you are doing. Enabled *Compatibility mode* allows AdGuard VPN and AdGuard Ad Blocker to work together.  
 
-Please note that some AdGuard VPN features are disabled in *Compatibility mode*: DNS server selection, Kill Switch and Auto-protection. Also, to manage application tunneling you should open AdGuard Ad Blocker application.  
+> Please note that some AdGuard VPN features are disabled in *Compatibility mode*: DNS server selection, Kill Switch and Auto-protection. Also, to manage application tunneling you should open AdGuard Ad Blocker application.  
  
 The next two sections are *Logging level* and *Diagnostic info*. Concerning the first option, it is not recommended to enable the Extended logging level unless requested by our support team. Diagnostic info, locally stored technical information about the device and connections (IP address, ID, ping, etc.), can be sent to us in case of any technical problems. 
  
