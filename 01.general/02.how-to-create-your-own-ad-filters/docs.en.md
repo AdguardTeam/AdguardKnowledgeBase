@@ -259,7 +259,7 @@ The most simple rules are so-called _"Basic rules"._ They are used to block requ
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](#basic-rules-special-characters).
+* **`pattern`** — address mask. Every request's URL is collated to this mask. You can also use special characters in the template, their description is [below](#basic-rules-special-characters). Note that AdGuard trims URLs to a length of 4096 characters in order to speed up matching and avoid issues with ridiculously long URLs.
 * **`@@`** — A marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
 * **`modifiers`** — Parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
 
