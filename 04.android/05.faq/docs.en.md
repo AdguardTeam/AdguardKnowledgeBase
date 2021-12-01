@@ -14,7 +14,7 @@ taxonomy:
 * [When asked to enable VPN, I cannot tick the "I trust" checkbox. Why?](#trust)
 * [Why do I get a "VPN is not supported" dialog message?](#supp)
 * [Why do Android stats show that AdGuard consumed more traffic than it saved?](#traf)
-* [Why Wi-Fi and USB tethering do not work with AdGuard?](#usb)
+* [Why do Wi-Fi and USB tethering not work with AdGuard?](#usb)
 * [Which browsers are not supported by AdGuard?](#browsers)
 * [Why a VPN can not be started on Android 5.0?](#a5)
 * [How to resolve known compatibility issues with other apps?](#apps)
@@ -157,9 +157,11 @@ On Android's Data usage page or in your favorite data-traffic tracking app, you 
 We hope that this clarifies what's happening.
 
 <a id="usb"></a>
-## Why Wi-Fi and USB tethering do not work with AdGuard? ##
+## Why do Wi-Fi and USB tethering not work with AdGuard? ##
 
-Android does not allow tethered connections to route through the VPN. This is an Android rule that applies to all VPN apps running on non-rooted devices. This is done for security, out of concern that if a malicious individual was able to get access to your tether, they could piggyback onto the VPN connection.
+> This issue is relevant only for Android versions before 6.0.
+
+Android does not allow tethered connections to route through the VPN. This Android rule applies to all VPN apps running on non-rooted devices. It is done for security, out of concern that if a malicious individual was able to get access to your tether, they could piggyback onto the VPN connection.
 
 **Solutions**
 
