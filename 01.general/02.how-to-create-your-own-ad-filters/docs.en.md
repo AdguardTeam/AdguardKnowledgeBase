@@ -657,9 +657,9 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 Rules with `$removeparam` modifier are intended to to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
 
-##### Syntax
-
 > `$removeparam` rules that do not have any content-type modifiers will match only requests where content type is `document`.
+
+##### Syntax
 
 ###### Basic syntax
 
