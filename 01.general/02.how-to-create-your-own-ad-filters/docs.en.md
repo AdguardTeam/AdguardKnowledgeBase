@@ -659,6 +659,8 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 ##### Syntax
 
+> `$removeparam` rules that do not have any content-type modifiers will match only requests where content type is `document`.
+
 ###### Basic syntax
 
 * `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
