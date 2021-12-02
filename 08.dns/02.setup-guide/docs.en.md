@@ -5,7 +5,9 @@ taxonomy:
         - docs
 ---
 
+You can set up AdGuard DNS on various operating systems, routers, etc. Depending on the specific device, the instructions will vary. Please [go to AdGuard DNS website](https://adguard-dns.com/public-dns.html), find the device type you're trying to configure AdGuard DNS on, and follow the instructions.
 
+<!---
 
 ## Our IP addresses
 
@@ -398,3 +400,4 @@ for ’Family protection’ servers.
 It is possible that during the DNSCrypt configuring you will need information for **dnscrypt-resolvers.csv** file. 
 You can find it [here](https://download.dnscrypt.info/dnscrypt-resolvers/v2/).
 
+--->

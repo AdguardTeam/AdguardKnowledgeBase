@@ -33,4 +33,4 @@ AdGuard DNS can work on any devices, including smartphones and tablet PCs. There
 
 ### How to configure AdGuard DNS?
 
-Go to respective Knowledge Base chapter to read the detailed [setup guide](https://kb.adguard.com/en/dns/setup-guide). 
+You can set up AdGuard DNS on various operating systems, routers, etc. Depending on the specific device, the instructions will vary. Please [go to AdGuard DNS website](https://adguard-dns.com/public-dns.html), find the device type you're trying to configure AdGuard DNS on, and follow the instructions.
