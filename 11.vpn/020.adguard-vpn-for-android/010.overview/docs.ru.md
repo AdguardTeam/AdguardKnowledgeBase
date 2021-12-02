@@ -39,7 +39,7 @@ AdGuard VPN для Android может сделать всё это для вас
 
 ## Как использовать AdGuard VPN для Android
  
-AdGuard VPN для Android — удобное и довольно простое в использовании приложение. Для начала скачайте его из [Google Play](https://play.google.com/store/apps/details?id=com.adguard.vpn) и войдите в свой личный кабинет AdGuard (либо [создайте его](https://auth.adguard.com/login.html)). Вы можете авторизоваться непосредственно с помощью учётных данных аккаунта AdGuard, или сделать это через Google или Facebook, но только в том случаае, если ваш аккаунт AdGuard был зарегистрирован с использованием того же адреса электронной почты.
+AdGuard VPN для Android — удобное и довольно простое в использовании приложение. Для начала скачайте его из [Google Play](https://play.google.com/store/apps/details?id=com.adguard.vpn) и войдите в свой личный кабинет AdGuard (либо [создайте его](https://auth.adguard.com/login.html)). Вы можете авторизоваться непосредственно с помощью учётных данных аккаунта AdGuard или сделать это через Google или Facebook, но только в том случаае, если ваш аккаунт AdGuard был зарегистрирован с использованием того же адреса электронной почты.
  
 <a name="main"></a>
  
@@ -70,10 +70,10 @@ AdGuard VPN для Android — удобное и довольно простое
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/add_site.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/add_site.png">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/Add_site_from_list.png" style=" max-width: 350px; ">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/Add_site_from_list.png">
      </div>
 </div>
 
@@ -83,7 +83,7 @@ AdGuard VPN для Android — удобное и довольно простое
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/statuses.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/statuses.png">
      </div>
 
 Ещё одна полезная функция — **Импорт/Экспорт списков исключений**. Чтобы воспользоваться ей, нужно выполнить всего четыре шага:
@@ -95,7 +95,7 @@ AdGuard VPN для Android — удобное и довольно простое
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/imp-exp.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/imp-exp.png">
      </div>
  
 <a name="apps"></a>
@@ -108,7 +108,7 @@ AdGuard VPN для Android — удобное и довольно простое
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/apps_settings.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/apps_settings_ru.jpg">
      </div>
  
 <a name="settings"></a>
@@ -116,6 +116,11 @@ AdGuard VPN для Android — удобное и довольно простое
 ## Настройки 
  
 Чтобы попасть в *Настройки*, нажмите на иконку в виде шестерёнки в правом нижнем углу экрана. Первый раздел, который вы там увидите, и которому стоит уделить особое внимание, называется *Настройки приложения*. Благодаря ему вы сможете настроить AdGuard VPN для Android под себя.
+
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/App_settings_ru.jpg">
+     </div>
 
 <a name="autostart"></a>
 
@@ -151,12 +156,12 @@ AdGuard VPN для Android — удобное и довольно простое
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/light.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/light_ru.jpg">
      </div>
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/dark.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/dark_ru.jpg">
      </div>
 
  

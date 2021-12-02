@@ -67,10 +67,10 @@ You can add domains (e.g. `google.com`) or subdomains (e.g. `*.google.com`) of w
  
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/add_site.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/add_site.png">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/Add_site_from_list.png" style=" max-width: 350px; ">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/Add_site_from_list.png">
      </div>
 </div>
  
@@ -80,7 +80,7 @@ As you can enable subdomains in service lists, we added boxes that reflect the s
  
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/statuses.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/statuses.png">
      </div>
  
 Another useful feature is *Import/Export exclusions*. There are only four steps to reach the goal:
@@ -92,7 +92,7 @@ Another useful feature is *Import/Export exclusions*. There are only four steps 
  
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/imp-exp.png" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/imp-exp.png">
      </div>
  
 <a name="apps"></a>
@@ -105,7 +105,7 @@ If the *Compatibility mode* with AdGuard is enabled, you can only manage apps th
  
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/apps_settings.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/apps_settings.jpg">
      </div>
  
 <a name="settings"></a>
@@ -116,7 +116,7 @@ You can reach *Settings* by pressing the gear icon at the bottom right of the sc
  
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/App_settings.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/App_settings.jpg">
      </div>
  
 <a name="autostart"></a>
@@ -153,12 +153,12 @@ You can choose the system default, dark or light theme of the app.
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/light.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/light.jpg">
      </div>
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/dark.jpg" style=" max-width: 350px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/Screenshots/dark.jpg">
      </div>
  
 <a name="advanced-settings"></a>
