@@ -653,7 +653,7 @@ These modifiers are able to completely change the behaviour of basic rules.
 <a id="removeparam-modifier"></a>
 #### **`removeparam`**
 
->`$removeparam` and `$queryprune` are completely interchangeable and are aliases to each other.
+> `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.  
 
 Rules with `$removeparam` modifier are intended to to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
 
