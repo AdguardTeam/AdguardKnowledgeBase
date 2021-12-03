@@ -75,7 +75,7 @@ AdGuard에는 일반 네트워크 필터링과 DNS 필터링이 동시에 사용
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg" style="max-width: 550px; border: 1px solid #efefef; padding: 2px;" />
 
-<p align="center"><i>DNS와 네트워크 필터링의 차이점</i><p>
+<p align="center"><i>DNS와 네트워크 필터링의 차이점</i></p>
 
 2. DNS 요청의 출처는 알 수 없으므로 DNS 수준에서 서로 다른 앱을 구별할 수 없습니다. 이로 인해 통계 결과가 손상되면서 앱별 필터링 규칙을 만들기가 어렵습니다.
 
