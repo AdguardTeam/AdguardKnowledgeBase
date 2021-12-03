@@ -68,7 +68,7 @@ AdGuard 为不同目的使用不同的服务器。下面的图标展示 AdGuard 
 1. DNS 过滤是一种“暴力过滤法”。意思是 DNS 过滤不会移除拦截广告后留下的白空，或让您使用自定义过滤方式。通过 DNS 过滤无法拦截很多更复杂的广告（或者说，可以拦截，但只能通过阻止被用于其他目的的整个域名来实现）。
 2. 我们无法知道 DNS 请求的来源。这意味着，在 DNS 层面过滤，您无法区分不同应用程序。这个会损害统计数据，并且不允许我们创建针对特定的应用程序过滤规则。
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg" style="max-width: 550px; border: 1px solid #efefef; padding: 2px;" />
-<p align="center"><i>DNS 与网络层面过滤的区别</i><p>
+<p align="center"><i>DNS 与网络层面过滤的区别</i></p>
 
 
 我们推荐在网络过滤的基础上再使用 DNS 过滤，而不是完全代替它。
