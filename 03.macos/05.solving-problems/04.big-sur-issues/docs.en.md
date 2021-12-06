@@ -9,6 +9,7 @@ visible: true
 * [Currently existing problems](#current)
    * [Monterey 12: currently existing problems](#Monterey)
        * [Compatibility with iCloud Private Relay](#private-relay)
+       * [Compatibility with Protect Mail Activity](#mail-activity)
    * [Monterey 12, Big Sur 11.6 and later: currently existing problems](#later)
        * [Compatibility with Cisco AnyConnect](#cisco)
        * [Compatibility with Flutter](#flutter)
@@ -39,7 +40,7 @@ These problems aren't fixed by Apple yet, or fixed only partially.
  
 Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay. 
  
-For a deeper understanding of this problem, follow the link and read [the article](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
+For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
  
 **Recommended solution**
  
@@ -50,6 +51,18 @@ We recommend using AdGuard together with a more traditional VPN service such as 
 You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings -> ```network.extension.monterey.force.split.tunnel```. Note that enabling this setting will cause the problems described above
  
 <img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings.png">
+
+<a id="mail-activity"></a>
+
+#### Compatibility with Protect Mail Activity
+
+Apple's Mail app now uses a proxy to hide a user's IP Address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
+
+For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/protect-mail-activity).
+
+**Recommended solution**
+
+At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
 
 <a id="later"></a>
  

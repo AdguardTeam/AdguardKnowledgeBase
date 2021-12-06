@@ -9,6 +9,7 @@ visible: true
 * [Существующие проблемы](#current)
     * [Monterey: существующие проблемы](#Monterey)
         * [Совместимость с iCloud Private Relay](#private-relay)
+        * [Совместимость с Protect Mail Activity](#mail-activity)
 * [Monterey, Big Sur 11.6 и более поздние версии: существующие проблемы](#later)
     * [Совместимость с Cisco AnyConnect](#cisco)
     * [Совместимость с Flutter](#flutter)
@@ -52,6 +53,18 @@ visible: true
 <img src="https://cdn.adguard.com/public/Adguard/kb/MAC/mac_adguard_advanced_settings_ru.png">. 
 
 Имейте в виду, что в этом случае вы столкнетесь с проблемами, описанными выше.
+
+<a id="mail-activity"></a>
+
+#### Совместимость с Protect Mail Activity
+
+Приложение Apple Mail теперь использует прокси-сервер для сокрытия IP-адреса пользователя при загрузке изображений из электронных писем. Однако, эта функция не работает при наличии активного VPN-соединения. Поскольку AdGuard рассматривается системой Apple Mail как VPN, изображения не загружаются автоматически.
+
+Для более глубокого понимания проблемы прочтите [эту статью](https://kb.adguard.com/ru/macos/solving-problems/protect-mail-activity).
+
+**Рекомендуемое решение**
+
+На данный момент мы рекомендуем использовать более традиционный VPN-сервис, например AdGuard VPN, вместо новых функций конфиденциальности Apple.
 
 <a id="later"></a>
  
