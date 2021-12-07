@@ -1,12 +1,12 @@
 ---
-title: 'Problem with reinstalling AdGuard on Android devices when using the app on more than one user account'
+title: 'Problem with reinstalling AdGuard on Android devices when using the app on multiple user profiles'
 taxonomy:
    category:
        - docs
 visible: true
 ---
  
-In Android 9 and later, if AdGuard is installed for more than one user account on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user account, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. It happens because AdGuard is installed for a different user account on the device.
+In Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. It happens because AdGuard is installed for a different user profile on the device.
  
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
  
