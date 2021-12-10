@@ -1,5 +1,6 @@
 ---
 title: 'How to collect debug logs'
+visible: false 
 published: true
 taxonomy:
     category:

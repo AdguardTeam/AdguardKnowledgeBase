@@ -1,5 +1,6 @@
 ---
 title: AdGuard VPN overview
+visible: false 
 published: true
 taxonomy:
     category:

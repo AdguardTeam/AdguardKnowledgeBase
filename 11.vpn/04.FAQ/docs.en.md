@@ -1,5 +1,6 @@
 ---
 title: FAQ
+visible: false 
 published: true
 taxonomy:
     category:
