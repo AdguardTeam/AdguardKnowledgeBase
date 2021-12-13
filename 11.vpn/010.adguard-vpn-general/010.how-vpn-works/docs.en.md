@@ -23,7 +23,7 @@ In that way, a VPN has 3 main advantages:
 
 1. *Anonymity*. A VPN hides your real location by replacing the IP address of your device with the IP address of the selected VPN server.
 
-2. *Bypassing geoblocking*. Some sites are only available from certain countries and regions. By connecting to a VPN server that is located in one of these countries, you will be able to use previously inaccessible resources.
+2. *Free browsing*. Some sites are only available from certain countries and regions. By connecting to a VPN server that is located in one of these countries, you will be able to use previously inaccessible resources.
 
 3. *Data protection*. A VPN creates an encrypted tunnel between your device and a remote server through which your web traffic passes. Along the way, all your data will be securely protected.
 
@@ -73,7 +73,7 @@ Using an Internet connection, the user leaves their digital footprint, which can
 
 If you connect to an unreliable or public network, the data on your device may become vulnerable to cybercriminals. Bank card details, usernames and passwords, passport data — all this data can be intercepted by online fraudsters. The VPN tunnel encrypts the information that you send and receive from the web, so it can not fall into the wrong hands.
 
-3. **Bypassing geoblocking**
+3. **Free browsing**
 
 Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. Besides, torrent clients are also blocked in some states. You can learn more about streaming and torrents in [this article](link). With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
 

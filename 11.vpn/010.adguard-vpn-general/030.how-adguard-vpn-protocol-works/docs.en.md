@@ -8,12 +8,17 @@ taxonomy:
 *   [Disadvantages of popular VPN protocols](#vpn-drawbacks)
 *   [What's great about AdGuard VPN protocol](#adguard-vpn-protocol)
 
+Our protocol is used by [all AdGuard VPN mobile and desktop applications](https://adguard-vpn.com/en/welcome.html). Download any of our products and use it knowing that your data is protected in the most secure way.
+
 <a id="reasons"></a>
+
+## Why we developed the AdGuard VPN protocol
+
 For years, we were concentrating on developing all flavors of ad blocking apps and browser extensions. And in 2019 we resolved to develop our own VPN service, seemingly out of nowhere. When in reality, there were a few reasons that prompted us to do so.
 
-* AdGuard mobile apps had <abbr data-title="Normally, two VPN-based mobile apps can't work together: in rare cases on iOS, and never on Android. As AdGuard ad blocker apps use local VPN to filter network traffic, using them alongside any VPN app would be out of the question.">compatibility issues</abbr> with VPN apps. That's why we saw the development of an in-house VPN as the only feasible solution that could guarantee compatibility: after we apply some magic, the two apps are able to work together as one VPN service.
-* Secondly, VPN seemed more than <abbr data-title="Our primary goal is to protect users' privacy, and this is exactly what VPNs are for.">relevant</abbr> to our philosophy and priorities.
-* Finally, during years of developing AdGuard software, we have become experts in filtering network traffic. This was to allow us to bring in something new instead of becoming another wishy-washy VPN.
+* AdGuard mobile apps had compatibility issues with VPN apps. Normally, two VPN-based mobile apps can't work together: in rare cases on iOS, and never on Android. As AdGuard ad blocker apps use local VPN to filter network traffic, using them alongside any VPN app would be out of the question. That's why we saw the development of an in-house VPN as the only feasible solution that could guarantee compatibility: after we apply some magic, the two apps are able to work together as one VPN service.
+* Secondly, VPN seemed more than relevant to our philosophy and priorities. Our primary goal is to protect users' privacy, and this is exactly what VPNs are for.
+* Finally, over the years of developing AdGuard software, we have become experts in filtering network traffic. This allowed us to bring in something new instead of becoming another wishy-washy VPN.
 
 From the outset, we decided that AdGuard VPN would have one key difference from its competitors — we shall develop and deploy an in-house VPN protocol which would not force users to choose between security and speed.
 
@@ -34,6 +39,7 @@ To "conceal" the use of VPN, the data flow is often "wrapped" in a TCP connectio
 Using any popular VPN protocol, we are always facing a trade-off: fast but easy to detect vs. slow.
 
 <a id="adguard-vpn-protocol"></a>
+
 ## What's great about AdGuard VPN protocol
 
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg" type="image/svg+xml">
@@ -49,6 +55,3 @@ Some existing VPN protocols also handle the encryption task, and they (and thus,
 
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/sravnenie5:6.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/sravnenie5:6.svg"></object>
-
-
-> Our protocol is used by [all AdGuard VPN mobile and desktop applications](https://adguard-vpn.com/en/welcome.html). Download any of our products (or several ones!) now and use it knowing that your data is protected in the most secure way. And if you wish to, share your impressions with us — in the comments section of the blog post or on social networks.
