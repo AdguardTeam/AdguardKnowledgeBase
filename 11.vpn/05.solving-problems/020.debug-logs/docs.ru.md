@@ -1,5 +1,6 @@
 ---
 title: 'Как собрать отладочные логи'
+visible: false 
 published: true
 taxonomy:
     category:

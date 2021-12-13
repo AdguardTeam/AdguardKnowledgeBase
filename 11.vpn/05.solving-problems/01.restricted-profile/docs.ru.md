@@ -1,5 +1,6 @@
 ---
 title: 'Проблемы, вызванные использованием профиля с ограниченным доступом на Android'
+visible: false 
 published: true
 taxonomy:
     category:

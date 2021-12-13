@@ -1,5 +1,6 @@
 ---
 title: Как установить AdGuard VPN
+visible: false 
 published: true
 taxonomy:
     category:

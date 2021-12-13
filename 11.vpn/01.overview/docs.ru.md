@@ -1,5 +1,6 @@
 ---
 title: Обзор AdGuard VPN
+visible: false 
 published: true
 taxonomy:
     category:

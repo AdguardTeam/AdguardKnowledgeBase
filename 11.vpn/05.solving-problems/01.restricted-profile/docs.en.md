@@ -1,5 +1,6 @@
 ---
 title: 'Problems caused by using a Restricted Mode profile on Android'
+visible: false 
 published: true
 taxonomy:
     category:
