@@ -45,7 +45,7 @@ Once done, open *Settings > Safari > Extensions*. Find **Allow these extensions*
 
 >AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
 
-You can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button. Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**. 
+You can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` button). Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**. 
 
 >Screenshot
 
