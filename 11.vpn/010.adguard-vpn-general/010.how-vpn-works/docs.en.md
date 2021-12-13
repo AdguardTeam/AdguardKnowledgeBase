@@ -54,7 +54,7 @@ In addition to these VPN protocols, there are others (for example, TLS, SSTP, IK
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg"></object>
 
-AdGuard VPN also has its own [*protocol*](link). One of its advantages is that the traffic transmitted using the AdGuard protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
+AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works). One of its advantages is that the traffic transmitted using the AdGuard protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
 
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg"></object>
@@ -75,7 +75,7 @@ If you connect to an unreliable or public network, the data on your device may b
 
 3. **Bypassing geoblocking**
 
-Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. Besides, torrent clients are also blocked in some states. You can learn more about streaming and torrents in [this article](link). With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
+Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
 
 <a name="drawbacks"></a>
 
@@ -99,9 +99,9 @@ A weak signal, network overload, VPN incompatibility with a firewall, antivirus 
 
 ## AdGuard VPN
 
-Our VPN service has several important [advantages](link):
+Our VPN service has several important [advantages](https://kb.adguard.com/en/vpn/adguard-vpn-general/adguard-vpn-is-the-better-option):
 
-* [*Own VPN protocol*](link), which works stably even with a weak Internet connection and disguises itself as normal traffic, making it more difficult to track and block it
+* [*Own VPN protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works), which works stably even with a weak Internet connection and disguises itself as normal traffic, making it more difficult to track and block it
 
 * [*"No-logs" policy*](https://adguard-vpn.com/en/privacy.html), which means that AdGuard VPN does not collect your personal data and does not transfer it to third parties
 
@@ -111,10 +111,10 @@ Our VPN service has several important [advantages](link):
 
 Currently, AdGuard VPN is available as:
 
-* [Browser extension](link) for Chrome, Firefox and Edge
+* [Browser extension](https://adguard-vpn.com/en/vpn/vpn-for-browser-extentions) for Chrome, Firefox and Edge
 
-* Mobile app for [Android](link) and [iOS](link)
+* Mobile app for [Android](https://adguard-vpn.com/en/vpn/vpn-for-android) and [iOS](https://adguard-vpn.com/en/vpn/vpn-for-ios)
 
-* Desktop application for [Windows](link) and [Mac](link)
+* Desktop application for [Windows](https://adguard-vpn.com/en/vpn/vpn-for-windows) and [Mac](https://adguard-vpn.com/en/vpn/vpn-for-mac)
 
 You can learn more about the features of AdGuard VPN (including the unlimited version) [here](https://adguard-vpn.com/en/welcome.html).
