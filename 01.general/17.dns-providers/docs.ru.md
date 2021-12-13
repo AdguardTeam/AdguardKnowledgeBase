@@ -655,13 +655,14 @@ DNS-серверы с минимальным/ограниченным логир
 
 ### RethinkDNS
 
-[RethinkDNS](https://www.bravedns.com/configure) предоставляет DNS-over-HTTPS сервис, работающий как Cloudflare Worker с настраиваемыми списками блокировки.
+[RethinkDNS](https://www.rethinkdns.com/configure) предоставляет DNS-over-HTTPS сервис, работающий как Cloudflare Worker, и DNS-over-TLS сервис, работающий как Fly.io Worker с настраиваемыми списками блокировки.
 
 #### Нефильтрующий
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS| Хост `basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Добавить в AdGuard</a>|
+|DNS-over-HTTPS| Хост `https://basic.rethinkdns.com/`|<a href="sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw">Добавить в AdGuard</a>|
+|DNS-over-HTTPS| Хост `tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Добавить в AdGuard</a>|
 
 <a name="controld"></a>
 
