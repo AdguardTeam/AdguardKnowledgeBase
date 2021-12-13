@@ -37,6 +37,7 @@ visible: true
 * [DNS-over-TLS by dnsprivacy.org](#dnsprivacy.org-dns)
 * [cira.ca](#cira.ca-dns)
 * [ffmuc.net](#ffmuc.net)
+* [AhaDNS](#ahadns)
 * [NextDNS](#nextdns)
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
@@ -637,6 +638,97 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-HTTPS, IPv4 | Имя провайдера: `https://doh.ffmuc.net/dns-query` | <a href="sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5">Добавить в AdGuard</a> |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255` | <a href="sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0">Добавить в AdGuard</a> |
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.ffmuc.net` IP: `2001:678:e68:f000::` | <a href="sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ">Добавить в AdGuard</a> |
+
+
+
+<a name="ahadns"></a>
+### AhaDNS
+
+[AhaDNS](https://ahadns.com/) DNS сервис блокировкой рекламы и без логирования от  Fredrik Pettersson.
+
+#### Blitz
+
+[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
+
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS, uncensored | Хост: `https://blitz.ahadns.com` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQA">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, OISD filter | Хост: `https://blitz.ahadns.com/1:1` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQQvMTox">Добавить в AdGuard</a> |
+| DNS-over-HTTPS, OISD & Energized porn filter | Хост: `https://blitz.ahadns.com/1:1.12` | <a href="sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQcvMToxLjEy">Добавить в AdGuard</a> |
+
+#### Нидерланды
+
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4      | Хост: `5.2.75.75` | <a href="sdns://AAcAAAAAAAAACTUuMi43NS43NQ">Добавить в AdGuard</a> |
+| DNS, IPv6      | Хост: `2a04:52c0:101:75::75` | <a href="sdns://AAAAAAAAAAAAFlsyYTA0OjUyYzA6MTAxOjc1Ojo3NV0">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://doh.nl.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm5sLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://dot.nl.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm5sLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Индия
+
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4      | Хост: `45.79.120.233` | <a href="sdns://AAAAAAAAAAAADTQ1Ljc5LjEyMC4yMzM">Добавить в AdGuard</a> |
+| DNS, IPv6      | Хост:  `2400:8904:e001:43::43` | <a href="sdns://AAAAAAAAAAAAF1syNDAwOjg5MDQ6ZTAwMTo0Mzo6NDNd">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://doh.in.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmluLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://dot.in.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmluLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Лос-Анжелес, США
+
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4      | Хост: `45.67.219.208` | <a href="sdns://AAAAAAAAAAAADTQ1LjY3LjIxOS4yMDg">Добавить в AdGuard</a> |
+| DNS, IPv6      | Хост: `2a04:bdc7:100:70::70` | <a href="sdns://AAAAAAAAAAAAFlsyYTA0OmJkYzc6MTAwOjcwOjo3MF0">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://doh.la.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmxhLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS   | Хост: `tls://dot.la.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmxhLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Нью-Йорк, США
+
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4      | Хост: `185.213.26.187` | <a href="sdns://AAAAAAAAAAAADjE4NS4yMTMuMjYuMTg3">Добавить в AdGuard</a> |
+| DNS, IPv6      | Хост: `2a0d:5600:33:3::3` | <a href="sdns://AAAAAAAAAAAAE1syYTBkOjU2MDA6MzM6Mzo6M10">Добавить в AdGuard</a> |
+| DNS-over-HTTPS | Хост: `https://doh.ny.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm55LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.ny.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm55LmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Польша
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.pl.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLnBsLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.pl.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LnBsLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Италия
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.it.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.it.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Испания
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.es.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmVzLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.es.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmVzLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Норвегия
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.no.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLm5vLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.no.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90Lm5vLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+#### Чикаго, США
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.chi.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAASZG9oLmNoaS5haGFkbnMubmV0Ci9kbnMtcXVlcnk">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.chi.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAASZG90LmNoaS5haGFkbnMubmV0">Добавить в AdGuard</a> |
+
+#### Австралия
+| Протокол       | Адрес                             |                |
+|----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS | Хост: `https://doh.au.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmF1LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
+| DNS-over-TLS | Хост: `tls://dot.au.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmF1LmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
+
+
 
 <a name="nextdns"></a>
 
