@@ -15,7 +15,7 @@ taxonomy:
 
 ### Что оно делает
 
-По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который присущ блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные оружия против рекламы как [CSS-правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#cosmetic-css-rules), [CSS-селекторы](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#extended-css-selectors) и [скриптлеты](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#scriptlets).
+По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные средства борьбы против рекламы как [CSS-правила](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#cosmetic-css-rules), [CSS-селекторы](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#extended-css-selectors) и [скриптлеты](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как видеореклама в YouTube, например.
 
 Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
@@ -39,12 +39,12 @@ taxonomy:
 
 Веб-расширение не является самостоятельным приложением и требует наличия AdGuard для iOS. Если на вашем устройстве не установлен AdGuard для iOS, пожалуйста, [сначала установите его](https://kb.adguard.com/ru/ios/installation) и выполните первый запуск приложения, чтобы подготовить его к работе.
 
-После того, как это сделано, откройте раздел *Настройки > Safari > Расширения*. 
+После того, как вы выполнили эти действия, откройте раздел *Настройки > Safari > Расширения*. 
 
 ![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings1_ru.png)
 ![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings2_ru.png)
 
-Найдите раздел **Разрешите эти расширения** и затем найдите **AdGuard** среди доступных расширений. 
+Найдите раздел **Разрешите эти расширения** и затем выберите **AdGuard** среди доступных расширений. 
 
 ![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings3_en.png)
 
