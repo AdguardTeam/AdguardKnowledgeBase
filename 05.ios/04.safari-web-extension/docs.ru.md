@@ -7,7 +7,7 @@ taxonomy:
 
 Веб-расширения добавляют дополнительный функцинал в Safari. Здесь вы можете найти [больше информации о веб-расширениях](https://developer.apple.com/documentation/safariservices/safari_web_extensions)
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/menu_ru.jpeg)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_ru.jpeg)
 
 Веб-расширение AdGuard для Safari — это инструмент, который позволяет пользоваться преимуществами новых функций iOS 15. Он сложит для расширения возможностей приложения AdGuard для iOS. С ним AdGuard может применять продвинутые правила фильтрации и, в конечном счёте, блокировать больше рекламы.
 
@@ -21,7 +21,7 @@ taxonomy:
 
 Помимо этого, веб-расширение AdGuard для Safari может быть использовано для управления приложением AdGuard для iOS прямо из браузера. Нажмите на кнопку *Расширения* — это иконка с паззлом, которая может быть расположена левее или правее адресной строки, в зависимости от типа вашего устройства. Найдите в списке расширений **AdGuard** и нажмите на него.
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
 
 >На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую, путём нажатия на иконку AdGuard в адресной строке браузера.
 
@@ -41,27 +41,27 @@ taxonomy:
 
 После того, как вы выполнили эти действия, откройте раздел *Настройки > Safari > Расширения*. 
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings1_ru.png)
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings2_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings1_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings2_ru.png)
 
 Найдите раздел **Разрешите эти расширения** и затем выберите **AdGuard** среди доступных расширений. 
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings3_en.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings3_en.png)
 
 Нажмите на него и включите переключатель. На том же экране убедитесь, что расширение AdGuard имеет необходимые разрешения: опция **Все веб-сайты** должна иметь статус *Разрешить*. 
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/settings4_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings4_ru.png)
 
 >Веб-расширение AdGuard для Safari требует доступ к содержмому веб-страниц для своей работы, но не использует его ни для каких других целей, кроме как для блокировки рекламы.
 
 Вы также можете включить расширение AdGuard прямо в браузере Safari. Для этого нажмите кнопку *Расширения* (если рядом с адресной строкой нет кнопки *Расширения*, нажмите кнопку `aA`). 
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/safari1_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari1_ru.png)
 
 Затем найдите опцию *Управлять расширениями* и выберите её. В открывшемся окне активируйте переключатель **AdGuard**.
 
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/safari2_ru.png)
-![](https://images.adguard.com/public/Adguard/kb/iOS/webext/safari3_ru.jpeg)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari2_ru.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_ru.jpeg)
 
 Если вы используете этот метод, вам всё равно может потребоваться открыть настройки Safari, чтобы выдать расширению AdGuard необходимые разрешения.
 
