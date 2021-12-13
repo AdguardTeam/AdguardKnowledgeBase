@@ -1205,7 +1205,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### RethinkDNS
 
-[RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io worker with configurable blocklists.
+[RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
 
 #### Unfiltered
 
