@@ -1,5 +1,5 @@
 ---
-title: 'Как работает AdGuard VPN'
+title: 'Как работает VPN'
 taxonomy:
     category:
         - docs
