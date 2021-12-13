@@ -21,7 +21,7 @@ AdGuard's Safari Web extension compliments AdGuard by giving it the ability to e
 
 Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_en.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
 >On iPads AdGuard's Safari Web extension is accessible directly by tapping the AdGuard icon in the browser's address bar.
 
