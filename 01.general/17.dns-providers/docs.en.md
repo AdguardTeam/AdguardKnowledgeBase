@@ -1205,13 +1205,14 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### RethinkDNS
 
-[RethinkDNS](https://www.bravedns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker with configurable blocklists.
+[RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io worker with configurable blocklists.
 
 #### Unfiltered
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`https://basic.bravedns.com/`|<a href="sdns://AgcAAAAAAAAAAAASYmFzaWMuYnJhdmVkbnMuY29tAA">Add to AdGuard</a>|
+|DNS-over-HTTPS|`https://basic.rethinkdns.com/`|<a href="sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw">Add to AdGuard</a>|
+|DNS-over-HTTPS|`tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Add to AdGuard</a>|
 
 <a name="controld"></a>
 
