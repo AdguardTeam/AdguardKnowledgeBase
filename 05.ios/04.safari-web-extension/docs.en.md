@@ -7,7 +7,7 @@ taxonomy:
 
 Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_en.jpeg)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_en.png)
 
 AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
 
@@ -61,7 +61,7 @@ You can also turn AdGuard extension on from the Safari browser. Tap the *Extensi
 Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**. 
 
 ![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari2_en.png)
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_en.jpeg)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_en.png)
 
 If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
 
