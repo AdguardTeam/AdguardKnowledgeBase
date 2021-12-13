@@ -51,7 +51,7 @@ You can also turn AdGuard extension on from the Safari browser. Tap the *Extensi
 
 If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
 
-You should now be able to see the AdGuard icon in the Safari browser's address bar. Tap it, and then tap on the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
+You should now be able to see AdGuard among the available extensions. Tap it, and then tap on the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
 >If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**. 
 
