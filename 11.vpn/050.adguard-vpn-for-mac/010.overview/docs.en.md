@@ -101,4 +101,4 @@ As mentioned above, the free version of AdGuard VPN has its limitations. Let's s
  * Streaming services are supported
  * Torrents are supported
 
- Learn more about the benefits of the unlimited version [in the dedicated article](url).
+ Learn more about the benefits of the unlimited version [in the dedicated article](http://kb.adguard.com/en/vpn/adguard-vpn-general/free-and-full-versions).

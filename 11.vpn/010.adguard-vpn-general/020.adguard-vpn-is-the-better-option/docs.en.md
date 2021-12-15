@@ -16,13 +16,13 @@ Choosing a VPN service, people often face a trade-off between fast vs. safe. The
 
 ## 2. Exclusions 
 The *Exclusions lists* allow you to select sites for which the VPN should be enabled and for which — disabled.
-There are two operation modes in AdGuard VPN. In *Regular mode*, VPN works everywhere except websites added to exclusions. And vice versa, in *Selective mode*, VPN works nowhere but on websites added to exclusions. You can also easily import/export exlcusions lists. Read about this feature in *Features overview* for the platform of your device. 
+There are two operation modes in AdGuard VPN. In *General mode*, VPN works everywhere except websites added to exclusions. And vice versa, in *Selective mode*, VPN works nowhere but on websites added to exclusions. You can also easily import/export exlcusions lists. Read about this feature in *Features overview* for the platform of your device. 
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn_export_exclusions.png?" style="max-width: 700px" /><p align="center"><i>An example of an exclusion list for Selective mode</i><p>
 
-Now, you may ask, which mode to choose? Practice shows that users prefer *Selective* one which makes sense, given the use cases. Most often users need VPN only on certain websites, the blocked ones or the ones that might mine extensive amounts of data. To save VPN traffic and not to sacrifice speed, using Selective mode seems sound. But other users might prefer absolute protection, and using *Regular mode* is the optimum solution for them.
+Now, you may ask, which mode to choose? Practice shows that users prefer *Selective* one which makes sense, given the use cases. Most often users need VPN only on certain websites, the blocked ones or the ones that might mine extensive amounts of data. To save VPN traffic and not to sacrifice speed, using Selective mode seems sound. But other users might prefer absolute protection, and using *General mode* is the optimum solution for them.
 
-> In less than a month we will add a new feature. There will be a list of services sorted by category that you’ll be able to add to exclusions at the touch of a button. 
+> Soon we will add a new feature. There will be a list of services sorted by category that you’ll be able to add to exclusions at the touch of a button. 
 
 ## 3. Choosing a DNS server
 No more relying on the DNS server provided by your ISP by default! First, it’s not safe: your ISP most likely has access to your browsing history. Second, People often underestimate DNS, yet it can remove ads and trackers, protect your device from malware or, for instance, enable safe search and block adult content.
@@ -50,8 +50,6 @@ However, we managed to find a solution to befriend AdGuard VPN and AdGuard ad bl
 ## 6. QUIC support (experimental)
 [QUIC](https://adguard.com/en/blog/dns-over-quic.html#whatisquic) is a cutting-edge protocol that has many perks. The main advantage is it can improve connection quality in non-ideal conditions – for example, on mobile devices or when connecting to public Wi-Fi. Although the new protocol won’t affect speed when the connection is fine and stable, it will definitely make the situation better for users with slow internet.
     
-> QUIC support is currently in the testing stage and may not work correctly at the moment. In the near future we will fix all the problems and tell you more about this protocol.     
-
 *Now let’s switch to the item set that any decent VPN can't do without.* 
 
 ## 7. Kill Switch
@@ -67,7 +65,7 @@ This feature resembles the exclusions lists mentioned above. The only difference
 ## 9. Auto-Protection
 This feature has been developed specifically for unsecured networks. For the convenience of users, we made it impossible to forget to enable VPN when visiting public places. Should you pop into a coffee shop and connect to a local Wi-Fi network, you’ll be automatically connected to AdGuard VPN.
 
-> Auto-protection is currently available in AdGuard VPN for iOS, it’ll appear in AdGuard for Android in 2 weeks since the publication. Also, this feature is coming soon on AdGuard VPN for Windows and Mac.
+> Auto-protection is currently available in AdGuard VPN for iOS and Android. Also, this feature is coming soon on AdGuard VPN for Windows and Mac.
 
 ## 10. Simultaneous connection allowance
 AdGuard VPN offers five simultaneous connections to its paid users. We place special emphasis on the word ’*simultaneous*’, and here is why. Some VPN providers only allow to log in to their service on *five devices max*. With AdGuard VPN, *there’s no limit* to the number of devices that can be logged in to your account, but you can have five VPN connections enabled at the same time. Those who don’t have a subscription can use AdGuard VPN on *two devices*, which gives us another trump card to play against competitors — most of the VPN services only have *one device* in their free versions.
@@ -99,7 +97,7 @@ There are six streaming platforms you can access via AdGuard VPN for now but we 
      </div>
 </div>
 
-This little ‘feature’ deserves special mention. In fact, many users crave for dark mode, so we couldn’t ignore it and added a theme switch for all AdGuard VPN products. Choose the one you like more — light, dark, or system. Hope you’ll join the dark side :) 
+This little ‘feature’ deserves special mention. In fact, many users crave for dark mode, so we couldn’t ignore it and added a theme switch for all AdGuard VPN products. Choose the one you like more — light, dark, or system. Hope you’ll join the dark side.
 
 - - - - - 
  
