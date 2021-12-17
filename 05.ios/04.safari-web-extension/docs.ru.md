@@ -63,7 +63,7 @@ taxonomy:
 
 На том же экране убедитесь, что расширение AdGuard имеет необходимые разрешения: опция **Все веб-сайты** должна иметь статус *Разрешить*. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings4_en.png)
+![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings4_ru.png)
 
 >Веб-расширение AdGuard для Safari требует доступ к содержмому веб-страниц для своей работы, но не использует его ни для каких других целей, кроме как для блокировки рекламы.
 
