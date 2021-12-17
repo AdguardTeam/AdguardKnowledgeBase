@@ -5,10 +5,16 @@ taxonomy:
         - docs
 ---
 
+* [What is AdGuard's Safari Web extension](#web-extentson)
+* [What it does](#features)
+* [Enabling AdGuard's Safari Web extension](#install)
+
+<a id="web-extentson"></a>
 Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
 ![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_en.png)
 
+<a id="web-extentson"></a>
 AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
 
 <a name="features"></a>
@@ -41,8 +47,14 @@ Web extension is not a standalone tool and requires AdGuard for iOS. If you don'
 
 Once done, open *Settings > Safari > Extensions*. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings1_en.png)
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings2_en.png)
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings1_en.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+     </div>
+     <div style="flex:1;padding-left:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings2_en.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+     </div>
+</div>
 
 Find **Allow these extensions** section and then find **AdGuard** among the available extensions. 
 
@@ -60,8 +72,14 @@ You can also turn AdGuard extension on from the Safari browser. Tap the *Extensi
 
 Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**. 
 
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari2_en.png)
-![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_en.png)
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari2_en.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+     </div>
+     <div style="flex:1;padding-left:5px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_en.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+     </div>
+</div>
 
 If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
 
