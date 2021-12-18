@@ -754,7 +754,7 @@ DNS-серверы с минимальным/ограниченным логир
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS| Хост `https://basic.rethinkdns.com/`|<a href="sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw">Добавить в AdGuard</a>|
-|DNS-over-HTTPS| Хост `tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Добавить в AdGuard</a>|
+|DNS-over-TLS| Хост `tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Добавить в AdGuard</a>|
 
 <a name="controld"></a>
 
