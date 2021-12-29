@@ -18,7 +18,7 @@ To manually install the certificate into Firefox-like browser:
   
   4. Navigate to "Authorities" tab and click on "Import..." button
   
-  5. Select file `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer`  or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
+  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard.
   
 Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
 
