@@ -8,8 +8,8 @@ visible: true
 
 ## Вступление 
 
-* [Windows](#windows)
 * [Браузерное расширение](#extension)
+* [Windows](#windows)
 * [Android](#android)
 * [Mac](#mac)
 * [iOS](#ios)
@@ -32,19 +32,6 @@ visible: true
 
 Чтобы отправить жалобу на пропущенную рекламу или некорректное отображение сайта, следуйте инструкции ниже для вашей ОС.
 
-<a id="windows"></a>
-
-### **Windows**
-
-* Откройте [Помощник AdGuard](https://uploads.adguard.com/Chinaskifgjv7.png) (По умолчанию находится в правом нижнем углу браузера);
-
-* Нажмите **Пожаловаться на сайт**, как указано на скриншоте:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1ru.png" width="350"/>
-
-* Заполните форму для отправки жалобы;
-* После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
-
 <a id="extension"></a>
 
 ### **Браузерное расширение**
@@ -54,6 +41,17 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1ru.png" width="350"/>
 
+* После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
+
+<a id="windows"></a>
+
+### **Windows**
+
+* Откройте Браузерный Помощник AdGuard и нажмите **Сообщить о проблеме**:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/windows/browser-assistant-ru.png" width="500"/>
+
+* Заполните форму для отправки жалобы;
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
 
 <a id="android"></a>
@@ -73,13 +71,9 @@ visible: true
 
 ### **Mac**
 
-* Откройте Помощник AdGuard (по умолчанию находится в левом нижнем углу браузера):
+* Откройте Откройте Браузерный Помощник AdGuard и нажмите **Сообщить о проблеме**:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/adguard-assistant-ru.png" width="500"/>
-
-* Нажмите **«Пожаловаться на сайт»**:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1ru.png" width="350"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant-ru.png" width="500"/>
 
 * Заполните форму для отправки жалобы;
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.

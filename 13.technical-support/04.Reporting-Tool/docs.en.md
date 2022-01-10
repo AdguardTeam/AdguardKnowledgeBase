@@ -8,8 +8,8 @@ visible: true
 
 ## Introduction
 
-* [Windows](#windows)
 * [Browser extension](#extension)
+* [Windows](#windows)
 * [Android](#android)
 * [Mac](#mac)
 * [iOS](#ios)
@@ -32,19 +32,6 @@ You can help us by filling in an application form with examples of ads you faced
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
-<a id="windows"></a>
-
-### **Windows**
-
-* Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
-
-* Нit **Report the website**, as shown in the screenshot:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
-
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
-
 <a id="extension"></a>
 
 ### **Browser extension**
@@ -55,6 +42,17 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1en.png" width="350"/>
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+
+<a id="windows"></a>
+
+### **Windows**
+
+* Open AdGuard Browser Assistant and hit **Report an issue**:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant.png" width="500"/>
+
+* Fill in the form for reporting a complaint;
+* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="android"></a>
 
@@ -73,15 +71,11 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### **Mac**
 
-* Open AdGuard Assistant (by default shown in the lower left corner of a browser):
+* Open AdGuard Browser Assistant and hit **Report an issue**:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/adguard-assistant.png" width="500"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant.png" width="500"/>
 
-* Нit **Report the website**:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
-
-* Then you'll need to fill in the form for reporting a complaint;
+* Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="ios"></a>
