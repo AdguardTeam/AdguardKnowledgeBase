@@ -1,5 +1,5 @@
 ---
-title: 'Report website'
+title: 'How to report a website'
 taxonomy:
     category:
         - docs
@@ -8,11 +8,11 @@ visible: true
 
 ## Introduction
 
-* [Windows](#Windows)
+* [Windows](#windows)
 * [Browser extension](#extension)
-* [Android](#Android)
-* [Mac](#MAC)
-* [iOS](#iOS)
+* [Android](#android)
+* [Mac](#mac)
+* [iOS](#ios)
 * [Filling in the form](#form)
 * [Diagnosis of a issue](#solo)
 
@@ -32,7 +32,7 @@ You can help us by filling in an application form with examples of ads you faced
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
-<a id="Windows"></a>
+<a id="windows"></a>
 
 ### **Windows**
 
@@ -56,7 +56,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-<a id="Android"></a>
+<a id="android"></a>
 
 ### **Android**
 
@@ -69,7 +69,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-<a id="MAC"></a>
+<a id="mac"></a>
 
 ### **Mac**
 
@@ -84,7 +84,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Then you'll need to fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-<a id="iOS"></a>
+<a id="ios"></a>
 
 ### **iOS**
 

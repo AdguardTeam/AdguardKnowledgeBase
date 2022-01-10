@@ -8,11 +8,11 @@ visible: true
 
 ## Вступление 
 
-* [Windows](#Windows)
+* [Windows](#windows)
 * [Браузерное расширение](#extension)
-* [Android](#Android)
-* [Mac](#MAC)
-* [iOS](#iOS)
+* [Android](#android)
+* [Mac](#mac)
+* [iOS](#ios)
 * [Создание отчёта о проблеме](#form)
 * [Диагностика проблемы](#solo)
 
@@ -32,7 +32,7 @@ visible: true
 
 Чтобы отправить жалобу на пропущенную рекламу или некорректное отображение сайта, следуйте инструкции ниже для вашей ОС.
 
-<a id="Windows"></a>
+<a id="windows"></a>
 
 ### **Windows**
 
@@ -56,7 +56,7 @@ visible: true
 
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
 
-<a id="Android"></a>
+<a id="android"></a>
 
 ### **Android**
 
@@ -69,7 +69,7 @@ visible: true
 
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
 
-<a id="MAC"></a>
+<a id="mac"></a>
 
 ### **Mac**
 
@@ -81,10 +81,10 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1ru.png" width="350"/>
 
-* Заполнить форму для отправки жалобы;
+* Заполните форму для отправки жалобы;
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
 
-<a id="iOS"></a>
+<a id="ios"></a>
 
 ### **iOS**
 
