@@ -47,7 +47,7 @@ visible: true
 
 ### **Windows**
 
-* Откройте Браузерный Помощник AdGuard и нажмите **Сообщить о проблеме**:
+* Откройте [Браузерный Помощник AdGuard](https://kb.adguard.com/ru/windows/features/browser-assistant) и нажмите **Сообщить о проблеме**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/windows/browser-assistant-ru.png" width="500"/>
 
@@ -71,7 +71,7 @@ visible: true
 
 ### **Mac**
 
-* Откройте Откройте Браузерный Помощник AdGuard и нажмите **Сообщить о проблеме**:
+* Откройте [Браузерный Помощник AdGuard](https://kb.adguard.com/ru/macos/overview/browser-assistant) и нажмите **Сообщить о проблеме**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant-ru.png" width="500"/>
 

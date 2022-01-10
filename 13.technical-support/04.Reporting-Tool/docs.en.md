@@ -28,7 +28,7 @@ You can help us by filling in an application form with examples of ads you faced
 
 ## Report a website
 
-> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
+> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
@@ -47,7 +47,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### **Windows**
 
-* Open AdGuard Browser Assistant and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/windows/features/browser-assistant) and hit **Report an issue**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant.png" width="500"/>
 
@@ -71,7 +71,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### **Mac**
 
-* Open AdGuard Browser Assistant and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant.png" width="500"/>
 
