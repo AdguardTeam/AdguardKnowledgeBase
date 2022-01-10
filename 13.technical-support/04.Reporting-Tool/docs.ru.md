@@ -49,7 +49,7 @@ visible: true
 
 * Откройте [Браузерный Помощник AdGuard](https://kb.adguard.com/ru/windows/features/browser-assistant) и нажмите **Сообщить о проблеме**:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/windows/browser-assistant-ru.png" width="500"/>
+<img src="https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant-ru.png" width="500"/>
 
 * Заполните форму для отправки жалобы;
 * После того как вы заполнили форму, на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) автоматически будет создана задача. Также вам будет доступна ссылка для отслеживания решения вашей проблемы.
