@@ -23,13 +23,13 @@ visible: true
 
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, PopupBlocker and AdGuard Extra.
+First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, PopupBlocker, AdGuard Extra and Web of Trust.
 
 <a name="products"></a>
 
 ### Supported apps
 
-Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for Android and AdGuard for Mac (Mac version does not yet allow you to add your own custom scripts).
+AdGuard can significantly broaden website functionality working as a user script manager. You can add your custom scripts or manage existing ones in our three products: AdGuard for Windows, AdGuard for Android and AdGuard for Mac.
 
 <a name="scripts"></a>
 
@@ -39,11 +39,17 @@ Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for And
 >
 > These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Further are [some examples](#repo) of popular sites with scripts.
 
-- **AdGuard Assistant** - This extension lets you manage the filtering process right from the page.
+* **AdGuard Extra** - an extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-- **AdGuard Extra** - an extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Popup Blocker** - the name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
 
-- **PopupBlocker** - The name speaks for itself. It helps get rid of popups - one of the most irritating types of ads out there.
+* **Web of Trust** - this script lets you see the reputation of each website based on its users’ opinions.
+
+**AdGuard Assistant** (legacy version) - this custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
+
+> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/en/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+
+**Disable AMP** - a script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on Google search results.
 
 <a name="repo"></a>
 
@@ -89,7 +95,7 @@ If you like the idea of personifying your browser with the help of userscripts, 
 
 ### Request License
 
-Any userscript author may request an Adguard license key for testing purposes.
+If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
 
 To get it, please send an email to devteam at adguard.com with the following information:
 
@@ -109,18 +115,30 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ```
 @name
+@namespace
 @description
 @version
-@downloadURL
-@updateURL
 @match
 @include
 @exclude
-@resource
-@require
 @grant
 @connect
-@namespace
+@require
+@resource
+@downloadURL
+@updateURL
+@supportURL
+@homepageURL
+@homepage
+@website
+@source
+@run-at
+@noframes
+@icon
+@iconURL
+@defaulticon
+@icon64
+@icon64URL
 ```
 
 ##### Unsupported properties
@@ -129,9 +147,6 @@ These properties will be simply ignored by Adguard.
 
 ```
 @unwrap
-@noframes - Adguard won't execute a userscript inside of any iframe.
-@icon
-@run-at
 
 ```
 
