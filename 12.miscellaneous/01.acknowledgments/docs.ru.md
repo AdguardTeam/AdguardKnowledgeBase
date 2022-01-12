@@ -295,8 +295,8 @@ visible: true
 
 ---
 
-Также благодарим пользователей форума [4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691)! Спасибо за ваши полезные комментарии и замечания.
+Также благодарим пользователей форума [4pda](https://4pda.to/forum/index.php?showtopic=601691)! Спасибо за ваши полезные комментарии и замечания.
 
-Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму AdGuard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [AdGuard subreddit](https://reddit.com/r/adguard), [форуму 4pda](https://adguard.com/ru/4pda.ru/forum/index.php?showtopic=601691), [форуму Xda-developers](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
+Мы очень рады комментариям (особенно конструктивным) от наших пользователей :) Вы всегда можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [форуму AdGuard](http://forum.adguard.com/forumdisplay.php?1-Russian-Forums-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D1%8B), [AdGuard subreddit](https://reddit.com/r/adguard), [форуму 4pda](https://4pda.to/forum/index.php?showtopic=601691), [форуму Xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) и заходите на наш профиль на [GitHub](https://github.com/AdguardTeam).
 
 
