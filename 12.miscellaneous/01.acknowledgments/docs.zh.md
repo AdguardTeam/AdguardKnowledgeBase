@@ -213,6 +213,6 @@ visible: true
 * TayTayTheKiller
 
 ---
-除此之外。我们想感谢[xda-developers users.](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)。非常感谢您向我们发送反馈意见！
+除此之外。我们想感谢[xda-developers users.](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)。非常感谢您向我们发送反馈意见！
 
-我们总是很感谢收到用户的反馈意见（特别是建设性的:)）。大家能随时随地与我们联系，请求新增功能以及提交错误报告。加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[AdGuard subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum ](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895)或访问我们的[GitHub](https://github.com/AdguardTeam)。
+我们总是很感谢收到用户的反馈意见（特别是建设性的:)）。大家能随时随地与我们联系，请求新增功能以及提交错误报告。加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[AdGuard subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum ](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)或访问我们的[GitHub](https://github.com/AdguardTeam)。
