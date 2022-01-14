@@ -1,5 +1,5 @@
 ---
-title: 'Report website'
+title: 'How to report a website'
 taxonomy:
     category:
         - docs
@@ -8,15 +8,13 @@ visible: true
 
 ## Introduction
 
-
-* [Windows](#Windows)
 * [Browser extension](#extension)
-* [Android](#Android)
-* [MAC](#MAC)
-* [iOS](#iOS)
+* [Windows](#windows)
+* [Android](#android)
+* [Mac](#mac)
+* [iOS](#ios)
 * [Filling in the form](#form)
 * [Diagnosis of a issue](#solo)
-
 
 When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
 
@@ -30,24 +28,9 @@ You can help us by filling in an application form with examples of ads you faced
 
 ## Report a website
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
+> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
-
-
-<a id="Windows"></a>
-
-### **Windows**
-
-
-* Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
-
-* Нit **Report the website**, as shown in the screenshot:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/win1en.png" width="350"/>
-
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
 <a id="extension"></a>
 
@@ -60,7 +43,18 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-<a id="Android"></a>
+<a id="windows"></a>
+
+### **Windows**
+
+* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/windows/features/browser-assistant) and hit **Report an issue**:
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant.png" width="500"/>
+
+* Fill in the form for reporting a complaint;
+* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+
+<a id="android"></a>
 
 ### **Android**
 
@@ -73,23 +67,18 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
+<a id="mac"></a>
 
-<a id="MAC"></a>
+### **Mac**
 
-### **MAC**
+* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
 
+<img src="https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant.png" width="500"/>
 
-* Open [AdGuard Assistant](https://uploads.adguard.com/Chinaskifgjv7.png) (By default shown in the right lower corner of a browser);
-
-* Нit **Report the website**, as shown in the screenshot:
-
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/mac1en.png" width="350"/>
-
-* Then you'll need to fill in the form for reporting a complaint;
+* Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-
-<a id="iOS"></a>
+<a id="ios"></a>
 
 ### **iOS**
 
@@ -106,7 +95,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### **Filling in the form**
 
-> ### **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
+> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](agrd.io/report), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product;
 
@@ -162,14 +151,12 @@ For example, you are faced with a situation that your favorite website won’t o
 where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
-
 ### **Stealth Mode**. 
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
 3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling in the form (see above). In this case, it is desirable to return to the initial settings;
 4. In case of failure (issue not solved), turn to section **Extensions**.
-
 
 ### **Extensions**
 

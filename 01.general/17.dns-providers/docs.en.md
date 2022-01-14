@@ -1222,7 +1222,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS|`https://basic.rethinkdns.com/`|<a href="sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw">Add to AdGuard</a>|
-|DNS-over-HTTPS|`tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Add to AdGuard</a>|
+|DNS-over-TLS|`tls://max.rethinkdns.com`|<a href="sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t">Add to AdGuard</a>|
 
 <a name="controld"></a>
 
