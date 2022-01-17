@@ -179,7 +179,7 @@ Aside from the *Activity* screen, you can find global statistics on the home scr
 <a id="low-level-settings"></a>
 ## Low-level settings
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/lowlevel_en.jpeg" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel_ru.PNG" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
 To open them, go to *Settings > General > Advanced settings > Low-level settings*. Mind that this section is only visible when Advanced mode is enabled. Some of these settings are better left intact: don't use them unless you know what you are doing or unless it's requested by support. Yet, other settings need further explanation and can be adjusted.
 
