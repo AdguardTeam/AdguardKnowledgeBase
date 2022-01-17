@@ -23,13 +23,13 @@ visible: true
 
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, PopupBlocker and AdGuard Extra.
+First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
 <a name="products"></a>
 
 ### Supported apps
 
-Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for Android and AdGuard for Mac (Mac version does not yet allow you to add your own custom scripts).
+AdGuard can significantly broaden website functionality working as a user script manager. You can add your custom scripts or manage existing ones in our three products: [AdGuard for Windows](https://kb.adguard.com/en/windows/features/extensions), [AdGuard for Android](https://kb.adguard.com/en/android/overview#extensions-support) and [AdGuard for Mac](https://kb.adguard.com/en/macos/overview#extensions).
 
 <a name="scripts"></a>
 
@@ -39,11 +39,15 @@ Currently, custom scripts are supported in: AdGuard for Windows, AdGuard for And
 >
 > These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Further are [some examples](#repo) of popular sites with scripts.
 
-- **AdGuard Assistant** - This extension lets you manage the filtering process right from the page.
+* **AdGuard Extra** - An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-- **AdGuard Extra** - an extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Popup Blocker** - The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
 
-- **PopupBlocker** - The name speaks for itself. It helps get rid of popups - one of the most irritating types of ads out there.
+**AdGuard Assistant** (legacy version) - This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
+
+> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/en/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+
+**Disable AMP** - A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
 
 <a name="repo"></a>
 
@@ -89,7 +93,7 @@ If you like the idea of personifying your browser with the help of userscripts, 
 
 ### Request License
 
-Any userscript author may request an Adguard license key for testing purposes.
+If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
 
 To get it, please send an email to devteam at adguard.com with the following information:
 
@@ -109,18 +113,30 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ```
 @name
+@namespace
 @description
 @version
-@downloadURL
-@updateURL
 @match
 @include
 @exclude
-@resource
-@require
 @grant
 @connect
-@namespace
+@require
+@resource
+@downloadURL
+@updateURL
+@supportURL
+@homepageURL
+@homepage
+@website
+@source
+@run-at
+@noframes
+@icon
+@iconURL
+@defaulticon
+@icon64
+@icon64URL
 ```
 
 ##### Unsupported properties
@@ -129,9 +145,6 @@ These properties will be simply ignored by Adguard.
 
 ```
 @unwrap
-@noframes - Adguard won't execute a userscript inside of any iframe.
-@icon
-@run-at
 
 ```
 
@@ -141,27 +154,27 @@ AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 ##### Values
 
+Note that all listed old Greasemonkey functions are deprecated but still supported. 
+
 ```
-GM.getValue / GM_getValue
+GM.info / GM_info
 GM.setValue / GM_setValue
-GM.deleteValue / GM_deleteValue
+GM.getValue / GM_getValue
 GM.listValues / GM_listValues
+GM.deleteValue / GM_deleteValue
 GM.getResourceUrl / GM_getResourceURL
 GM.setClipboard / GM_setClipboard
 GM.xmlHttpRequest / GM_xmlhttpRequest
-GM.info / GM_info
+GM.openInTab / GM_openInTab
 GM.notification
 unsafeWindow
-GM_getResourceText (deprecated)
-GM_addStyle (deprecated)
-GM_log (deprecated)
-```
-
-#### Partially supported GM functions
+GM_getResourceText 
+GM_addStyle 
+GM_log 
 
 ```
-GM.openInTab / GM_openInTab - Just a shortcut to window.open.
-```
+
+[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
 
 <a name="example"></a>
 

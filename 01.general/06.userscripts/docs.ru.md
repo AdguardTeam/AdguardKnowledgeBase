@@ -27,19 +27,23 @@ visible: true
 <a name="products"></a>
 ### Поддерживаемые продукты
 
-На данный момент пользовательские скрипты поддерживаются в трёх наших продуктах: AdGuard для Windows, AdGuard для Android и AdGuard для Mac (Mac-версия пока не позволяет добавить собственные пользовательские скрипты).
+AdGuard может значительно расширять функциональность веб-сайтов, работая как менеджер пользовательских скриптов. Добавлять собственные скрипты или управлять существующими вы можете в трёх наших продуктах: [AdGuard для Windows](https://kb.adguard.com/ru/windows/features/extensions), [AdGuard для Android](https://kb.adguard.com/ru/android/overview#extensions-support) и [AdGuard для Mac](https://kb.adguard.com/ru/macos/overview#extensions).
 
 <a name="scripts"></a>
-### Пользовательские скрипты от AdGuard
+### Пользовательские скрипты от AdGuard 
 
 > ### ВНИМАНИЕ
-> Эти скрипты были разработаны непосредственно нами, поэтому мы можем ручаться за их эффективность и безопасность. Имейте в виду, что скачивая новый скрипт из незнакомого источника, вы рискуете, ведь скрипты могут также и навредить вашему компьютеру. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Примеры популярных сайтов [приведены ниже](#repo).
-
-* **AdGuard Assistant** - расширение, предназначенное для управления фильтрацией прямо со страницы бразуера (ручная блокировка, занесение сайта в исключения и т.д.).
+> Эти скрипты были разработаны непосредственно нами, поэтому мы можем ручаться за их эффективность и безопасность. Имейте в виду, что скачивая новый скрипт из незнакомого источника, вы рискуете, ведь скрипты могут также и навредить вашему устройству. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Примеры популярных сайтов [приведены ниже](#repo).
 
 * **AdGuard Extra** - расширение, блокирующее рекламу в сложных случаях, когда привычного подхода с правилами фильтрации недостаточно. 
 
 * **Блокировщик всплывающей рекламы** - скрипт, блокирующий один из самых раздражающих типов рекламы - всплывающие окна.
+
+* **Помощник AdGuard** (старая версия) - расширение, предназначенное для управления фильтрацией прямо со страницы бразуера (ручная блокировка, занесение сайта в исключения и т.д.). 
+
+> Обратите внимание, что это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный Помощник](https://adguard.com/ru/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного Помощника.
+
+* **Отключить AMP** - это скрипт, предустановленный только в AdGuard для Android, который отключает AMP (Accelerated Mobile Pages) на результатах поиска Google.
 
 <a name="repo"></a>
 ## Где взять пользовательские скрипты
@@ -80,7 +84,7 @@ visible: true
 
 ### Запросить лицензию
 
-Любой автор пользовательского скрипта может запросить лицензию AdGuard для тестирования.
+Если вы разрабатываете свой пользовательский скрипт и хотите протестировать его работу с AdGuard, запросите бета-лицензию на приложение.
 
 Для этого отправьте нам сообщение [devteam@adguard.com](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK) со следующей информацией:
 
@@ -99,18 +103,30 @@ visible: true
 
 ```
 @name
+@namespace
 @description
 @version
-@downloadURL
-@updateURL
 @match
 @include
 @exclude
-@resource
-@require
 @grant
 @connect
-@namespace
+@require
+@resource
+@downloadURL
+@updateURL
+@supportURL
+@homepageURL
+@homepage
+@website
+@source
+@run-at
+@noframes
+@icon
+@iconURL
+@defaulticon
+@icon64
+@icon64URL
 ```
 
 ##### Неподдерживаемые свойства
@@ -119,9 +135,6 @@ AdGuard проигнорирует эти свойства.
 
 ```
 @unwrap
-@noframes - AdGuard не будет выполнять пользовательский скрипт внутри любого iframe.
-@icon
-@run-at
 
 ```
 
@@ -131,27 +144,27 @@ AdGuard поддерживает как старые функции GM\_, так
 
 ##### Значения
 
+Обратите внимание, что все перечисленные функции  GM\_ устарели, но всё ещё поддерживаются.    
+
 ```
-GM.getValue / GM_getValue
+GM.info / GM_info
 GM.setValue / GM_setValue
-GM.deleteValue / GM_deleteValue
+GM.getValue / GM_getValue
 GM.listValues / GM_listValues
+GM.deleteValue / GM_deleteValue
 GM.getResourceUrl / GM_getResourceURL
 GM.setClipboard / GM_setClipboard
 GM.xmlHttpRequest / GM_xmlhttpRequest
-GM.info / GM_info
+GM.openInTab / GM_openInTab
 GM.notification
 unsafeWindow
-GM_getResourceText (устарело)
-GM_addStyle (устарело)
-GM_log (устарело)
-```
-
-#### Частично поддерживаемые функции GM
+GM_getResourceText 
+GM_addStyle 
+GM_log 
 
 ```
-GM.openInTab / GM_openInTab - Просто вызывает window.open.
-```
+
+[Здесь](https://wiki.greasespot.net/GM.info) вы найдёте развёрнутую информацию о Greasemonkey API.
 
 <a name="example"></a>
 
