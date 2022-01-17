@@ -18,7 +18,7 @@ taxonomy:
     		* [DNS filters](#dns-filters)
     		* [Allowlist and Blocklist](#allowlist-blocklist)
 	* [Advanced protection](#advanced-protection)
-	* [AdGuard VPN](#vpn)
+	* [Compatibility with AdGuard VPN](#compatibility)
 	* [Assistant](#assistant)
     * [Activity](#activity)
     	* [Statistics](#statistics)
@@ -62,7 +62,7 @@ There are eight of them, each category unites several filters that serve and sha
 <a id="user-rules"></a>
 ## User rules
 
-Another section of the *Safari protection* screen that needs to be presented. Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](https://kb.adguard.com/en/ios/overview#assistant). This is needed to customize Safari filtering without adding an entire filter list. 
+Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](https://kb.adguard.com/en/ios/overview#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
 
 > Learn [how to create your own ad filters](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). But please note that many of them won't work in Safari on iOS.
 
@@ -71,12 +71,12 @@ Another section of the *Safari protection* screen that needs to be presented. He
 <a id="allowlist"></a>
 ## Allowlist
 
-The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist would be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
 
 <a id="dns-protection"></a>
 ## DNS protection
 
-[DNS protection module](https://kb.adguard.com/en/general/dns-filtering) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by taping the shield icon at the top of the screen, or by going to the *Protection* > *DNS protection* tab.
+[DNS protection module](https://kb.adguard.com/en/general/dns-filtering) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the *Protection* > *DNS protection* tab.
 
 > To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
 
@@ -127,20 +127,20 @@ On top of DNS filters, you can have targeted impact on DNS filtering by adding s
 <a id="advanced-protection"></a>
 ## Advanced protection
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors and scriptlets, and therefore is able to deal even with the complex ads, such as YouTube ads. 
+In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 700px; padding: 2px;">
 
-To enable *Advanced protection*, open the *Protection* tab by clicking the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by moving the switch slider, and follow the instructions below.
+To enable *Advanced protection*, open the *Protection* tab by clicking the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by toggling the switch slider, and follow the instructions below.
 
 > The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 700px; padding: 2px;">
 
-<a id="vpn"></a>
-## AdGuard VPN
+<a id="compatibility"></a>
+## Compatibility with AdGuard VPN
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend AdGuard VPN and AdGuard blocker. For your convenience we've added an *AdGuard VPN* block to the *Protection* section, so you can easily switch between two applications. 
+In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://kb.adguard.com/en/vpn) and AdGuard blocker. For your convenience we've added an *AdGuard VPN* block to the *Protection* section, so you can easily switch between two applications. 
 
 <a id="assistant"></a>
 ## Assistant
@@ -182,6 +182,8 @@ Aside from the *Activity* screen, you can find global statistics on the home scr
 <img src="https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel_ru.PNG" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
 To open them, go to *Settings > General > Advanced settings > Low-level settings*. Mind that this section is only visible when Advanced mode is enabled. Some of these settings are better left intact: don't use them unless you know what you are doing or unless it's requested by support. Yet, other settings need further explanation and can be adjusted.
+
+Note that this section is only available if *Advanced mode* is enabled. To open the *Low-level settings*, go to *Settings > General > Advanced settings > Low-level settings*. For the most part, the settings in this section are best left untouched: only use them if you're sure about what you're doing, or if the support team has asked for them. But some settings could be changed without any risk.
 
 <a id="blockipv6"></a>
 ### Block IPv6
