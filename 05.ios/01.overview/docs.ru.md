@@ -181,7 +181,7 @@ taxonomy:
 <a id="low-level-settings"></a>
 ## Низкоуровневые настройки
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel_ru.PNG" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/lowlevel_ru.jpeg" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
 Чтобы открыть их, перейдите в *Настройки > Общие > Расширенные настройки > Низкоуровневые настройки*. Имейте в виду, что этот раздел доступен, только если включен Расширенный режим. Некоторые настройки лучше не трогать: используйте их, только если уверены в том, что делаете, или если об этом попросила команда поддержки. Однако другие настройки можно изменять самостоятельно.
 
@@ -208,12 +208,12 @@ Fallback — это резервный DNS-сервер. Если вы выбр�
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/main_screen_ru.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_ru.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/main_screen_dark_ru.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_dark_ru.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
      </div>
-</div>
+</div>ы
 
 Эта настройка находится наверху экрана **Общих настроек** и позволяет переключаться между тёмной и светлой темой.
 
