@@ -23,7 +23,7 @@ visible: true
 
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, AdGuard Extra and Web of Trust.
+First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker and AdGuard Extra.
 
 <a name="products"></a>
 
@@ -43,13 +43,11 @@ AdGuard can significantly broaden website functionality working as a user script
 
 * **AdGuard Popup Blocker** - The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
 
-* **Web of Trust** - This script lets you see the reputation of each website based on its users’ opinions.
-
 **AdGuard Assistant** (legacy version) - This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
 
 > Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/en/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
-**Disable AMP** - A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on Google search results.
+**Disable AMP** - A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
 
 <a name="repo"></a>
 
