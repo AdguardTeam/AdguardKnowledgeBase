@@ -7,7 +7,7 @@ taxonomy:
 visible: false
 ---
 
-AdGuard AdBlocker is the browser extension performs a number of functions, each of which can be customized according to your preferences. This section gives a brief overview of the AdGuard AdBlocker  functions and features.
+AdGuard AdBlocker is the browser extension performs a number of functions, each of which can be customized according to your preferences. This section gives a brief overview of the AdGuard AdBlocker functions and features.
 
 ## Ad blocker 
 
@@ -19,7 +19,7 @@ The Browsing Security module protects you from malware and phishing websites. It
 
 ## Whitelist 
 
-You can fine-tune ad filtering by adding particular websites to the list of exceptions, which disables ad blocking for your trusted domains. Whitelist can be inverted - in other words, you can unblock ads everywhere except the domains  that you added to this list.
+You can fine-tune ad filtering by adding particular websites to the list of exceptions, which disables ad blocking for your trusted domains. Allowlist can be inverted - in other words, you can unblock ads everywhere except the domains that you added to this list.
 
 ## User filter
 

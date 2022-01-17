@@ -16,7 +16,6 @@ visible: true
 	* [AdGuard Security](#agsecurity)
     * [AdGuard Other](#agother)
     * [AdGuard Custom](#agcustom)
-* 	[Whitelist](#whitelist)
 * 	[User Rules](#userrules)
 * 	[About](#about)
 
