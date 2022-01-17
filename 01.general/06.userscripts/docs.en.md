@@ -23,7 +23,7 @@ visible: true
 
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker and AdGuard Extra.
+First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
 <a name="products"></a>
 
