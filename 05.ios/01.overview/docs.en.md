@@ -10,7 +10,6 @@ taxonomy:
 	* [Filters](#filters)
 	* [User rules](#user-rules)
 	* [Allowlist](#allowlist)
-	* [Assistant](#assistant)
 	* [DNS protection](#dns-protection)
 		* [DNS implementation](#dns-implementation) 
     	* [DNS servers](#dns-servers)
@@ -18,6 +17,9 @@ taxonomy:
     	* [DNS filtering](#dns-filtering)
     		* [DNS filters](#dns-filters)
     		* [Allowlist and Blocklist](#allowlist-blocklist)
+	* [Advanced protection](#advanced-protection)
+	* [AdGuard VPN](#vpn)
+	* [Assistant](#assistant)
     * [Activity](#activity)
     	* [Statistics](#statistics)
     * [Low-level settings](#low-level-settings)
@@ -34,11 +36,11 @@ AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, tracker
 <a id="content-blockers"></a>
 ## Content blockers
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Apple allows each content blocker to contain  a maximum of 50K filtering rules, hence, six AdGuard content blockers include 300K filtering rules.  
+Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules. 
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings*.
+All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right > *General* > *Advanced settings* > *Content blockers*).
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/content_blockers_state_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/сontent_blockers_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 > Tip: keep all content blockers enabled for the best filtering quality.
 
@@ -47,9 +49,9 @@ All content blockers, their statuses, which thematic filters they currently incl
 
 Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), go to *AdGuard for iOS Settings > Safari protection > Filters*.
+All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the *Protection* section, by tapping the shield icon on the tab-bar, then go to *Safari protection* > *Filters*.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/Pro/filters_group_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/filters_group_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).  
 
@@ -60,39 +62,28 @@ There are eight of them, each category unites several filters that serve and sha
 <a id="user-rules"></a>
 ## User rules
 
-Another section of the Safari protection screen that needs to be presented. Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](https://kb.adguard.com/en/ios/overview#assistant). This is needed to customize Safari filtering without adding an entire filter list. 
+Another section of the *Safari protection* screen that needs to be presented. Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](https://kb.adguard.com/en/ios/overview#assistant). This is needed to customize Safari filtering without adding an entire filter list. 
 
 > Learn [how to create your own ad filters](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). But please note that many of them won't work in Safari on iOS.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/user_rules_en.png?1" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/user_rules_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 <a id="allowlist"></a>
 ## Allowlist
 
-The third section of the Safari protection screen. If you want to disable ad blocking on a certain website, Allowlist would be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
-
-<a id="assistant"></a>
-## Assistant
-
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/assistant_en.png?1" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
-
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app. To see it, do the following: open Safari, tap on the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
-
-1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
-2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
-3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few clicks. Use it if you noticed a missed ad or an incorrect blocking on the page. 
+The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist would be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
 
 <a id="dns-protection"></a>
 ## DNS protection
 
-[DNS protection module](https://kb.adguard.com/en/general/dns-filtering) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. It can be done either from the home screen or from *Settings > DNS protection*.
+[DNS protection module](https://kb.adguard.com/en/general/dns-filtering) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by taping the shield icon at the top of the screen, or by going to the *Protection* > *DNS protection* tab.
 
 > To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
 
 <a id="dns-implementation"></a>
 ### DNS implementation
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/ios_native_implementation.PNG" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/implementation_en.jpeg" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
 This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS. 
 
@@ -103,7 +94,7 @@ In Native implementation, the DNS is handled by the system and not the app. This
 
 The first section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap on the button to enter the DNS server screen.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/dns_server_en.png?1" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_server_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap on any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
@@ -112,7 +103,7 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 <a id="network-settings"></a>
 ### Network settings
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/Pro/network_settings_en.png" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="hhttps://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
 
@@ -121,7 +112,7 @@ Users can also handle their DNS security on the Network settings screen. *Filter
 
 To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/dns_filtering_en.jpg?1" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 <a id="dns-filters"></a>
 #### DNS filters
@@ -133,11 +124,40 @@ Similar to filters that work in Safari, DNS filters are sets of rules written ac
 
 On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
 
+<a id="advanced-protection"></a>
+## Advanced protection
+
+In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors and scriptlets, and therefore is able to deal even with the complex ads, such as YouTube ads. 
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 700px; padding: 2px;">
+
+To enable *Advanced protection*, open the *Protection* tab by clicking the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by moving the switch slider, and follow the instructions below.
+
+> The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*. 
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 700px; padding: 2px;">
+
+<a id="vpn"></a>
+## AdGuard VPN
+
+In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend AdGuard VPN and AdGuard blocker. For your convenience we've added an *AdGuard VPN* block to the *Protection* section, so you can easily switch between two applications. 
+
+<a id="assistant"></a>
+## Assistant
+
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/assistant_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+
+Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app. To see it, do the following: open Safari, tap on the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+
+1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
+2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
+3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few clicks. Use it if you noticed a missed ad or an incorrect blocking on the page. 
+
 <a id="activity"></a>
 ## Activity
 This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/activity_en.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/activity_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
 
@@ -147,7 +167,7 @@ Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests t
 
 Tap on any request to view more details. There will also be buttons to add the request to Bloclist/Allowlist in one tap.
 
-<img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/request_info_en.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/request_info_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
 
@@ -159,7 +179,7 @@ Aside from the *Activity* screen, you can find global statistics on the home scr
 <a id="low-level-settings"></a>
 ## Low-level settings
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel.PNG" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/lowlevel_en.jpeg" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
 To open them, go to *Settings > General > Advanced settings > Low-level settings*. Mind that this section is only visible when Advanced mode is enabled. Some of these settings are better left intact: don't use them unless you know what you are doing or unless it's requested by support. Yet, other settings need further explanation and can be adjusted.
 
@@ -186,10 +206,10 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/main_screen_en.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
      </div>
      <div style="flex:1;padding-left:5px;">
-          <img src="https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/main_screen_dark_en.jpg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+          <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
      </div>
 </div>
 
@@ -201,19 +221,27 @@ Residing right at the top of **Settings** > **General** screen, this setting all
 
 AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
 
+- **Auto-update over Wi-Fi only**
+
+If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+
 - **Invert the Allowlist**
 
 An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
-
-- **Reset statistics**
-
-Clears all statistical data, such as number of requests, etc.
 
 - **Advanced mode**
 
 Aside from unlocking **DNS filtering**, it grants access to **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
 
-- **Send feedback**
+- **Reset statistics**
+
+Clears all statistical data, such as number of requests, etc.
+
+- **Reset settings**
+
+This option will reset all your settings.
+
+- **Support**
 
 No matter how hard you try, sometimes things go off the rails. Use this option to contact support, report a missed ad (although we advise to use the Assistant for your own convenience), export logs or to make a feature request.
 
