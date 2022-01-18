@@ -301,9 +301,9 @@ By default, AdGuard doesn't filter websites of financial services and websites w
 
 There are two modes of HTTPS filtering:
 
-Filter ONLY connections to domains on the blacklist.
+Filter ONLY connections to domains on the Blocklist.
 
-Filter ALL connections EXCEPT those to domains on the whitelist. We have pre-added domains of financial institutions and banks there, and this list will be updated in the future.
+Filter ALL connections EXCEPT those to domains on the Allowlist. We have pre-added domains of financial institutions and banks there, and this list will be updated in the future.
 
 
 <a id="how"></a>

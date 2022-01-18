@@ -23,11 +23,11 @@ Users can choose two modes to operate AdGuard in. The first mode allows it to fi
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/filter_groups_en.jpg" width="350">
 
-AdGuard for Android utilizes a set of filters to block ads; however, there is Whitelist where you can add URLs you would like the app to view as exceptions, as well as User Filter that allows you to create and adjust your own filtering rules. You can also turn off filtering for select applications.
+AdGuard for Android utilizes a set of filters to block ads; however, there is the Allowlist where you can add URLs you would like the app to view as exceptions, as well as User Filter that allows you to create and adjust your own filtering rules. You can also turn off filtering for select applications.
 
 ## HTTPS Filtering
 
-AdGuard is able to filter traffic shared via protected protocol HTTPS. For this, you will need to install a specially generated digital certificate that can be found in the AdGuard settings. The filter has flexible settings and provides for Whitelist and Blacklist. This allows the user to decide which HTTPS domains should be filtered or not.
+AdGuard is able to filter traffic shared via protected protocol HTTPS. For this, you will need to install a specially generated digital certificate that can be found in the AdGuard settings. The filter has flexible settings and provides for the Allowlist and Blocklist. This allows the user to decide which HTTPS domains should be filtered or not.
 
 ## Browsing Security
 
@@ -47,4 +47,4 @@ Aside from the Stealth Mode, AdGuard is armed with the Tracking Protection filte
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/en/Android/chart_app_chrome_en.jpg" width="350">
 
-AdGuard for Android Firewall allows flexible control over your installed apps’ Internet access. For example, it can deny Wi-Fi or mobile network access to active apps on your smartphone or tablet. You can also change the rules of background Internet connection for your apps when the screen is locked. Base your decisions on the detailed statistics that AdGuard provides for each individual app, as well as overall.
+AdGuard for Android Firewall allows flexible control over your installed apps’ Internet access. For example, it can deny Wi-Fi or mobile network access to active apps on your smartphone or tablet. You can also change the rules of background Internet connection for your apps when the screen is locked. Base your decisions on the detailed statistics that AdGuard provides for each individual app, as well as overall. 

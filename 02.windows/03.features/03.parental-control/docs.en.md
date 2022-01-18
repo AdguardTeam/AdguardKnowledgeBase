@@ -32,11 +32,11 @@ Sets the level of sensitivity for Parental Control depending on the age of your 
 **
 A password protects AdGuard from change of settings or disabling. You can also use the password to access websites Parental Control has blocked.
 
-**Manage the blacklist**
+**Manage the Blocklist**
 
 Here you can manually add websites you thinks are inappropriate for your children.
 
-**Manage the whitelist**
+**Manage the Allowlist**
 
 You can manually disable Parental Control for certain sites.
 
