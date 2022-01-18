@@ -98,7 +98,7 @@ The first section you'll see on the DNS Protection screen is DNS server. It show
 
 Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap on any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
-In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS and DNS-over-TLS servers.
+In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC (experimental feature) servers.
 
 <a id="network-settings"></a>
 ### Network settings
@@ -152,6 +152,8 @@ Assistant is a tool that helps you manage filtering in Safari right from the bro
 1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
 2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
 3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few clicks. Use it if you noticed a missed ad or an incorrect blocking on the page. 
+
+> On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](https://kb.adguard.com/en/ios/safari-web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
 
 <a id="activity"></a>
 ## Activity
@@ -245,7 +247,7 @@ This option will reset all your settings.
 
 - **Support**
 
-No matter how hard you try, sometimes things go off the rails. Use this option to contact support, report a missed ad (although we advise to use the Assistant for your own convenience), export logs or to make a feature request.
+No matter how hard you try, sometimes things go off the rails. Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extention for your own convenience), export logs or to make a feature request.
 
 - **About**
 
