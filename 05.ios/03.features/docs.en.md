@@ -53,7 +53,7 @@ DNS requests log is another useful feature of AdGuard Pro. The log contains the 
 AdGuard products in general care about online privacy, and AdGuard Pro is not an exception. It detects online trackers that gather all types of information about you and your actions. Any detected tracker requests are highlighted with yellow in DNS requests log. Unfortunately, Apple puts harsh restrictions on tools available to iOS apps outside of Safari, so often blocking of such requests results in breaking functionality of associated services. This is why many of these trackers are not blocked by default, but you have full control over which ones to block manually. AdGuard Pro will provide detailed info about most of these trackers so you can make a well-considered decision in each separate case.
 
 ### Subscriptions
-AdGuard Pro provides you access to "Privacy Settings". Inside the self-titled settings tab you will find Blacklist/Whitelist (that can be used to manage single requests), as well as access to subscriptions. Subscriptions are lists of rules (similar to Safari content blocking rules) that are used to operate the filtering process. Subscriptions are either hosts-file or adblock-file based.
+AdGuard Pro provides you the access to "Privacy Settings". Inside the self-titled settings tab you will find the Blocklist/Allowlist (that can be used to manage single requests), as well as the access to the subscriptions. Subscriptions are lists of rules (similar to Safari content blocking rules) that are used to operate the filtering process. Subscriptions are either hosts-file or adblock-file based.
 
 ![Privacy settings](screenshots_en/privacy-settings.jpg)
 
