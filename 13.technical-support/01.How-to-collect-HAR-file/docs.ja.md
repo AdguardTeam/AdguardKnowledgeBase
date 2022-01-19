@@ -1,14 +1,14 @@
 ---
-title: How to collect HAR file
+title: HARファイルを収集する方法
 published: false
 taxonomy:
     category:
         - docs
 ---
 
-## Creating an HAR File
+## HARファイルの作成
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide .har file generation and export capability.
+HARファイルは、的に駆るサポートチームが複雑な問題をトラブルシューティングするのに役立ちます。コレらのファイルを作成するには、ChromeかFirefoxの使用をお勧めします。ただし、IE11、Edge、及びSafariは、.harファイルの生成およびエクスポート機能も提供されています。
 
 [Google Chrome](#chrome)
 
@@ -26,28 +26,28 @@ HAR files help our technical support teams troubleshoot complex issues. To creat
 
 ## <a id="chrome"></a> Chrome
 
-To create an HAR file in Chrome:
+ChromeでHARファイルを作成する:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. 問題が発生しているURLにアクセスする。まだ事象の再現はしないでください。
 
-2. Open ***Developer Tools***:
+2. ***Developer Tools***を開きます:
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+- メニューから開く: ***メニュー > その他のツール > デベロッパーツール***.
+- ショートカットキーから開く: ***Ctrl+Shift+C***, または ***Ctrl+Alt+I***, あるいは ***⌥+⌘+I for Mac***.
 
-3. Click on the ***Network tab***.
+3. ***ネットワークタブ***をクリックします.
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4. ネットワークタブの左上にある丸いボタンを確認し、赤い録音モードになっていることを確認します。灰色の場合は、クリックして赤に変更して録音を開始します。
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5. ***消去***ボタン(記録ボタンの横に線が引かれた丸いボタン)を使用して、過去のアクティビティをクリアします。
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6. ネットワークタブの ***ログを保持*** のチェックボックスをオンにします。
 
-7. Reproduce the steps that create the issue.
+7. 起きた事象を再現します。
 
-8. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+8. 右クリックして ***コンテンツと一緒にHARとして全て保存*** を選択して、セッションを.harファイルとして保存します。
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+9. 問題の詳しい説明とともに、AdGuardサポート(support@adguard.com)に送信します。スクリーンショットも添付しておくとサポートに役立ちます。
 
 
 ## <a id="edge"></a> Edge
