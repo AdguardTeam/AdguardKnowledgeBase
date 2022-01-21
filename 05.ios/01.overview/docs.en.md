@@ -247,7 +247,7 @@ This option will reset all your settings.
 
 - **Support**
 
-No matter how hard you try, sometimes things go off the rails. Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extention for your own convenience), export logs or to make a feature request.
+Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extention for your own convenience), export logs or to make a feature request.
 
 - **About**
 
