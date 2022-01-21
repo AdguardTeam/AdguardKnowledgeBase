@@ -98,7 +98,7 @@ The first section you'll see on the DNS Protection screen is DNS server. It show
 
 Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap on any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
-In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC (experimental feature) servers.
+In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
 
 <a id="network-settings"></a>
 ### Network settings
@@ -127,7 +127,7 @@ On top of DNS filters, you can have targeted impact on DNS filtering by adding s
 <a id="advanced-protection"></a>
 ## Advanced protection
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads. 
+In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads. 
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 700px; padding: 2px;">
 
