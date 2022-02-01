@@ -70,10 +70,11 @@ This feature has been developed specifically for unsecured networks. For the con
 ## 10. Simultaneous connection allowance
 AdGuard VPN offers five simultaneous connections to its paid users. We place special emphasis on the word ’*simultaneous*’, and here is why. Some VPN providers only allow to log in to their service on *five devices max*. With AdGuard VPN, *there’s no limit* to the number of devices that can be logged in to your account, but you can have five VPN connections enabled at the same time. Those who don’t have a subscription can use AdGuard VPN on *two devices*, which gives us another trump card to play against competitors — most of the VPN services only have *one device* in their free versions.
 
-## 11. Streaming support  
-According to statistics, about 20% of VPN users install it primarily to binge-watch shows, series and films on streaming services. The problem is it’s not easy to outsmart streaming services as they can detect VPNs and block sneaky users access to their platform.
+## 11. Secure streaming 
+Streaming services don't like VPNs for obvious reasons: according to statistics, about 20% of users install a VPN it mainly to watch shows, TV shows and movies bypassing geo-blocking. That's why streaming platforms tend to do everything they can to track VPN traffic and block it.
 
-We strived to implement streaming support so that AdGuard VPN could easily bypass the restrictions, operate seamlessly on all most popular streaming services and stay undetected by them. And it seems like we’ve managed to!
+But what if you want to watch content specific to your region while feeling safe? The answer is simple — AdGuard VPN. We strived to implement streaming support so that AdGuard VPN could operate seamlessly on all most popular streaming services and stay undetected by them. And it seems like we've managed to!
+
 
 | Streaming platform        | Available countries           |
 | ------------- |-------------: |

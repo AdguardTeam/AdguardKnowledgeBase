@@ -17,15 +17,13 @@ To understand how AdGuard VPN works, you should at first understand the general 
 
 ## VPN features
 
-A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to access various Internet resources and protect your personal data.
+A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to securely access various Internet resources and protect your personal data.
 
-In that way, a VPN has 3 main advantages:
+In that way, a VPN has 2 main advantages:
 
 1. *Anonymity*. A VPN hides your real location by replacing the IP address of your device with the IP address of the selected VPN server.
 
-2. *Free browsing*. Some sites are only available from certain countries and regions. By connecting to a VPN server that is located in one of these countries, you will be able to use previously inaccessible resources.
-
-3. *Data protection*. A VPN creates an encrypted tunnel between your device and a remote server through which your web traffic passes. Along the way, all your data will be securely protected.
+2. *Data protection*. A VPN creates an encrypted tunnel between your device and a remote server through which your web traffic passes. Along the way, all your data will be securely protected.
 
 <a name="structure"></a>
 
@@ -63,7 +61,7 @@ AdGuard VPN also has its own [*protocol*](http://kb.adguard.com/en/vpn/adguard-v
 
 ## VPN usage
 
-A VPN performs three important functions:
+A VPN performs two important functions:
 
 1. **Maintaining anonymity**
 
@@ -72,10 +70,6 @@ Using an Internet connection, the user leaves their digital footprint, which can
 2. **Data protection**
 
 If you connect to an unreliable or public network, the data on your device may become vulnerable to cybercriminals. Bank card details, usernames and passwords, passport data — all this data can be intercepted by online fraudsters. The VPN tunnel encrypts the information that you send and receive from the web, so it can not fall into the wrong hands.
-
-3. **Free browsing**
-
-Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
 
 <a name="drawbacks"></a>
 
