@@ -66,7 +66,7 @@ If you have bought a subscription, you can check its status and, if necessary, r
 
 In the free version the extension’s functionality is limited: you can’t use more than 3 GB per month, the connection speed is capped at 20 Mbit/s, and some server locations are unavailable locations.
 
-[The subscription](https://adguard-vpn.com/en/license.html) allows you to use AdGuard VPN without any restrictions, whether it be traffic-, speed-, or location-related. Another advantage is that you can use unlimited AdGuard VPN on up to five devices at the same time, while the free version only allows two. Read about all the advantages of the paid version in [this article](placeholder).
+[The subscription](https://adguard-vpn.com/en/license.html) allows you to use AdGuard VPN without any restrictions, whether it be traffic-, speed-, or location-related. Another advantage is that you can use unlimited AdGuard VPN on up to five devices at the same time, while the free version only allows two. Read about all the advantages of the paid version in [this article](http://kb.adguard.com/en/vpn/adguard-vpn-general/free-and-full-versions).
 
 <a name="support"></a>
 ## Support

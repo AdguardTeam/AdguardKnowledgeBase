@@ -25,7 +25,7 @@ taxonomy:
  
 ## What is AdGuard VPN for Android
  
-A VPN is an ideal tool that provides security and anonymity each time you browse the Internet and helps you overcome geographical limitations. [How does it work?](What is a VPN) Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.   
+A VPN is an ideal tool that provides security and anonymity each time you browse the Internet and helps you overcome geographical limitations. [How does it work?](http://kb.adguard.com/en/vpn/adguard-vpn-general/how-vpn-works) Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.   
  
 **VPN is frequently used for:**
  
@@ -33,7 +33,7 @@ A VPN is an ideal tool that provides security and anonymity each time you browse
 * Preventing tracking online activity by masking the IP address
 * Hiding the real geolocation to gain access to blocked resources
  
-AdGuard VPN for Android can do it all for you — and even offer something unique. To find out why AdGuard VPN is the better option — read [this article](link). 
+AdGuard VPN for Android can do it all for you — and even offer something unique. To find out why AdGuard VPN is the better option — read [this article](http://kb.adguard.com/en/vpn/adguard-vpn-general/adguard-vpn-is-the-better-option). 
  
 <a name="use"></a>
  
@@ -201,7 +201,7 @@ A subscription allows to have more benefits in comparison with a free account:
 * No speed cap 
 * All 50+ locations are available 
  
-You can read more about the differences between the free and the paid versions in [this article](Differences between free and full versions).
+You can read more about the differences between the free and the paid versions in [this article](http://kb.adguard.com/en/vpn/adguard-vpn-general/free-and-full-versions).
  
  
 
