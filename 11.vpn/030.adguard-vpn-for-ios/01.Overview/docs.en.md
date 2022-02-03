@@ -22,12 +22,12 @@ taxonomy:
 
 ## What is AdGuard VPN for iOS
 
-A VPN allows you to create a secure connection to another network on the Internet. It connects a user's computer or mobile device to a server and allows one to browse the net using someone else's IP address. So if the VPN server is located in a different country, it will appear that you have connected to the Internet from that country, hence, plenty of resources will become available to you. [Learn more](http://kb.adguard.com/en/vpn/adguard-vpn-general/how-vpn-works) about how a VPN works in detail.
+A VPN allows you to create a secure connection to another network on the Internet. It connects a user's computer or mobile device to a server and allows one to browse the net using someone else's IP address. So if the VPN server is located in a different country, it will appear that you have connected to the Internet from that country. [Learn more](http://kb.adguard.com/en/vpn/adguard-vpn-general/how-vpn-works) about how a VPN works in detail.
 
 Speaking of AdGuard VPN, it has several functions:
 * hides your real whereabouts and helps you stay anonymous
-* allows to bypass geo-blocking of some websites by hiding your location and changing your IP address
-* encrypts your traffic to protect your data from tracking
+* сhanges your IP address to protect your data from tracking
+* encrypts your traffic to make it unreachable to scammers
 
 The next advantage of AdGuard VPN for iOS is our own VPN protocol. It has two main benefits: comparing to other VPN protocols it is extremely hard to detect and it works stably even with a poor Internet connection. You can read more about AdGuard VPN protocol [in this article](http://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-protocol-works).
 
