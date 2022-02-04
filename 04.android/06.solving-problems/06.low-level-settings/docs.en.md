@@ -109,11 +109,11 @@ If enabled, AdGuard shows information about blocked HTML elements in the filteri
  
 `pref.root.clear.youtube`
 
-If enabled, AdGuard clears YouTube app data on booting. Required for YouTube ad blocking. Root access is required.
+If enabled, AdGuard clears YouTube app data on booting to block YouTube ads. Root access is required.
  
 `pref.root.set.oom_adj`
 
-If enabled, AdGuard sets the minimum oom_score_adj for its own process in order to stay alive all the time. Requires root access.
+If enabled, AdGuard sets the `minimum oom_score_adj` for its own process to stay alive all the time. Requires root access.
  
 `pref.samsungpay.autopause.enable`
 
@@ -121,7 +121,7 @@ If enabled, AdGuard pauses protection when you open the Samsung Pay app. Require
  
 `pref.vpn.android10.mitigate`
 
-If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by Android 10 bug.
+If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by an Android 10 bug.
  
 `pref.vpn.capture`
 
@@ -145,7 +145,7 @@ If enabled, VPN will be configured to bypass all the IPv4 traffic. In this case,
  
 `pref.vpn.ipv4.force.complex`
 
-If enabled, when possible VPN will bypass the LAN. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
+If enabled, VPN will bypass the LAN when possible. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
  
 `pref.vpn.ipv4.force.default`
 

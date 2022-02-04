@@ -55,7 +55,10 @@ visible: true
 
 `upstream.proxy` 
 
-В данной строке можно указать прокси-сервер для исходящих соединений. 
+В данной строке можно указать прокси-сервер для исходящих соединений. Например:
+
+* SOCKS5 proxy требующий проверки подлинности — `socks5://username:password@proxy.example.org:1080`
+* локальный HTTP proxy без аутентификации — `http://localhost:3128`
 
 `upstream.proxy.socks5udp` 
 

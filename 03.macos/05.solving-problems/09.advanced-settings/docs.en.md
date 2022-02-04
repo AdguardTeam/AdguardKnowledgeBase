@@ -54,7 +54,10 @@ By setting `true`, you enable LoopBack filtering.
 
 `upstream.proxy` 
 
-In this string, you can specify a proxy server for upstream connections.
+In this string, you can specify a proxy server for upstream connections. For example: 
+
+* SOCKS5 proxy with authentication — `socks5://username:password@proxy.example.org:1080`
+* Local HTTP proxy without authentication — `http://localhost:3128`
 
 `upstream.proxy.socks5udp` 
 
