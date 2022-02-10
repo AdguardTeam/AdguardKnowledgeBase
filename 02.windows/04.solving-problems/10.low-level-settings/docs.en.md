@@ -32,11 +32,13 @@ Enable this feature to see AdGuard pop-up notifications. They do not appear too 
 
 `Automatically intercept filter subscription URLs`
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. abp:subscribe and alike) and to open a custom filter installation dialog.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
  
 `Use redirect driver mode`
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering. Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
+If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering. 
+
+Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
 
 `Open main window at system start-up`
 
@@ -62,9 +64,9 @@ Some websites and web services still support Java Plug-Ins. The API, which is th
 
 Here you can select the way AdGuard will respond to DNS queries that should be blocked:
 
-Reply with “Refused” error  
-Reply with “NxDomain” error
-Reply with “Custom IP address”
+* Reply with “Refused” error  
+* Reply with “NxDomain” error
+* Reply with “Custom IP address”
 
 `Custom IPv4 address`
 
@@ -78,9 +80,9 @@ If “Custom IP address” is selected as an action applied to blocked DNS reque
 
 Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from: 
 
-Don’t use fallback servers;
-Use system default servers;
-Use custom servers.
+* Don’t use fallback servers;
+* Use system default servers;
+* Use custom servers.
 
 `DNS server timeout period`
 
