@@ -14,7 +14,7 @@ visible: true
 <a name="introduction"></a>
 ## Introduction
 
-This article is about filters that we create to be used in AdGuard and other ad blocking software (e.g. uBlock Origin). Every filter represents a set of rules in text format which are used by AdGuard apps and programs to filter advertising and privacy-threatening content (such as banners, pop-ups, trackers etc.). Rules specific for a particular Internet segment (German filter, Russian filter etc.), or serving a specific purpose (Social media filter, Tracking Protection filter etc.) are combined into one list — filter — and can be enabled/disabled all at once.
+This article is about filters that we create to be used in AdGuard and other ad-blocking software (e.g., uBlock Origin). Every filter represents a set of rules in text format which are used by AdGuard apps and programs to filter advertising and privacy-threatening content (such as banners, pop-ups, trackers, etc.). Rules specific to a particular Internet segment (German filter, Russian filter, etc.), or serving a specific purpose (Social media filter, Tracking Protection filter, etc.) are combined into one list (filter) and can be enabled or disabled all at once.
 
 <a name="policy"></a>
 ## AdGuard Filters Policy
@@ -24,15 +24,15 @@ Our filter policy is available [here](https://kb.adguard.com/general/adguard-fil
 <a name="contribute"></a>
 ## Contributing to AdGuard filters
 
-We are blessed to have a community that does not only love AdGuard, but also gives back. A lot of people volunteer in various ways to make other users' experience with AdGuard better, and you can join them! We, on our part, can only be happy to reward the most active members of the community. So, what can you do?
+We are blessed to have a community that does not only love AdGuard, but also gives back. A lot of people volunteer in various ways to make other users' experiences with AdGuard better, and you can join them! We, for our part, can only be happy to reward the most active members of the community. So, what can you do?
 
 ### Report Issues
 
-We rely on the community to let us know about issues with our filters. This way we can be most efficient with our time and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
+We rely on the community to let us know about issues with our filters. This way, we can be much more efficient with our time and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
 
 ### Suggest Filtering Rules
 
-You will find a lot of open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each references a problem with some website — a missed ad, a false positive etc. — choose any one and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them correct, your rules will be added to AdGuard filters.
+You will find a lot of open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each references a problem with some website—a missed ad, a false positive, etc.—so choose any one and suggest your own rules in the comments. AdGuard filter engineers will review your suggestions, and if they find them correct, your rules will be added to AdGuard filters.
 
 Here is the [official documentation](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) on AdGuard filtering rules syntax. You'll need to read it before you'll be able to create your own filtering rules.
 
