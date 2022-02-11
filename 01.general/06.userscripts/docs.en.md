@@ -23,13 +23,13 @@ visible: true
 
 ## Introduction
 
-First, let's get it clear. What is a userscript? Userscripts (we also call them 'extensions' sometimes) de-facto are mini-programs written in Javascript. They modify or extend functionality of one or more websites. Many AdGuard users must be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+First, let's get it clear. What is a userscript? Userscripts (we also call them "extensions" sometimes) are, de-facto, mini-programs written in Javascript. They modify or extend the functionality of one or more websites. Many AdGuard users must already be familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
 <a name="products"></a>
 
 ### Supported apps
 
-AdGuard can significantly broaden website functionality working as a user script manager. You can add your custom scripts or manage existing ones in our three products: [AdGuard for Windows](https://kb.adguard.com/en/windows/features/extensions), [AdGuard for Android](https://kb.adguard.com/en/android/overview#extensions-support) and [AdGuard for Mac](https://kb.adguard.com/en/macos/overview#extensions).
+Working as a user script manager, AdGuard can significantly broaden website functionality. You can add your custom scripts or manage existing ones in our three products: [AdGuard for Windows](https://kb.adguard.com/en/windows/features/extensions), [AdGuard for Android](https://kb.adguard.com/en/android/overview#extensions-support) and [AdGuard for Mac](https://kb.adguard.com/en/macos/overview#extensions).
 
 <a name="scripts"></a>
 
@@ -37,7 +37,7 @@ AdGuard can significantly broaden website functionality working as a user script
 
 > ### ATTENTION
 >
-> These userscripts come directly from AdGuard developers and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Further are [some examples](#repo) of popular sites with scripts.
+> These userscripts come directly from AdGuard developers, and we can guarantee that they will be effective and safe. Keep in mind that whenever you download a userscript from an unknown source, you expose yourself to a risk. Some scripts can be harmful to your computer. Always get new scripts only from sources you trust 100%. Furthermore, [some examples](#repo) of popular sites with scripts.
 
 * **AdGuard Extra** - An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
@@ -53,7 +53,7 @@ AdGuard can significantly broaden website functionality working as a user script
 
 ## Where can you get more userscripts?
 
-Userscripts are mostly created by enthusiasts, that is why you need to be careful when installing a new one. But nevertheless, there is a great variety of interesting scripts that can really make the use of some websites more convenient.
+Userscripts are mostly created by enthusiasts, which is why you need to be careful when installing a new one. But nevertheless, there is a great variety of interesting scripts that can really make the use of some websites more convenient.
 
 Here we will describe some of the most popular userscript catalogs.
 
@@ -67,7 +67,7 @@ Here we will describe some of the most popular userscript catalogs.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. In contrast to the aforemntioned userstyles.org, scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. In contrast to the aforementioned userstyles.org, scripts in this catalog undergo moderation, so their credibility is much higher.
 
 <a name="openUserJs"></a>
 
