@@ -117,13 +117,13 @@ visible: true
 <a id="introduction"></a>
 ## Introduction
 
-A filter is a set of filtering rules applied to specific content (banners, popups, etc).  AdGuard has a list of standard filters created by our team. Our team constantly improves and updates them, and we hope our filters meet the needs of most of our users.
+A filter is a set of filtering rules applied to specific content (banners, popups, etc.). AdGuard has a list of standard filters created by our team. Our team constantly improves and updates them, and we hope our filters meet the needs of most of our users.
 
-At the same time, AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters.
+At the same time, AdGuard allows you to create your own custom filters using the same types of rules that we have in our filters.
 
-To describe the syntax of our filtering rules we use [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
+To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
 
-> AdGuard syntax is originally based on syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering.  Some parts of this article's content about the rules common to both AdGuard and ABP was taken from [this article](https://adblockplus.org/en/filters).
+> AdGuard syntax is originally based on the syntax of Adblock Plus rules, but it was extended with new types of rules for better ad filtering. Some parts of this article's content about the rules common to both AdGuard and ABP were taken from [this article](https://adblockplus.org/en/filters).
 
 <a id="comments"></a>
 ## Comments
