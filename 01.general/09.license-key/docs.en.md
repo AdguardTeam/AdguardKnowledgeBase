@@ -179,7 +179,7 @@ When you enter the AdGuard [personal account](https://adguard.com/en/login.html)
 This is how you can manage your AdGuard licenses and subscriptions.
 
 #### Renew or upgrade
-You can renew your key for another year, switch to lifetime protection, or upgrading to the family package (thus adding more devices to it).
+You can renew your key for another year, switch to a lifetime protection, or upgrading to the family package (thus adding more devices to it).
 
 
 #### Unbind from the device
