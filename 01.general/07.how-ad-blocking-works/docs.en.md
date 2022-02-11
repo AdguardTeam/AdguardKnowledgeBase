@@ -75,7 +75,7 @@ This method allows you to avoid the whitespace and ad leftovers mentioned above,
 
 ### HTML filtering rules
 
-In most cases, the aforementioned basic and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML code of the page itself before it is loaded. This is when you need filtering rules for HTML content. These rules allow us to indicate the HTML elements to be cut out before the browser even loads the page.
+In most cases, the aforementioned basic and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML code of the page itself before it is loaded. This is when you need filtering rules for HTML content. This rule allows us to indicate the HTML elements to be cut out before the browser even loads the page.
 
 This kind of rule is quite complicated and demands that the ad blocker possess certain rights, so not all platforms support it. Such rules work only in the AdGuard apps for Windows, Mac, and Android, and for the AdGuard Firefox add-on.
 
