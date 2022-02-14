@@ -5,7 +5,8 @@ taxonomy:
         - docs
 ---
 
-* [Features](#features)
+* [Features](#features)![image](https://user-images.githubusercontent.com/8577533/153882183-5847bdc1-59fa-4127-9372-963bbb6d09b5.png)
+
 	* [Content blockers](#content-blockers)
 	* [Filters](#filters)
 	* [User rules](#user-rules)
@@ -40,7 +41,7 @@ Content blockers serve as 'containers' for filtering rules that do the actual jo
 
 All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right > *General* > *Advanced settings* > *Content blockers*).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/сontent_blockers_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/content_blockers_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 > Tip: keep all content blockers enabled for the best filtering quality.
 
