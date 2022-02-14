@@ -40,7 +40,7 @@ taxonomy:
 
 Все блокировщики контента, их статусы, используемые на данный момент фильтры и общее количество правил фильтрации можно найти на соответствующем экране в *Расширенных настройках* (нажмите на иконку шестерёнки в правом нижнем углу > *Общие* > *Расширенные настройки* > *Блокировщики контента*).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/сontent_blockers_ru.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/content_blockers_ru.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 > Подсказка: для наилучшего качества фильтрации рекомендуем держать все блокировщики контента включёнными.
 
