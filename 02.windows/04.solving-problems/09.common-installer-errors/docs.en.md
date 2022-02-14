@@ -54,7 +54,7 @@ You could say this is a particular sub-case of Error 1603. The possible solution
     4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**.
     5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
 
-- Reboot the PC and start the installation all over again. Sometiemes that's enough to fix the problem.
+- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
 
 <a id="error-1602"></a>
 ### Error 1602: Canceled by user

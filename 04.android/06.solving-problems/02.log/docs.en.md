@@ -36,7 +36,7 @@ To export logs and system information into a file, go to "Settings — Advanced"
 
 #### Collecting web requests log
 
-To collect **web requestts** log and send it to us you need to perform following steps:
+To collect **web requests** log and send it to us you need to perform following steps:
 
 1. Open AdGuard and go to "Settings".
 

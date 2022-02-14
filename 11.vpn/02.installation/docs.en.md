@@ -97,7 +97,7 @@ To install AdGuard VPN for Mac beta:
  
 3) The AdGuard VPN installer will do the rest, just click **Continue** and **Install**. Or you can change the install location, if needed.
 
-4) When you see the screen saying 'The installaion was successful', tap **Close**.
+4) When you see the screen saying 'The installation was successful', tap **Close**.
 
 That's it, AdGuard VPN for Mac beta is installed to your device!
 
@@ -112,7 +112,7 @@ To install AdGuard VPN for Windows beta:
 
 2) Open it. The AdGuard VPN installer will do the rest, just click **Install**.
 
-4) When you see the screen saying 'Installaion completed successfully', tap **Finish**.
+4) When you see the screen saying 'Installation completed successfully', tap **Finish**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/installed-vpn-windows.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 

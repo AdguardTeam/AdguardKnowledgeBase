@@ -119,7 +119,7 @@ We don't recommend using *SOCKS5* mode unless you know what you're doing.
 
 Normally, two VPN-based apps can't work simultaneously on Android. But we made it possible for AdGuard VPN and [AdGuard ad blocker](https://adguard.com/en/adguard-android/overview.html). All you have to do is to install both applications on your device, AdGuard will do the rest automatically.
 
-Compatibility mode comes with a few limiations:
+Compatibility mode comes with a few limitations:
 
 * Application tunneling and other app settings are now available only via the AdGuard ad blocker app
 * Switching to a custom DNS server can be performed only via AdGuard ad blocker

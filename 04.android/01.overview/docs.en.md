@@ -156,7 +156,7 @@ There are two methods of DNS blocking:
 
 [How exactly does DNS filtering work](https://kb.adguard.com/en/general/dns-filtering#how-does-dns-filtering-work)? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
 
-The simplicity of this approach is both a benefit and a disavantage. The main advantage of this approach is that it's both battery life friendly and traffic-saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage would be the "roughness" of this method: specific URLs can't be blocked, only whole domains. Sometimes the only way to block ads by DNS is to add a rule that will break something at the same time. In this case, we just don't add this rule and the ad remains unblocked — because the alternative where the website does not work at all is even worse.
+The simplicity of this approach is both a benefit and a disadvantage. The main advantage of this approach is that it's both battery life friendly and traffic-saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage would be the "roughness" of this method: specific URLs can't be blocked, only whole domains. Sometimes the only way to block ads by DNS is to add a rule that will break something at the same time. In this case, we just don't add this rule and the ad remains unblocked — because the alternative where the website does not work at all is even worse.
 
 <a id="dns-servers"></a> 
 ## DNS servers

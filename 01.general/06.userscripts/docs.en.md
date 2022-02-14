@@ -67,7 +67,7 @@ Here we will describe some of the most popular userscript catalogs.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. In contrast to the aforemntioned userstyles.org, scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. In contrast to the aforementioned userstyles.org, scripts in this catalog undergo moderation, so their credibility is much higher.
 
 <a name="openUserJs"></a>
 
