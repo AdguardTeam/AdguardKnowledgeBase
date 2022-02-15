@@ -18,7 +18,7 @@ To mitigate this misconception, we added a new screen called 'Battery usage'. Yo
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/batterystats.png" width="300">
 
-Inside you will find a chart that shows the AdGuard battery resourse consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
 ### Real example
 
@@ -36,7 +36,7 @@ From these screenshots you can see that:
 
 3. On screenshot #3 are stats for one of the real traffic consumers, Yandex.Browser. It was not attributed almost any traffic at all, while in reality 70% of the total traffic was consumed by it.
 
-### How much battery resourse does AdGuard really consume?
+### How much battery resource does AdGuard really consume?
 
 First, let us lay down a little bit of theory and links with necessary data.
 
@@ -52,7 +52,7 @@ _radio.active=_ 100-300mA additional consumption in mAh caused by data exchange 
 
 _cpu.active=_ 100-200mA additional consumption in mAh caused by CPU work.
 
-3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resourse consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
 
 Formulа to calculate the consumption:
 

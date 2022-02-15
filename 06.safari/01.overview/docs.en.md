@@ -58,7 +58,7 @@ In the Filters tab you can enable/disable the whole category, or fine-tune separ
 ## Content Blockers
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 
-A сontent blocker is a thematic cluster of filters. For instance, all filters that come within the topic of privacy will be included in the content blocker with the corresponding name — *AdGuard Privacy*. There were two reasons to make content blockers: it’s much more convenient to manage structured filters and there still exists Apple’s restriction.
+A content blocker is a thematic cluster of filters. For instance, all filters that come within the topic of privacy will be included in the content blocker with the corresponding name — *AdGuard Privacy*. There were two reasons to make content blockers: it’s much more convenient to manage structured filters and there still exists Apple’s restriction.
 
 As you might [remember](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple has put limitations on ad blockers for Safari, particularly it allowed them to use only 50,000 filtering rules simultaneously. Don’t be deceived with this seemingly big number – actually, it’s too small. Luckily, there is a way to bypass this restriction. One ad blocker can be divided into several content blockers each containing up to 50K rules. This measure seems appropriate. 
 

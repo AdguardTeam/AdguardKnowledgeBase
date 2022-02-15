@@ -42,7 +42,7 @@ There are thousands of DNS servers to choose from, and they are all unique in th
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg" style="border: 1px solid #efefef; padding: 2px;" />
 
-Other DNS providers may work differently, so learn more about them before commiting to this or that DNS server. You can find the list of some of the most popular DNS providers in [this article](https://kb.adguard.com/en/general/dns-providers). All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you'd like.
+Other DNS providers may work differently, so learn more about them before committing to this or that DNS server. You can find the list of some of the most popular DNS providers in [this article](https://kb.adguard.com/en/general/dns-providers). All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you'd like.
 
 <a id="dns-blocklists"></a>
 #### Local DNS blocklists
@@ -60,7 +60,7 @@ You can add as many custom blocklists as you wish. For instance, you can use [Ad
 
 Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://kb.adguard.com/en/general/how-ad-blocking-works).
 
-First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differencies between the two. DNS filtering has both its unique advantages and drawbacks:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
 **Pros of DNS filtering:**
 

@@ -15,7 +15,7 @@ To turn Ad Blocker on or off, click on the AdGuard icon in the macOS ribbon and 
 
 ![](Screenshot%202017-02-12%2019.41.01.png)
 
-To change the module settings or turn filters on or off, click on the gear icon in the upper right corner of the AdGuard app and choose Perferences from the menu.
+To change the module settings or turn filters on or off, click on the gear icon in the upper right corner of the AdGuard app and choose Preferences from the menu.
 
 ![](Screenshot%202017-02-12%2019.43.16.png)
 

@@ -38,7 +38,7 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
 
-Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start nanager - AdGuard - uncheck.
+Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start manager - AdGuard - uncheck.
 
 <a id="Xiaomi"></a>
 
@@ -303,7 +303,7 @@ Also, you may not have PowerGenie on your phone, but your apps may still get kil
 - *Phone settings* > *Advanced Settings* > *Battery manager* > *Power plan* set to *Performance*;
 - *Phone Settings* > *Advanced Settings* > *Battery Manager* > *Protected apps* – set your app as *Protected*;
 - *Phone Settings* > *Apps* > *Your app* > *Battery* > *Power-intensive prompt* `[uncheck]` and *Keep running after screen off* `[check]`;
-- *Phone settings* > *Apps* > *Advanced (At the bottom)* > *Ignore optimisations* > Press Allowed > *All apps* > Find your app on the list and set to *Allow*.
+- *Phone settings* > *Apps* > *Advanced (At the bottom)* > *Ignore optimizations* > Press Allowed > *All apps* > Find your app on the list and set to *Allow*.
 
 #### Huawei P9 Plus:
 
@@ -395,7 +395,7 @@ Other solutions:
 
  ## Oneplus
 
-Devices with OxygenOS on board are the most problematic, with its OS-sepcific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
+Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps: 
  
  - Go to Settings
  
@@ -415,13 +415,13 @@ Devices with OxygenOS on board are the most problematic, with its OS-sepcific ca
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png" width="300">
 
-> On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimisation which essentially prevents apps from working in the background. Please disable it for your app.
+> On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for your app.
 
 And here is one more thing to try:
  
  - Open device settings > *Battery* > *Battery optimization* > switch to the *All apps* list (top menu) > choose your app > activate *Don’t optimize*
  
- - Open device settings > *Battery* > *Battery Optimisation* > three dots > *Advanced Optimisation* > Disable Deep Optimisation
+ - Open device settings > *Battery* > *Battery Optimization* > three dots > *Advanced Optimization* > Disable Deep Optimization
 
 <a id="Sony"></a>
 
@@ -431,7 +431,7 @@ Sony was the first mobile OS developer to introduce non-standard background proc
 
 **Solution:**
 
-Go to Settings - Battery - Three dots in the top right corner - Battery optimisation - Apps - **AdGuard** - uncheck
+Go to Settings - Battery - Three dots in the top right corner - Battery optimization - Apps - **AdGuard** - uncheck
 
 <a id="Wiko"></a>
 

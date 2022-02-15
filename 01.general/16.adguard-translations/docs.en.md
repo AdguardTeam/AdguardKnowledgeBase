@@ -19,7 +19,7 @@ visible: true
 
 When it comes to translations, we at AdGuard always heavily rely on volunteers.
 
-Now we use [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place to go for all the people who want to contibute to AdGuard by translating any product(s) they are interested in.
+Now we use [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place to go for all the people who want to contribute to AdGuard by translating any product(s) they are interested in.
 
 If you want to be among volunteers who help us translate AdGuard, please read the following information to learn more about how to become our translator, as well as about the way we collaborate with them.
 
@@ -113,7 +113,7 @@ There's also a **Discussions** tab on the main Project page that conveniently al
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/discussions.png) 
 
 
-5. Crowdin provides a very usefil and convenient tool called _Translation Memory_. With its help you can find the previously made translations of the same words and phrases and reuse them in your translations.
+5. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
 

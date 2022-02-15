@@ -11,6 +11,6 @@ Many websites gather information about their visitors, such as their IP addresse
 ![](Screenshot%202017-02-12%2019.41.01.png)
 
 
-There is an alternative method of enabling and disabling the module. Click on the gear icon in the upper right corner of the AdGuard app and choose Perferences from the menu. Click on the Filters icon in the upper section of the AdGuard Settings window and check or uncheck the “Spyware filter” box.
+There is an alternative method of enabling and disabling the module. Click on the gear icon in the upper right corner of the AdGuard app and choose Preferences from the menu. Click on the Filters icon in the upper section of the AdGuard Settings window and check or uncheck the “Spyware filter” box.
 
 ![](Screenshot%202017-02-12%2020.11.49.png)

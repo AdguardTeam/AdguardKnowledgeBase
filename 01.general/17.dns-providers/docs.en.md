@@ -753,7 +753,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phising domains!. No Logging, No ECS, DNSSEC Validation, Free!
+[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No Logging, No ECS, DNSSEC Validation, Free!
 
 #### Singapore DNS Server
 
@@ -1171,7 +1171,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Default
 
-These servers provide DNS resoultion without traffic filtering.
+These servers provide DNS resolution without traffic filtering.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

@@ -84,7 +84,7 @@ AdGuard apk 다운로드를 시작하면 권한을 허용하라는 메시지가 
 **AdGuard** 앱 설치가 완료되었습니다.
 
 <a name="uninstall"></a>
-## </a>Аdguard AdGuard 제거 및 재설치
+## </a>AdGuard 제거 및 재설치
 
 휴대폰에 AdGuard를 다시 설치해야 하는 경우, 먼저 앱을 삭제해 주세요. **설정**으로 이동하여 설치된 앱 (Android 6)/  앱 (Android 5 및 7) / 앱 및 알림 (Android 8 이상)을 선택합니다. 설치된 앱 목록에서 **AdGuard**를 찾아 **삭제**를 누릅니다.
 

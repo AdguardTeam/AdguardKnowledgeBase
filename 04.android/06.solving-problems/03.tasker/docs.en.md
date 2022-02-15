@@ -71,7 +71,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 `proxy_state` – enables/disables the outbound proxy.  Requires an extra flag:
 
-`enable:true` or `enable:false` — activates or disactivates the outbound proxy, accordingly.
+`enable:true` or `enable:false` — activates or deactivates the outbound proxy, accordingly.
 
 -----
 

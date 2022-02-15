@@ -39,7 +39,7 @@ To purchase AdGuard license key click [here](https://adguard.com/license.html).
 * [How to activate AdGuard for Mac](#activation_mac)
 * [How to activate AdGuard for Android](#activation_android)
 * [How to activate AdGuard for iOS](#activation_iOS) 
-* [Transfering license to another device](#activation_info)
+* [Transferring license to another device](#activation_info)
 
 
 <a id="activation_windows"></a>
@@ -144,7 +144,7 @@ In the small window you will see 3 functions:
 
 
 <a id="activation_info"></a>
-#### Transfering license to another device
+#### Transferring license to another device
 
 Once the program is activated with a license key, the license key is “bound” to the device on which activation was held. License key may be activated on a limited number of devices. If the license key is already used on the maximum possible number of devices, you need to reset it before using this key again. You can do it in your [AdGuard Account](#account-functions).
 

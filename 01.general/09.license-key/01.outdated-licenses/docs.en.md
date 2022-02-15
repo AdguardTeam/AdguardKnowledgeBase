@@ -48,13 +48,13 @@ Standard were automatically made universal, which means that they can be activat
 
 Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on dektop + mobile set of devices.
+Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
 
 For example, this is how the 1+1 key looks like:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-*But despite the total number of devices (2) it can be activatd on 1 desktop and 1 mobile device.*
+*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
 
 
 
@@ -94,7 +94,7 @@ Or instead of renewal you can switch to Lifetime:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
->The current AdGuard Personal plan includes 3 devices, so logically the only available conversion option is the one that covers more devoces, which is Family license.
+>The current AdGuard Personal plan includes 3 devices, so logically the only available conversion option is the one that covers more devices, which is Family license.
 
 **Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
 
@@ -102,5 +102,5 @@ Or instead of renewal you can switch to Lifetime:
 
 <a name="9-and-more"></a>
 ### Licenses for 9+ devices
-Premium keys (5+5 onwards) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
 These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
