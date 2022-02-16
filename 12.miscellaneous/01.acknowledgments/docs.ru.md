@@ -223,9 +223,9 @@ visible: true
 * clarke – бета-тестер, активный участник форума AdGuard 
 * D1MSON – бета-тестер, активный участник форума AdGuard 
 * [dartrax](https://github.com/dartrax) – бета-тестер, активный участник форума AdGuard 
-* dja2k – бета-тестер, активный учаcтник форума AdGuard 
-* Domovou – бета-тестер, активный учаcтник форума AdGuard 
-* dr_max – бета-тестер, активный учаcтник форума AdGuard 
+* dja2k – бета-тестер, активный участник форума AdGuard 
+* Domovou – бета-тестер, активный участник форума AdGuard 
+* dr_max – бета-тестер, активный участник форума AdGuard 
 * Eduardo Addad de Oliveira (eduardoaddad) – переводчик и редактор португальского и португальского бразильского языков в Crowdin
 * Fantom – бета-тестер, активный участник форума AdGuard 
 * fabjazz – бета-тестер, активный участник форума AdGuard 
