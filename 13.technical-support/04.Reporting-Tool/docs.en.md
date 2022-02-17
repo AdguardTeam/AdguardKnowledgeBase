@@ -28,7 +28,7 @@ You can help us by filling in an application form with examples of ads you faced
 
 ## Report a website
 
-> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
+> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
