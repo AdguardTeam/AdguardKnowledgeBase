@@ -94,7 +94,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 `List of custom bootstrap addresses`
 
-A bootstrap is an intermediate server used to get the IP address of the secure DNS server you chose earlier in `DNS-protection`. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand. 
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in `DNS-protection`. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand. 
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used. 
 
