@@ -92,6 +92,10 @@ In this block, you can specify the time in milliseconds that AdGuard will wait f
 
 If you want AdGuard to use custom fallback servers, list them in this section, one per line.  
 
+`List of custom bootstrap addresses`
+
+If you don't want to use the system DNS resolver as a bootstrap, enter here IP addresses of the DNS servers that are used to determine the address of the encrypted DNS servers. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used. 
+
 `DNS exclusions` 
 
 All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests. 
