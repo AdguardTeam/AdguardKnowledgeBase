@@ -1355,7 +1355,7 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 > **Application area.** Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Note that CSS rules are supported by AdGuard for iOS since iOS 15.
 
 #### Syntax
 
@@ -1905,7 +1905,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
-> **Compatibility with different versions of AdGuard.** Javascript rules aren't supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Javascript rules are supported by AdGuard for iOS since iOS 15.
 
 We **strongly recommend** using scriptlets instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
