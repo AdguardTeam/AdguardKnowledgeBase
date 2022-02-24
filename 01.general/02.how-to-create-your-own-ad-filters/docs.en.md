@@ -1305,7 +1305,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Restrictions.** Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
-> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard Content Blocker.
 
 > Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
@@ -1355,7 +1355,7 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 > **Application area.** Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard Content Blocker.
 
 #### Syntax
 
@@ -1905,7 +1905,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
-> **Compatibility with different versions of AdGuard.** Javascript rules aren't supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Javascript rules are not supported by AdGuard Content Blocker.
 
 We **strongly recommend** using scriptlets instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
@@ -1954,7 +1954,7 @@ Scriptlet is a JavaScript function that provides extended capabilities for conte
 
 > AdGuard supports a lot of different scriptlets. Please note that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
-> **Compatibility with different versions of AdGuard.** Scriptlet rules aren't supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Scriptlet rules are not supported by AdGuard Content Blocker.
 
 <a id="scriptlets-syntax"></a>
 ### Syntax
