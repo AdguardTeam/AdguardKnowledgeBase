@@ -37,7 +37,7 @@ AdGuard VPN for Android can do it all for you — and even offer something uniqu
  
 <a name="use"></a>
  
-## How to use AdGuard VPN for Android
+## How to start using AdGuard VPN for Android
  
 AdGuard VPN for Android is a pretty user-friendly app easy to use. Firstly, download it from [Google Play](https://play.google.com/store/apps/details?id=com.adguard.vpn) and log into your AdGuard account. In case you don’t have it — you should [create it](https://auth.adguard.com/login.html). You can sign in directly with your AdGuard account credentials. Or do it via Google or Facebook, if your AdGuard account was registered using the same email address.
  
