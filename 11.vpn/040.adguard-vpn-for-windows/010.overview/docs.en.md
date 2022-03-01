@@ -22,7 +22,7 @@ AdGuard VPN for Windows overview
 
 ## What is AdGuard VPN for Windows
 
-A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you try to access a website, the DNS server of your ISP (Internet Service Provider) receives the request and redirects you to your destination. But when you use a VPN, it redirects your traffic through an encrypted tunnel to the VPN server, before sending it over to your destination.   
+A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you try to access a website, the VPN server of your ISP (Internet Service Provider) receives the request and redirects you to your destination. But when you use a VPN, it redirects your traffic through an encrypted tunnel to the VPN server, before sending it over to your destination.   
 
 **What does AdGuard VPN for Windows do**
 
@@ -90,7 +90,7 @@ The fourth tab of app's tab bar contains sections that will help you customize t
 
 The **General** section contains many useful features. Here you can set the app language and also enable **Kill Switch**, which will block access to the Internet if your VPN connection fails. This is needed to prevent intruders from getting to your data if you find yourself without VPN protection while connected to a public Wi-Fi or mobile network.
 
-You can also activate the following features with a single click: **Autoupdate**, **Launch AdGuard VPN at Windows startup**, **Auto-connect on app launch**, and allow AdGuard to collect anonymized app usage data so that we can make it better. Here you can also change the default **Light Theme** to a **Black Theme**. 
+You can also activate the following features with a single click: **Autoupdate**, **Launch AdGuard VPN at Windows startup**, **Auto-connect on app launch**, and allow AdGuard to collect anonymized app usage data so that we can make it better. Here you can also change the default **Light Theme** to a **Dark Theme**. 
 
 > If our support team asks you to send logs, find the **Actions** block in the upper right corner of the screen and click the **Export Logs** button. 
 
@@ -106,15 +106,15 @@ You can set up a DNS server by any provider. We recommend adding [AdGuard DNS](h
 
 #### Advanced Settings
 
-This section contains settings that not every user will understand. However, you may need them and it is better to know them in advance.
+It is entirely possible to use AdGuard VPN for Windows without ever touching the Advanced settings, but they can be useful if you're willing to take time to learn what they do.
 
 **Operating Mode**
 
-Despite the fact that there are two operating modes — VPN and SOKCS5 — we advise you to use only the one chosen by default (VPN). When the **VPN-mode** is enabled, all the traffic of your device will be directed via AdGuard VPN, while in **SOKCS5 mode** AdGuard VPN uses a local proxy server which can be used by other applications to redirect their traffic.    
+Despite the fact that there are two operating modes — VPN and SOCKS5 — we advise you to use only the one chosen by default (VPN). When the **VPN mode** is enabled, all the traffic of your device will be directed via AdGuard VPN, while in **SOCKS5 mode** AdGuard VPN uses a local proxy server which can be used by other applications to redirect their traffic.    
 
 **Logging level**
 
-Two levels of logging are available to choose from: **Record by default** and **Record everything**. Use the first option when the application is running without errors. The **Record everything** option should only be activated after consulting with the support team when the program doesn’t work correctly. 
+Two levels of logging are available to choose from: **Record by default** and **Record everything**. Use the first option when the application is running without errors. The **Record everything** option should only be activated if our support team has asked you to do so. 
 
 All logs are stored locally on your device and you can send them to the support team if needed.
 
@@ -143,7 +143,7 @@ Here you will find information about your license status, as well as a link to y
 
 ## Support
 
-In this tab we've collected a lot of useful links: to a page with answers to frequently asked questions, to the application feedback form, to resources where you can discuss AdGuard VPN, and to our **Knowledge Base**.
+In this tab we've collected a lot of useful links: FAQ page, application feedback form, social media pages, and **Knowledge Base**.
 
 By clicking the **Report a bug** button you will open a dialog box with a field to describe the problem. If anything goes wrong while using AdGuard VPN for Windows, please, tell us about it. 
 
