@@ -348,8 +348,9 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 1) The request has `document` type
 2) The rule's pattern doesn't match any particular domain(s)
 3) The rule's pattern doesn't contain regular expressions
+4) The $domain modifier contains only excluded domains (e.g., `$domain=~example.org|~example.com`)
 
-When all these conditions are met, the `domain` modifier will match both the referrer domain **and** the target domain.
+To perform a target domain matching the following predicate for the conditions should be satisfied: `1 AND ((2 AND 3) OR 4)`. That is, in case the `$domain` modifier contains only excluded domains, the rule doesn't need to meet 2nd and 3rd conditions to match a target domain against the `$domain` modifier.
 
 If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
 
