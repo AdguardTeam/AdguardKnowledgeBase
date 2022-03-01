@@ -22,7 +22,7 @@ AdGuard VPN for Windows overview
 
 ## What is AdGuard VPN for Windows
 
-A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you try to access a website, the VPN server of your ISP (Internet Service Provider) receives the request and redirects you to your destination. But when you use a VPN, it redirects your traffic through an encrypted tunnel to the VPN server, before sending it over to your destination.   
+A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you visit a website without using a VPN, your ISP sees it. It knows who you are and what you're looking for, and it can collect and sell this data. In it's turn, the website you came to can also track your activity. When you enable a VPN application, it redirects your traffic through an encrypted tunnel to a remote VPN server, ensuring your privacy: the ISP doesn't know where you sent a request, and the site doesn't know where you came from. 
 
 **What does AdGuard VPN for Windows do**
 
