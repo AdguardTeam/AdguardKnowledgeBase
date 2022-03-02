@@ -22,7 +22,7 @@ AdGuard VPN for Windows overview
 
 ## What is AdGuard VPN for Windows
 
-A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you visit a website without using a VPN, your ISP sees it. It knows who you are and what you're looking for, and it can collect and sell this data. In it's turn, the website you came to can also track your activity. When you enable a VPN application, it redirects your traffic through an encrypted tunnel to a remote VPN server, ensuring your privacy: the ISP doesn't know where you sent a request, and the site doesn't know where you came from. 
+A VPN, that stands for "virtual private network", is a service that makes your internet connection safe and helps you stay anonymous online. How does it work? Every time you visit a website without using a VPN, your ISP sees it. It knows who you are and what you're looking for, and it can collect and sell this data. In it's turn, the website you came to can also track your activity. When you enable a VPN application, it redirects your traffic through an encrypted tunnel to a remote VPN server, ensuring your privacy: the ISP doesn't know where to you sent a request, and the site doesn't know where you came from. 
 
 **What does AdGuard VPN for Windows do**
 
@@ -64,7 +64,7 @@ There are two options for creating exclusions lists: **Manually** and **From the
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/for_windows/exclusions_from_list_en.png" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
 
-> When adding domains manually, you should take into account some nuances. For example, if you manually exclude the domain `google.com`, all the subdomains `*.google.com` will also be added to the exclusions list. However, domain names with other top-level domains such as `google.ru' or `google.it' will not be excluded. Or you can add `youtube.com` to the exclusions, but the domain of the same service `youtu.be` will not be included in the list. 
+> When adding domains manually, you should take into account some nuances. For example, if you manually exclude the domain `google.com`, all the subdomains `*.google.com` will also be added to the exclusions list. However, domain names with other top-level domains such as `google.es` or `google.it` will not be excluded. Or you can add `youtube.com` to the exclusions, but the domain of the same service `youtu.be` will not be included in the list. 
 
 That being said, we recommend to use the option **From the list**, since in each of the eight thematic groups we have placed the most popular services, including all domain names and subdomains related to each platform. 
 
@@ -100,7 +100,7 @@ At the bottom of the page there are two sections: **DNS servers** and **Advanced
 
 #### DNS servers
 
-The DNS servers tab allows you to add your own custom DNS server. Why should you do this? For example, so you don't have to rely on the DNS server that AdGuard VPN for Windows uses by default and keep everything under control. 
+The **DNS servers** tab allows you to add your own custom DNS server. Why should you do this? For example, not to rely on the default DNS server, which is often controlled by your ISP. 
 
 You can set up a DNS server by any provider. We recommend adding [AdGuard DNS](https://kb.adguard.com/en/general/dns-providers#adguard-dns), a server that can protect against advertising, tracking and phishing in addition to the standard functions. 
 
@@ -114,7 +114,7 @@ Despite the fact that there are two operating modes — VPN and SOCKS5 — we ad
 
 **Logging level**
 
-Two levels of logging are available to choose from: **Record by default** and **Record everything**. Use the first option when the application is running without errors. The **Record everything** option should only be activated if our support team has asked you to do so. 
+Two levels of logging are available to choose from: **Record by default** and **Record everything**. The first option is enabled by default. The **Record everything** option should only be activated if our support team has asked you to do so. Using the app in this mode for an extended period of time result in increased battery consumption.
 
 All logs are stored locally on your device and you can send them to the support team if needed.
 
