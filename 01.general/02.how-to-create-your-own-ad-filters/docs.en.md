@@ -350,7 +350,7 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 3) The rule's pattern doesn't contain regular expressions
 4) The $domain modifier contains only excluded domains (e.g., `$domain=~example.org|~example.com`)
 
-To perform a target domain matching the following predicate for the conditions should be satisfied: `1 AND ((2 AND 3) OR 4)`. That is, in case the `$domain` modifier contains only excluded domains, the rule doesn't need to meet 2nd and 3rd conditions to match a target domain against the `$domain` modifier.
+The following predicate should be satisfied to perform a target domain matching: `1 AND ((2 AND 3) OR 4)`. That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
 
 If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
 
