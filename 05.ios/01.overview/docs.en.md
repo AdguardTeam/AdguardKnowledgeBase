@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-* [Features](#features)![image](https://user-images.githubusercontent.com/8577533/153882183-5847bdc1-59fa-4127-9372-963bbb6d09b5.png)
+* [Features](#features)
 
 	* [Content blockers](#content-blockers)
 	* [Filters](#filters)
@@ -104,7 +104,7 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 <a id="network-settings"></a>
 ### Network settings
 
-<img src="hhttps://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
 
