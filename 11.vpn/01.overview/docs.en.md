@@ -34,13 +34,13 @@ No logs policy means that we don’t collect, store or transfer users’ persona
 * Tracking protection
 Web traffic from any user may be of interest and is particularly valuable in terms of monetization of personal data. Both criminals and unscrupulous ISPs can access it. However, with a trustworthy VPN, you can be confident that neither your provider nor anyone else will see your internet activity.
 
-* Ultrafast VPN servers in 40 countries
+* Ultrafast VPN servers in 39 countries
 
 	- Australia
 	- Austria
 	- Belgium
 	- Brazil
-	- Bulgarid
+	- Bulgaria
 	- Canada
 	- China
 	- Czech Republic
@@ -50,14 +50,13 @@ Web traffic from any user may be of interest and is particularly valuable in ter
 	- France
 	- Germany
 	- Great Britain
-	- Hing Kong
+	- Hong Kong
 	- India
 	- Ireland
 	- Israel
 	- Italy
 	- Japan
 	- Luxembourg
-	- Netherlands
 	- Norway
 	- Philippined
 	- Poland
