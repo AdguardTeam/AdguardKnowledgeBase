@@ -43,7 +43,7 @@ AdGuard VPN для Chrome успешно установлен!
 
 1) Откройте Firefox и перейдите по [этой ссылке](https://agrd.io/vpn_firefox_extension_beta).
 
-2) В открывшемся всплывающем окошке сликните по кнопке **Добавить**.
+2) В открывшемся всплывающем окошке кликните по кнопке **Добавить**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/ext_addfirefox_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 400px;" />
 

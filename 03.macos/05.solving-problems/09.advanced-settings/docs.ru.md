@@ -102,7 +102,7 @@ visible: true
 
 `dns.proxy.blocking.response.IPv6.address`
 
-Здесь вы можете указать IPv6-адрес, который будет возвращаться в ответ на заблокированные "AААА" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
+Здесь вы можете указать IPv6-адрес, который будет возвращаться в ответ на заблокированные "AAAA" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
 
 `dns.proxy.block.AAAA.requests`
 

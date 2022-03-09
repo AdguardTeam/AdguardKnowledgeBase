@@ -674,7 +674,7 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-HTTPS | Хост: `https://doh.in.ahadns.net/dns-query` | <a href="sdns://AgAAAAAAAAAAAAARZG9oLmluLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ">Добавить в AdGuard</a> |
 | DNS-over-TLS   | Хост: `tls://dot.in.ahadns.net` | <a href="sdns://AwAAAAAAAAAAAAARZG90LmluLmFoYWRucy5uZXQ">Добавить в AdGuard</a> |
 
-#### Лос-Анжелес, США
+#### Лос-Анджелес, США
 
 | Протокол       | Адрес                             |                |
 |----------------|-------------------------------------|----------------|
@@ -786,7 +786,7 @@ DNS-серверы с минимальным/ограниченным логир
 | DNS-over-HTTPS | Хост: `https://freedns.controld.com/p2`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA">Добавить в AdGuard</a> |
 | DNS-over-TLS   | Хост: `tls://p2.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Добавить в AdGuard</a> |
 
-##### Блокирует вредоносные сайты + рекламу + соцмедиа
+##### Блокирует вредоносные сайты + рекламу + социальные медиа
 
 | Протокол       | Адрес                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -798,7 +798,7 @@ DNS-серверы с минимальным/ограниченным логир
 
 ### Mullvad
 
-[Mullvad](https://mullvad.net/ru/help/dns-over-https-and-dns-over-tls/) предоставляет публично доступный DNS-сервис с минимизацией QNAME, с эндпоинтами в Австралии, Германии, Сингапуре, Швеции, Соединённом Королевстве и США (Нью-Йорк и Лос-Анджелес).
+[Mullvad](https://mullvad.net/ru/help/dns-over-https-and-dns-over-tls/) предоставляет публично доступный DNS-сервис с минимизацией QNAME, с эндпойнтами в Австралии, Германии, Сингапуре, Швеции, Соединённом Королевстве и США (Нью-Йорк и Лос-Анджелес).
 
 #### Нефильтрующий
 

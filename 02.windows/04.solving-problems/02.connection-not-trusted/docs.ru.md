@@ -18,7 +18,7 @@ visible: true
 
 2) Перейдите на страницу [http://local.adguard.org/cert](http://local.adguard.org/cert) и кликните по кнопке *Скачать*. Браузер начнёт загрузку файла **cert.cer**.
 
->Также вы можете перейти на страницу скачаивания сертификата напрямую из раздела приложения *Настройки - Сеть - Фильтрация HTTPS*.
+>Также вы можете перейти на страницу скачивания сертификата напрямую из раздела приложения *Настройки - Сеть - Фильтрация HTTPS*.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/ru/certificate/cert_win_ru.png" style="border: 1px solid #efefef; padding: 2px; max-width: 500px;" />
 
