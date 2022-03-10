@@ -68,7 +68,7 @@ When the browser addresses a page, the server assigns it an ETag, which the brow
 
 **Block WebRTC**
 
-WebRTC (Real Time Communications) is a technology allows the streaming of data directly between browsers and apps. It can let others know your real IP address, even if you use a proxy or VPN.
+WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN.
 Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
 
 **Block Push API**
