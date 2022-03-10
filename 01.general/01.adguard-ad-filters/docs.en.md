@@ -24,7 +24,7 @@ Our filter policy is available [here](https://kb.adguard.com/general/adguard-fil
 <a name="contribute"></a>
 ## Contributing to AdGuard filters
 
-We are blessed to have a community that does not only love AdGuard, but also gives back. A lot of people volunteer in various ways to make other users' experiences with AdGuard better, and you can join them! We, for our part, can only be happy to reward the most active members of the community. So, what can you do?
+We are blessed with a unique community that not only loves AdGuard but also gives back. Many people volunteer in various ways to make AdGuard's user experience better for everybody. You are welcome to join the band and make a difference. We will do our part and happily reward the most active community. So, what can you do?
 
 ### Report Issues
 
