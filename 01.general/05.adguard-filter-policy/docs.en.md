@@ -14,7 +14,7 @@ When discussing AdGuard ad filters, there is often one topic that causes dispute
 
 Throughout this text, we use the terms **first party** and **third party**.
 
-A "first party" is a website that a user is intentionally and knowingly visiting and the set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` are all the same party since `site.example` is their shared registrable domain.
+A "first party" is a website that a user visits intentionally and knowingly and a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
 
 A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
 
