@@ -28,7 +28,7 @@ We are blessed with a unique community that not only loves AdGuard but also give
 
 ### Report Issues
 
-We rely on the community to let us know about issues with our filters. This way, we can be much more efficient with our time and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
+We rely on the community to let us know about issues with our filters. It helps us use our time more efficiently and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
 
 ### Suggest Filtering Rules
 
