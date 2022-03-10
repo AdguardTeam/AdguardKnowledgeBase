@@ -34,7 +34,7 @@ This part describes the AdGuard Base filter, the Mobile Ads filter and the follo
 
 - These filters will block ads wherever possible. 
 - Ads should be blocked regardless of their reasons and goals.
-- We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on condition that you specify how to install this app or extension.
+- We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install this app or extension.
 
 ##### Limitations and Exceptions
 
