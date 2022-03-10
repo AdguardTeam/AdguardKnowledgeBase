@@ -81,7 +81,7 @@ Enabling this option will prevent the browser from sending GPS data that could b
 
 **Block Flash**
 
-The Flash Player plugin has become increasingly vulnerable to online threats like viruses and hackers and can also have a significant negative impact on the loading times of websites. When this setting is on, AdGuard blocks browsers' ability to detect components (like plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly affect website loading time. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
 
 **Block Java**
 
