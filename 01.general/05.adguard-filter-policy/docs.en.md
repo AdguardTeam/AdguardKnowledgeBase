@@ -23,7 +23,7 @@ A "third party" is any party that does not fall within the definition of the fir
 These equally apply to rules in all filters.
 
 - Rules that often cause problems with the work of some websites will be deleted.
-- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example, social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
 
 ## Ad filters
