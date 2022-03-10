@@ -77,7 +77,7 @@ The Push API enables servers to send messages to web applications regardless of 
 
 **Block Location API**
 
-Enabling this option will prevent the browser from sending GPS data that could be used to find your location, modify your search results, or otherwise influence your web experience.
+Enabling this option will prevent the browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
 
 **Block Flash**
 
