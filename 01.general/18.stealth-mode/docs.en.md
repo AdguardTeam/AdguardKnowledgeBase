@@ -73,7 +73,7 @@ Enabling this option can disrupt the work of certain browser applications, such 
 
 **Block Push API**
 
-The Push API enables servers to send messages to web applications regardless of browser status. This means you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
+The Push API enables servers to send messages to web applications regardless of the activity status of your browser. Thus, you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
 
 **Block Location API**
 
