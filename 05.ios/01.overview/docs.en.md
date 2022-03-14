@@ -6,6 +6,7 @@ taxonomy:
 ---
 
 * [Features](#features)
+
 	* [Content blockers](#content-blockers)
 	* [Filters](#filters)
 	* [User rules](#user-rules)
@@ -40,7 +41,7 @@ Content blockers serve as 'containers' for filtering rules that do the actual jo
 
 All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right > *General* > *Advanced settings* > *Content blockers*).
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/сontent_blockers_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/content_blockers_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 > Tip: keep all content blockers enabled for the best filtering quality.
 
@@ -103,7 +104,7 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 <a id="network-settings"></a>
 ### Network settings
 
-<img src="hhttps://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
 Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
 
@@ -167,7 +168,7 @@ Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests t
 
 > AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
 
-Tap on any request to view more details. There will also be buttons to add the request to Bloclist/Allowlist in one tap.
+Tap on any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/iOS/features/request_info_en.jpeg" style="border: 1px solid #efefef; max-height: 700px; max-width: 400px; padding: 2px;">
 
@@ -247,7 +248,7 @@ This option will reset all your settings.
 
 - **Support**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extention for your own convenience), export logs or to make a feature request.
+Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
 
 - **About**
 

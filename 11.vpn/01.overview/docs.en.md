@@ -34,27 +34,52 @@ No logs policy means that we don’t collect, store or transfer users’ persona
 * Tracking protection
 Web traffic from any user may be of interest and is particularly valuable in terms of monetization of personal data. Both criminals and unscrupulous ISPs can access it. However, with a trustworthy VPN, you can be confident that neither your provider nor anyone else will see your internet activity.
 
-* Ultrafast VPN servers in 16 countries
+* Ultrafast VPN servers in 39 countries
+
 	- Australia
+	- Austria
+	- Belgium
 	- Brazil
+	- Bulgaria
 	- Canada
 	- China
+	- Czech Republic
+	- Denmark
+	- Egypt
+	- Finland
 	- France
 	- Germany
 	- Great Britain
+	- Hong Kong
 	- India
+	- Ireland
+	- Israel
 	- Italy
 	- Japan
+	- Luxembourg
+	- Norway
+	- Philippined
+	- Poland
+	- Romania
+	- Serbia
 	- Singapore
+	- South Africa
+	- South Korea
 	- Spain
+	- Sweden
+	- Switzerland
+	- Taiwan
 	- The Netherlands
 	- Turkey
+	- UAE
 	- USA
 	- Ukraine
+	- Vietnam
 
 ## Which platforms can I run AdGuard VPN on?
-AdGuard VPN is now available:
-- as a browser extension [for Chrome](https://agrd.io/vpn_chrome_extension) and [Firefox](https://agrd.io/vpn_firefox_extension)
-- and as a mobile app for [Android](https://agrd.io/vpn_android_beta).
 
-The app for iOS and desktop versions for Windows and Mac are coming soon!
+AdGuard VPN is now available:
+
+- as a [browser extension](https://adguard-vpn.com/browser-extension/overview.html) for Chrome, Firefox, and Edge;
+- as a standalone app for [Windows](https://adguard-vpn.com/windows/overview.html) and [macOS](https://adguard-vpn.com/mac/overview.html);
+- and as a mobile app for [Android](https://adguard-vpn.com/android/overview.html) and [iOS](https://adguard-vpn.com/ios/overview.html).

@@ -115,6 +115,7 @@ There's also a **Discussions** tab on the main project page that conveniently al
 
 5. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
+
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
 
 

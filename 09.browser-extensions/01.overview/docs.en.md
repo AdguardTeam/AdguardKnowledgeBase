@@ -125,7 +125,7 @@ The *Miscellaneous* settings section contains a range of various settings that a
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/stealth_mode_misc.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-From this settings tab you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, see the most recent *Сhangelog*, and reset blocked ads statistics by clicking the **Reset statistics** button.
+From this settings tab you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, see the most recent *Changelog*, and reset blocked ads statistics by clicking the **Reset statistics** button.
 
 Besides, you can opt to help us in the development of filters by sending some anonymized information. Naturally, all data is sent strictly anonymously, and it is crucial for us to obtain statistics on rules — which ones are triggered, on which websites and how often — because we use this data to optimize our filters. By agreeing to share this data, you will help us improve filtering, and eventually you will also help yourself, because the filters in the extension will become better. But don't worry, no data will be sent without your consent, this option is disabled by default.
     
@@ -156,7 +156,7 @@ By clicking the icons in the top right corner of the screen you can open extensi
 
 The main advantage of AdGuard standalone programs over browser extensions is that they can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 
-The second significant difference is that the possibilities of extension-based ad blockers are strictly limited by what browsers allow and don't allow them to do. They are also intrinsically less powerful as they, for example, don't support some types of filtering rules that are available to standalone apps. Some browsers have policies that restriсt ad blocking, and AdGuard for Windows or Mac couldn't care less about that. The apps are not limited by anything — when you choose the app, you choose the better filtering quality.
+The second significant difference is that the possibilities of extension-based ad blockers are strictly limited by what browsers allow and don't allow them to do. They are also intrinsically less powerful as they, for example, don't support some types of filtering rules that are available to standalone apps. Some browsers have policies that restrict ad blocking, and AdGuard for Windows or Mac couldn't care less about that. The apps are not limited by anything — when you choose the app, you choose the better filtering quality.
 
 AdGuard Browser extension has its advantages: it's absolutely free, you don’t have to spend time and money on its installation, and once installed, it will filter ads and fight online threats as effectively as possible in your browser. Yet, compared to full-fledged apps for Mac and Windows, the extension has its disadvantages. We gathered them all together in the comparative table below to demonstrate the differences between AdGuard Browser extension and our standalone program.
 

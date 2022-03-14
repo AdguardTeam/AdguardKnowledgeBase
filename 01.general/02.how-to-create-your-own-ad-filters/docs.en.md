@@ -54,7 +54,7 @@ visible: true
                 * [$generichide](#generichide-modifier)
                 * [$genericblock](#genericblock-modifier)
             * [$specifichide](#specifichide-modifier)
-    * [Advanced capabilites](#advanced-modifiers)
+    * [Advanced capabilities](#advanced-modifiers)
         * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
         * [$badfilter](#badfilter-modifier)
@@ -310,7 +310,7 @@ For the basic rules the described logic will be applicable only for the domains 
 <a id="basic-rules-modifiers"></a>
 ### Modifiers
 
-> **Attention!** The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic undestanding of the way your browser works.
+> **Attention!** The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
 
@@ -348,8 +348,9 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 1) The request has `document` type
 2) The rule's pattern doesn't match any particular domain(s)
 3) The rule's pattern doesn't contain regular expressions
+4) The $domain modifier contains only excluded domains (e.g., `$domain=~example.org|~example.com`)
 
-When all these conditions are met, the `domain` modifier will match both the referrer doman **and** the target domain.
+The following predicate should be satisfied to perform a target domain matching: `1 AND ((2 AND 3) OR 4)`. That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
 
 If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
 
@@ -468,7 +469,7 @@ The rule corresponds to script requests (e.g. javascript, vbscript).
 <a id="object-modifier"></a>
 ##### **`object`**
 
-The rule corresponds to browser plugins resourses. (e.g. Java or Flash).
+The rule corresponds to browser plugins resources. (e.g. Java or Flash).
 
 <a id="object-subrequest-modifier"></a>
 ##### **`object-subrequest`**
@@ -522,7 +523,7 @@ The rule applies only to WebRTC connections.
 
 ###### `webrtc` example
 
-* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connectios to `example.com` for `example.org`.
+* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connections to `example.com` for `example.org`.
 * `@@*$webrtc,domain=example.org` - this rule disables the RTC wrapper for `example.org`.
 
 > **Deprecation notice.** This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `$nowebrtc` scriptlet.
@@ -1305,7 +1306,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Restrictions.** Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
-> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard Content Blocker.
 
 > Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
 
@@ -1355,7 +1356,7 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 > **Application area.** Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
-> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Note that CSS rules are not supported by AdGuard Content Blocker.
 
 #### Syntax
 
@@ -1377,7 +1378,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 > Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
 > `#?#div`
 
-> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the artcile.
+> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the article.
 
 
 <a id="extended-css-has"></a>
@@ -1813,7 +1814,7 @@ This rule removes all `script` elements with the attribute `data-src` containing
 <a id="html-filtering-rules-attributes"></a>
 #### Special attributes
 
-In addition to usual attribures, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
 <a id="tag-content-attribute"></a>
 ##### `tag-content`
@@ -1905,7 +1906,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
 
-> **Compatibility with different versions of AdGuard.** Javascript rules aren't supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Javascript rules are not supported by AdGuard Content Blocker.
 
 We **strongly recommend** using scriptlets instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
@@ -1954,7 +1955,7 @@ Scriptlet is a JavaScript function that provides extended capabilities for conte
 
 > AdGuard supports a lot of different scriptlets. Please note that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
-> **Compatibility with different versions of AdGuard.** Scriptlet rules aren't supported by AdGuard for iOS.
+> **Compatibility with different versions of AdGuard.** Scriptlet rules are not supported by AdGuard Content Blocker.
 
 <a id="scriptlets-syntax"></a>
 ### Syntax
@@ -2148,7 +2149,7 @@ rules_list
 
 **Examples**
 ```
-! for all AdGuard propucts except AdGuard for Safari
+! for all AdGuard products except AdGuard for Safari
 !#if (adguard && !adguard_ext_safari)
 ||example.org^$third-party
 domain.com##div.ad

@@ -258,6 +258,6 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 ---
 
-We also want to thank the [xda-developers users](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895). Thank you for your much helpful feedback!
+We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your much helpful feedback!
 
-We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join our [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://adguard.com/en/forum.xda-developers.com/android/apps-games/adguard-ad-blocker-doesnt-require-root-t2958895) or visit our page on [GitHub](https://github.com/AdguardTeam).
+We always appreciate comments from our users, especially constructive ones :) You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join our [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).

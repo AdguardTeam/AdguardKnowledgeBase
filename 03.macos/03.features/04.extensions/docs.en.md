@@ -7,7 +7,7 @@ taxonomy:
 
 AdGuard can significantly broaden website functionality working as a [user script manager](https://adguard.com/en/userscripts.html).
 
-To enable or disable Extensions, click on the AdGuard icon in the macOS ribbon, then click on the gear icon in the upper right corner of the AdGuard app and choose Perferences from the menu.
+To enable or disable Extensions, click on the AdGuard icon in the macOS ribbon, then click on the gear icon in the upper right corner of the AdGuard app and choose Preferences from the menu.
 
 In the top of opened window click Extensions, and then and check or uncheck the boxes you need.
 

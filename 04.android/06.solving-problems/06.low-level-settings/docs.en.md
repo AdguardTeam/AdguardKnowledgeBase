@@ -1,162 +1,176 @@
 ---
-title: '  Low Level Settings guide'
+title: 'Low-level Settings guide'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-Inside AdGuard for Android 'Advanced settings' tab there is a 'Low Level Settings' button. Once you tap it, you will see a big list of various settings, many of which might be confusing to an average user.
-
-**WARNING! ** Changing any of these settings without knowledge of what that particular setting does may lead to undesirable consequences! Ask our support for advice if you are in doubt about this or that setting.
-
-Below we will try to describe what some of the most important and often-used low level settings are for.
-
-**pref.net.exclusions**
-
-If you tap this button, you will find a list, and each entry of this list is a package name of some application. The whole reason of this section is to whitelist any app on a level deeper than you would get using AdGuard Firewall. Traffic of apps from _pref.net.exclusions_ list will not even go through AdGuard, so it can't be modified in any way by definition.
-
-To add an app to this list simply add a new entry with app's package name. For apps from Google Play it is really easy to determine the package name. Just open the apps page in GooglePlay and look at the address bar. The part after '**id=**' is exactly what you need to look for. For example, for YouTube app the whole link would be
-
-**https://play.google.com/store/apps/details?id=com.google.android.youtube**
-
-with **com.google.android.youtube** being the package name.
-
-**HTTPS filtering preferences**
-
-We united several settings under this category: _pref.https.apps.exclusions_, _pref.https.domains.blacklist_ and _pref.https.domains.whitelist_. They are essentially the same settings you can find in HTTPs filtering settings tab. You can find more information about them in our blog:
-
-<https://blog.adguard.com/en/adguard-for-android-25-official/>
-
-**pref.vpn.ipv6.bypass**
-
-Nowadays, more and more often SMS and MMS are sent via network, and when they are, non-standard IPv6 network is often used. When we try to filter this traffic, it is not extremely unusual that we interfere with sending and even receiving MMS. If you suspect this is your case, we recommend checking the **pref.vpn.ipv6.bypass** checkbox or adding the app responsible for MMS managing to **pref.net.exclusions**.
-
-**pref.samsungpay.autopause.enable**
-
-This setting has been developed specifically for the South Korean users who often face the following problem — ***the "Samsung Pay" app doesn’t work on devices with running VPN** (which, in its turn, is being used by AdGuard).* 
-
-If you want to learn about how this feature makes AdGuard compatible with Samsung Pay, please read this [article](https://kb.adguard.com/en/android/solving-problems/samsung-pay).
-
-
-### All available options:
-
-  **pref.vpn.ipv4.force.default**
-   
-If enabled - VPN will be configured to filter 0.0.0.0/0.
-
-  **pref.vpn.ipv4.force.complex**
-
-If enabled - VPN will be configured to filter everything except the excluded IPv4 routes.
-   
-  **pref.vpn.ipv4.address**
-
-IPv4 TUN interface address.
-
-   **pref.vpn.ipv6.address**
-
-IPv6 TUN interface address.
-
-   **pref.vpn.ipv6.force**
-   
-If enabled - AdGuard add an IPv6 address to the VPN even if there's no active IPv6 network.
-
-   **pref.vpn.ipv4.bypass**
-   
-If enabled - VPN will be configured to bypass all the IPv4 traffic.
-
-   **pref.vpn.ipv6.bypass**
-
-If enabled - VPN will be configured to bypass all the IPv6 traffic.
-
-   **pref.vpn.ipv6.disable**
-
-If enabled - AdGuard will disable IPv6 routes forcibly (VPN).
-
-   **pref.vpn.tun.mtu**
-   
-Maximum transmission unit (MTU) of the VPN interface.
+## How to reach the Low-level settings
  
-   **pref.ipv4.routes.excluded**
+> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.  
+ 
+To go to *Low-level settings*, open the main menu, tap *Settings*, choose *Advanced* and find *Low-Level Settings* at the bottom of the screen.  
+ 
+## Low-level settings
+ 
+`pref.boot.startup.delay`
 
-List of IPv4 routes excluded from VPN and auto-proxy.
-   
-   **pref.ipv6.routes.excluded**
-   
-List of IPv6 routes excluded from VPN and auto-proxy.
+Here you can set AdGuard’s startup delay after device boot-up (in seconds). This setting is only relevant if AdGuard autostart is enabled (Settings —> General —> AdGuard autostart).
+ 
+`pref.dns.blocking.type`
 
-   **pref.excluded.uids**
+Here you can select the way AdGuard will respond to blocked DNS queries:
 
-List of excluded UID packages.
+0 — means block requests with *Refused* response code for *Network filtering rules* and with *Unspecified IP* for *Host rules*.
+1 — means block requests with *NXDomain* for all kinds of filtering rules.
+2 — means block requests with *Unspecified IP* for all kinds of filtering rules.
+3 — means block requests with *Unspecified IP* for all kinds of filtering rules.
+4 — means block requests with *Refused* response code for all kinds of filtering rules.
+ 
+1 is used by default if the entered value is not valid.
+ 
+`pref.dns.bootstrap`
 
-  **pref.vpn.capture**
+Bootstrap DNS for DoH, DoT, and DoQ servers. The System DNS server is used by default.
+ 
+`pref.dns.detect.search.domains`
 
-Will record all connections that goes through the TCP/IP stack.
-  
-  **pref.har.capture**
+If enabled AdGuard detects search domains and automatically forwards them to the fallback upstreams if they exist. 
+ 
+`pref.dns.fallback`
 
-Enable HAR file capture.
+Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string “none” means no fallback at all.
+ 
 
-  **pref.vpn.disable.pause**
-   
-Disable automatic VPN pause in case of network absence, tethering or power saving mode.
+`pref.dns.fallback.domains`
 
-  **pref.vpn.disable.reconfigure**
+Here you can list domains that will be directly forwarded to the fallback upstreams (if they exist).
+ 
+`pref.dns.timeout`
 
-Disable VPN automatic re-configuration in case of network absence, tethering or power saving mode.
+Here you can specify a timeout in milliseconds to be used for each DNS request. Please note that if you are using multiple upstreams, the fallback DNS resolver will only be used after all the timeouts of each upstream. 
+ 
+`pref.enforce.https.filtering`
 
-  **pref.proxy.disable.reconfigure**
+Here are already listed package names of apps for which AdGuard enforces HTTPS filtering. You can add this list with any app even if it targets Android 7+. But before check if the application trusts the AdGuard’s HTTPS certificate, which is located in the User storage, or the developers have not provided such an option.  
+ 
+`pref.enforce.paused.notification`
 
-Disable Proxy automatic re-configuration.
+Enforce notification about paused protection even when the notification icon is set to Disabled (for Android below Oreo).
+ 
+`pref.excluded.packages`
 
-  **pref.proxy.block.ipv6**
+Here you can list the packages and UIDs you want to exclude from filtering.
+ 
+`pref.filtered.ports`
 
-Block all internet connections through IPv6 (Proxy).
+Here you can list the ports connections to which will be filtered.
+ 
+`pref.har.capture`
 
-  **pref.filtered.ports**
+Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named “har” inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+ 
+`pref.https.ignored.errors`
 
-List of the redirect ports.
+For the domains and package names listed here, notifications that they do not trust AdGuard's HTTPS certificate will be disabled.
+ 
+`pref.https.opportunistic`
 
-  **pref.boot.startup.delay**
+If enabled, AdGuard will bypass the traffic of any app that does not trust our certificate. It is enabled by default.
+ 
+`pref.ipv4.routs.excluded`
 
-The initial protection startup delay (in seconds) after device boot up.
+Here you can find the list of IPv4 ranges excluded from filtering. For instance, we don’t filter connections to the private IP ranges. You can add this list if required.
+ 
+`pref.ipv6.routs.excluded`
 
-  **pref.enforce.paused.notification**
+Here you can list the IPv6 ranges which you want to exclude from filtering.
+ 
+`pref.notify.on.unknown.ca`
 
-Enforce notification about paused protection even when notification icon is set to Disabled (for Android below Oreo).
+If enabled, AdGuard shows you a notification if any app doesn’t trust our HTTPS certificate.
+ 
+`pref.proxy.block.ipv6`
 
-  **pref.root.clear.youtube**
-  
-AdGuard will clear Youtube app data every on boot (ROOT is required).
+If enabled, AdGuard blocks all Internet connections through IPv6 when working in “Proxy with automatic setup” mode.
+ 
+`pref.proxy.disable.reconfigure`
 
-  **pref.root.set.oom_adj**
-   
-AdGuard will set minimum oom_score_adj for own process (ROOT is required).
+Here you can disable AdGuard automatic root proxy reconfiguration when network connectivity changes.
+ 
+`pref.quic.bypass.packages`
 
-  **pref.enforce.https.filtering**
-   
-List of apps for which AdGuard enforces HTTPS filtering even if they target Android 7+.
+Here you can list packages for which AdGuard will bypass QUIC traffic.
+ 
+`pref.removed.html.log`
 
-  **pref.removed.html.log**
+If enabled, AdGuard shows information about blocked HTML elements in the filtering log.
+ 
+`pref.root.clear.youtube`
 
-AdGuard will print information about removed HTML elements to the filtering log.
-    
-  **pref.samsungpay.autopause.enable**
+If enabled, AdGuard clears YouTube app data on booting to block YouTube ads. Root access is required.
+ 
+`pref.root.set.oom_adj`
 
-AdGuard will pause protection while Samsung Pay app is in the foreground (in VPN mode only).
+If enabled, AdGuard sets the `minimum oom_score_adj` for its own process to stay alive all the time. Requires root access.
+ 
+`pref.samsungpay.autopause.enable`
 
-  **pref.dns.bootstrap**
-   
- Bootstrap DNS for DoH and DoT servers.
-   
- **pref.dns.fallback**
-   
-Fallback DNS address.
+If enabled, AdGuard pauses protection when you open the Samsung Pay app. Requires usage access.
+ 
+`pref.vpn.android10.mitigate`
 
- **pref.dns.blocking.type**
-   
- Block type for DNS filtering.
+If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by an Android 10 bug.
+ 
+`pref.vpn.capture`
 
- **pref.notify.on.unknown.ca**
+If enabled, AdGuard will create the special file name “tun.pcap”. It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+ 
+`pref.vpn.disable.pause`
 
- Show unknown CA notifications or not.
+This feature disables automatic VPN pause in case of network absence, tethering, or power-saving mode.
+ 
+`pref.vpn.disable.reconfigure`
+
+This feature disables VPN automatic reconfiguration in case of network absence, tethering, or power-saving mode.
+
+`pref.vpn.ipv4.address`
+
+TUN interface IPv4 address.
+ 
+`pref.vpn.ipv4.bypass`
+
+If enabled, VPN will be configured to bypass all the IPv4 traffic. In this case, IPv4 will work, but it will not be filtered.
+ 
+`pref.vpn.ipv4.force.complex`
+
+If enabled, VPN will bypass the LAN when possible. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
+ 
+`pref.vpn.ipv4.force.default`
+
+This feature disables the routes we use to exclude LAN from filtering.
+ 
+`pref.vpn.ipv6.address`
+
+TUN interface IPv6 address.
+ 
+`pref.vpn.ipv6.bypass`
+
+If enabled, VPN will be configured to bypass all the IPv6 traffic. In this case, IPv6 will work, but it will not be filtered.
+ 
+`pref.vpn.ipv6.disable`
+
+This feature forcibly disables filtering for IPv6 networks. In this case, IPv6 will not work at all.
+ 
+`pref.vpn.ipv6.force`
+
+This feature forcibly enables filtering for IPv6 networks. The app doesn’t filter IPv6 on Lollipop and some cell carriers by default.
+ 
+`pref.vpn.tun.mtu`
+
+Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended interval for the experiments is from 1500 to 9000.
+ 
+`Reset`
+
+You always can reset Low-level settings to default.

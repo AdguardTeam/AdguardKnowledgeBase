@@ -18,4 +18,4 @@ taxonomy:
  * [iCloud Private Relay and AdGuard](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay)
  * [Protect Mail Activity and AdGuard](https://kb.adguard.com/en/macos/solving-problems/protect-mail-activity)
 
-*If you haven't found a solution to your problem in our knowledge base, [сontact AdGuard Support Team](http://kb.adguard.com/en/technical-support), we will be happy to help.*
+*If you haven't found a solution to your problem in our knowledge base, [contact AdGuard Support Team](http://kb.adguard.com/en/technical-support), we will be happy to help.*

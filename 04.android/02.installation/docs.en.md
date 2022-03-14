@@ -85,7 +85,7 @@ The last step is to enable local VPN:
 The **AdGuard** application installation is complete.
 
 <a name="uninstall"></a>
-## </a>Uninstalling/Reinstalling Аdguard
+## </a>Uninstalling/Reinstalling AdGuard
 
 If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6), **Apps** (Android 5 and 7) or **Apps & notifications** (Android 8+). Find **AdGuard** in the list of installed apps and press **Uninstall**.
 

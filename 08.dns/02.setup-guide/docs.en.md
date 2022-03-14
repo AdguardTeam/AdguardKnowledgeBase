@@ -243,7 +243,7 @@ for ’Family protection’ servers.
 
 2. Click on ’Network Connections’ in the Control Panel menu
 
-3. Double-clik on your active connection from the Network Connections window
+3. Double-click on your active connection from the Network Connections window
 
 4. Click Properties button
 

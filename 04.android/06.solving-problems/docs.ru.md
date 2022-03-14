@@ -15,7 +15,7 @@ taxonomy:
 * [Как настроить вышестоящий прокси-сервер](https://kb.adguard.com/ru/android/solving-problems/adguard-outbound-proxy)
 * [Как настроить фоновую работу AdGuard](https://kb.adguard.com/ru/android/solving-problems/background-work)
 * [Проблемы, вызванные использованием профиля с ограниченным доступом](https://kb.adguard.com/ru/android/solving-problems/restricted-profile)
-* [Ручная установка сертификата безопаности в браузер FireFox](https://kb.adguard.com/ru/android/solving-problems/firefox-certificates)
+* [Ручная установка сертификата безопасности в браузер FireFox](https://kb.adguard.com/ru/android/solving-problems/firefox-certificates)
 * [Ручная установка сертификата на устройствах с Android 11](https://kb.adguard.com/ru/android/solving-problems/manual-certificate)
 
 Этот раздел регулярно обновляется. Если вы не нашли решения своей проблемы в приведенных в этом разделе статьях, обратитесь в [техническую поддержку AdGuard](http://kb.adguard.com/ru/technical-support).
