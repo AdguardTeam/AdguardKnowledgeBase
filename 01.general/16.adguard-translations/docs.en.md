@@ -19,9 +19,9 @@ visible: true
 
 When it comes to translations, we at AdGuard always heavily rely on volunteers.
 
-Now we use [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place to go for all the people who want to contribute to AdGuard by translating any product(s) they are interested in.
+We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
 
-If you want to be among the volunteers who help us translate AdGuard, please read the following information to learn more about how to become our translator and about the way we collaborate with them.
+If you want to be among the volunteers who help us translate AdGuard, please read the following information on how to become our translator and how we collaborate with translators.
 
 <a name="become-translator"></a>
 
@@ -33,7 +33,7 @@ If you want to join AdGuard translators, first of all, go to [Crowdin](https://c
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/main-screen.png) 
 
 
-Once you are logged in, head to [our page](https://crowdin.com/profile/adguard/). You will see a few AdGuard projects, each of which contains folders for different product strings.
+Once you log in, go to [our page](https://crowdin.com/profile/adguard/). You will see a few AdGuard projects, each with folders for different product strings.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/projects.png) 
 
@@ -61,7 +61,7 @@ Suggest your version in the text box and save it.
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box.png) 
 
 
-If you don't agree with existing translations, you can still suggest your own versions. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
+If you don't agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
   
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/vote.png) 
 
@@ -70,7 +70,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
 
 
-You can find some useful tips by reading the following information. Please have a look at it.
+You can find some helpful tips by reading the following information. Please have a look at it.
 
  
 <a name="guidelines"></a>
@@ -79,13 +79,13 @@ You can find some useful tips by reading the following information. Please have 
 
 There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of the phrases being translated.
 
-1. Pay attention to glossary terms, which are highlighted with a dotted line in a source phrase. These are usually special words (like brand names) that should not be translated.
+1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms.png) 
 
 You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
-2. The phrases in Crowdin can be accompanied by useful notes that make phrases easier to understand and translate. You can find them in the "context" field of the source string box.
+2. In Crowdin, strings can have notes to make them easier to understand and translate. Look for them in the "Context" field of the source string.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note.png) 
 
@@ -103,7 +103,7 @@ Please note that you can request context by clicking the "REQUEST" button.
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
 
 
-4. Apart from suggesting new translations, you can also leave comments on phrases. Use comments to inform us about any mistakes in existing translations, to make notes, or to ask questions. Sometimes you will find a comment left on your translation—try to react to it.
+4. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png) 
 
@@ -119,7 +119,7 @@ There's also a **Discussions** tab on the main project page that conveniently al
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
 
 
-6. As soon as you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page where the tasks for specific project files are created. _Please pay attention to them; they usually have a higher priority._
+6. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. _Please pay attention to them: they usually have a higher priority._
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png) 
 
@@ -129,16 +129,16 @@ There's also a **Discussions** tab on the main project page that conveniently al
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/plurals.png) 
 
 
-Proper plural forms are extremely important, so please ask us in the comments if anything is unclear.
+Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
 
 
 8. **Please do not write directly to the project managers listed in the Project info.** 
 
-If you have any questions about translations, you can always ask proofreaders or admins using the comments system.
+If you have questions about translations, you can always ask our proofreaders or admins through comments.
 
 Also, you can send us an e-mail to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/CBcY6Au3K0AtD35a2r1y8w). The Admins will answer you as soon as possible.
 
-Find more information on the Crowdin translation system in this [Knowledge base](https://support.crowdin.com).
+Find more information about the Crowdin translation platform in this [Knowledge base](https://support.crowdin.com).
 
 
 <a name="proofreaders"></a>
@@ -157,7 +157,7 @@ What are they responsible for?
 - Participating in discussions in the comment section etc.
 
 
-_As mentioned, you can ask proofreaders any questions translations of Crowdin in the comments_.
+_As mentioned above, you can ask our proofreaders any questions about translations using comments on Crowdin_.
 
 
 However, we do hope that everything for you will go smoothly and without any difficulties! Hope to see you on our team!
@@ -167,9 +167,9 @@ However, we do hope that everything for you will go smoothly and without any dif
 
 ### Reward system
 
-As every honest and well-done job should be rewarded, volunteers who actively translate on Crowdin are eligible to request a free AdGuard license key.
+As any honest and well-performed effort should be rewarded, active volunteer translators on Crowdin can request a free AdGuard license key.
 
-To request a **one-year** license key, you must translate at least 500 words ONLY in phrases that **have not been translated before**.
+To request a **one-year** license key, you must translate at least 500 words ONLY in **previously untranslated** strings.
 
 Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license key as a token of our gratitude.
 
