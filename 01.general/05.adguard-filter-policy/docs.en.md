@@ -76,9 +76,9 @@ We define **tracking** as collecting data regarding an individual’s identity o
 
 If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
 
-- Rules that would risk lowering user security levels will be removed. 
+- Rules that would reduce user security levels will be removed.
 - Rules that cause problems with website functionality will be removed.
-- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example, social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
 ## Social Media filter
 
@@ -92,40 +92,40 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 - Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
 - Rules that block links to a website’s communities in social networks.
-- Rules that cause problems with the functioning of websites will be removed.
-- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example, social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Rules that cause problems with website functionality will be removed.
+- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
 ## Annoyances filter
 
 ##### What will be blocked with this filter?
 
-- This filter will block elements on the page that are not ads but obstruct the view and make it harder to see the actual content of the website. Such elements as cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
 
 #### Limitations and Exceptions
 
 If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
 
-- Rules that block elements that are essential for the websites' functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
-- Rules that cause problems with the functioning of websites will be removed.
-- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example, social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
+- Rules that cause problems with website functionality will be removed.
+- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
 ## Filter unblocking search ads and self-promotion
 
-Unlike other filters, this one **unblocks** certain ads. More about it in [this Knowledge Base article](https://kb.adguard.com/en/general/search-ads-and-self-promotion). 
+Unlike other filters, this one **unblocks** certain ads. Read more about it in [this Knowledge Base article](https://kb.adguard.com/en/general/search-ads-and-self-promotion).  
 
 ##### What will be unblocked with this filter?
 
 - Search ads (ads that you see among the results when using an online search engine).
-- Websites' self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
+- Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
 
 #### Limitations and Exceptions
 
-- Rules that cause problems with the functioning of websites will be removed.
-- Rules that are specific to a particular website will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if it has such) or in other ways, for example, social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Rules that cause problems with website functionality will be removed.
+- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
 
 ## Quality requirements for filtering rules
 
 - The rules should be as efficient as possible in terms of performance.
 - Exception rules should be as specific as possible in order to avoid unnecessary unblocking.
-- CSS and JS injection rules shall be used as rarely as possible, and only in cases when ad blocking is impossible without them.
+- CSS and JS injection rules should be used as rarely as possible and only when it is impossible to block ads without them.
