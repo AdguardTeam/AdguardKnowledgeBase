@@ -13,9 +13,9 @@ visible: true
 
 Many websites gather information about their visitors, such as their IP address, installed browser and operating system, screen resolution, and even the page from which a visitor was redirected. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data- and statistics-gathering systems.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, hide your real IP-address or even indicate one of your choice.
+You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
 
-Below we will list and describe the main features and options you can manage in the "Stealth Mode" settings, which are divided into four groups: general, tracking methods, browser API, and miscellaneous. 
+Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**. 
 
 <a name="general"></a>
 
@@ -23,11 +23,11 @@ Below we will list and describe the main features and options you can manage in 
 
 **Hide your search queries**
 
-When you proceed to the website from Google, Yahoo, or any other search engine, this option hides the search query you used to find it.
+When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
 
 **Send Do-Not-Track header**
 
-It sends a Do-Not-Track (DNT) HTTP header to queried websites that requires web apps to disable tracking of your activity.
+It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring web apps to disable tracking of your activity.
 
 **Remove X-Client-Data header from HTTP requests**
 
@@ -43,20 +43,20 @@ If you enable this option, AdGuard will strip tracking parameters like utm_* and
 
 **Self-destructing third-party cookies**
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you get back to the site, your browser sends back the cookies belonging to that website, which allows it to "recall" your data.
+Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
 
-Third-party cookies are those implemented by a website that is different from the one you are browsing at the moment. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read by Facebook later on. Some advertisers use such cookies to track what other sites you visit where their ads are posted.
+Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read later by Facebook. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
 
-Put a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 in order to block them completely.
+Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
 
 **Self-destructing first-party cookies**
 
 We do not recommend enabling this option as it may severely interfere with the work of certain sites.
-Put a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 in order to block them completely.
+Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
 
 **Disable cache for third-party requests**
 
-When the browser addresses a page, the server assigns it an ETag, which the browser then uses to cache the contents. Upon subsequent requests, it sends the ETag to the corresponding server, thus letting it learn the visitor’s identity. While the site files are cached, the ETag is sent every time your browser addresses this site. If the site has content embedded from another server (e.g., an image or iframe), that server will also be able to track your activities without your cognizance.
+When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
 
 **Block third-party Authorization header**
 
