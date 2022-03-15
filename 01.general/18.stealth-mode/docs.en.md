@@ -94,14 +94,14 @@ Some websites and web services still use the old technology to support Java plug
 
 **Hide Referer from third-parties**
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. If you advance from one page to another, the referer will save the URL of the initial page. The server is often equipped with software that analyzes the referer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
-You can also set the referrer of your choice by typing it into the Custom Referrer field. Leave the field empty to use the default referer.
+Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server often has software that parses Referer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+You can also set an arbitrary value for Referer by entering it into the Custom Referrer field. To use default Referer, leave the field blank.
 
 **Hide your User-Agent **
 
-When you visit a website, your browser sends the server its information. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We strip User-Agent from identifying information so that advertisers can't obtain it.
+When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
 
-You can also set the user agent of your choice by typing it into the Custom User-Agent field. Leave the field empty to use the default user agent.
+You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
 
 **Hide your IP address**
 
