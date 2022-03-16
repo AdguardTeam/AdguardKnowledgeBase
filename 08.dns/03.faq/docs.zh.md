@@ -6,4 +6,4 @@ taxonomy:
         - docs
 ---
 
-有关 AdGuard DNS 的常见问题解答可以在[官方网站](https://adguard-dns.com/zh_cn/welcome.html)上找到。
+有关 AdGuard DNS 的常见问题解答可以在[官方网站](https://adguard-dns.io/zh_cn/welcome.html)上找到。
