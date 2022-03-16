@@ -704,7 +704,7 @@ Block ads and annoying websites
 
 #### Safe
 
-Block phishing, malcious and other unsafe websites
+Block phishing, malicious and other unsafe websites
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
