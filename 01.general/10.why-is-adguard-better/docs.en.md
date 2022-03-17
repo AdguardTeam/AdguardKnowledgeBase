@@ -20,7 +20,7 @@ If you use a rare browser, it might pose a problem for Adblock and Adblock Plus 
 
 And that’s not all. AdGuard can block ads on Skype, uTorrent, and many other common programs. Just add them to the list of browsers and restart.
 
-Apart from blocking ads, AdGuard gives you a lot of additional tools. Perhaps the most important of them is our Phishing Site Filter. This module uses a constantly updated database of malicious and phishing sites. Its main sources are the list of Google Safe Browsing and AdGuard’s own lists. We constantly monitor data on the safety of websites and quickly improve our filters.
+Apart from blocking ads, AdGuard gives you a lot of additional tools. Perhaps the most important of them is our phishing site filter. This module uses a constantly updated database of malicious and phishing sites. Its main sources are the list of Google Safe Browsing and AdGuard’s own lists. We constantly monitor data on the safety of websites and quickly improve our filters.
 
 ![](warning.png)
 
