@@ -38,7 +38,7 @@ DNS filtering can be broken down into two separate functions: to encrypt and rer
 <a id="dns-servers"></a>
 #### DNS servers
 
-There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most of them simply return the IP address of the requested domain, but some have additional features such as blocking ads, trackers, adult domains, and so on. Nowadays, all major DNS servers support such reliable encryption protocols as DNS-over-HTTPS or DNS-over-TLS. AdGuard has its own [DNS service](https://adguard-dns.com/en/welcome.html) and was the first provider in the world to offer a very new and promising [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard's blocking servers work:
+There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most of them simply return the IP address of the requested domain, but some have additional features such as blocking ads, trackers, adult domains, and so on. Nowadays, all major DNS servers support such reliable encryption protocols as DNS-over-HTTPS or DNS-over-TLS. AdGuard has its own [DNS service](https://adguard-dns.io/en/welcome.html) and was the first provider in the world to offer a very new and promising [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard's blocking servers work:
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg" style="border: 1px solid #efefef; padding: 2px;" />
 
