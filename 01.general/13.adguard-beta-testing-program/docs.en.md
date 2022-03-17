@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-* [How to become beta tester?](#intro)
+* [How to become a beta tester?](#intro)
 * [How to report a bug](#report-a-bug)
 * [How to activate the beta key in the iOS application](#iOS)
 
@@ -34,7 +34,7 @@ Let’s imagine it happened — you spotted a bug. Or maybe you just want to sha
 
 The above two methods are the most preferred, but you can use others if necessary:
 
-* Find us on various social media platforms, like [Facebook],(https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
 
 * Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
 
