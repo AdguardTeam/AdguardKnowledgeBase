@@ -166,7 +166,7 @@ When you purchase an AdGuard license key, your personal AdGuard account is autom
 
 If you don’t have an AdGuard account, we suggest that you create one by clicking [this link](http://adguard.com/register.html).
 
-An AdGuard account allows you to manage your license keys and their binding to your devices.
+An AdGuard account allows you to manage your license keys, their binding to your devices, and your purchase history.
 
 Learn more about the account features [below](#account-functions).
 
