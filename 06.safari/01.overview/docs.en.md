@@ -117,7 +117,7 @@ User rules are a great option for those who want to customize the filtering proc
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png" style="border: 1px solid #efefef; max-width: 800px; padding: 2px;">
 <p align="center"><i>About AdGuard</i></p> 
 
-Last but not least important tab. Here you can see what version you have, read EULA (End-User License Agreement) and privacy policy accurately. If interested, you can also see credits and acknowledgements to third-party developers and others who contributed to our products a lot. 
+Last but not least important tab. Here you can see what version you have, read EULA (End-User License Agreement) and privacy policy accurately. If interested, you can also see credits and acknowledgments to third-party developers and others who contributed to our products a lot. 
 
 Finally, there is a link to our repository on GitHub. If you are even a little bit of a geek, it might be of interest to you. You can monitor the product development, create feature requests and report bugs there, for instance. 
 
