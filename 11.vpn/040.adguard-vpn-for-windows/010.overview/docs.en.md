@@ -92,8 +92,6 @@ The **General** section contains many useful features. Here you can set the app 
 
 You can also activate the following features with a single click: **Autoupdate**, **Launch AdGuard VPN at Windows startup**, **Auto-connect on app launch**, and allow AdGuard to collect anonymized app usage data so that we can make it better. Here you can also change the default **Light Theme** to a **Dark Theme**. 
 
-> If our support team asks you to send logs, find the **Actions** block in the upper right corner of the screen and click the **Export Logs** button. 
-
 At the bottom of the page there are two sections: **DNS servers** and **Advanced settings**.
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/VPN/for_windows/settings_dns_and_advanced_en.png" style="border: 1px solid #efefef; max-width: 400px; padding: 2px;">
