@@ -802,7 +802,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 * `@@||example.com$badfilter` disables `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
-Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfil the following conditions:
+Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
 
 * The rule has a `$domain` modifier
 * The rule does not have a negated domain `~` in `$domain` modifier's value.
@@ -1976,7 +1976,7 @@ This rule will be applied to example.org pages (and its subdomains) and will exe
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
-> For more information on how to debug scriptlets, jump to [this section](#debug-scriptlets) of the artcile.
+> For more information on how to debug scriptlets, jump to [this section](#debug-scriptlets) of the article.
 
 
 <a id="non-basic-rules-modifiers"></a>(#)

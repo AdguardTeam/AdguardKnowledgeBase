@@ -76,7 +76,7 @@ AdGuard users can configure any DNS server and use it instead of the system defa
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.com/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides a range of necessary features to protect against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides a number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
 #### Default
 
@@ -704,7 +704,7 @@ Block ads and annoying websites
 
 #### Safe
 
-Block phishing, malcious and other unsafe websites
+Block phishing, malicious and other unsafe websites
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

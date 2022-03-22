@@ -19,7 +19,7 @@ AdGuard Home is a network-wide, [open source](https://github.com/adguardteam/adg
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AGHome/dashboard.jpg" width="650" />
 
-AdGuard Home operates as a DNS server that re-routes tracking domains to a "black hole", thus preventing your devices from connecting to those servers. It's based on software we use for our public [AdGuard DNS](https://adguard-dns.com/welcome.html) servers — both share a lot of common code.
+AdGuard Home operates as a DNS server that re-routes tracking domains to a "black hole", thus preventing your devices from connecting to those servers. It's based on software we use for our public [AdGuard DNS](https://adguard-dns.io/welcome.html) servers — both share a lot of common code.
 
 
 <a id="features"></a>
