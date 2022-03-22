@@ -14,7 +14,7 @@ visible: true
 <a name="introduction"></a>
 ## Introduction
 
-This article is about the filters we create to use in AdGuard and other ad-blocking software (e.g., uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., the German filter). Task-based filters group rules that fulfill a specific task, such as the Social media filter or the Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
+This article is about the filters we create to use in AdGuard and other ad-blocking software (e.g., uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., German filter). Task-based filters group rules that fulfil a specific task, such as Social media filter or Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
 
 <a name="policy"></a>
 ## AdGuard Filters Policy
@@ -32,9 +32,9 @@ We rely on the community to let us know about issues with our filters. It helps 
 
 ### Suggest Filtering Rules
 
-You will find many open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each one refers to a problem with a website, such as a missed ad or a false positive. Pick one of them and suggest your own rules in the comments. AdGuard filter engineers will review your suggestions and, if approved, your rules will be added to AdGuard filters.
+You will find many open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each one refers to a problem with a website, such as a missed ad or a false positive. Pick an issue and suggest your own rules in the comments. AdGuard filter engineers will review your suggestions and, if approved, add your rules to AdGuard filters.
 
-Here is the [official documentation](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) on the syntax of AdGuard filtering rules. Please read it carefully; it will help you create your own filtering rules.
+Here is the [official documentation](https://kb.adguard.com/general/how-to-create-your-own-ad-filters) on the syntax of AdGuard filtering rules. Please read it carefully: it will help you create your own filtering rules.
 
 ### Other ways to contribute
 

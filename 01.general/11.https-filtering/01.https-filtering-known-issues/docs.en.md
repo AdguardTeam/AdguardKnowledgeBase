@@ -26,19 +26,19 @@ Effectively, it means that if you use a modern, safe browser, it will take all k
 
 HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
 
-Below are listed all the issues known to us and the ETAs for the fixes.
+All the issues known to us and the ETAs on their fixes are listed below.
 
 #### Inspecting the original certificate
 
-The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate that the website uses. You cannot simply check what the original certificate was and can only see the one issued by AdGuard.
+The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
 
-This problem has been solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering right from the browser and allows you to inspect the original certificate of any website.
+This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
 
 #### Certificate Transparency
 
 Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
 
-Browsers ignore the `Expect-CT` header in the case of local certificates, and to achieve the same level of security, we must implement the certificate transparency check on our side.
+Browsers ignore the `Expect-CT` header in the case of local certificates, and, to achieve the same level of security, we must implement the certificate transparency check on our side.
 
 **Our plans:**
 
@@ -48,4 +48,4 @@ Browsers ignore the `Expect-CT` header in the case of local certificates, and to
 
 ### Have remarks or suggestions?
 
-If you’d like to add something, notice any errors, or want to ask a question, please contact us: `devteam at adguard.com`.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam at adguard.com`.

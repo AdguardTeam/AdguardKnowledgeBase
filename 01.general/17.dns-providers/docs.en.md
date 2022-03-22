@@ -7,7 +7,7 @@ visible: true
 ---
 
 
-AdGuard users can configure any DNS server to be used instead of the system default provided by the router or ISP. In this article, you will find a list of popular DNS providers.
+AdGuard users can configure any DNS server and use it instead of the system default one provided by their router or ISP. In this article, you will find a list of popular DNS providers.
 
 * [AdGuard DNS](#adguard-dns)
 * [Yandex DNS](#yandex-dns)
@@ -80,7 +80,7 @@ AdGuard users can configure any DNS server to be used instead of the system defa
 
 #### Default
 
-These servers provide ads, trackers, and phishing protection:
+These servers protect against ads, trackers, and phishing:
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -121,7 +121,7 @@ These servers provide a secure and reliable connection, but they don't filter an
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, the CIS countries, and Western Europe. Users' requests are processed by the nearest data center, which provides high connection speeds.
+[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS servers are located in Russia, the CIS countries, and Western Europe. User requests are processed by the nearest data center, which provides high connection speeds.
 
 #### Basic
 
@@ -1228,7 +1228,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### ControlD DNS
 
-[ControlD](https://controld.com/) is a customizable DNS service that can be used to block unwanted categories of sites (like ads or porn), popular online services like Facebook or TikTok, or any domain of your choice.
+[ControlD](https://controld.com/) is a customizable DNS service that blocks unwanted categories of sites (like ads or porn), popular online services like Facebook or TikTok, or any domain of your choice.
 
 #### Unfiltered
 
@@ -1287,7 +1287,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### Small personal resolvers
 
-In this section, we list small, mostly personal DNS resolvers. They often have only one or very few servers and worse uptime than 'big' providers. We won't be able to properly monitor their availability. **Use them at your own risk!**
+In this section, we list small, mostly personal DNS resolvers. They often have only one or very few servers, and their uptime is worse than that of larger providers. We won't be able to monitor their availability properly. **Use them at your own risk!**
 
 <a name="arapurayil"></a>
 
@@ -1308,7 +1308,7 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using the AdGuard Home infrastructure.
 
-It blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but it goes easier on trackers and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked) and to determine the least bad times for server system updates. For additional important info, see the link above.
+Thanks to its more advanced syntax, it blocks more ads and malware than AdGuard DNS, but it goes easier on trackers and blocks alt-right tabloids and most imageboards. Logging is used to improve its filter lists (e.g., by unblocking sites that shouldn't be blocked) and to determine the least bad times for server system updates. For additional important info, see the link above.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
