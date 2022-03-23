@@ -19,7 +19,7 @@ To understand how AdGuard VPN works, you should at first understand the general 
 
 A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to securely access various Internet resources and protect your personal data.
 
-In that way, a VPN has 2 main advantages:
+In that way, a VPN has two main advantages:
 
 1. *Anonymity*. A VPN hides your real location by replacing the IP address of your device with the IP address of the selected VPN server.
 
@@ -52,7 +52,7 @@ In addition to these VPN protocols, there are others (for example, TLS, SSTP, IK
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg"></object>
 
-AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works). One of its advantages is that the traffic transmitted using the AdGuard VPN protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
+AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works). One of its advantages is that the traffic transmitted using the AdGuard VPN protocol is difficult to distinguish from the regular traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
 
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg"></object>
