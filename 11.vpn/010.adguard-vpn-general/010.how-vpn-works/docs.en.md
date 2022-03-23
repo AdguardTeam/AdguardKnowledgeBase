@@ -17,15 +17,13 @@ To understand how AdGuard VPN works, you should at first understand the general 
 
 ## VPN features
 
-A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to access various Internet resources and protect your personal data.
+A VPN is a Virtual Private Network that helps hide your location and protect your data on the web. A VPN connects a computer or a mobile device to a VPN server and uses the IP address of this server to make it seem to an outside observer that you are in another place. This allows you to securely access various Internet resources and protect your personal data.
 
-In that way, a VPN has 3 main advantages:
+In that way, a VPN has 2 main advantages:
 
 1. *Anonymity*. A VPN hides your real location by replacing the IP address of your device with the IP address of the selected VPN server.
 
-2. *Bypassing geoblocking*. Some sites are only available from certain countries and regions. By connecting to a VPN server that is located in one of these countries, you will be able to use previously inaccessible resources.
-
-3. *Data protection*. A VPN creates an encrypted tunnel between your device and a remote server through which your web traffic passes. Along the way, all your data will be securely protected.
+2. *Data protection*. A VPN creates an encrypted tunnel between your device and a remote server through which your web traffic passes. Along the way, all your data will be securely protected.
 
 <a name="structure"></a>
 
@@ -54,7 +52,7 @@ In addition to these VPN protocols, there are others (for example, TLS, SSTP, IK
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/4.svg"></object>
 
-AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works). One of its advantages is that the traffic transmitted using the AdGuard protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
+AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works). One of its advantages is that the traffic transmitted using the AdGuard VPN protocol is difficult to distinguish from usual traffic. The VPN tunnel looks like normal HTTPS traffic, so it is extremely difficult to detect and block it. In addition, it is based on the mechanisms of the modern HTTP/2 protocol, which ensures high connection speed.
 
 <object data="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg" type="image/svg+xml">
     <img src="https://cdn.adguard.com/public/Adguard/Blog/vpn/protocol/5.svg"></object>
@@ -63,7 +61,7 @@ AdGuard VPN also has its own [*protocol*](https://kb.adguard.com/en/vpn/adguard-
 
 ## VPN usage
 
-A VPN performs three important functions:
+A VPN performs two important functions:
 
 1. **Maintaining anonymity**
 
@@ -72,10 +70,6 @@ Using an Internet connection, the user leaves their digital footprint, which can
 2. **Data protection**
 
 If you connect to an unreliable or public network, the data on your device may become vulnerable to cybercriminals. Bank card details, usernames and passwords, passport data — all this data can be intercepted by online fraudsters. The VPN tunnel encrypts the information that you send and receive from the web, so it can not fall into the wrong hands.
-
-3. **Bypassing geoblocking**
-
-Many sites, including streaming services and online platforms, are available only in certain countries. In particular, some streaming services are available only on the specific territories, and, for example, when going on vacation abroad, you will not be able to use them without a VPN. With a VPN, you can change your visible IP address (and thus your perceived location) and use previously blocked resources.
 
 <a name="drawbacks"></a>
 
@@ -101,7 +95,7 @@ A weak signal, network overload, VPN incompatibility with a firewall, antivirus 
 
 Our VPN service has several important [advantages](https://kb.adguard.com/en/vpn/adguard-vpn-general/adguard-vpn-is-the-better-option):
 
-* [*Own VPN protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works), which works stably even with a weak Internet connection and disguises itself as normal traffic, making it more difficult to track and block it
+* [*Proprietary VPN protocol*](https://kb.adguard.com/en/vpn/adguard-vpn-general/how-adguard-vpn-works), which works stably even with a slow Internet connection and disguises itself as normal traffic, making it more difficult to track and block it
 
 * [*"No-logs" policy*](https://adguard-vpn.com/en/privacy.html), which means that AdGuard VPN does not collect your personal data and does not transfer it to third parties
 
@@ -111,7 +105,7 @@ Our VPN service has several important [advantages](https://kb.adguard.com/en/vpn
 
 Currently, AdGuard VPN is available as:
 
-* [Browser extension](https://adguard-vpn.com/en/vpn/vpn-for-browser-extentions) for Chrome, Firefox and Edge
+* [Browser extension](https://adguard-vpn.com/en/vpn/vpn-for-browser-extentions) for Chrome, Firefox, and Edge
 
 * Mobile app for [Android](https://adguard-vpn.com/en/vpn/vpn-for-android) and [iOS](https://adguard-vpn.com/en/vpn/vpn-for-ios)
 
