@@ -22,9 +22,9 @@ By default, AdGuard VPN for Android uses the **Default** logging level, that is,
 
 3. In the opened form, enter your email address for feedback and describe the error found, including the time when this error occurred. If you can't reproduce the problem, specify as accurately as possible when it last occurred.
 
-4. There is a check mark next to the **Attach technical logs**, which means that when you send a report, you also send logs.
+4. There is a check mark next to **Send detailed system info**, which means that when you send a report, you also send logs.
 
->If for some reason it is more convenient for you to send us logs in another way, you can export them yourself. To do this, select **Settings** → **Support** → **Export logs and system info**.
+>If for some reason it is more convenient for you to send us logs in another way, you can export them yourself. To do this, go to **Settings** → **Support** → **Export logs and system info**.
 
 <a name="extended"></a>
 
@@ -32,11 +32,11 @@ By default, AdGuard VPN for Android uses the **Default** logging level, that is,
 
 In most cases, the **Default** logging level is sufficient to trace down possible bugs. But there are cases when more detailed technical information about the device and connections is required, and then our support team will ask you to enable the **Extened** or **Extreme** logging level. To send these types of logs, follow these steps:
 
-1. Open AdGuard VPN for Android and select **Settings** (the gear icon at the bottom right corner) → **App Settings** → **Advansed Settings** → **Logging level**.
+1. Open AdGuard VPN for Android and select **Settings** (the gear icon at the bottom right corner) → **App Settings** → **Advanced Settings** → **Logging level**.
 
 2. In the **Logging level** section, select **Extened** or **Extreme** logging level.
 
-3. Repeat the actions that led to the error, and note the time when it occurred.
+3. Repeat the actions that led to the error and note the time when it occurred.
 
 4. Switch the logging level back to **Default**.
 
@@ -44,6 +44,6 @@ In most cases, the **Default** logging level is sufficient to trace down possibl
 
 6. In the opened form, enter your email address for feedback and describe the error found, including the time when this error occurred.
 
-7. Make sure that there is a check mark next to **Attach technical logs** and tap **Send**.
+7. Make sure that there is a check mark next to **Send detailed system info** and tap **Send**.
 
->If for some reason it is more convenient for you to send us logs in another way, you can export them yourself. To do this, select **Settings** → **Support** → **Export logs and system info**.
+>If for some reason it is more convenient for you to send us logs in another way, you can export them yourself. To do this, go to **Settings** → **Support** → **Export logs and system info**.

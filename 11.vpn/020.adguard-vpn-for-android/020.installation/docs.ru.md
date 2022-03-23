@@ -18,7 +18,7 @@ taxonomy:
 
 ## Установка AdGuard VPN для Android
 
-Скачать и установить приложение *AdGuard для Android* можно бесплатно в каталоге *Goodle Play*. Для этого перейдите по [этой ссылке](https://play.google.com/store/apps/details?id=com.adguard.vpn&referrer=aid%3D18672) и нажмите на значок загрузки или выполните несколько несложных шагов:
+Скачать и установить приложение *AdGuard VPN для Android* можно бесплатно в каталоге *Goodle Play*. Для этого перейдите по [этой ссылке](https://play.google.com/store/apps/details?id=com.adguard.vpn) и нажмите на значок загрузки или выполните несколько несложных шагов:
 
 1. Откройте на вашем устройстве приложение *Goodle Play* и нажмите на значок *Поиск* вверху экрана.
 
