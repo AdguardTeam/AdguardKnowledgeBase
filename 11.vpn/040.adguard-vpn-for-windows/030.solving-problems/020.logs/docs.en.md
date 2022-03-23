@@ -8,15 +8,15 @@ taxonomy:
 * [Collecting and sending standard logs](#default)
 * [Collecting and sending extended logs](#extended)
 
-If you encounter a problem when using AdGuard VPN for macOS, you can inform us about it by sending application logs.
+If you encounter a problem when using AdGuard VPN for Windows, you can inform us about it by sending application logs.
 
 <a name="default"></a>
 
 ## Collecting and sending standard logs
 
-By default, AdGuard VPN for macOS uses the standard logging level, that is, the basic collection of data about running processes of the app. To send these logs, follow the next steps:
+By default, AdGuard VPN for Windows uses the standard logging level, that is, the basic collection of data about running processes of the app. To send these logs, follow the next steps:
 
-1. Open AdGuard VPN for macOS and, if possible, repeat the actions that led to the error. Note the exact time when this error occurred.
+1. Open AdGuard VPN for Windows and, if possible, repeat the actions that led to the error. Note the exact time when this error occurred.
 
 2. Click **Support** (in the menu above) → **Report a bug**.
 
@@ -32,7 +32,7 @@ By default, AdGuard VPN for macOS uses the standard logging level, that is, the 
 
 In most cases, the default logging level is sufficient to trace down possible bugs. But there are cases when more detailed technical information about the device and connections is required, and then our support team will ask you to enable the extened logging level. To send this type of logs, follow these steps:
 
-1. Open AdGuard VPN for macOS and select **Settings** (in the menu above) → **General** → **Advanced settings**.
+1. Open AdGuard VPN for Windows and select **Settings** (in the menu above) → **General** → **Advanced settings**.
 
 2. In the **Logging level** section, select **Record everything**.
 
