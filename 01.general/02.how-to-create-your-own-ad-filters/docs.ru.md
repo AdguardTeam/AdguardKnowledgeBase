@@ -436,7 +436,7 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 Правило соответствует запросам основного документа страницы, т.е. HTML-документа, который загружается во вкладке браузера. Оно не подходит для frame-элементов, для которых существует модификатор `$subdocument`.
 
-По умолчанию AdGuard не будет блокировать запросы, которые загружаются во вкладке браузера. Идея заключается в том, чтобы не препятствовать загрузке страниц, поскольку пользователь явно указал, что он хочет, чтобы эта страница была загружена. Однако, если использовать модификатор `$document`, то AdGuard будет предотвращать загрузку страницы, то есть заблокирует её. 
+По умолчанию AdGuard не будет блокировать запросы, которые загружаются во вкладке браузера. Идея заключается в том, чтобы не препятствовать загрузке страниц, поскольку пользователь явно указал, что он хочет, чтобы эта страница была загружена. Однако, если использовать модификатор `$document`, то AdGuard будет предотвращать загрузку страницы, то есть заблокирует её.
 
 Если этот модификатор используется в правиле-исключении (`@@`), то оно полностью отключает блокировку на соответствующих страницах. Это равносильно одновременному использованию модификаторов `$elemhide`, `$content`, `$urlblock`, `$jsinject` и `$extension`.
 
@@ -2027,7 +2027,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 <a id="non-basic-rules-modifiers-path"></a>
 ### path
 
-Модификатор `path` ограничивает действие правила определенным местоположением или страницей на сайтах. 
+Модификатор `path` ограничивает действие правила определенным местоположением или страницей на сайтах.
 
 #### Синтаксис
 ```
@@ -2044,7 +2044,7 @@ path=pattern
 * `[$path=page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
 * `[$path=/page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
 * `[$path=|/page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
-* `[$path=/page.html|]##.textad` - скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>` 
+* `[$path=/page.html|]##.textad` - скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
 * `[$path=/page*.html]example.com##.textad` - скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` - скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
@@ -2404,20 +2404,25 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 
 Если вы используете браузерное расширение AdGuard и хотите отладить [скриптлет-правило](https://kb.adguard.com/ru/general/how-to-create-your-own-ad-filters#scriptlets), вы можете получить дополнительную информацию, просто открыв Журнал фильтрации. В этом случае, скриптлеты переключатся в режим отладки и будут писать больше информации в браузерную консоль.
 
-Следующие скриптлеты могут быть особенно полезны в целях отладки:
+Следующие скриптлеты разработаны специально для отладки:
 
-[`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
-[`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
-[`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
-[`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
-[`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
-[`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
+* [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
+* [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
+* [`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
+* [`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
+* [`log-on-stack-trace`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-on-stack-trace)
+* [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
+* [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
-Следующие скриптлеты могут быть полезны в целях отладки, когда применяются без каких бы то ни было параметров:
+Следующие скриптлеты тоже могут быть использованы для отладки:
 
-[`requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
-[`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
-[`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
+* [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
+* [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
+* [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
+* [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
+* [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
+* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) со специальным параметром `replacement`
+* [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
 
 
 <a id="good-luck"></a>
