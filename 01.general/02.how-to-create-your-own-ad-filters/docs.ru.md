@@ -222,7 +222,7 @@ visible: true
     <img src="https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg" />
 </object>
 
-Косметические правила применяются с использованием CSS - специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, целью которого является скрыть определенные элементы. Узнать больше о CSS [Подробнее](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, целью которого является скрыть определенные элементы. Узнать больше о CSS [Подробнее](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
 > [Расширенный CSS](#extended-css-selectors) позволяет разработчикам фильтров справляться с гораздо более сложными случаями. Однако, чтобы использовать эти расширенные правила, вы должны хорошо понимать, что такое CSS.
 
@@ -362,7 +362,7 @@ pattern = "/" regexp "/"
 * `*$cookie,domain=example.org|example.com` заблокирует cookies для всех запросов от и к `example.org` и `example.com`.
 * `*$document,domain=example.org|example.com` заблокирует все запросы от и к `example.org` и `example.com`.
 
-В следующих примерах предполагается, что запросы отправляются от `http://example.org/page`(реферер), а целевой URL - `http://targetdomain.com/page`.
+В следующих примерах предполагается, что запросы отправляются от `http://example.org/page`(реферер), а целевой URL — `http://targetdomain.com/page`.
 
 * `page$domain=example.org` сработает, так как соответствует рефереру.
 * `page$domain=targetdomain.com` сработает, так как соответствует целевому домену, но выполнены все условия, перечисленные выше.
@@ -526,8 +526,8 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 ###### Примеры `webrtc`
 
-* `||example.com^$webrtc,domain=example.org` - это правило блокирует WebRTC-соединения c `example.com` для `example.org`.
-* `@@*$webrtc,domain=example.org` - это правило отменяет блокировку всех WebRTC-соединений для `example.org`.
+* `||example.com^$webrtc,domain=example.org` — это правило блокирует WebRTC-соединения c `example.com` для `example.org`.
+* `@@*$webrtc,domain=example.org` — это правило отменяет блокировку всех WebRTC-соединений для `example.org`.
 
 > **Предупреждение об устаревании.** Этот модификатор устарел и в будущем его поддержка будет убрана. Если вы хотите блокировать WebRTC, рассмотрите возможность использования скриптлета `$nowebrtc`.
 
@@ -746,7 +746,7 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 > **Совместимость с другими модификаторами**
 > Правила с `$removeparam` совместимы с [базовыми модификаторами](#basic-rules-common-modifiers), [модификаторами с ограничением по типу контента](#content-type-modifiers), а также с модификаторами `$important` и `$app`. Правила, содержащие другие типы модификаторов, будут считаться некорректными и не будут применены.
 
-> **Обратите внимание**, что блокировку правил `$removeparam` также можно отключить с помощью правил исключений `$document` и `$urlblock`. Но базовые правила исключений без модификаторов не могут этого сделать. Например, `@@||example.com^` не отключит `$removeparam=p` для запросов к example.com, а вот `@@||example.com^$urlblock` - отключит.
+> **Обратите внимание**, что блокировку правил `$removeparam` также можно отключить с помощью правил исключений `$document` и `$urlblock`. Но базовые правила исключений без модификаторов не могут этого сделать. Например, `@@||example.com^` не отключит `$removeparam=p` для запросов к example.com, а вот `@@||example.com^$urlblock` — отключит.
 
 > **Совместимость с различными версиями AdGuard.** Правила с этим модификатором поддерживаются AdGuard для Windows, Mac, Android, а также браузерными расширениями AdGuard для Chrome, Firefox, Edge. **На данный момент только девелопер-сборки.**
 
@@ -869,7 +869,7 @@ replace = "/" regex "/" replacement "/" modifiers
 
 * `regex` — регулярное выражение.
 * `replacement` — строка, которая будет использована для замены строки в соответствии с `regex`.
-* `modifiers` — флаги регулярных выражений. Например, `i` - поиск без учёта регистра, или `s` - режим одной строки.
+* `modifiers` — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, или `s` — режим одной строки.
 
 В значении `$replace` необходимо экранировать два символа: запятую (`,`) и (`$`). Для экранирования используйте (`\`). Например, экранированная запятая будет выглядеть так: `\,`.
 
@@ -984,10 +984,10 @@ http://regexr.com/3cesk
 
 ###### Примеры с `network`
 
-* `174.129.166.49:3478^$network` - блокирует доступ к `174.129.166.49:3478` (но не к `174.129.166.49:34788`).
-* `[2001:4860:4860::8888]:443^$network` - блокирует доступ к `[2001:4860:4860::8888]:443`.
-* `174.129.166.49$network` - блокирует доступ к `174.129.166.49:*`.
-* `@@174.129.166.49$network` - заставляет AdGuard направлять трафик в конечную точку. Никакие другие правила не будут применены.
+* `174.129.166.49:3478^$network` — блокирует доступ к `174.129.166.49:3478` (но не к `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` — блокирует доступ к `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` — блокирует доступ к `174.129.166.49:*`.
+* `@@174.129.166.49$network` — заставляет AdGuard направлять трафик в конечную точку. Никакие другие правила не будут применены.
 
 > **Совместимость с различными версиями AdGuard.** Только AdGuard для Windows, Mac, Android имеют технические возможности для поддержки этого типа правил.
 
@@ -996,9 +996,9 @@ http://regexr.com/3cesk
 
 Этот модификатор ограничивает действие правила до конкретного приложения (или списка приложений). Это может быть не так критично на Windows или Mac, но на мобильных устройствах, где для корректной работы некоторые правила должны быть специфичны для конкретных приложений, данная функция крайне важна.
 
-* Android - используйте имя пакета приложения (например, `org.example.app`).
-* Windows - используйте имя процесса (например, `chrome.exe`).
-* Mac - используйте bundle ID или имя процесса (например, `com.google.Chrome`).
+* Android — используйте имя пакета приложения (например, `org.example.app`).
+* Windows — используйте имя процесса (например, `chrome.exe`).
+* Mac — используйте bundle ID или имя процесса (например, `com.google.Chrome`).
 
 >На Mac вы можете найти bundle ID или имя процесса интересующего вас приложения в деталях соответствующих запросов в Журнале фильтрации.
 
@@ -1260,8 +1260,8 @@ domains = [domain0, domain1[, ...[, domainN]]]
 #### Примеры правил скрытия
 
 * `example.com##div.textad` — скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
-* `example.com,example.org###adblock` - скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
-* `~example.com##.textad` - скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменах.
+* `example.com,example.org###adblock` — скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
+* `~example.com##.textad` — скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменах.
 
 > **Важно!** Safari не поддерживает одновременно разрешенные и запрещенные домены, поэтому правила вида `example.org,~foo.example.org##.textad` не действуют в AdGuard для Safari.
 
@@ -1357,8 +1357,8 @@ example.com#@$#.textad { visibility: hidden; }
 
 Синтаксис расширенных CSS-правил:
 
-* `#?#` — для скрытия элементов (`#@?#` - для исключений)
-* `#$?#` — для вставки CSS (`#@$?#` - для исключений)
+* `#?#` — для скрытия элементов, `#@?#` — для исключений
+* `#$?#` — для вставки CSS, `#@$?#` — для исключений
 
 Мы **Крайне рекомендуем** использовать этим маркеры каждый раз, когда вы используете CSS-селектор.
 
@@ -1787,7 +1787,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 
 * **`tagName`** — имя элемента в нижнем регистре, например, `div` или `script`.
 * **`domains`** — ограничение на домены, на страницах которых будет применено правило. Строится по тем же правилам, что и в случае [правил скрытия элементов](#elemhide-syntax).
-* **`attributes`** — список атрибутов, ограничивающих выбор элементов. `name` - название атрибута, `value` - подстрока, которая содержится в значении атрибута.
+* **`attributes`** — список атрибутов, ограничивающих выбор элементов. `name` — название атрибута, `value` — подстрока, которая содержится в значении атрибута.
 
 <a id="html-filtering-rules-examples"></a>
 ### Примеры
@@ -2034,20 +2034,20 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 path=pattern
 ```
 
-`pattern` - это маска пути, которой ограничено правило. Его синтаксис и поведение почти такие же, как в [шаблоне базовых правил](#basic-rules-syntax). Вы также можете использовать [специальные символы](#basic-rules-special-characters), за исключением `||`, поскольку в этом случае это не имеет никакого смысла (см. примеры ниже).
+`pattern` — это маска пути, которой ограничено правило. Его синтаксис и поведение почти такие же, как в [шаблоне базовых правил](#basic-rules-syntax). Вы также можете использовать [специальные символы](#basic-rules-special-characters), за исключением `||`, поскольку в этом случае это не имеет никакого смысла (см. примеры ниже).
 
 > Обратите внимание, что модификатор пути также соответствует параметрам запроса.
 
 > Модификатор `path` поддерживает регулярные выражения [таким же образом](#regexp-support), что и основные правила.
 
 Примеры использования `path`:
-* `[$path=page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
-* `[$path=/page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
-* `[$path=|/page.html]##.textad` - скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
-* `[$path=/page.html|]##.textad` - скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` - скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` - скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
+* `[$path=page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
+* `[$path=/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
+* `[$path=|/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
+* `[$path=/page.html|]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
+* `[$path=/page*.html]example.com##.textad` — скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` — скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с разными версиями AdGuard.** Правила с этим модификатором поддерживаются AdGuard для Windows, Mac, Android,а также браузерными расширениями AdGuard для Chrome, Firefox, Edge. **На данный момент только в девелопер-сборках.**
 
@@ -2230,7 +2230,7 @@ example.org#@#.adBanner
 <a id="hints"></a>
 ### Hints
 
-"Hint" - это специальный комментарий, инструкция для компилятора фильтров, работающего на стороне сервера (см. [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
+"Hint" — это специальный комментарий, инструкция для компилятора фильтров, работающего на стороне сервера (см. [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
 
 <a id="hints_syntax"></a>
 #### Синтаксис Hints
@@ -2291,27 +2291,27 @@ example.org#@#.adBanner
 Записи этого типа позволяют указывать системную платформу, для которой применяется правило. Ниже представлен список используемых платформ:
 
 
-* windows - Пример: английский фильтр для Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+* `windows` — например, Базовый фильтр для Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac - Пример: английский фильтр для Mac - [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+* `mac` — например, Базовый фильтр для Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
-* android - Пример: английский фильтр для Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+* `android` — например, Базовый фильтр для Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* ios - Пример: английский фильтр для iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+* `ios` — например, Базовый фильтр для iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Пример: расширение AdGuard для браузера Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+* `ext_chromium` — например, Базовый фильтр для Браузерного расширения AdGuard для Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Пример: расширение AdGuard для браузера Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+* `ext_ff` — например, Базовый фильтр для Браузерного расширения AdGuard для Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Пример: расширение AdGuard для браузера Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+* `ext_edge` — например, Базовый фильтр для Браузерного расширения AdGuard для Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_opera - Пример: расширение AdGuard для браузера Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+* `ext_opera` — например, Базовый фильтр для Браузерного расширения AdGuard для Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-* ext_ublock - Пример: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
+* `ext_ublock` — например, Базовый фильтр для uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
-* ext_safari - Пример: расширение AdGuard для браузера Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+* `ext_safari` — например, Базовый фильтр для AdGuard для Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* ext_android_cb - Пример: AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* `ext_android_cb` — например, Базовый фильтр для AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 Примеры:
 

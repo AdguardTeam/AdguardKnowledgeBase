@@ -287,7 +287,7 @@ pattern = "/" regexp "/"
 
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
-> **Compatibility with different versions of AdGuard.** AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> **Compatibility with different versions of AdGuard.** AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="wildcard-for-tld"></a>
 ### Wildcard support for TLD (top-level domains)
@@ -523,8 +523,8 @@ The rule applies only to WebRTC connections.
 
 ###### `webrtc` example
 
-* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connections to `example.com` for `example.org`.
-* `@@*$webrtc,domain=example.org` - this rule disables the RTC wrapper for `example.org`.
+* `||example.com^$webrtc,domain=example.org` — this rule blocks webRTC connections to `example.com` for `example.org`.
+* `@@*$webrtc,domain=example.org` — this rule disables the RTC wrapper for `example.org`.
 
 > **Deprecation notice.** This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `$nowebrtc` scriptlet.
 
@@ -874,7 +874,7 @@ replace = "/" regex "/" replacement "/" modifiers
 
 * `regex` — regular expression.
 * `replacement` — a string that will be used to replace the string corresponding to `regex`.
-* `modifiers` — regular expression flags. For example, `i` - insensitive search, or `s` - single-line mode.
+* `modifiers` — regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
 In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
 
@@ -988,10 +988,10 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 ##### `network` examples
 
-* `174.129.166.49:3478^$network` - blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
-* `[2001:4860:4860::8888]:443^$network` - blocks access to `[2001:4860:4860::8888]:443`.
-* `174.129.166.49$network` - blocks access to `174.129.166.49:*`.
-* `@@174.129.166.49$network` - makes AdGuard bypass data to the endpoint. No other rules will be applied.
+* `174.129.166.49:3478^$network` — blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` — blocks access to `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` — blocks access to `174.129.166.49:*`.
+* `@@174.129.166.49$network` — makes AdGuard bypass data to the endpoint. No other rules will be applied.
 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using this type of rules.
 
@@ -1000,9 +1000,9 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
 
-* Android - use the apps' package names (i.e. `org.example.app`).
-* Windows - use the process name (i.e. `chrome.exe`).
-* Mac - use the bundle ID or the process name (i.e. `com.google.Chrome`).
+* Android — use the apps' package names (i.e. `org.example.app`).
+* Windows — use the process name (i.e. `chrome.exe`).
+* Mac — use the bundle ID or the process name (i.e. `com.google.Chrome`).
 
 >For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
@@ -1267,8 +1267,8 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 #### Examples
 
 * `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
+* `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `~example.com##.textad` — hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
 
 > **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -1794,7 +1794,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 
 * **`tagName`** — name of the element in lower case, for example `div` or `script`.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-* **`attributes`** — a list of attributes, that limit the elements selection. `name` - attribute name, `value` - substring, that is contained in attribute value.
+* **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
 
 <a id="html-filtering-rules-examples"></a>
 ### Example
@@ -1854,7 +1854,7 @@ It will check, if the element's code contains two consecutive substrings `banner
 <a id="max-length-attribute"></a>
 ##### `max-length`
 
-Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value - a rule does not apply to the element.
+Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
 > **Default value.** If this parameter is not specified, the `max-length` is considered to be 8192.
 
@@ -1867,7 +1867,7 @@ This rule will remove all the `div` elements, whose code contains the substring 
 <a id="min-length-attribute"></a>
 ##### `min-length`
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value - a rule does not apply to the element.
+Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
 For example:
 ```
@@ -1991,8 +1991,8 @@ rule = "[$" modifiers "]" [rule text]
 modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 ```
 
-* `modifier` - set of the modifiers described below.
-* `rule text` - a rule to be modified.
+* `modifier` — set of the modifiers described below.
+* `rule text` — a rule to be modified.
 
 For example: `[$domain=example.com,app=test_app]##selector`.
 
@@ -2008,8 +2008,8 @@ this: `\]`.
 The modifier's behavior and syntax perfectly match the corresponding [$app modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#app) of basic rules.
 
 `app` examples:
-* `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
-* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
+* `[$app=org.example.app]example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
+* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 * `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')`. This rule will apply the corresponding scriptlet only in Safari browser on Mac.
 * `[$app=org.example.app]#@#.textad` — disables all `##.textad` rules for all domains while using `org.example.app`.
 
@@ -2025,8 +2025,8 @@ basic rules.
 
 `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `[$domain=~example.com]##.textad` - this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
+* `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
@@ -2055,13 +2055,13 @@ path=pattern
 > `path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
 
 `path` examples:
-* `[$path=page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
-* `[$path=/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
-* `[$path=|/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
-* `[$path=/page.html|]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` - hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` - hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+* `[$path=page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
+* `[$path=/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
+* `[$path=|/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
+* `[$path=/page.html|]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
+* `[$path=/page*.html]example.com##.textad` — hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` — hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard.** Rules with `path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge. **Developer builds only at this moment.**
 
@@ -2270,27 +2270,27 @@ Eventually, here are the two versions of the Base filter for AdGuard browser ext
 Specify which platforms can apply this rule. List of existing platforms:
 
 
-* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+* `windows` — e.g. Base filter for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac - Example: English filter for Mac - [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+* `mac` — e.g. Base filter for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
-* android - Example: English filter for Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+* `android` — e.g. Base filter for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* ios - Example: English filter for iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+* `ios` — e.g. Base filter for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Example: AdGuard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+* `ext_chromium` — e.g. Base filter for AdGuard browser extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Example: AdGuard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+* `ext_ff` — e.g. Base filter for AdGuard browser extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Example: AdGuard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+* `ext_edge` — e.g. Base filter for AdGuard browser extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_opera - Example: AdGuard browser extension for Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+* `ext_opera` — e.g. Base filter for AdGuard browser extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-* ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
+* `ext_ublock` — e.g. Base filter for uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
-* ext_safari - Example: AdGuard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+* `ext_safari` — e.g. Base filter for AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* ext_android_cb - Example: AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* `ext_android_cb` — e.g. Base filter for AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 Examples:
 
