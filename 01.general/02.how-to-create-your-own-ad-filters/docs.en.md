@@ -287,7 +287,7 @@ pattern = "/" regexp "/"
 
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
-> **Compatibility with different versions of AdGuard.** AdGuard browser extension for Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> **Compatibility with different versions of AdGuard.** AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 <a id="wildcard-for-tld"></a>
 ### Wildcard support for TLD (top-level domains)
@@ -523,8 +523,8 @@ The rule applies only to WebRTC connections.
 
 ###### `webrtc` example
 
-* `||example.com^$webrtc,domain=example.org` - this rule blocks webRTC connections to `example.com` for `example.org`.
-* `@@*$webrtc,domain=example.org` - this rule disables the RTC wrapper for `example.org`.
+* `||example.com^$webrtc,domain=example.org` — this rule blocks webRTC connections to `example.com` for `example.org`.
+* `@@*$webrtc,domain=example.org` — this rule disables the RTC wrapper for `example.org`.
 
 > **Deprecation notice.** This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `$nowebrtc` scriptlet.
 
@@ -664,7 +664,7 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 ###### Basic syntax
 
-* `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
+* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
 
 > `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
 
@@ -672,7 +672,7 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 You can also use regular expressions to match query parameters and/or their values:
 
-* `$removeparam=/regex/[options]` -- removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
+* `$removeparam=/regex/[options]` — removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
 > `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
 
@@ -690,14 +690,14 @@ You can also use regular expressions to match query parameters and/or their valu
 
 Specify naked `$removeparam` to remove all query parameters:
 
-* `||example.org^$removeparam` -- removes all query parameters from URLs matching `||example.org^`.
+* `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
 
 ###### Inversion
 
 Use `~` to apply inversion:
 
-* `$removeparam=~param` -- removes all query parameters with the name different from `param`.
-* `$removeparam=~/regex/` -- removes all query parameters that do not match the regex regular expression.
+* `$removeparam=~param` — removes all query parameters with the name different from `param`.
+* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
 
 ###### Negating `$removeparam`
 
@@ -705,9 +705,9 @@ This sort of rules work pretty much the same way it works with [`$csp`](#csp-mod
 
 Use `@@` to negate `$removeparam`:
 
-* `@@||example.org^$removeparam` -- negates all `$removeparam` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeparam=param` -- negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regex/` -- negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regex/` — negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
 
 >**Multiple rules matching a single request**
 >In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
@@ -715,17 +715,17 @@ Use `@@` to negate `$removeparam`:
 ##### Examples
 
 ```
-$removeparam=utm_source|utm_medium|utm_term
-$removeparam=utm_content|utm_campaign|utm_referrer
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
 
-* `$removeparam=utm_source` -- removes `utm_source` query parameter from all requests.
+* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
 
-* `$removeparam=/utm_.*/` -- removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+* `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
 
-* `$removeparam=/^utm_source=campaign$/` -- removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
+* `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
 Negating one `$removeparam` rule and replacing it with a different rule:
 
@@ -874,7 +874,7 @@ replace = "/" regex "/" replacement "/" modifiers
 
 * `regex` — regular expression.
 * `replacement` — a string that will be used to replace the string corresponding to `regex`.
-* `modifiers` — regular expression flags. For example, `i` - insensitive search, or `s` - single-line mode.
+* `modifiers` — regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
 In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
 
@@ -952,28 +952,28 @@ The `$cookie` modifier completely changes rule behavior. Instead of blocking a r
 ##### `$cookie` syntax
 The rule syntax depends on whether we are going to block all cookies or to remove a single cookie. The rule behavior can be changed with `maxAge` and `sameSite` modifiers.
 
-* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` — every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
 
   * Set its expiration date to current time plus `3600` seconds
   * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
-* `||example.org^$cookie` -- blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
-* `||example.org^$cookie=NAME` -- blocks a single cookie named `NAME`
-* `||example.org^$cookie=/regular_expression/` -- blocks every cookie that matches a given regular expression
+* `||example.org^$cookie` — blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
+* `||example.org^$cookie=NAME` — blocks a single cookie named `NAME`
+* `||example.org^$cookie=/regular_expression/` — blocks every cookie that matches a given regular expression
 
 > **Important:** in the case of a regular expression matching, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
 
 `$cookie` rules are not affected by regular exception rules (`@@`) unless it's a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. Here's how it works:
 
-* `@@||example.org^$cookie` -- unblocks all cookies set by `example.org`
-* `@@||example.org^$cookie=NAME` -- unblocks a single cookie named `NAME`
-* `@@||example.org^$cookie=/regular_expression/` -- unblocks every cookie matching a given regular expression
+* `@@||example.org^$cookie` — unblocks all cookies set by `example.org`
+* `@@||example.org^$cookie=NAME` — unblocks a single cookie named `NAME`
+* `@@||example.org^$cookie=/regular_expression/` — unblocks every cookie matching a given regular expression
 
 > **Limitations:** `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
 
 ##### Real-life examples
-* `$cookie=__cfduid` -- blocks CloudFlare cookie everywhere
-* `$cookie=/__utm[a-z]/` -- blocks Google Analytics cookies everywhere
-* `||facebook.com^$third-party,cookie=c_user` -- prevents Facebook from tracking you even if you are logged in
+* `$cookie=__cfduid` — blocks CloudFlare cookie everywhere
+* `$cookie=/__utm[a-z]/` — blocks Google Analytics cookies everywhere
+* `||facebook.com^$third-party,cookie=c_user` — prevents Facebook from tracking you even if you are logged in
 
 > **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
 
@@ -988,10 +988,10 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 ##### `network` examples
 
-* `174.129.166.49:3478^$network` - blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
-* `[2001:4860:4860::8888]:443^$network` - blocks access to `[2001:4860:4860::8888]:443`.
-* `174.129.166.49$network` - blocks access to `174.129.166.49:*`.
-* `@@174.129.166.49$network` - makes AdGuard bypass data to the endpoint. No other rules will be applied.
+* `174.129.166.49:3478^$network` — blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` — blocks access to `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` — blocks access to `174.129.166.49:*`.
+* `@@174.129.166.49$network` — makes AdGuard bypass data to the endpoint. No other rules will be applied.
 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using this type of rules.
 
@@ -1000,9 +1000,9 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
 
-* Android - use the apps' package names (i.e. `org.example.app`).
-* Windows - use the process name (i.e. `chrome.exe`).
-* Mac - use the bundle ID or the process name (i.e. `com.google.Chrome`).
+* Android — use the apps' package names (i.e. `org.example.app`).
+* Windows — use the process name (i.e. `chrome.exe`).
+* Mac — use the bundle ID or the process name (i.e. `com.google.Chrome`).
 
 >For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
@@ -1267,8 +1267,8 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 #### Examples
 
 * `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `example.com,example.org###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` - hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
+* `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `~example.com##.textad` — hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
 
 > **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -1794,7 +1794,7 @@ attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = value
 
 * **`tagName`** — name of the element in lower case, for example `div` or `script`.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-* **`attributes`** — a list of attributes, that limit the elements selection. `name` - attribute name, `value` - substring, that is contained in attribute value.
+* **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
 
 <a id="html-filtering-rules-examples"></a>
 ### Example
@@ -1854,7 +1854,7 @@ It will check, if the element's code contains two consecutive substrings `banner
 <a id="max-length-attribute"></a>
 ##### `max-length`
 
-Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value - a rule does not apply to the element.
+Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
 > **Default value.** If this parameter is not specified, the `max-length` is considered to be 8192.
 
@@ -1867,7 +1867,7 @@ This rule will remove all the `div` elements, whose code contains the substring 
 <a id="min-length-attribute"></a>
 ##### `min-length`
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value - a rule does not apply to the element.
+Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
 For example:
 ```
@@ -1991,8 +1991,8 @@ rule = "[$" modifiers "]" [rule text]
 modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 ```
 
-* `modifier` - set of the modifiers described below.
-* `rule text` - a rule to be modified.
+* `modifier` — set of the modifiers described below.
+* `rule text` — a rule to be modified.
 
 For example: `[$domain=example.com,app=test_app]##selector`.
 
@@ -2008,8 +2008,8 @@ this: `\]`.
 The modifier's behavior and syntax perfectly match the corresponding [$app modifier](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#app) of basic rules.
 
 `app` examples:
-* `[$app=org.example.app]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
-* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` - hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
+* `[$app=org.example.app]example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
+* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
 * `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')`. This rule will apply the corresponding scriptlet only in Safari browser on Mac.
 * `[$app=org.example.app]#@#.textad` — disables all `##.textad` rules for all domains while using `org.example.app`.
 
@@ -2025,8 +2025,8 @@ basic rules.
 
 `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `[$domain=example.com|example.org]###adblock` - hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `[$domain=~example.com]##.textad` - this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
+* `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+* `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
@@ -2055,13 +2055,13 @@ path=pattern
 > `path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
 
 `path` examples:
-* `[$path=page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
-* `[$path=/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
-* `[$path=|/page.html]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
-* `[$path=/page.html|]##.textad` - hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` - hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` - hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` - hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+* `[$path=page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
+* `[$path=/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
+* `[$path=|/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
+* `[$path=/page.html|]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
+* `[$path=/page*.html]example.com##.textad` — hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` — hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard.** Rules with `path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge. **Developer builds only at this moment.**
 
@@ -2270,27 +2270,27 @@ Eventually, here are the two versions of the Base filter for AdGuard browser ext
 Specify which platforms can apply this rule. List of existing platforms:
 
 
-* windows - Example: English filter for Windows - [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+* `windows` — e.g. Base filter for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* mac - Example: English filter for Mac - [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+* `mac` — e.g. Base filter for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
-* android - Example: English filter for Android - [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+* `android` — e.g. Base filter for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* ios - Example: English filter for iOS - [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+* `ios` — e.g. Base filter for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* ext_chromium - Example: AdGuard browser extension for Chrome - [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+* `ext_chromium` — e.g. Base filter for AdGuard browser extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* ext_ff - Example: AdGuard browser extension for Firefox - [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+* `ext_ff` — e.g. Base filter for AdGuard browser extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* ext_edge - Example: AdGuard browser extension for Edge - [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+* `ext_edge` — e.g. Base filter for AdGuard browser extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* ext_opera - Example: AdGuard browser extension for Opera - [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+* `ext_opera` — e.g. Base filter for AdGuard browser extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-* ext_ublock - Example: uBlock Origin - [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
+* `ext_ublock` — e.g. Base filter for uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
-* ext_safari - Example: AdGuard browser extension for Safari - [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+* `ext_safari` — e.g. Base filter for AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* ext_android_cb - Example: AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* `ext_android_cb` — e.g. Base filter for AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 Examples:
 
