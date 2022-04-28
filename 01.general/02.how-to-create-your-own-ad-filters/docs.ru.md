@@ -667,7 +667,7 @@ domain.com###banner
 
 ###### Базовый синтаксис
 
-* `$removeparam=param` -- убирает параметр запроса с именем `param` из URL любого запроса. Например, запрос к `http://example.com/page?param=1&another=2` будет преобразован в `http://example.com/page?another=2`.
+* `$removeparam=param` — убирает параметр запроса с именем `param` из URL любого запроса. Например, запрос к `http://example.com/page?param=1&another=2` будет преобразован в `http://example.com/page?another=2`.
 
 > Базовый синтаксис `$removeparam` поддерживается начиная с версии 1.7 [CoreLibs](https://adguard.com/ru/blog/introducing-corelibs.html) и версии 3.6 Браузерного расширения AdGuard.
 
@@ -675,7 +675,7 @@ domain.com###banner
 
 Вы также можете использовать регулярные выражения для соответствия параметрам запроса и/или их значениям:
 
-* `$removeparam=/regex/[options]` -- убирает все параметры, соответствующие регулярному выражению из URL любого запроса. В отличие от базового синтаксиса, это означает *"убрать параметры запроса, нормализованные к строке `name=value`, которая соответствует регулярному выражению"*. Здесь `[options]` -- это список опций регулярного выражения. На данный момент, единственная поддерживаемая опция — это `i`, делающая соответствие нечувствительным к регистру.
+* `$removeparam=/regex/[options]` — убирает все параметры, соответствующие регулярному выражению из URL любого запроса. В отличие от базового синтаксиса, это означает *"убрать параметры запроса, нормализованные к строке `name=value`, которая соответствует регулярному выражению"*. Здесь `[options]` — это список опций регулярного выражения. На данный момент, единственная поддерживаемая опция — это `i`, делающая соответствие нечувствительным к регистру.
 
 > Синтаксис `$removeparam` для регулярных выражений будет доступен начиная с версии 1.8 CoreLibs и версии 4.0. Браузерного расширения AdGuard, а пока используйте упрощенный вариант: `$removeparam=param`.
 
@@ -693,14 +693,14 @@ domain.com###banner
 
 Укажите "голый" `$removeparam`, чтобы убрать все параметры запроса:
 
-* `||example.org^$removeparam` -- убирает все параметры запроса из URL, соответствующего `||example.org^`.
+* `||example.org^$removeparam` — убирает все параметры запроса из URL, соответствующего `||example.org^`.
 
 ###### Инверсия
 
 Используйте символ `~`, чтобы применить инверсию:
 
-* `$removeparam=~param` -- убирает все параметры запроса с именем, отличным от `param`.
-* `$removeparam=~/regex/` -- убирает все параметры запроса, которые не соответствуют регулярному выражению.
+* `$removeparam=~param` — убирает все параметры запроса с именем, отличным от `param`.
+* `$removeparam=~/regex/` — убирает все параметры запроса, которые не соответствуют регулярному выражению.
 
 ###### Отмена `$removeparam`
 
@@ -708,20 +708,20 @@ domain.com###banner
 
 Используйте `@@`, чтобы отменить `$removeparam`:
 
-* `@@||example.org^$removeparam` -- отменяет все правила `$removeparam` для URL, соответствующих `||example.org^`.
-* `@@||example.org^$removeparam=param` -- отменяет правило с `$removeparam=param` для любого запроса, соответствующего `||example.org^`.
-* `@@||example.org^$removeparam=/regex/` -- отменяет правило с `$removeparam=/regex/` для любого запроса, соответствующего `||example.org^`.
+* `@@||example.org^$removeparam` — отменяет все правила `$removeparam` для URL, соответствующих `||example.org^`.
+* `@@||example.org^$removeparam=param` — отменяет правило с `$removeparam=param` для любого запроса, соответствующего `||example.org^`.
+* `@@||example.org^$removeparam=/regex/` — отменяет правило с `$removeparam=/regex/` для любого запроса, соответствующего `||example.org^`.
 
 > **Многочисленные правила, соответствующие одному запросу**
 > В случае, когда несколько правил с `$removeparam` соответствуют одному запросу, они все будут применены по очереди.
 
 ##### Примеры
 
-* `$removeparam=utm_source` -- убирает параметр `utm_source` из всех запросов.
+* `$removeparam=utm_source` — убирает параметр `utm_source` из всех запросов.
 
-* `$removeparam=/utm_.*/` -- убирает все параметры `utm_* query` из URL любого запроса, например, запрос `http://example.com/page?utm_source=test` будет трансформирован в `http://example.com/page`.
+* `$removeparam=/utm_.*/` — убирает все параметры `utm_* query` из URL любого запроса, например, запрос `http://example.com/page?utm_source=test` будет трансформирован в `http://example.com/page`.
 
-* `$removeparam=/^utm_source=campaign$/` -- убирает параметр `utm_source` с значением `campaign`. Не затрагивает другие параметры `utm_source`.
+* `$removeparam=/^utm_source=campaign$/` — убирает параметр `utm_source` с значением `campaign`. Не затрагивает другие параметры `utm_source`.
 
 Отмена одного правила `$removeparam` и замена его другим:
 
@@ -947,29 +947,29 @@ http://regexr.com/3cesk
 ### Синтаксис `$cookie`
 Синтаксис правила зависит от того, собираемся ли мы заблокировать все cookie или удалить один cookie. Поведение правила можно изменить с помощью модификаторов `maxAge` и `sameSite`.
 
-* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- каждый раз, когда AdGuard встречает cookie с именем `NAME` в запросе к `example.org`, он будет делать следующее:
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` — каждый раз, когда AdGuard встречает cookie с именем `NAME` в запросе к `example.org`, он будет делать следующее:
 
   * Установит дату истечения срока хранения на текущее время плюс `3600` секунд
   * Позволяет cookie использовать [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" стратегию.
-* `||example.org^$cookie` -- Блокирует ВСЕ cookie установленные `example.org`. Это эквивалентно установке `maxAge` 0.
-* `||example.org^$cookie=NAME` -- Блокирует единственную cookie с именем `NAME`.
-* `||example.org^$cookie=/regular_expression/` -- Блокирует все cookie, которые совпадают с регулярным выражением.
+* `||example.org^$cookie` — Блокирует ВСЕ cookie установленные `example.org`. Это эквивалентно установке `maxAge` 0.
+* `||example.org^$cookie=NAME` — Блокирует единственную cookie с именем `NAME`.
+* `||example.org^$cookie=/regular_expression/` — Блокирует все cookie, которые совпадают с регулярным выражением.
 
 > **Важно:** В случае использования регулярных выражений необходимо экранировать следующие символы: запятая (`,`) и (`$`). Используйте (`\`) для этого. Например, экранированная запятая выглядит так: `\,`.
 
 Правила исключения (`@@`) не влияют на правила `$cookie`, только если это не правило исключение `$document`. Чтобы отключить правило `$cookie`, правило исключение также должно иметь модификатор `$cookie`. Вот как это работает:
 
-* `@@||example.org^$cookie` -- разблокирует все cookie, установленные `example.org`
-* `@@||example.org^$cookie=NAME` -- разблокирует одну cookie с именем `NAME`
-* `@@||example.org^$cookie=/regular_expression/` -- разблокирует все cookie, соответствующие заданному регулярному выражению
+* `@@||example.org^$cookie` — разблокирует все cookie, установленные `example.org`
+* `@@||example.org^$cookie=NAME` — разблокирует одну cookie с именем `NAME`
+* `@@||example.org^$cookie=/regular_expression/` — разблокирует все cookie, соответствующие заданному регулярному выражению
 
 > **Ограничения**
 > `$cookie` правила поддерживают ограниченный список модификаторов: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
 
 ### Примеры с `$cookie`
-* `$cookie=__cfduid` -- блокирует CloudFlare cookie везде
-* `$cookie=/__utm[a-z]/` -- блокирует Google Analytics cookie везде
-* `||facebook.com^$third-party,cookie=c_user` -- не позволяет Facebook'у отслеживать вас, даже если вы вошли в систему
+* `$cookie=__cfduid` — блокирует CloudFlare cookie везде
+* `$cookie=/__utm[a-z]/` — блокирует Google Analytics cookie везде
+* `||facebook.com^$third-party,cookie=c_user` — не позволяет Facebook'у отслеживать вас, даже если вы вошли в систему
 
 > **Совместимость с различными версиями AdGuard.** Этот тип правил не поддерживается AdGuard для iOS и для Safari.
 

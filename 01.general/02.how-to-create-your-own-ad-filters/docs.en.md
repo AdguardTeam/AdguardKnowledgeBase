@@ -664,7 +664,7 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 ###### Basic syntax
 
-* `$removeparam=param` -- removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
+* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
 
 > `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
 
@@ -672,7 +672,7 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 You can also use regular expressions to match query parameters and/or their values:
 
-* `$removeparam=/regex/[options]` -- removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
+* `$removeparam=/regex/[options]` — removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
 > `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
 
@@ -690,14 +690,14 @@ You can also use regular expressions to match query parameters and/or their valu
 
 Specify naked `$removeparam` to remove all query parameters:
 
-* `||example.org^$removeparam` -- removes all query parameters from URLs matching `||example.org^`.
+* `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
 
 ###### Inversion
 
 Use `~` to apply inversion:
 
-* `$removeparam=~param` -- removes all query parameters with the name different from `param`.
-* `$removeparam=~/regex/` -- removes all query parameters that do not match the regex regular expression.
+* `$removeparam=~param` — removes all query parameters with the name different from `param`.
+* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
 
 ###### Negating `$removeparam`
 
@@ -705,9 +705,9 @@ This sort of rules work pretty much the same way it works with [`$csp`](#csp-mod
 
 Use `@@` to negate `$removeparam`:
 
-* `@@||example.org^$removeparam` -- negates all `$removeparam` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeparam=param` -- negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regex/` -- negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regex/` — negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
 
 >**Multiple rules matching a single request**
 >In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
@@ -721,11 +721,11 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 ```
 With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
 
-* `$removeparam=utm_source` -- removes `utm_source` query parameter from all requests.
+* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
 
-* `$removeparam=/utm_.*/` -- removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+* `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
 
-* `$removeparam=/^utm_source=campaign$/` -- removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
+* `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
 Negating one `$removeparam` rule and replacing it with a different rule:
 
@@ -952,28 +952,28 @@ The `$cookie` modifier completely changes rule behavior. Instead of blocking a r
 ##### `$cookie` syntax
 The rule syntax depends on whether we are going to block all cookies or to remove a single cookie. The rule behavior can be changed with `maxAge` and `sameSite` modifiers.
 
-* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` -- every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
+* `||example.org^$cookie=NAME;maxAge=3600;sameSite=lax` — every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
 
   * Set its expiration date to current time plus `3600` seconds
   * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
-* `||example.org^$cookie` -- blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
-* `||example.org^$cookie=NAME` -- blocks a single cookie named `NAME`
-* `||example.org^$cookie=/regular_expression/` -- blocks every cookie that matches a given regular expression
+* `||example.org^$cookie` — blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
+* `||example.org^$cookie=NAME` — blocks a single cookie named `NAME`
+* `||example.org^$cookie=/regular_expression/` — blocks every cookie that matches a given regular expression
 
 > **Important:** in the case of a regular expression matching, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
 
 `$cookie` rules are not affected by regular exception rules (`@@`) unless it's a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. Here's how it works:
 
-* `@@||example.org^$cookie` -- unblocks all cookies set by `example.org`
-* `@@||example.org^$cookie=NAME` -- unblocks a single cookie named `NAME`
-* `@@||example.org^$cookie=/regular_expression/` -- unblocks every cookie matching a given regular expression
+* `@@||example.org^$cookie` — unblocks all cookies set by `example.org`
+* `@@||example.org^$cookie=NAME` — unblocks a single cookie named `NAME`
+* `@@||example.org^$cookie=/regular_expression/` — unblocks every cookie matching a given regular expression
 
 > **Limitations:** `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
 
 ##### Real-life examples
-* `$cookie=__cfduid` -- blocks CloudFlare cookie everywhere
-* `$cookie=/__utm[a-z]/` -- blocks Google Analytics cookies everywhere
-* `||facebook.com^$third-party,cookie=c_user` -- prevents Facebook from tracking you even if you are logged in
+* `$cookie=__cfduid` — blocks CloudFlare cookie everywhere
+* `$cookie=/__utm[a-z]/` — blocks Google Analytics cookies everywhere
+* `||facebook.com^$third-party,cookie=c_user` — prevents Facebook from tracking you even if you are logged in
 
 > **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
 
