@@ -1972,7 +1972,7 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 
 Это правило применит соответствующий скриптлет только в браузере Safari на Mac.
 
-Больше информации о редиректах можно найти [на GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+Больше информации о скриптлетах можно найти [на GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
 > Информация об отладке скриптлетов доступна в [этом разделе](#debug-scriptlets) статьи.
 
