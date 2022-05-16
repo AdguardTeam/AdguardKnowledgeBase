@@ -2049,7 +2049,7 @@ path=pattern
 * `[$domain=example.com,path=/page.html]##.textad` — скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
 
-> **Совместимость с разными версиями AdGuard.** Правила с этим модификатором поддерживаются AdGuard для Windows, Mac, Android,а также браузерными расширениями AdGuard для Chrome, Firefox, Edge. **На данный момент только в девелопер-сборках.**
+> **Совместимость с разными версиями AdGuard.** Правила с этим модификатором поддерживаются AdGuard для Windows, Mac, Android,а также браузерными расширениями AdGuard для Chrome, Firefox, Edge.
 
 ### Редиректы
 
