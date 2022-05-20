@@ -25,6 +25,7 @@ For analysis and diagnostic of different problems support service might need AdG
 
 5. Send the archive to the AdGuard support service at support@adguard.com, describe the problem and don't forget to mention the time when you reproduced the issue.
 
+<a id="trace-logs"></a>
 **Note**: sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
 1. Stop AdGuard. Please don't leave the service running.
