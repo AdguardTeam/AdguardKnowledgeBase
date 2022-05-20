@@ -60,7 +60,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
 <a id="https-filtering"></a> 
 ## HTTPS filtering
 
-Nowadays most websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that advertisers use it as well, this is why [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering) is crucial for a modern ad blocker. 
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering) is really crucial for a modern ad blocker. 
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png" style="border: 0px solid #efefef; padding: 2px;" />
 
@@ -70,13 +70,13 @@ To be able to filter HTTPS traffic, AdGuard needs to install a certificate into 
 
 Here is the installation instruction:
 
-1) Go to the app's main screen and tap *Turn on* next to the *HTTPS filtering is off* message (it will be highlighted in red if AdGuard certificate is not installed yet)
+1) Go to the app's main screen and tap *Turn on* next to the *HTTPS filtering is off* message (it will be highlighted in orange if AdGuard certificate is not installed yet)
 
-2) A new screen will appear, tap twice on the *Next* button and then on *Save it now* when prompted to download an AdGuard certificate
+2) A new screen will appear, tap on the *Next* button, then again on the *Next* and then on *Save it now* when prompted to download an AdGuard certificate
 
 3) After the certificate is downloaded, you will see a new screen. Tap on the *Open security settings* button there
 
-4) This will bring up system settings. Scroll down to *Advanced*, open it and then tap on *Encryption & credentials* (these settings may be called variously on different devices — the main thing is to choose advanced settings)
+4) This will bring up system settings. Scroll down to *Advanced*, open it and then tap on *Encryption & credentials* (these settings may be called variously on different devices — the main thing is to choose advanced security settings)
 
 5) Tap on *Install certificate* and then on *CA certificate*
 
@@ -86,11 +86,11 @@ Here is the installation instruction:
 
 8) The AdGuard certificate is successfully installed and HTTPS filtering is working now!
 
->If you update from Android 10 to Android 11, there's a chance that already installed certificate will still be accepted. Otherwise, the *HTTPS filtering* string on the main screen will be red and you'll need to go through the same process of reinstalling a certificate manually.
+>If you update from Android 10 to Android 11, there's a chance that already installed certificate will still be accepted. Otherwise, the *HTTPS-filtering is off* string will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling a certificate manually.
 
 In case you have problems with the certificate installation, read [this article](https://kb.adguard.com/en/android/solving-problems/manual-certificate) or contact our <a href="mailto:support@adguard.com"support team</a>. 
 
-**We want to emphasize that the AdGuard ad blocker will work even without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol. So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we recommend you to activate HTTPS-filtering.**
+**We want to emphasize that AdGuard Ad Blocker will also function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (and the number of such sites is constantly increasing). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
 
 
 <a id="stealth-mode"></a>   
