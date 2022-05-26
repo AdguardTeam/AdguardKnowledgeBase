@@ -64,7 +64,7 @@ AdGuard позволяет создать ваш собственный поль
     
 <img src="https://cdn.adguard.com/public/Adguard/Blog/android-features/how-https-works-ru.jpg" style="border: 0px solid #efefef; padding: 2px;" />
 
-<a id="installation-instruction"></a> 
+<a id="install-certificate"></a> 
 
 Чтобы фильтровать HTTPS-трафик, AdGuard нужно установить сертификат в хранилище на устройстве пользователя. В более старых версиях ОС Android это происходило автоматически во время установки или позже в настройках AdGuard, требуя только пары касаний экрана. К сожалению, на Android 11 и более новых версиях автоматическая установка сертификата больше не доступна. Теперь требуется ручная установка.
 
