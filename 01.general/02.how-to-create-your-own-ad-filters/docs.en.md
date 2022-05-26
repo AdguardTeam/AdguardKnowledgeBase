@@ -756,7 +756,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > **Compatibility with different versions of AdGuard.** Rules with this modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge. **Developer builds only at this moment.**
 
-> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 <a id="important-modifier"></a>
 #### **`important`**
@@ -911,7 +911,7 @@ http://regexr.com/3cesk
 
 > **Compatibility with different versions of AdGuard.** These rules are supported by AdGuard for Windows, Mac, Android and by the AdGuard's Firefox add-on. This type of rules don't work in extensions for other browsers because they are unable to modify content on the network level.
 
-> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 <a id="csp-modifier"></a>
 #### **`csp`**
@@ -1909,7 +1909,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
-> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User filter** and all the filters created by AdGuard Team.
+> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 > **Compatibility with different versions of AdGuard.** Javascript rules are not supported by AdGuard Content Blocker.
 
