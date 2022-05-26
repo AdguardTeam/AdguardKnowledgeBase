@@ -977,7 +977,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 * `$cookie=/__utm[a-z]/` — blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` — prevents Facebook from tracking you even if you are logged in
 
-> **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
+> **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
 <a id="network-modifier"></a>
 #### **`network`**
@@ -1057,9 +1057,10 @@ This rule redirects all requests to `example.org/script.js` to the resource name
 
 This rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
 
-> More information on scriptlets, redirects, and their usage is available in [this GitHub section](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+> More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
-> **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard for iOS and Safari.
+
+> **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
 <a id="redirect-rule-modifier"></a>
 #### **`redirect-rule`**
