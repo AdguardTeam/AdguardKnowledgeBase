@@ -1951,8 +1951,6 @@ example.com#@%#window.__gaq = undefined;
 
 > AdGuard поддерживает множество различных скриптлетов. Чтобы добиться совместимости между различными блокировщиками, мы также поддерживаем синтаксис uBO и ABP.
 
-> **Совместимость с различными версиями AdGuard.** Скриптлеты не поддерживаются AdGuard Content Blocker.
-
 <a id="scriptlets-syntax"></a>
 ### Синтаксис
 ```
@@ -1970,20 +1968,15 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 Это правило применится на страницах домена example.org (и его поддоменов) и выполнит скриптлет "abort-on-property-read" с параметром "alert".
 
-```
-[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')
-```
-
-Это правило применит соответствующий скриптлет только в браузере Safari на Mac.
+Подробнее [об отладке скриптлетов](#debug-scriptlets).
 
 Больше информации о скриптлетах можно найти [на GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
-> Информация об отладке скриптлетов доступна в [этом разделе](#debug-scriptlets) статьи.
+> **Совместимость с различными версиями AdGuard.** Скриптлеты не поддерживаются AdGuard Content Blocker.
 
 <a id="non-basic-rules-modifiers"></a>
-## Модификаторы
-
-Вы можете изменить поведение косметического правила, используя модификаторы, описанные ниже.
+## Модификаторы для «не Базовых» правил
+Поведение любого правила можно изменить, используя модификаторы, описанные ниже.
 
 <a id="non-basic-rules-modifiers-syntax"></a>
 ### Синтаксис
@@ -2007,6 +2000,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 Примеры использования `app`:
 * `[$app=org.example.app]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из `org.example.app` приложения Android.
 * `[$app=~org.example.app1|~org.example.app2]example.com##.textad` — скрывает `div` и заменяет его на класс `textad` на `example.com` и всех поддоменах в запросах, посланных из любого приложения кроме `org.example.app1` и `org.example.app2`.
+* `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')` — это правило применит соответствующий скриптлет только в браузере Safari на Mac.
 * `[$app=org.example.app]#@#.textad` — отключит все правила `##.textad` для всех доменов при использовании приложения `org.example.app`.
 
 > **Совместимость с различными версиями AdGuard.** Этот тип правил поддерживается AdGuard для Windows, Mac и Android. **На данный момент только в девелоперских сборках.**

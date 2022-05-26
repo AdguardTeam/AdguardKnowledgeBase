@@ -1960,8 +1960,6 @@ Scriptlet is a JavaScript function that provides extended capabilities for conte
 
 > AdGuard supports a lot of different scriptlets. Please note that in order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
-> **Compatibility with different versions of AdGuard.** Scriptlet rules are not supported by AdGuard Content Blocker.
-
 <a id="scriptlets-syntax"></a>
 ### Syntax
 ```
@@ -1979,13 +1977,14 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 This rule will be applied to example.org pages (and its subdomains) and will execute the "abort-on-property-read" scriptlet with the "alert" parameter.
 
+Learn more [how to debug scriptlets](#debug-scriptlets).
+
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
-> For more information on how to debug scriptlets, jump to [this section](#debug-scriptlets) of the article.
+> **Compatibility with different versions of AdGuard.** Scriptlet rules are not supported by AdGuard Content Blocker.
 
-
-<a id="non-basic-rules-modifiers"></a>(#)
-## Modifiers
+<a id="non-basic-rules-modifiers"></a>
+## Modifiers for non-basic type of rules
 Each rule can be modified using the modifiers described in the following paragraphs.
 
 <a id="non-basic-rules-modifiers-syntax"></a>
