@@ -939,6 +939,8 @@ http://regexr.com/3cesk
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — отключает инлайн-скрипты на всех страницах, подходящих под паттерн правила.
 * `@@||example.org^$document` или `@@||example.org^$urlblock` — отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
 
+> **Совместимость с различными версиями AdGuard.** Этот тип правил не поддерживается AdGuard Content Blocker, AdGuard для iOS и для Safari.
+
 <a id="cookie-modifier"></a>
 ##### **`cookie`**
 

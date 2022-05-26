@@ -944,6 +944,8 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 * `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` — disables inline scripts on all the pages matching the rule pattern.
 * `@@||example.org^$document` or `@@||example.org^$urlblock` — disables all the `$csp` rules on all the pages matching the rule pattern.
 
+> **Compatibility with different versions of AdGuard.** This type of rules is not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
 <a id="cookie-modifier"></a>
 #### **`cookie`**
 
