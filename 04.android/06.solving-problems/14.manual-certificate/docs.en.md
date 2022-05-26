@@ -1,33 +1,31 @@
 ---
-title: 'Manual certificate installation on devices with Android 11'
+title: 'Сertificate installation issues on devices with Android 11 and later'
 taxonomy:
     category:
         - docs
 visible: true
 ---
 
-To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. Unfortunately, on Android 11 automatic certificate installation is no longer available. Now a manual installation is required.
+To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](https://kb.adguard.com/en/android/overview#install-certificate).
+
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/cert-en.gif" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-To manually install AdGuard certificate:
+If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can find possible solutions below.
 
-1) Go to the app's main screen and tap on *HTTPS filtering* (it will be highlighted in red if AdGuard certificate is not installed yet)
+<a id="secure-folder"></a>   
 
-2) Enable the switch at the top
+## Certificate installation in a "Secure folder"
 
-3) A new screen will appear, tap twice on the *Next* button and then on *Save it now* when prompted to download an AdGuard certificate
+If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is that the *Secure folder* has its own storage where the certificates are stored. However, in case you do everything according to the instructions [described here](https://kb.adguard.com/en/android/overview#install-certificate), the certificate is installed into the main storage and plays no role for your ad blocker in the *Secure folder*. So, in order to resolve this issue and install the certificate for your AdGuard for Android into the *Secure folder's* storage, follow this instruction:
 
-4) After the certificate is downloaded, you will see a new screen. Tap on the *Open security settings* button there
 
-5) This will bring up system settings. Scroll down to *Advanced*, open it and then tap on *Encryption & credentials*
-
-6) Tap on *Install certificate* and then on *CA certificate*
-
-7) A warning message will appear. Read through it and tap *Install anyway* to proceed
-
-8) Select the recently downloaded AdGuard certificate. A *CA certificate installed* toast message should show up
-
-9) The AdGuard certificate is successfully installed and HTTPS filtering is working now!
-
->If you update from Android 10 to Android 11, there's a chance that already installed certificate will still be accepted. Otherwise, the *HTTPS filtering* string on the main screen will be red and you'll need to go through the same process of reinstalling a certificate manually.
+1. After installing the application and connecting to VPN tap "Turn on" next to the "HTTPS filtering is off" message.
+2. Tap "Next" —> "Next" —> "Save it now" —> "Allow".
+3. Save the certificate (at this stage, you can rename it to make it easier to find).
+4. After the "How to install a certificate?" screen appears, DO NOT tap "Open Settings".
+5. Minimize the application and go to the secure folder.
+6. Tap the three-dot menu and go to additional security settings.
+7. Tap "Install from memory" —> "CA certificate" —> "Install anyway" —> Enter a graphic key/password/fingerprint —> Find the saved certificate and select it.
+8. Return to the AdGuard application and close the screen "How to install a certificate?" by tapping the cross button.
+9. Done! The certificate has been installed. 
