@@ -579,11 +579,13 @@ Disables blocking of all requests sent from the pages matching the rule.
 <a id="extension-modifier"></a>
 ##### **`extension`**
 
-Disables all userscripts on the pages matching this rule. Note, that this modifier only makes sense in AdGuard products that can work as userscript hosts (AdGuard for Windows/macOS/Android).
+Disables all userscripts on the pages matching this rule.
 
 ###### `extension` example
 
 * `@@||example.com^$extension` — userscripts won't work on all pages of the `example.com` website.
+
+> **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
 
 <a id="stealth-modifier"></a>
 ##### **`stealth`**
