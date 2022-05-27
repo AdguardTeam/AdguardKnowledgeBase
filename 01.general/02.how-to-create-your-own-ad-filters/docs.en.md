@@ -836,13 +836,13 @@ Usually, blocked requests look like a server error to browser. If you use `empty
 <a id="mp4-modifier"></a>
 #### **`mp4`**
 
+> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
+
 As a response to blocked request AdGuard returns a short video placeholder.
 
 ##### `mp4` example
 
 * `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
-
-> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note that it will be removed in the future.
 
 > **Compatibility with different versions of AdGuard.** Rules with this modifier are not supported by AdGuard for Safari and iOS.
 
