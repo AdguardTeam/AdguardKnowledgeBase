@@ -420,6 +420,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `84.200.69.80` and `84.200.70.40`                  | <a href="sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA">Add to AdGuard</a> |
 | DNS, IPv6      | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b`            | <a href="sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://resolver2.dns.watch/dns-query` | <a href="sdns://AgcAAAAAAAAAAAATcmVzb2x2ZXIyLmRucy53YXRjaAovZG5zLXF1ZXJ5">Add to AdGuard</a> |
 
 <a name="sky-dns"></a>
 
