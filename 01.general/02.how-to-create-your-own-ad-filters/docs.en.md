@@ -34,7 +34,6 @@ visible: true
             * [$stylesheet](#stylesheet-modifier)
             * [$script](#script-modifier)
             * [$object](#object-modifier)
-            * [$object-subrequest](#object-subrequest-modifier)
             * [$font](#font-modifier)
             * [$media](#media-modifier)
             * [$subdocument](#subdocument-modifier)
@@ -43,6 +42,7 @@ visible: true
             * [$websocket](#websocket-modifier)
             * [$webrtc](#webrtc-modifier)
             * [$other](#other-modifier)
+            * [$object-subrequest (deprecated)](#object-subrequest-modifier)
         * [Exception rules modifiers](#exceptions-modifiers)
             * [$elemhide](#elemhide-modifier)
             * [$content](#content-modifier)
@@ -58,8 +58,6 @@ visible: true
         * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
         * [$badfilter](#badfilter-modifier)
-        * [$empty](#empty-modifier)
-        * [$mp4](#mp4-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
         * [$cookie](#cookie-modifier)
@@ -70,6 +68,8 @@ visible: true
         * [$denyallow](#denyallow-modifier)
         * [noop](#noop-modifier)
         * [$removeheader](#removeheader-modifier)
+        * [$empty (deprecated)](#empty-modifier)
+        * [$mp4 (deprecated)](#mp4-modifier)
 * [Non-basic rules](#non-basic-rules)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
@@ -471,13 +471,6 @@ The rule corresponds to script requests, e.g. javascript, vbscript.
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
 
-<a id="object-subrequest-modifier"></a>
-##### **`object-subrequest`**
-
-> **Deprecation notice.** `object-subrequest` modifier is deprecated and no longer supported. Rules with it are considered as invalid.
-
-The rule corresponds to requests by browser plugins (it's usually Flash).
-
 <a id="font-modifier"></a>
 ##### **`font`**
 
@@ -534,6 +527,13 @@ The rule applies only to WebRTC connections.
 ##### **`other`**
 
 The rule applies to requests for which the type has not been determined or doesn't match the types listed above.
+
+<a id="object-subrequest-modifier"></a>
+##### **`object-subrequest` (deprecated)**
+
+> **Deprecation notice.** `object-subrequest` modifier is deprecated and no longer supported. Rules with it are considered as invalid.
+
+The rule corresponds to requests by browser plugins (it's usually Flash).
 
 <a id="exceptions-modifiers"></a>
 #### Exception modifiers
@@ -816,32 +816,6 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 * `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
 * `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
 * `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `domain` modifier contains a negated domain
-
-<a id="empty-modifier"></a>
-#### **`empty`**
-
-> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
-
-Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
-
-##### `empty` example
-
-* `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
-
-> **Compatibility with different versions of AdGuard.** Rules with `empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
-
-<a id="mp4-modifier"></a>
-#### **`mp4`**
-
-> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
-
-As a response to blocked request AdGuard returns a short video placeholder.
-
-##### `mp4` example
-
-* `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
-
-> **Compatibility with different versions of AdGuard.** Rules with `mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
 <a id="replace-modifier"></a>
 #### **`replace`**
@@ -1229,6 +1203,33 @@ Use `@@` to negate `$removeheader`:
     ```
 
 > **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
+
+<a id="empty-modifier"></a>
+#### **`empty` (deprecated)**
+
+> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
+
+Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
+
+##### `empty` example
+
+* `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
+
+> **Compatibility with different versions of AdGuard.** Rules with `empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
+<a id="mp4-modifier"></a>
+#### **`mp4` (deprecated)**
+
+> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
+
+As a response to blocked request AdGuard returns a short video placeholder.
+
+##### `mp4` example
+
+* `||example.com/videos/$mp4` — block a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
+
+> **Compatibility with different versions of AdGuard.** Rules with `mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
