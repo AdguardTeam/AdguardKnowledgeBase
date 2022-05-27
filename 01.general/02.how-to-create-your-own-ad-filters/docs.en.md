@@ -806,7 +806,7 @@ Rules with `$badfilter` modifier can disable other basic rules for specific doma
 * The rule has a `$domain` modifier
 * The rule does not have a negated domain `~` in `$domain` modifier's value.
 
-In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note, that [wildcard-TLD logic](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#wildcard-for-tld) works here as well.
+In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note, that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
 
 **Examples:**
 
@@ -1031,7 +1031,7 @@ AdGuard is able to redirect web requests to a local "resource".
 
 AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
-`$redirect` is a modifier for the [basic filtering rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+`$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
@@ -1245,7 +1245,7 @@ However, the capabilities of the basic rules may not be sufficient to block ads.
 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
-> Note that element hiding rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+> Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
 <a id="elemhide-syntax"></a>
 #### Syntax
@@ -1260,7 +1260,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 
 If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
 
-> Please note that this rule will be also applied to all subdomains of `example.org` and `example.com`.
+> This rule will be also applied to all subdomains of `example.org` and `example.com`.
 
 If you want the rule not to be applied to certain domains, start a domain name with `~` sign. For example:
 `~example.org##selector`.
@@ -1314,7 +1314,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 
 > **Compatibility with different versions of AdGuard.** CSS rules are not supported by AdGuard Content Blocker.
 
-> Note that CSS rules may operate differently [depending on the platform](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-rules-priority).
+> CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
 <a id="cosmetic-css-rules-syntax"></a>
 #### Syntax
@@ -1776,7 +1776,7 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#elemhide-rules) and [CSS](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules) rules cannot override inline styles. In such cases, it's recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it's recommended to use extended selectors or HTML filtering.
 
 **In AdGuard browser extensions**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
@@ -2390,7 +2390,7 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 <a id="debug-scriptlets"></a>
 ### Debugging scriptlets
 
-If you're using AdGuard browser extension and want to debug a [scriptlet rule](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser's console.
+If you're using AdGuard browser extension and want to debug a [scriptlet rule](#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser's console.
 
 The following scriptlets are especially developed for debug purposes:
 
