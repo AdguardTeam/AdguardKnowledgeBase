@@ -405,7 +405,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 > It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
 
-> **Please note:** Unlike with Browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+> **Please note:** Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
 
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
@@ -421,7 +421,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
-> **Compatibility with different versions of AdGuard.** There is a big difference in how AdGuard determines the content type on different platforms. For Browser extensions, content type for every request is provided by browser. AdGuard for Windows, Mac, Android use following method: first we try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
+> **Compatibility with different versions of AdGuard.** There is a big difference in how AdGuard determines the content type on different platforms. For AdGuard Browser extension, content type for every request is provided by browser. AdGuard for Windows, Mac, Android use following method: first we try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
 
 <a id="content-type-modifiers-examples"></a>
 ##### Content type modifiers examples
@@ -498,14 +498,14 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
-> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extensions.
+> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extension.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
-> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extensions.
+> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
 
 <a id="websocket-modifier"></a>
 ##### **`websocket`**
@@ -600,7 +600,7 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 * `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
 * Please note that blocking cookies and removing tracking parameters is achieved by using rules with `$cookie` and `$removeparam` modifiers. Exceptions with only `$stealth` modifier won't do those things. If you want to completely disable all Stealth Mode features for a given URL, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
 
-> **Compatibility with different versions of AdGuard.** Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge. All other products will ignore the rules with `$stealth` modifier.
+> **Compatibility with different versions of AdGuard.** Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge. All other products will ignore the rules with `$stealth` modifier.
 
 <a id="generic-rules"></a>
 ##### Generic rules
@@ -648,7 +648,7 @@ Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all 
 
 > Please note that [`$elemhide` modifier](#elemhide-modifier) can disable all cosmetic rules at once.
 
-> **Compatibility with different versions of AdGuard.** Rules with `$specifichide` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Rules with `$specifichide` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="advanced-modifiers"></a>
 ### Advanced capabilities
@@ -756,7 +756,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > Please note that `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 > **Restrictions.** Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
@@ -1228,7 +1228,7 @@ Use `@@` to negate `$removeheader`:
     @@||example.org/path/$removeheader
     ```
 
-> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="non-basic-rules"></a>
 # Non-basic rules
@@ -1778,7 +1778,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it's recommended to use extended selectors or HTML filtering.
 
-**In AdGuard Browser extensions**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+**In AdGuard Browser extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
 **Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
 
@@ -2043,7 +2043,7 @@ Please note that there are 2 ways to specify domain restrictions for non-basic r
 But rules with mixed style domains restriction are considered invalid. So, for example, the rule
 `[$domain=example.org]example.com##.textad` will be rejected.
 
-> **Compatibility with different versions of AdGuard.** Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="non-basic-rules-modifiers-path"></a>
 
@@ -2072,7 +2072,7 @@ path=pattern
 * `[$domain=example.com,path=/page.html]##.textad` — hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
-> **Compatibility with different versions of AdGuard.** Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extensions for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers
@@ -2332,7 +2332,7 @@ Depending on which AdGuard product you're using, Filtering log can be located in
 * In **AdGuard for Windows** you'll find it inside *Ad Blocker* tab or via the tray menu;
 * In **AdGuard for Mac** it's under *Settings > Advanced > Filtering log*;
 * In **AdGuard for Android** it's a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant.
-* In **AdGuard Browser extensions** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
+* In **AdGuard Browser extension** it's accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
 
 > In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard doesn't see the web requests and therefore can't display them.
 
