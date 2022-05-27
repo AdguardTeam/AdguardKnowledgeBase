@@ -59,6 +59,7 @@ visible: true
         * [$badfilter](#badfilter-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
+        * [$all](#all-modifier)
         * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
@@ -812,6 +813,18 @@ http://regexr.com/3cesk
 * `@@||example.org^$document` или `@@||example.org^$urlblock` — отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$csp` не поддерживается в AdGuard Content Blocker, AdGuard для iOS и для Safari.
+
+<a id="all-modifier"></a>
+
+##### **`all`**
+
+Модификатор `$all` является сборным из модификаторов [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier). Например, правило `||example.org^$all` конвертируется в такой набор правил:
+```
+||example.org^$document,popup
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^
+```
 
 <a id="cookie-modifier"></a>
 ##### **`cookie`**

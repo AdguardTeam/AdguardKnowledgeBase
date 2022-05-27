@@ -59,6 +59,7 @@ visible: true
         * [$badfilter](#badfilter-modifier)
         * [$replace](#replace-modifier)
         * [$csp](#csp-modifier)
+        * [$all](#all-modifier)
         * [$cookie](#cookie-modifier)
         * [$network](#network-modifier)
         * [$app](#app-modifier)
@@ -811,6 +812,18 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 * `@@||example.org^$document` or `@@||example.org^$urlblock` — disables all the `$csp` rules on all the pages matching the rule pattern.
 
 > **Compatibility with different versions of AdGuard.** Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
+<a id="all-modifier"></a>
+
+##### **`all`**
+
+`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
+```
+||example.org^$document,popup
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^
+```
 
 <a id="cookie-modifier"></a>
 #### **`cookie`**
