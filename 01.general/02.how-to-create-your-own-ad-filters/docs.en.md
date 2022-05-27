@@ -370,7 +370,7 @@ In the following examples it's implied that requests are sent from `http://examp
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 * `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
-> **Important!** Safari doesn't support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+> **Limitations:** Safari doesn't support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
 
 
 <a id="third-party-modifier"></a>
@@ -405,7 +405,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 > It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
 
-> **Important!** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+> **Please note:** Unlike with browser extensions, `$popup` modifier is very unreliable when used with AdGuard apps for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
 
 <a id="match-case-modifier"></a>
 ##### **`match-case`**
@@ -682,7 +682,7 @@ You can also use regular expressions to match query parameters and/or their valu
 
 > **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
 
-> Important: note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
+> Please note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
@@ -961,7 +961,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 * `||example.org^$cookie=NAME` — blocks a single cookie named `NAME`
 * `||example.org^$cookie=/regular_expression/` — blocks every cookie that matches a given regular expression
 
-> **Important:** in the case of a regular expression matching, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, escaped comma looks like this: `\,`.
+> **Escaping special characters:** if regular expression is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
 `$cookie` rules are not affected by regular exception rules (`@@`) unless it's a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. Here's how it works:
 
@@ -1267,7 +1267,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
 
-> **Please note,** element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
+> **Please note:** element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
 
 <a id="elemhide-examples"></a>
 #### Examples
@@ -1276,7 +1276,7 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 * `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `~example.com##.textad` — hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
 
-> **Important!** Safari doesn't support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
+> **Limitations:** Safari does not support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
 <a id="elemhide-exceptions"></a>
 #### Exceptions
@@ -2258,8 +2258,7 @@ Eventually, here are the two versions of the Base filter for AdGuard browser ext
 - full: https://filters.adtidy.org/extension/chromium/filters/2.txt
 - optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-
-**Important: If you want to add a rule which shouldn't be removed at optimization use the NOT_OPTIMIZED hint:**
+**If you want to add a rule which shouldn't be removed at optimization use the `NOT_OPTIMIZED` hint:**
 
 ```
 !+ NOT_OPTIMIZED
@@ -2303,14 +2302,14 @@ Specify which platforms can apply this rule. List of existing platforms:
 
 Examples:
 
-This rule will be available for Windows, Mac, and Android only:
+This rule will be available only in AdGuard for Windows, Mac, Android:
 
 ```
 !+ PLATFORM(windows,mac,android)
 ||example.org^
 ```
 
-This rule will be available for every platform except Safari extension, iOS, and Android content blocker:
+This rule will be available for every platform except AdGuard for Safari, Android Content Blocker, and AdGuard for iOS:
 
 ```
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
