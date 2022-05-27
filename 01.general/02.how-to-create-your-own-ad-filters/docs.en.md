@@ -296,7 +296,7 @@ Wildcard characters are supported for TLDs of the domains in patterns of cosmeti
 For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
 For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
 
-> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, macOS, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
@@ -498,14 +498,14 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
-> **Compatibility with different versions of AdGuard.** AdGuard for Windows, macOS, Android often can't accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard browser extensions.
+> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard browser extensions.
 
 <a id="xmlhttprequest-modifier"></a>
 ##### **`xmlhttprequest`**
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
-> **Compatibility with different versions of AdGuard.** AdGuard for Windows, macOS, Android often can't accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard browser extensions.
+> **Compatibility with different versions of AdGuard.** AdGuard for Windows, Mac, Android often can't accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard browser extensions.
 
 <a id="websocket-modifier"></a>
 ##### **`websocket`**
