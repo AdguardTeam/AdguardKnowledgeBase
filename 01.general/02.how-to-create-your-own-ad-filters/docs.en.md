@@ -1116,6 +1116,8 @@ or to these three:
 @@||y.com$script,domain=a.com|b.com
 ```
 
+> **Compatibility with different versions of AdGuard.** Rules with `$denyallow` modifier are not supported by AdGuard Content Blocker.
+
 <a id="noop-modifier"></a>
 #### **`noop`**
 
