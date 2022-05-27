@@ -55,7 +55,6 @@ visible: true
                 * [$genericblock](#genericblock-modifier)
             * [$specifichide](#specifichide-modifier)
     * [Advanced capabilities](#advanced-modifiers)
-        * [$removeparam](#removeparam-modifier)
         * [$important](#important-modifier)
         * [$badfilter](#badfilter-modifier)
         * [$replace](#replace-modifier)
@@ -66,8 +65,9 @@ visible: true
         * [$redirect](#redirect-modifier)
         * [$redirect-rule](#redirect-rule-modifier)
         * [$denyallow](#denyallow-modifier)
-        * [noop](#noop-modifier)
+        * [$removeparam](#removeparam-modifier)
         * [$removeheader](#removeheader-modifier)
+        * [noop](#noop-modifier)
         * [$empty (deprecated)](#empty-modifier)
         * [$mp4 (deprecated)](#mp4-modifier)
 * [Non-basic rules](#non-basic-rules)
@@ -655,111 +655,6 @@ Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all 
 
 These modifiers are able to completely change the behaviour of basic rules.
 
-<a id="removeparam-modifier"></a>
-#### **`removeparam`**
-
-> `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
-
-Rules with `$removeparam` modifier are intended to to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
-
-> `$removeparam` rules that do not have any content-type modifiers will match only requests where content type is `document`.
-
-##### Syntax
-
-###### Basic syntax
-
-* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
-
-> `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
-
-###### Regular expressions
-
-You can also use regular expressions to match query parameters and/or their values:
-
-* `$removeparam=/regex/[options]` — removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
-
-> `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
-
-> **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
-
-> Please note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
-
-> We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
-> It is not an options delimiter if all three are true:
-> 1. It looks like `$/`,
-> 2. There's another slash character (`/`) to the left of it,
-> 3. There's another unescaped `$` character to the left of that slash character.
-
-###### Remove all query parameters
-
-Specify naked `$removeparam` to remove all query parameters:
-
-* `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
-
-###### Inversion
-
-Use `~` to apply inversion:
-
-* `$removeparam=~param` — removes all query parameters with the name different from `param`.
-* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
-
-###### Negating `$removeparam`
-
-This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
-
-Use `@@` to negate `$removeparam`:
-
-* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regex/` — negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
-
->**Multiple rules matching a single request**
->In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
-
-##### Examples
-
-```
-$removeparam=/^(utm_source|utm_medium|utm_term)=/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
-@@||example.com^$removeparam
-```
-With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
-
-* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
-
-* `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
-
-* `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
-
-Negating one `$removeparam` rule and replacing it with a different rule:
-
-```
-$removeparam=/^(gclid|yclid|fbclid)=/
-@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
-||example.com^$removeparam=/^(yclid|fbclid)=/
-```
-
-With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There's one exception: Google Click ID (gclid) will not be removed from requests to example.com.
-
-Negating `$removeparam` for all parameters:
-
-```
-$removeparam=/^(utm_source|utm_medium|utm_term)=/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
-@@||example.com^$removeparam
-```
-
-With these rules, specified UTM parameters will be removed from any request save for requests to example.org.
-
-> **Compatibility with other modifiers**
-> `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
-
-> Please note that `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
-
-> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
-
-> **Restrictions.** Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
-
 <a id="important-modifier"></a>
 #### **`important`**
 
@@ -1091,19 +986,110 @@ or to these three:
 
 > **Compatibility with different versions of AdGuard.** Rules with `$denyallow` modifier are not supported by AdGuard Content Blocker.
 
-<a id="noop-modifier"></a>
-#### **`noop`**
+<a id="removeparam-modifier"></a>
+#### **`removeparam`**
 
-`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+> `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
 
-##### `noop` examples:
+Rules with `$removeparam` modifier are intended to to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, and `OPTIONS` requests.
+
+> `$removeparam` rules that do not have any content-type modifiers will match only requests where content type is `document`.
+
+##### Syntax
+
+###### Basic syntax
+
+* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
+
+> `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
+
+###### Regular expressions
+
+You can also use regular expressions to match query parameters and/or their values:
+
+* `$removeparam=/regex/[options]` — removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
+
+> `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
+
+> **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
+
+> Please note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
+
+> We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
+> It is not an options delimiter if all three are true:
+> 1. It looks like `$/`,
+> 2. There's another slash character (`/`) to the left of it,
+> 3. There's another unescaped `$` character to the left of that slash character.
+
+###### Remove all query parameters
+
+Specify naked `$removeparam` to remove all query parameters:
+
+* `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
+
+###### Inversion
+
+Use `~` to apply inversion:
+
+* `$removeparam=~param` — removes all query parameters with the name different from `param`.
+* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
+
+###### Negating `$removeparam`
+
+This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
+
+Use `@@` to negate `$removeparam`:
+
+* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regex/` — negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
+
+>**Multiple rules matching a single request**
+>In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
+
+##### Examples
 
 ```
-||example.com$_,removeparam=/^ss\\$/,_,image
-||example.com$replace=/bad/good/,___,~third-party
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
+@@||example.com^$removeparam
+```
+With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` won't be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` won't be affected by the blocking rule.
+
+* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
+
+* `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+
+* `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
+
+Negating one `$removeparam` rule and replacing it with a different rule:
+
+```
+$removeparam=/^(gclid|yclid|fbclid)=/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
+||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
-> **Compatibility with different versions of AdGuard.** Rules with `noop` modifier are not supported by AdGuard Content Blocker.
+With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There's one exception: Google Click ID (gclid) will not be removed from requests to example.com.
+
+Negating `$removeparam` for all parameters:
+
+```
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
+@@||example.com^$removeparam
+```
+
+With these rules, specified UTM parameters will be removed from any request save for requests to example.org.
+
+> **Compatibility with other modifiers**
+> `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
+
+> Please note that `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+
+> **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
+
+> **Restrictions.** Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 <a id="removeheader-modifier"></a>
 #### **`$removeheader`**
@@ -1203,6 +1189,20 @@ Use `@@` to negate `$removeheader`:
     ```
 
 > **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
+
+<a id="noop-modifier"></a>
+#### **`noop`**
+
+`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+
+##### `noop` examples:
+
+```
+||example.com$_,removeparam=/^ss\\$/,_,image
+||example.com$replace=/bad/good/,___,~third-party
+```
+
+> **Compatibility with different versions of AdGuard.** Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 <a id="empty-modifier"></a>
 #### **`empty` (deprecated)**
