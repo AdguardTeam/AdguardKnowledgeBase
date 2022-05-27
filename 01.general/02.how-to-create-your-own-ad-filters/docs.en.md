@@ -908,7 +908,7 @@ http://regexr.com/3cesk
 
 > **Compatibility with different versions of AdGuard.** Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
 
-> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> **Restrictions.** Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 <a id="csp-modifier"></a>
 #### **`csp`**
@@ -969,7 +969,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 * `@@||example.org^$cookie=NAME` — unblocks a single cookie named `NAME`
 * `@@||example.org^$cookie=/regular_expression/` — unblocks every cookie matching a given regular expression
 
-> **Limitations:** `$cookie` rules support a limited list of modifiers: `domain`, `~domain`, `important`, `third-party`, `~third-party`.
+> **Limitations:** `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `~third-party`.
 
 ##### Real-life examples
 * `$cookie=__cfduid` — blocks CloudFlare cookie everywhere
@@ -1910,7 +1910,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
-> **Restrictions.** Please note that this type of rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> **Restrictions.** Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
 > **Compatibility with different versions of AdGuard.** Javascript rules are not supported by AdGuard Content Blocker.
 
