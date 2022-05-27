@@ -823,13 +823,13 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 <a id="empty-modifier"></a>
 #### **`empty`**
 
+> **Deprecation notice.** This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
+
 Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
 
 ##### `empty` example
 
 * `||example.org^$empty` — returns an empty response to all requests to `example.org` and all subdomains.
-
-> **Deprecation notice.** Rules with this modifier are deprecated in favor of the `$redirect` modifier. Please note that it will be removed in the future.
 
 > **Compatibility with different versions of AdGuard.** Rules with this modifier are not supported by AdGuard for Safari and iOS.
 
