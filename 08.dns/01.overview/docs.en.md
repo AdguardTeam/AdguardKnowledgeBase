@@ -23,7 +23,7 @@ AdGuard DNS can work on any devices, including smartphones and tablet PCs. There
 
 * AdGuard DNS is **open source and absolutely free** in personal use.
 
-* Supports all modern DNS privacy standards: DNSCrypt, DNS-over-HTTPS, DNS-over-TLS. 
+* Supports all modern DNS privacy standards: DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, DNS-over-QUIC. 
 
 * It has two modes: "Default" for blocking ads and trackers, and "Family" for the same functionality plus parental control tools.
  

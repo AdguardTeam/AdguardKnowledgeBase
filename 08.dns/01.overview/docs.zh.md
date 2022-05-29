@@ -23,7 +23,7 @@ AdGuard DNS 可以在任何设备上工作, 包括智能手机和平板电脑。
 
 * AdGuard DNS 在个人使用领域内**开放源代码，完全免费**。 
 
-* 支持所有现代的 DNS 隐私标准: DNSCrypt、DNS-over-HTTPS、DNS-over-TLS。
+* 支持所有现代的 DNS 隐私标准: DNSCrypt、DNS-over-HTTPS、DNS-over-TLS、DNS-over-QUIC。
 
 * 它有着两个模式: "默认模式"用于阻止广告和跟踪器, "家庭保护模式"有着同样的功能并包含家长控制工具。
  
