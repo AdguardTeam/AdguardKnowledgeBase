@@ -68,6 +68,7 @@ AdGuard users can configure any DNS server and use it instead of the system defa
 * [RethinkDNS](#rethinkdns)
 * [ControlD DNS](#controld)
 * [Mullvad](#mullvad)
+* [PureDNS](#puredns)
 * [Small personal resolvers](#small-resolvers)
     * [Arapurayil](#arapurayil)
     * [Dandelion Sprout's Official DNS Server](#dandelion-sprouts-official-dns-server)
@@ -1282,6 +1283,16 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
 | DNS-over-TLS   | `tls://adblock.doh.mullvad.net`           | <a href="sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ">Add to AdGuard</a> |
 
+<a name="puredns"></a>
+
+### PureDNS
+
+[PureDNS](https://puredns.org/) is built to advocate for secure DNS implementation in Indonesia, currently hosted in AWS, GCP and DO servers in Indonesia and Singapore.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://puredns.org/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAALcHVyZWRucy5vcmcKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS   | `tls://puredns.org`           | <a href="sdns://AwcAAAAAAAAAAAALcHVyZWRucy5vcmc">Add to AdGuard</a> |
 
 <a name="small-resolvers"></a>
 
