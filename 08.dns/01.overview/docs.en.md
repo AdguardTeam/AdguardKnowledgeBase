@@ -29,7 +29,7 @@ AdGuard DNS can work on any devices, including smartphones and tablet PCs. There
  
 * We have strict [no logging policy](https://adguard.com/en/privacy/dns.html). We do not preserve any personal data or log your activity. Your anonymity will be maintained.
 
-* You can use it on any Windows, macOS, Android, or iOS operated device.
+* You can use it on any Windows, macOS, Linux, Android, or iOS operated device.
 
 ### How to configure AdGuard DNS?
 
