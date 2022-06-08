@@ -97,7 +97,7 @@ Some websites and web services still use the old technology to support Java plug
 Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server often has software that parses Referer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
 You can also set an arbitrary value for Referer by entering it into the Custom Referrer field. To use default Referer, leave the field blank.
 
-**Hide your User-Agent **
+**Hide your User-Agent**
 
 When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
 
@@ -108,3 +108,12 @@ You can also set an arbitrary value for User-Agent by entering it into the Custo
 Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
 
 You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+
+**Protect from DPI** 
+
+The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+ 
+AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+
+
+>"Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android apps. AdGuard Browser extension does not provide it yet.
