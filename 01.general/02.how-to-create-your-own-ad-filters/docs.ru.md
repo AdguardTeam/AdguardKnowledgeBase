@@ -1394,7 +1394,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 ##### Псевдокласс `:has()`
 
-Рабочий черновик спецификации CSS 4.0 описывает [псевдокласс `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). К сожалению, пока что [не многие браузеры поддерживается его](https://developer.mozilla.org/ru/docs/Web/CSS/:has#browser_compatibility).
+Рабочий черновик спецификации CSS 4.0 описывает [псевдокласс `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). К сожалению, пока что [не многие браузеры поддерживают его](https://developer.mozilla.org/ru/docs/Web/CSS/:has#browser_compatibility).
 
 **Синтаксис**
 ```
