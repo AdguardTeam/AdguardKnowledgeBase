@@ -15,7 +15,7 @@ Many websites gather information about their visitors, such as their IP address,
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
 
-Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**. 
+Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
 
 <a name="general"></a>
 
@@ -61,7 +61,7 @@ When a browser addresses a page, the server assigns an ETag to that page. This E
 **Block third-party Authorization header**
 
 "Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
-    
+
 <a name="browser-api"></a>
 
 ### Browser API
@@ -109,11 +109,11 @@ Stealth Mode cannot hide your IP address. However, we can conceal it so that web
 
 You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
 
-**Protect from DPI** 
+**Protect from DPI**
 
 The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
- 
+
 AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
 
 
->"Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android apps. AdGuard Browser extension does not provide it yet.
+> "Protect from DPI" feature is already implemented only in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android apps.
