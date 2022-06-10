@@ -842,7 +842,7 @@ http://regexr.com/3cesk
   * Позволяет cookie использовать [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" стратегию.
 * `||example.org^$cookie` — Блокирует ВСЕ cookie установленные `example.org`. Это эквивалентно установке `maxAge` 0.
 * `||example.org^$cookie=NAME` — Блокирует единственную cookie с именем `NAME`.
-* `||example.org^$cookie=/regular_expression/` — Блокирует все cookie, которые совпадают с регулярным выражением.
+* `||example.org^$cookie=/regex/` — Блокирует все cookie, которые совпадают с регулярным выражением.
 
 > **Экранирование специальных символов:** в случае использования регулярных выражений необходимо экранировать запятую `,` и знак доллара `$`. Используйте для этого бекслеш `\`. Например, экранированная запятая выглядит так: `\,`.
 
@@ -850,7 +850,7 @@ http://regexr.com/3cesk
 
 * `@@||example.org^$cookie` — разблокирует все cookie, установленные `example.org`
 * `@@||example.org^$cookie=NAME` — разблокирует одну cookie с именем `NAME`
-* `@@||example.org^$cookie=/regular_expression/` — разблокирует все cookie, соответствующие заданному регулярному выражению
+* `@@||example.org^$cookie=/regex/` — разблокирует все cookie, соответствующие заданному регулярному выражению
 
 > **Ограничения:** `$cookie` правила поддерживают ограниченный список модификаторов: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
 

@@ -841,7 +841,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
   * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
 * `||example.org^$cookie` — blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
 * `||example.org^$cookie=NAME` — blocks a single cookie named `NAME`
-* `||example.org^$cookie=/regular_expression/` — blocks every cookie that matches a given regular expression
+* `||example.org^$cookie=/regex/` — blocks every cookie that matches the `regex` regular expression
 
 > **Escaping special characters:** if regular expression is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
@@ -849,7 +849,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 
 * `@@||example.org^$cookie` — unblocks all cookies set by `example.org`
 * `@@||example.org^$cookie=NAME` — unblocks a single cookie named `NAME`
-* `@@||example.org^$cookie=/regular_expression/` — unblocks every cookie matching a given regular expression
+* `@@||example.org^$cookie=/regex/` — unblocks every cookie matching a given regular expression
 
 > **Limitations:** `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `~third-party`.
 
@@ -1045,7 +1045,7 @@ Specify naked `$removeparam` to remove all query parameters:
 Use `~` to apply inversion:
 
 * `$removeparam=~param` — removes all query parameters with the name different from `param`.
-* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
+* `$removeparam=~/regex/` — removes all query parameters that do not match the `regex` regular expression.
 
 ###### Negating `$removeparam`
 
