@@ -546,7 +546,7 @@ Exception rules disable the other basic rules for the addresses to which they co
 <a id="elemhide-modifier"></a>
 ##### **`elemhide`**
 
-Disables any cosmetic rules on the pages matching the rule. You will find the information about cosmetic rules [further](#cosmetic-rules).
+Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 ###### `elemhide` example
 
@@ -555,7 +555,7 @@ Disables any cosmetic rules on the pages matching the rule. You will find the in
 <a id="content-modifier"></a>
 ##### **`content`**
 
-Disables HTML filtering rules and replace rules on the pages that match the rule. You will find the information about HTML filtering rules [here](#html-filtering-rules) and about replace rules [here](#replace-modifier).
+Disables [HTML filtering rules](#html-filtering-rules) and [replace rules](#replace-modifier) on the pages that match the rule.
 
 ###### `content` example
 
@@ -1395,16 +1395,16 @@ We **strongly recommend** using these markers any time when you use an extended 
 * `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
-> Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this:
-> `#?#div`
+> Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this: `#?#div`
 
-> For more information on how to debug ExtendedCSS selectors, jump to [this section](#selectors-debugging-mode) of the article.
+> Learn more [how to debug extended selectors](#selectors-debugging-mode).
 
 
 <a id="extended-css-has"></a>
+
 ##### Pseudo-class `:has()`
 
-Draft CSS 4.0 specification describes [pseudo-class `:has`](https://drafts.csswg.org/selectors/#relational). Unfortunately, it is not yet supported by browsers.
+Working Draft CSS 4.0 specification describes [pseudo-class `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). Unfortunately, [not many browsers support it yet](https://developer.mozilla.org/en-US/docs/Web/CSS/:has#browser_compatibility).
 
 **Syntax**
 ```
