@@ -627,6 +627,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS, IPv4      | `180.131.144.144` and `180.131.145.145`             | <a href="sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA">添加到AdGuard</a> |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | <a href="sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk">添加到AdGuard</a> |
 
+<!-- dnscepat.id not work anymore
 <a name="dnscepat.id"></a>
 
 ### DNSCEPAT
@@ -650,7 +651,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS IPv4 | IP: `5.2.75.231` | <a href="sdns://AAcAAAAAAAAACjUuMi43NS4yMzE">添加到AdGuard</a> |
 | DNS IPv6 | IP: `2a04:52c0:101:98d::` | <a href="sdns://AAcAAAAAAAAAFVsyYTA0OjUyYzA6MTAxOjk4ZDo6XQ">添加到AdGuard</a> |
 | DNS-over-HTTPS | Hostname: `https://eropa.dnscepat.id/dns-query` | <a href="sdns://AgcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQKL2Rucy1xdWVyeQ">添加到AdGuard</a> |
-
+-->
 
 <a name="360-dns"></a>
 
