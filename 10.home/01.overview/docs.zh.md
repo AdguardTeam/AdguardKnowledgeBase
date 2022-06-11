@@ -95,7 +95,7 @@ AdGuard Home可以安装在以下任何操作系统上。
 <img src="https://cdn.adguard.com/public/Adguard/Blog/AGHome/wizard.png" width="650" />
 
 
-AdGuard Home也可以被安装在一个[虚拟私人服务器（VPS）](https://github.com/AdguardTeam/AdGuardHome/wiki/VPS)，从[Snap Store](https://snapcraft.io/adguard-home)下载 (对于Linux 用户)，或者从一个[Docker image](https://hub.docker.com/r/adguard/adguardhome)安装。
+AdGuard Home也可以被安装在一个[虚拟私人服务器（VPS）](https://github.com/AdguardTeam/AdGuardHome/wiki/VPS)，从[Snap Store](https://snapcraft.io/adguard-home)下载 (对于Linux用户)，或者从一个[Docker image](https://hub.docker.com/r/adguard/adguardhome)安装。
 
 
 <a  id="compare"></a>
