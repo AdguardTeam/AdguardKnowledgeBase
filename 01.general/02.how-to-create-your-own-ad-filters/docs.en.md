@@ -738,11 +738,11 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 In general, `replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```
-replace = "/" regex "/" replacement "/" modifiers
+replace = "/" regexp "/" replacement "/" modifiers
 ```
 
-* `regex` — regular expression.
-* `replacement` — a string that will be used to replace the string corresponding to `regex`.
+* `regexp` — regular expression.
+* `replacement` — a string that will be used to replace the string corresponding to `regexp`.
 * `modifiers` — regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
 In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
@@ -839,9 +839,9 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 
   * Set its expiration date to current time plus `3600` seconds
   * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
-* `||example.org^$cookie` — blocks ALL cookies set by `example.org`. This is an equivalent to setting `maxAge` to zero.
+* `||example.org^$cookie` — blocks **all** cookies set by `example.org`; this is an equivalent to setting `maxAge=0`
 * `||example.org^$cookie=NAME` — blocks a single cookie named `NAME`
-* `||example.org^$cookie=/regular_expression/` — blocks every cookie that matches a given regular expression
+* `||example.org^$cookie=/regexp/` — blocks every cookie that matches the `regexp` regular expression
 
 > **Escaping special characters:** if regular expression is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
@@ -849,7 +849,7 @@ The rule syntax depends on whether we are going to block all cookies or to remov
 
 * `@@||example.org^$cookie` — unblocks all cookies set by `example.org`
 * `@@||example.org^$cookie=NAME` — unblocks a single cookie named `NAME`
-* `@@||example.org^$cookie=/regular_expression/` — unblocks every cookie matching a given regular expression
+* `@@||example.org^$cookie=/regexp/` — unblocks every cookie that matches the `regexp` regular expression
 
 > **Limitations:** `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `~third-party`.
 
@@ -868,6 +868,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
+4. If the IP part starts and ends with `/` character, it's treated as a regular expression.
 
 ##### `network` examples
 
@@ -875,6 +876,8 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 * `[2001:4860:4860::8888]:443^$network` — blocks access to `[2001:4860:4860::8888]:443`.
 * `174.129.166.49$network` — blocks access to `174.129.166.49:*`.
 * `@@174.129.166.49$network` — makes AdGuard bypass data to the endpoint. No other rules will be applied.
+* `/.+:3[0-9]{4}/$network` — blocks access to any port from 30000 to 39999.
+* `/8.8.8.(:?8|4)/$network` — blocks access to both `8.8.8.8` and `8.8.8.4`.
 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$network` modifier.
 
@@ -1020,13 +1023,13 @@ Rules with `$removeparam` modifier are intended to to strip query parameters fro
 
 You can also use regular expressions to match query parameters and/or their values:
 
-* `$removeparam=/regex/[options]` — removes query parameters matching the regex regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the regex regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
+* `$removeparam=/regexp/[options]` — removes query parameters that matches the `regexp` regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the `regexp` regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
 > `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
 
 > **Escaping special characters**: don't forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
 
-> Please note that regex-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regex with `/^` unless you specifically target parameter values.
+> Please note that regexp-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
@@ -1045,7 +1048,7 @@ Specify naked `$removeparam` to remove all query parameters:
 Use `~` to apply inversion:
 
 * `$removeparam=~param` — removes all query parameters with the name different from `param`.
-* `$removeparam=~/regex/` — removes all query parameters that do not match the regex regular expression.
+* `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
 
 ###### Negating `$removeparam`
 
@@ -1055,7 +1058,7 @@ Use `@@` to negate `$removeparam`:
 
 * `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
 * `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regex/` — negates the rule with `$removeparam=/regex/` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regexp/` — negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
 
 >**Multiple rules matching a single request**
 >In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
@@ -1448,7 +1451,7 @@ This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by
 <a id="extended-css-contains"></a>
 ##### Pseudo-class `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regex flags are supported. Please note that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
+This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regular expressions flags are supported. Please note that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
 
 **Syntax**
 ```
@@ -1456,7 +1459,7 @@ This pseudo-class principle is very simple: it allows to select the elements tha
 :contains(text)
 
 // matching by a regular expression
-:contains(/regex/i)
+:contains(/regexp/i)
 ```
 
 Backward compatible syntax:
@@ -1465,7 +1468,7 @@ Backward compatible syntax:
 [-ext-contains="text"]
 
 // matching by a regular expression
-[-ext-contains="/regex/"]
+[-ext-contains="/regexp/"]
 ```
 
 > Supported synonyms for better compatibility: `:-abp-contains`, `:has-text`.
@@ -1488,7 +1491,7 @@ div:contains(banner)
 // matching by a regular expression
 div:contains(/this .* banner/)
 
-// also with regex flags
+// also with regexp flags
 div:contains(/this .* banner/gi)
 ```
 
@@ -1528,11 +1531,11 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 ```
 
 - `property-name` — a name of CSS property to check the element for
-- `pattern` —  a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regex/`.
+- `pattern` —  a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
-> For non-regex patterns, `(`,`)`,`[`,`]` must be unescaped, because we require escaping them in the filtering rules.
+> For non-regexp patterns, `(`,`)`,`[`,`]` must be unescaped, because we require escaping them in the filtering rules.
 
-> For regex patterns, `"` and `\` should be escaped, because we manually escape those in extended-css-selector.js.
+> For regexp patterns, `"` and `\` should be escaped, because we manually escape those in extended-css-selector.js.
 
 **Examples**
 
@@ -1579,7 +1582,7 @@ selector:matches-attr("name"[="value"])
 - `name` — attribute name OR regular expression for attribute name
 - `value` — optional, attribute value OR regular expression for attribute value
 
-> For regex patterns, `"` and `\` should be escaped.
+> For regexp patterns, `"` and `\` should be escaped.
 
 **Examples**
 
@@ -1634,7 +1637,7 @@ selector:matches-property("name"[="value"])
 - `name` — property name OR regular expression for property name
 - `value` — optional, property value OR regular expression for property value
 
-> For regex patterns, `"` and `\` should be escaped.
+> For regexp patterns, `"` and `\` should be escaped.
 
 > `name` supports regexp for property in chain, e.g. `prop./^unit[\\d]{4}$/.type`
 
