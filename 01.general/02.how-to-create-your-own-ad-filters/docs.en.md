@@ -487,6 +487,11 @@ The rule corresponds to requests for media files — music and video, e.g. .mp4 
 
 The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
 
+###### `subdocument` examples
+
+* `||example.com^$subdocument` - blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains.
+* `||example.com^$subdocument,domain=domain.com` - blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
+
 <a id="ping-modifier"></a>
 ##### **`ping`**
 
