@@ -488,6 +488,11 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 Правило будет соответствовать запросам к встроенным страницам — HTML-теги `frame` и `iframe`.
 
+###### Примеры `subdocument`
+
+* `||example.com^$subdocument` - отключает загрузку встроенных страниц (`frame` и `iframe`) с `example.com` и его поддоменов.
+* `||example.com^$subdocument,domain=domain.com` - отключает загрузку встроенных страниц (`frame` и `iframe`) с `example.com`(и поддоменов) на `domain.com` и его поддоменах.
+
 <a id="ping-modifier"></a>
 ##### **`ping`**
 
