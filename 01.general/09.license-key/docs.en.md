@@ -130,7 +130,7 @@ In the small window you will see 3 functions:
 
 #### Activating AdGuard for iOS
 
-1. Open the application and tap on the **gear icon** in the lower right corner of the screen.
+1. Open the application and tap on the **gear icon** in the bottom right corner of the screen.
 
 2. Then go to **License**. You will see that window:
 
