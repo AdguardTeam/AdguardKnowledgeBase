@@ -68,6 +68,7 @@ visible: true
         * [$denyallow](#denyallow-modifier)
         * [$removeparam](#removeparam-modifier)
         * [$removeheader](#removeheader-modifier)
+        * [$hls](#hls-modifier)
         * [noop](#noop-modifier)
         * [$empty (устаревший)](#empty-modifier)
         * [$mp4 (устаревший)](#mp4-modifier)
