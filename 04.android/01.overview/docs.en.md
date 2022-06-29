@@ -88,7 +88,7 @@ Here is the installation instruction:
 
 >If you update from Android 10 to Android 11, there's a chance that already installed certificate will still be accepted. Otherwise, the *HTTPS-filtering is off* string will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling a certificate manually.
 
-In case you have problems with the certificate installation, read [this article](https://kb.adguard.com/en/android/solving-problems/manual-certificate) or contact our <a href="mailto:support@adguard.com"support team</a>. 
+In case you have problems with the certificate installation, read [this article](https://kb.adguard.com/en/android/solving-problems/manual-certificate) or contact our support team at **support@adguard.com**. 
 
 **We want to emphasize that AdGuard Ad Blocker will also function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (and the number of such sites is constantly increasing). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
 
