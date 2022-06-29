@@ -16,6 +16,6 @@ taxonomy:
 * [How to protect AdGuard from being disabled by the system](https://kb.adguard.com/en/android/solving-problems/background-work)
 * [Problems caused by using a Restricted Mode profile](https://kb.adguard.com/en/android/solving-problems/restricted-profile)
 * [Manual installation of the security certificate into the Firefox browser](https://kb.adguard.com/en/android/solving-problems/firefox-certificates)
-* [Manual certificate installation on devices with Android 11](https://kb.adguard.com/en/android/solving-problems/manual-certificate)
+* [Certificate installation issues on devices with Android 11 and later](https://kb.adguard.com/en/android/solving-problems/manual-certificate)
 
 This section is regularly updated. If you haven't found a solution to your problem in our knowledge base, [AdGuard Support Team](http://kb.adguard.com/en/technical-support) will be happy to help.
