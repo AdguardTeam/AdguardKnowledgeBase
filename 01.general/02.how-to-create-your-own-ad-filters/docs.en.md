@@ -1211,6 +1211,113 @@ Use `@@` to negate `$removeheader`:
 
 > **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
+
+<a id="hls-modifier"></a>
+#### **`$hls`**
+
+`$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
+Note that the word "segment" in this document means either a "Media Segment" or a "playlist" as part of a "Master Playlist": `$hls` rules do not distinguish between a "Master Playlist" and a "Media Playlist".
+
+##### Syntax
+* `||example.org^$hls=urlpattern` – remove segments whose URL matches the URL pattern `urlpattern`.  The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
+* `||example.org^$hls=/regex/options` – remove segments where the URL, or, if a certain option is present, one of the tags, matches the regular expression `regex`. `options` modify the behaviour of the rule as described below.
+
+Available `options` are:
+* `t` – instead of testing the segment's URL, test each of the segment's tags against the regex. A segment with a matching tag is removed.
+* `i` – make the regular expression case-insensitive.
+
+The characters `/`, `$` and `,` must be escaped with `\` inside `regex`.
+
+##### Exceptions
+
+Basic URL exceptions shall not disable `$hls` rules. They can be disabled as described below:
+* `@@||example.org^$hls` – disable all `$hls` rules for responses from URLs matching `||example.org^`.
+* `@@||example.org^$hls=text` – disable all `$hls` rules with the value of the `hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
+* `$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+
+##### Restrictions
+* `$hls` rules are only allowed in trusted filters.
+* `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
+* `$hls` rules do not apply if the size of the original response is more than 3 MB.
+
+##### Notes
+When multiple `$hls` rules match the same request, their effect is cumulative.
+
+##### Examples
+* `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` — removes all segments with the matching URL.
+* `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` — achieves more or less the same with
+  a regex instead of a URL pattern.
+* `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` — removes all segments which have the matching tag.
+
+##### Anatomy of an HLS playlist
+
+A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
+1. An HLS playlist is a collection of text lines.
+2. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL.
+3. A URL line is called a "segment".
+4. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist.
+
+Some points specific to the operation of `$hls` rules:
+1. When a segment is removed, all of the tags that apply only to that segment are also removed.
+2. When there's a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed.
+3. Since there's no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we've seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules.
+4. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you're doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist.
+
+An example of a transformation done by the rules:
+<details>
+<summary>Original response</summary>
+
+```
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXTINF,5
+preroll.ts
+#UPLYNK-SEGMENT:abc123,ad
+#UPLYNK-KEY:aabb1122
+#EXT-X-DISCONTINUITY
+#EXTINF,10
+01.ts
+#EXTINF,10
+02.ts
+#UPLYNK-SEGMENT:abc123,segment
+#UPLYNK-KEY:ccdd2233
+#EXT-X-DISCONTINUITY
+#EXTINF,10
+01.ts
+#EXTINF,10
+02.ts
+#EXT-X-ENDLIST
+```
+</details>
+
+<details>
+<summary>Applied rules</summary>
+
+```
+||example.org^$hls=preroll
+||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t
+```
+</details>
+
+<details>
+<summary>Modified response</summary>
+
+```
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#UPLYNK-SEGMENT:abc123,segment
+#UPLYNK-KEY:ccdd2233
+#EXT-X-DISCONTINUITY
+#EXTINF,10
+01.ts
+#EXTINF,10
+02.ts
+#EXT-X-ENDLIST
+```
+</details>
+
+
 <a id="noop-modifier"></a>
 #### **`noop`**
 
