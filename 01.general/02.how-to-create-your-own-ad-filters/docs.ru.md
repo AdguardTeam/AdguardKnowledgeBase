@@ -1309,6 +1309,8 @@ preroll.ts
 ```
 </details>
 
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$hls` поддерживаются в AdGuard для Windows, Mac, и Android.
+
 
 <a id="noop-modifier"></a>
 #### **`noop`**
