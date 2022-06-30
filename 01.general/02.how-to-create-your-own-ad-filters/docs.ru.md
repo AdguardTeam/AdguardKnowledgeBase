@@ -1203,21 +1203,6 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$removeheader` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
-<a id="noop-modifier"></a>
-#### **`noop`**
-
-Модификатор `noop` не делает ничего и может быть использован исключительно в целях улучшения читабельности правил. Он состоит из последовательности символов нижнего подчёркивания (`_`) любой длины и может фигурировать в правиле столько раз, сколько требуется.
-
-##### Примеры `noop`:
-
-```
-||example.com$_,removeparam=/^ss\\$/,_,image
-||example.com$replace=/bad/good/,___,~third-party
-```
-
-> **Совместимость с разными версиями AdGuard.** Правила с модификатором `noop` не поддерживаются в AdGuard Content Blocker.
-
-
 <a id="jsonprune-modifier"></a>
 #### **`$jsonprune`**
 
@@ -1267,6 +1252,21 @@ https://jsonpath.com/
 * `||example.org^$jsonprune=\$.a[?(has ad_origin)]` – удалить всех прямых потомков `a`, которые обладают свойством `ad_origin`.
 * `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` – удалить все элементы на уровне вложенности 3, обладающие свойством "Some key" равным "Some value".
 
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android.
+
+<a id="noop-modifier"></a>
+#### **`noop`**
+
+Модификатор `noop` не делает ничего и может быть использован исключительно в целях улучшения читабельности правил. Он состоит из последовательности символов нижнего подчёркивания (`_`) любой длины и может фигурировать в правиле столько раз, сколько требуется.
+
+##### Примеры `noop`:
+
+```
+||example.com$_,removeparam=/^ss\\$/,_,image
+||example.com$replace=/bad/good/,___,~third-party
+```
+
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `noop` не поддерживаются в AdGuard Content Blocker.
 
 <a id="empty-modifier"></a>
 ##### **`empty` (устаревший)**
