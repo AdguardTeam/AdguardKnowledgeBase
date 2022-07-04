@@ -1264,7 +1264,7 @@ Basic URL exceptions shall not disable `$jsonprune` rules. They can be disabled 
 * `||example.org^$jsonprune=\$.a[?(has ad_origin)]` – remove all children of `a` that have an `ad_origin` key.
 * `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` – remove all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
 
-> **Compatibility with different versions of AdGuard.** Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android.
+> **Compatibility with different versions of AdGuard.** Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
 
 
 <a id="noop-modifier"></a>

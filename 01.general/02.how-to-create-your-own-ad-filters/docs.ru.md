@@ -1252,7 +1252,7 @@ https://jsonpath.com/
 * `||example.org^$jsonprune=\$.a[?(has ad_origin)]` – удалить всех прямых потомков `a`, которые обладают свойством `ad_origin`.
 * `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` – удалить все элементы на уровне вложенности 3, обладающие свойством "Some key" равным "Some value".
 
-> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android.
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android, **с CoreLibs версии 1.10 или выше**.
 
 <a id="noop-modifier"></a>
 #### **`noop`**
