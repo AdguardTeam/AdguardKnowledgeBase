@@ -720,6 +720,8 @@ domain.com###banner
 * `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
 * `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку в значении модификатора `domain` содержится отрицание домена
 
+> **Совместимость с разными версиями AdGuard.** Правила блокировки с модификатором `$badfilter` не поддерживаются в AdGuard Content Blocker.
+
 <a id="replace-modifier"></a>
 ##### **`replace`**
 

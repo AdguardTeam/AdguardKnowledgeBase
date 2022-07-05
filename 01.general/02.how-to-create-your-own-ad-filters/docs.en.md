@@ -718,6 +718,8 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 * `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
 * `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `domain` modifier contains a negated domain
 
+> **Compatibility with different versions of AdGuard.** Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
+
 <a id="replace-modifier"></a>
 #### **`replace`**
 
