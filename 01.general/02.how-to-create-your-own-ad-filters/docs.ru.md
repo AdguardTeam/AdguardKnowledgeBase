@@ -1206,16 +1206,16 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 <a id="jsonprune-modifier"></a>
 #### **`$jsonprune`**
 
-`$jsonprune` правила модифицируют JSON ответы на соответствующий правилу запрос. Они предназначены для удаления
-элементов JSON документа, выбираемых с помощью особого (см. ниже) [JSONPath](https://goessner.net/articles/JsonPath/)
-выражения. Эти правила не модифицируют не-JSON ответы.
+Правила `$jsonprune` модифицируют JSON-ответы на соответствующий правилу запрос. Они предназначены для удаления
+элементов JSON-документа, выбираемых с помощью особого [JSONPath](https://goessner.net/articles/JsonPath/)
+выражения (см. ниже). Эти правила не модифицируют ответы, не являющиеся валидным JSON-документом.
 
 ##### Синтаксис
-* `||example.org^$jsonprune=expression` – удалить элементы, соответствующие особому JSONPath выражению `expression` из ответа на запрос к URL, соответствующему `||example.org`.
+* `||example.org^$jsonprune=expression` – удалить элементы, соответствующие особому JSONPath-выражению `expression` из ответа на запрос к URL, соответствующему `||example.org`.
 
 Символы `$` и `,` в `expression` необходимо экранировать с помощью `\`.
 
-Особые JSONPath выражения отступают от оригинальной [спецификации](https://goessner.net/articles/JsonPath/) в следующем:
+Особые JSONPath-выражения отступают от оригинальной [спецификации](https://goessner.net/articles/JsonPath/) в следующем:
 1. "Script expressions" не поддерживаются.
 2. Поддерживаемые "filter expressions":
    2.1. `?(has <key>)` -- `true` если текущий объект обладает свойством `<key>`.
@@ -1227,30 +1227,30 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 6. Выражения, заканчивающиеся на `..` не поддерживаются.
 7. Разрешено указывать несколько `array slices` в квадратных скобках.
 
-Существуют различные online инструменты для проверки JSONPath выражений:
+Существуют различные online-инструменты для проверки JSONPath выражений:
 https://jsonpath.herokuapp.com/
 https://jsonpath.com/
-Пользуясь такого рода инструментами, необходимо иметь в виду, что различные имплементации JSONPath обладают
+Обратите внимание, что различные имплементации JSONPath обладают
 уникальными особенностями и могут быть несовместимы друг с другом.
 
 ##### Отключение правил `$jsonprune`
 
-Базовые правила-исключения не отключают `$hls` правила. Отключить их можно следующим образом:
-* `@@||example.org^$jsonprune` – отключить все `$jsonprune` правила для запросов к URL, соответствующим `||example.org^`.
-* `@@||example.org^$jsonprune=text` – отключить все `$jsonprune` правила, у которых значение модификатора `jsonprune` равно `text`, для запросов к URL, соответствующим `||example.org^`.
+Базовые правила-исключения не отключают правила `$jsonprune`. Отключить их можно следующим образом:
+* `@@||example.org^$jsonprune` – отключить все правила `$jsonprune` для запросов к URL, соответствующим `||example.org^`.
+* `@@||example.org^$jsonprune=text` – отключить все правила `$jsonprune`, у которых значение модификатора `jsonprune` равно `text`, для запросов к URL, соответствующим `||example.org^`.
 * `$jsonprune` также можно отключить с помощью правил-исключений с модификаторами `$document`, `$content` и `$urlblock`.
 
 ##### Ограничения
-* `$jsonprune` не могут иметь других модификаторов, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, и `$xmlhttprequest`.
-* `$jsonprune` правила не будут применены к ответам размером больше 3 МБ.
+* `$jsonprune` не могут иметь других модификаторов, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
+* правила `$jsonprune` не будут применены к ответам размером больше 3 МБ.
 
 ##### Замечания
 * Если несколько `$jsonprune` правил соответствуют одному запросу, их эффект суммируется.
 
 ##### Примеры
-* `||example.org^$jsonprune=\$..[one\, "two three"]` — удалить все вхождения свойств "one" и "two three" в JSON документ.
-* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` – удалить всех прямых потомков `a`, которые обладают свойством `ad_origin`.
-* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` – удалить все элементы на уровне вложенности 3, обладающие свойством "Some key" равным "Some value".
+* `||example.org^$jsonprune=\$..[one\, "two three"]` — удалить все вхождения свойств "one" и "two three" в JSON-документ.
+* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` — удалить всех прямых потомков `a`, которые обладают свойством `ad_origin`.
+* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` — удалить все элементы на уровне вложенности 3, обладающие свойством "Some key", равным "Some value".
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android, **с CoreLibs версии 1.10 или выше**.
 

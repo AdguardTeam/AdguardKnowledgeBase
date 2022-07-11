@@ -1216,8 +1216,8 @@ Use `@@` to negate `$removeheader`:
 <a id="jsonprune-modifier"></a>
 #### **`$jsonprune`**
 
-`$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified (see below)
-[JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON.
+`$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified
+[JSONPath](https://goessner.net/articles/JsonPath/) expression (see below). They do not modify responses which are not valid JSON.
 
 ##### Syntax
 * `||example.org^$jsonprune=expression` – remove items that match the modified JSONPath expesssion `expression` from the response.
@@ -1227,10 +1227,10 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 The modified JSONPath syntax has the following differences from the original:
 1. Script expressions are not supported.
 2. The supported filter expressions are:
-   2.1. `?(has <key>)` -- true if the current object has the specified key.
-   2.2. `?(key-eq <key> <value>)` -- true if the current object has the specified key,
+   2.1. `?(has <key>)` — true if the current object has the specified key.
+   2.2. `?(key-eq <key> <value>)` — true if the current object has the specified key,
    and its value is equal to the specified value.
-   2.3. `?(key-substr <key> <value>)` -- true if the specified value is a substring
+   2.3. `?(key-substr <key> <value>)` — true if the specified value is a substring
    of the value of the specified key of the current object.
 3. Whitespace outside of double- or single-quoted strings has no meaning.
 4. Both double- and single-quoted strings can be used.
