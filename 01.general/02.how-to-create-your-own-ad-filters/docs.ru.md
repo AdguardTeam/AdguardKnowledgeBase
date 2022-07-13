@@ -1207,7 +1207,7 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 <a id="hls-modifier"></a>
 #### **`$hls`**
 
-`$hls` правила модифицирует ответ на соответствующий правилу запрос. Они предназначены для удаления сегментов из [HLS плейлистов (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
+`$hls` правила модифицируют ответ на соответствующий правилу запрос. Они предназначены для удаления сегментов из [HLS плейлистов (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
 Слово "сегмент" в данной документации подразумевает как "Media Segment" так и "playlist" (как часть "Master Playlist"): с точки зрения `$hls` правил "Master Playlist" и "Media Playlist" неразличимы.
 
 ##### Синтаксис
