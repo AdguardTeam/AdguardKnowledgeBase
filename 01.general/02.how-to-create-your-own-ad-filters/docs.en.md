@@ -69,6 +69,7 @@ visible: true
         * [$removeparam](#removeparam-modifier)
         * [$removeheader](#removeheader-modifier)
         * [$hls](#hls-modifier)
+        * [$jsonprune](#jsonprune-modifier)
         * [noop](#noop-modifier)
         * [$empty (deprecated)](#empty-modifier)
         * [$mp4 (deprecated)](#mp4-modifier)
@@ -719,6 +720,8 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 * `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
 * `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `domain` modifier contains a negated domain
 
+> **Compatibility with different versions of AdGuard.** Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
+
 <a id="replace-modifier"></a>
 #### **`replace`**
 
@@ -1212,7 +1215,6 @@ Use `@@` to negate `$removeheader`:
 
 > **Compatibility with different versions of AdGuard.** Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-
 <a id="hls-modifier"></a>
 #### **`$hls`**
 
@@ -1320,6 +1322,58 @@ preroll.ts
 
 > **Compatibility with different versions of AdGuard.** Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
+<a id="jsonprune-modifier"></a>
+#### **`$jsonprune`**
+
+`$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified
+[JSONPath](https://goessner.net/articles/JsonPath/) expression (see below). They do not modify responses which are not valid JSON.
+
+##### Syntax
+* `||example.org^$jsonprune=expression` – remove items that match the modified JSONPath expesssion `expression` from the response.
+
+Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
+
+The modified JSONPath syntax has the following differences from the original:
+1. Script expressions are not supported.
+2. The supported filter expressions are:
+   2.1. `?(has <key>)` — true if the current object has the specified key.
+   2.2. `?(key-eq <key> <value>)` — true if the current object has the specified key,
+   and its value is equal to the specified value.
+   2.3. `?(key-substr <key> <value>)` — true if the specified value is a substring
+   of the value of the specified key of the current object.
+3. Whitespace outside of double- or single-quoted strings has no meaning.
+4. Both double- and single-quoted strings can be used.
+5. Expressions ending with `..` are not supported.
+6. Multiple array slices can be specified in square brackets.
+
+There are various online tools for testing JSONPath expressions, here's a couple examples:
+https://jsonpath.herokuapp.com/
+https://jsonpath.com/
+
+Keep in mind, though, that all JSONPath implementations on this planet have unique features/quirks and are subtly incompatible with each other.
+
+##### Exceptions
+
+Basic URL exceptions shall not disable `$jsonprune` rules. They can be disabled as described below:
+* `@@||example.org^$jsonprune` – disable all `$jsonprune` rules for responses from URLs matching `||example.org^`.
+* `@@||example.org^$jsonprune=text` – disable all `$jsonprune` rules with the value of the `jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+* `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+
+##### Restrictions
+* `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+
+##### Notes
+* When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order,
+  the first rule is applied to the original response, and each of the remaining rules is applied
+  to the result of applying the previous one.
+
+##### Examples
+* `||example.org^$jsonprune=\$..[one\, "two three"]` — remove all occurences of the keys "one" and "two three" anywhere in the JSON document.
+* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` – remove all children of `a` that have an `ad_origin` key.
+* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` – remove all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
+
+> **Compatibility with different versions of AdGuard.** Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
 
 <a id="noop-modifier"></a>
 #### **`noop`**
