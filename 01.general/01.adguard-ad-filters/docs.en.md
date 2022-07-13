@@ -49,11 +49,11 @@ Here is [a dedicated page](https://adguard.com/contribute.html) for people willi
 * **Social media filter** — removes numerous "Like" and "Tweet" buttons and other social media integrations on popular websites. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
 * **Annoyances filter** — blocks irritating elements on web pages. Inspired by Fanboy Annoyances List, but doesn’t duplicate it. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
 Includes the following AdGuard filters:
-	* Cookie Notices — blocks cookie notices on web pages.
-	* Popups — blocks all kinds of pop-ups that are not necessary for websites' operation.
-	* Mobile App Banners — blocks banners that promote mobile apps of websites.
-	* Other Annoyances — blocks elements that do not fall under the popular categories of annoyances.
-	* Widgets — blocks third-party widgets: online assistants, live support chats, etc.
+	* Cookie Notices — blocks cookie notices on web pages. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
+	* Popups — blocks all kinds of pop-ups that are not necessary for websites' operation. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+	* Mobile App Banners — blocks banners that promote mobile apps of websites. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
+	* Widgets — blocks third-party widgets: online assistants, live support chats, etc. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
+	* Other Annoyances — blocks elements that do not fall under the popular categories of annoyances. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
 * **Filter unblocking search ads and self-promotions** — unblocks ads that may be useful to users. Learn more about this filter on [this page](https://kb.adguard.com/en/general/search-ads-and-self-promotion). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
 * **Russian filter** — removes ads from websites in Russian. Initially based on [RU AdList](https://code.google.com/p/ruadlist/) filter but subsequently developed completely independently. Currently, there are very little intersections with RU AdList left. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 * **German filter** — removes ads from websites in German. Originally based on the [EasyList Germany](https://easylist.to/) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
