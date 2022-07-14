@@ -52,7 +52,7 @@ On our locations screen in AdGuard VPN app or extension, select the **Fastest** 
 In the paid version there is unlimited speed and no traffic limit (as opposed to 3GB per month in the free version).
  
 ### How to buy AdGuard VPN?
-Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choose the plan that suits you best. We have 1-month, 1-year and 2-year subscription options.
+Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choose the plan that suits you best. We have 1 month, 1 year and 2 years subscription options.
 
 ### What restrictions do users of the free version have?
 * VPN can be used only on two devices simultaneously
@@ -60,12 +60,12 @@ Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choos
 * Traffic limit is 3 GB per month
 * Some locations are not available
 * Streaming services are not supported
-* Email clients can’t be used for sending messages (for AdGuard VPN for iOS and Android)
+* Email clients can’t be used for sending messages (on iOS and Android)
 
-> The last point should be addressed separately: users of the free version of AdGuard VPN for iOS and Android cannot send emails in email clients. It’s impossible because we block port 25, which is used for outgoing emails, and thus reinsure against spam. However, sending emails in the browser version of email services works perfectly, and on AdGuard VPN for Android you can add apps to exclusions so that email apps will function as well.
+> The last point should be addressed separately: free users of AdGuard VPN for iOS and Android cannot send emails in email clients. It’s impossible because we block port 25, which is used for outgoing emails, and thus reinsure against spam. However, sending emails with web email services works perfectly well. And on AdGuard VPN for Android you can add apps to exclusions so that email apps will function as well.
  
 ### How many devices can be connected to AdGuard VPN simultaneously?
-Most likely you are reading this because you’ve seen the “Maximum number of connections reached” warning. One AdGuard VPN subscription covers **5 simultaneous connections** (to any devices you want). 
+Most likely you are reading this because you’ve seen the “Maximum number of connections reached” warning. One AdGuard VPN subscription covers up to **5 simultaneously connected devices** (of any types, in any combination).
 
 If you reach the limit and want to connect another device, please disconnect any of your devices that you are not using. To do so, click or tap the “Disconnect” button on the corresponding device. Alternatively, if you need to connect more than 5 devices, you can purchase additional subscription (it will cover 5 more devices).
  
