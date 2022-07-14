@@ -48,7 +48,7 @@ visible: true
 * **Фильтр параметров отслеживания** — повышает приватность путём удаления параметров отслеживания из адресов страниц и их ресурсов. Когда пользователь включает блокировку параметров отслеживания в модуле Антитрекинга, автоматически включается этот фильтр. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
 * **Фильтр виджетов социальных сетей** — скрывает многочисленные кнопки «Мне нравится», «Поделиться» и подобные им интеграции с социальными сетями на популярных сайтах.
 [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
-* **Фильтр раздражителей** — блокирует раздражающие элементы на сайтах. Основан на фильтре Fanboy Annoyances List, но не дублирует его. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
+* **Фильтр раздражителей** — блокирует раздражающие элементы на сайтах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
 Включает следующие фильтры AdGuard:
 	* Фильтр cookie-уведомлений — блокирует уведомления о файлах cookie на веб-страницах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
 	* Фильтр всплывающих окон — блокирует всплывающие окна, не имеющие отношения к функциональности сайта. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
