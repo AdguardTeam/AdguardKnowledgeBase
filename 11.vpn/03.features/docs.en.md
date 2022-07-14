@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-AdGuard VPN is a VPN service created by our company. An in-house developed VPN protocol makes it unique among competitors. AdGuard VPN is currently available as a browser extension for Chrome and Firefox and as a mobile app for Android; apps for IOS, Mac and Windows are coming soon. Both app and extensions have a free, basic plan and a paid subscription with more possibilities.
+AdGuard VPN is a VPN service created by our company. An in-house developed VPN protocol makes it unique among competitors. AdGuard VPN is available as a browser extension for Chrome, Firefox, and Edge, and as an app for Android, IOS, Mac and Windows. Both app and extensions have a free, basic plan and a paid subscription with more possibilities.
 
 [AdGuard VPN protocol](#protocol)
 [Fastest endpoints](#endpoints)
@@ -40,11 +40,11 @@ The difference between AdGuard and AdGuard VPN payment systems is structural: th
 
 As it was mentioned at the beginning of this article, there are two options: free and paid VPN. Free account allows to have:
 
-* 5 devices with enabled AdGuard VPN (there can be more devices overall, but only five can be used simultaneously)
+* 2 devices with enabled AdGuard VPN (there can be more devices overall, but only two can be used simultaneously)
 * 3 GB of traffic that can be distributed between AdGuard VPN extensions and app
 * 20 Mbit/sec speed limit
 
-Correspondingly, the paid version offers **unlimited** traffic and speed, yet the number of devices stays the same.
+Correspondingly, the paid version offers **unlimited** traffic and speed, and 5 simultaneously connected devices.
 
 
 <a name="account"></a>
