@@ -52,7 +52,7 @@ On our locations screen in AdGuard VPN app or extension, select the **Fastest** 
 In the paid version there is unlimited speed and no traffic limit (as opposed to 3GB per month in the free version).
  
 ### How to buy AdGuard VPN?
-Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choose the plan that suits you best. We have 1 month, 1 year and 2 years subscription options.
+Proceed to [the payment page](https://adguard-vpn.com/en/license.html) and choose the plan that suits you best. We have 1-month, 1-year and 2-year subscription options.
 
 ### What restrictions do users of the free version have?
 * VPN can be used only on two devices simultaneously
@@ -73,8 +73,8 @@ If you reach the limit and want to connect another device, please disconnect any
 We have 3 price plans: **1 month** (billed once a month), **1 year** (billed once a year) and **2 years** (billed annually) subscriptions. [Choose whichever suits you best](https://adguard-vpn.com/license.html).
  
 ### How does the 30-day money-back guarantee work?
-We grant our customers a possibility to return 100% of funds they spent on AdGuard 1 year subscriptions purchased from https://adguard-vpn.com/ (for subscriptions purchased elsewhere, look for the refund policy of that particular reseller). For 1 year subscriptions we have 30-day money-back-guarantee. All refund requests for 1 year subscriptions made within 30 days since the purchase date are satisfied no matter what the reason is.
+We grant our customers a possibility to return 100% of funds they spent on AdGuard 1 year subscriptions purchased from https://adguard-vpn.com/ (for subscriptions purchased elsewhere, look for the refund policy of that particular reseller). For 1-year subscriptions we have 30-day money-back-guarantee. All refund requests for 1-year subscriptions made within 30 days since the purchase date are satisfied no matter what the reason is.
  
-To get a refund for 1 year subscription purchased on [the official website](https://adguard-vpn.com/), you need to contact the support team: support@adguard-vpn.com.
+To get a refund for 1-year subscription purchased on [the official website](https://adguard-vpn.com/), you need to contact the support team: support@adguard-vpn.com.
 Processing time will depend on the payment method you have chosen and usually takes up to 5-10 business days.
 
