@@ -49,7 +49,7 @@ visible: true
 * **Фильтр виджетов социальных сетей** — скрывает многочисленные кнопки «Мне нравится», «Поделиться» и подобные им интеграции с социальными сетями на популярных сайтах.
 [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
 * **Фильтр раздражителей** — блокирует раздражающие элементы на сайтах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
-Включает следующие фильтры AdGuard:
+Включает следующие фильтры AdGuard (все они могут быть включены независимо от фильтра раздражителей):
 	* Фильтр cookie-уведомлений — блокирует уведомления о файлах cookie на веб-страницах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
 	* Фильтр всплывающих окон — блокирует всплывающие окна, не имеющие отношения к функциональности сайта. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
 	* Фильтр баннеров мобильных приложений — блокирует баннеры, рекламирующие мобильные приложения сайтов. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
