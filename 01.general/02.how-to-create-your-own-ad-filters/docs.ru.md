@@ -756,7 +756,7 @@ replace = "/" regexp "/" replacement "/" modifiers
 ###### Пример `$replace`
 
 ```
-||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
+||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
 У этого правила три части:
