@@ -10,14 +10,14 @@ visible: true
 
 1. AdGuard 설정을 엽니다. **일반 설정** 섹션으로 이동하여 아래로 스크롤한 후 **디버그** 로깅 레벨을 선택합니다.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_1.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/ko_logs_1.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
 2. 문제를 재현합니다.
 - 지원 팀이 빨리 문제를 해결할 수 있도록 문제 재현 시간을 지정해 주십시오.
 
 3. **로그 내보내기** 버튼을 클릭하여 기록된 로그를 내보냅니다.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;"> 
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/ko_logs_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
 
 - 어느 폴더에서나 압축된 로그파일을 저장합니다. 
@@ -31,9 +31,9 @@ visible: true
 
 1. AdGuard를 중지합니다.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_3.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/ko_logs_3.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/ko_logs_4.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
 
 2. 콘솔을 엽니다(시작 패널에 'cmd' 입력).
@@ -44,7 +44,7 @@ visible: true
 
 4. **디버그** 로깅 레벨을 선택합니다.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ko/ko_logs_5.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ko/ko_logs_5.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
 5. 문제를 재현합니다.
 - 지원 팀이 빨리 문제를 해결할 수 있도록 문제 재현 시간을 지정해 주십시오.
