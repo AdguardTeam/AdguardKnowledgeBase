@@ -11,11 +11,11 @@ visible: true
 1. Нажмите **Win+R**
 2. В появившемся окне введите `eventvwr` и нажмите **Enter**.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ru/event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/event_logs_1.png" style="border: 1px solid #efefef; max-width: 350px; padding: 2px;">
 
 3. Окно программы Просмотр событий выглядит как показано ниже на картинке.
 
-<img src="https://cdn.adguard.com/Adguard/kb/newscreenshots/Ru/event_logs_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/event_logs_2.png" style="border: 1px solid #efefef; max-width: 650px; padding: 2px;">
 
 Для сохранения необходимых нам файлов проделайте следующее.
 
