@@ -6,7 +6,7 @@ taxonomy:
 ---
 
 ## 시스템 요구 사항
-**운영 체제:** Microsoft Windows 10, 8.1, 8, 7, Vista.
+**운영 체제:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
 **RAM:** 512 MB 이상.
 

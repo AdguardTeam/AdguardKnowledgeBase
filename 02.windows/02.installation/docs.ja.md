@@ -7,7 +7,7 @@ taxonomy:
 
 ## 動作環境
 
-**オペレーティングシステム**: Microsoft Windows 10、8.1、8、7、Vista。
+**オペレーティングシステム**: Microsoft Windows 11, 10、8.1、8、7、Vista。
 
 **RAM:** 512MB以上
 
