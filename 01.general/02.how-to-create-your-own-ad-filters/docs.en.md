@@ -759,7 +759,7 @@ In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). 
 ##### `$replace` example
 
 ```
-||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/
+||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
 There are three parts in this rule:
