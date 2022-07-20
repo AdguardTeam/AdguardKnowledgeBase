@@ -6,7 +6,7 @@ taxonomy:
 ---
 
 ## System  requirements
-**Operating system:** Microsoft Windows 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
 **RAM:** at least 512 MB.
 
