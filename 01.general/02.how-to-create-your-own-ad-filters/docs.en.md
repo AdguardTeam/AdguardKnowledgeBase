@@ -1842,13 +1842,9 @@ div:matches-property("memoizedProps.key"="null")
 div:matches-property("memoizedProps._owner.src"="/ad/")
 ```
 
-<details>
-  <summary><b>For filters maintainers</b></summary>
-
-  To check properties of specific element, do:
-  1. Select the element on the page.
-  2. Go to Console tab and run `console.dir($0)`.
-</details>
+> **For filters maintainers:** To check properties of specific element, you should do:
+> 1. Inspect the needed page element or select it in `Elements` tab of browser DevTools.
+> 2. Run `console.dir($0)` in `Console` tab.
 
 <a id="extended-css-xpath"></a>
 ##### Pseudo-class `:xpath()`
