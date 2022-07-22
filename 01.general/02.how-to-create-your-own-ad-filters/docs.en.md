@@ -104,6 +104,7 @@ visible: true
         * [$app](#non-basic-rules-modifiers-app)
         * [$domain](#non-basic-rules-modifiers-domain)
         * [$path](#non-basic-rules-modifiers-path)
+* [App and extension compatibility](#app-and-extension-compatibility)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -2255,6 +2256,45 @@ path=pattern
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard.** Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+
+<a id="app-and-extension-compatibility"></a>
+## App and extension compatibility
+
+### Rules
+
+| App or extension              | URL blocking | Element hiding | CSS     | Extended CSS | HTML    | JS      | Scriptlets |
+| ----------------------------- | ------------ | -------------- | ------- | ------------ | ------- | ------- | ---------- |
+| AdGuard for Windows           | ✅            | ✅              | ✅       | ✅            | ✅       | ✅       | ✅          |
+| AdGuard for Mac               | ✅            | ✅              | ✅       | ✅            | ✅       | ✅       | ✅          |
+| AdGuard for Android           | ✅            | ✅              | ✅\*️\*️ | ✅\*️\*️      | ✅\*️\*️ | ✅\*️\*️ | ✅\*️\*️    |
+| AdGuard for iOS               | ✅            | ✅              | ❌       | ❌            | ❌       | ❌       | ❌          |
+| AdGuard extension for Chrome  | ✅            | ✅              | ✅       | ✅            | ❌       | ✅       | ✅          |
+| AdGuard extension for Firefox | ✅            | ✅              | ✅       | ✅            | ✅       | ✅\*️    | ✅          |
+| AdGuard for Safari            | ✅            | ✅              | ✅       | ✅            | ❌       | ✅       | ❌          |
+| AdGuard extension for Edge    | ✅            | ✅              | ✅       | ✅            | ❌       | ✅       | ✅          |
+| AdGuard extension for Opera   | ✅            | ✅              | ✅       | ✅            | ❌       | ✅\*️    | ✅          |
+| AdGuard Content Blocker       | ✅            | ✅              | ❌       | ❌            | ❌       | ❌       | ❌          |
+
+> \*️ — JS rules can't be loaded from filter updates by browser extensions for Firefox (AMO version) and Opera, only scriptlets
+> 
+> \*️\*️ — can be used only with high-quaulity filtering algorithm
+
+### Modifiers
+
+| App or extension              | $empty | $redirect | $mp4 | $important | $replace | $csp | $webrtc | $websocket | $network | $badfilter | $app | $cookie |
+| ----------------------------- | ------ | --------- | ---- | ---------- | -------- | ---- | ------- | ---------- | -------- | ---------- | ---- | ------- |
+| AdGuard for Windows           | ✅      | ✅         | ✅    | ✅          | ✅        | ✅    | ❌       | ✅          | ✅        | ✅          | ✅    | ✅       |
+| AdGuard for Mac               | ✅      | ✅         | ✅    | ✅          | ✅        | ✅    | ❌       | ✅          | ✅        | ✅          | ✅    | ✅       |
+| AdGuard for Android           | ✅      | ✅         | ✅    | ✅          | ✅\*️\*️  | ✅    | ❌       | ✅          | ✅        | ✅          | ✅    | ✅       |
+| AdGuard for iOS               | ❌      | ❌         | ❌    | ✅          | ❌        | ❌    | ❌       | ✅          | ❌        | ✅          | ❌    | ❌       |
+| AdGuard extension for Chrome  | ✅      | ✅         | ✅    | ✅          | ❌        | ✅    | ✅       | ✅          | ❌        | ✅          | ❌    | ✅       |
+| AdGuard extension for Firefox | ✅      | ✅         | ✅    | ✅          | ✅        | ✅    | ✅       | ✅          | ❌        | ✅          | ❌    | ✅       |
+| AdGuard for Safari            | ❌      | ❌         | ❌    | ✅          | ❌        | ❌    | ❌       | ✅          | ❌        | ✅          | ❌    | ❌       |
+| AdGuard extension for Edge    | ✅      | ✅         | ✅    | ✅          | ❌        | ✅    | ✅       | ✅          | ❌        | ✅          | ❌    | ✅       |
+| AdGuard extension for Opera   | ✅      | ✅         | ✅    | ✅          | ❌        | ✅    | ✅       | ✅          | ❌        | ✅          | ❌    | ✅       |
+| AdGuard Content Blocker       | ❌      | ❌         | ❌    | ✅          | ❌        | ❌    | ❌       | ✅          | ❌        | ✅          | ❌    | ❌       |
+
+> \*️\*️ — can be used only with high-quaulity filtering algorithm
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers
