@@ -19,7 +19,6 @@ visible: true
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
     * [Regular expressions support](#regexp-support)
-    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Basic rules examples](#basic-rules-examples)
     * [Modifiers](#basic-rules-modifiers)
         * [Basic modifiers](#basic-rules-common-modifiers)
@@ -74,6 +73,7 @@ visible: true
         * [$empty (deprecated)](#empty-modifier)
         * [$mp4 (deprecated)](#mp4-modifier)
 * [Non-basic rules](#non-basic-rules)
+    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
         * [CSS rules](#cosmetic-css-rules)
@@ -291,15 +291,6 @@ pattern = "/" regexp "/"
 For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
 
 > **Compatibility with different versions of AdGuard.** AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
-
-<a id="wildcard-for-tld"></a>
-### Wildcard support for TLD (top-level domains)
-
-Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
-For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
-For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
-
-> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
@@ -1420,6 +1411,15 @@ As a response to blocked request AdGuard returns a short video placeholder.
 # Non-basic rules
 
 However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
+
+<a id="wildcard-for-tld"></a>
+## Wildcard support for TLD (top-level domains)
+
+Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
+For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
+For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
+
+> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
 <a id="cosmetic-rules"></a>
 ## Cosmetic rules

@@ -19,7 +19,6 @@ visible: true
     * [Синтаксис базовых правил](#basic-rules-syntax)
     * [Специальные символы](#basic-rules-special-characters)
     * [Поддержка регулярных выражений](#regexp-support)
-    * [Поддержка wildcard для TLD](#wildcard-for-tld)
     * [Примеры базовых правил](#basic-rules-examples)
     * [Модификаторы](#basic-rules-modifiers)
         * [Базовые модификаторы](#basic-rules-common-modifiers)
@@ -74,6 +73,7 @@ visible: true
         * [$empty (устаревший)](#empty-modifier)
         * [$mp4 (устаревший)](#mp4-modifier)
 * [Другие правила](#non-basic-rules)
+    * [Поддержка wildcard для TLD](#wildcard-for-tld)
     * [Косметические правила](#cosmetic-rules)
         * [Правила скрытия элементов](#cosmetic-elemhide-rules)
         * [Правила CSS-стилей](#cosmetic-css-rules)
@@ -291,14 +291,6 @@ pattern = "/" regexp "/"
 Например, правило `/banner\d+/$third-party` применит регулярное выражение `banner\d+` ко всем сторонним запросам. Правила-исключения с использованием регулярных выражений выглядят вот так: `@@/banner\d+/`.
 
 > **Совместимость с разными версиями AdGuard.** AdGuard для Safari и AdGuard для iOS не полностью поддерживают регулярные выражения в силу [ограничений Content Blocking API](https://webkit.org/blog/3476/content-blockers-first-look/) (в статье по ссылке найдите раздел "The Regular expression format").
-
-<a id="wildcard-for-tld"></a>
-### Поддержка wildcard для доменов верхнего уровня (TLD)
-
-Вы можете использовать wildcard-символ для доменов верхнего уровня в паттернах косметических, html и js правил. Например, правило `example.*##.banner` будет соответствовать всем `example.TLD` доменам: `example.ru`, `example.com`, `example.net`, `example.org` и т.д.
-При составлении базовых правил вы можете использовать *wildcard-символ для TLD* только вместе с модификатором `$domain`. Например, `||*/banners/*$image,domain=example.*`
-
-> **Совместимость с разными версиями AdGuard.** Правила с wildcard для TLD поддерживается в AdGuard для Windows, Mac, Android, Safari, iOS и в Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
 <a id="basic-rules-examples"></a>
 ### Примеры базовых правил
@@ -1407,6 +1399,14 @@ https://jsonpath.com/
 # Другие правила
 
 Однако возможностей базовых правил может быть недостаточно, чтобы заблокировать рекламу. Иногда для этого требуется скрыть какой-нибудь элемент или изменить часть HTML-кода страницы, при этом ничего не сломав. Для этого предназначены правила, описанные в этом разделе.
+
+<a id="wildcard-for-tld"></a>
+## Поддержка wildcard для доменов верхнего уровня (TLD)
+
+Вы можете использовать wildcard-символ для доменов верхнего уровня в паттернах косметических, html и js правил. Например, правило `example.*##.banner` будет соответствовать всем `example.TLD` доменам: `example.ru`, `example.com`, `example.net`, `example.org` и т.д.
+При составлении базовых правил вы можете использовать *wildcard-символ для TLD* только вместе с модификатором `$domain`. Например, `||*/banners/*$image,domain=example.*`
+
+> **Совместимость с разными версиями AdGuard.** Правила с wildcard для TLD поддерживается в AdGuard для Windows, Mac, Android, Safari, iOS и в Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
 <a id="cosmetic-rules"></a>
 ## Косметические правила
