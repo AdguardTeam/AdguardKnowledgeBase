@@ -321,19 +321,33 @@ The following modifiers are the most simple and frequently used.
 <a id="domain-modifier"></a>
 ##### **`domain`**
 
-`domain` limits the rule application area to a list of domains (and their subdomains). To add multiple domains to one rule, use the `|`  character as a separator.
+`domain` limits the rule application area to a list of domains (and their subdomains).
 
-###### `domain` examples
+###### Syntax
+
+The modifier is a list of one or more expressions separated by `|` symbol, each of which is matched against a domain in a certain way depending on its type (see below).
+
+```
+ domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+ entry_i = ( regular_domain / any_tld_domain / regex )
+```
+
+* **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
+* **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
+* **`regex`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
+
+> **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+
+The `~` symbol before an expression is used to indicate exceptions. Queries from domains matching such expressions are not affected by rules containing them.
+
+**Examples:**
 
 * `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
 * `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
-
-If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
-
-###### `domain` and `~` examples
-
 * `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` - this rule will blocks requests sent from `example.org` and `example.com` domains and all their subdomains.
+* `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` - this rule will blocks requests sent from any domains except `a.com`, `b` with any TLD (`b.com`, `b.co.uk`, etc.), `c.com` and `c.org`, as well as all subdomains of all the specified domains.
 
 ###### `domain` modifier matching target domain
 
@@ -2210,13 +2224,14 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 ### `domain`
 
 `$domain` modifier limits the rule application area to a list of domains and their subdomains.
-The modifier's behavior and syntax perfectly match the corresponding
-[basic rules `$domain` modifier](#domain-modifier).
+The modifier's behavior and syntax are almost exactly the same as the corresponding [basic rules `$domain` modifier](#domain-modifier).
+The only difference is that the `|` domain separator in regular expressions does not need to be escaped.
 
 #### `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
+* `[$domain=/(^|.+\.)example\.(com|org)\$/]##.textad` — hides a `div` with a class `textad` at `example.com`, `example.org` and all subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
