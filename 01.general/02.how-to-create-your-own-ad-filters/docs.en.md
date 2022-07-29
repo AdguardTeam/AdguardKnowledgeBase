@@ -336,7 +336,7 @@ The modifier is a list of one or more expressions separated by `|` symbol, each 
 * **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
 * **`regex`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
-> **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+> **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
 The `~` symbol before an expression is used to indicate exceptions. Queries from domains matching such expressions are not affected by rules containing them.
 
