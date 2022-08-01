@@ -951,7 +951,9 @@ AdGuard использует [тот же синтаксис](https://github.com
 > **Совместимость с другими модификаторами**
 > Правила с `$redirect` совместимы с [базовыми модификаторами](#basic-rules-common-modifiers), [модификаторами с ограничением по типу контента](#content-type-modifiers), а также с модификаторами `$important` и `$app`. Правила, содержащие другие типы модификаторов, будут считаться некорректными и не будут применены.
 
-> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$redirect` не поддерживается в AdGuard Content Blocker, AdGuard для iOS и для Safari.
+> **Совместимость с разными версиями AdGuard.**
+> Правила с модификатором `$redirect` не поддерживается в AdGuard Content Blocker, AdGuard для iOS и для Safari.
+> Правила с `$redirect` приоритетами (например, `*$redirect=noopjs:42`) поддерживаются в AdGuard для Windows, Mac, и Android, **с CoreLibs версии 1.11 или выше**.
 
 <a id="redirect-rule-modifier"></a>
 
