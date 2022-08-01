@@ -337,6 +337,7 @@ The modifier is a list of one or more expressions separated by `|` symbol, each 
 * **`regex`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
 > **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+> Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` supported by all AdGuard products.
 
 The `~` symbol before an expression is used to indicate exceptions. Queries from domains matching such expressions are not affected by rules containing them.
 
