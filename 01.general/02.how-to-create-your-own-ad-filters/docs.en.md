@@ -1223,13 +1223,13 @@ Note that the word "segment" in this document means either a "Media Segment" or 
 
 ##### Syntax
 * `||example.org^$hls=urlpattern` – remove segments whose URL matches the URL pattern `urlpattern`.  The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
-* `||example.org^$hls=/regex/options` – remove segments where the URL, or, if a certain option is present, one of the tags, matches the regular expression `regex`. `options` modify the behaviour of the rule as described below.
+* `||example.org^$hls=/regexp/[options]` – remove segments where the URL, or, if a certain option is present, one of the tags, matches the regular expression `regexp`. `[options]` modify the behaviour of the rule as described below.
 
 Available `options` are:
-* `t` – instead of testing the segment's URL, test each of the segment's tags against the regex. A segment with a matching tag is removed.
+* `t` – instead of testing the segment's URL, test each of the segment's tags against the regular expression. A segment with a matching tag is removed.
 * `i` – make the regular expression case-insensitive.
 
-The characters `/`, `$` and `,` must be escaped with `\` inside `regex`.
+The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
 ##### Exceptions
 
@@ -1250,7 +1250,7 @@ When multiple `$hls` rules match the same request, their effect is cumulative.
 ##### Examples
 * `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` — removes all segments with the matching URL.
 * `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` — achieves more or less the same with
-  a regex instead of a URL pattern.
+  a regular expression instead of a URL pattern.
 * `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` — removes all segments which have the matching tag.
 
 ##### Anatomy of an HLS playlist
