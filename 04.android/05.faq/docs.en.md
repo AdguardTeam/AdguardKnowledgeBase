@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-* [What is AdGuard?](#wtf)
+* [What is AdGuard?](#whatis)
 * [How does AdGuard protection work?](#howitworks)
 * [Do I need the ROOT access?](#root)
 * [How to manually configure a local HTTP proxy?](#http)
@@ -17,7 +17,7 @@ taxonomy:
 * [Why do Wi-Fi and USB tethering not work with AdGuard?](#usb)
 * [Which browsers are not supported by AdGuard?](#browsers)
 * [Why a VPN can not be started on Android 5.0?](#a5)
-* [How to resolve known compatibility issues with other apps?](#apps)
+* [How to resolve known compatibility issues with other apps?](#conflicts)
 * [Why is the firewall's function partial and the data stats not that accurate in proxy mode?](#prxy)
 * [Then, the proxy mode is bad?](#badproxy)
 * [Why are some apps excluded?](#excluded)
@@ -29,7 +29,7 @@ taxonomy:
 * [How to manage AdGuard notifications?](#notifications)
 
 
-<a id="wtf"></a>
+<a id="whatis"></a>
 
 ## What is AdGuard? ##
 
@@ -205,7 +205,7 @@ The Puffin browser always compresses the traffic so AdGuard cannot filter it.
 There are two known bugs of Android 5.0 which may break a VPN start-up. The only solution is to reboot your device.
 
 
-<a id="apps"></a>
+<a id="conflicts"></a>
 ## How to resolve known compatibility issues with other apps? ##
 
 This section names third-party apps which are known to be incompatible to some degree with AdGuard. In some cases, either AdGuard or the conflicting app can be configured in some way to resolve the incompatibility.
