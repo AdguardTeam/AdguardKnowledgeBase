@@ -22,8 +22,8 @@ Windows，Mac和Android的AdGuard用户可能会注意到AdGuard在每个网页�
 
 * 我们不能使用`127.0.0.1`，因为浏览器不接受。
 * 可以使用私有子网中的一些IP地址，但是该解决方案具有两个弊端
-    * 首先，很有可能与现有的Intranet服务相交并破坏对其的访问
-    * 其次，一些DNS服务器可能会认为这是DNS重新攻击的攻击，并拒绝回应 ` local.adguard.org`
+    * 首先，很有可能与现有的Intranet服务冲突并破坏对其的访问
+    * 其次，一些DNS服务器可能会认为这是DNS重新绑定的攻击，并拒绝回应 ` local.adguard.org`
 
 ### 验证
 
