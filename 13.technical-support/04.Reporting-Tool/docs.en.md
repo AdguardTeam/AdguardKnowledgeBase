@@ -95,7 +95,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### **Filling in the form**
 
-> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://agrd.io/report), you’ll need to enter data manually.
+> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product;
 
