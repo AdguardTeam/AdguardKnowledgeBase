@@ -20,6 +20,8 @@ visible: true
 
 В семействе блокировщиков AdGuard есть много продуктов для разных платформ, у каждого из них свои уникальные особенности. Но что их объединяет — они все блокируют рекламу и трекинг. Эта статья описывает, как устроена блокировка рекламы изнутри.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B6bnwr3CNwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 > В этой статье мы не касаемся DNS-фильтрации. Это альтернативный способ блокировать рекламу, со своими преимуществами и недостатками. Переходите по этой ссылке, чтобы [узнать больше про DNS-фильтрацию](https://kb.adguard.com/ru/general/dns-filtering).
 
 <a name="general"></a>
