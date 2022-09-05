@@ -183,6 +183,8 @@ visible: true
 
 <img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/General/unsubscribe-change-card.png?" width="900" />
 
+> Если вы приобрели подписку через CloudPayments, опция **Изменить платежные данные** недоступна.
+
 <a name="renewal"></a>
 ## Что делать после продления ключа?
 
