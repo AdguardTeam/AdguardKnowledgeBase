@@ -329,12 +329,12 @@ The modifier is a list of one or more expressions separated by `|` symbol, each 
 
 ```
  domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
- entry_i = ( regular_domain / any_tld_domain / regex )
+ entry_i = ( regular_domain / any_tld_domain / regexp )
 ```
 
 * **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
 * **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
-* **`regex`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
+* **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
 > **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 > Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` supported by all AdGuard products.
