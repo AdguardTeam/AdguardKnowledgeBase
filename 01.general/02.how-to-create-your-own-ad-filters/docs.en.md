@@ -27,6 +27,7 @@ visible: true
             * [$third-party](#third-party-modifier)
             * [$popup](#popup-modifier)
             * [$match-case](#match-case-modifier)
+            * [$header](#header-modifier)
         * [Content type modifiers](#content-type-modifiers)
             * [Content type modifiers examples](#content-type-modifiers-examples)
             * [$document](#document-modifier)
@@ -418,6 +419,36 @@ This modifier defines a rule which applies only to addresses that match the case
 ###### `match-case` examples
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+
+<a id="header-modifier"></a>
+##### **`header`**
+
+The `$header` modifier allows matching the HTTP response having a specific header with (optionally) a specific value.
+
+###### Syntax
+
+```
+$header "=" h_name [":" h_value]
+h_value = string / regexp
+```
+
+where
+
+  * `h_name` — an HTTP header name. It is matched case insesitively.
+  * `h_value` — the HTTP header value matching expression, and may be one of the following:
+    * `string` — a sequence of characters. It is matched against the header value lexicographically.
+    * `regexp` — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$` and `,` must be escaped with `\`.
+
+The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
+
+> **Compatibility with different versions of AdGuard.** Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+
+###### Examples
+
+`||example.com^$header=set-cookie:foo` — blocks the request which response has the `Set-Cookie` header with value matching `foo` literally.
+`||example.com^$header=set-cookie` — blocks the request which response has a `Set-Cookie` header with any value.
+`@@||example.com^$header=set-cookie:/foo\, bar\$/` — unblocks the request which response has the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
+`@@||example.com^$header=set-cookie` — unblocks the request which response has a `Set-Cookie` header with any value.
 
 <a id="content-type-modifiers"></a>
 #### Restriction by content type
