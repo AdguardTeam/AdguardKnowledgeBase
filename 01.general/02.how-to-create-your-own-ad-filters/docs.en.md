@@ -19,7 +19,6 @@ visible: true
     * [Basic rules syntax](#basic-rules-syntax)
     * [Special characters](#basic-rules-special-characters)
     * [Regular expressions support](#regexp-support)
-    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Basic rules examples](#basic-rules-examples)
     * [Modifiers](#basic-rules-modifiers)
         * [Basic modifiers](#basic-rules-common-modifiers)
@@ -75,6 +74,7 @@ visible: true
         * [$empty (deprecated)](#empty-modifier)
         * [$mp4 (deprecated)](#mp4-modifier)
 * [Non-basic rules](#non-basic-rules)
+    * [Wildcard support for TLD](#wildcard-for-tld)
     * [Cosmetic rules](#cosmetic-rules)
         * [Element hiding rules](#cosmetic-elemhide-rules)
         * [CSS rules](#cosmetic-css-rules)
@@ -293,15 +293,6 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 > **Compatibility with different versions of AdGuard.** AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
-<a id="wildcard-for-tld"></a>
-### Wildcard support for TLD (top-level domains)
-
-Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
-For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
-For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
-
-> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
-
 <a id="basic-rules-examples"></a>
 ### Basic rules examples
 
@@ -331,19 +322,34 @@ The following modifiers are the most simple and frequently used.
 <a id="domain-modifier"></a>
 ##### **`domain`**
 
-`domain` limits the rule application area to a list of domains (and their subdomains). To add multiple domains to one rule, use the `|`  character as a separator.
+`domain` limits the rule application area to a list of domains (and their subdomains).
 
-###### `domain` examples
+###### Syntax
+
+The modifier is a list of one or more expressions separated by `|` symbol, each of which is matched against a domain in a certain way depending on its type (see below).
+
+```
+ domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+ entry_i = ( regular_domain / any_tld_domain / regexp )
+```
+
+* **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
+* **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
+* **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
+
+> **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+> Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` supported by all AdGuard products.
+
+The `~` symbol before an expression is used to indicate exceptions. Queries from domains matching such expressions are not affected by rules containing them.
+
+**Examples:**
 
 * `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
 * `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
-
-If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
-
-###### `domain` and `~` examples
-
 * `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` - this rule will blocks requests sent from `example.org` and `example.com` domains and all their subdomains.
+* `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` - this rule will blocks requests sent from any domains except `a.com`, `b` with any TLD (`b.com`, `b.co.uk`, etc.), `c.com` and `c.org`, as well as all subdomains of all the specified domains.
 
 ###### `domain` modifier matching target domain
 
@@ -1452,6 +1458,15 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
+<a id="wildcard-for-tld"></a>
+## Wildcard support for TLD (top-level domains)
+
+Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
+For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
+For the basic rules the described logic will be applicable only for the domains specified in `$domain` modifier (for example, `||*/banners/*$image,domain=example.*`).
+
+> **Compatibility with different versions of AdGuard.** Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
+
 <a id="cosmetic-rules"></a>
 ## Cosmetic rules
 
@@ -2241,13 +2256,14 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 ### `domain`
 
 `$domain` modifier limits the rule application area to a list of domains and their subdomains.
-The modifier's behavior and syntax perfectly match the corresponding
-[basic rules `$domain` modifier](#domain-modifier).
+The modifier's behavior and syntax are almost exactly the same as the corresponding [basic rules `$domain` modifier](#domain-modifier).
+The only difference is that the `|` domain separator in regular expressions does not need to be escaped.
 
 #### `domain` examples:
 * `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
 * `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
+* `[$domain=/(^|.+\.)example\.(com|org)\$/]##.textad` — hides a `div` with a class `textad` at `example.com`, `example.org` and all subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
     1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
