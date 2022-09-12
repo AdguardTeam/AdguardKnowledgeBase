@@ -87,7 +87,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Support;
 * Report incorrect blocking:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/ios1.1en.jpg" width="350"/>
+![Support tab](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ios1en.jpg)
 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
