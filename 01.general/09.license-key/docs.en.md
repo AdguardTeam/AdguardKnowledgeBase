@@ -134,14 +134,13 @@ In the small window you will see 3 functions:
 
 2. Then go to **License**. You will see that window:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense1.1en.PNG" width="350" />
+![Advanced protection](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 3. You can purchase the license directly from the **AppStore**, or activate **Premium** using **authorization** in **AdGuard account**.
 
 > Note: For successful activation you need to have at least one "free" license on your account.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2.1en.PNG" width="350" />
-
+![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
 <a id="activation_info"></a>
 #### Transferring license to another device
