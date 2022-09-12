@@ -960,9 +960,7 @@ AdGuard is able to redirect web requests to a local "resource".
 
 ##### `redirect` syntax
 
-AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
-
-`$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+AdGuard uses [the same filtering rules syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect) as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
@@ -989,8 +987,12 @@ This rule redirects all requests to `example.org/test.mp4` to the resource named
 
 > More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
+> **Compatibility with other modifiers**
+> `$redirect` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
 
-> **Compatibility with different versions of AdGuard.** Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> **Compatibility with different versions of AdGuard.**
+> Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Rules with the `$redirect` priorities (like, `*$redirect=noopjs:42`) are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
 <a id="redirect-rule-modifier"></a>
 #### **`redirect-rule`**
