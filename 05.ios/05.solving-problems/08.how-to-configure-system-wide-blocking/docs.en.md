@@ -13,7 +13,7 @@ System-wide blocking means blocking ads and trackers beyond the Safari browser, 
 
 On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://kb.adguard.com/en/general/dns-filtering). First, you have to enable DNS protection. To do so, open the *app*, click on the AdGuard icon (second icon at the bottom left of the screen) and enable *DNS protection*.
 
-![Protection screen](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection_1.png)
+![Protection screen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ios_dns_protection1.png)
 
 Now, if your purpose is to block ads and trackers system-wide, you have two options:
 
@@ -44,6 +44,6 @@ You can add any DNS filter or hosts file, the instruction will be the same for a
 4. Open *AdGuard for iOS* —> *Protection screen* —> *DNS filtering* (available while *Advanced mode* is enabled) —> *DNS filters*.
 5. Click *Add a filter* button, paste the link into the filter URL field, and click 'Next'.
 
-![Add a filter](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter.1.PNG)
+![Add a filter](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ios_adding_a_filter1.png)
 
 > Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).
