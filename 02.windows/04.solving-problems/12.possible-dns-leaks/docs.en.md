@@ -29,6 +29,13 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 * go to the *Advanced settings* 
 * scroll down to the *Fallback servers* section
+* check the *Use custom servers* option
+* then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+
+or
+
+* go to the *Advanced settings* 
+* scroll down to the *Fallback servers* section
 * check the *Don’t use fallback servers* option
 
 or
