@@ -5,7 +5,7 @@ taxonomy:
         - docs
 visible: true
 ---
-AdGuard for Windows allows its users to assign a DNS server to resolve queries instead of system DNS addresses, which are provided by your ISP if not overridden in the system settings. Using a non-default DNS server safeguards your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard for Windows allows its users to assign a DNS server to resolve queries instead of system DNS addresses, which are provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
 
 Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
 
@@ -23,7 +23,7 @@ In the case of IP addresses there are no difficulties: AdGuard forwards the DNS 
 
 ## Fallback DNS server
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. Obviously, this connection will also be considered by the check service as a leak. 
+It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak. 
 
 **To eliminate this leak:**
 
