@@ -130,18 +130,17 @@ In the small window you will see 3 functions:
 
 #### Activating AdGuard for iOS
 
-1. Open the application menu and tap on the **gear icon** in the right top corner of the screen.
+1. Open the application and tap on the **gear icon** in the bottom right corner of the screen.
 
-2. Then go to **About** > **License**. You will see that window:
+2. Then go to **License**. You will see that window:
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense1en.png" width="350" />
+![Advanced protection](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 3. You can purchase the license directly from the **AppStore**, or activate **Premium** using **authorization** in **AdGuard account**.
 
 > Note: For successful activation you need to have at least one "free" license on your account.
 
-<img src="https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/ioslicense2en.png" width="350" />
-
+![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
 <a id="activation_info"></a>
 #### Transferring license to another device
