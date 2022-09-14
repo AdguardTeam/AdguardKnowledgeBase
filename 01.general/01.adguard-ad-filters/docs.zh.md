@@ -43,7 +43,7 @@ visible: true
 <a name="filters"></a>
 ## AdGuard过滤器
 
-* **基础过滤器** — 删除英文内容网站的广告。最初是基于 [EasyList](https://easylist.to/) 并由我们修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt)
+* **基础过滤器** — 删除英文内容网站的广告。最初是基于 [EasyList](https://easylist.to/) 并由我们修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
 * **防跟踪保护过滤器** — 各种在线计数器和网络分析工具的综合列表。用它来隐藏您在网上的行动，避免跟踪。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 * **社交媒体过滤器** — 此过滤器适用于社交媒体小工具 "喜欢" 按钮及类似的元素。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
 * **恼人广告过滤器** —  屏蔽网页上的恼人元素，包括 Cookie 通知，第三方小部件和页内弹出式窗口。 (社交媒体元素除外). 受 Fanboy Annoyances List 启发， 但不重复。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
