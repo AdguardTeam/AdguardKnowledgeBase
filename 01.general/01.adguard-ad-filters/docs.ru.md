@@ -43,7 +43,7 @@ visible: true
 
 <a name="filters"></a>
 
-* **Базовый фильтр AdGuard** — убирает рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.to) и доработан нами исходя из жалоб и пожеланий пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt)
+* **Базовый фильтр AdGuard** — убирает рекламу с сайтов на английском языке. Изначально основан на фильтре [EasyList](https://easylist.to) и доработан нами исходя из жалоб и пожеланий пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
 * **Фильтр счётчиков и системы аналитики** — содержит наиболее полный список различных интернет-счётчиков и систем интернет-аналитики. Используйте его, чтобы избежать слежки за вашими действиями онлайн. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 * **Фильтр параметров отслеживания** — повышает приватность путём удаления параметров отслеживания из адресов страниц и их ресурсов. Когда пользователь включает блокировку параметров отслеживания в модуле Антитрекинга, автоматически включается этот фильтр. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
 * **Фильтр виджетов социальных сетей** — скрывает многочисленные кнопки «Мне нравится», «Поделиться» и подобные им интеграции с социальными сетями на популярных сайтах.
