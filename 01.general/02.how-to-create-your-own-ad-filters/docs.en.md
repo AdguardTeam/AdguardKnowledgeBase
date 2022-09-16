@@ -105,6 +105,7 @@ visible: true
         * [$app](#non-basic-rules-modifiers-app)
         * [$domain](#non-basic-rules-modifiers-domain)
         * [$path](#non-basic-rules-modifiers-path)
+        * [$url](#non-basic-rules-modifiers-url)
 * [Information for filters maintainers](#for_maintainers)
     * [Pre-processor directives](#pre_processor)
     * [Hints](#hints)
@@ -2304,6 +2305,29 @@ path=pattern
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard.** Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+
+<a id="non-basic-rules-modifiers-url"></a>
+
+### url
+
+`$url` modifier limits the rule application area to URLs matching the specified mask.
+
+#### Syntax
+
+```
+url = pattern
+```
+
+where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped.
+The [special characters](#basic-rules-special-characters) and [regular expressions](#regexp-support) are supported as well.
+
+#### Examples
+
+* `[$url=||example.com/ads/*]##.textad` — hides a `div` with a class `textad` at addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
+* `[$url=||example.org^]###adblock` — hides an element with attribute `id` equals `adblock` at `example.org` and its subdomains.
+* `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` — this rule hides `div` elements of the class `textad` for all domains matching the regular expression `[a-z]+\.example\.com^`.
+
+> **Compatibility with different versions of AdGuard.** Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
 <a id="for_maintainers"></a>
 ## Information for filters maintainers

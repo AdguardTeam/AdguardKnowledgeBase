@@ -105,6 +105,7 @@ visible: true
         * [$app](#non-basic-modifiers-app)
         * [$domain](#non-basic-rules-modifiers-domain)
         * [$path](#non-basic-rules-modifiers-path)
+        * [$url](#non-basic-rules-modifiers-url)
 * [Информация для разработчиков фильтров](#for_maintainers)
     * [Директивы пре-процессора](#pre_processor)
     * [Hints](#hints)
@@ -2284,6 +2285,29 @@ path=pattern
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$path` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox, Edge.
+
+<a id="non-basic-rules-modifiers-path"></a>
+
+### url
+
+Модификатор `$url` ограничивает действие правила запросами, URL которых соответствует указанной маске.
+
+#### Синтаксис
+
+```
+url = pattern
+```
+
+где `pattern` — маска адреса, синтаксис которой соответсвует [маске адреса (`pattern`) базовых правил](#basic-rules-syntax) за исключением того, что [некоторые символы](#non-basic-rules-modifiers-syntax) должны быть экранированны.
+[Специальные символы](#basic-rules-special-characters) и [регулярные выражения](#regexp-support) также поддерживаются.
+
+#### Примеры
+
+* `[$url=||example.com/ads/*]##.textad` — скрывает `div` с классом `textad` в запросах, например, к `http://example.com/ads/banner.jpg` и `http://subdomain.example.com/ads/otherbanner.jpg`.
+* `[$url=||example.org^]###adblock` — скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
+* `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` — скрывает `div` с классом `textad` в запросах к доменам, соответствующих регулярному выражению `[a-z]+\.example\.com^`.
+
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$url` поддерживаются в AdGuard для Windows, Mac, и Android, **с CoreLibs версии 1.11 или выше**.
 
 <a id="for_maintainers"></a>
 ## Информация для разработчиков фильтров
