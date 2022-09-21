@@ -650,22 +650,22 @@ where `opt(i)` stand for certain stealth mode options disabled by the modifier. 
 
 The list of the available modifier options:
 
-* `1p-cookie` — disables (**Self-destructing first-party cookies**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
-* `3p-cookie` — disables (**Self-destructing third-party cookies**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
-* `3p-cache` — disables (**Disable cache for third-party requests**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
-* `xclientdata` — disables (**Remove X-Client-Data header from HTTP requests**)[https://kb.adguard.com/en/general/stealth-mode#general]
-* `donottrack` — disables (**Send Do-Not-Track header**)[https://kb.adguard.com/en/general/stealth-mode#general]
-* `ip` — disables (**Hide your IP address**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
-* `3p-auth` — disables (**Block third-party Authorization header**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
-* `searchqueries` - disables (**Hide your search queries**)[https://kb.adguard.com/en/general/stealth-mode#general]
-* `referrer` — disables (**Hide Referer from third-parties**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
-* `useragent` — disables (**Hide your User-Agent**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
-* `webrtc` — disables (**Block WebRTC**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
-* `push` — disables (**Block Push API**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
-* `location` — disables (**Block Location API**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
-* `flash` — disables (**Block Flash**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
-* `java` — disables (**Block Java**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
-* `dpi` — disables (**Protect from DPI**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
+* `1p-cookie` — disables [**Self-destructing first-party cookies**](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
+* `3p-cookie` — disables [**Self-destructing third-party cookies**](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
+* `3p-cache` — disables [**Disable cache for third-party requests**](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
+* `xclientdata` — disables [**Remove X-Client-Data header from HTTP requests**](https://kb.adguard.com/en/general/stealth-mode#general)
+* `donottrack` — disables [**Send Do-Not-Track header**](https://kb.adguard.com/en/general/stealth-mode#general)
+* `ip` — disables [**Hide your IP address**](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
+* `3p-auth` — disables [**Block third-party Authorization header**](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
+* `searchqueries` - disables [**Hide your search queries**](https://kb.adguard.com/en/general/stealth-mode#general)
+* `referrer` — disables [**Hide Referer from third-parties**](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
+* `useragent` — disables [**Hide your User-Agent**](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
+* `webrtc` — disables [**Block WebRTC**](https://kb.adguard.com/en/general/stealth-mode#browser-api)
+* `push` — disables [**Block Push API**](https://kb.adguard.com/en/general/stealth-mode#browser-api)
+* `location` — disables [**Block Location API**](https://kb.adguard.com/en/general/stealth-mode#browser-api)
+* `flash` — disables [**Block Flash**](https://kb.adguard.com/en/general/stealth-mode#browser-api)
+* `java` — disables [**Block Java**](https://kb.adguard.com/en/general/stealth-mode#browser-api)
+* `dpi` — disables [**Protect from DPI**](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
 
 ###### `stealth` examples
 
