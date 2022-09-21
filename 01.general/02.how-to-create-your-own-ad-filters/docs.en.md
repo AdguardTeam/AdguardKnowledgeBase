@@ -657,6 +657,7 @@ The list of the available modifier options:
 * `donottrack` — disables (**Send Do-Not-Track header**)[https://kb.adguard.com/en/general/stealth-mode#general]
 * `ip` — disables (**Hide your IP address**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
 * `3p-auth` — disables (**Block third-party Authorization header**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
+* `searchqueries` - disables (**Hide your search queries**)[https://kb.adguard.com/en/general/stealth-mode#general]
 * `referrer` — disables (**Hide Referer from third-parties**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
 * `useragent` — disables (**Hide your User-Agent**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
 * `webrtc` — disables (**Block WebRTC**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
