@@ -36,15 +36,14 @@ This problem is solved in [Browser Assistant](https://adguard.com/adguard-assist
 
 #### Certificate Transparency
 
-Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
+Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake
+SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re
+provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA)
+that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by
+making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
 
-Browsers ignore the `Expect-CT` header in the case of local certificates, and, to achieve the same level of security, we must implement the certificate transparency check on our side.
-
-**Our plans:**
-
-* Add the certificate transparency support to the certificate validation library.
-
-**ETA:** ETA is Q3 2021.
+AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11**
+will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 
 ### Have remarks or suggestions?
 
