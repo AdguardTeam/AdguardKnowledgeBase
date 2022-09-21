@@ -28,7 +28,9 @@ HTTPS 필터링을 사용하는 경우, 웹 사이트에서 사용하는 실제 
 이 문제는 [브라우저 어시스턴트](https://adguard.com/ko/adguard-assistant/overview.html#chrome)에서 해결되었습니다. 어시스턴트를 사용하면 브라우저에서 바로 필터링을 관리하고 모든 웹 사이트의 원본 인증서를 확인할 수 있습니다.
 
 #### 인증서 투명성(Certificate Transparency)
-TODO: synchronize with the English and Russian version.
+최신 암호화 덕분에 브라우저는 가짜 SSL 인증서를 가진 악성 웹 사이트를 탐지할 수 있습니다. 그러나 브라우저는 해킹된 인증 기관에서 발급한 인증서를 사용하거나 실제 인증 기관에서 실수로 발급한 인증서를 사용하는 악성 사이트를 탐지할 수 없습니다. 인증서 투명성은 SSL 인증서 발급 프로세스를 개방적이고 투명하게 만들어 이러한 위협으로부터 보호하도록 설계되었습니다.
+
+1.11 버전부터 [CoreLibs](https://github.com/AdguardTeam/CoreLibs/)를 사용하는 AdGuard 제품은 [크롬 인증서 투명성 정책](https://googlechrome.github.io/CertificateTransparency/ct_policy.html)에 따라 정책을 시행할 것입니다.
 
 ### 의견이나 제안이 있나요?
 의견, 제안 또는 질문이 있으시면 devteam@adguard.com으로 문의해 주십시오.
