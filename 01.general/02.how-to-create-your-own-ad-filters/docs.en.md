@@ -640,13 +640,42 @@ Disables all userscripts on the pages matching this rule.
 
 Disables the Stealth Mode module for all corresponding pages and requests.
 
+###### Syntax
+
+```
+$stealth [= opt1 [| opt2 [| opt3 [...]]]]
+```
+
+where `opt(i)` stand for certain stealth mode options disabled by the modifier. The modifier can contain any number of options (see below) or not contain them at all. In the latter case the modifier disables all the stealth mode features.
+
+The list of the available modifier options:
+
+* `1p-cookie` — disables (**Self-destructing first-party cookies**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
+* `3p-cookie` — disables (**Self-destructing third-party cookies**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
+* `3p-cache` — disables (**Disable cache for third-party requests**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
+* `xclientdata` — disables (**Remove X-Client-Data header from HTTP requests**)[https://kb.adguard.com/en/general/stealth-mode#general]
+* `donottrack` — disables (**Send Do-Not-Track header**)[https://kb.adguard.com/en/general/stealth-mode#general]
+* `ip` — disables (**Hide your IP address**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
+* `3p-auth` — disables (**Block third-party Authorization header**)[https://kb.adguard.com/en/general/stealth-mode#tracking-methods]
+* `referrer` — disables (**Hide Referer from third-parties**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
+* `useragent` — disables (**Hide your User-Agent**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
+* `webrtc` — disables (**Block WebRTC**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
+* `push` — disables (**Block Push API**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
+* `location` — disables (**Block Location API**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
+* `flash` — disables (**Block Flash**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
+* `java` — disables (**Block Java**)[https://kb.adguard.com/en/general/stealth-mode#browser-api]
+* `dpi` — disables (**Protect from DPI**)[https://kb.adguard.com/en/general/stealth-mode#miscellaneous]
+
 ###### `stealth` examples
 
 * `@@||example.com^$stealth` — disables `Stealth Mode` for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
 * `@@||domain.com^$script,stealth,domain=example.com` — disables `Stealth Mode` only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
+* `@@||example.com^$stealth=3p-cookie|dpi` — disables blocking third-party cookies and DPI fooling measures for `example.com`.
 * Please note that blocking cookies and removing tracking parameters is achieved by using rules with `$cookie` and `$removeparam` modifiers. Exceptions with only `$stealth` modifier won't do those things. If you want to completely disable all Stealth Mode features for a given URL, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
 
-> **Compatibility with different versions of AdGuard.** Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge. All other products will ignore the rules with `$stealth` modifier.
+> **Compatibility with different versions of AdGuard.**
+> * Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge. All other products will ignore the rules with `$stealth` modifier.
+> * `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
 <a id="generic-rules"></a>
 ##### Generic rules

@@ -645,13 +645,42 @@ h_value = string / regexp
 
 Отключает модуль "Антитрекинг" для всех страниц и запросов, подходящих под это правило.
 
+###### Синтаксис
+
+```
+$stealth [= opt1 [| opt2 [| opt3 [...]]]]
+```
+
+где `opt(i)` обозначают опции "Антитрекинга", отключаемые правилами. Модификатор может содержать любое количество опций (см. ниже) или не содержать их вообще. В последнем случае модификатор отключает модуль "Антитрекинг" полностью.
+
+Список доступных опций модификатора:
+
+* `1p-cookie` — отключает (**Самоуничтожающиеся куки посещаемого сайта**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%81%D0%BB%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F]
+* `3p-cookie` — отключает (**Самоуничтожающиеся сторонние куки**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%81%D0%BB%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F]
+* `3p-cache` — отключает (**Отключить кеш-память для сторонних запросов**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%81%D0%BB%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F]
+* `xclientdata` — отключает (**Убрать заголовок X-Client-Data из HTTP-запросов**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8]
+* `donottrack` — отключает (**Отправлять заголовок Do-Not-Track**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8]
+* `ip` — отключает (**Скрыть IP адрес**)[https://kb.adguard.com/ru/general/stealth-mode#%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5]
+* `3p-auth` — отключает (**Блокировать заголовок Authorization**)[https://kb.adguard.com/ru/general/stealth-mode#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%81%D0%BB%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F]
+* `referrer` — отключает (**Скрыть Referer от сторонних ресурсов**)[https://kb.adguard.com/ru/general/stealth-mode#%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5]
+* `useragent` — отключает (**Скрыть User-Agent**)[https://kb.adguard.com/ru/general/stealth-mode#%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5]
+* `webrtc` — отключает (**Блокировать WebRTC**)[https://kb.adguard.com/ru/general/stealth-mode#api-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0]
+* `push` — отключает (**Блокировать Push API**)[https://kb.adguard.com/ru/general/stealth-mode#api-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0]
+* `location` — отключает (**Блокировать Location API**)[https://kb.adguard.com/ru/general/stealth-mode#api-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0]
+* `flash` — отключает (**Блокировать Flash**)[https://kb.adguard.com/ru/general/stealth-mode#api-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0]
+* `java` — отключает (**Блокировать Java**)[https://kb.adguard.com/ru/general/stealth-mode#api-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0]
+* `dpi` — отключает (**Защищать от DPI**)[https://kb.adguard.com/ru/general/stealth-mode#%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5]
+
 ###### Примеры `stealth`
 
 * `@@||example.com^$stealth` — полностью отключает модуль `Антитрекинг` для запросов к `example.com` и поддоменам (кроме блокировки cookies и скрытия параметров отслеживания, см.ниже).
 * `@@||domain.com^$script,stealth,domain=example.com` — отключает модуль `Антитрекинг` только для script-запросов к `domain.com` (и поддоменам) на `example.com` и всех его поддоменах.
+* `@@||example.com^$stealth=3p-cookie|dpi` — отключает **Самоуничтожающиеся сторонние куки** и **Защищать от DPI** для запросов к `example.com`.
 * Блокировка cookies и скрытие параметров отслеживания достигается использованием правил с модификаторами `$cookie` и `$removeparam`. Правила-исключения только с модификатором `$stealth` не дадут желаемого результата. Если вы хотите полностью отключить все функции Антитрекинга для определённого домена, вам надо включить в правило все три модификатора: `@@||example.org^$stealth,removeparam,cookie`
 
-> **Совместимость с разными версиями AdGuard.** Антитрекинг доступен в AdGuard для Windows, Mac, Android и в Браузерном расширении AdGuard для Chrome, Firefox, Edge. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+> **Совместимость с разными версиями AdGuard.**
+> * Антитрекинг доступен в AdGuard для Windows, Mac, Android и в Браузерном расширении AdGuard для Chrome, Firefox, Edge. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+> * Модификатор `$stealth` с опциями поддерживаются в AdGuard для Windows, Mac, и Android, **с CoreLibs версии 1.10 или выше**.
 
 <a id="generic-rules"></a>
 ##### Generic правила
