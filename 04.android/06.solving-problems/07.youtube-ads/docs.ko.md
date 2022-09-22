@@ -22,7 +22,7 @@ YouTube 앱에서 광고를 차단하기 위해 특별한 방법을 찾았습니
 - ‘AdGuard’ 선택
 - 광고 없이 동영상 보기
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif" style="max-width: 700px; margin-bottom: 0px;" /><p align="center">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif?121" style="max-width: 700px; margin-bottom: 0px;" /><p align="center">
 
 
 ## KakaoTalk 광고 차단하는 방법
