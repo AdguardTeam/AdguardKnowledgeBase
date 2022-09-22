@@ -10,7 +10,7 @@ visible: true
 
 ## 通过 AdGuard 应用程序观看 YouTube 影片
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif?121" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
 
 1. 打开 YouTube 应用并播放您想看的影片。
 2. 点击「分享」按钮并在应用程序的列表内选择「AdGuard」。

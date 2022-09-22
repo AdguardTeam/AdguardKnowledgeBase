@@ -11,7 +11,7 @@ One of the most popular questions users ask us is: 'Is it possible to block ads 
 
 ## Watch YouTube in the AdGuard app
 
-<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
+<img src="https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif?121" style="border: 1px solid #efefef; max-height: 700px; max-width: 350px; padding: 2px;">
 
 1. Open YouTube app and start the video you want to watch.
 2. Tap on the *Share* button and select *AdGuard for Android* from the list of apps.
