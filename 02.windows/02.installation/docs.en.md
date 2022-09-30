@@ -77,24 +77,24 @@ To reinstall AdGuard on your PC, launch the installation program again and repea
 First of&nbsp;all, you need to&nbsp;download the uninstaller tool created by&nbsp;our developers. You can do&nbsp;it&nbsp;by&nbsp;using
 [this link](https://cdn.adguard.com/distr/windows/Uninstall_Utility.zip). Extract the archive to any folder on your PC and run the **Adguard_Uninstall_Utility.exe** file. Then follow the instruction below:
 
-* Choose <em>&rsquo;Standard uninstall&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
+* Choose <em>&rsquo;Standard uninstall&rsquo;</em>, <em>&rsquo;Delete AdGuard&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
 
-![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu.png)
+![](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
                                  
 * Wait until uninstall is&nbsp;finished. there will be&nbsp;a&nbsp;string in&nbsp;the window:
                             <pre>"[OK] Uninstall finished"</pre>
                             
-![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/standard_uninstall.png)
+![](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
 <b>Attention!</b> Follow steps 3-4 only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of AdGuard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
 
-* Choose <em>&rsquo;Advanced uninstall&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
+* Choose <em>&rsquo;Advanced uninstall&rsquo;</em>, <em>&rsquo;Delete AdGuard&rsquo;</em> and click <em>&rsquo;Uninstall&rsquo;</em>.
 
-![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu_adv.png)
+![](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
                                  
 * Wait until uninstall is&nbsp;finished. there will be&nbsp;a&nbsp;string in&nbsp;the window:
                             <pre>"[OK] Uninstall finished"</pre>
 
-![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/advanced_uninstall.png)
+![](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
                                  
 AdGuard is successfully uninstalled!                              
