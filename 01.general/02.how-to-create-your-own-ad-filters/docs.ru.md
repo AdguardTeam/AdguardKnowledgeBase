@@ -773,7 +773,7 @@ domain.com###banner
 **Примеры:**
 
 * `||example.com$badfilter` отключает `||example.com`
-* `||example.com$image,badfilter` отключает `||example.com,image`
+* `||example.com$image,badfilter` отключает `||example.com$image`
 * `@@||example.com$badfilter` отключает `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
 
