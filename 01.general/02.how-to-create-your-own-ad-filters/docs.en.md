@@ -768,7 +768,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 **Examples:**
 
 * `||example.com$badfilter` disables `||example.com`
-* `||example.com$image,badfilter` disables `||example.com,image`
+* `||example.com$image,badfilter` disables `||example.com$image`
 * `@@||example.com$badfilter` disables `@@||example.com`
 * `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
