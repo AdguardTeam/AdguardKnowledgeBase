@@ -73,7 +73,7 @@ taxonomy:
 ### Продвинутое удаление
 *Используйте эту инструкцию, только если инструкция по стандартному удалению не помогла.*
 
-Для начала необходимо установить специальную утилиту для удаления AdGuard, созданную нашими разработчиками. Её можно скачать по [этой ссылке](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip). Распакуйте скачанный архив в любую папку на вашем компьютере и запустите файл AdGuard_Uninstall_Utility.exe
+Для начала необходимо установить специальную утилиту для удаления AdGuard, созданную нашими разработчиками. Её можно скачать по [этой ссылке](https://cdn.adguard.com/distr/windows/Uninstall_Utility.zip). Распакуйте скачанный архив в любую папку на вашем компьютере и запустите файл AdGuard_Uninstall_Utility.exe
 
 1. Выберите пункт ’Standard uninstall’ и нажмите кнопку ’Uninstall’ в правом нижнем углу.
 ![](https://cdn.adguard.com/public/Adguard/Ru/Articles/howtodelete/main_menu.png)

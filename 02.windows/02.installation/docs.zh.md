@@ -72,7 +72,7 @@ taxonomy:
 
 ### 卸载的进阶方法
 
-首先，您要通过[该链接](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip)下载并安装我们开发人员创建的卸载软件。
+首先，您要通过[该链接](https://cdn.adguard.com/distr/windows/Uninstall_Utility.zip)下载并安装我们开发人员创建的卸载软件。
 
 您可以将压缩包发送到您的电脑上的任何一个文件夹里。解压后，请您开启 **Adguard_Uninstall_Utility.exe** 文件。 
 
