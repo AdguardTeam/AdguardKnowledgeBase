@@ -18,7 +18,7 @@ visible: true
 
 ## 1. Скачайте MSI-установщик.
 
-Скачайте [MSI-установщик](https://cdn.adguard.com/public/Windows/AdGuard.msi) AdGuard.
+Скачайте [MSI-установщик](https://cdn.adguard.com/distr/windows/AdGuard.msi) AdGuard.
 
 <a name="settings-configuring"></a>
 
