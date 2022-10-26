@@ -2315,13 +2315,14 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 
 #### Syntax
 ```
-path=pattern
+$path ["=" pattern]
 ```
 
-`pattern` is a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
+`pattern` — optional, a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below). If not set, rule will apply only on the main page of website.
 
+> If `pattern` is not set for `$path`, rule will apply only on the main page of website.
 
-> Please note that `path` modifier matches the query string as well.
+> Please note that `$path` modifier matches the query string as well.
 
 > `$path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
 
@@ -2331,6 +2332,7 @@ path=pattern
 * `[$path=|/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
 * `[$path=/page.html|]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
 * `[$path=/page*.html]example.com##.textad` — hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
+* `[$path]example.com##.textad` — hides a `div` with a class `textad` at the main page of `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` — hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
