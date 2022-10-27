@@ -2303,19 +2303,19 @@ $path ["=" pattern]
 
 > Если `pattern` не указан для модификатора `$path`, правило применится только на главной странице сайта.
 
-> Обратите внимание, что модификатор пути также соответствует параметрам запроса.
+> Обратите внимание, что модификатор `$path` также соответствует параметрам запроса.
 
-> Модификатор `path` поддерживает регулярные выражения [таким же образом](#regexp-support), что и базовые правила.
+> Модификатор `$path` поддерживает регулярные выражения [таким же образом](#regexp-support), что и базовые правила.
 
-#### Примеры `path`:
-* `[$path=page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
-* `[$path=/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
-* `[$path=|/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
-* `[$path=/page.html|]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` — скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
-* `[$path]example.com##.textad` — скрывает `div` с классом `textad` на главной странице сайта `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` — скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
+#### Примеры `$path`:
+* `[$path=page.html]##.textad` скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
+* `[$path=/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
+* `[$path=|/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
+* `[$path=/page.html|]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
+* `[$path=/page*.html]example.com##.textad` скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
+* `[$path]example.com##.textad` скрывает `div` с классом `textad` на главной странице сайта `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$path` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
