@@ -2296,23 +2296,26 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 #### Синтаксис
 ```
-path=pattern
+$path ["=" pattern]
 ```
 
-`pattern` — это маска пути, которой ограничено правило. Его синтаксис и поведение почти такие же, как в [шаблоне базовых правил](#basic-rules-syntax). Вы также можете использовать [специальные символы](#basic-rules-special-characters), за исключением `||`, поскольку в этом случае это не имеет никакого смысла (см. примеры ниже).
+`pattern` — необязательный, это маска пути, которой ограничено правило. Его синтаксис и поведение почти такие же, как в [шаблоне базовых правил](#basic-rules-syntax). Вы также можете использовать [специальные символы](#basic-rules-special-characters), за исключением `||`, поскольку в этом случае это не имеет никакого смысла (см. примеры ниже).
 
-> Обратите внимание, что модификатор пути также соответствует параметрам запроса.
+> Если `pattern` не указан для модификатора `$path`, правило применится только на главной странице сайта.
 
-> Модификатор `path` поддерживает регулярные выражения [таким же образом](#regexp-support), что и базовые правила.
+> Обратите внимание, что модификатор `$path` также соответствует параметрам запроса.
 
-#### Примеры `path`:
-* `[$path=page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
-* `[$path=/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
-* `[$path=|/page.html]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
-* `[$path=/page.html|]##.textad` — скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` — скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` — скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
+> Модификатор `$path` поддерживает регулярные выражения [таким же образом](#regexp-support), что и базовые правила.
+
+#### Примеры `$path`:
+* `[$path=page.html]##.textad` скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` или `/another_page.html`
+* `[$path=/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html`, `/page.html?<query>`, `/sub/page.html` любого домена, но не на `/another_page.html`
+* `[$path=|/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не на `/sub/page.html`
+* `[$path=/page.html|]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/page.html?<query>`
+* `[$path=/page*.html]example.com##.textad` скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующим `/page<...>.html`, на домене `example.com`
+* `[$path]example.com##.textad` скрывает `div` с классом `textad` на главной странице сайта `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и `/sub2/page.html` любого домена (обратите внимание на [экранированные символы](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с разными версиями AdGuard.** Правила с модификатором `$path` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
