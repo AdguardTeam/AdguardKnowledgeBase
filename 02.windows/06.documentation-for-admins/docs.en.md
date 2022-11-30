@@ -31,7 +31,7 @@ The only supported policy is `LicenseKey`. If this policy is set, AdGuard will p
 
 ## 3. Make sure that AdGuard servers are available
 
-AdGuard connects to two hosts: `api.adguard.com` and `filters.adtidy.org`. Make sure that both servers are available.
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Make sure that both servers are available.
 
 <a name="msi-push"></a>
 
@@ -43,9 +43,9 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 `Msiexec /q /i AdGuard.msi`
 
 If you need to roll out an update, use this command:
-`Msiexec AdGuard.msi /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Please note, that you must run these commands with admin privileges.**
+**Please note that you must run these commands with admin privileges.**
 
 > If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 

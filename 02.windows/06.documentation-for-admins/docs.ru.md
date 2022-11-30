@@ -32,7 +32,7 @@ visible: true
 
 ## 3. Убедитесь, что серверы AdGuard доступны
 
-AdGuard подключается к двум хостам: `api.adguard.com` и `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
+AdGuard подключается к двум хостам: `api.adguard.org` и `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
 
 <a name="msi-push"></a>
 
@@ -44,7 +44,7 @@ AdGuard подключается к двум хостам: `api.adguard.com` и 
 `Msiexec /q /i AdGuard.msi`
 
 Если вам нужно накатить обновление, используйте эту команду:
-`Msiexec AdGuard.msi /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 **Пожалуйста, обратите внимание, что вы должны запускать эти команды с правами администратора.**
 
