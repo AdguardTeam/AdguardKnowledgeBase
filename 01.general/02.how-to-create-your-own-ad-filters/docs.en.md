@@ -80,7 +80,6 @@ visible: true
         * [CSS rules](#cosmetic-css-rules)
         * [Extended CSS selectors](#extended-css-selectors)
             * [Pseudo-class `:has()`](#extended-css-has)
-            * [Pseudo-class `:if-not()`](#extended-css-has)
             * [Pseudo-class `:contains()`](#extended-css-contains)
             * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
             * [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
@@ -1667,7 +1666,7 @@ Backward compatible syntax:
 [-ext-has="selector"]
 ```
 
-Supported synonyms for better compatibility: `:-abp-has`, `:if`.
+Supported synonym for better compatibility: `:-abp-has`.
 
 Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
 
@@ -1690,11 +1689,6 @@ Backward compatible syntax:
 ```
 div[-ext-has=".banner"]
 ```
-
-<a id="extended-css-if-not"></a>
-##### Pseudo-class `:if-not()`
-
-This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
 
 <a id="extended-css-contains"></a>
 ##### Pseudo-class `:contains()`
