@@ -5,44 +5,44 @@ taxonomy:
         - docs
 ---
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that is accessible for five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex.Browser. Browser extensions include basic ad blocking features but cannot be compared with full-featured desktop programs such as [*AdGuard for Windows*](https://kb.adguard.com/en/windows/overview) and [*AdGuard for Mac*](https://kb.adguard.com/en/mac/overview).
+AdGuard 提供了一系列运行在各平台上拦截广告和跟踪器的软件产品。其中最流行的一款 AdGuard 产品便是可用于 5 个最流行浏览器的免费扩展：Chrome，Firefox，Edge, Opera 及 Yandex.Browser。浏览器扩展提供有基本的广告拦截功能，但无法与功能齐全的桌面程序相提并论，例如 [*AdGuard for Windows*](https://kb.adguard.com/en/windows/overview) 和 [*AdGuard for Mac*](https://kb.adguard.com/en/mac/overview)。
 
-In this article we’ll reveal to you all its useful options. If you're looking for some specific information, navigate directly to the appropriate item or read the entire article to learn more about the product.
+我们将用本文向您展示其所有有用选项。如您是搜寻一些特定信息，请直接导航到相应的项目或阅读整篇文章以了解更多产品信息。
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/br_ext1.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-- [Availability](#br-extension)
-- [Ad blocking](#adblocker)
-    - [Filters](#filters)
-        - [Custom filters](#custom)
-    - [User rules](#user-rules)
+- [可用性](#br-extension)
+- [拦截广告](#adblocker)
+    - [过滤器](#filters)
+        - [自定义过滤器](#custom)
+    - [用户规则](#user-rules)
     - [Allowlist](#allowlist)
-- [Stealth Mode](#stealth-mode)
-- [Other features and options](#other)
-    - [General](#general)
-    - [Miscellaneous](#misc)
-    - [About](#about)
-- [Extension’s main menu](#main-menu)
-- [AdGuard browser extension vs. AdGuard application](#comparison)
+- [隐身模式](#stealth-mode)
+- [其它功能和选项](#other)
+    - [常规](#general)
+    - [杂项](#misc)
+    - [关于](#about)
+- [扩展的主菜单](#main-menu)
+- [AdGuard 浏览器扩展对比 AdGuard 程序](#comparison)
 
 <a name="br-extension"></a>
-## Availability
+## 可用性
 
-The [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) is accessible for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) 可用于大部分主流浏览器。您可通过浏览器在线商店或我们的官方网站找到它。
     
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/all_browsers.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-> We have a standalone extension for Safari because since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) most of the ad blocking extensions have experienced huge issues and many of them simply stopped working. We had to develop a [separate extension for Safari](https://kb.adguard.com/en/safari/overview) that has some differences in comparison with the extension described in this article.
+> 我们有用于 Safari 的单独扩展，因为自 [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) 其，大部分广告拦截扩展都遇到了大量的问题其中它们大多都停止了工作。我们开发了一款 [用于 Safari 的单独的扩展](https://kb.adguard.com/en/safari/overview)，其与本文所描述的扩展有着一些差异。
 
-**Do not forget that the functionality of each extension is strictly limited by browser’s capabilities.** So if you want to get a full-fledged protection, you'd better turn your gaze towards a standalone program for your computer. And we’ll [explain why](https://kb.adguard.com/en/browser-extensions/overview.html#comparison).
+**请不要忘记各浏览器扩展的功能是受限于浏览器的能力。** 因此，如您要获得全部保护，则您最好把目光转向独立的计算机程序。我们会向您[解释原因](https://kb.adguard.com/en/browser-extensions/overview.html#comparison)。
 
 <a name="adblocker"></a>    
-## Ad blocking
+## 拦截广告
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. At the base of ad blocking lie so-called filter lists, or simply [filters](https://adguard.com/en/blog/how-ad-blocking-is-done.html), that can be enabled or disabled in the AdGuard settings. You can adjust ad blocking according to your needs by activating specific filters.
+拦截广告无疑是任何广告拦截器的关键功能，AdGuard 也不例外。浏览器扩展会成功拦截您浏览器内的任何网页广告。广告拦截是基于过滤器列表之上，或简称为 [过滤器](https://adguard.com/en/blog/how-ad-blocking-is-done.html)，这些过滤器可在 AdGuard 设置内开启或禁用。您可按需激活特定的过滤器以调整广告拦截。
 
 <a name="filters"></a>
-### Filters
+### 过滤器
 
 In essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your webpages and life gets a lot better.
 
