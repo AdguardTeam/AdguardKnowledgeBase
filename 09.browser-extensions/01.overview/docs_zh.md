@@ -44,16 +44,16 @@ AdGuard 提供了一系列运行在各平台上拦截广告和跟踪器的软件
 <a name="filters"></a>
 ### 过滤器
 
-In essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your webpages and life gets a lot better.
+从本质上讲，过滤器列表就是一套以特定语言书写的规则，广告拦截器作为规则解释器并执行它们。经过如此之后，您不便不会再看到网页上的广告了，生活变得更安逸。
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/filters.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
-All filters are grouped according to their role. For example, there are categories for ad blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once. 
+所有过滤器是依据其角色分组。例如，分类为广告拦截过滤器，隐私保护过滤器，社交媒体过滤器登封。您可单独的开启它们或一次性整组开启。
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/ad_blocking_filters.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
 
 <a name="custom"></a>
-#### Custom filters 
+#### 自定义过滤器 
 
 While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
 
@@ -61,12 +61,12 @@ While the features of other filter groups are more or less predictable, there is
 
 In this tab you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like. 
 
-To add a filter, just click the **Add custom filter** button and then enter the URL or the file path of the filter you want to be added, and then click the **Next** button.
+要添加过滤器，只需点击 **添加自定义过滤器（Add custom filter）** 按钮并输入您所需的过滤器 URL 或文件路径，然后点击 **下一步（Next）** 按钮。
 
 <img src="https://cdn.adguard.com/public/Adguard/Blog/in-depth-extension/custom_adding.png" style="border: 1px solid #efefef; max-width: 600px; padding: 2px;">
     
 <a name="user-rules"></a>
-### User rules
+### 用户规则
 
 *User rules* is another tool that helps you personalize protection by adjusting it in a preferable way.
 
