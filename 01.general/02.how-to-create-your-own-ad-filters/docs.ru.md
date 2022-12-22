@@ -1424,18 +1424,25 @@ https://jsonpath.com/
 * `$jsonprune` также можно отключить с помощью правил-исключений с модификаторами `$document`, `$content` и `$urlblock`.
 
 ##### Ограничения
-* `$jsonprune` не могут иметь других модификаторов, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
-* правила `$jsonprune` не будут применены к ответам размером больше 3 МБ.
+* Правила `$jsonprune` не могут иметь других модификаторов, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
+* Правила `$jsonprune` не будут применены к ответам размером больше 3 МБ.
 
 ##### Замечания
-* Если несколько `$jsonprune` правил соответствуют одному запросу, их эффект суммируется.
+* Если несколько правил `$jsonprune` соответствуют одному запросу, их эффект суммируется.
 
 ##### Примеры
 * `||example.org^$jsonprune=\$..[one\, "two three"]` — удалить все вхождения свойств "one" и "two three" в JSON-документ.
 * `||example.org^$jsonprune=\$.a[?(has ad_origin)]` — удалить всех прямых потомков `a`, которые обладают свойством `ad_origin`.
 * `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` — удалить все элементы на уровне вложенности 3, обладающие свойством "Some key", равным "Some value".
 
-> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android, **с CoreLibs версии 1.10 или выше**.
+> **Совместимость с разными версиями AdGuard.** Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android **с CoreLibs версии 1.10 или выше**.
+
+###### Вложенные JSONPath-выражения
+
+> В AdGuard для Windows, Mac и Android **с CoreLibs версии 1.11 или выше** можно использовать JSONPath выражения в качестве ключей в "filter expression".
+
+* `||example.org^$jsonprune=\$.elems[?(has '\$.a.b.c')]` – удалить всех прямых потомков `elems`, у которых есть свойство, выбираемое JSONPath-выражением `$.a.b.c`.
+* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` – удалить всех прямых потомков `elems`, у которых есть свойство, выбираемое JSONPath-выражением `$.a.b.c` и равное `"abc"`.
 
 <a id="noop-modifier"></a>
 #### **`noop`**
