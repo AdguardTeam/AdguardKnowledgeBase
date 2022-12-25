@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-AdGuard has been created to make your browsing experience pleasant and comfortable. It is not just a web filter and ad blocker – it is a convenient and fully adjustable tool that helps you save your traffic, load your web pages faster, and protect your computer from undesirable and potentially malicious content. With AdGuard, you can forget all about annoying banners and popup windows. This is not the whole scope of the application’s capabilities, though. AdGuard will protect you from phishing websites, and your children from information they should not yet come across due to age restrictions. However, everything in its turn.
+AdGuard 的创建是为了使您的浏览体验愉快和舒适。其不仅是网络过滤器，广告拦截器 – 它还是一款方便完全可调整的能够帮助您节省浏览，加速网页载入，保护您的计算机远离不可描述，有潜在恶意内容网站的工具。在 AdGuard 的帮助下，您不必担心各种烦人的横幅广告，弹窗。这还不是本程序的所有能力。AdGuard 还会保护您，远离钓鱼网站，使儿童免受由于年龄限制而不应接触的信息的侵害。无论如何，一切皆在其掌控之中。
 
 Adguard 的主要功能是过滤您所访问网站上的广告。无论您在使用什么浏览器 – AdGuard 都能与任何网页查看程序完美契合。如您的浏览器未包含在默认的列表上，您可毫不费力的手动添加它们。除了利用预制的过滤器集合外，您也可选择要阻止的网页项目或关闭对某网站的过滤。AdGuard 不仅能过滤网页内置的横幅广告，也能防止自动弹出及播放线视频时的广告剪辑。
 
@@ -15,8 +15,8 @@ AdGuard for Windows 最重要的一个特性便是在广告加载到浏览器之
 
 AdGuard for Windows 的专用模块，即安全浏览，保护用户远离此种欺诈，对重定向到潜在恶意网站的尝试进行警告。安全浏览数据库是自动更新的，并始终处于最新状态。
 
-Every person working on the Internet leaves invisible footsteps there: counters built in websites gather information about their IP-address (and, therefore, about their current location), their browser version, operating system, screen resolution, and lots of other data. A site can mark your browser with cookies to gather your statistics, save your settings, or automatically identify you upon repeat visit. Your personal data and private information will be secure with another AdGuard module called Stealth Mode. Stealth Mode will always keep you safe and sound.
+每个工作在因特网的人都会留下不可视的足迹：网站内置的计数器收集有关访问者的 IP 地址信息（及其当前位置），其浏览器版本，操作系统，屏幕分辨率及众多其它数据。网站可用 cookies 标记您的浏览器以收集您的统计数据，保存您的设置或在您再次访问它时自动识别您。您的个人数据及隐私信息安全将由其它 AdGuard 模块保障，即 隐身模式。隐身模式将始终让您安然无恙。
 
-The Internet may be a dangerous place for young users. Violence, adult themes, crude language, gambling, drug propaganda – this list is far from complete where it concerns the information children should be restricted from. AdGuard Parental Control module will help you with this. Just turn it on, set the filter sensitivity, and you don’t have to worry that your child will stumble upon an inappropriate website anymore. Parental Control also allows you to turn on filtering of search results and set a password to protect AdGuard settings. Now you won’t need to buy separate applications to filter web content – with AdGuard, your family will always be well-protected.
+对于年轻用户，因特网可能是个危险的地方。暴力，成人内容，粗话，毒品宣传 – 这份清单在涉及应限制儿童获取的信息方面远未完成。AdGuard Parental Control 模块会帮助您完成。Just turn it on, set the filter sensitivity, and you don’t have to worry that your child will stumble upon an inappropriate website anymore. Parental Control also allows you to turn on filtering of search results and set a password to protect AdGuard settings. Now you won’t need to buy separate applications to filter web content – with AdGuard, your family will always be well-protected.
 
 To learn more about the work, capabilities, and settings of different AdGuard modules, check out our Knowledge Database.
