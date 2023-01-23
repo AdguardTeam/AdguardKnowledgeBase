@@ -58,13 +58,27 @@ Scroll the page down and move _AdGuard_ switch in _Content blocking_ area to the
 
 Open in your browser [AdGuard AdBlocker page](https://agrd.io/extension_edge), and then click _Get_ button. 
 
-![](Edge_01_EN.png)
+![](![Edge_01_EN](https://user-images.githubusercontent.com/44458180/214025520-007f3fc6-e2d5-4204-ab5c-9eae036cf640.jpg))
 
-Press _Free_ button in the window that opened.
+In the opened dialogue window, click the _Add extension_ button.
 
-![](Edge_02_EN.png)
+![](![Edge_02_EN](https://user-images.githubusercontent.com/44458180/214025642-8ad5101b-2554-46df-a2a7-5b5d037b42ad.jpg))
 
-Wait for the installation to complete. Microsoft Edge will be opened automatically and offers you to turn AdBlocker on. 
+Alternatively, you can open the web page of [Chrome Web Store](https://agrd.io/extension_chrome) inside Edge and select "Allow extensions from other stores" in the top banner
+
+![](![Edge_03_EN](https://user-images.githubusercontent.com/44458180/214025639-f46947b4-ab46-4a37-b84a-105c46f89a1c.jpg))
+
+Click _Allow_ to proceed
+
+![](![Edge_04_EN](https://user-images.githubusercontent.com/44458180/214025635-59e1c377-45f6-4755-8c9a-21beeab1d4bf.jpg))
+
+Now simply click the _Add to Chrome_ button 
+
+![](![Edge_05_EN](https://user-images.githubusercontent.com/44458180/214025652-84b0d6df-108b-4791-8036-8d1d16a40344.jpg))
+
+In the opened dialogue window click _Add extension_ button to install AdGuard for Edge. 
+
+![](![Edge_06_EN](https://user-images.githubusercontent.com/44458180/214025650-ef1ebcce-0085-4691-889f-3055e47ee295.jpg))
 
 <a name="t6"></a>
 ## AdGuard for Safari installer
