@@ -17,6 +17,6 @@ AdGuard for Windows 的专用模块，即安全浏览，保护用户远离此种
 
 每个工作在因特网的人都会留下不可视的足迹：网站内置的计数器收集有关访问者的 IP 地址信息（及其当前位置），其浏览器版本，操作系统，屏幕分辨率及众多其它数据。网站可用 cookies 标记您的浏览器以收集您的统计数据，保存您的设置或在您再次访问它时自动识别您。您的个人数据及隐私信息安全将由其它 AdGuard 模块保障，即 隐身模式。隐身模式将始终让您安然无恙。
 
-对于年轻用户，因特网可能是个危险的地方。暴力，成人内容，粗话，毒品宣传 – 这份清单在涉及应限制儿童获取的信息方面远未完成。AdGuard Parental Control 模块会帮助您完成。Just turn it on, set the filter sensitivity, and you don’t have to worry that your child will stumble upon an inappropriate website anymore. Parental Control also allows you to turn on filtering of search results and set a password to protect AdGuard settings. Now you won’t need to buy separate applications to filter web content – with AdGuard, your family will always be well-protected.
+对于年轻用户，因特网可能是个危险的地方。暴力，成人内容，粗话，毒品宣传 – 这份清单在涉及应限制儿童获取的信息方面远未完成。AdGuard 家长控制 模块会帮助您完成。开启它并设置好过滤器敏感度后，您无需再担心儿童意外的闯入不适合的网站。家长控制 允许您开启过滤搜索结果，为 AdGuard 设置保护密码。现在您无需单独购买过滤网络内容的应用了 – 您的家庭成员会受到 AdGuard 的良好保护。
 
-To learn more about the work, capabilities, and settings of different AdGuard modules, check out our Knowledge Database.
+要了解 AdGuard 模块的更多特性，能力和设置，请检查我们的知识库。
